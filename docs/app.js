@@ -234,7 +234,7 @@
       if (r.status === 429) { await sleep((+r.headers.get("Retry-After") || 3) * 1000); continue; }
       if (r.status === 204 || r.headers.get("content-length") === "0") return {};
       const j = await r.json().catch(() => ({}));
-      if (!r.ok) { const err = new Error(j.error?.message || `${method} ${path} → ${r.status}`); err.status = r.status; throw err; }
+      if (!r.ok) { const err = new Error(`${method} ${path.split("?")[0]} → ${r.status} ${j.error?.message || ""}`.trim()); err.status = r.status; throw err; }
       return j;
     }
     throw new Error("Spotify rate limit, try again in a minute");
@@ -256,8 +256,11 @@
       if (hit) return hit.id;
       if (!page.next) break;
     }
-    const p = await api("POST", `/users/${me.id}/playlists`, { name, public: false, description: "Built by GigAmp" });
-    return p.id;
+    // Feb-2026 Dev Mode API: POST /me/playlists (legacy path kept as fallback for older apps).
+    const body = { name, public: false, description: "Built by GigAmp" };
+    try { return (await api("POST", "/me/playlists", body)).id; }
+    catch (e) { if (e.status !== 403 && e.status !== 404 && e.status !== 405) throw e; }
+    return (await api("POST", `/users/${me.id}/playlists`, body)).id;
   }
   async function createPlaylist() {
     if (!(await accessToken())) return login();
