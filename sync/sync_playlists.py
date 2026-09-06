@@ -63,9 +63,13 @@ def find_or_create_playlist(c: Client, name: str, public: bool) -> str:
         if not page.get("next"):
             break
         offset += 50
-    p = c.call("POST", f"/users/{me['id']}/playlists",
-               json={"name": name, "public": public, "description": "Built by GigAmp"})
-    return p["id"]
+    body = {"name": name, "public": public, "description": "Built by GigAmp"}
+    try:                                   # Feb-2026 Dev Mode path
+        return c.call("POST", "/me/playlists", json=body)["id"]
+    except RuntimeError as e:
+        if not any(code in str(e) for code in ("403", "404", "405")):
+            raise
+    return c.call("POST", f"/users/{me['id']}/playlists", json=body)["id"]
 
 
 def replace_items(c: Client, playlist_id: str, uris: list[str]):
