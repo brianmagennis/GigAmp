@@ -1,0 +1,38 @@
+{
+"pernell reichert": {
+"query": "Pernell Reichert",
+"fetched_at": "2026-09-06T06:20:45+00:00",
+"spotify_id": "5GpD8pjBkiK8WIOgDbHm2Z",
+"spotify_name": "Pernell Reichert",
+"url": "https://open.spotify.com/artist/5GpD8pjBkiK8WIOgDbHm2Z",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": null,
+"tracks": [
+{
+"id": "0HBZ3ZmXncAy9mqIgxAlMy",
+"uri": "spotify:track:0HBZ3ZmXncAy9mqIgxAlMy",
+"name": "Another Lonely Day",
+"popularity": null,
+"album": "Country Fried Classics",
+"album_type": "album",
+"release_date": "2019-09-27",
+"duration_ms": 242156,
+"explicit": false
+},
+{
+"id": "1WOgK96e8Kk7hV9n3o7wJw",
+"uri": "spotify:track:1WOgK96e8Kk7hV9n3o7wJw",
+"name": "Sweet Child O' Mine",
+"popularity": null,
+"album": "Country Fried Classics",
+"album_type": "album",
+"release_date": "2019-09-27",
+"duration_ms": 305137,
+"explicit": false
+}
+],
+"rank_source": "search"
+}
+}

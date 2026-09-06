@@ -1,0 +1,5568 @@
+{
+ "city": "vancouver",
+ "city_name": "Vancouver, BC",
+ "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
+ "scraped_at": "2026-09-06T06:20:35+00:00",
+ "horizon_days": 35,
+ "pages_fetched": 6,
+ "events": [
+  {
+   "id": "43055690",
+   "name": "Tame Impala @ Rogers Arena",
+   "start": "2026-09-06T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rogers Arena",
+   "venue_url": "http://www.rogersarena.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43055690-tame-impala-at-rogers-arena",
+   "performers": [
+    {
+     "name": "Tame Impala",
+     "songkick_genres": [
+      "indie_alternative",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/927852-tame-impala?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Dominic Fike",
+     "songkick_genres": [
+      "indie_alternative",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10012034-dominic-fike?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43214577",
+   "name": "Sarah McLachlan @ Freedom Mobile Arch",
+   "start": "2026-09-06T20:30:00",
+   "status": "EventScheduled",
+   "venue": "Freedom Mobile Arch",
+   "venue_url": "https://www.pne.ca/venue/freedom-mobile-arch/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43214577-sarah-mclachlan-at-freedom-mobile-arch",
+   "performers": [
+    {
+     "name": "Sarah McLachlan",
+     "songkick_genres": [
+      "folk_blues",
+      "rock",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/144963-sarah-mclachlan?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43121163",
+   "name": "Altın Gün @ The Pearl",
+   "start": "2026-09-06T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43121163-altin-gun-at-pearl",
+   "performers": [
+    {
+     "name": "Altın Gün",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8959089-altin-gun?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Alex Maas",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/3209431-alex-maas?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43350205",
+   "name": "Ben Nicky @ Harbour Event & Convention Centre",
+   "start": "2026-09-06T22:00:00",
+   "status": "EventScheduled",
+   "venue": "Harbour Event & Convention Centre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43350205-ben-nicky-at-harbour-event-and-convention-centre",
+   "performers": [
+    {
+     "name": "Ben Nicky",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/1403293-ben-nicky?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "433797741181",
+   "name": "Karsten Sollors @ 1181 Davie St",
+   "start": "2026-09-06T16:00:00",
+   "status": "EventScheduled",
+   "venue": "1181 Davie St",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43379774-karsten-sollors-at-1181-davie-st",
+   "performers": [
+    {
+     "name": "Karsten Sollors",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9377554-karsten-sollors?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43083546",
+   "name": "Pernell Reichert @ Krause Berry Farms",
+   "start": "2026-09-06T10:00:00",
+   "status": "EventScheduled",
+   "venue": "Krause Berry Farms",
+   "venue_url": "http://www.krauseberryfarms.com/",
+   "locality": "Langley",
+   "url": "https://www.songkick.com/concerts/43083546-pernell-reichert-at-krause-berry-farms",
+   "performers": [
+    {
+     "name": "Pernell Reichert",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10060378-pernell-reichert?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43355749",
+   "name": "The Della Kit @ Sofar Sounds",
+   "start": "2026-09-06T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Sofar Sounds",
+   "venue_url": "https://www.sofarsounds.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43355749-della-kit-at-sofar-sounds",
+   "performers": [
+    {
+     "name": "The Della Kit",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10161135-della-kit?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43372106",
+   "name": "Paesler @ Sofar Sounds",
+   "start": "2026-09-06T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Sofar Sounds",
+   "venue_url": "https://www.sofarsounds.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43372106-paesler-at-sofar-sounds",
+   "performers": [
+    {
+     "name": "Paesler",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10346834-paesler?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43387895",
+   "name": "THE YAZ BAND @ Andonis Vancouver",
+   "start": "2026-09-06T16:00:00",
+   "status": "EventScheduled",
+   "venue": "Andonis Vancouver",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43387895-yaz-band-at-andonis-vancouver",
+   "performers": [
+    {
+     "name": "THE YAZ BAND",
+     "songkick_genres": [
+      "pop",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10406321-yaz-band?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Vante!",
+     "songkick_genres": [
+      "pop",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10287204-vante?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43214578",
+   "name": "Boy George @ Freedom Mobile Arch",
+   "start": "2026-09-07T20:30:00",
+   "status": "EventScheduled",
+   "venue": "Freedom Mobile Arch",
+   "venue_url": "https://www.pne.ca/venue/freedom-mobile-arch/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43214578-boy-george-at-freedom-mobile-arch",
+   "performers": [
+    {
+     "name": "Boy George",
+     "songkick_genres": [
+      "pop",
+      "rock",
+      "funk_soul"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/372146-boy-george?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Culture Club",
+     "songkick_genres": [
+      "pop",
+      "rock",
+      "funk_soul"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/445327-culture-club?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43121090",
+   "name": "Altın Gün @ The Pearl",
+   "start": "2026-09-07T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43121090-altin-gun-at-pearl",
+   "performers": [
+    {
+     "name": "Altın Gün",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8959089-altin-gun?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Alex Maas",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/3209431-alex-maas?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43102947",
+   "name": "Kamelot @ Vogue Theatre",
+   "start": "2026-09-07T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Vogue Theatre",
+   "venue_url": "http://www.voguetheatre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43102947-kamelot-at-vogue-theatre",
+   "performers": [
+    {
+     "name": "Kamelot",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/367042-kamelot?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Visions of Atlantis",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/175631-visions-of-atlantis?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Frozen Crown",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/9474354-frozen-crown?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43175770",
+   "name": "Boy George And Culture Club @ Freedom Mobile Arch",
+   "start": "2026-09-07",
+   "status": "EventScheduled",
+   "venue": "Freedom Mobile Arch",
+   "venue_url": "https://www.pne.ca/venue/freedom-mobile-arch/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43175770-boy-george-and-culture-club-at-freedom-mobile-arch",
+   "performers": [
+    {
+     "name": "Boy George And Culture Club",
+     "songkick_genres": [
+      "rock",
+      "pop",
+      "funk_soul"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/491651-boy-george-and-culture-club?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43136288",
+   "name": "Artemas @ Malkin Bowl",
+   "start": "2026-09-08T18:00:00",
+   "status": "EventScheduled",
+   "venue": "Malkin Bowl",
+   "venue_url": "http://www.malkinbowl.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43136288-artemas-at-malkin-bowl",
+   "performers": [
+    {
+     "name": "Artemas",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/3644976-artemas?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Henry Morris",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10401540-henry-morris?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43292241",
+   "name": "Brandon Flowers @ Vogue Theatre",
+   "start": "2026-09-08T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Vogue Theatre",
+   "venue_url": "http://www.voguetheatre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43292241-brandon-flowers-at-vogue-theatre",
+   "performers": [
+    {
+     "name": "Brandon Flowers",
+     "songkick_genres": [
+      "indie_alternative",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/795201-brandon-flowers?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43318228",
+   "name": "White Ring @ The WISE Hall",
+   "start": "2026-09-08T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The WISE Hall",
+   "venue_url": "https://www.facebook.com/thewiseclub/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43318228-white-ring-at-wise-hall",
+   "performers": [
+    {
+     "name": "White Ring",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/2940716-white-ring?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43225945",
+   "name": "Paul Anthony @ Rio Theatre",
+   "start": "2026-09-08T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Rio Theatre",
+   "venue_url": "https://riotheatre.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43225945-paul-anthony-at-rio-theatre",
+   "performers": [
+    {
+     "name": "Paul Anthony",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/976133-paul-anthony?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43321635",
+   "name": "James Ehnes @ Chan Centre for the Performing Arts",
+   "start": "2026-09-08T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Chan Centre for the Performing Arts",
+   "venue_url": "http://www.chancentre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43321635-james-ehnes-at-chan-centre-for-the-performing-arts",
+   "performers": [
+    {
+     "name": "James Ehnes",
+     "songkick_genres": [
+      "classical"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/393950-james-ehnes?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43270180",
+   "name": "Ryan Beatty @ Vogue Theatre",
+   "start": "2026-09-09T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Vogue Theatre",
+   "venue_url": "http://www.voguetheatre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43270180-ryan-beatty-at-vogue-theatre",
+   "performers": [
+    {
+     "name": "Ryan Beatty",
+     "songkick_genres": [
+      "r_and_b",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/4291661-ryan-beatty?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43077378",
+   "name": "Haute & Freddy @ Hollywood Theatre",
+   "start": "2026-09-09T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43077378-haute-and-freddy-at-hollywood-theatre",
+   "performers": [
+    {
+     "name": "Haute & Freddy",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10356500-haute-and-freddy?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43332871",
+   "name": "Isaac Slade @ St. James Community Square",
+   "start": "2026-09-09T19:00:00",
+   "status": "EventScheduled",
+   "venue": "St. James Community Square",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43332871-isaac-slade-at-st-james-community-square",
+   "performers": [
+    {
+     "name": "Isaac Slade",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/4980333-isaac-slade?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43283243",
+   "name": "Bear McCreary @ The Rickshaw",
+   "start": "2026-09-10T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The Rickshaw",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43283243-bear-mccreary-at-rickshaw",
+   "performers": [
+    {
+     "name": "Bear McCreary",
+     "songkick_genres": [
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/440644-bear-mccreary?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43322075",
+   "name": "Ayla Nereo @ Red Room",
+   "start": "2026-09-10T18:30:00",
+   "status": "EventScheduled",
+   "venue": "Red Room",
+   "venue_url": "https://redroomvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43322075-ayla-nereo-at-red-room",
+   "performers": [
+    {
+     "name": "Ayla Nereo",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/981942-ayla-nereo?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43254223",
+   "name": "Dana and Alden @ The Pearl",
+   "start": "2026-09-10T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43254223-dana-and-alden-at-pearl",
+   "performers": [
+    {
+     "name": "Dana and Alden",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10333436-dana-and-alden?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43342813",
+   "name": "The Magic Triangle @ Guilt & Co",
+   "start": "2026-09-10",
+   "status": "EventScheduled",
+   "venue": "Guilt & Co",
+   "venue_url": "http://www.guiltandcompany.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43342813-magic-triangle-at-guilt-and-co",
+   "performers": [
+    {
+     "name": "The Magic Triangle",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10311731-magic-triangle?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43372105",
+   "name": "Dani Black @ Sofar Sounds",
+   "start": "2026-09-10T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Sofar Sounds",
+   "venue_url": null,
+   "locality": "North Vancouver",
+   "url": "https://www.songkick.com/concerts/43372105-dani-black-at-sofar-sounds",
+   "performers": [
+    {
+     "name": "Dani Black",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/1888918-dani-black?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43383850",
+   "name": "Joséphine @ Sofar Sounds",
+   "start": "2026-09-10T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Sofar Sounds",
+   "venue_url": null,
+   "locality": "North Vancouver",
+   "url": "https://www.songkick.com/concerts/43383850-josephine-at-sofar-sounds",
+   "performers": [
+    {
+     "name": "Joséphine",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/671480-josephine?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43171513",
+   "name": "The Charlatans @ Commodore Ballroom",
+   "start": "2026-09-11T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43171513-charlatans-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "The Charlatans",
+     "songkick_genres": [
+      "indie_alternative",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/225795-charlatans?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Frankie Rose",
+     "songkick_genres": [
+      "indie_alternative",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/2422296-frankie-rose?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43118597",
+   "name": "Cody Johnson @ Rogers Arena",
+   "start": "2026-09-11T19:25:00",
+   "status": "EventScheduled",
+   "venue": "Rogers Arena",
+   "venue_url": "http://www.rogersarena.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43118597-cody-johnson-at-rogers-arena",
+   "performers": [
+    {
+     "name": "Cody Johnson",
+     "songkick_genres": [
+      "country"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/3452771-cody-johnson?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Terri Clark",
+     "songkick_genres": [
+      "country"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/106069-terri-clark?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "David Lewis",
+     "songkick_genres": [
+      "country"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/86783-david-lewis?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43281582",
+   "name": "Of the Trees @ Malkin Bowl",
+   "start": "2026-09-11T18:00:00",
+   "status": "EventScheduled",
+   "venue": "Malkin Bowl",
+   "venue_url": "http://www.malkinbowl.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43281582-of-the-trees-at-malkin-bowl",
+   "performers": [
+    {
+     "name": "Of the Trees",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/4143351-of-the-trees?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Eprom",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/945613-eprom?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Ferrofluid",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10391352-ferrofluid?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43277320",
+   "name": "DJ Boring @ Village Studios",
+   "start": "2026-09-11T22:00:00",
+   "status": "EventScheduled",
+   "venue": "Village Studios",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43277320-dj-boring-at-village-studios",
+   "performers": [
+    {
+     "name": "DJ Boring",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9092519-dj-boring?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43341394",
+   "name": "Mark Farina @ The Pearl",
+   "start": "2026-09-11T22:30:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43341394-mark-farina-at-pearl",
+   "performers": [
+    {
+     "name": "Mark Farina",
+     "songkick_genres": [
+      "electronic",
+      "jazz"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/527589-mark-farina?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43247340",
+   "name": "Jeff Bernat @ The Pearl",
+   "start": "2026-09-11T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43247340-jeff-bernat-at-pearl",
+   "performers": [
+    {
+     "name": "Jeff Bernat",
+     "songkick_genres": [
+      "funk_soul"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/985886-jeff-bernat?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Elhae",
+     "songkick_genres": [
+      "funk_soul"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/5304798-elhae?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43254209",
+   "name": "Rolling Quartz @ Rio Theatre",
+   "start": "2026-09-11T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rio Theatre",
+   "venue_url": "https://riotheatre.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43254209-rolling-quartz-at-rio-theatre",
+   "performers": [
+    {
+     "name": "Rolling Quartz",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10301710-rolling-quartz?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "432811882026",
+   "name": "Barnside Harvest Festival 2026 @ Paterson Park",
+   "start": "2026-09-11",
+   "status": "EventScheduled",
+   "venue": "Paterson Park",
+   "venue_url": null,
+   "locality": "Ladner",
+   "url": "https://www.songkick.com/festivals/3560913-barnside-harvest/id/43281188-barnside-harvest-festival-2026",
+   "performers": [
+    {
+     "name": "Hotel Mira",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9476859-hotel-mira?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Uncle Strut",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10183001-uncle-strut?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "425454823202",
+   "name": "smooth jazz cruise - week 3 2026 @ smooth jazz cruise - week 3 2026",
+   "start": "2026-09-11",
+   "status": "EventScheduled",
+   "venue": "smooth jazz cruise - week 3 2026",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/festivals/3725208-smooth-jazz-cruise-week-3/id/42545482-smooth-jazz-cruise--week-3-2026",
+   "performers": [
+    {
+     "name": "Mindi Abair",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/542436-mindi-abair?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43123168",
+   "name": "Weezer @ Rogers Arena",
+   "start": "2026-09-12T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rogers Arena",
+   "venue_url": "http://www.rogersarena.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43123168-weezer-at-rogers-arena",
+   "performers": [
+    {
+     "name": "Weezer",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/544909-weezer?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "The Shins",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/497029-shins?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Silversun Pickups",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/393244-silversun-pickups?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43161260",
+   "name": "The Red Jumpsuit Apparatus @ Red Room",
+   "start": "2026-09-12T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Red Room",
+   "venue_url": "https://redroomvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43161260-red-jumpsuit-apparatus-at-red-room",
+   "performers": [
+    {
+     "name": "The Red Jumpsuit Apparatus",
+     "songkick_genres": [
+      "rock",
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/489864-red-jumpsuit-apparatus?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Losers' Club",
+     "songkick_genres": [
+      "rock",
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/9258414-losers-club?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Calling All Captains",
+     "songkick_genres": [
+      "rock",
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/8171978-calling-all-captains?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Morning in May",
+     "songkick_genres": [
+      "rock",
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/3115186-morning-in-may?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43281445",
+   "name": "Role Model @ Freedom Mobile Arch",
+   "start": "2026-09-12T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Freedom Mobile Arch",
+   "venue_url": "https://www.pne.ca/venue/freedom-mobile-arch/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43281445-role-model-at-freedom-mobile-arch",
+   "performers": [
+    {
+     "name": "Role Model",
+     "songkick_genres": [
+      "r_and_b"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/737215-role-model?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Samia",
+     "songkick_genres": [
+      "r_and_b"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/8656804-samia?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43198477",
+   "name": "Squeeze @ Queen Elizabeth Theatre",
+   "start": "2026-09-12T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Queen Elizabeth Theatre",
+   "venue_url": "http://vancouver.ca/parks-recreation-culture/queen-elizabeth-theatre.aspx",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43198477-squeeze-at-queen-elizabeth-theatre",
+   "performers": [
+    {
+     "name": "Squeeze",
+     "songkick_genres": [
+      "rock",
+      "pop",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/267703-squeeze?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Adam Ant",
+     "songkick_genres": [
+      "rock",
+      "pop",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/385410-adam-ant?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Haircut One Hundred",
+     "songkick_genres": [
+      "rock",
+      "pop",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/560363-haircut-one-hundred?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43160695",
+   "name": "Sasha & John Digweed @ Malkin Bowl",
+   "start": "2026-09-12",
+   "status": "EventScheduled",
+   "venue": "Malkin Bowl",
+   "venue_url": "http://www.malkinbowl.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43160695-sasha-and-john-digweed-at-malkin-bowl",
+   "performers": [
+    {
+     "name": "Sasha & John Digweed",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/200652-sasha-and-john-digweed?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Sasha",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/419837-sasha?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "John Digweed",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/12448-john-digweed?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43212222",
+   "name": "Vieux Farka Toure @ The Pearl",
+   "start": "2026-09-12T19:30:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43212222-vieux-farka-toure-at-pearl",
+   "performers": [
+    {
+     "name": "Vieux Farka Toure",
+     "songkick_genres": [
+      "reggae",
+      "funk_soul",
+      "folk_blues"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/398166-vieux-farka-toure?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43237451",
+   "name": "Eli & Fur @ Celebrities",
+   "start": "2026-09-12T22:00:00",
+   "status": "EventScheduled",
+   "venue": "Celebrities",
+   "venue_url": "http://celebritiesnightclub.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43237451-eli-and-fur-at-celebrities",
+   "performers": [
+    {
+     "name": "Eli & Fur",
+     "songkick_genres": [
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/4093381-eli-and-fur?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43345404",
+   "name": "Hieroglyphics @ Commodore Ballroom",
+   "start": "2026-09-12T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43345404-hieroglyphics-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Hieroglyphics",
+     "songkick_genres": [
+      "hip_hop",
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/177641-hieroglyphics?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Hiero Day",
+     "songkick_genres": [
+      "hip_hop",
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/5821944-hiero-day?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43316481",
+   "name": "Jann Arden @ New Westminster",
+   "start": "2026-09-12T12:00:00",
+   "status": "EventScheduled",
+   "venue": "New Westminster",
+   "venue_url": null,
+   "locality": "New Westminster",
+   "url": "https://www.songkick.com/concerts/43316481-jann-arden-at-unknown-venue",
+   "performers": [
+    {
+     "name": "Jann Arden",
+     "songkick_genres": [
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/304002-jann-arden?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43329295",
+   "name": "Jeru the Damaja @ The Rec Room Granville",
+   "start": "2026-09-12T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Rec Room Granville",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43329295-jeru-the-damaja-at-rec-room-granville",
+   "performers": [
+    {
+     "name": "Jeru the Damaja",
+     "songkick_genres": [
+      "hip_hop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/23888-jeru-the-damaja?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43314838",
+   "name": "Stick Men @ Rickshaw Theatre",
+   "start": "2026-09-13T18:30:00",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43314838-stick-men-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "Stick Men",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/138881-stick-men?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43003973",
+   "name": "Seedhe Maut @ Commodore Ballroom",
+   "start": "2026-09-14T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43003973-seedhe-maut-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Seedhe Maut",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10301382-seedhe-maut?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43246692",
+   "name": "Samuel J @ St. James Community Square",
+   "start": "2026-09-14T14:00:00",
+   "status": "EventScheduled",
+   "venue": "St. James Community Square",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43246692-samuel-j-at-st-james-community-square",
+   "performers": [
+    {
+     "name": "Samuel J",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/905647-samuel-j?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43184530",
+   "name": "Foster the People @ Freedom Mobile Arch",
+   "start": "2026-09-15T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Freedom Mobile Arch",
+   "venue_url": "https://www.pne.ca/venue/freedom-mobile-arch/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43184530-foster-the-people-at-freedom-mobile-arch",
+   "performers": [
+    {
+     "name": "Foster the People",
+     "songkick_genres": [
+      "indie_alternative",
+      "pop",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/3120231-foster-the-people?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Goth Babe",
+     "songkick_genres": [
+      "indie_alternative",
+      "pop",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/8680594-goth-babe?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43209989",
+   "name": "José González @ Orpheum Theatre",
+   "start": "2026-09-15T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Orpheum Theatre",
+   "venue_url": "https://vancouvercivictheatres.com/venues/orpheum/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43209989-jose-gonzalez-at-orpheum-theatre",
+   "performers": [
+    {
+     "name": "José González",
+     "songkick_genres": [
+      "indie_alternative",
+      "folk_blues"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/542593-jose-gonzalez?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43107902",
+   "name": "Bryan Adams @ Rogers Forum",
+   "start": "2026-09-15T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Rogers Forum",
+   "venue_url": null,
+   "locality": "Abbotsford",
+   "url": "https://www.songkick.com/concerts/43107902-bryan-adams-at-rogers-forum",
+   "performers": [
+    {
+     "name": "Bryan Adams",
+     "songkick_genres": [
+      "rock",
+      "folk_blues",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/54386-bryan-adams?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43155151",
+   "name": "Lyle Lovett @ Vogue Theatre",
+   "start": "2026-09-15T03:30:00",
+   "status": "EventScheduled",
+   "venue": "Vogue Theatre",
+   "venue_url": "http://www.voguetheatre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43155151-lyle-lovett-at-vogue-theatre",
+   "performers": [
+    {
+     "name": "Lyle Lovett",
+     "songkick_genres": [
+      "country",
+      "folk_blues",
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/92422-lyle-lovett?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "The Hello Darlins",
+     "songkick_genres": [
+      "country",
+      "folk_blues",
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10179397-hello-darlins?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43285064",
+   "name": "Shawn James @ Hollywood Theatre",
+   "start": "2026-09-15",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43285064-shawn-james-at-hollywood-theatre",
+   "performers": [
+    {
+     "name": "Shawn James",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/5204888-shawn-james?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Gravedancer",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/7036829-gravedancer?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43353664",
+   "name": "Dark Thoughts @ The Cobalt Cabaret",
+   "start": "2026-09-15T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Cobalt Cabaret",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43353664-dark-thoughts-at-cobalt-cabaret",
+   "performers": [
+    {
+     "name": "Dark Thoughts",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8108628-dark-thoughts?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Schedule 1",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10293595-schedule-1?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43251638",
+   "name": "Chrissy Chlapecka @ Fox Cabaret",
+   "start": "2026-09-15T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Fox Cabaret",
+   "venue_url": "http://www.foxcabaret.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43251638-chrissy-chlapecka-at-fox-cabaret",
+   "performers": [
+    {
+     "name": "Chrissy Chlapecka",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10334544-chrissy-chlapecka?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43362135",
+   "name": "Samuel J @ House Show",
+   "start": "2026-09-15T18:00:00",
+   "status": "EventScheduled",
+   "venue": "House Show",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43362135-samuel-j-at-house-show",
+   "performers": [
+    {
+     "name": "Samuel J",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/905647-samuel-j?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43169939",
+   "name": "Beck @ Queen Elizabeth Theatre",
+   "start": "2026-09-16T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Queen Elizabeth Theatre",
+   "venue_url": "http://vancouver.ca/parks-recreation-culture/queen-elizabeth-theatre.aspx",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43169939-beck-at-queen-elizabeth-theatre",
+   "performers": [
+    {
+     "name": "Beck",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/430505-beck?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Ioanna Gika",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/9688414-ioanna-gika?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43201571",
+   "name": "Ninajirachi @ Commodore Ballroom",
+   "start": "2026-09-16T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43201571-ninajirachi-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Ninajirachi",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9440104-ninajirachi?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "mgna crrrta",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10230262-mgna-crrrta?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43289237",
+   "name": "anaiis @ Chan Centre for the Performing Arts",
+   "start": "2026-09-16",
+   "status": "EventScheduled",
+   "venue": "Chan Centre for the Performing Arts",
+   "venue_url": "http://www.chancentre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43289237-anaiis-at-chan-centre-for-the-performing-arts",
+   "performers": [
+    {
+     "name": "anaiis",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10210032-anaiis?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43350973",
+   "name": "Gordi @ The Cobalt",
+   "start": "2026-09-16T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The Cobalt",
+   "venue_url": "http://thecobalt.ca",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43350973-gordi-at-cobalt",
+   "performers": [
+    {
+     "name": "Gordi",
+     "songkick_genres": [
+      "electronic",
+      "folk_blues"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/190221-gordi?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43341435",
+   "name": "Dogstar @ Vogue Theatre",
+   "start": "2026-09-16T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Vogue Theatre",
+   "venue_url": "http://www.voguetheatre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43341435-dogstar-at-vogue-theatre",
+   "performers": [
+    {
+     "name": "Dogstar",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/165884-dogstar?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "The Backfires",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10154758-backfires?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43224997",
+   "name": "Dent May @ Fox Cabaret",
+   "start": "2026-09-16T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Fox Cabaret",
+   "venue_url": "http://www.foxcabaret.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43224997-dent-may-at-fox-cabaret",
+   "performers": [
+    {
+     "name": "Dent May",
+     "songkick_genres": [
+      "indie_alternative",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/2366682-dent-may?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43292033",
+   "name": "Mama's Broke @ The Bitmore",
+   "start": "2026-09-16",
+   "status": "EventScheduled",
+   "venue": "The Bitmore",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43292033-mamas-broke-at-bitmore",
+   "performers": [
+    {
+     "name": "Mama's Broke",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8265523-mamas-broke?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43347552",
+   "name": "Gracie and Rachel @ The Cobalt Cabaret",
+   "start": "2026-09-16T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The Cobalt Cabaret",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43347552-gracie-and-rachel-at-cobalt-cabaret",
+   "performers": [
+    {
+     "name": "Gracie and Rachel",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/6264284-gracie-and-rachel?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43397253",
+   "name": "Elliott Skinner @ Chan Centre for the Performing Arts",
+   "start": "2026-09-16",
+   "status": "EventScheduled",
+   "venue": "Chan Centre for the Performing Arts",
+   "venue_url": "http://www.chancentre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43397253-elliott-skinner-at-chan-centre-for-the-performing-arts",
+   "performers": [
+    {
+     "name": "Elliott Skinner",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/7872834-elliott-skinner?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43101643",
+   "name": "Brandi Carlile @ Rogers Arena",
+   "start": "2026-09-17T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rogers Arena",
+   "venue_url": "http://www.rogersarena.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43101643-brandi-carlile-at-rogers-arena",
+   "performers": [
+    {
+     "name": "Brandi Carlile",
+     "songkick_genres": [
+      "folk_blues",
+      "country",
+      "rock",
+      "indie_alternative",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/355137-brandi-carlile?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "CMAT",
+     "songkick_genres": [
+      "folk_blues",
+      "country",
+      "rock",
+      "indie_alternative",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10050558-cmat?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43196159",
+   "name": "Ninajirachi @ Commodore Ballroom",
+   "start": "2026-09-17T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43196159-ninajirachi-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Ninajirachi",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9440104-ninajirachi?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "mgna crrrta",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10230262-mgna-crrrta?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43248254",
+   "name": "Red Leather @ Hollywood Theatre",
+   "start": "2026-09-17T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43248254-red-leather-at-hollywood-theatre",
+   "performers": [
+    {
+     "name": "Red Leather",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/5824009-red-leather?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43274830",
+   "name": "Johnny Manchild and the Poor Bastards @ Cobalt Cabarat",
+   "start": "2026-09-17",
+   "status": "EventScheduled",
+   "venue": "Cobalt Cabarat",
+   "venue_url": "https://www.showpass.com/o/verboden-arts-society/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43274830-johnny-manchild-and-the-poor-bastards-at-cobalt-cabarat",
+   "performers": [
+    {
+     "name": "Johnny Manchild and the Poor Bastards",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8984404-johnny-manchild-and-the-poor-bastards?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Friend of a Friend",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9852554-friend-of-a-friend?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Karma and the Killjoys",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10221706-karma-and-the-killjoys?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43288931",
+   "name": "Stella Standingbear @ The Pearl",
+   "start": "2026-09-17T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43288931-stella-standingbear-at-pearl",
+   "performers": [
+    {
+     "name": "Stella Standingbear",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10405168-stella-standingbear?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Natasha Fisher",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10145208-natasha-fisher?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43391799",
+   "name": "G̱a̱mksimoon @ Museum of Anthropology",
+   "start": "2026-09-17T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Museum of Anthropology",
+   "venue_url": "https://moa.ubc.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43391799-gamksimoon-at-museum-of-anthropology",
+   "performers": [
+    {
+     "name": "G̱a̱mksimoon",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10413673-gamksimoon?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43215550",
+   "name": "Bilal @ The Pearl",
+   "start": "2026-09-18T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43215550-bilal-at-pearl",
+   "performers": [
+    {
+     "name": "Bilal",
+     "songkick_genres": [
+      "funk_soul",
+      "r_and_b",
+      "jazz"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/563564-bilal?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Yaya Bey",
+     "songkick_genres": [
+      "funk_soul",
+      "r_and_b",
+      "jazz"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/9331759-yaya-bey?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43099116",
+   "name": "Melanie C @ Vogue Theatre",
+   "start": "2026-09-18T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Vogue Theatre",
+   "venue_url": "http://www.voguetheatre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43099116-melanie-c-at-vogue-theatre",
+   "performers": [
+    {
+     "name": "Melanie C",
+     "songkick_genres": [
+      "pop",
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/395041-melanie-c?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43251592",
+   "name": "jigitz @ Commodore Ballroom",
+   "start": "2026-09-18T22:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43251592-jigitz-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "jigitz",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10322338-jigitz?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43321133",
+   "name": "Sea of Lettuce @ The WISE Hall",
+   "start": "2026-09-18T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The WISE Hall",
+   "venue_url": "https://www.facebook.com/thewiseclub/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43321133-sea-of-lettuce-at-wise-hall",
+   "performers": [
+    {
+     "name": "Sea of Lettuce",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10277338-sea-of-lettuce?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Blue Rivera",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10011684-blue-rivera?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "The Post",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/394047-post?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43384938",
+   "name": "Rohaan @ Village Studios",
+   "start": "2026-09-18",
+   "status": "EventScheduled",
+   "venue": "Village Studios",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43384938-rohaan-at-village-studios",
+   "performers": [
+    {
+     "name": "Rohaan",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9296959-rohaan?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Denham Audio",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/7669249-denham-audio?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43383947",
+   "name": "Doom Gong @ The Cobalt Cabaret",
+   "start": "2026-09-18T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The Cobalt Cabaret",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43383947-doom-gong-at-cobalt-cabaret",
+   "performers": [
+    {
+     "name": "Doom Gong",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10292888-doom-gong?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43301976",
+   "name": "Cousin Harley @ Rickshaw Theatre",
+   "start": "2026-09-18T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43301976-cousin-harley-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "Cousin Harley",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/36167-cousin-harley?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Sinéad X Sanders",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9473214-sinead-x-sanders?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43121155",
+   "name": "Abbamania @ Casino Vancouver",
+   "start": "2026-09-18T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Casino Vancouver",
+   "venue_url": null,
+   "locality": "Coquitlam",
+   "url": "https://www.songkick.com/concerts/43121155-abbamania-at-casino-vancouver",
+   "performers": [
+    {
+     "name": "Abbamania",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/215653-abbamania?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "433859961055",
+   "name": "Sona @ 1055 Granville St",
+   "start": "2026-09-18T20:00:00",
+   "status": "EventScheduled",
+   "venue": "1055 Granville St",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43385996-sona-at-1055-granville-st",
+   "performers": [
+    {
+     "name": "Sona",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/43316-sona?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "432945478",
+   "name": "Lane 8 @ Deer Lake Park",
+   "start": "2026-09-19T17:00:00",
+   "status": "EventScheduled",
+   "venue": "Deer Lake Park",
+   "venue_url": null,
+   "locality": "Burnaby",
+   "url": "https://www.songkick.com/concerts/43294547-lane-8-at-deer-lake-park",
+   "performers": [
+    {
+     "name": "Lane 8",
+     "songkick_genres": [
+      "electronic",
+      "pop",
+      "funk_soul"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/6321339-lane-8?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Elderbrook",
+     "songkick_genres": [
+      "electronic",
+      "pop",
+      "funk_soul"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/8456948-elderbrook?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "nimino",
+     "songkick_genres": [
+      "electronic",
+      "pop",
+      "funk_soul"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10250539-nimino?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Tobiahs",
+     "songkick_genres": [
+      "electronic",
+      "pop",
+      "funk_soul"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/9748914-tobiahs?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43091389",
+   "name": "Bahamas @ Malkin Bowl",
+   "start": "2026-09-19T18:00:00",
+   "status": "EventScheduled",
+   "venue": "Malkin Bowl",
+   "venue_url": "http://www.malkinbowl.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43091389-bahamas-at-malkin-bowl",
+   "performers": [
+    {
+     "name": "Bahamas",
+     "songkick_genres": [
+      "indie_alternative",
+      "country",
+      "folk_blues"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/297228-bahamas?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43183575",
+   "name": "Elder Island @ The Pearl",
+   "start": "2026-09-19T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43183575-elder-island-at-pearl",
+   "performers": [
+    {
+     "name": "Elder Island",
+     "songkick_genres": [
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/7930018-elder-island?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43194156",
+   "name": "Johnny Blue Skies @ Pacific Coliseum",
+   "start": "2026-09-19T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Pacific Coliseum",
+   "venue_url": "http://www.pne.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43194156-johnny-blue-skies-at-pacific-coliseum",
+   "performers": [
+    {
+     "name": "Johnny Blue Skies",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10340568-johnny-blue-skies?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43263557",
+   "name": "The Greyboy Allstars @ Rickshaw Theatre",
+   "start": "2026-09-19T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43263557-greyboy-allstars-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "The Greyboy Allstars",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/316903-greyboy-allstars?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43240199",
+   "name": "Ali @ The American",
+   "start": "2026-09-19T19:30:00",
+   "status": "EventScheduled",
+   "venue": "The American",
+   "venue_url": "https://www.theamerican.bar",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43240199-ali-at-american",
+   "performers": [
+    {
+     "name": "Ali",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/55171-ali?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "42788517",
+   "name": "When Chai Met Toast @ Biltmore Cabaret",
+   "start": "2026-09-19T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Biltmore Cabaret",
+   "venue_url": "http://www.biltmorecabaret.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/42788517-when-chai-met-toast-at-biltmore-cabaret",
+   "performers": [
+    {
+     "name": "When Chai Met Toast",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9324429-when-chai-met-toast?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43270094",
+   "name": "Twin Diplomacy @ Celebrities",
+   "start": "2026-09-19T22:00:00",
+   "status": "EventScheduled",
+   "venue": "Celebrities",
+   "venue_url": "http://celebritiesnightclub.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43270094-twin-diplomacy-at-celebrities",
+   "performers": [
+    {
+     "name": "Twin Diplomacy",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10366310-twin-diplomacy?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43348537",
+   "name": "MoBlack @ Fortune Sound Club",
+   "start": "2026-09-19T22:00:00",
+   "status": "EventScheduled",
+   "venue": "Fortune Sound Club",
+   "venue_url": "http://www.fortunesoundclub.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43348537-moblack-at-fortune-sound-club",
+   "performers": [
+    {
+     "name": "MoBlack",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10085008-moblack?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43240216",
+   "name": "Julian Fijma @ Village Studios",
+   "start": "2026-09-19T22:00:00",
+   "status": "EventScheduled",
+   "venue": "Village Studios",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43240216-julian-fijma-at-village-studios",
+   "performers": [
+    {
+     "name": "Julian Fijma",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10402224-julian-fijma?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "42853092",
+   "name": "Foo Fighters @ BC Place Stadium",
+   "start": "2026-09-20T17:30:00",
+   "status": "EventScheduled",
+   "venue": "BC Place Stadium",
+   "venue_url": "http://www.bcplacestadium.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/42853092-foo-fighters-at-bc-place-stadium",
+   "performers": [
+    {
+     "name": "Foo Fighters",
+     "songkick_genres": [
+      "rock",
+      "metal",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/29315-foo-fighters?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Queens of the Stone Age",
+     "songkick_genres": [
+      "rock",
+      "metal",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/479466-queens-of-the-stone-age?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Gouge Away",
+     "songkick_genres": [
+      "rock",
+      "metal",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/6590694-gouge-away?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43181161",
+   "name": "Bring Me The Horizon @ Rogers Arena",
+   "start": "2026-09-20T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rogers Arena",
+   "venue_url": "http://www.rogersarena.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43181161-bring-me-the-horizon-at-rogers-arena",
+   "performers": [
+    {
+     "name": "Bring Me The Horizon",
+     "songkick_genres": [
+      "metal",
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/347077-bring-me-the-horizon?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Motionless In White",
+     "songkick_genres": [
+      "metal",
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/2053409-motionless-in-white?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "The Plot In You",
+     "songkick_genres": [
+      "metal",
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/3666316-plot-in-you?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43317782",
+   "name": "Basia Bulat @ Shadbolt Centre for the Arts",
+   "start": "2026-09-20",
+   "status": "EventScheduled",
+   "venue": "Shadbolt Centre for the Arts",
+   "venue_url": "https://tickets.shadboltcentre.com",
+   "locality": "Burnaby",
+   "url": "https://www.songkick.com/concerts/43317782-basia-bulat-at-shadbolt-centre-for-the-arts",
+   "performers": [
+    {
+     "name": "Basia Bulat",
+     "songkick_genres": [
+      "folk_blues"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/70896-basia-bulat?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43254190",
+   "name": "The Spits @ The Pearl",
+   "start": "2026-09-20T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43254190-spits-at-pearl",
+   "performers": [
+    {
+     "name": "The Spits",
+     "songkick_genres": [
+      "comedy"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/125164-spits?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43123812",
+   "name": "Unsane @ Rickshaw Theatre",
+   "start": "2026-09-20T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43123812-unsane-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "Unsane",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/47002-unsane?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "The C*nts",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/5578923-cnts?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Disruptions",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10291844-disruptions?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43189027",
+   "name": "Pernell Reichert @ The Bistro at Beach Grove Golf Club",
+   "start": "2026-09-20T18:00:00",
+   "status": "EventScheduled",
+   "venue": "The Bistro at Beach Grove Golf Club",
+   "venue_url": "https://www.beachgrovegolf.com/",
+   "locality": "Delta",
+   "url": "https://www.songkick.com/concerts/43189027-pernell-reichert-at-bistro-at-beach-grove-golf-club",
+   "performers": [
+    {
+     "name": "Pernell Reichert",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10060378-pernell-reichert?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43329015",
+   "name": "Sonu Nigam @ Pacific Coliseum",
+   "start": "2026-09-20T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Pacific Coliseum",
+   "venue_url": "http://www.pne.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43329015-sonu-nigam-at-pacific-coliseum",
+   "performers": [
+    {
+     "name": "Sonu Nigam",
+     "songkick_genres": [
+      "classical",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/134274-sonu-nigam?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43346844",
+   "name": "Noah Derksen @ Guilt & Co",
+   "start": "2026-09-20",
+   "status": "EventScheduled",
+   "venue": "Guilt & Co",
+   "venue_url": "http://www.guiltandcompany.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43346844-noah-derksen-at-guilt-and-co",
+   "performers": [
+    {
+     "name": "Noah Derksen",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8698238-noah-derksen?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "433858021181",
+   "name": "Al Tuck @ 1181 E 24th Ave",
+   "start": "2026-09-20T20:00:00",
+   "status": "EventScheduled",
+   "venue": "1181 E 24th Ave",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43385802-al-tuck-at-1181-e-24th-ave",
+   "performers": [
+    {
+     "name": "Al Tuck",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/288303-al-tuck?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "432820052026",
+   "name": "Sleep: North America 2026 @ Commodore Ballroom",
+   "start": "2026-09-20T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/festivals/3792253-sleep-north-america/id/43282005-sleep-north-america-2026",
+   "performers": [
+    {
+     "name": "Sleep",
+     "songkick_genres": [
+      "metal",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/512162-sleep?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43376582",
+   "name": "Elder @ Rickshaw Theatre",
+   "start": "2026-09-21",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43376582-elder-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "Elder",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/244287-elder?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "blackwater holylight",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9131644-blackwater-holylight?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43294517",
+   "name": "Old Mervs @ Hollywood Theatre",
+   "start": "2026-09-21T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43294517-old-mervs-at-hollywood-theatre",
+   "performers": [
+    {
+     "name": "Old Mervs",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10166580-old-mervs?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43085576",
+   "name": "Arlo Parks @ Orpheum Theatre",
+   "start": "2026-09-22T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Orpheum Theatre",
+   "venue_url": "https://vancouvercivictheatres.com/venues/orpheum/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43085576-arlo-parks-at-orpheum-theatre",
+   "performers": [
+    {
+     "name": "Arlo Parks",
+     "songkick_genres": [
+      "funk_soul",
+      "folk_blues"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/9761949-arlo-parks?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Baird",
+     "songkick_genres": [
+      "funk_soul",
+      "folk_blues"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10241816-baird?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43381301",
+   "name": "Cortex @ The Chan Centre",
+   "start": "2026-09-22T19:30:00",
+   "status": "EventScheduled",
+   "venue": "The Chan Centre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43381301-cortex-at-chan-centre",
+   "performers": [
+    {
+     "name": "Cortex",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/212958-cortex?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Adrian Younge",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/2076156-adrian-younge?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "J-Rocc (DJ Set)",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9658994-jrocc-dj-set?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43257851",
+   "name": "Revocation @ Rickshaw Theatre",
+   "start": "2026-09-22T18:00:00",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43257851-revocation-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "Revocation",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/1895553-revocation?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Defeated Sanity",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/313731-defeated-sanity?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Fuming Mouth",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/6979189-fuming-mouth?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Weeping",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10197537-weeping?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43209959",
+   "name": "Sweeping Promises @ Fox Cabaret",
+   "start": "2026-09-22T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Fox Cabaret",
+   "venue_url": "http://www.foxcabaret.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43209959-sweeping-promises-at-fox-cabaret",
+   "performers": [
+    {
+     "name": "Sweeping Promises",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10119943-sweeping-promises?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43350135",
+   "name": "Devin Gray @ Zameen Art House",
+   "start": "2026-09-22T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Zameen Art House",
+   "venue_url": "https://zameenarthouse.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43350135-devin-gray-at-zameen-art-house",
+   "performers": [
+    {
+     "name": "Devin Gray",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/2718036-devin-gray?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43244820",
+   "name": "jpegmafia @ Vogue Theatre",
+   "start": "2026-09-23",
+   "status": "EventScheduled",
+   "venue": "Vogue Theatre",
+   "venue_url": "http://www.voguetheatre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43244820-jpegmafia-at-vogue-theatre",
+   "performers": [
+    {
+     "name": "jpegmafia",
+     "songkick_genres": [
+      "hip_hop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/9054334-jpegmafia?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Matt Proxy",
+     "songkick_genres": [
+      "hip_hop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10404191-matt-proxy?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "redveil",
+     "songkick_genres": [
+      "hip_hop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10071935-redveil?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43367264",
+   "name": "Quicksand @ The Pearl",
+   "start": "2026-09-23T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43367264-quicksand-at-pearl",
+   "performers": [
+    {
+     "name": "Quicksand",
+     "songkick_genres": [
+      "comedy",
+      "rock",
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/375197-quicksand?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "F",
+     "songkick_genres": [
+      "comedy",
+      "rock",
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/177481-f?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Fucked Up",
+     "songkick_genres": [
+      "comedy",
+      "rock",
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/4179-fucked-up?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43251619",
+   "name": "Mind Enterprises @ Commodore Ballroom",
+   "start": "2026-09-23T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43251619-mind-enterprises-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Mind Enterprises",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/6423349-mind-enterprises?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43248264",
+   "name": "Lauren Sanderson @ Biltmore Cabaret",
+   "start": "2026-09-23T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Biltmore Cabaret",
+   "venue_url": "http://www.biltmorecabaret.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43248264-lauren-sanderson-at-biltmore-cabaret",
+   "performers": [
+    {
+     "name": "Lauren Sanderson",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8648744-lauren-sanderson?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43393897",
+   "name": "Danielle Ryan @ Fox Cabaret",
+   "start": "2026-09-23T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Fox Cabaret",
+   "venue_url": "http://www.foxcabaret.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43393897-danielle-ryan-at-fox-cabaret",
+   "performers": [
+    {
+     "name": "Danielle Ryan",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10235494-danielle-ryan?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43094132",
+   "name": "Big Thief @ Malkin Bowl",
+   "start": "2026-09-24T18:00:00",
+   "status": "EventScheduled",
+   "venue": "Malkin Bowl",
+   "venue_url": "http://www.malkinbowl.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43094132-big-thief-at-malkin-bowl",
+   "performers": [
+    {
+     "name": "Big Thief",
+     "songkick_genres": [
+      "indie_alternative",
+      "folk_blues",
+      "electronic",
+      "rock",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/8434308-big-thief?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Porches",
+     "songkick_genres": [
+      "indie_alternative",
+      "folk_blues",
+      "electronic",
+      "rock",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/593368-porches?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43254138",
+   "name": "Hermanos Gutierrez @ Queen Elizabeth Theatre",
+   "start": "2026-09-24T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Queen Elizabeth Theatre",
+   "venue_url": "http://vancouver.ca/parks-recreation-culture/queen-elizabeth-theatre.aspx",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43254138-hermanos-gutierrez-at-queen-elizabeth-theatre",
+   "performers": [
+    {
+     "name": "Hermanos Gutierrez",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9880009-hermanos-gutierrez?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Y La Bamba",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/1157624-y-la-bamba?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43222286",
+   "name": "Tokyo Tea Room @ Hollywood Theatre",
+   "start": "2026-09-24T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43222286-tokyo-tea-room-at-hollywood-theatre",
+   "performers": [
+    {
+     "name": "Tokyo Tea Room",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8680959-tokyo-tea-room?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43225526",
+   "name": "LAUNDRY DAY @ Fortune Sound Club",
+   "start": "2026-09-24T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Fortune Sound Club",
+   "venue_url": "http://www.fortunesoundclub.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43225526-laundry-day-at-fortune-sound-club",
+   "performers": [
+    {
+     "name": "LAUNDRY DAY",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/617886-laundry-day?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43278970",
+   "name": "Primitive Warfare @ Rickshaw Theatre",
+   "start": "2026-09-24T18:00:00",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43278970-primitive-warfare-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "Primitive Warfare",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10341674-primitive-warfare?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43382887",
+   "name": "The Harpoonist @ Brackendale Art Gallery",
+   "start": "2026-09-24",
+   "status": "EventScheduled",
+   "venue": "Brackendale Art Gallery",
+   "venue_url": "http://www.brackendaleartgallery.com/",
+   "locality": "Brackendale",
+   "url": "https://www.songkick.com/concerts/43382887-harpoonist-at-brackendale-art-gallery",
+   "performers": [
+    {
+     "name": "The Harpoonist",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10329697-harpoonist?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43217584",
+   "name": "Chance the Rapper @ Freedom Mobile Arch",
+   "start": "2026-09-25T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Freedom Mobile Arch",
+   "venue_url": "https://www.pne.ca/venue/freedom-mobile-arch/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43217584-chance-the-rapper-at-freedom-mobile-arch",
+   "performers": [
+    {
+     "name": "Chance the Rapper",
+     "songkick_genres": [
+      "hip_hop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/5004833-chance-the-rapper?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43009265",
+   "name": "The Growlers @ The Pearl",
+   "start": "2026-09-25T21:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43009265-growlers-at-pearl",
+   "performers": [
+    {
+     "name": "The Growlers",
+     "songkick_genres": [
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/577120-growlers?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "42988676",
+   "name": "Aldous Harding @ Hollywood Theatre",
+   "start": "2026-09-25T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/42988676-aldous-harding-at-hollywood-theatre",
+   "performers": [
+    {
+     "name": "Aldous Harding",
+     "songkick_genres": [
+      "folk_blues",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/5530488-aldous-harding?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Sam Burton",
+     "songkick_genres": [
+      "folk_blues",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/4486368-sam-burton?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43308685",
+   "name": "Chanel Beads @ Fortune Sound Club",
+   "start": "2026-09-25T18:30:00",
+   "status": "EventScheduled",
+   "venue": "Fortune Sound Club",
+   "venue_url": "http://www.fortunesoundclub.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43308685-chanel-beads-at-fortune-sound-club",
+   "performers": [
+    {
+     "name": "Chanel Beads",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9685174-chanel-beads?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43223089",
+   "name": "for KING + COUNTRY @ Queen Elizabeth Theatre",
+   "start": "2026-09-25T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Queen Elizabeth Theatre",
+   "venue_url": "http://vancouver.ca/parks-recreation-culture/queen-elizabeth-theatre.aspx",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43223089-for-king-country-at-queen-elizabeth-theatre",
+   "performers": [
+    {
+     "name": "for KING + COUNTRY",
+     "songkick_genres": [
+      "indie_alternative",
+      "funk_soul"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10235064-for-king-country?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43055237",
+   "name": "Solya @ St. James Hall",
+   "start": "2026-09-25T19:30:00",
+   "status": "EventScheduled",
+   "venue": "St. James Hall",
+   "venue_url": "http://www.sjcommunitysquare.org",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43055237-solya-at-st-james-hall",
+   "performers": [
+    {
+     "name": "Solya",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10392706-solya?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43242523",
+   "name": "Mechatok @ Fortune Sound Club",
+   "start": "2026-09-25T18:30:00",
+   "status": "EventScheduled",
+   "venue": "Fortune Sound Club",
+   "venue_url": "http://www.fortunesoundclub.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43242523-mechatok-at-fortune-sound-club",
+   "performers": [
+    {
+     "name": "Mechatok",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8622014-mechatok?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Horse Vision",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10401546-horse-vision?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43285832",
+   "name": "Dwayne Gretzky @ Commodore Ballroom",
+   "start": "2026-09-25T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43285832-dwayne-gretzky-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Dwayne Gretzky",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/4076456-dwayne-gretzky?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43350596",
+   "name": "Baby J @ Fortune Sound Club",
+   "start": "2026-09-25T22:00:00",
+   "status": "EventScheduled",
+   "venue": "Fortune Sound Club",
+   "venue_url": "http://www.fortunesoundclub.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43350596-baby-j-at-fortune-sound-club",
+   "performers": [
+    {
+     "name": "Baby J",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/149558-baby-j?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43261993",
+   "name": "Dean Turnley @ Village Studios",
+   "start": "2026-09-25T22:00:00",
+   "status": "EventScheduled",
+   "venue": "Village Studios",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43261993-dean-turnley-at-village-studios",
+   "performers": [
+    {
+     "name": "Dean Turnley",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10245825-dean-turnley?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43009266",
+   "name": "The Growlers @ The Pearl",
+   "start": "2026-09-26T19:30:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43009266-growlers-at-pearl",
+   "performers": [
+    {
+     "name": "The Growlers",
+     "songkick_genres": [
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/577120-growlers?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43083441",
+   "name": "Zeds Dead @ Freedom Mobile Arch",
+   "start": "2026-09-26T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Freedom Mobile Arch",
+   "venue_url": "https://www.pne.ca/venue/freedom-mobile-arch/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43083441-zeds-dead-at-freedom-mobile-arch",
+   "performers": [
+    {
+     "name": "Zeds Dead",
+     "songkick_genres": [
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/1725975-zeds-dead?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Deathpact",
+     "songkick_genres": [
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/9954159-deathpact?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43203318",
+   "name": "Madeon @ Commodore Ballroom",
+   "start": "2026-09-26T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43203318-madeon-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Madeon",
+     "songkick_genres": [
+      "electronic",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/4660573-madeon?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Contact Sports",
+     "songkick_genres": [
+      "electronic",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/8541909-contact-sports?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43237378",
+   "name": "dublon @ Village Studios",
+   "start": "2026-09-26T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Village Studios",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43237378-dublon-at-village-studios",
+   "performers": [
+    {
+     "name": "dublon",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10349544-dublon?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43368616",
+   "name": "Madeon @ Village Studios",
+   "start": "2026-09-26T23:59:00",
+   "status": "EventScheduled",
+   "venue": "Village Studios",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43368616-madeon-at-village-studios",
+   "performers": [
+    {
+     "name": "Madeon",
+     "songkick_genres": [
+      "electronic",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/4660573-madeon?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43134733",
+   "name": "Friko @ Fox Cabaret",
+   "start": "2026-09-26T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Fox Cabaret",
+   "venue_url": "http://www.foxcabaret.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43134733-friko-at-fox-cabaret",
+   "performers": [
+    {
+     "name": "Friko",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10178687-friko?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43276662",
+   "name": "Ceremony @ The American",
+   "start": "2026-09-26T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The American",
+   "venue_url": "https://www.theamerican.bar",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43276662-ceremony-at-american",
+   "performers": [
+    {
+     "name": "Ceremony",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/445870-ceremony?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Dry Socket",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/649218-dry-socket?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43278770",
+   "name": "Ceremony @ The American",
+   "start": "2026-09-26T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The American",
+   "venue_url": "https://www.theamerican.bar",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43278770-ceremony-at-american",
+   "performers": [
+    {
+     "name": "Ceremony",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/445870-ceremony?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Dry Socket",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/649218-dry-socket?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Verity Den",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10300740-verity-den?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43331077",
+   "name": "NOTD @ Celebrities",
+   "start": "2026-09-26T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Celebrities",
+   "venue_url": "http://celebritiesnightclub.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43331077-notd-at-celebrities",
+   "performers": [
+    {
+     "name": "NOTD",
+     "songkick_genres": [
+      "electronic",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/9893659-notd?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "4328687552",
+   "name": "The B-52's @ Rogers Arena",
+   "start": "2026-09-27T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rogers Arena",
+   "venue_url": "http://www.rogersarena.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43286875-b52s-at-rogers-arena",
+   "performers": [
+    {
+     "name": "The B-52's",
+     "songkick_genres": [
+      "rock",
+      "pop",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/360904-b52s?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Devo",
+     "songkick_genres": [
+      "rock",
+      "pop",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/313663-devo?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "DJ Cummerbund",
+     "songkick_genres": [
+      "rock",
+      "pop",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10242588-dj-cummerbund?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43207450",
+   "name": "Perfume Genius @ Hollywood Theatre",
+   "start": "2026-09-27",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43207450-perfume-genius-at-hollywood-theatre",
+   "performers": [
+    {
+     "name": "Perfume Genius",
+     "songkick_genres": [
+      "indie_alternative",
+      "folk_blues",
+      "pop",
+      "electronic",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/1480899-perfume-genius?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Dan English",
+     "songkick_genres": [
+      "indie_alternative",
+      "folk_blues",
+      "pop",
+      "electronic",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/5135688-dan-english?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43153017",
+   "name": "Temples @ The Pearl",
+   "start": "2026-09-27T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43153017-temples-at-pearl",
+   "performers": [
+    {
+     "name": "Temples",
+     "songkick_genres": [
+      "electronic",
+      "indie_alternative",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/1688790-temples?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "42753957",
+   "name": "Peter Hook & The Light @ Commodore Ballroom",
+   "start": "2026-09-27T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/42753957-peter-hook-and-the-light-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Peter Hook & The Light",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative",
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/4154881-peter-hook-and-the-light?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Peter Hook",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative",
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/37055-peter-hook?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Light",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative",
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/478594-light?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43333188",
+   "name": "Messa @ The Cobalt",
+   "start": "2026-09-27T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Cobalt",
+   "venue_url": "http://thecobalt.ca",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43333188-messa-at-cobalt",
+   "performers": [
+    {
+     "name": "Messa",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8958919-messa?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43354678",
+   "name": "Cult Member @ Fortune Sound Club",
+   "start": "2026-09-27T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Fortune Sound Club",
+   "venue_url": "http://www.fortunesoundclub.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43354678-cult-member-at-fortune-sound-club",
+   "performers": [
+    {
+     "name": "Cult Member",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10123483-cult-member?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Nurse",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/319535-nurse?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43397673",
+   "name": "AANTHEMS @ The WISE Hall",
+   "start": "2026-09-27T18:00:00",
+   "status": "EventScheduled",
+   "venue": "The WISE Hall",
+   "venue_url": "https://www.facebook.com/thewiseclub/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43397673-aanthems-at-wise-hall",
+   "performers": [
+    {
+     "name": "AANTHEMS",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9083834-aanthems?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Selfist",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/6912934-selfist?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Dead Streets",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10190566-dead-streets?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43320787",
+   "name": "Lily Allen @ Orpheum Theatre",
+   "start": "2026-09-28T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Orpheum Theatre",
+   "venue_url": "https://vancouvercivictheatres.com/venues/orpheum/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43320787-lily-allen-at-orpheum-theatre",
+   "performers": [
+    {
+     "name": "Lily Allen",
+     "songkick_genres": [
+      "pop",
+      "rock",
+      "folk_blues"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/425814-lily-allen?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43066692",
+   "name": "Soda Blonde @ Fox Cabaret",
+   "start": "2026-09-28T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Fox Cabaret",
+   "venue_url": "http://www.foxcabaret.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43066692-soda-blonde-at-fox-cabaret",
+   "performers": [
+    {
+     "name": "Soda Blonde",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9988374-soda-blonde?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43110268",
+   "name": "Oskar med k @ Malkin Bowl",
+   "start": "2026-09-28T18:00:00",
+   "status": "EventScheduled",
+   "venue": "Malkin Bowl",
+   "venue_url": "http://www.malkinbowl.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43110268-oskar-med-k-at-malkin-bowl",
+   "performers": [
+    {
+     "name": "Oskar med k",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10393176-oskar-med-k?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43395832",
+   "name": "Berjan @ Malkin Bowl",
+   "start": "2026-09-28",
+   "status": "EventScheduled",
+   "venue": "Malkin Bowl",
+   "venue_url": "http://www.malkinbowl.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43395832-berjan-at-malkin-bowl",
+   "performers": [
+    {
+     "name": "Berjan",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10413824-berjan?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43154944",
+   "name": "sombr @ Rogers Arena",
+   "start": "2026-09-29T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rogers Arena",
+   "venue_url": "http://www.rogersarena.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43154944-sombr-at-rogers-arena",
+   "performers": [
+    {
+     "name": "sombr",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10255766-sombr?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Interpol",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/138058-interpol?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "The Hellp",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8571159-hellp?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43237269",
+   "name": "Kehlani @ Doug Mitchell Thunderbird Sports Centre",
+   "start": "2026-09-29T18:30:00",
+   "status": "EventScheduled",
+   "venue": "Doug Mitchell Thunderbird Sports Centre",
+   "venue_url": "https://thunderbirdarena.ubc.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43237269-kehlani-at-doug-mitchell-thunderbird-sports-centre",
+   "performers": [
+    {
+     "name": "Kehlani",
+     "songkick_genres": [
+      "hip_hop",
+      "r_and_b",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/8371568-kehlani?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "DURAND BERNARR",
+     "songkick_genres": [
+      "hip_hop",
+      "r_and_b",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/7643494-durand-bernarr?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Isaia Huron",
+     "songkick_genres": [
+      "hip_hop",
+      "r_and_b",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10197264-isaia-huron?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "TheArti$t",
+     "songkick_genres": [
+      "hip_hop",
+      "r_and_b",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10351667-theartist?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "WASEEL",
+     "songkick_genres": [
+      "hip_hop",
+      "r_and_b",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10228689-waseel?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43091665",
+   "name": "Kruder & Dorfmeister @ Commodore Ballroom",
+   "start": "2026-09-29T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43091665-kruder-and-dorfmeister-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Kruder & Dorfmeister",
+     "songkick_genres": [
+      "electronic",
+      "jazz"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/81918-kruder-and-dorfmeister?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43364632",
+   "name": "Igorrr @ Vogue Theatre",
+   "start": "2026-09-29T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Vogue Theatre",
+   "venue_url": "http://www.voguetheatre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43364632-igorrr-at-vogue-theatre",
+   "performers": [
+    {
+     "name": "Igorrr",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/1123659-igorrr?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43342951",
+   "name": "Mike Baggetta @ Lana Lou's Rock & Roll Eatery",
+   "start": "2026-09-29T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Lana Lou's Rock & Roll Eatery",
+   "venue_url": "http://www.lanalous.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43342951-mike-baggetta-at-lana-lous-rock-and-roll-eatery",
+   "performers": [
+    {
+     "name": "Mike Baggetta",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/743470-mike-baggetta?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Mike Watt",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/103360-mike-watt?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "John Herndon",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/2378329-john-herndon?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43274548",
+   "name": "Ivri @ Biltmore Cabaret",
+   "start": "2026-09-29T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Biltmore Cabaret",
+   "venue_url": "http://www.biltmorecabaret.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43274548-ivri-at-biltmore-cabaret",
+   "performers": [
+    {
+     "name": "Ivri",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10215361-ivri?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43251618",
+   "name": "In Color @ Fortune Sound Club",
+   "start": "2026-09-29T18:30:00",
+   "status": "EventScheduled",
+   "venue": "Fortune Sound Club",
+   "venue_url": "http://www.fortunesoundclub.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43251618-in-color-at-fortune-sound-club",
+   "performers": [
+    {
+     "name": "In Color",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/1231240-in-color?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Jack Gray",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9202854-jack-gray?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43212640",
+   "name": "shearling @ Fox Cabaret",
+   "start": "2026-09-29T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Fox Cabaret",
+   "venue_url": "http://www.foxcabaret.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43212640-shearling-at-fox-cabaret",
+   "performers": [
+    {
+     "name": "shearling",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8570789-shearling?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Gordon Grdina",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/2115010-gordon-grdina?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43205899",
+   "name": "Channel Tres @ Commodore Ballroom",
+   "start": "2026-09-30T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43205899-channel-tres-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Channel Tres",
+     "songkick_genres": [
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/9113594-channel-tres?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "KILIMANJARO",
+     "songkick_genres": [
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/1187064-kilimanjaro?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43189040",
+   "name": "Rum Jungle @ Rickshaw Theatre",
+   "start": "2026-09-30T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43189040-rum-jungle-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "Rum Jungle",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/3768296-rum-jungle?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Stitch (CA)",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9740439-stitch-ca?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "432452725",
+   "name": "sababa 5 @ The Pearl",
+   "start": "2026-09-30T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43245272-sababa-5-at-pearl",
+   "performers": [
+    {
+     "name": "sababa 5",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9941379-sababa-5?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43342952",
+   "name": "Mike Baggetta @ Lana Lou's Rock & Roll Eatery",
+   "start": "2026-09-30T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Lana Lou's Rock & Roll Eatery",
+   "venue_url": "http://www.lanalous.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43342952-mike-baggetta-at-lana-lous-rock-and-roll-eatery",
+   "performers": [
+    {
+     "name": "Mike Baggetta",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/743470-mike-baggetta?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Mike Watt",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/103360-mike-watt?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "John Herndon",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/2378329-john-herndon?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43329725",
+   "name": "Mike D (US) @ Vogue Theatre",
+   "start": "2026-09-30T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Vogue Theatre",
+   "venue_url": "http://www.voguetheatre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43329725-mike-d-us-at-vogue-theatre",
+   "performers": [
+    {
+     "name": "Mike D (US)",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10403985-mike-d-us?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "433844186042",
+   "name": "Canada Super60 - 4 Matches + Concert ft. Crash Adams 2026 @ BC Place Stadium",
+   "start": "2026-09-30T13:30:00",
+   "status": "EventScheduled",
+   "venue": "BC Place Stadium",
+   "venue_url": "http://www.bcplacestadium.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/festivals/3802495-canada-super60-4-matches-concert-ft-crash-adams/id/43384418-canada-super60--4-matches--concert-ft-crash-adams-2026",
+   "performers": [
+    {
+     "name": "Crash Adams",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10327210-crash-adams?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43266480",
+   "name": "Nick Hakim @ Hollywood Theatre",
+   "start": "2026-10-01T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43266480-nick-hakim-at-hollywood-theatre",
+   "performers": [
+    {
+     "name": "Nick Hakim",
+     "songkick_genres": [
+      "folk_blues"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/5043623-nick-hakim?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Arima Ederra",
+     "songkick_genres": [
+      "folk_blues"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/8412288-arima-ederra?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43376908",
+   "name": "Tyler Hilton @ Biltmore Cabaret",
+   "start": "2026-10-01",
+   "status": "EventScheduled",
+   "venue": "Biltmore Cabaret",
+   "venue_url": "http://www.biltmorecabaret.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43376908-tyler-hilton-at-biltmore-cabaret",
+   "performers": [
+    {
+     "name": "Tyler Hilton",
+     "songkick_genres": [
+      "rock",
+      "pop",
+      "folk_blues",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/476411-tyler-hilton?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43275037",
+   "name": "Mountain Grass Unit @ Fox Cabaret",
+   "start": "2026-10-01T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Fox Cabaret",
+   "venue_url": "http://www.foxcabaret.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43275037-mountain-grass-unit-at-fox-cabaret",
+   "performers": [
+    {
+     "name": "Mountain Grass Unit",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10310991-mountain-grass-unit?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43278863",
+   "name": "Suzie Ungerleider @ Mel Lehan Hall",
+   "start": "2026-10-01",
+   "status": "EventScheduled",
+   "venue": "Mel Lehan Hall",
+   "venue_url": "http://www.sjcommunitysquare.org",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43278863-suzie-ungerleider-at-mel-lehan-hall",
+   "performers": [
+    {
+     "name": "Suzie Ungerleider",
+     "songkick_genres": [
+      "folk_blues"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10193808-suzie-ungerleider?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Kim Beggs",
+     "songkick_genres": [
+      "folk_blues"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/24738-kim-beggs?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "42904920",
+   "name": "The Neighbourhood @ Rogers Arena",
+   "start": "2026-10-02",
+   "status": "EventScheduled",
+   "venue": "Rogers Arena",
+   "venue_url": "http://www.rogersarena.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/42904920-neighbourhood-at-rogers-arena",
+   "performers": [
+    {
+     "name": "The Neighbourhood",
+     "songkick_genres": [
+      "pop",
+      "indie_alternative",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/636848-neighbourhood?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43119758",
+   "name": "Jungle @ Pacific Coliseum",
+   "start": "2026-10-02T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Pacific Coliseum",
+   "venue_url": "http://www.pne.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43119758-jungle-at-pacific-coliseum",
+   "performers": [
+    {
+     "name": "Jungle",
+     "songkick_genres": [
+      "r_and_b",
+      "funk_soul",
+      "electronic",
+      "reggae"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/506651-jungle?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Rio Kosta",
+     "songkick_genres": [
+      "r_and_b",
+      "funk_soul",
+      "electronic",
+      "reggae"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10231207-rio-kosta?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43145391",
+   "name": "Meltt @ Commodore Ballroom",
+   "start": "2026-10-02T18:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43145391-meltt-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Meltt",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10015769-meltt?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43171541",
+   "name": "Failure @ Rickshaw Theatre",
+   "start": "2026-10-02T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43171541-failure-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "Failure",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/405883-failure?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "quannnic",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10274488-quannnic?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43276807",
+   "name": "@ @ Vancouver",
+   "start": "2026-10-02T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Vancouver",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43276807--at-unknown-venue",
+   "performers": [
+    {
+     "name": "@",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10258414-?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "YHWH Nailgun",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10226415-yhwh-nailgun?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "4335339895",
+   "name": "Starjunk 95 @ Commodore Ballroom",
+   "start": "2026-10-02T23:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43353398-starjunk-95-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Starjunk 95",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10376580-starjunk-95?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "boy 2000",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10412759-boy-2000?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43121123",
+   "name": "After @ Rogers Arena",
+   "start": "2026-10-02T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rogers Arena",
+   "venue_url": "http://www.rogersarena.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43121123-after-at-rogers-arena",
+   "performers": [
+    {
+     "name": "After",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/70532-after?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Noise Dept.",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10410013-noise-dept?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43351372",
+   "name": "Jam City @ Village Studios",
+   "start": "2026-10-02T22:00:00",
+   "status": "EventScheduled",
+   "venue": "Village Studios",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43351372-jam-city-at-village-studios",
+   "performers": [
+    {
+     "name": "Jam City",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/2084684-jam-city?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43276996",
+   "name": "Five Alarm Funk @ Hollywood Theatre",
+   "start": "2026-10-02",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43276996-five-alarm-funk-at-hollywood-theatre",
+   "performers": [
+    {
+     "name": "Five Alarm Funk",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/227982-five-alarm-funk?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Bo Henrik",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10123547-bo-henrik?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43156526",
+   "name": "Slow Magic @ Fox Cabaret",
+   "start": "2026-10-03T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Fox Cabaret",
+   "venue_url": "http://www.foxcabaret.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43156526-slow-magic-at-fox-cabaret",
+   "performers": [
+    {
+     "name": "Slow Magic",
+     "songkick_genres": [
+      "indie_alternative",
+      "electronic",
+      "funk_soul",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/4661543-slow-magic?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43262028",
+   "name": "Default @ Commodore Ballroom",
+   "start": "2026-10-03T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43262028-default-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Default",
+     "songkick_genres": [
+      "rock",
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/490753-default?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Wide Mouth Mason",
+     "songkick_genres": [
+      "rock",
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/74460-wide-mouth-mason?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43181957",
+   "name": "Emei @ Vogue Theatre",
+   "start": "2026-10-03T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Vogue Theatre",
+   "venue_url": "http://www.voguetheatre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43181957-emei-at-vogue-theatre",
+   "performers": [
+    {
+     "name": "Emei",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10163327-emei?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43219153",
+   "name": "LØLØ @ The Pearl",
+   "start": "2026-10-03T18:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43219153-lolo-at-pearl",
+   "performers": [
+    {
+     "name": "LØLØ",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10223272-lolo?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "CON THE ARTIST",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10309657-con-the-artist?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43211294",
+   "name": "Arrows In Action @ Biltmore Cabaret",
+   "start": "2026-10-03T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Biltmore Cabaret",
+   "venue_url": "http://www.biltmorecabaret.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43211294-arrows-in-action-at-biltmore-cabaret",
+   "performers": [
+    {
+     "name": "Arrows In Action",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9162984-arrows-in-action?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43286868",
+   "name": "camoufly @ Village Studios",
+   "start": "2026-10-03T22:00:00",
+   "status": "EventScheduled",
+   "venue": "Village Studios",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43286868-camoufly-at-village-studios",
+   "performers": [
+    {
+     "name": "camoufly",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10286430-camoufly?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43251675",
+   "name": "Ethan Regan @ Rickshaw Theatre",
+   "start": "2026-10-03T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43251675-ethan-regan-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "Ethan Regan",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10399158-ethan-regan?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "harf.",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10406800-harf?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43255683",
+   "name": "LOLO (US) @ The Pearl",
+   "start": "2026-10-03T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43255683-lolo-us-at-pearl",
+   "performers": [
+    {
+     "name": "LOLO (US)",
+     "songkick_genres": [
+      "funk_soul",
+      "pop",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10223270-lolo-us?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43353415",
+   "name": "DJ Assault @ The Pearl",
+   "start": "2026-10-03T23:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43353415-dj-assault-at-pearl",
+   "performers": [
+    {
+     "name": "DJ Assault",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/449127-dj-assault?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43276999",
+   "name": "Five Alarm Funk @ Hollywood Theatre",
+   "start": "2026-10-03",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43276999-five-alarm-funk-at-hollywood-theatre",
+   "performers": [
+    {
+     "name": "Five Alarm Funk",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/227982-five-alarm-funk?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "TK the Artist",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9520029-tk-the-artist?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43093534",
+   "name": "Deer Tick @ Hollywood Theatre",
+   "start": "2026-10-04T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43093534-deer-tick-at-hollywood-theatre",
+   "performers": [
+    {
+     "name": "Deer Tick",
+     "songkick_genres": [
+      "indie_alternative",
+      "country",
+      "folk_blues",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/591654-deer-tick?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43237330",
+   "name": "Beth Orton @ Commodore Ballroom",
+   "start": "2026-10-04T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43237330-beth-orton-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Beth Orton",
+     "songkick_genres": [
+      "folk_blues",
+      "electronic",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/308960-beth-orton?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Kenny Stahl",
+     "songkick_genres": [
+      "folk_blues",
+      "electronic",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/191755-kenny-stahl?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43311532",
+   "name": "The Rasmus @ Rickshaw Theatre",
+   "start": "2026-10-04T18:30:00",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43311532-rasmus-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "The Rasmus",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/475787-rasmus?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Saint Agnes",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/7272179-saint-agnes?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Death Valley Dreams",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/9088239-death-valley-dreams?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43292237",
+   "name": "Default @ Abbotsford Arts Centre",
+   "start": "2026-10-04T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Abbotsford Arts Centre",
+   "venue_url": "http://www.abbotsfordartscentre.ca/",
+   "locality": "Abbotsford",
+   "url": "https://www.songkick.com/concerts/43292237-default-at-abbotsford-arts-centre",
+   "performers": [
+    {
+     "name": "Default",
+     "songkick_genres": [
+      "rock",
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/490753-default?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Wide Mouth Mason",
+     "songkick_genres": [
+      "rock",
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/74460-wide-mouth-mason?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43296534",
+   "name": "KAL-EL (NO) @ The Astoria",
+   "start": "2026-10-04",
+   "status": "EventScheduled",
+   "venue": "The Astoria",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43296534-kalel-no-at-astoria",
+   "performers": [
+    {
+     "name": "KAL-EL (NO)",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10376091-kalel-no?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Goya",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/553651-goya?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43139941",
+   "name": "Blue Violin @ Kay Meek Arts Centre",
+   "start": "2026-10-04T17:00:00",
+   "status": "EventScheduled",
+   "venue": "Kay Meek Arts Centre",
+   "venue_url": "https://kaymeek.com/",
+   "locality": "West Vancouver",
+   "url": "https://www.songkick.com/concerts/43139941-blue-violin-at-kay-meek-arts-centre",
+   "performers": [
+    {
+     "name": "Blue Violin",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9317174-blue-violin?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43391923",
+   "name": "FKA Rayne @ The Pearl",
+   "start": "2026-10-04T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43391923-fka-rayne-at-pearl",
+   "performers": [
+    {
+     "name": "FKA Rayne",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10294279-fka-rayne?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "In Pieces",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/248661-in-pieces?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "433351682026",
+   "name": "VIFF Live: Kelly Moran with Bahar Khazei + XEL 2026 @ Sfu Goldcorp Centre for the Arts",
+   "start": "2026-10-04",
+   "status": "EventScheduled",
+   "venue": "Sfu Goldcorp Centre for the Arts",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/festivals/3797406-viff-live-kelly-moran-with-bahar-khazei-xel/id/43335168-viff-live-kelly-moran-with-bahar-khazei--xel-2026",
+   "performers": [
+    {
+     "name": "Kelly Moran",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9667214-kelly-moran?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43077856",
+   "name": "Sting @ Queen Elizabeth Theatre",
+   "start": "2026-10-05T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Queen Elizabeth Theatre",
+   "venue_url": "http://vancouver.ca/parks-recreation-culture/queen-elizabeth-theatre.aspx",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43077856-sting-at-queen-elizabeth-theatre",
+   "performers": [
+    {
+     "name": "Sting",
+     "songkick_genres": [
+      "rock",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/165478-sting?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Chance Emerson",
+     "songkick_genres": [
+      "rock",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10118536-chance-emerson?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43289436",
+   "name": "Phillip Phillips @ Commodore Ballroom",
+   "start": "2026-10-05T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43289436-phillip-phillips-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Phillip Phillips",
+     "songkick_genres": [
+      "rock",
+      "folk_blues"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/4239206-phillip-phillips?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Elias Hix",
+     "songkick_genres": [
+      "rock",
+      "folk_blues"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10304920-elias-hix?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43337863",
+   "name": "Twin Temple @ Vogue Theatre",
+   "start": "2026-10-05T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Vogue Theatre",
+   "venue_url": "http://www.voguetheatre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43337863-twin-temple-at-vogue-theatre",
+   "performers": [
+    {
+     "name": "Twin Temple",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8873204-twin-temple?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Death Valley Girls",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/6760199-death-valley-girls?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43331072",
+   "name": "Los Thuthanaka @ The Pearl",
+   "start": "2026-10-05T20:30:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43331072-los-thuthanaka-at-pearl",
+   "performers": [
+    {
+     "name": "Los Thuthanaka",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10384692-los-thuthanaka?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "433351712026",
+   "name": "VIFF Live: An Evening with Cristóbal Tapia de Veer  2026 @ VIFF Centre",
+   "start": "2026-10-05",
+   "status": "EventScheduled",
+   "venue": "VIFF Centre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/festivals/3797409-viff-live-an-evening-with-cristobal-tapia-de-veer/id/43335171-viff-live-an-evening-with-cristbal-tapia-de-veer-2026",
+   "performers": [
+    {
+     "name": "Cristóbal Tapia de Veer",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10410503-cristobal-tapia-de-veer?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43077807",
+   "name": "Sting @ Queen Elizabeth Theatre",
+   "start": "2026-10-06T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Queen Elizabeth Theatre",
+   "venue_url": "http://vancouver.ca/parks-recreation-culture/queen-elizabeth-theatre.aspx",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43077807-sting-at-queen-elizabeth-theatre",
+   "performers": [
+    {
+     "name": "Sting",
+     "songkick_genres": [
+      "rock",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/165478-sting?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Chance Emerson",
+     "songkick_genres": [
+      "rock",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10118536-chance-emerson?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43347959",
+   "name": "Cradle of Filth @ Vogue Theatre",
+   "start": "2026-10-06T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Vogue Theatre",
+   "venue_url": "http://www.voguetheatre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43347959-cradle-of-filth-at-vogue-theatre",
+   "performers": [
+    {
+     "name": "Cradle of Filth",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/403194-cradle-of-filth?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Moonspell",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/40344-moonspell?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Worm",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/363834-worm?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Black Satellite",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10119520-black-satellite?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43335533",
+   "name": "Chad VanGaalen @ The WISE Hall",
+   "start": "2026-10-06T19:30:00",
+   "status": "EventScheduled",
+   "venue": "The WISE Hall",
+   "venue_url": "https://www.facebook.com/thewiseclub/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43335533-chad-vangaalen-at-wise-hall",
+   "performers": [
+    {
+     "name": "Chad VanGaalen",
+     "songkick_genres": [
+      "folk_blues",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/52291-chad-vangaalen?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Jairus Sharif",
+     "songkick_genres": [
+      "folk_blues",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10333330-jairus-sharif?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43272665",
+   "name": "hey, nothing @ Hollywood Theatre",
+   "start": "2026-10-06T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43272665-hey-nothing-at-hollywood-theatre",
+   "performers": [
+    {
+     "name": "hey, nothing",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10197979-hey-nothing?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43289465",
+   "name": "Nekrogoblikon @ Rickshaw Theatre",
+   "start": "2026-10-06T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43289465-nekrogoblikon-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "Nekrogoblikon",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/1171265-nekrogoblikon?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Rivers of Nihil",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/2626206-rivers-of-nihil?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43342135",
+   "name": "Constantinople @ Christ Church Cathedral",
+   "start": "2026-10-06T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Christ Church Cathedral",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43342135-constantinople-at-christ-church-cathedral",
+   "performers": [
+    {
+     "name": "Constantinople",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/427395-constantinople?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Kiya Tabassian",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9350214-kiya-tabassian?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43397605",
+   "name": "Chinese Football @ The Pearl",
+   "start": "2026-10-06T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43397605-chinese-football-at-pearl",
+   "performers": [
+    {
+     "name": "Chinese Football",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/5570748-chinese-football?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "433351692026",
+   "name": "VIFF Live: ERASERHEAD XIU XIU 2026 @ Rio Theatre",
+   "start": "2026-10-06",
+   "status": "EventScheduled",
+   "venue": "Rio Theatre",
+   "venue_url": "https://riotheatre.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/festivals/3797407-viff-live-eraserhead-xiu-xiu/id/43335169-viff-live-eraserhead-xiu-xiu-2026",
+   "performers": [
+    {
+     "name": "ERASERHEAD XIU XIU",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10410501-eraserhead-xiu-xiu?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43291593",
+   "name": "Geordie Greep @ The Key",
+   "start": "2026-10-07T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The Key",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43291593-geordie-greep-at-key",
+   "performers": [
+    {
+     "name": "Geordie Greep",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10341381-geordie-greep?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43018464",
+   "name": "Hammerfall @ Rickshaw Theatre",
+   "start": "2026-10-07T18:30:00",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43018464-hammerfall-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "Hammerfall",
+     "songkick_genres": [
+      "metal",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/360672-hammerfall?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Evergrey",
+     "songkick_genres": [
+      "metal",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/110187-evergrey?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Elvenking",
+     "songkick_genres": [
+      "metal",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/483092-elvenking?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43198447",
+   "name": "The Zolas @ The Pearl",
+   "start": "2026-10-07T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43198447-zolas-at-pearl",
+   "performers": [
+    {
+     "name": "The Zolas",
+     "songkick_genres": [
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/2708701-zolas?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43251671",
+   "name": "Silly Goose @ Fox Cabaret",
+   "start": "2026-10-07T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Fox Cabaret",
+   "venue_url": "http://www.foxcabaret.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43251671-silly-goose-at-fox-cabaret",
+   "performers": [
+    {
+     "name": "Silly Goose",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/5420623-silly-goose?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43371659",
+   "name": "Matt Storm @ Guilt & Co",
+   "start": "2026-10-07T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Guilt & Co",
+   "venue_url": "http://www.guiltandcompany.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43371659-matt-storm-at-guilt-and-co",
+   "performers": [
+    {
+     "name": "Matt Storm",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/2336209-matt-storm?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43397901",
+   "name": "The Last Mile @ The WISE Hall",
+   "start": "2026-10-07T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The WISE Hall",
+   "venue_url": "https://www.facebook.com/thewiseclub/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43397901-last-mile-at-wise-hall",
+   "performers": [
+    {
+     "name": "The Last Mile",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/995280-last-mile?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "433351702026",
+   "name": "VIFF Live: Derrick Gee's Radio Hour 2026 @ Granville Island Stage",
+   "start": "2026-10-07",
+   "status": "EventScheduled",
+   "venue": "Granville Island Stage",
+   "venue_url": "http://artsclub.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/festivals/3797408-viff-live-derrick-gees-radio-hour/id/43335170-viff-live-derrick-gees-radio-hour-2026",
+   "performers": [
+    {
+     "name": "Derrick Gee",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10410502-derrick-gee?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "42806174",
+   "name": "Sabaton @ PNE Forum",
+   "start": "2026-10-08T19:00:00",
+   "status": "EventScheduled",
+   "venue": "PNE Forum",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/42806174-sabaton-at-pne-forum",
+   "performers": [
+    {
+     "name": "Sabaton",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/233066-sabaton?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Pop Evil",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/568890-pop-evil?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Wings Of Steel",
+     "songkick_genres": [
+      "metal"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/296632-wings-of-steel?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43240218",
+   "name": "Dune Rats @ The Pearl",
+   "start": "2026-10-08T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43240218-dune-rats-at-pearl",
+   "performers": [
+    {
+     "name": "Dune Rats",
+     "songkick_genres": [
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/4046776-dune-rats?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43240164",
+   "name": "MICO @ Vogue Theatre",
+   "start": "2026-10-08T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Vogue Theatre",
+   "venue_url": "http://www.voguetheatre.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43240164-mico-at-vogue-theatre",
+   "performers": [
+    {
+     "name": "MICO",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/502504-mico?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43313614",
+   "name": "Kontravoid @ Biltmore Cabaret",
+   "start": "2026-10-08",
+   "status": "EventScheduled",
+   "venue": "Biltmore Cabaret",
+   "venue_url": "http://www.biltmorecabaret.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43313614-kontravoid-at-biltmore-cabaret",
+   "performers": [
+    {
+     "name": "Kontravoid",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/5207948-kontravoid?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "buzz kull",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/6139259-buzz-kull?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43277665",
+   "name": "Shiner @ The Cobalt",
+   "start": "2026-10-08T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The Cobalt",
+   "venue_url": "http://thecobalt.ca",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43277665-shiner-at-cobalt",
+   "performers": [
+    {
+     "name": "Shiner",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/184325-shiner?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Fotocrime",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8996194-fotocrime?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "The Aversions",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/802383-aversions?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43260861",
+   "name": "Le Ren @ The WISE Hall",
+   "start": "2026-10-08",
+   "status": "EventScheduled",
+   "venue": "The WISE Hall",
+   "venue_url": "https://www.facebook.com/thewiseclub/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43260861-le-ren-at-wise-hall",
+   "performers": [
+    {
+     "name": "Le Ren",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/597895-le-ren?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43176614",
+   "name": "Spike Hellis @ Biltmore Cabaret",
+   "start": "2026-10-08",
+   "status": "EventScheduled",
+   "venue": "Biltmore Cabaret",
+   "venue_url": "http://www.biltmorecabaret.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43176614-spike-hellis-at-biltmore-cabaret",
+   "performers": [
+    {
+     "name": "Spike Hellis",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10133379-spike-hellis?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "twins (dka records)",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10075635-twins-dka-records?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "God Tongue",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10123219-god-tongue?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43127640",
+   "name": "Disney Worlds Collide Tour @ Rogers Arena",
+   "start": "2026-10-08T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rogers Arena",
+   "venue_url": "http://www.rogersarena.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43127640-disney-worlds-collide-tour-at-rogers-arena",
+   "performers": [
+    {
+     "name": "Disney Worlds Collide Tour",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10407290-disney-worlds-collide-tour?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43358639",
+   "name": "samuel bonnet @ Frankie's Jazz Club",
+   "start": "2026-10-08",
+   "status": "EventScheduled",
+   "venue": "Frankie's Jazz Club",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43358639-samuel-bonnet-at-frankies-jazz-club",
+   "performers": [
+    {
+     "name": "samuel bonnet",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9850349-samuel-bonnet?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43400312",
+   "name": "Concrete Vehicles @ Rickshaw Theatre",
+   "start": "2026-10-08T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43400312-concrete-vehicles-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "Concrete Vehicles",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10400637-concrete-vehicles?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Hillsboro",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8011923-hillsboro?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Lola",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/356862-lola?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "WAIT//LESS",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10272200-waitless?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43228608",
+   "name": "Loukeman @ Fortune Sound Club",
+   "start": "2026-10-09T22:00:00",
+   "status": "EventScheduled",
+   "venue": "Fortune Sound Club",
+   "venue_url": "http://www.fortunesoundclub.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43228608-loukeman-at-fortune-sound-club",
+   "performers": [
+    {
+     "name": "Loukeman",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10191987-loukeman?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43289276",
+   "name": "MARO @ Hollywood Theatre",
+   "start": "2026-10-09T18:00:00",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43289276-maro-at-hollywood-theatre",
+   "performers": [
+    {
+     "name": "MARO",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/7461034-maro?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Manuel Rocha",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10401292-manuel-rocha?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "carbeau",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10325162-carbeau?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Pedro Altério",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/6290164-pedro-alterio?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "432374345440",
+   "name": "54-40 @ Commodore Ballroom",
+   "start": "2026-10-09T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43237434-5440-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "54-40",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/158398-5440?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Jets Overhead",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/408181-jets-overhead?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43157233",
+   "name": "Actors @ Rickshaw Theatre",
+   "start": "2026-10-09T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43157233-actors-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "Actors",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/579022-actors?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "MØAA",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10143688-moaa?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43373548",
+   "name": "Dälek @ The WISE Hall",
+   "start": "2026-10-09T21:00:00",
+   "status": "EventScheduled",
+   "venue": "The WISE Hall",
+   "venue_url": "https://www.facebook.com/thewiseclub/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43373548-dalek-at-wise-hall",
+   "performers": [
+    {
+     "name": "Dälek",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/547118-dalek?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43150988",
+   "name": "The Inspector Cluzo @ Fox Cabaret",
+   "start": "2026-10-09T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Fox Cabaret",
+   "venue_url": "http://www.foxcabaret.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43150988-inspector-cluzo-at-fox-cabaret",
+   "performers": [
+    {
+     "name": "The Inspector Cluzo",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/2331969-inspector-cluzo?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43383434",
+   "name": "Khan Saab @ Queen Elizabeth Theatre",
+   "start": "2026-10-09T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Queen Elizabeth Theatre",
+   "venue_url": "http://vancouver.ca/parks-recreation-culture/queen-elizabeth-theatre.aspx",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43383434-khan-saab-at-queen-elizabeth-theatre",
+   "performers": [
+    {
+     "name": "Khan Saab",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10401657-khan-saab?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43173508",
+   "name": "The Milk Carton Kids @ Hollywood Theatre",
+   "start": "2026-10-10",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43173508-milk-carton-kids-at-hollywood-theatre",
+   "performers": [
+    {
+     "name": "The Milk Carton Kids",
+     "songkick_genres": [
+      "indie_alternative",
+      "folk_blues",
+      "country"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/4186126-milk-carton-kids?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Paper Wings",
+     "songkick_genres": [
+      "indie_alternative",
+      "folk_blues",
+      "country"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/617111-paper-wings?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43146193",
+   "name": "The Zolas @ The Pearl",
+   "start": "2026-10-10T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43146193-zolas-at-pearl",
+   "performers": [
+    {
+     "name": "The Zolas",
+     "songkick_genres": [
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/2708701-zolas?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43264214",
+   "name": "Militarie Gun @ Rickshaw Theatre",
+   "start": "2026-10-10T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rickshaw Theatre",
+   "venue_url": "http://www.liveatrickshaw.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43264214-militarie-gun-at-rickshaw-theatre",
+   "performers": [
+    {
+     "name": "Militarie Gun",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10159166-militarie-gun?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Softcult",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10170527-softcult?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Shady Nasty",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8733664-shady-nasty?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "DAZY",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/1196958-dazy?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43289259",
+   "name": "Kelsey Lu @ Chan Shun Concert Hall",
+   "start": "2026-10-10",
+   "status": "EventScheduled",
+   "venue": "Chan Shun Concert Hall",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43289259-kelsey-lu-at-chan-shun-concert-hall",
+   "performers": [
+    {
+     "name": "Kelsey Lu",
+     "songkick_genres": [
+      "electronic",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/8665519-kelsey-lu?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "432373705440",
+   "name": "54-40 @ Commodore Ballroom",
+   "start": "2026-10-10T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43237370-5440-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "54-40",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/158398-5440?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Jets Overhead",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/408181-jets-overhead?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43340008",
+   "name": "Ray Volpe @ Harbour Convention Centre",
+   "start": "2026-10-10",
+   "status": "EventScheduled",
+   "venue": "Harbour Convention Centre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43340008-ray-volpe-at-harbour-convention-centre",
+   "performers": [
+    {
+     "name": "Ray Volpe",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/7455719-ray-volpe?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "BARELY ALIVE",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8052073-barely-alive?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43123529",
+   "name": "Geoff Tate @ Casino Vancouver",
+   "start": "2026-10-10T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Casino Vancouver",
+   "venue_url": null,
+   "locality": "Coquitlam",
+   "url": "https://www.songkick.com/concerts/43123529-geoff-tate-at-casino-vancouver",
+   "performers": [
+    {
+     "name": "Geoff Tate",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/184918-geoff-tate?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43353417",
+   "name": "Salin @ Fox Cabaret",
+   "start": "2026-10-10T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Fox Cabaret",
+   "venue_url": "http://www.foxcabaret.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43353417-salin-at-fox-cabaret",
+   "performers": [
+    {
+     "name": "Salin",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10316701-salin?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43248094",
+   "name": "Wolves of Glendale @ Fortune Sound Club",
+   "start": "2026-10-10T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Fortune Sound Club",
+   "venue_url": "http://www.fortunesoundclub.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43248094-wolves-of-glendale-at-fortune-sound-club",
+   "performers": [
+    {
+     "name": "Wolves of Glendale",
+     "songkick_genres": [
+      "comedy"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10286302-wolves-of-glendale?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43314575",
+   "name": "Linska @ Celebrities",
+   "start": "2026-10-10T10:00:00",
+   "status": "EventScheduled",
+   "venue": "Celebrities",
+   "venue_url": "http://celebritiesnightclub.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43314575-linska-at-celebrities",
+   "performers": [
+    {
+     "name": "Linska",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10364910-linska?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43121122",
+   "name": "Fruit Bats @ Commodore Ballroom",
+   "start": "2026-10-11T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43121122-fruit-bats-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "Fruit Bats",
+     "songkick_genres": [
+      "indie_alternative",
+      "folk_blues",
+      "pop",
+      "rock",
+      "funk_soul",
+      "country"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/500479-fruit-bats?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Matthew Logan Vasquez",
+     "songkick_genres": [
+      "indie_alternative",
+      "folk_blues",
+      "pop",
+      "rock",
+      "funk_soul",
+      "country"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/8613264-matthew-logan-vasquez?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43181244",
+   "name": "aespa @ Rogers Arena",
+   "start": "2026-10-11T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Rogers Arena",
+   "venue_url": "http://www.rogersarena.com",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43181244-aespa-at-rogers-arena",
+   "performers": [
+    {
+     "name": "aespa",
+     "songkick_genres": [
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10157778-aespa?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43198399",
+   "name": "The Menzingers @ The Pearl",
+   "start": "2026-10-11T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43198399-menzingers-at-pearl",
+   "performers": [
+    {
+     "name": "The Menzingers",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative",
+      "country"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/675050-menzingers?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Hot Water Music",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative",
+      "country"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/340572-hot-water-music?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Weakened Friends",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative",
+      "country"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/8603434-weakened-friends?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43251651",
+   "name": "Jazzy @ Village Studios",
+   "start": "2026-10-11T23:00:00",
+   "status": "EventScheduled",
+   "venue": "Village Studios",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43251651-jazzy-at-village-studios",
+   "performers": [
+    {
+     "name": "Jazzy",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/28832-jazzy?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43269523",
+   "name": "The Army, The Navy @ Hollywood Theatre",
+   "start": "2026-10-11T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43269523-army-the-navy-at-hollywood-theatre",
+   "performers": [
+    {
+     "name": "The Army, The Navy",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10236118-army-the-navy?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Ella Woolsey",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10335682-ella-woolsey?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "id": "43316541",
+   "name": "Mehfil @ Casino Vancouver",
+   "start": "2026-10-11T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Casino Vancouver",
+   "venue_url": null,
+   "locality": "Coquitlam",
+   "url": "https://www.songkick.com/concerts/43316541-mehfil-at-casino-vancouver",
+   "performers": [
+    {
+     "name": "Mehfil",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/7695794-mehfil?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  {
+   "id": "433311422026",
+   "name": "ANNUAL FROSH BALL 2026 @ The Pearl",
+   "start": "2026-09-09T21:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/festivals/3797011-annual-frosh-ball/id/43331142-annual-frosh-ball-2026",
+   "performers": [],
+   "skip_reason": "club_night"
+  },
+  {
+   "id": "433311372026",
+   "name": "FROSH KICKOFF 2026 @ The Pearl",
+   "start": "2026-09-15T22:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/festivals/3797010-frosh-kickoff/id/43331137-frosh-kickoff-2026",
+   "performers": [],
+   "skip_reason": "club_night"
+  },
+  {
+   "id": "433413921820",
+   "name": "Indie Sleaze Dance Party at Hollywood Theatre - Sep 18 2026 @ Hollywood Theatre",
+   "start": "2026-09-18T22:00:00",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/festivals/3798037-indie-sleaze-dance-party-at-hollywood-sep-18/id/43341392-indie-sleaze-dance-party-at-hollywood-theatre--sep-18-2026",
+   "performers": [],
+   "skip_reason": "club_night"
+  },
+  {
+   "id": "43063936",
+   "name": "The Rock Orchestra By Candlelight @ Queen Elizabeth Theatre",
+   "start": "2026-09-22T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Queen Elizabeth Theatre",
+   "venue_url": "http://vancouver.ca/parks-recreation-culture/queen-elizabeth-theatre.aspx",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43063936-rock-orchestra-by-candlelight-at-queen-elizabeth-theatre",
+   "performers": [
+    {
+     "name": "The Rock Orchestra By Candlelight",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10236822-rock-orchestra-by-candlelight?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "skip_reason": "non_music"
+  }
+ ]
+}
