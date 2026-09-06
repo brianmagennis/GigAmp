@@ -1,5 +1,3 @@
-
-App · JS
 /* GigAmp front end. Static: reads data/*.json produced by the weekly GitHub Action,
    logs the user into Spotify with PKCE (no secret), and writes the playlist. */
 (() => {
@@ -8,20 +6,20 @@ App · JS
   const API = "https://api.spotify.com/v1";
   const SCOPES = "playlist-modify-public playlist-modify-private playlist-read-private";
   const ARENA_RE = /\b(arena|stadium|coliseum|place|amphitheatre|amphitheater|pne|forum)\b/i;
- 
+
   const SONGKICK_GENRE_LABELS = {
     indie_alternative: "indie / alternative", rock: "rock", pop: "pop", metal: "metal", punk: "punk",
     hip_hop_rap: "hip hop / rap", rnb: "r&b", electronic: "electronic", dance: "dance",
     folk_blues: "folk / blues", country: "country", jazz: "jazz", classical: "classical",
     reggae: "reggae", latin: "latin", world: "world", soul_funk: "soul / funk",
   };
- 
+
   // ---------- state ----------
   const state = {
     city: null, days: 30, venues: null /* null = all */, genres: [], headliners: false,
     index: null, data: null,
   };
- 
+
   function readHash() {
     const h = new URLSearchParams(location.hash.replace(/^#/, ""));
     if (h.get("city")) state.city = h.get("city");
@@ -39,14 +37,14 @@ App · JS
     history.replaceState(null, "", "#" + h.toString());
     try { localStorage.setItem("gigamp:sel", "#" + h.toString()); } catch {}
   }
- 
+
   // ---------- selection (mirrors scraper/common.py) ----------
   const artistGenres = (a) => (a.genres && a.genres.length)
     ? a.genres.map((g) => g.toLowerCase())
     : (a.songkick_genres || []).map((g) => SONGKICK_GENRE_LABELS[g] || g.replace(/_/g, " "));
   const genreMatch = (a) => !state.genres.length ||
     artistGenres(a).some((g) => state.genres.some((w) => g.includes(w.toLowerCase())));
- 
+
   function select() {
     const today = new Date(); today.setHours(0, 0, 0, 0);
     const end = new Date(today); end.setDate(end.getDate() + state.days);
@@ -66,7 +64,7 @@ App · JS
     }
     return { shows, uris, nArtists, t0, t1 };
   }
- 
+
   // ---------- rendering ----------
   function renderCity() {
     const sel = $("#city");
@@ -143,7 +141,7 @@ App · JS
     $("#dataAge").textContent = `Listings updated ${gen.toLocaleDateString(undefined, { month: "short", day: "numeric" })} · ${state.data.events.length} shows over ${state.data.horizon_days} days` + (pend ? ` · ${pend} acts still being matched` : "");
   }
   function renderAll() { renderDays(); renderVenues(); renderGenres(); renderResults(); writeHash(); }
- 
+
   // ---------- events ----------
   $("#city").addEventListener("change", async (e) => { state.city = e.target.value; state.venues = null; state.genres = []; await loadCity(); renderAll(); });
   $("#days").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; state.days = +b.dataset.days; renderDays(); renderResults(); writeHash(); });
@@ -171,7 +169,7 @@ App · JS
     catch { status(`Share this link: ${location.href}`); }
   };
   $("#create").onclick = createPlaylist;
- 
+
   // ---------- data ----------
   async function loadIndex() {
     const r = await fetch("data/index.json", { cache: "no-cache" });
@@ -184,7 +182,7 @@ App · JS
     if (!r.ok) throw new Error(`No data for ${state.city}`);
     state.data = await r.json();
   }
- 
+
   // ---------- Spotify auth (PKCE) ----------
   const redirectUri = () => CFG.redirectUri || (location.origin + location.pathname);
   const tokenStore = {
@@ -249,7 +247,7 @@ App · JS
     el.innerHTML = `<span>${esc(me.display_name || me.id)}</span><button class="btn ghost" id="logout">Log out</button>`;
     $("#logout").onclick = () => { tokenStore.clear(); me = null; renderAuth(); };
   }
- 
+
   // ---------- playlist ----------
   async function findOrCreatePlaylist(name) {
     for (let offset = 0; ; offset += 50) {
@@ -283,7 +281,7 @@ App · JS
       status(`Spotify error: ${esc(e.message)}${e.status === 403 ? " — in Development Mode your Spotify account must be added to the app's user list." : ""}`, true);
     } finally { btn.disabled = false; }
   }
- 
+
   // ---------- utils ----------
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const norm = (s) => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
@@ -291,7 +289,7 @@ App · JS
   const fmtDate = (iso) => new Date(iso + "T12:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
   const timeOf = (start) => { const m = /T(\d{2}):(\d{2})/.exec(start || ""); if (!m) return ""; const h = +m[1]; return ` · ${((h + 11) % 12) + 1}:${m[2]} ${h < 12 ? "am" : "pm"}`; };
   function status(msg, err) { const el = $("#status"); el.innerHTML = msg; el.className = "status" + (err ? " err" : ""); }
- 
+
   // ---------- boot ----------
   (async () => {
     try {
@@ -303,4 +301,3 @@ App · JS
     } catch (e) { status(esc(e.message), true); }
   })();
 })();
- 
