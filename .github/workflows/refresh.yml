@@ -1,50 +1,66 @@
-name: Weekly refresh
 
+Refresh · YML
+name: Weekly refresh
+ 
 on:
   schedule:
-    # Fridays 07:30 Vancouver (PDT = UTC-7 -> 14:30 UTC; PST = UTC-8 -> 15:30 UTC).
-    - cron: "30 14 * * 5"
+    # Daily at 07:30 Vancouver (PDT; 06:30 in PST) so the Spotify artist cache fills
+    # in gradually under Development Mode's daily quota. Playlists sync on Fridays.
+    - cron: "30 14 * * *"
   workflow_dispatch:
-
+    inputs:
+      sync:
+        description: "Also sync subscriber playlists now"
+        type: boolean
+        default: true
+ 
 permissions:
   contents: write
-
+ 
 concurrency:
   group: refresh
   cancel-in-progress: false
-
+ 
 jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
+ 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
+ 
       - run: pip install -r requirements.txt
-
+ 
       - name: Scrape listings
         run: python scraper/scrape.py
-
+ 
       - name: Match artists and top tracks on Spotify
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
         run: python scraper/enrich.py
-
+ 
       - name: Commit updated data
+        if: always()
         run: |
           git config user.name "gigamp-bot"
           git config user.email "gigamp-bot@users.noreply.github.com"
           git add docs/data
-          git diff --cached --quiet && echo "No data changes" || git commit -m "data: weekly refresh $(date -u +%F)"
+          git diff --cached --quiet && echo "No data changes" || git commit -m "data: refresh $(date -u +%F)"
+          git pull --rebase origin main || true
           git push
-
+ 
+      - name: Is it Friday?
+        id: day
+        run: echo "friday=$([ "$(date -u +%u)" = "5" ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+ 
       - name: Sync subscriber playlists
+        if: steps.day.outputs.friday == 'true' || (github.event_name == 'workflow_dispatch' && inputs.sync)
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
           SPOTIFY_REFRESH_TOKEN_BRIAN: ${{ secrets.SPOTIFY_REFRESH_TOKEN_BRIAN }}
         run: python sync/sync_playlists.py
+ 
