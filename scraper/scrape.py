@@ -20,6 +20,9 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from do604 import scrape_do604, norm_venue  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = json.loads((ROOT / "scraper" / "cities.json").read_text())
 RAW_DIR = ROOT / "docs" / "data" / "raw"
@@ -79,6 +82,7 @@ def parse_page(html: str) -> list[dict]:
                 continue
             loc = item.get("location") or {}
             addr = loc.get("address") or {}
+            geo = loc.get("geo") or {}
             performers = []
             for p in item.get("performer") or []:
                 name = (p.get("name") or "").strip()
@@ -90,6 +94,7 @@ def parse_page(html: str) -> list[dict]:
                     })
             url = (item.get("url") or "").split("?")[0]
             events.append({
+                "source": "songkick",
                 "id": re.sub(r"\D", "", url.rsplit("/", 1)[-1])[:12] or None,
                 "name": item.get("name"),
                 "start": item.get("startDate"),
@@ -97,6 +102,8 @@ def parse_page(html: str) -> list[dict]:
                 "venue": loc.get("name"),
                 "venue_url": loc.get("sameAs"),
                 "locality": addr.get("addressLocality"),
+                "lat": geo.get("latitude"),
+                "lng": geo.get("longitude"),
                 "url": url,
                 "performers": performers,
             })
@@ -140,6 +147,20 @@ def scrape_city(city: dict, horizon_days: int, max_pages: int, fixture: Path | N
             break
         page += 1
 
+    # Second source: Do604 for the small rooms Songkick misses. Songkick wins on overlap
+    # (same date + venue) because its artist data is structured.
+    do604_added = 0
+    if (city.get("do604") or {}).get("enabled") and not fixture:
+        try:
+            sk_keys = {(e["start"][:10], norm_venue(e["venue"] or "")) for e in all_events if e["start"]}
+            for e in scrape_do604(city, horizon_days):
+                if (e["start"][:10], norm_venue(e["venue"] or "")) in sk_keys:
+                    continue
+                all_events.append(e)
+                do604_added += 1
+        except Exception as ex:  # a Do604 outage must not sink the Songkick data
+            print(f"do604: failed, continuing with Songkick only ({ex})", file=sys.stderr)
+
     kept, skipped, seen = [], [], set()
     for e in all_events:
         if not e["start"] or e["start"][:10] > horizon.strftime("%Y-%m-%d"):
@@ -166,6 +187,7 @@ def scrape_city(city: dict, horizon_days: int, max_pages: int, fixture: Path | N
         "scraped_at": now.isoformat(timespec="seconds"),
         "horizon_days": horizon_days,
         "pages_fetched": page,
+        "do604_events": do604_added,
         "events": kept,
         "skipped": skipped,
     }
@@ -185,8 +207,9 @@ def main():
         result = scrape_city(city, CONFIG["horizon_days"], CONFIG["max_pages"], args.fixture)
         out = RAW_DIR / f"{city['slug']}.json"
         out.write_text(json.dumps(result, indent=1, ensure_ascii=False))
-        print(f"{city['slug']}: {len(result['events'])} events kept, "
-              f"{len(result['skipped'])} skipped, {result['pages_fetched']} page(s) -> {out.relative_to(ROOT)}")
+        print(f"{city['slug']}: {len(result['events'])} events kept "
+              f"({result['do604_events']} from Do604), {len(result['skipped'])} skipped, "
+              f"{result['pages_fetched']} Songkick page(s) -> {out.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

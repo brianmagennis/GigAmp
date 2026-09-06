@@ -31,6 +31,10 @@ from pathlib import Path
 
 import requests
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lastfm import LastFM, tier_for  # noqa: E402
+import lastfm as lastfm_mod  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = json.loads((ROOT / "scraper" / "cities.json").read_text())
 DATA_DIR = ROOT / "docs" / "data"
@@ -109,7 +113,7 @@ def norm(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
-def pick_artist(name: str, candidates: list[dict]) -> dict | None:
+def pick_artist(name: str, candidates: list[dict], strict: bool = False) -> dict | None:
     """Search results are relevance-ranked. Prefer an exact name match, then a
     containing match; among ties keep Spotify's order (followers/popularity are
     no longer returned to Development Mode apps, so we can't rank on them)."""
@@ -118,6 +122,8 @@ def pick_artist(name: str, candidates: list[dict]) -> dict | None:
     if exact:
         exact.sort(key=lambda c: (c.get("followers") or {}).get("total") or 0, reverse=True)
         return exact[0]
+    if strict:
+        return None                        # heuristic names (Do604 titles) must match exactly
     fuzzy = [c for c in candidates if target and (target in norm(c["name"]) or norm(c["name"]) in target)]
     if fuzzy and len(target) >= 4:
         return fuzzy[0]
@@ -165,7 +171,8 @@ def artist_entry(a: dict, tracks: list[dict], rank_source: str) -> dict:
     }
 
 
-def lookup_artist(sp: Spotify, name: str, market: str, cache: dict) -> dict:
+def lookup_artist(sp: Spotify, name: str, market: str, cache: dict, strict: bool = False,
+                  lfm: LastFM | None = None) -> dict:
     """Resolve one billed act to a Spotify artist + two tracks, cheaply.
 
     1. One combined search (type=artist,track, artist-scoped query) usually yields
@@ -180,19 +187,37 @@ def lookup_artist(sp: Spotify, name: str, market: str, cache: dict) -> dict:
         age = datetime.now(timezone.utc) - datetime.fromisoformat(hit["fetched_at"])
         ttl = CACHE_TTL_DAYS if hit.get("spotify_id") else MISS_TTL_DAYS
         if age < timedelta(days=ttl):
+            if "reach" not in hit and lfm and lfm.enabled:      # backfill Last.fm for older cache entries
+                info = lfm.artist_info(hit.get("spotify_name") or name)
+                hit["reach"] = ({"listeners": info["listeners"], "playcount": info["playcount"], "tags": info["tags"],
+                                 "tier": tier_for(info["listeners"]), "lastfm_url": info["url"]} if info else None)
             return hit
 
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+    # Free step first: Last.fm audience size + tags. Also the quota gate for heuristic
+    # (Do604-derived) names: if nobody has ever scrobbled it, don't spend a Spotify call.
+    reach = None
+    if lfm and lfm.enabled:
+        info = lfm.artist_info(name)
+        if info:
+            reach = {"listeners": info["listeners"], "playcount": info["playcount"], "tags": info["tags"],
+                     "tier": tier_for(info["listeners"]), "lastfm_url": info["url"]}
+        elif strict:
+            cache[key] = {"query": name, "fetched_at": now, "spotify_id": None, "reach": None,
+                          "skip_reason": "not_on_lastfm"}
+            return cache[key]
+
     res = sp.get("/search", q=f'artist:"{name}"', type="artist,track", limit=10, market=market)
     cands = res.get("artists", {}).get("items", [])
-    a = pick_artist(name, cands)
+    a = pick_artist(name, cands, strict)
     tracks_pool = res.get("tracks", {}).get("items", [])
-    if not a:
+    if not a and not strict:
         res = sp.get("/search", q=name, type="artist", limit=5, market=market)
         a = pick_artist(name, res.get("artists", {}).get("items", []))
         tracks_pool = []
     if not a:
-        cache[key] = {"query": name, "fetched_at": now, "spotify_id": None}
+        cache[key] = {"query": name, "fetched_at": now, "spotify_id": None, "reach": reach}
         return cache[key]
 
     tracks, rank_source = [], "search"
@@ -214,7 +239,7 @@ def lookup_artist(sp: Spotify, name: str, market: str, cache: dict) -> dict:
         tracks = _dedupe_take(own, TRACKS_PER_ARTIST)
         rank_source = "search"
 
-    entry = {"query": name, "fetched_at": now}
+    entry = {"query": name, "fetched_at": now, "reach": reach}
     entry.update(artist_entry(a, tracks, rank_source))
     cache[key] = entry
     return entry
@@ -241,13 +266,16 @@ def build_city(city: dict, raw: dict, cache: dict, pending: list[str], stopped_r
                     "image": a.get("image"),
                     "tracks": a["tracks"],
                     "rank_source": a.get("rank_source"),
+                    "reach": a.get("reach") or {"listeners": 0, "tier": 0, "tags": []},
                 })
             elif a:   # looked up, no usable match
                 unmatched.append({"artist": p["name"], "event": e["name"], "date": e["start"][:10]})
         if artists:
             events_out.append({
-                "id": e["id"], "name": e["name"], "date": e["start"][:10], "start": e["start"],
+                "id": e["id"], "name": e["name"], "source": e.get("source", "songkick"),
+                "date": e["start"][:10], "start": e["start"],
                 "venue": e["venue"], "locality": e["locality"], "url": e["url"],
+                "lat": e.get("lat"), "lng": e.get("lng"),
                 "headliner": artists[0]["name"], "artists": artists,
             })
     return {
@@ -268,7 +296,7 @@ def build_city(city: dict, raw: dict, cache: dict, pending: list[str], stopped_r
     }
 
 
-def enrich_city(sp: Spotify, city: dict, cache: dict) -> dict:
+def enrich_city(sp: Spotify, city: dict, cache: dict, lfm: LastFM | None = None) -> dict:
     raw = json.loads((RAW_DIR / f"{city['slug']}.json").read_text())
     market = city.get("market", "US")
     # Nearest shows first, headliners before support, each act once.
@@ -278,14 +306,14 @@ def enrich_city(sp: Spotify, city: dict, cache: dict) -> dict:
             k = norm(p["name"])
             if k and k not in seen:
                 seen.add(k)
-                queue.append(p["name"])
+                queue.append((p["name"], bool(p.get("strict"))))
     stopped, pending = None, []
-    for i, name in enumerate(queue):
+    for i, (name, strict) in enumerate(queue):
         try:
-            lookup_artist(sp, name, market, cache)
+            lookup_artist(sp, name, market, cache, strict, lfm)
         except QuotaExceeded as e:
             stopped = str(e)
-            pending = queue[i:]
+            pending = [n for n, _ in queue[i:]]
             break
     return build_city(city, raw, cache, pending, stopped)
 
@@ -299,6 +327,9 @@ def main():
     if not cid or not sec:
         sys.exit("Set SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET")
     sp = Spotify(cid, sec)
+    lfm = lastfm_mod.from_env()
+    if not lfm.enabled:
+        print("LASTFM_API_KEY not set: audience-size data disabled, no Spotify pre-filter", file=sys.stderr)
 
     CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
     cache = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else {}
@@ -312,7 +343,7 @@ def main():
             print(f"{city['slug']}: no raw file, run scrape.py first", file=sys.stderr)
             continue
         try:
-            data = enrich_city(sp, city, cache)
+            data = enrich_city(sp, city, cache, lfm)
         finally:
             CACHE_FILE.write_text(json.dumps(cache, indent=0, ensure_ascii=False))
         (DATA_DIR / f"{city['slug']}.json").write_text(json.dumps(data, indent=1, ensure_ascii=False))
@@ -324,7 +355,7 @@ def main():
         })
         print(f"{city['slug']}: {len(data['events'])} events, {n_art} artists matched, "
               f"{len(data['unmatched'])} unmatched, {len(data['pending'])} pending, "
-              f"{sp.calls} API calls, top-tracks endpoint {'available' if sp.top_tracks_available else 'unavailable (Dev Mode)'}")
+              f"{sp.calls} Spotify calls, {lfm.calls} Last.fm calls, top-tracks endpoint {'available' if sp.top_tracks_available else 'unavailable (Dev Mode)'}")
         if data["stopped_reason"]:
             quota_hit = True
             print(f"  stopped early: {data['stopped_reason']} - the next run picks up the remaining acts.")

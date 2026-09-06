@@ -9,13 +9,15 @@ listings fresh and can re-sync your playlist every Friday without you touching i
 Runs entirely on GitHub: Pages hosts the site, Actions does the scraping. No server.
 
 ```
-scraper/scrape.py      Songkick metro listings  ->  docs/data/raw/<city>.json
+scraper/scrape.py      Songkick metro listings (+ Do604)  ->  docs/data/raw/<city>.json
+scraper/do604.py       Do604 daily music listings for small/DIY rooms (curated venue list)
 scraper/enrich.py      Spotify artist match + top tracks  ->  docs/data/<city>.json
-scraper/common.py      Selection rules shared with the site (window, venues, genres)
+scraper/lastfm.py      Last.fm audience size + tags per act; free pre-filter before Spotify
+scraper/common.py      Selection rules shared with the site (window, venues, genres, reach)
 docs/                  Static site (GitHub Pages) with in-browser Spotify login (PKCE)
 sync/sync_playlists.py Weekly unattended playlist refresh for subscribers
 sync/authorize.py      One-time helper to mint a refresh token for auto-sync
-.github/workflows/     Friday cron: scrape -> enrich -> commit -> sync
+.github/workflows/     Daily cron: scrape -> enrich -> commit; Friday: sync playlists
 ```
 
 ## Setup (about 15 minutes)
@@ -43,11 +45,24 @@ At https://developer.spotify.com/dashboard, Create app:
 - Copy Client ID and Client Secret into the repo's Actions secrets
   (Settings -> Secrets and variables -> Actions): `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`.
 
+### 2b. Last.fm key (audience-size slider)
+
+Get a free API key at https://www.last.fm/api/account/create (any app name; no callback
+needed) and add it as the Actions secret `LASTFM_API_KEY`. Without it the site still works
+but every act shows as "unknown" size and the Spotify pre-filter is off.
+
 ### 3. First data run
 
-Actions -> "Weekly refresh" -> Run workflow. Two to three minutes later `docs/data/`
-has the Vancouver dataset and the site is live. Open it, log in with Spotify, pick
-venues and genres, Create playlist.
+Actions -> "Weekly refresh" -> Run workflow. A few minutes later `docs/data/` has the
+Vancouver dataset and the site is live.
+
+Spotify's Development Mode has an unpublished daily request quota (you get a 429 with
+`QUOTA_EXCEEDED` and a ~24 h Retry-After). GigAmp is built for it: one request per act,
+nearest shows first, and when the quota trips it saves what it has and stops cleanly.
+The workflow runs daily so the artist cache fills in over a few days; from then on each
+day only needs to look up the handful of newly announced acts. Playlists sync on Fridays.
+
+Once data is there, open the site, log in with Spotify, pick venues and genres, Create playlist.
 
 ### 4. Optional: weekly auto-sync of your playlist
 
@@ -64,6 +79,27 @@ the name you used in `token_secret` (the default entry uses `SPOTIFY_REFRESH_TOK
 and add a matching line under the "Sync subscriber playlists" step in
 `.github/workflows/refresh.yml` if you add more subscribers. From then on the Friday
 run rebuilds the playlist for the rolling window. Past shows fall off, new bookings appear.
+
+## Audience size ("reach")
+
+Spotify does not expose monthly listeners, and Development Mode apps no longer get
+`followers` or `popularity`, so GigAmp uses Last.fm total listeners as the audience-size
+signal. It covers even tiny acts and tracks streaming scale well on a log axis. Tiers:
+unknown (not on Last.fm), underground (<5k), emerging (5k-50k), established (50k-500k),
+big (500k+). The site's slider selects a tier range; the same `reach: [min, max]` goes in
+a subscriber entry for auto-sync. Last.fm community tags also fill in genres where Spotify
+returns none. Last.fm is queried before Spotify, and heuristic (Do604) names that Last.fm
+has never seen skip the Spotify request entirely, which protects the daily quota.
+
+## Sources
+
+Songkick is the primary source: structured artist data, strong for anything ticketed or
+touring. It misses the DIY layer (Songkick lists 2 Green Auto shows where Do604 lists 20),
+so Do604 is a second source for a curated list of small rooms (`do604.venues` in
+`cities.json`; edit it freely). Do604 titles are free text, so artist names are parsed
+heuristically and only kept when Spotify has an exact-name match. Where both sources
+list the same date and venue, Songkick wins. The site has a Sources toggle so you can
+look at the touring layer, the local layer, or both.
 
 ## Adding a city
 

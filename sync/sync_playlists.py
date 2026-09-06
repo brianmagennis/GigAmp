@@ -108,7 +108,8 @@ def main():
         data = json.loads(data_path.read_text())
         sel = select_tracks(data, days=s.get("days", 30), venues=s.get("venues"),
                             exclude_venues=s.get("exclude_venues"), genres=s.get("genres"),
-                            headliners_only=s.get("headliners_only", False))
+                            headliners_only=s.get("headliners_only", False), sources=s.get("sources"),
+                            reach=tuple(s["reach"]) if s.get("reach") else None)
         try:
             c = Client(refresh_access_token(cid, sec, tok))
             pid = find_or_create_playlist(c, s["playlist_name"], s.get("public", False))

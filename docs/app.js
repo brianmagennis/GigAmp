@@ -17,6 +17,8 @@
   // ---------- state ----------
   const state = {
     city: null, days: 30, venues: null /* null = all */, genres: [], headliners: false,
+    sources: ["songkick", "do604"],
+    reach: [0, 4],    // inclusive tier range: 0 unknown, 1 underground, 2 emerging, 3 established, 4 big
     index: null, data: null,
   };
 
@@ -27,6 +29,8 @@
     if (h.has("v")) state.venues = h.get("v") ? h.get("v").split("|") : [];
     if (h.get("g")) state.genres = h.get("g").split("|");
     if (h.get("h")) state.headliners = h.get("h") === "1";
+    if (h.get("s")) state.sources = h.get("s").split("|");
+    if (h.get("r")) { const [a, b] = h.get("r").split("-").map(Number); if (a >= 0 && b <= 4 && a <= b) state.reach = [a, b]; }
   }
   function writeHash() {
     const h = new URLSearchParams();
@@ -34,17 +38,25 @@
     if (state.venues) h.set("v", state.venues.join("|"));
     if (state.genres.length) h.set("g", state.genres.join("|"));
     if (state.headliners) h.set("h", "1");
+    if (state.sources.length !== 2) h.set("s", state.sources.join("|"));
+    if (state.reach[0] !== 0 || state.reach[1] !== 4) h.set("r", state.reach.join("-"));
     history.replaceState(null, "", "#" + h.toString());
     try { localStorage.setItem("gigamp:sel", "#" + h.toString()); } catch {}
   }
 
   // ---------- selection (mirrors scraper/common.py) ----------
-  const artistGenres = (a) => (a.genres && a.genres.length)
-    ? a.genres.map((g) => g.toLowerCase())
+  // Spotify genres > Last.fm community tags > Songkick coarse tags (mirrors common.py)
+  const artistGenres = (a) => (a.genres && a.genres.length) ? a.genres.map((g) => g.toLowerCase())
+    : (a.reach?.tags?.length) ? a.reach.tags.map((g) => g.toLowerCase())
     : (a.songkick_genres || []).map((g) => SONGKICK_GENRE_LABELS[g] || g.replace(/_/g, " "));
+  const TIER_NAMES = ["unknown", "underground", "emerging", "established", "big"];
+  const tierOf = (a) => Number(a.reach?.tier || 0);
+  const reachOk = (a) => tierOf(a) >= state.reach[0] && tierOf(a) <= state.reach[1];
+  const fmtListeners = (n) => !n ? "" : n >= 1e6 ? (n / 1e6).toFixed(1).replace(/\.0$/, "") + "M" : n >= 1e3 ? Math.round(n / 1e3) + "k" : String(n);
   const genreMatch = (a) => !state.genres.length ||
     artistGenres(a).some((g) => state.genres.some((w) => g.includes(w.toLowerCase())));
 
+  const srcOk = (e) => state.sources.includes(e.source || "songkick");
   function select() {
     const today = new Date(); today.setHours(0, 0, 0, 0);
     const end = new Date(today); end.setDate(end.getDate() + state.days);
@@ -54,9 +66,10 @@
     const shows = [], uris = [], seen = new Set(); let nArtists = 0;
     for (const e of [...state.data.events].sort((a, b) => a.start.localeCompare(b.start))) {
       if (e.date < t0 || e.date > t1) continue;
+      if (!srcOk(e)) continue;
       if (venues && !venues.has((e.venue || "").toLowerCase())) continue;
       let arts = state.headliners ? e.artists.slice(0, 1) : e.artists;
-      arts = arts.filter(genreMatch);
+      arts = arts.filter(genreMatch).filter(reachOk);
       if (!arts.length) continue;
       nArtists += arts.length;
       for (const a of arts) for (const t of a.tracks) if (!seen.has(t.uri)) { seen.add(t.uri); uris.push(t.uri); }
@@ -76,7 +89,7 @@
   }
   function renderVenues() {
     const counts = new Map(), locs = new Map();
-    for (const e of state.data.events) {
+    for (const e of state.data.events.filter(srcOk)) {
       counts.set(e.venue, (counts.get(e.venue) || 0) + 1);
       if (e.locality && e.locality !== state.data.city_name.split(",")[0]) locs.set(e.venue, e.locality);
     }
@@ -88,7 +101,7 @@
   }
   function renderGenres() {
     const counts = new Map();
-    for (const e of state.data.events) for (const a of e.artists) for (const g of new Set(artistGenres(a))) counts.set(g, (counts.get(g) || 0) + 1);
+    for (const e of state.data.events.filter(srcOk)) for (const a of e.artists) for (const g of new Set(artistGenres(a))) counts.set(g, (counts.get(g) || 0) + 1);
     const top = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 48);
     const on = new Set(state.genres.map((g) => g.toLowerCase()));
     $("#genres").innerHTML = top.map(([g, n]) =>
@@ -110,12 +123,12 @@
         if (e.date !== day) { day = e.date; html += `<div class="day">${fmtDate(e.date)}</div>`; }
         html += `<article class="show">
           <div>
-            <div class="venue"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.venue || "Venue TBA")}</a>${e.locality && !e.venue?.includes(e.locality) ? ` · ${esc(e.locality)}` : ""}${timeOf(e.start)}</div>
+            <div class="venue"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.venue || "Venue TBA")}</a>${e.source === "do604" ? ` <span class="pill">local</span>` : ""}${e.locality && !e.venue?.includes(e.locality) ? ` · ${esc(e.locality)}` : ""}${timeOf(e.start)}</div>
             ${e.artists.map((a) => `
               <div class="artist">
                 ${a.image ? `<img src="${esc(a.image)}" alt="" loading="lazy">` : `<div style="width:38px;height:38px;border-radius:50%;background:#26262e;flex:none"></div>`}
                 <div>
-                  <div class="who"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.name)}</a>${a.spotify_name && norm(a.spotify_name) !== norm(a.name) ? `<small>as “${esc(a.spotify_name)}” on Spotify</small>` : ""}${artistGenres(a).slice(0, 3).map((g) => `<small class="pill">${esc(g)}</small>`).join(" ")}</div>
+                  <div class="who"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.name)}</a>${a.spotify_name && norm(a.spotify_name) !== norm(a.name) ? `<small>as “${esc(a.spotify_name)}” on Spotify</small>` : ""}${a.reach?.listeners ? `<span class="reach" title="Last.fm listeners">${fmtListeners(a.reach.listeners)} listeners</span>` : `<span class="reach">not on Last.fm</span>`}${artistGenres(a).slice(0, 3).map((g) => `<small class="pill">${esc(g)}</small>`).join(" ")}</div>
                   <div class="tracks">${a.tracks.map((t) => `<a href="https://open.spotify.com/track/${t.id}" target="_blank" rel="noopener">${esc(t.name)}</a>`).join(`<span class="sep">·</span>`)}</div>
                 </div>
               </div>`).join("")}
@@ -131,7 +144,7 @@
     }
     $("#subJson").textContent = JSON.stringify({
       id: "me", city: state.city, playlist_name: $("#plName").value, days: state.days,
-      venues: state.venues || [], exclude_venues: [], genres: state.genres,
+      venues: state.venues || [], exclude_venues: [], genres: state.genres, sources: state.sources, reach: state.reach,
       headliners_only: state.headliners, public: false, token_secret: "SPOTIFY_REFRESH_TOKEN_ME",
     }, null, 2);
     const um = state.data.unmatched?.length || 0;
@@ -140,7 +153,30 @@
     const pend = state.data.pending?.length || 0;
     $("#dataAge").textContent = `Listings updated ${gen.toLocaleDateString(undefined, { month: "short", day: "numeric" })} · ${state.data.events.length} shows over ${state.data.horizon_days} days` + (pend ? ` · ${pend} acts still being matched` : "");
   }
-  function renderAll() { renderDays(); renderVenues(); renderGenres(); renderResults(); writeHash(); }
+  function renderReach() {
+    const [lo, hi] = state.reach;
+    $("#reachMin").value = lo; $("#reachMax").value = hi;
+    const pct = (v) => 9 + (v / 4) * (($("#reachRange").clientWidth || 300) - 18);
+    $("#reachFill").style.left = pct(lo) + "px"; $("#reachFill").style.width = Math.max(0, pct(hi) - pct(lo)) + "px";
+    const counts = [0, 0, 0, 0, 0];
+    for (const e of state.data.events.filter(srcOk)) for (const a of e.artists) counts[tierOf(a)]++;
+    const inRange = counts.slice(lo, hi + 1).reduce((x, y) => x + y, 0);
+    $("#reachLabel").innerHTML = lo === 0 && hi === 4 ? `All sizes · <b>${inRange}</b> acts`
+      : `<b>${TIER_NAMES[lo]}</b>${lo !== hi ? ` to <b>${TIER_NAMES[hi]}</b>` : ""} · <b>${inRange}</b> of ${counts.reduce((x, y) => x + y, 0)} acts`;
+  }
+  function onReachInput() {
+    let lo = +$("#reachMin").value, hi = +$("#reachMax").value;
+    if (lo > hi) { if (this && this.id === "reachMin") hi = lo; else lo = hi; }
+    state.reach = [lo, hi]; renderReach(); renderResults(); writeHash();
+  }
+  $("#reachMin").addEventListener("input", onReachInput); $("#reachMax").addEventListener("input", onReachInput);
+  window.addEventListener("resize", () => state.data && renderReach());
+  function renderSources() { for (const b of document.querySelectorAll("[data-src]")) b.checked = state.sources.includes(b.dataset.src); }
+  function renderAll() { renderSources(); renderDays(); renderVenues(); renderGenres(); renderReach(); renderResults(); writeHash(); }
+  for (const b of document.querySelectorAll("[data-src]")) b.addEventListener("change", () => {
+    state.sources = [...document.querySelectorAll("[data-src]")].filter((x) => x.checked).map((x) => x.dataset.src);
+    renderVenues(); renderGenres(); renderReach(); renderResults(); writeHash();
+  });
 
   // ---------- events ----------
   $("#city").addEventListener("change", async (e) => { state.city = e.target.value; state.venues = null; state.genres = []; await loadCity(); renderAll(); });

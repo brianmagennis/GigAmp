@@ -23,10 +23,18 @@ SONGKICK_GENRE_LABELS = {
 
 
 def artist_genres(artist: dict) -> list[str]:
+    """Spotify genres > Last.fm community tags > Songkick coarse tags."""
     g = [x.lower() for x in artist.get("genres") or []]
     if g:
         return g
+    tags = ((artist.get("reach") or {}).get("tags") or [])
+    if tags:
+        return [t.lower() for t in tags]
     return [SONGKICK_GENRE_LABELS.get(x, x.replace("_", " ")) for x in artist.get("songkick_genres") or []]
+
+
+def reach_tier(artist: dict) -> int:
+    return int(((artist.get("reach") or {}).get("tier")) or 0)
 
 
 def genre_matches(artist: dict, wanted: list[str]) -> bool:
@@ -38,7 +46,9 @@ def genre_matches(artist: dict, wanted: list[str]) -> bool:
 
 def select_tracks(data: dict, days: int = 30, venues: list[str] | None = None,
                   exclude_venues: list[str] | None = None, genres: list[str] | None = None,
-                  headliners_only: bool = False, today: date | None = None) -> dict:
+                  headliners_only: bool = False, today: date | None = None,
+                  sources: list[str] | None = None, reach: tuple[int, int] | None = None) -> dict:
+    """reach = (min_tier, max_tier) inclusive, tiers 0..4 (unknown..big)."""
     today = today or date.today()
     end = today + timedelta(days=days)
     venues_l = {v.lower() for v in (venues or [])}
@@ -48,6 +58,8 @@ def select_tracks(data: dict, days: int = 30, venues: list[str] | None = None,
         d = date.fromisoformat(e["date"])
         if d < today or d > end:
             continue
+        if sources and e.get("source", "songkick") not in sources:
+            continue
         v = (e.get("venue") or "").lower()
         if venues_l and v not in venues_l:
             continue
@@ -55,6 +67,8 @@ def select_tracks(data: dict, days: int = 30, venues: list[str] | None = None,
             continue
         arts = e["artists"][:1] if headliners_only else e["artists"]
         arts = [a for a in arts if genre_matches(a, genres or [])]
+        if reach:
+            arts = [a for a in arts if reach[0] <= reach_tier(a) <= reach[1]]
         if not arts:
             continue
         picked = []
