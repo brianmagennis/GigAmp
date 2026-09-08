@@ -30,30 +30,40 @@ JUNK_RE = re.compile(
     r"dance party|disco|night out|singalong|sing-along|tribute|the music of|"
     r"vinyl night|dj night|industry night|showcase night|every (mon|tue|wed|thu|fri|sat|sun)|"
     r"(?:mon|tues|wednes|thurs|fri|satur|sun)days?\s+(?:at|night|live)\b|"
+    r"(?:mon|tues|wednes|thurs|fri|satur|sun)days\b|long weekend|"
+    r"(?:[6-9]0|2000|2010)'?s\b|decades?|strip night|cinema|movie|\bvol\.?\s*\d+|"
+    r"centennial|celebration of|@ ?\d{2,3}\b|year anniversary|year end|"
+    r"open stage|jam\b|jazz room|radio hour|"
     r"\$\d)\b",
     re.I,
 )
 # Prefix noise: "Early Show:", "MODO-LIVE presents", "MRG Live x Timbre present" ...
 PREFIX_RE = re.compile(
     r"^(?:(?:early|late|matinee|second|2nd|first|1st)\s+show\s*[:\-]\s*|"
-    r"(?:[\w'&.\- ]{2,40}\s+(?:presents?|present:|x)\s+)+|"
+    r"(?:[\w'&.\- ]{2,40}\s+(?:presents?|present:|pres\.|x)\s+)+|"
+    r"(?:best in vancouver|from [a-z ]{2,20}|viff live|hot jazz wednesdays|live at [a-z' ]+|"
+    r"an evening with|a night with|early|late|matinee)\s*:\s*|"
     r"do604\s+presents?\s+|sold out[:\- ]+)",
     re.I,
 )
 # Suffix noise: " - The Deadbeat Tour", " Tour 2026", " (Album Release)", " | 19+", " Tickets"
 SUFFIX_RE = re.compile(
-    r"(\s*[\-–—|:]\s*(?:the\s+)?[\w' .&!]*(?:tour|release|anniversary|years? of|live in|"
+    r"(\s*[\-–—|:]\s*(?:the\s+)?[\w' .&!:]*(?:tour|release|anniversary|years? of|live in|"
     r"in concert|residency|edition|night|party|show|celebration|farewell|reunion)\b.*$)|"
     r"(\s*\((?:[^)]*(?:tour|release|guests?|19\+|all ages|matinee|sold out)[^)]*)\)\s*$)|"
     r"(\s+(?:(?:north|south|american?|america|world|european?|europe|canadian|canada|uk|west coast|east coast|"
     r"pacific|fall|spring|summer|winter|autumn|farewell|anniversary|reunion|the|debut|headline|20\d\d)\s+)*tour(?:\s+20\d\d)?\b.*$)|"
+    r"(\s+\w+\s+tour\s*$)|(\s*\([^)]*\)\s*$)|"
     r"(\s+tickets?\s*$)|(\s+live\s*$)",
     re.I,
 )
-SUPPORT_SPLIT_RE = re.compile(r"\s*(?:,|\bwith\b|\bw/\s*|\bplus\b|\+|\bft\.?\b|\bfeat\.?\b|\bfeaturing\b|\bsupport(?:ed by)?:?\b|\bopeners?\b)\s*", re.I)
+SUPPORT_SPLIT_RE = re.compile(
+    r"\s*(?:,|\s/{1,2}\s|\bwith\b|\bw/\s*|\bplus\b|\+|\bfe?a?t(?:\.|uring)?(?=\s)|\bsupport(?:ed by)?:?\b|\bopeners?\b)\s*", re.I)
+AMP_SPLIT_RE = re.compile(r"\s+(?:&|and)\s+(?!the\s)", re.I)   # "X & the Y" is one band
+JUNK2_RE = re.compile(r"@\s?\d{2,3}\b|\bwine\b|/\s*wednesday|karaoke", re.I)
 RELEASE_RE = re.compile(r"\s*(?:['\u2018\u2019\"\u201c\u201d][^'\u2018\u2019\"\u201c\u201d]{1,60}['\u2018\u2019\"\u201c\u201d]\s*)?(?:record|album|ep|single|vinyl|cassette)\s+release(?:\s+(?:show|party|concert))?", re.I)
 DROP_TOKEN_RE = re.compile(
-    r"^(?:special guests?|guests?|friends|tba|tbd|more|and more|others|dj set|dj|live|"
+    r"^(?:special guests?|guests?(?:\s+tba|\s+tbd)?|friends|tba|tbd|more|and more|others|dj set|dj|live|"
     r"support|opening act|album release|record release|band|the band|full band|quintet|trio|duo|"
     r"\d+(?:pm|am)?.*|.*\bsold out\b.*)$",
     re.I,
@@ -69,6 +79,11 @@ def extract_artists(title: str) -> list[str]:
     if not t or len(t) < 2:
         return []
     parts = [SUFFIX_RE.sub("", p).strip(" -–—|:,'\"") for p in SUPPORT_SPLIT_RE.split(t)]
+    parts = [p for p in parts if p]
+    if len(parts) >= 2:
+        # A bill with several acts: "Kruelty w/ Dead Heat, Dying Remains & Kill Chain" -> split the & too.
+        # (A lone "Dave Hause & The Mermaid" stays whole: & inside a single-act title is usually the band name.)
+        parts = [q.strip() for p in parts for q in AMP_SPLIT_RE.split(p)]
     out = []
     for p in parts:
         # "Cody Johnson & Friends" -> keep whole; only split on & / and when it's a list.
@@ -147,7 +162,7 @@ def scrape_do604(city: dict, horizon_days: int, fixture_html: str | None = None)
                 continue
             if re.match(r"^(every|through)\b", it["banner"], re.I):
                 continue                                  # weeklies and multi-day runs
-            if JUNK_RE.search(it["title"]):
+            if JUNK_RE.search(it["title"]) or JUNK2_RE.search(it["title"]):
                 continue
             artists = extract_artists(it["title"])
             if not artists:

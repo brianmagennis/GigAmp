@@ -115,13 +115,13 @@ def next_page_exists(html: str, page: int) -> bool:
 
 
 # --- Fetching ----------------------------------------------------------------
-def fetch(url: str, session: requests.Session, retries: int = 3) -> str:
+def fetch(url: str, session: requests.Session, retries: int = 4) -> str:
     for attempt in range(retries):
         r = session.get(url, headers={"User-Agent": UA}, timeout=30)
         if r.status_code == 200:
             return r.text
         if r.status_code in (429, 503):
-            time.sleep(5 * (attempt + 1))
+            time.sleep(int(r.headers.get("Retry-After", 0) or 15 * (attempt + 1)))
             continue
         r.raise_for_status()
     raise RuntimeError(f"Failed to fetch {url}")
@@ -203,13 +203,25 @@ def main():
     cities = [c for c in CONFIG["cities"] if not args.city or c["slug"] == args.city]
     if not cities:
         sys.exit(f"No city matching {args.city!r} in cities.json")
+    failures = 0
     for city in cities:
-        result = scrape_city(city, CONFIG["horizon_days"], CONFIG["max_pages"], args.fixture)
         out = RAW_DIR / f"{city['slug']}.json"
+        try:
+            result = scrape_city(city, CONFIG["horizon_days"], CONFIG["max_pages"], args.fixture)
+        except Exception as ex:
+            # Keep yesterday's listings rather than failing the whole run (Songkick 429s, timeouts...).
+            failures += 1
+            if out.exists():
+                print(f"::warning::{city['slug']}: scrape failed ({ex}); keeping previous raw data", file=sys.stderr)
+                continue
+            print(f"::error::{city['slug']}: scrape failed and no previous data ({ex})", file=sys.stderr)
+            continue
         out.write_text(json.dumps(result, indent=1, ensure_ascii=False))
         print(f"{city['slug']}: {len(result['events'])} events kept "
               f"({result['do604_events']} from Do604), {len(result['skipped'])} skipped, "
               f"{result['pages_fetched']} Songkick page(s) -> {out.relative_to(ROOT)}")
+    if failures and not any((RAW_DIR / f"{c['slug']}.json").exists() for c in cities):
+        sys.exit(1)
 
 
 if __name__ == "__main__":

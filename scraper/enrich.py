@@ -42,6 +42,7 @@ RAW_DIR = DATA_DIR / "raw"
 CACHE_FILE = DATA_DIR / "cache" / "artists.json"
 CACHE_TTL_DAYS = 30          # re-check an artist's tracks roughly monthly
 MISS_TTL_DAYS = 14           # re-try artists we couldn't match after two weeks
+MATCHER_VERSION = 2          # bump when matching logic improves: cached misses get retried
 TRACKS_PER_ARTIST = 2
 MAX_CALLS_PER_RUN = int(os.environ.get("GIGAMP_MAX_CALLS", "0")) or None  # optional hard cap
 
@@ -105,8 +106,32 @@ class Spotify:
 
 
 # --- Matching ----------------------------------------------------------------
+FOLD = str.maketrans({"ı": "i", "ø": "o", "Ø": "O", "ß": "ss", "æ": "ae", "Æ": "AE", "œ": "oe", "ł": "l", "Ł": "L",
+                      "đ": "d", "Đ": "D", "þ": "th", "ð": "d", "ħ": "h", "ŋ": "ng"})
+
+
+def fold(s: str) -> str:
+    """ASCII-fold a name: Altın Gün -> Altin Gun, Dälek -> Dalek."""
+    s = unicodedata.normalize("NFKD", (s or "").translate(FOLD))
+    return "".join(ch for ch in s if not unicodedata.combining(ch)).encode("ascii", "ignore").decode()
+
+
+PAREN_RE = re.compile(r"\s*\((?:[^)]{1,30})\)\s*$")     # "Stitch (CA)", "Toro Y Moi (DJ Set)"
+
+
+def name_variants(name: str) -> list[str]:
+    """Search strings to try, in order, for one billed name."""
+    out, seen = [], set()
+    for v in (name, PAREN_RE.sub("", name), fold(name), fold(PAREN_RE.sub("", name))):
+        v = v.strip()
+        if v and v.lower() not in seen:
+            seen.add(v.lower())
+            out.append(v)
+    return out
+
+
 def norm(s: str) -> str:
-    s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode()
+    s = fold(s)
     s = s.lower().replace("&", "and")
     s = re.sub(r"\b(the|a|an)\b", " ", s)
     s = re.sub(r"[^a-z0-9]+", " ", s)
@@ -186,7 +211,8 @@ def lookup_artist(sp: Spotify, name: str, market: str, cache: dict, strict: bool
     if hit and hit.get("fetched_at"):
         age = datetime.now(timezone.utc) - datetime.fromisoformat(hit["fetched_at"])
         ttl = CACHE_TTL_DAYS if hit.get("spotify_id") else MISS_TTL_DAYS
-        if age < timedelta(days=ttl):
+        stale_miss = not hit.get("spotify_id") and hit.get("matcher") != MATCHER_VERSION
+        if age < timedelta(days=ttl) and not stale_miss:
             if "reach" not in hit and lfm and lfm.enabled:      # backfill Last.fm for older cache entries
                 info = lfm.artist_info(hit.get("spotify_name") or name)
                 hit["reach"] = ({"listeners": info["listeners"], "playcount": info["playcount"], "tags": info["tags"],
@@ -205,19 +231,33 @@ def lookup_artist(sp: Spotify, name: str, market: str, cache: dict, strict: bool
                      "tier": tier_for(info["listeners"]), "lastfm_url": info["url"]}
         elif strict:
             cache[key] = {"query": name, "fetched_at": now, "spotify_id": None, "reach": None,
-                          "skip_reason": "not_on_lastfm"}
+                          "skip_reason": "not_on_lastfm", "matcher": MATCHER_VERSION}
             return cache[key]
 
-    res = sp.get("/search", q=f'artist:"{name}"', type="artist,track", limit=10, market=market)
-    cands = res.get("artists", {}).get("items", [])
-    a = pick_artist(name, cands, strict)
-    tracks_pool = res.get("tracks", {}).get("items", [])
-    if not a and not strict:
-        res = sp.get("/search", q=name, type="artist", limit=5, market=market)
-        a = pick_artist(name, res.get("artists", {}).get("items", []))
-        tracks_pool = []
+    # Search ladder: scoped combined search on the name; then a plain artist search
+    # (non-strict only); then the same with parentheticals dropped / accents folded.
+    a, tracks_pool, seen_cands = None, [], []
+    variants = name_variants(name)
+    for i, v in enumerate(variants):
+        res = sp.get("/search", q=f'artist:"{v}"', type="artist,track", limit=10, market=market)
+        cands = res.get("artists", {}).get("items", [])
+        seen_cands += [c["name"] for c in cands[:3]]
+        a = pick_artist(v, cands, strict) or pick_artist(name, cands, strict)
+        if a:
+            tracks_pool = res.get("tracks", {}).get("items", [])
+            break
+        if not strict:
+            res = sp.get("/search", q=v, type="artist", limit=5, market=market)
+            cands = res.get("artists", {}).get("items", [])
+            seen_cands += [c["name"] for c in cands[:3]]
+            a = pick_artist(v, cands) or pick_artist(name, cands)
+            if a:
+                break
+        if strict and i >= 1:
+            break                              # heuristic names: two tries is plenty
     if not a:
-        cache[key] = {"query": name, "fetched_at": now, "spotify_id": None, "reach": reach}
+        cache[key] = {"query": name, "fetched_at": now, "spotify_id": None, "reach": reach,
+                      "matcher": MATCHER_VERSION, "candidates": list(dict.fromkeys(seen_cands))[:6]}
         return cache[key]
 
     tracks, rank_source = [], "search"
@@ -232,14 +272,20 @@ def lookup_artist(sp: Spotify, name: str, market: str, cache: dict, strict: bool
             else:
                 raise
     if not tracks:
-        own = [t for t in tracks_pool if any(x["id"] == a["id"] for x in t.get("artists", []))]
-        if not own and not tracks_pool:
+        by_artist = lambda pool: [t for t in pool if any(x["id"] == a["id"] for x in t.get("artists", []))]
+        own = by_artist(tracks_pool)
+        if not own:
+            # The scoped search's track list can be crowded out by look-alike names
+            # (artist:"Elder" also matches Elderbrook), so search tracks by the matched name.
             j = sp.get("/search", q=f'artist:"{a["name"]}"', type="track", limit=10, market=market)
-            own = [t for t in j.get("tracks", {}).get("items", []) if any(x["id"] == a["id"] for x in t.get("artists", []))]
+            own = by_artist(j.get("tracks", {}).get("items", []))
+        if not own:
+            j = sp.get("/search", q=f'{a["name"]}', type="track", limit=10, market=market)
+            own = by_artist(j.get("tracks", {}).get("items", []))
         tracks = _dedupe_take(own, TRACKS_PER_ARTIST)
         rank_source = "search"
 
-    entry = {"query": name, "fetched_at": now, "reach": reach}
+    entry = {"query": name, "fetched_at": now, "reach": reach, "matcher": MATCHER_VERSION}
     entry.update(artist_entry(a, tracks, rank_source))
     cache[key] = entry
     return entry
@@ -268,8 +314,10 @@ def build_city(city: dict, raw: dict, cache: dict, pending: list[str], stopped_r
                     "rank_source": a.get("rank_source"),
                     "reach": a.get("reach") or {"listeners": 0, "tier": 0, "tags": []},
                 })
-            elif a:   # looked up, no usable match
-                unmatched.append({"artist": p["name"], "event": e["name"], "date": e["start"][:10]})
+            elif a and p["name"] not in {u["artist"] for u in unmatched}:   # looked up, no usable match
+                unmatched.append({"artist": p["name"], "event": e["name"], "date": e["start"][:10],
+                                  "reason": a.get("skip_reason") or ("no_tracks" if a.get("spotify_id") else "no_match"),
+                                  "candidates": a.get("candidates", [])})
         if artists:
             events_out.append({
                 "id": e["id"], "name": e["name"], "source": e.get("source", "songkick"),
