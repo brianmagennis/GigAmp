@@ -65,7 +65,7 @@ select,input[type=text]{width:100%;background:var(--panel-2);color:var(--text);b
 .status a{color:var(--accent)}
 .day{margin:18px 0 8px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px}
 .day::after{content:"";flex:1;height:1px;background:var(--line)}
-.show{display:grid;grid-template-columns:1fr auto;gap:8px 16px;padding:12px 14px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:8px}
+.show{display:block;padding:12px 14px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:8px}
 .show .venue{color:var(--muted);font-size:13px}
 .show .venue a{color:var(--muted);text-decoration:none}
 .show .venue a:hover{text-decoration:underline}
@@ -98,6 +98,22 @@ details.setup pre{background:var(--panel-2);border:1px solid var(--line);border-
 .reach-label{font-size:13px;color:var(--muted);margin-top:2px}
 .reach-label b{color:var(--text);font-weight:600}
 .artist .who .reach{color:var(--muted);font-weight:400;font-size:12px;margin-left:6px}
+.showhead{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.showhead .vname{color:var(--text);font-weight:600}
+.showhead .time{margin-left:8px;color:var(--muted)}
+.showactions{display:flex;align-items:center;gap:8px;flex:none}
+.showactions .lnk{font-size:12.5px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 9px;white-space:nowrap}
+.showactions .lnk:hover{color:var(--text);border-color:#3a3a45}
+.star{background:none;border:1px solid var(--line);border-radius:999px;width:30px;height:26px;color:var(--muted);font-size:15px;line-height:1;padding:0}
+.star.on{color:var(--accent);border-color:var(--accent)}
+.show.saved{border-color:#4a4222}
+.artist .ainfo{flex:1;min-width:0}
+.play{background:none;border:0;color:var(--muted);padding:0 5px 0 0;font-size:11px;vertical-align:1px;cursor:pointer}
+.play:hover,.play.on{color:var(--accent)}
+.player{margin:8px 0 2px;max-width:560px}
+.player iframe{border-radius:12px;display:block}
+.btn.saved-toggle[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+#plLink{font-size:12.5px}#plLink a{color:var(--accent);text-decoration:none}
 .pill{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--line);font-size:11.5px;color:var(--muted);vertical-align:middle}
 </style>
 </head>
@@ -170,6 +186,8 @@ details.setup pre{background:var(--panel-2);border:1px solid var(--line);border-
         <div class="actions">
           <input type="text" id="plName" placeholder="Playlist name">
           <button class="btn primary" id="create">Create playlist</button>
+          <span id="plLink"></span>
+          <button class="btn ghost saved-toggle" id="savedBtn" aria-pressed="false">★ My shows</button>
           <button class="btn ghost" id="share">Copy share link</button>
         </div>
       </div>
@@ -184,7 +202,8 @@ details.setup pre{background:var(--panel-2);border:1px solid var(--line);border-
 
       <p class="foot">
         Listings from <a href="https://www.songkick.com" target="_blank" rel="noopener">Songkick</a>; artist matches and tracks from Spotify.
-        Two tracks per act: the most-listened track plus their next top song (usually the current single).
+        Two tracks per act: the most-listened track plus their next top song (usually the current single); press ▶ to hear one here (30-second previews unless you're logged in to Spotify in this browser).
+        ☆ saves a show to “My shows” on this device.
         Audience size is total <a href="https://www.last.fm" target="_blank" rel="noopener">Last.fm</a> listeners, a stand-in for streaming reach that covers even the smallest acts: underground is under 5k, emerging 5k to 50k, established 50k to 500k, big above that.
         Tribute acts and themed club nights are filtered out; headline DJs and producers stay in.
         <span id="unmatched"></span>
