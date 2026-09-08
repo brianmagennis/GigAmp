@@ -5,7 +5,9 @@
   const $ = (s) => document.querySelector(s);
   const API = "https://api.spotify.com/v1";
   const SCOPES = "playlist-modify-public playlist-modify-private playlist-read-private";
-  const ARENA_RE = /\b(arena|stadium|coliseum|place|amphitheatre|amphitheater|pne|forum)\b/i;
+  const ARENA_RE = /\b(arena|stadium|coliseum|place|amphitheatre|amphitheater|pne|forum|arch|centre for the performing arts)\b/i;
+  // Community tags that aren't genres (mirrors TAG_JUNK_RE in scraper/lastfm.py for older cache entries)
+  const TAG_JUNK = /^(seen live|video|all|favou?rites?|awesome|love|beautiful|amazing|good|great|my \w+|new|local|canada|canadian|vancouver|british columbia|usa|american|british|uk|england|english|scottish|irish|ireland|italian|italy|german|germany|french|france|swedish|sweden|norwegian|norway|finnish|finland|danish|denmark|japanese|japan|korean|korea|australian|australia|spanish|spain|mexican|mexico|brazilian|brazil|dutch|netherlands|belgian|polish|russian|chinese|turkish|turkey|portuguese|portugal|icelandic|iceland|austrian|swiss|greek|african|european|toronto|montreal|seattle|portland|bc|ontario|quebec|nyc|new york|los angeles|california|texas|chicago|\d{2,4}s?)$/i;
 
   const SONGKICK_GENRE_LABELS = {
     indie_alternative: "indie / alternative", rock: "rock", pop: "pop", metal: "metal", punk: "punk",
@@ -19,8 +21,16 @@
     city: null, days: 30, venues: null /* null = all */, genres: [], headliners: false,
     sources: ["songkick", "do604"],
     reach: [0, 4],    // inclusive tier range: 0 unknown, 1 underground, 2 emerging, 3 established, 4 big
+    savedOnly: false,
     index: null, data: null,
   };
+  const store = {
+    get(k, d) { try { return JSON.parse(localStorage.getItem(k) ?? "null") ?? d; } catch { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+  };
+  const saved = new Set(store.get("gigamp:saved", []));
+  const showKey = (e) => e.id || `${e.date}|${e.venue}|${e.headliner}`;
+  let playing = null;   // { key, trackId }
 
   function readHash() {
     const h = new URLSearchParams(location.hash.replace(/^#/, ""));
@@ -47,7 +57,7 @@
   // ---------- selection (mirrors scraper/common.py) ----------
   // Spotify genres > Last.fm community tags > Songkick coarse tags (mirrors common.py)
   const artistGenres = (a) => (a.genres && a.genres.length) ? a.genres.map((g) => g.toLowerCase())
-    : (a.reach?.tags?.length) ? a.reach.tags.map((g) => g.toLowerCase())
+    : (a.reach?.tags?.length) ? a.reach.tags.map((g) => g.toLowerCase()).filter((g) => !TAG_JUNK.test(g))
     : (a.songkick_genres || []).map((g) => SONGKICK_GENRE_LABELS[g] || g.replace(/_/g, " "));
   const TIER_NAMES = ["unknown", "underground", "emerging", "established", "big"];
   const tierOf = (a) => Number(a.reach?.tier || 0);
@@ -67,6 +77,7 @@
     for (const e of [...state.data.events].sort((a, b) => a.start.localeCompare(b.start))) {
       if (e.date < t0 || e.date > t1) continue;
       if (!srcOk(e)) continue;
+      if (state.savedOnly && !saved.has(showKey(e))) continue;
       if (venues && !venues.has((e.venue || "").toLowerCase())) continue;
       let arts = state.headliners ? e.artists.slice(0, 1) : e.artists;
       arts = arts.filter(genreMatch).filter(reachOk);
@@ -121,27 +132,42 @@
       let html = "", day = "";
       for (const e of r.shows) {
         if (e.date !== day) { day = e.date; html += `<div class="day">${fmtDate(e.date)}</div>`; }
-        html += `<article class="show">
-          <div>
-            <div class="venue"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.venue || "Venue TBA")}</a>${e.source === "do604" ? ` <span class="pill">local</span>` : ""}${e.locality && !e.venue?.includes(e.locality) ? ` · ${esc(e.locality)}` : ""}${timeOf(e.start)}</div>
-            ${e.artists.map((a) => `
-              <div class="artist">
-                ${a.image ? `<img src="${esc(a.image)}" alt="" loading="lazy">` : `<div style="width:38px;height:38px;border-radius:50%;background:#26262e;flex:none"></div>`}
-                <div>
-                  <div class="who"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.name)}</a>${a.spotify_name && norm(a.spotify_name) !== norm(a.name) ? `<small>as “${esc(a.spotify_name)}” on Spotify</small>` : ""}${a.reach?.listeners ? `<span class="reach" title="Last.fm listeners">${fmtListeners(a.reach.listeners)} listeners</span>` : `<span class="reach">not on Last.fm</span>`}${artistGenres(a).slice(0, 3).map((g) => `<small class="pill">${esc(g)}</small>`).join(" ")}</div>
-                  <div class="tracks">${a.tracks.map((t) => `<a href="https://open.spotify.com/track/${t.id}" target="_blank" rel="noopener">${esc(t.name)}</a>`).join(`<span class="sep">·</span>`)}</div>
-                </div>
-              </div>`).join("")}
+        const k = showKey(e), isSaved = saved.has(k);
+        const srcLabel = e.source === "do604" ? "Details on Do604" : "Tickets & info";
+        html += `<article class="show${isSaved ? " saved" : ""}" data-key="${esc(k)}">
+          <div class="showhead">
+            <div class="venue"><span class="vname">${esc(e.venue || "Venue TBA")}</span>${e.source === "do604" ? ` <span class="pill">local</span>` : ""}${e.locality && !e.venue?.includes(e.locality) ? ` · ${esc(e.locality)}` : ""}${timeOf(e.start) ? `<span class="time">${timeOf(e.start).replace(" · ", "")}</span>` : ""}</div>
+            <div class="showactions">
+              <a class="lnk" href="${esc(e.url)}" target="_blank" rel="noopener">${srcLabel} ↗</a>
+              <button class="star${isSaved ? " on" : ""}" data-save="${esc(k)}" title="${isSaved ? "Remove from my shows" : "Save to my shows"}" aria-pressed="${isSaved}">${isSaved ? "★" : "☆"}</button>
+            </div>
           </div>
+          ${e.artists.map((a) => `
+            <div class="artist">
+              ${a.image ? `<img src="${esc(a.image)}" alt="" loading="lazy">` : ""}
+              <div class="ainfo">
+                <div class="who"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.name)}</a>${a.spotify_name && norm(a.spotify_name) !== norm(a.name) ? `<small>as “${esc(a.spotify_name)}” on Spotify</small>` : ""}${a.reach?.listeners ? `<span class="reach" title="Last.fm listeners">${fmtListeners(a.reach.listeners)} listeners</span>` : `<span class="reach">not on Last.fm</span>`}${artistGenres(a).slice(0, 3).map((g) => `<small class="pill">${esc(g)}</small>`).join(" ")}</div>
+                <div class="tracks">${a.tracks.map((t) => `<button class="play${playing && playing.trackId === t.id ? " on" : ""}" data-play="${t.id}" data-key="${esc(k)}" title="Play in page">${playing && playing.trackId === t.id ? "◼" : "▶"}</button><a href="https://open.spotify.com/track/${t.id}" target="_blank" rel="noopener">${esc(t.name)}</a>`).join(`<span class="sep">·</span>`)}</div>
+                ${playing && playing.key === k && a.tracks.some((t) => t.id === playing.trackId) ? `<div class="player"><iframe src="https://open.spotify.com/embed/track/${playing.trackId}?utm_source=generator&theme=0" width="100%" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify player"></iframe></div>` : ""}
+              </div>
+            </div>`).join("")}
         </article>`;
       }
       $("#results").innerHTML = html;
     }
+    $("#savedBtn").textContent = `★ My shows${saved.size ? ` (${saved.size})` : ""}`;
+    $("#savedBtn").setAttribute("aria-pressed", state.savedOnly);
+    if (!r.shows.length && state.savedOnly) $("#results").innerHTML = `<div class="empty">No saved shows in this window. Tap ☆ on a show to save it.</div>`;
     const cityName = state.data.city_name.split(",")[0];
+    const remembered = store.get("gigamp:playlist", null);
     if (!$("#plName").value || $("#plName").dataset.auto === "1") {
-      $("#plName").value = `${CFG.playlistPrefix || "GigAmp"} · ${cityName}`;
+      $("#plName").value = remembered?.name || `${CFG.playlistPrefix || "GigAmp"} · ${cityName}`;
       $("#plName").dataset.auto = "1";
     }
+    if (remembered && $("#plName").value === remembered.name) {
+      $("#create").textContent = "Update playlist";
+      $("#plLink").innerHTML = `<a href="https://open.spotify.com/playlist/${remembered.id}" target="_blank" rel="noopener">Open in Spotify ↗</a>`;
+    } else { $("#create").textContent = "Create playlist"; $("#plLink").innerHTML = ""; }
     $("#subJson").textContent = JSON.stringify({
       id: "me", city: state.city, playlist_name: $("#plName").value, days: state.days,
       venues: state.venues || [], exclude_venues: [], genres: state.genres, sources: state.sources, reach: state.reach,
@@ -177,6 +203,25 @@
     state.sources = [...document.querySelectorAll("[data-src]")].filter((x) => x.checked).map((x) => x.dataset.src);
     renderVenues(); renderGenres(); renderReach(); renderResults(); writeHash();
   });
+
+  $("#results").addEventListener("click", (e) => {
+    const pb = e.target.closest("[data-play]");
+    if (pb) {
+      const id = pb.dataset.play, key = pb.dataset.key;
+      playing = playing && playing.trackId === id ? null : { key, trackId: id };
+      renderResults();
+      if (playing) document.querySelector(`.show[data-key="${CSS.escape(key)}"] .player`)?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      return;
+    }
+    const sb = e.target.closest("[data-save]");
+    if (sb) {
+      const k = sb.dataset.save;
+      if (saved.has(k)) saved.delete(k); else saved.add(k);
+      store.set("gigamp:saved", [...saved]);
+      renderResults();
+    }
+  });
+  $("#savedBtn").onclick = () => { state.savedOnly = !state.savedOnly; renderResults(); };
 
   // ---------- events ----------
   $("#city").addEventListener("change", async (e) => { state.city = e.target.value; state.venues = null; state.genres = []; await loadCity(); renderAll(); });
@@ -314,6 +359,7 @@
       for (let i = 100; i < r.uris.length; i += 100) await api("POST", path, { uris: r.uris.slice(i, i + 100) });
       const desc = `${state.data.city_name} shows ${r.t0} to ${r.t1} · ${r.shows.length} shows, ${r.uris.length} tracks · updated ${new Date().toISOString().slice(0, 10)} by GigAmp`;
       await api("PUT", `/playlists/${pid}`, { description: desc.slice(0, 300) }).catch(() => {});
+      store.set("gigamp:playlist", { id: pid, name, at: Date.now() });
       status(`Done: <a href="https://open.spotify.com/playlist/${pid}" target="_blank" rel="noopener">open “${esc(name)}” in Spotify</a> · ${r.uris.length} tracks from ${r.shows.length} shows.`);
       btn.textContent = "Update playlist";
     } catch (e) {
@@ -334,8 +380,14 @@
     try {
       await handleCallback();
       if (!location.hash) { try { const s = localStorage.getItem("gigamp:sel"); if (s) history.replaceState(null, "", s); } catch {} }
+      const firstVisit = !location.hash;
       readHash();
-      await loadIndex(); renderCity(); await loadCity(); renderAll();
+      await loadIndex(); renderCity(); await loadCity();
+      if (firstVisit && state.venues === null) {
+        const small = [...new Set(state.data.events.map((e) => e.venue))].filter((v) => v && !ARENA_RE.test(v));
+        if (small.length < new Set(state.data.events.map((e) => e.venue)).size) state.venues = small;
+      }
+      renderAll();
       await renderAuth();
     } catch (e) { status(esc(e.message), true); }
   })();
