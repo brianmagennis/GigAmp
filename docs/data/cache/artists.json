@@ -26301,5 +26301,803 @@
 }
 ],
 "rank_source": "search"
+},
+"mike henry presents": {
+"query": "Mike Henry presents",
+"fetched_at": "2026-09-09T17:55:18+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 2
+},
+"slajer": {
+"query": "SLAJER",
+"fetched_at": "2026-09-09T17:55:18+00:00",
+"reach": {
+"listeners": 509,
+"playcount": 1814,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Slajer"
+},
+"matcher": 2,
+"spotify_id": "2LhodHBOPQAegopZX5TUis",
+"spotify_name": "SLAJER",
+"url": "https://open.spotify.com/artist/2LhodHBOPQAegopZX5TUis",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17833ebb295573604a91a551397",
+"tracks": [
+{
+"id": "5SITGfCpoNlzOuPjkzTUvL",
+"uri": "spotify:track:5SITGfCpoNlzOuPjkzTUvL",
+"name": "not your friend",
+"popularity": null,
+"album": "not your friend",
+"album_type": "single",
+"release_date": "2025-06-25",
+"duration_ms": 155200,
+"explicit": false
+},
+{
+"id": "0pva3xyfN7JUEJAT5uN8s4",
+"uri": "spotify:track:0pva3xyfN7JUEJAT5uN8s4",
+"name": "fuck boy",
+"popularity": null,
+"album": "fuck boy",
+"album_type": "single",
+"release_date": "2026-02-27",
+"duration_ms": 164214,
+"explicit": true
+}
+],
+"rank_source": "search"
+},
+"ikuko may quartet": {
+"query": "Ikuko May Quartet",
+"fetched_at": "2026-09-09T17:55:19+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 2
+},
+"blone noble": {
+"query": "Blone Noble",
+"fetched_at": "2026-09-09T17:55:19+00:00",
+"reach": {
+"listeners": 1588,
+"playcount": 5304,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Blone+Noble"
+},
+"matcher": 2,
+"spotify_id": "6pGswrgpIjg1MW1R87PRA7",
+"spotify_name": "Blone Noble",
+"url": "https://open.spotify.com/artist/6pGswrgpIjg1MW1R87PRA7",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17839087cc19f629b489afcbc8c",
+"tracks": [
+{
+"id": "018c5beLVfVsbFhv5sDr6K",
+"uri": "spotify:track:018c5beLVfVsbFhv5sDr6K",
+"name": "Subterranean World",
+"popularity": null,
+"album": "Subterranean World",
+"album_type": "single",
+"release_date": "2026-08-14",
+"duration_ms": 271320,
+"explicit": false
+},
+{
+"id": "7yNr7b6kl7Gk7717caZndc",
+"uri": "spotify:track:7yNr7b6kl7Gk7717caZndc",
+"name": "High Society",
+"popularity": null,
+"album": "High Society",
+"album_type": "single",
+"release_date": "2026-05-01",
+"duration_ms": 252099,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"hot hail": {
+"query": "Hot Hail!",
+"fetched_at": "2026-09-09T17:55:19+00:00",
+"reach": {
+"listeners": 287,
+"playcount": 2071,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Hot+Hail%21"
+},
+"matcher": 2,
+"spotify_id": "5jKoIbsF8h7QX6P4zjiObJ",
+"spotify_name": "Hot Hail!",
+"url": "https://open.spotify.com/artist/5jKoIbsF8h7QX6P4zjiObJ",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17821d2d702051115c30a860fc6",
+"tracks": [
+{
+"id": "7kxcfYe6Ci3dmPj43m9AOq",
+"uri": "spotify:track:7kxcfYe6Ci3dmPj43m9AOq",
+"name": "Needle",
+"popularity": null,
+"album": "Needle",
+"album_type": "single",
+"release_date": "2026-04-06",
+"duration_ms": 256146,
+"explicit": false
+},
+{
+"id": "0gVseAeJc2QlyXxI0iePfI",
+"uri": "spotify:track:0gVseAeJc2QlyXxI0iePfI",
+"name": "Commitment",
+"popularity": null,
+"album": "Hope In Hell",
+"album_type": "album",
+"release_date": "2026-04-20",
+"duration_ms": 238413,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"matthew presidente": {
+"query": "Matthew Presidente",
+"fetched_at": "2026-09-09T17:55:19+00:00",
+"reach": {
+"listeners": 407,
+"playcount": 5442,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Matthew+Presidente"
+},
+"matcher": 2,
+"spotify_id": "4ahZVKtqkJw9KA5j3JOmSN",
+"spotify_name": "Matthew Presidente",
+"url": "https://open.spotify.com/artist/4ahZVKtqkJw9KA5j3JOmSN",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1787c274acc44b1eceb0222622c",
+"tracks": [
+{
+"id": "12mdcBjHDjztxDjjPX8l31",
+"uri": "spotify:track:12mdcBjHDjztxDjjPX8l31",
+"name": "Sungold",
+"popularity": null,
+"album": "Sungold",
+"album_type": "single",
+"release_date": "2023-07-07",
+"duration_ms": 158464,
+"explicit": false
+},
+{
+"id": "1bOjpGgsM8ToGjtT85Cngs",
+"uri": "spotify:track:1bOjpGgsM8ToGjtT85Cngs",
+"name": "Standing in the Way of Love",
+"popularity": null,
+"album": "Chosen Sun",
+"album_type": "album",
+"release_date": "2025-01-24",
+"duration_ms": 198854,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"julian lage": {
+"query": "Julian Lage",
+"fetched_at": "2026-09-09T17:55:20+00:00",
+"reach": {
+"listeners": 169343,
+"playcount": 2231858,
+"tags": [
+"jazz",
+"guitar",
+"instrumental",
+"jazz guitar"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Julian+Lage"
+},
+"matcher": 2,
+"spotify_id": "2TSuAchdgVzsAa9wDK1IeT",
+"spotify_name": "Julian Lage",
+"url": "https://open.spotify.com/artist/2TSuAchdgVzsAa9wDK1IeT",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1783c79f8b04e49c6757124e44d",
+"tracks": [
+{
+"id": "4qIluUXW2uoi0tafnAtQUb",
+"uri": "spotify:track:4qIluUXW2uoi0tafnAtQUb",
+"name": "Etude",
+"popularity": null,
+"album": "Squint",
+"album_type": "album",
+"release_date": "2021-06-11",
+"duration_ms": 147268,
+"explicit": false
+},
+{
+"id": "2sdeVQEoohNkfZFrVsoYkc",
+"uri": "spotify:track:2sdeVQEoohNkfZFrVsoYkc",
+"name": "Nothing Happens Here",
+"popularity": null,
+"album": "Nothing Happens Here",
+"album_type": "single",
+"release_date": "2024-02-07",
+"duration_ms": 254560,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"laura itandehui": {
+"query": "Laura Itandehui",
+"fetched_at": "2026-09-09T17:55:20+00:00",
+"reach": {
+"listeners": 42538,
+"playcount": 413968,
+"tags": [
+"mexico",
+"acoustic",
+"folk",
+"jazz"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Laura+Itandehui"
+},
+"matcher": 2,
+"spotify_id": "3uxDXFazxpQa87VTMJAdcK",
+"spotify_name": "Laura Itandehui",
+"url": "https://open.spotify.com/artist/3uxDXFazxpQa87VTMJAdcK",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17827ca385f6c482982230c8940",
+"tracks": [
+{
+"id": "6lEr0uF4mJJAODSXfQ6WvR",
+"uri": "spotify:track:6lEr0uF4mJJAODSXfQ6WvR",
+"name": "Yo no Necesito de Mucho",
+"popularity": null,
+"album": "Laura Itandehui",
+"album_type": "album",
+"release_date": "2021-07-16",
+"duration_ms": 171750,
+"explicit": false
+},
+{
+"id": "5YFTXVQrrwNjykm9xMKdJK",
+"uri": "spotify:track:5YFTXVQrrwNjykm9xMKdJK",
+"name": "Trataré",
+"popularity": null,
+"album": "Laura Itandehui",
+"album_type": "album",
+"release_date": "2021-07-16",
+"duration_ms": 290250,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"emma alves": {
+"query": "Emma Alves",
+"fetched_at": "2026-09-09T17:55:20+00:00",
+"reach": {
+"listeners": 621,
+"playcount": 2778,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Emma+Alves"
+},
+"matcher": 2,
+"spotify_id": "3h3gW35DoLUMnpeE7ZankS",
+"spotify_name": "Emma Alves",
+"url": "https://open.spotify.com/artist/3h3gW35DoLUMnpeE7ZankS",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1789e456f8fd528ae3d874f9641",
+"tracks": [
+{
+"id": "3aP5FTmWxjQ56mM6Gkyii4",
+"uri": "spotify:track:3aP5FTmWxjQ56mM6Gkyii4",
+"name": "Apple Juice",
+"popularity": null,
+"album": "Apple Juice",
+"album_type": "single",
+"release_date": "2026-08-21",
+"duration_ms": 181826,
+"explicit": false
+},
+{
+"id": "4yneuJA8YzsP1pwjnrExGq",
+"uri": "spotify:track:4yneuJA8YzsP1pwjnrExGq",
+"name": "Tell Me U Need Me",
+"popularity": null,
+"album": "Tell Me U Need Me",
+"album_type": "single",
+"release_date": "2026-06-12",
+"duration_ms": 166093,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"fabio frizzi performs frizzi2fulci": {
+"query": "Fabio Frizzi performs FRIZZI2FULCI",
+"fetched_at": "2026-09-09T17:55:21+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 2
+},
+"guest ethan mccarthy": {
+"query": "guest Ethan McCarthy",
+"fetched_at": "2026-09-09T17:55:21+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 2
+},
+"pertinence": {
+"query": "Pertinence",
+"fetched_at": "2026-09-09T17:55:21+00:00",
+"reach": {
+"listeners": 109057,
+"playcount": 1604667,
+"tags": [
+"groove",
+"pop rap"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Pertinence"
+},
+"matcher": 2,
+"spotify_id": "1uCXC0T5m3qkDOfpdtar9N",
+"spotify_name": "Pertinence",
+"url": "https://open.spotify.com/artist/1uCXC0T5m3qkDOfpdtar9N",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1781e051d9e51a3cd4539e9b5cc",
+"tracks": [
+{
+"id": "0f94eoMhIcQE4eHFdcZq8S",
+"uri": "spotify:track:0f94eoMhIcQE4eHFdcZq8S",
+"name": "UPS / DOWNS",
+"popularity": null,
+"album": "CHPT. 9: 4 MiLLiON PPL LiVE iN LOS ANGELES",
+"album_type": "single",
+"release_date": "2024-02-09",
+"duration_ms": 122666,
+"explicit": true
+},
+{
+"id": "7cL3jnYfTXs7zoLbyo61jQ",
+"uri": "spotify:track:7cL3jnYfTXs7zoLbyo61jQ",
+"name": "ROLL IT UP",
+"popularity": null,
+"album": "GROW UP!",
+"album_type": "single",
+"release_date": "2025-01-24",
+"duration_ms": 175951,
+"explicit": true
+}
+],
+"rank_source": "search"
+},
+"groffie x mina": {
+"query": "Groffie x Mina",
+"fetched_at": "2026-09-09T17:55:22+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 2
+},
+"bruno mars": {
+"query": "Bruno Mars",
+"fetched_at": "2026-09-09T17:55:22+00:00",
+"reach": {
+"listeners": 5436171,
+"playcount": 324125805,
+"tags": [
+"pop",
+"rnb",
+"r&b",
+"slow jams"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/Bruno+Mars"
+},
+"matcher": 2,
+"spotify_id": "0du5cEVh5yTK9QJze8zA0C",
+"spotify_name": "Bruno Mars",
+"url": "https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178c7688aad1bf03986934d7e26",
+"tracks": [
+{
+"id": "5y2ijHECwFYWqcAHKTZgzD",
+"uri": "spotify:track:5y2ijHECwFYWqcAHKTZgzD",
+"name": "Risk It All",
+"popularity": null,
+"album": "The Romantic",
+"album_type": "album",
+"release_date": "2026-02-27",
+"duration_ms": 204068,
+"explicit": false
+},
+{
+"id": "7BqBn9nzAq8spo5e7cZ0dJ",
+"uri": "spotify:track:7BqBn9nzAq8spo5e7cZ0dJ",
+"name": "Just the Way You Are",
+"popularity": null,
+"album": "Doo-Wops & Hooligans",
+"album_type": "album",
+"release_date": "2010-05-11",
+"duration_ms": 220734,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"dj pee wee": {
+"query": "DJ PEE WEE",
+"fetched_at": "2026-09-09T17:55:22+00:00",
+"reach": {
+"listeners": 182,
+"playcount": 294,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/DJ+PEE+WEE"
+},
+"matcher": 2,
+"spotify_id": "0Q0ODbWPVMWBB6NcwUo5tW",
+"spotify_name": "Dj Pee Wee",
+"url": "https://open.spotify.com/artist/0Q0ODbWPVMWBB6NcwUo5tW",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab67616d0000485125d81f67acf22191d055af20",
+"tracks": [
+{
+"id": "6rb6BPtABex7sAPOPmYBkJ",
+"uri": "spotify:track:6rb6BPtABex7sAPOPmYBkJ",
+"name": "Emerging Beauty",
+"popularity": null,
+"album": "Romantic Escape",
+"album_type": "album",
+"release_date": "2021-04-02",
+"duration_ms": 120000,
+"explicit": false
+},
+{
+"id": "6nxIOM7OnxBUqrU6GlXueS",
+"uri": "spotify:track:6nxIOM7OnxBUqrU6GlXueS",
+"name": "Silver Moon",
+"popularity": null,
+"album": "Divine Wind",
+"album_type": "album",
+"release_date": "2021-04-02",
+"duration_ms": 138000,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"raye": {
+"query": "Raye",
+"fetched_at": "2026-09-09T17:55:22+00:00",
+"reach": {
+"listeners": 2041489,
+"playcount": 75882609,
+"tags": [
+"pop",
+"rnb",
+"soul"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/RAYE"
+},
+"matcher": 2,
+"spotify_id": "5KKpBU5eC2tJDzf0wmlRp2",
+"spotify_name": "RAYE",
+"url": "https://open.spotify.com/artist/5KKpBU5eC2tJDzf0wmlRp2",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178d9b6eb671700503c0e6205a9",
+"tracks": [
+{
+"id": "55lijDD6OAjLFFUHU9tcDm",
+"uri": "spotify:track:55lijDD6OAjLFFUHU9tcDm",
+"name": "WHERE IS MY HUSBAND!",
+"popularity": null,
+"album": "WHERE IS MY HUSBAND!",
+"album_type": "single",
+"release_date": "2025-09-19",
+"duration_ms": 197142,
+"explicit": false
+},
+{
+"id": "5mHdCZtVyb4DcJw8799hZp",
+"uri": "spotify:track:5mHdCZtVyb4DcJw8799hZp",
+"name": "Escapism.",
+"popularity": null,
+"album": "My 21st Century Blues",
+"album_type": "album",
+"release_date": "2023-02-03",
+"duration_ms": 272373,
+"explicit": true
+}
+],
+"rank_source": "search"
+},
+"hazlett": {
+"query": "Hazlett",
+"fetched_at": "2026-09-09T17:55:23+00:00",
+"reach": {
+"listeners": 276257,
+"playcount": 5078248,
+"tags": [
+"acoustic",
+"rock",
+"alternative",
+"australia"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Hazlett"
+},
+"matcher": 2,
+"spotify_id": "1zO3MgzmcwZLLNUQqeU2XH",
+"spotify_name": "Hazlett",
+"url": "https://open.spotify.com/artist/1zO3MgzmcwZLLNUQqeU2XH",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178ac95c870400b061208ddfdf3",
+"tracks": [
+{
+"id": "7t0ohvf7w4e8VacR124wbA",
+"uri": "spotify:track:7t0ohvf7w4e8VacR124wbA",
+"name": "doing my best",
+"popularity": null,
+"album": "last night you said you missed me",
+"album_type": "album",
+"release_date": "2025-09-12",
+"duration_ms": 182733,
+"explicit": false
+},
+{
+"id": "35Tzu0ZfS2YoDNsHfFIR7a",
+"uri": "spotify:track:35Tzu0ZfS2YoDNsHfFIR7a",
+"name": "queen of the season",
+"popularity": null,
+"album": "last night you said you missed me",
+"album_type": "album",
+"release_date": "2025-09-12",
+"duration_ms": 199040,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"derya yildirim and grup simsek": {
+"query": "Derya Yıldırım & Grup Şimşek",
+"fetched_at": "2026-09-09T17:55:23+00:00",
+"reach": {
+"listeners": 47384,
+"playcount": 509778,
+"tags": [
+"turkish",
+"anatolian rock",
+"psychedelic rock",
+"psychedelic"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Derya+Y%C4%B1ld%C4%B1r%C4%B1m+&+Grup+%C5%9Eim%C5%9Fek"
+},
+"matcher": 2,
+"spotify_id": "2Y0SH69uxHrHrjiZCuTSaT",
+"spotify_name": "Derya Yıldırım & Grup Şimşek",
+"url": "https://open.spotify.com/artist/2Y0SH69uxHrHrjiZCuTSaT",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1784c1d094c73aef975bcfd5611",
+"tracks": [
+{
+"id": "2Q7BOvHF7zRM2DxhlK53QR",
+"uri": "spotify:track:2Q7BOvHF7zRM2DxhlK53QR",
+"name": "The Trip",
+"popularity": null,
+"album": "Dost 1",
+"album_type": "single",
+"release_date": "2021-06-25",
+"duration_ms": 257972,
+"explicit": false
+},
+{
+"id": "6k5V1UHTZoaQ5ULkIEYACx",
+"uri": "spotify:track:6k5V1UHTZoaQ5ULkIEYACx",
+"name": "Bal",
+"popularity": null,
+"album": "Dost 2",
+"album_type": "album",
+"release_date": "2022-11-11",
+"duration_ms": 312986,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"thee marloes": {
+"query": "Thee Marloes",
+"fetched_at": "2026-09-09T17:55:24+00:00",
+"reach": {
+"listeners": 48830,
+"playcount": 333101,
+"tags": [
+"rnb",
+"soul",
+"indonesian",
+"funk_add_to_lidarr_batch_27"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Thee+Marloes"
+},
+"matcher": 2,
+"spotify_id": "0rTTgwJUHLQWqQV9sNvcbE",
+"spotify_name": "Thee Marloes",
+"url": "https://open.spotify.com/artist/0rTTgwJUHLQWqQV9sNvcbE",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178a7c1546afecb0959978454c2",
+"tracks": [
+{
+"id": "6qa9ImotbPJJ287VzSSN9X",
+"uri": "spotify:track:6qa9ImotbPJJ287VzSSN9X",
+"name": "Under the Silver Moon",
+"popularity": null,
+"album": "Under the Silver Moon",
+"album_type": "single",
+"release_date": "2026-03-09",
+"duration_ms": 207600,
+"explicit": false
+},
+{
+"id": "6UXfE2VCzrNI52B9fA2JiA",
+"uri": "spotify:track:6UXfE2VCzrNI52B9fA2JiA",
+"name": "I'm Just A Girl",
+"popularity": null,
+"album": "Di Hotel Malibu",
+"album_type": "album",
+"release_date": "2026-05-22",
+"duration_ms": 169439,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"best in vancouver 2026 macmann": {
+"query": "Best In Vancouver 2026: Macmann",
+"fetched_at": "2026-09-09T17:55:24+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 2
+},
+"rett madison": {
+"query": "Rett Madison",
+"fetched_at": "2026-09-09T17:55:24+00:00",
+"reach": {
+"listeners": 31698,
+"playcount": 248468,
+"tags": [
+"acoustic",
+"folk",
+"country"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Rett+Madison"
+},
+"matcher": 2,
+"spotify_id": "2uvAzG565dP2oXartAqh1F",
+"spotify_name": "Rett Madison",
+"url": "https://open.spotify.com/artist/2uvAzG565dP2oXartAqh1F",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1788f57bdfe6c7ede4dda2bab61",
+"tracks": [
+{
+"id": "1IGpnASqOgw77lZD8M38GQ",
+"uri": "spotify:track:1IGpnASqOgw77lZD8M38GQ",
+"name": "Eleven Wednesdays",
+"popularity": null,
+"album": "Eleven Wednesdays",
+"album_type": "single",
+"release_date": "2026-03-11",
+"duration_ms": 228383,
+"explicit": false
+},
+{
+"id": "1ORRoKhwvtHW5xLTNSa6XX",
+"uri": "spotify:track:1ORRoKhwvtHW5xLTNSa6XX",
+"name": "One for Jackie, One for Crystal",
+"popularity": null,
+"album": "One for Jackie",
+"album_type": "album",
+"release_date": "2023-10-27",
+"duration_ms": 224520,
+"explicit": true
+}
+],
+"rank_source": "search"
+},
+"almost monday": {
+"query": "Almost Monday",
+"fetched_at": "2026-09-09T17:55:24+00:00",
+"reach": {
+"listeners": 464436,
+"playcount": 7541987,
+"tags": [
+"indie pop",
+"alternative",
+"modern indie pop",
+"pop"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Almost+Monday"
+},
+"matcher": 2,
+"spotify_id": "42FzVuyJH8YbkhzWSR2n8E",
+"spotify_name": "almost monday",
+"url": "https://open.spotify.com/artist/42FzVuyJH8YbkhzWSR2n8E",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1780bd9fe06c7f3ed09bc7a3c41",
+"tracks": [
+{
+"id": "7lgx7t5ZLkdOjiOAjSx9d6",
+"uri": "spotify:track:7lgx7t5ZLkdOjiOAjSx9d6",
+"name": "no more regrets",
+"popularity": null,
+"album": "no more regrets",
+"album_type": "single",
+"release_date": "2026-05-01",
+"duration_ms": 178477,
+"explicit": false
+},
+{
+"id": "15IF4wSCMrAo2Rq0eytARR",
+"uri": "spotify:track:15IF4wSCMrAo2Rq0eytARR",
+"name": "can't slow down",
+"popularity": null,
+"album": "DIVE",
+"album_type": "album",
+"release_date": "2024-09-25",
+"duration_ms": 175720,
+"explicit": false
+}
+],
+"rank_source": "search"
 }
 }
