@@ -2,74 +2,11 @@
  "city": "vancouver",
  "city_name": "Vancouver, BC",
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
- "scraped_at": "2026-09-09T17:52:52+00:00",
+ "scraped_at": "2026-09-10T17:45:26+00:00",
  "horizon_days": 35,
  "pages_fetched": 6,
- "do604_events": 193,
+ "do604_events": 198,
  "events": [
-  {
-   "source": "songkick",
-   "id": "43270180",
-   "name": "Ryan Beatty @ Vogue Theatre",
-   "start": "2026-09-09T20:00:00",
-   "status": "EventScheduled",
-   "venue": "Vogue Theatre",
-   "venue_url": "http://www.voguetheatre.com/",
-   "locality": "Vancouver",
-   "lat": 49.27981,
-   "lng": -123.12164,
-   "url": "https://www.songkick.com/concerts/43270180-ryan-beatty-at-vogue-theatre",
-   "performers": [
-    {
-     "name": "Ryan Beatty",
-     "songkick_genres": [
-      "r_and_b",
-      "pop"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/4291661-ryan-beatty?utm_medium=organic&utm_source=microformat"
-    }
-   ]
-  },
-  {
-   "source": "songkick",
-   "id": "43077378",
-   "name": "Haute & Freddy @ Hollywood Theatre",
-   "start": "2026-09-09T20:00:00",
-   "status": "EventScheduled",
-   "venue": "Hollywood Theatre",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": 49.26444,
-   "lng": -123.17453,
-   "url": "https://www.songkick.com/concerts/43077378-haute-and-freddy-at-hollywood-theatre",
-   "performers": [
-    {
-     "name": "Haute & Freddy",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10356500-haute-and-freddy?utm_medium=organic&utm_source=microformat"
-    }
-   ]
-  },
-  {
-   "source": "songkick",
-   "id": "43332871",
-   "name": "Isaac Slade @ St. James Community Square",
-   "start": "2026-09-09T19:00:00",
-   "status": "EventScheduled",
-   "venue": "St. James Community Square",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": 49.26327,
-   "lng": -123.17624,
-   "url": "https://www.songkick.com/concerts/43332871-isaac-slade-at-st-james-community-square",
-   "performers": [
-    {
-     "name": "Isaac Slade",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/4980333-isaac-slade?utm_medium=organic&utm_source=microformat"
-    }
-   ]
-  },
   {
    "source": "songkick",
    "id": "43283243",
@@ -1213,6 +1150,26 @@
   },
   {
    "source": "songkick",
+   "id": "434067252026",
+   "name": "Vancouver Fringe Festival 2026 @ Granville Island",
+   "start": "2026-09-16",
+   "status": "EventScheduled",
+   "venue": "Granville Island",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "lat": null,
+   "lng": null,
+   "url": "https://www.songkick.com/festivals/815384-vancouver-fringe/id/43406725-vancouver-fringe-festival-2026",
+   "performers": [
+    {
+     "name": "Jody Glenham",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/638028-jody-glenham?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "source": "songkick",
    "id": "43101643",
    "name": "Brandi Carlile @ Rogers Arena",
    "start": "2026-09-17T19:00:00",
@@ -2049,20 +2006,30 @@
   {
    "source": "songkick",
    "id": "433858021181",
-   "name": "Al Tuck @ 1181 E 24th Ave",
+   "name": "Al Tuck @ 1181 E 24th Ave (House Show)",
    "start": "2026-09-20T20:00:00",
    "status": "EventScheduled",
-   "venue": "1181 E 24th Ave",
+   "venue": "1181 E 24th Ave (House Show)",
    "venue_url": null,
    "locality": "Vancouver",
-   "lat": null,
-   "lng": null,
+   "lat": 49.2493,
+   "lng": -123.08064,
    "url": "https://www.songkick.com/concerts/43385802-al-tuck-at-1181-e-24th-ave",
    "performers": [
     {
      "name": "Al Tuck",
      "songkick_genres": [],
      "songkick_url": "https://www.songkick.com/artists/288303-al-tuck?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Manuel Focus",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10414402-manuel-focus?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Lucy Jeffery",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10414403-lucy-jeffery?utm_medium=organic&utm_source=microformat"
     }
    ]
   },
@@ -4225,6 +4192,26 @@
   },
   {
    "source": "songkick",
+   "id": "43353415",
+   "name": "DJ Assault @ The Pearl",
+   "start": "2026-10-03T23:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "lat": 49.28071,
+   "lng": -123.12143,
+   "url": "https://www.songkick.com/concerts/43353415-dj-assault-at-pearl",
+   "performers": [
+    {
+     "name": "DJ Assault",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/449127-dj-assault?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "source": "songkick",
    "id": "43255683",
    "name": "LOLO (US) @ The Pearl",
    "start": "2026-10-03T19:00:00",
@@ -4244,26 +4231,6 @@
       "indie_alternative"
      ],
      "songkick_url": "https://www.songkick.com/artists/10223270-lolo-us?utm_medium=organic&utm_source=microformat"
-    }
-   ]
-  },
-  {
-   "source": "songkick",
-   "id": "43353415",
-   "name": "DJ Assault @ The Pearl",
-   "start": "2026-10-03T23:00:00",
-   "status": "EventScheduled",
-   "venue": "The Pearl",
-   "venue_url": "https://thepearlvancouver.com/",
-   "locality": "Vancouver",
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "url": "https://www.songkick.com/concerts/43353415-dj-assault-at-pearl",
-   "performers": [
-    {
-     "name": "DJ Assault",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/449127-dj-assault?utm_medium=organic&utm_source=microformat"
     }
    ]
   },
@@ -5094,31 +5061,6 @@
   },
   {
    "source": "songkick",
-   "id": "43313614",
-   "name": "Kontravoid @ Biltmore Cabaret",
-   "start": "2026-10-08",
-   "status": "EventScheduled",
-   "venue": "Biltmore Cabaret",
-   "venue_url": "http://www.biltmorecabaret.com",
-   "locality": "Vancouver",
-   "lat": 49.26041,
-   "lng": -123.09668,
-   "url": "https://www.songkick.com/concerts/43313614-kontravoid-at-biltmore-cabaret",
-   "performers": [
-    {
-     "name": "Kontravoid",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/5207948-kontravoid?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "buzz kull",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/6139259-buzz-kull?utm_medium=organic&utm_source=microformat"
-    }
-   ]
-  },
-  {
-   "source": "songkick",
    "id": "43400312",
    "name": "Concrete Vehicles @ Rickshaw Theatre",
    "start": "2026-10-08T19:00:00",
@@ -5149,6 +5091,31 @@
      "name": "WAIT//LESS",
      "songkick_genres": [],
      "songkick_url": "https://www.songkick.com/artists/10272200-waitless?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "source": "songkick",
+   "id": "43313614",
+   "name": "Kontravoid @ Biltmore Cabaret",
+   "start": "2026-10-08",
+   "status": "EventScheduled",
+   "venue": "Biltmore Cabaret",
+   "venue_url": "http://www.biltmorecabaret.com",
+   "locality": "Vancouver",
+   "lat": 49.26041,
+   "lng": -123.09668,
+   "url": "https://www.songkick.com/concerts/43313614-kontravoid-at-biltmore-cabaret",
+   "performers": [
+    {
+     "name": "Kontravoid",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/5207948-kontravoid?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "buzz kull",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/6139259-buzz-kull?utm_medium=organic&utm_source=microformat"
     }
    ]
   },
@@ -5467,6 +5434,26 @@
       "indie_alternative"
      ],
      "songkick_url": "https://www.songkick.com/artists/8865854-whethan?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "source": "songkick",
+   "id": "43407228",
+   "name": "Friend Request @ The Pearl",
+   "start": "2026-10-09T22:30:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "lat": 49.28071,
+   "lng": -123.12143,
+   "url": "https://www.songkick.com/concerts/43407228-friend-request-at-pearl",
+   "performers": [
+    {
+     "name": "Friend Request",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/7199384-friend-request?utm_medium=organic&utm_source=microformat"
     }
    ]
   },
@@ -6213,6 +6200,26 @@
   },
   {
    "source": "songkick",
+   "id": "43357164",
+   "name": "Rett Madison @ The WISE Hall",
+   "start": "2026-10-14T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The WISE Hall",
+   "venue_url": "https://www.facebook.com/thewiseclub/",
+   "locality": "Vancouver",
+   "lat": 49.2773,
+   "lng": -123.06607,
+   "url": "https://www.songkick.com/concerts/43357164-rett-madison-at-wise-hall",
+   "performers": [
+    {
+     "name": "Rett Madison",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9695824-rett-madison?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "source": "songkick",
    "id": "43390773",
    "name": "Emma Alves @ The Roxy Cabaret",
    "start": "2026-10-14",
@@ -6237,157 +6244,129 @@
    ]
   },
   {
-   "id": "do604-2026-09-09-the-haunted-within-abandoned-yesterday-t",
-   "name": "The Haunted Within / Abandoned Yesterday",
-   "start": "2026-09-09T20:00-0700",
+   "source": "songkick",
+   "id": "43214520",
+   "name": "Hovvdy @ Hollywood Theatre",
+   "start": "2026-10-15T20:00:00",
    "status": "EventScheduled",
-   "venue": "The Roxy",
+   "venue": "Hollywood Theatre",
    "venue_url": null,
    "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/9/the-haunted-within-abandoned-yesterday-tickets",
+   "lat": 49.26444,
+   "lng": -123.17453,
+   "url": "https://www.songkick.com/concerts/43214520-hovvdy-at-hollywood-theatre",
    "performers": [
     {
-     "name": "The Haunted Within",
+     "name": "Hovvdy",
      "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Abandoned Yesterday",
-     "songkick_genres": [],
-     "strict": true
+     "songkick_url": "https://www.songkick.com/artists/8530899-hovvdy?utm_medium=organic&utm_source=microformat"
     }
-   ],
-   "source": "do604"
+   ]
   },
   {
-   "id": "do604-2026-09-09-early-show-tzienna-tickets",
-   "name": "Early Show: Tzienna",
-   "start": "2026-09-09T19:00-0700",
+   "source": "songkick",
+   "id": "43348588",
+   "name": "Richard Marx @ River Rock Casino Resort",
+   "start": "2026-10-15T20:00:00",
    "status": "EventScheduled",
-   "venue": "Guilt & Company",
+   "venue": "River Rock Casino Resort",
    "venue_url": null,
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/9/early-show-tzienna-tickets",
+   "locality": "Richmond",
+   "lat": 49.19625,
+   "lng": -123.12768,
+   "url": "https://www.songkick.com/concerts/43348588-richard-marx-at-river-rock-casino-resort",
    "performers": [
     {
-     "name": "Tzienna",
-     "songkick_genres": [],
-     "strict": true
+     "name": "Richard Marx",
+     "songkick_genres": [
+      "rock",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/231054-richard-marx?utm_medium=organic&utm_source=microformat"
     }
-   ],
-   "source": "do604"
+   ]
   },
   {
-   "id": "do604-2026-09-09-ardytronics-tickets",
-   "name": "Ardytronics",
-   "start": "2026-09-09T21:00-0700",
-   "status": "EventScheduled",
-   "venue": "Guilt & Company",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/9/ardytronics-tickets",
-   "performers": [
-    {
-     "name": "Ardytronics",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "source": "do604"
-  },
-  {
-   "id": "do604-2026-09-09-earth-altar-empress-lumivore-goblin-vess",
-   "name": "Earth Altar // Empress // Lumivore // Goblin Vessel",
-   "start": "2026-09-09T19:00-0700",
-   "status": "EventScheduled",
-   "venue": "The Astoria",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/9/earth-altar-empress-lumivore-goblin-vessel-tickets-lwellbk",
-   "performers": [
-    {
-     "name": "Earth Altar",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Empress",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Lumivore",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Goblin Vessel",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "source": "do604"
-  },
-  {
-   "id": "do604-2026-09-09-earth-altar-empress-lumivore-goblin-vess",
-   "name": "Earth Altar // Empress // Lumivore // Goblin Vessel",
-   "start": "2026-09-09T19:00-0700",
-   "status": "EventScheduled",
-   "venue": "Astoria Pub",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/9/earth-altar-empress-lumivore-goblin-vessel-tickets",
-   "performers": [
-    {
-     "name": "Earth Altar",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Empress",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Lumivore",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Goblin Vessel",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "source": "do604"
-  },
-  {
-   "id": "do604-2026-09-09-goetia-asphyxiated-empalement-tickets",
-   "name": "Goetia w/ Asphyxiated & Empalement",
-   "start": "2026-09-09T19:00-0700",
+   "source": "songkick",
+   "id": "43325008",
+   "name": "Nep @ The Cobalt",
+   "start": "2026-10-15T20:00:00",
    "status": "EventScheduled",
    "venue": "The Cobalt",
-   "venue_url": null,
+   "venue_url": "http://thecobalt.ca",
    "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/9/goetia-asphyxiated-empalement-tickets",
+   "lat": 49.2765,
+   "lng": -123.10008,
+   "url": "https://www.songkick.com/concerts/43325008-nep-at-cobalt",
    "performers": [
     {
-     "name": "Goetia",
+     "name": "Nep",
      "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Asphyxiated",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Empalement",
-     "songkick_genres": [],
-     "strict": true
+     "songkick_url": "https://www.songkick.com/artists/218364-nep?utm_medium=organic&utm_source=microformat"
     }
-   ],
-   "source": "do604"
+   ]
+  },
+  {
+   "source": "songkick",
+   "id": "43399862",
+   "name": "Post Sex Nachos @ Biltmore Cabaret",
+   "start": "2026-10-15T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Biltmore Cabaret",
+   "venue_url": "http://www.biltmorecabaret.com",
+   "locality": "Vancouver",
+   "lat": 49.26041,
+   "lng": -123.09668,
+   "url": "https://www.songkick.com/concerts/43399862-post-sex-nachos-at-biltmore-cabaret",
+   "performers": [
+    {
+     "name": "Post Sex Nachos",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10158646-post-sex-nachos?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "source": "songkick",
+   "id": "43055517",
+   "name": "Jarlath Regan @ Vogue Theatre",
+   "start": "2026-10-15T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Vogue Theatre",
+   "venue_url": "http://www.voguetheatre.com/",
+   "locality": "Vancouver",
+   "lat": 49.27981,
+   "lng": -123.12164,
+   "url": "https://www.songkick.com/concerts/43055517-jarlath-regan-at-vogue-theatre",
+   "performers": [
+    {
+     "name": "Jarlath Regan",
+     "songkick_genres": [
+      "comedy"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/2470671-jarlath-regan?utm_medium=organic&utm_source=microformat"
+    }
+   ]
+  },
+  {
+   "source": "songkick",
+   "id": "43379785",
+   "name": "The Shindigs @ Astoria Pub",
+   "start": "2026-10-15T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Astoria Pub",
+   "venue_url": "https://www.facebook.com/astoria.hastings",
+   "locality": "Vancouver",
+   "lat": 49.28128,
+   "lng": -123.08796,
+   "url": "https://www.songkick.com/concerts/43379785-shindigs-at-astoria-pub",
+   "performers": [
+    {
+     "name": "The Shindigs",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/1389340-shindigs?utm_medium=organic&utm_source=microformat"
+    }
+   ]
   },
   {
    "id": "do604-2026-09-10-bear-mccreary-the-singularity-ekleipsis-",
@@ -6821,7 +6800,7 @@
   },
   {
    "id": "do604-2026-09-12-breakout-alt-pop-talent-chloe-star-annou",
-   "name": "Breakout Alt-pop Talent Chloe Star ANNOUNCES North American Fall 2026 Tour",
+   "name": "Chloe Star Live show w/ Jenna Doe",
    "start": "2026-09-12T21:00-0700",
    "status": "EventScheduled",
    "venue": "The Astoria",
@@ -6830,7 +6809,12 @@
    "url": "https://do604.com/events/2026/9/12/breakout-alt-pop-talent-chloe-star-announces-north-american-fall-2026-tour-tickets",
    "performers": [
     {
-     "name": "Breakout Alt",
+     "name": "Chloe Star Live show",
+     "songkick_genres": [],
+     "strict": true
+    },
+    {
+     "name": "Jenna Doe",
      "songkick_genres": [],
      "strict": true
     }
@@ -7473,6 +7457,24 @@
    "source": "do604"
   },
   {
+   "id": "do604-2026-09-17-vibe-series-tickets",
+   "name": "Vibe Series",
+   "start": "2026-09-17T19:00-0700",
+   "status": "EventScheduled",
+   "venue": "The Astoria",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/9/17/vibe-series-tickets",
+   "performers": [
+    {
+     "name": "Vibe Series",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604"
+  },
+  {
    "id": "do604-2026-09-18-sydnee-washington-tickets",
    "name": "Sydnee Washington",
    "start": "2026-09-18T19:00-0700",
@@ -7685,6 +7687,34 @@
    "source": "do604"
   },
   {
+   "id": "do604-2026-09-18-out-of-order-night-court-code-22-tickets",
+   "name": "Out of Order, Night Court, Code-22",
+   "start": "2026-09-18T19:00-0700",
+   "status": "EventScheduled",
+   "venue": "Green Auto",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/9/18/out-of-order-night-court-code-22-tickets",
+   "performers": [
+    {
+     "name": "Out of Order",
+     "songkick_genres": [],
+     "strict": true
+    },
+    {
+     "name": "Night Court",
+     "songkick_genres": [],
+     "strict": true
+    },
+    {
+     "name": "Code-22",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604"
+  },
+  {
    "id": "do604-2026-09-19-cheap-flavor-baron-witiko-tickets",
    "name": "Cheap Flavor, Witiko, Baron",
    "start": "2026-09-19T19:00-0700",
@@ -7750,7 +7780,7 @@
   },
   {
    "id": "do604-2026-09-19-neev-doherty-the-unbranded-leah-barely-t",
-   "name": "The Unbranded, Leah Barely, Neev Doherty",
+   "name": "The Unbranded, Leah Barley, Neev Doherty",
    "start": "2026-09-19T19:00-0700",
    "status": "EventScheduled",
    "venue": "Green Auto",
@@ -7764,7 +7794,7 @@
      "strict": true
     },
     {
-     "name": "Leah Barely",
+     "name": "Leah Barley",
      "songkick_genres": [],
      "strict": true
     },
@@ -7788,6 +7818,24 @@
    "performers": [
     {
      "name": "Another Damn Disappointment",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604"
+  },
+  {
+   "id": "do604-2026-09-19-club-dead-tickets",
+   "name": "Club Dead",
+   "start": "2026-09-19T22:30-0700",
+   "status": "EventScheduled",
+   "venue": "The Astoria",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/9/19/club-dead-tickets",
+   "performers": [
+    {
+     "name": "Club Dead",
      "songkick_genres": [],
      "strict": true
     }
@@ -7859,6 +7907,49 @@
    "source": "do604"
   },
   {
+   "id": "do604-2026-09-20-bloom-effect-seaglow-lotophage-witiko-da",
+   "name": "bloom effect, seaglow, Lotophage, Witiko, David Lunch, Softhead, Teltales, Beauatiufl",
+   "start": "2026-09-20T19:00-0700",
+   "status": "EventScheduled",
+   "venue": "Green Auto",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/9/20/bloom-effect-seaglow-lotophage-witiko-david-lunch-softhead-teltales-beauatiufl-tickets",
+   "performers": [
+    {
+     "name": "bloom effect",
+     "songkick_genres": [],
+     "strict": true
+    },
+    {
+     "name": "seaglow",
+     "songkick_genres": [],
+     "strict": true
+    },
+    {
+     "name": "Lotophage",
+     "songkick_genres": [],
+     "strict": true
+    },
+    {
+     "name": "Witiko",
+     "songkick_genres": [],
+     "strict": true
+    },
+    {
+     "name": "David Lunch",
+     "songkick_genres": [],
+     "strict": true
+    },
+    {
+     "name": "Softhead",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604"
+  },
+  {
    "id": "do604-2026-09-21-early-show-jeffrey-follis-tickets",
    "name": "Early Show: Jeffrey Follis",
    "start": "2026-09-21T19:00-0700",
@@ -7888,6 +7979,29 @@
    "performers": [
     {
      "name": "Denver Venoit",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604"
+  },
+  {
+   "id": "do604-2026-09-21-al-tuck-manuel-focus-tickets",
+   "name": "Al Tuck, Manuel Focus",
+   "start": "2026-09-21T19:00-0700",
+   "status": "EventScheduled",
+   "venue": "Green Auto",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/9/21/al-tuck-manuel-focus-tickets",
+   "performers": [
+    {
+     "name": "Al Tuck",
+     "songkick_genres": [],
+     "strict": true
+    },
+    {
+     "name": "Manuel Focus",
      "songkick_genres": [],
      "strict": true
     }
@@ -7993,6 +8107,34 @@
     },
     {
      "name": "houseguest",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604"
+  },
+  {
+   "id": "do604-2026-09-22-al-tuck-manuel-focus-d-l-forrest-tickets",
+   "name": "Al Tuck, Manuel Focus, D.L. Forrest,",
+   "start": "2026-09-22T19:00-0700",
+   "status": "EventScheduled",
+   "venue": "Green Auto",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/9/22/al-tuck-manuel-focus-d-l-forrest-tickets",
+   "performers": [
+    {
+     "name": "Al Tuck",
+     "songkick_genres": [],
+     "strict": true
+    },
+    {
+     "name": "Manuel Focus",
+     "songkick_genres": [],
+     "strict": true
+    },
+    {
+     "name": "D.L. Forrest",
      "songkick_genres": [],
      "strict": true
     }
@@ -8294,7 +8436,7 @@
   {
    "id": "do604-2026-09-25-ensiferum-with-fire-wind-tickets",
    "name": "Ensiferum // Firewind // Atavistia",
-   "start": "2026-09-25T19:00-0700",
+   "start": "2026-09-25T18:00-0700",
    "status": "EventScheduled",
    "venue": "Wise Hall",
    "venue_url": null,
@@ -9149,6 +9291,24 @@
    "source": "do604"
   },
   {
+   "id": "do604-2026-10-02-kybba-tickets",
+   "name": "Kybba",
+   "start": "2026-10-02T19:00-0700",
+   "status": "EventScheduled",
+   "venue": "Fortune Sound Club",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/2/kybba-tickets",
+   "performers": [
+    {
+     "name": "Kybba",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604"
+  },
+  {
    "id": "do604-2026-10-02-joon-with-special-guests-tickets",
    "name": "Joon with Lauryn Kovacs",
    "start": "2026-10-02T19:00-0700",
@@ -9933,6 +10093,24 @@
    "source": "do604"
   },
   {
+   "id": "do604-2026-10-09-arc-showcase-tickets",
+   "name": "ARC Showcase",
+   "start": "2026-10-09T19:00-0700",
+   "status": "EventScheduled",
+   "venue": "Red Gate",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/9/arc-showcase-tickets",
+   "performers": [
+    {
+     "name": "ARC Showcase",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604"
+  },
+  {
    "id": "do604-2026-10-10-will-burkart-tickets",
    "name": "Will Burkart",
    "start": "2026-10-10T18:00-0700",
@@ -10277,17 +10455,71 @@
    "source": "do604"
   },
   {
-   "id": "do604-2026-10-14-rett-madison-with-special-guests-tickets",
-   "name": "Rett Madison with Special Guests",
-   "start": "2026-10-14T20:00-0700",
+   "id": "do604-2026-10-15-she-wants-revenge-tickets",
+   "name": "She Wants Revenge",
+   "start": "2026-10-15T20:00-0700",
    "status": "EventScheduled",
-   "venue": "Wise Hall",
+   "venue": "The Pearl",
    "venue_url": null,
    "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/10/14/rett-madison-with-special-guests-tickets",
+   "url": "https://do604.com/events/2026/10/15/she-wants-revenge-tickets",
    "performers": [
     {
-     "name": "Rett Madison",
+     "name": "She Wants Revenge",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604"
+  },
+  {
+   "id": "do604-2026-10-15-mimosa-tickets",
+   "name": "Mimosa",
+   "start": "2026-10-15T20:00-0700",
+   "status": "EventScheduled",
+   "venue": "Frankie's Jazz Club",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/15/mimosa-tickets",
+   "performers": [
+    {
+     "name": "Mimosa",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604"
+  },
+  {
+   "id": "do604-2026-10-15-early-show-daniel-deorksen-s-bicameral-c",
+   "name": "Early Show: Daniel Deorksen’s Bicameral Collapse",
+   "start": "2026-10-15T19:00-0700",
+   "status": "EventScheduled",
+   "venue": "Guilt & Company",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/15/early-show-daniel-deorksen-s-bicameral-collapse-tickets",
+   "performers": [
+    {
+     "name": "Daniel Deorksen’s Bicameral Collapse",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604"
+  },
+  {
+   "id": "do604-2026-10-15-the-shindigs-tickets",
+   "name": "The Shindigs",
+   "start": "2026-10-15T20:02-0700",
+   "status": "EventScheduled",
+   "venue": "The Astoria",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/15/the-shindigs-tickets",
+   "performers": [
+    {
+     "name": "The Shindigs",
      "songkick_genres": [],
      "strict": true
     }
@@ -10296,21 +10528,6 @@
   }
  ],
  "skipped": [
-  {
-   "source": "songkick",
-   "id": "433311422026",
-   "name": "ANNUAL FROSH BALL 2026 @ The Pearl",
-   "start": "2026-09-09T21:00:00",
-   "status": "EventScheduled",
-   "venue": "The Pearl",
-   "venue_url": "https://thepearlvancouver.com/",
-   "locality": "Vancouver",
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "url": "https://www.songkick.com/festivals/3797011-annual-frosh-ball/id/43331142-annual-frosh-ball-2026",
-   "performers": [],
-   "skip_reason": "club_night"
-  },
   {
    "source": "songkick",
    "id": "433311372026",

@@ -3,189 +3,11 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-09-09T17:55:25+00:00",
- "scraped_at": "2026-09-09T17:52:52+00:00",
+ "generated_at": "2026-09-10T17:48:13+00:00",
+ "scraped_at": "2026-09-10T17:45:26+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
  "events": [
-  {
-   "id": "43270180",
-   "name": "Ryan Beatty @ Vogue Theatre",
-   "source": "songkick",
-   "date": "2026-09-09",
-   "start": "2026-09-09T20:00:00",
-   "venue": "Vogue Theatre",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43270180-ryan-beatty-at-vogue-theatre",
-   "lat": 49.27981,
-   "lng": -123.12164,
-   "headliner": "Ryan Beatty",
-   "artists": [
-    {
-     "name": "Ryan Beatty",
-     "spotify_name": "Ryan Beatty",
-     "spotify_id": "60NNvDqsif0u40CXMV6jDQ",
-     "url": "https://open.spotify.com/artist/60NNvDqsif0u40CXMV6jDQ",
-     "genres": [],
-     "songkick_genres": [
-      "r_and_b",
-      "pop"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1781fd413efd8c170a0b8c59f1c",
-     "tracks": [
-      {
-       "id": "2RtNoFR37ieZtxShQ5BSSI",
-       "uri": "spotify:track:2RtNoFR37ieZtxShQ5BSSI",
-       "name": "Virtuoso",
-       "popularity": null,
-       "album": "Sweet Fortune",
-       "album_type": "album",
-       "release_date": "2026-06-26",
-       "duration_ms": 221595,
-       "explicit": false
-      },
-      {
-       "id": "3K6GgBsxAcSc9bG1kWoaRh",
-       "uri": "spotify:track:3K6GgBsxAcSc9bG1kWoaRh",
-       "name": "White Lightning",
-       "popularity": null,
-       "album": "Sweet Fortune",
-       "album_type": "album",
-       "release_date": "2026-06-26",
-       "duration_ms": 264837,
-       "explicit": false
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 439137,
-      "playcount": 15946309,
-      "tags": [
-       "pop",
-       "indie pop",
-       "little star",
-       "male"
-      ],
-      "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Ryan+Beatty"
-     }
-    }
-   ]
-  },
-  {
-   "id": "43077378",
-   "name": "Haute & Freddy @ Hollywood Theatre",
-   "source": "songkick",
-   "date": "2026-09-09",
-   "start": "2026-09-09T20:00:00",
-   "venue": "Hollywood Theatre",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43077378-haute-and-freddy-at-hollywood-theatre",
-   "lat": 49.26444,
-   "lng": -123.17453,
-   "headliner": "Haute & Freddy",
-   "artists": [
-    {
-     "name": "Haute & Freddy",
-     "spotify_name": "Haute & Freddy",
-     "spotify_id": "66T34XqGkEWbzKWALSBDuR",
-     "url": "https://open.spotify.com/artist/66T34XqGkEWbzKWALSBDuR",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f17871b6baa0f6e3c69973eeacd7",
-     "tracks": [
-      {
-       "id": "2LIOTreGvPk5GdpeGUqYIu",
-       "uri": "spotify:track:2LIOTreGvPk5GdpeGUqYIu",
-       "name": "Shy Girl",
-       "popularity": null,
-       "album": "Big Disgrace",
-       "album_type": "album",
-       "release_date": "2026-03-13",
-       "duration_ms": 187658,
-       "explicit": false
-      },
-      {
-       "id": "18fRO6IsVaKNn5HIdVraSA",
-       "uri": "spotify:track:18fRO6IsVaKNn5HIdVraSA",
-       "name": "Touch Touch",
-       "popularity": null,
-       "album": "Touch Touch",
-       "album_type": "single",
-       "release_date": "2026-08-28",
-       "duration_ms": 269333,
-       "explicit": false
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 189196,
-      "playcount": 2351923,
-      "tags": [
-       "synthpop",
-       "alternative",
-       "electroclash",
-       "new wave"
-      ],
-      "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Haute+&+Freddy"
-     }
-    }
-   ]
-  },
-  {
-   "id": "43332871",
-   "name": "Isaac Slade @ St. James Community Square",
-   "source": "songkick",
-   "date": "2026-09-09",
-   "start": "2026-09-09T19:00:00",
-   "venue": "St. James Community Square",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43332871-isaac-slade-at-st-james-community-square",
-   "lat": 49.26327,
-   "lng": -123.17624,
-   "headliner": "Isaac Slade",
-   "artists": [
-    {
-     "name": "Isaac Slade",
-     "spotify_name": "Isaac Slade",
-     "spotify_id": "2Rkjb6SQLEyArGSmlAm7fu",
-     "url": "https://open.spotify.com/artist/2Rkjb6SQLEyArGSmlAm7fu",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178e29e2d0f36b507e755a60786",
-     "tracks": [
-      {
-       "id": "5rtDY1bTe9fLabFLBmBcyz",
-       "uri": "spotify:track:5rtDY1bTe9fLabFLBmBcyz",
-       "name": "It's Beginning to Look a Lot Like Christmas",
-       "popularity": null,
-       "album": "It's Beginning to Look a Lot Like Christmas",
-       "album_type": "single",
-       "release_date": "2025-12-12",
-       "duration_ms": 206708,
-       "explicit": false
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 548,
-      "playcount": 1312,
-      "tags": [
-       "soundtrack"
-      ],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Isaac+Slade"
-     }
-    }
-   ]
-  },
   {
    "id": "43283243",
    "name": "Bear McCreary @ The Rickshaw",
@@ -3905,6 +3727,68 @@
       ],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Elliott+Skinner"
+     }
+    }
+   ]
+  },
+  {
+   "id": "434067252026",
+   "name": "Vancouver Fringe Festival 2026 @ Granville Island",
+   "source": "songkick",
+   "date": "2026-09-16",
+   "start": "2026-09-16",
+   "venue": "Granville Island",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/festivals/815384-vancouver-fringe/id/43406725-vancouver-fringe-festival-2026",
+   "lat": null,
+   "lng": null,
+   "headliner": "Jody Glenham",
+   "artists": [
+    {
+     "name": "Jody Glenham",
+     "spotify_name": "Jody Glenham",
+     "spotify_id": "4yC5LRKMoOFedYvLJKhiYW",
+     "url": "https://open.spotify.com/artist/4yC5LRKMoOFedYvLJKhiYW",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f17872c78249e7e97b336ff438aa",
+     "tracks": [
+      {
+       "id": "41ewUUyEI6X0SQXZEvtmib",
+       "uri": "spotify:track:41ewUUyEI6X0SQXZEvtmib",
+       "name": "Overtime",
+       "popularity": null,
+       "album": "Overtime",
+       "album_type": "single",
+       "release_date": "2026-01-16",
+       "duration_ms": 224844,
+       "explicit": false
+      },
+      {
+       "id": "7enjf4K9lXSK3KCOkAvkvE",
+       "uri": "spotify:track:7enjf4K9lXSK3KCOkAvkvE",
+       "name": "Ill Wind",
+       "popularity": null,
+       "album": "RSVP/Ill Wind (For Frances 7'')",
+       "album_type": "single",
+       "release_date": "2015-06-30",
+       "duration_ms": 280020,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 2069,
+      "playcount": 8165,
+      "tags": [
+       "alternative",
+       "shoegaze",
+       "dream pop"
+      ],
+      "tier": 1,
+      "lastfm_url": "https://www.last.fm/music/Jody+Glenham"
      }
     }
    ]
@@ -13951,55 +13835,6 @@
    ]
   },
   {
-   "id": "43255683",
-   "name": "LOLO (US) @ The Pearl",
-   "source": "songkick",
-   "date": "2026-10-03",
-   "start": "2026-10-03T19:00:00",
-   "venue": "The Pearl",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43255683-lolo-us-at-pearl",
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "headliner": "LOLO (US)",
-   "artists": [
-    {
-     "name": "LOLO (US)",
-     "spotify_name": "LOLO",
-     "spotify_id": "0H0OkFxp022WOyKlt3HmlA",
-     "url": "https://open.spotify.com/artist/0H0OkFxp022WOyKlt3HmlA",
-     "genres": [],
-     "songkick_genres": [
-      "funk_soul",
-      "pop",
-      "indie_alternative"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f17845a903c147bb9251cdecf0f5",
-     "tracks": [
-      {
-       "id": "46Kcradxrva9Dny4lHU1b3",
-       "uri": "spotify:track:46Kcradxrva9Dny4lHU1b3",
-       "name": "Miss Jackson (feat. LOLO)",
-       "popularity": null,
-       "album": "Too Weird to Live, Too Rare to Die!",
-       "album_type": "album",
-       "release_date": "2013-10-04",
-       "duration_ms": 192053,
-       "explicit": false
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 0,
-      "tier": 0,
-      "tags": []
-     }
-    }
-   ]
-  },
-  {
    "id": "43353415",
    "name": "DJ Assault @ The Pearl",
    "source": "songkick",
@@ -14058,6 +13893,55 @@
       ],
       "tier": 3,
       "lastfm_url": "https://www.last.fm/music/DJ+Assault"
+     }
+    }
+   ]
+  },
+  {
+   "id": "43255683",
+   "name": "LOLO (US) @ The Pearl",
+   "source": "songkick",
+   "date": "2026-10-03",
+   "start": "2026-10-03T19:00:00",
+   "venue": "The Pearl",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43255683-lolo-us-at-pearl",
+   "lat": 49.28071,
+   "lng": -123.12143,
+   "headliner": "LOLO (US)",
+   "artists": [
+    {
+     "name": "LOLO (US)",
+     "spotify_name": "LOLO",
+     "spotify_id": "0H0OkFxp022WOyKlt3HmlA",
+     "url": "https://open.spotify.com/artist/0H0OkFxp022WOyKlt3HmlA",
+     "genres": [],
+     "songkick_genres": [
+      "funk_soul",
+      "pop",
+      "indie_alternative"
+     ],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f17845a903c147bb9251cdecf0f5",
+     "tracks": [
+      {
+       "id": "46Kcradxrva9Dny4lHU1b3",
+       "uri": "spotify:track:46Kcradxrva9Dny4lHU1b3",
+       "name": "Miss Jackson (feat. LOLO)",
+       "popularity": null,
+       "album": "Too Weird to Live, Too Rare to Die!",
+       "album_type": "album",
+       "release_date": "2013-10-04",
+       "duration_ms": 192053,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 0,
+      "tier": 0,
+      "tags": []
      }
     }
    ]
@@ -16684,117 +16568,6 @@
    ]
   },
   {
-   "id": "43313614",
-   "name": "Kontravoid @ Biltmore Cabaret",
-   "source": "songkick",
-   "date": "2026-10-08",
-   "start": "2026-10-08",
-   "venue": "Biltmore Cabaret",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43313614-kontravoid-at-biltmore-cabaret",
-   "lat": 49.26041,
-   "lng": -123.09668,
-   "headliner": "Kontravoid",
-   "artists": [
-    {
-     "name": "Kontravoid",
-     "spotify_name": "Kontravoid",
-     "spotify_id": "1cZNxWhPe9pKXdVZZdA9Bz",
-     "url": "https://open.spotify.com/artist/1cZNxWhPe9pKXdVZZdA9Bz",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178cd2d1b7522b2dd6c2aa723bd",
-     "tracks": [
-      {
-       "id": "7FQZJZqNmI7HmwOqZm45QC",
-       "uri": "spotify:track:7FQZJZqNmI7HmwOqZm45QC",
-       "name": "Native State",
-       "popularity": null,
-       "album": "Kontravoid (Deluxe Edition)",
-       "album_type": "album",
-       "release_date": "2012-02-10",
-       "duration_ms": 150125,
-       "explicit": false
-      },
-      {
-       "id": "0EHvGGOZdRzQY4MIm8MTDq",
-       "uri": "spotify:track:0EHvGGOZdRzQY4MIm8MTDq",
-       "name": "Mortal",
-       "popularity": null,
-       "album": "Mortal",
-       "album_type": "single",
-       "release_date": "2026-01-30",
-       "duration_ms": 219500,
-       "explicit": false
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 66982,
-      "playcount": 1128608,
-      "tags": [
-       "synthpop",
-       "ebm",
-       "industrial",
-       "electronic"
-      ],
-      "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Kontravoid"
-     }
-    },
-    {
-     "name": "buzz kull",
-     "spotify_name": "Buzz Kull",
-     "spotify_id": "5RtyPqV9c3KizJ8pqJEcZl",
-     "url": "https://open.spotify.com/artist/5RtyPqV9c3KizJ8pqJEcZl",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1783f43827d43b617beabefddbe",
-     "tracks": [
-      {
-       "id": "6gounPqYOVyM8cMqYk3YeT",
-       "uri": "spotify:track:6gounPqYOVyM8cMqYk3YeT",
-       "name": "Into the Void",
-       "popularity": null,
-       "album": "Chroma",
-       "album_type": "album",
-       "release_date": "2017-04-20",
-       "duration_ms": 216000,
-       "explicit": false
-      },
-      {
-       "id": "5BiBpmdJ8s5V3nb91nYlPl",
-       "uri": "spotify:track:5BiBpmdJ8s5V3nb91nYlPl",
-       "name": "Last In The Club",
-       "popularity": null,
-       "album": "Last In The Club",
-       "album_type": "single",
-       "release_date": "2019-11-08",
-       "duration_ms": 234017,
-       "explicit": false
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 101568,
-      "playcount": 1170429,
-      "tags": [
-       "darkwave",
-       "post-punk",
-       "coldwave",
-       "lo-fi"
-      ],
-      "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Buzz+Kull"
-     }
-    }
-   ]
-  },
-  {
    "id": "43400312",
    "name": "Concrete Vehicles @ Rickshaw Theatre",
    "source": "songkick",
@@ -16943,6 +16716,117 @@
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/WAIT%2F%2FLESS"
+     }
+    }
+   ]
+  },
+  {
+   "id": "43313614",
+   "name": "Kontravoid @ Biltmore Cabaret",
+   "source": "songkick",
+   "date": "2026-10-08",
+   "start": "2026-10-08",
+   "venue": "Biltmore Cabaret",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43313614-kontravoid-at-biltmore-cabaret",
+   "lat": 49.26041,
+   "lng": -123.09668,
+   "headliner": "Kontravoid",
+   "artists": [
+    {
+     "name": "Kontravoid",
+     "spotify_name": "Kontravoid",
+     "spotify_id": "1cZNxWhPe9pKXdVZZdA9Bz",
+     "url": "https://open.spotify.com/artist/1cZNxWhPe9pKXdVZZdA9Bz",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f178cd2d1b7522b2dd6c2aa723bd",
+     "tracks": [
+      {
+       "id": "7FQZJZqNmI7HmwOqZm45QC",
+       "uri": "spotify:track:7FQZJZqNmI7HmwOqZm45QC",
+       "name": "Native State",
+       "popularity": null,
+       "album": "Kontravoid (Deluxe Edition)",
+       "album_type": "album",
+       "release_date": "2012-02-10",
+       "duration_ms": 150125,
+       "explicit": false
+      },
+      {
+       "id": "0EHvGGOZdRzQY4MIm8MTDq",
+       "uri": "spotify:track:0EHvGGOZdRzQY4MIm8MTDq",
+       "name": "Mortal",
+       "popularity": null,
+       "album": "Mortal",
+       "album_type": "single",
+       "release_date": "2026-01-30",
+       "duration_ms": 219500,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 66982,
+      "playcount": 1128608,
+      "tags": [
+       "synthpop",
+       "ebm",
+       "industrial",
+       "electronic"
+      ],
+      "tier": 3,
+      "lastfm_url": "https://www.last.fm/music/Kontravoid"
+     }
+    },
+    {
+     "name": "buzz kull",
+     "spotify_name": "Buzz Kull",
+     "spotify_id": "5RtyPqV9c3KizJ8pqJEcZl",
+     "url": "https://open.spotify.com/artist/5RtyPqV9c3KizJ8pqJEcZl",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f1783f43827d43b617beabefddbe",
+     "tracks": [
+      {
+       "id": "6gounPqYOVyM8cMqYk3YeT",
+       "uri": "spotify:track:6gounPqYOVyM8cMqYk3YeT",
+       "name": "Into the Void",
+       "popularity": null,
+       "album": "Chroma",
+       "album_type": "album",
+       "release_date": "2017-04-20",
+       "duration_ms": 216000,
+       "explicit": false
+      },
+      {
+       "id": "5BiBpmdJ8s5V3nb91nYlPl",
+       "uri": "spotify:track:5BiBpmdJ8s5V3nb91nYlPl",
+       "name": "Last In The Club",
+       "popularity": null,
+       "album": "Last In The Club",
+       "album_type": "single",
+       "release_date": "2019-11-08",
+       "duration_ms": 234017,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 101568,
+      "playcount": 1170429,
+      "tags": [
+       "darkwave",
+       "post-punk",
+       "coldwave",
+       "lo-fi"
+      ],
+      "tier": 3,
+      "lastfm_url": "https://www.last.fm/music/Buzz+Kull"
      }
     }
    ]
@@ -20499,6 +20383,68 @@
    ]
   },
   {
+   "id": "43357164",
+   "name": "Rett Madison @ The WISE Hall",
+   "source": "songkick",
+   "date": "2026-10-14",
+   "start": "2026-10-14T20:00:00",
+   "venue": "The WISE Hall",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43357164-rett-madison-at-wise-hall",
+   "lat": 49.2773,
+   "lng": -123.06607,
+   "headliner": "Rett Madison",
+   "artists": [
+    {
+     "name": "Rett Madison",
+     "spotify_name": "Rett Madison",
+     "spotify_id": "2uvAzG565dP2oXartAqh1F",
+     "url": "https://open.spotify.com/artist/2uvAzG565dP2oXartAqh1F",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f1788f57bdfe6c7ede4dda2bab61",
+     "tracks": [
+      {
+       "id": "1IGpnASqOgw77lZD8M38GQ",
+       "uri": "spotify:track:1IGpnASqOgw77lZD8M38GQ",
+       "name": "Eleven Wednesdays",
+       "popularity": null,
+       "album": "Eleven Wednesdays",
+       "album_type": "single",
+       "release_date": "2026-03-11",
+       "duration_ms": 228383,
+       "explicit": false
+      },
+      {
+       "id": "1ORRoKhwvtHW5xLTNSa6XX",
+       "uri": "spotify:track:1ORRoKhwvtHW5xLTNSa6XX",
+       "name": "One for Jackie, One for Crystal",
+       "popularity": null,
+       "album": "One for Jackie",
+       "album_type": "album",
+       "release_date": "2023-10-27",
+       "duration_ms": 224520,
+       "explicit": true
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 31698,
+      "playcount": 248468,
+      "tags": [
+       "acoustic",
+       "folk",
+       "country"
+      ],
+      "tier": 2,
+      "lastfm_url": "https://www.last.fm/music/Rett+Madison"
+     }
+    }
+   ]
+  },
+  {
    "id": "43390773",
    "name": "Emma Alves @ The Roxy Cabaret",
    "source": "songkick",
@@ -20603,604 +20549,254 @@
    ]
   },
   {
-   "id": "do604-2026-09-09-the-haunted-within-abandoned-yesterday-t",
-   "name": "The Haunted Within / Abandoned Yesterday",
-   "source": "do604",
-   "date": "2026-09-09",
-   "start": "2026-09-09T20:00-0700",
-   "venue": "The Roxy",
+   "id": "43214520",
+   "name": "Hovvdy @ Hollywood Theatre",
+   "source": "songkick",
+   "date": "2026-10-15",
+   "start": "2026-10-15T20:00:00",
+   "venue": "Hollywood Theatre",
    "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/9/the-haunted-within-abandoned-yesterday-tickets",
-   "lat": null,
-   "lng": null,
-   "headliner": "The Haunted Within",
+   "url": "https://www.songkick.com/concerts/43214520-hovvdy-at-hollywood-theatre",
+   "lat": 49.26444,
+   "lng": -123.17453,
+   "headliner": "Hovvdy",
    "artists": [
     {
-     "name": "The Haunted Within",
-     "spotify_name": "The Haunted Within",
-     "spotify_id": "7qA3YdISsVnF08DqESThs6",
-     "url": "https://open.spotify.com/artist/7qA3YdISsVnF08DqESThs6",
+     "name": "Hovvdy",
+     "spotify_name": "Hovvdy",
+     "spotify_id": "59RNNqeEfkq3X5pfOQxZ3C",
+     "url": "https://open.spotify.com/artist/59RNNqeEfkq3X5pfOQxZ3C",
      "genres": [],
      "songkick_genres": [],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1786708625823af7a9c98dc91f0",
+     "image": "https://i.scdn.co/image/ab6761610000f178b51ac99bf2208116f683dea7",
      "tracks": [
       {
-       "id": "3xs2cvEdJGoS4IuuNltuVS",
-       "uri": "spotify:track:3xs2cvEdJGoS4IuuNltuVS",
-       "name": "The Haunted Within",
+       "id": "7CNzHJHDLfmEqGZDSKgqGj",
+       "uri": "spotify:track:7CNzHJHDLfmEqGZDSKgqGj",
+       "name": "Blast",
        "popularity": null,
-       "album": "The Haunted Within",
-       "album_type": "single",
-       "release_date": "2023-10-13",
-       "duration_ms": 235215,
-       "explicit": true
-      },
-      {
-       "id": "5X0yYTFlpxneyZzDUuxPl2",
-       "uri": "spotify:track:5X0yYTFlpxneyZzDUuxPl2",
-       "name": "Path to Eternal Slumber",
-       "popularity": null,
-       "album": "The Haunted Within Vol. 2",
-       "album_type": "single",
-       "release_date": "2025-10-31",
-       "duration_ms": 257188,
-       "explicit": true
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 142,
-      "playcount": 207,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/The+Haunted+Within"
-     }
-    },
-    {
-     "name": "Abandoned Yesterday",
-     "spotify_name": "Abandoned Yesterday",
-     "spotify_id": "3zibhO6VudAALiGLs4SK3Z",
-     "url": "https://open.spotify.com/artist/3zibhO6VudAALiGLs4SK3Z",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f17881bb3c470b97537a07aa7e7f",
-     "tracks": [
-      {
-       "id": "08nlEHoUh2ejiujrgsdnAO",
-       "uri": "spotify:track:08nlEHoUh2ejiujrgsdnAO",
-       "name": "Dead and Buried",
-       "popularity": null,
-       "album": "Dead and Buried",
-       "album_type": "single",
-       "release_date": "2025-10-03",
-       "duration_ms": 249746,
-       "explicit": true
-      },
-      {
-       "id": "61EecshgqxQqWJPA6XfsmW",
-       "uri": "spotify:track:61EecshgqxQqWJPA6XfsmW",
-       "name": "Broken Promise",
-       "popularity": null,
-       "album": "Broken Promise",
-       "album_type": "single",
-       "release_date": "2025-04-19",
-       "duration_ms": 177053,
-       "explicit": false
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 25,
-      "playcount": 138,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Abandoned+Yesterday"
-     }
-    }
-   ]
-  },
-  {
-   "id": "do604-2026-09-09-early-show-tzienna-tickets",
-   "name": "Early Show: Tzienna",
-   "source": "do604",
-   "date": "2026-09-09",
-   "start": "2026-09-09T19:00-0700",
-   "venue": "Guilt & Company",
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/9/early-show-tzienna-tickets",
-   "lat": null,
-   "lng": null,
-   "headliner": "Tzienna",
-   "artists": [
-    {
-     "name": "Tzienna",
-     "spotify_name": "Tzienna",
-     "spotify_id": "1hLDVU6vQBLUiztvoNxNTo",
-     "url": "https://open.spotify.com/artist/1hLDVU6vQBLUiztvoNxNTo",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178b0b7a5f747dd1e9525ceae48",
-     "tracks": [
-      {
-       "id": "5YlqH2TYDZpG8jVeCwMlQA",
-       "uri": "spotify:track:5YlqH2TYDZpG8jVeCwMlQA",
-       "name": "hush",
-       "popularity": null,
-       "album": "hush",
-       "album_type": "single",
-       "release_date": "2024-01-16",
-       "duration_ms": 225990,
-       "explicit": false
-      },
-      {
-       "id": "30SBBoagnCVJYGt2ntrYod",
-       "uri": "spotify:track:30SBBoagnCVJYGt2ntrYod",
-       "name": "Brimming",
-       "popularity": null,
-       "album": "Brimming",
-       "album_type": "single",
-       "release_date": "2025-11-21",
-       "duration_ms": 292398,
-       "explicit": false
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 2,
-      "playcount": 19,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Tzienna"
-     }
-    }
-   ]
-  },
-  {
-   "id": "do604-2026-09-09-earth-altar-empress-lumivore-goblin-vess",
-   "name": "Earth Altar // Empress // Lumivore // Goblin Vessel",
-   "source": "do604",
-   "date": "2026-09-09",
-   "start": "2026-09-09T19:00-0700",
-   "venue": "The Astoria",
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/9/earth-altar-empress-lumivore-goblin-vessel-tickets-lwellbk",
-   "lat": null,
-   "lng": null,
-   "headliner": "Earth Altar",
-   "artists": [
-    {
-     "name": "Earth Altar",
-     "spotify_name": "Earth Altar",
-     "spotify_id": "3kg4rGo3WNcNJKvfyZPNYY",
-     "url": "https://open.spotify.com/artist/3kg4rGo3WNcNJKvfyZPNYY",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178b000e4cadc2e1aca663d0da4",
-     "tracks": [
-      {
-       "id": "3nDM2ABmPcGIo0RsNqx1lB",
-       "uri": "spotify:track:3nDM2ABmPcGIo0RsNqx1lB",
-       "name": "Triptych",
-       "popularity": null,
-       "album": "Hawk and Swan",
+       "album": "Big World",
        "album_type": "album",
-       "release_date": "2026-09-04",
-       "duration_ms": 486963,
+       "release_date": "2026-08-14",
+       "duration_ms": 197533,
        "explicit": false
       },
       {
-       "id": "6olBtktV3kLCduiVV4dYe8",
-       "uri": "spotify:track:6olBtktV3kLCduiVV4dYe8",
-       "name": "Red Eye",
+       "id": "73X9SAt8qtPtbUjY1Ngl1N",
+       "uri": "spotify:track:73X9SAt8qtPtbUjY1Ngl1N",
+       "name": "What I Had",
        "popularity": null,
-       "album": "Hawk and Swan",
+       "album": "Big World",
        "album_type": "album",
-       "release_date": "2026-09-04",
-       "duration_ms": 288516,
+       "release_date": "2026-08-14",
+       "duration_ms": 181333,
        "explicit": false
       }
      ],
      "rank_source": "search",
      "reach": {
-      "listeners": 129,
-      "playcount": 517,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Earth+Altar"
-     }
-    },
-    {
-     "name": "Lumivore",
-     "spotify_name": "Lumivore",
-     "spotify_id": "4Wk8tstYnb47LYMDQqa3QE",
-     "url": "https://open.spotify.com/artist/4Wk8tstYnb47LYMDQqa3QE",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1785af3432c36c267c55f969542",
-     "tracks": [
-      {
-       "id": "2xFxMcGPdQpy9Aym2XqINi",
-       "uri": "spotify:track:2xFxMcGPdQpy9Aym2XqINi",
-       "name": "Comfort Food",
-       "popularity": null,
-       "album": "Comfort Food",
-       "album_type": "single",
-       "release_date": "2026-06-02",
-       "duration_ms": 296250,
-       "explicit": false
-      },
-      {
-       "id": "5UDqi6ujfk49pdgvQj4K91",
-       "uri": "spotify:track:5UDqi6ujfk49pdgvQj4K91",
-       "name": "SZL",
-       "popularity": null,
-       "album": "SZL",
-       "album_type": "single",
-       "release_date": "2026-07-06",
-       "duration_ms": 232846,
-       "explicit": true
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 16,
-      "playcount": 185,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Lumivore"
-     }
-    },
-    {
-     "name": "Goblin Vessel",
-     "spotify_name": "Goblin Vessel",
-     "spotify_id": "0MFwPV5a4XqEPyP1YHWsPQ",
-     "url": "https://open.spotify.com/artist/0MFwPV5a4XqEPyP1YHWsPQ",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab67616d0000485106fc23a789f026e1c0b5269f",
-     "tracks": [
-      {
-       "id": "0vsD85Qlu3W86XKTE12lUG",
-       "uri": "spotify:track:0vsD85Qlu3W86XKTE12lUG",
-       "name": "Banshee // Corrupted Entity",
-       "popularity": null,
-       "album": "COSMIC YAWN",
-       "album_type": "single",
-       "release_date": "2026-07-03",
-       "duration_ms": 272896,
-       "explicit": false
-      },
-      {
-       "id": "4QnvmzRN8ubAg5TGUwxPrS",
-       "uri": "spotify:track:4QnvmzRN8ubAg5TGUwxPrS",
-       "name": "Astral Witch",
-       "popularity": null,
-       "album": "COSMIC YAWN",
-       "album_type": "single",
-       "release_date": "2026-07-03",
-       "duration_ms": 203139,
-       "explicit": false
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 3,
-      "playcount": 18,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Goblin+Vessel"
+      "listeners": 328343,
+      "playcount": 5806311,
+      "tags": [
+       "lo-fi",
+       "slowcore",
+       "shoegaze",
+       "indie rock"
+      ],
+      "tier": 3,
+      "lastfm_url": "https://www.last.fm/music/Hovvdy"
      }
     }
    ]
   },
   {
-   "id": "do604-2026-09-09-earth-altar-empress-lumivore-goblin-vess",
-   "name": "Earth Altar // Empress // Lumivore // Goblin Vessel",
-   "source": "do604",
-   "date": "2026-09-09",
-   "start": "2026-09-09T19:00-0700",
+   "id": "43348588",
+   "name": "Richard Marx @ River Rock Casino Resort",
+   "source": "songkick",
+   "date": "2026-10-15",
+   "start": "2026-10-15T20:00:00",
+   "venue": "River Rock Casino Resort",
+   "locality": "Richmond",
+   "url": "https://www.songkick.com/concerts/43348588-richard-marx-at-river-rock-casino-resort",
+   "lat": 49.19625,
+   "lng": -123.12768,
+   "headliner": "Richard Marx",
+   "artists": [
+    {
+     "name": "Richard Marx",
+     "spotify_name": "Richard Marx",
+     "spotify_id": "0grdhNhiRLFBaFVyybqsj6",
+     "url": "https://open.spotify.com/artist/0grdhNhiRLFBaFVyybqsj6",
+     "genres": [],
+     "songkick_genres": [
+      "rock",
+      "pop"
+     ],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f178ac0402ac44ac760f16a64ac2",
+     "tracks": [
+      {
+       "id": "4LFwNJWoj74Yd71fIr1W8x",
+       "uri": "spotify:track:4LFwNJWoj74Yd71fIr1W8x",
+       "name": "Right Here Waiting",
+       "popularity": null,
+       "album": "Repeat Offender",
+       "album_type": "album",
+       "release_date": "1989-01-01",
+       "duration_ms": 264333,
+       "explicit": false
+      },
+      {
+       "id": "2V2pxcEfn5zs79sE7qcewA",
+       "uri": "spotify:track:2V2pxcEfn5zs79sE7qcewA",
+       "name": "Now And Forever",
+       "popularity": null,
+       "album": "Paid Vacation",
+       "album_type": "album",
+       "release_date": "1994-01-01",
+       "duration_ms": 214826,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 809763,
+      "playcount": 7785134,
+      "tags": [
+       "pop",
+       "soft rock",
+       "rock"
+      ],
+      "tier": 4,
+      "lastfm_url": "https://www.last.fm/music/Richard+Marx"
+     }
+    }
+   ]
+  },
+  {
+   "id": "43399862",
+   "name": "Post Sex Nachos @ Biltmore Cabaret",
+   "source": "songkick",
+   "date": "2026-10-15",
+   "start": "2026-10-15T19:00:00",
+   "venue": "Biltmore Cabaret",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43399862-post-sex-nachos-at-biltmore-cabaret",
+   "lat": 49.26041,
+   "lng": -123.09668,
+   "headliner": "Post Sex Nachos",
+   "artists": [
+    {
+     "name": "Post Sex Nachos",
+     "spotify_name": "Post Sex Nachos",
+     "spotify_id": "3BRSFkEbxBXsZASWPOMOuP",
+     "url": "https://open.spotify.com/artist/3BRSFkEbxBXsZASWPOMOuP",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f178970c1e9e0015675cbcbd9250",
+     "tracks": [
+      {
+       "id": "0UlXfoMdNQRn6cFy16RI2d",
+       "uri": "spotify:track:0UlXfoMdNQRn6cFy16RI2d",
+       "name": "SOS",
+       "popularity": null,
+       "album": "SOS",
+       "album_type": "single",
+       "release_date": "2025-11-07",
+       "duration_ms": 184200,
+       "explicit": false
+      },
+      {
+       "id": "0Pljubwi0VenHXbIvNQRtw",
+       "uri": "spotify:track:0Pljubwi0VenHXbIvNQRtw",
+       "name": "Talk About It",
+       "popularity": null,
+       "album": "Prima/Vera",
+       "album_type": "album",
+       "release_date": "2024-02-09",
+       "duration_ms": 232703,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 70365,
+      "playcount": 688917,
+      "tags": [
+       "indie rock",
+       "pop",
+       "pop rock"
+      ],
+      "tier": 3,
+      "lastfm_url": "https://www.last.fm/music/Post+Sex+Nachos"
+     }
+    }
+   ]
+  },
+  {
+   "id": "43379785",
+   "name": "The Shindigs @ Astoria Pub",
+   "source": "songkick",
+   "date": "2026-10-15",
+   "start": "2026-10-15T20:00:00",
    "venue": "Astoria Pub",
    "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/9/earth-altar-empress-lumivore-goblin-vessel-tickets",
-   "lat": null,
-   "lng": null,
-   "headliner": "Earth Altar",
+   "url": "https://www.songkick.com/concerts/43379785-shindigs-at-astoria-pub",
+   "lat": 49.28128,
+   "lng": -123.08796,
+   "headliner": "The Shindigs",
    "artists": [
     {
-     "name": "Earth Altar",
-     "spotify_name": "Earth Altar",
-     "spotify_id": "3kg4rGo3WNcNJKvfyZPNYY",
-     "url": "https://open.spotify.com/artist/3kg4rGo3WNcNJKvfyZPNYY",
+     "name": "The Shindigs",
+     "spotify_name": "The Shindigs",
+     "spotify_id": "0RlgKtcs9jaOJMnR0WR495",
+     "url": "https://open.spotify.com/artist/0RlgKtcs9jaOJMnR0WR495",
      "genres": [],
      "songkick_genres": [],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178b000e4cadc2e1aca663d0da4",
+     "image": "https://i.scdn.co/image/ab6761610000f1783290fa5d646b2dc5e521bbdf",
      "tracks": [
       {
-       "id": "3nDM2ABmPcGIo0RsNqx1lB",
-       "uri": "spotify:track:3nDM2ABmPcGIo0RsNqx1lB",
-       "name": "Triptych",
+       "id": "0vouTaPvG46z6Zq24v770l",
+       "uri": "spotify:track:0vouTaPvG46z6Zq24v770l",
+       "name": "Warzone",
        "popularity": null,
-       "album": "Hawk and Swan",
-       "album_type": "album",
-       "release_date": "2026-09-04",
-       "duration_ms": 486963,
+       "album": "Warzone",
+       "album_type": "single",
+       "release_date": "2026-07-17",
+       "duration_ms": 128586,
        "explicit": false
       },
       {
-       "id": "6olBtktV3kLCduiVV4dYe8",
-       "uri": "spotify:track:6olBtktV3kLCduiVV4dYe8",
-       "name": "Red Eye",
+       "id": "2SbpXRYXiDbkGAEzGyOwDZ",
+       "uri": "spotify:track:2SbpXRYXiDbkGAEzGyOwDZ",
+       "name": "Snowball",
        "popularity": null,
-       "album": "Hawk and Swan",
-       "album_type": "album",
-       "release_date": "2026-09-04",
-       "duration_ms": 288516,
+       "album": "Snowball",
+       "album_type": "single",
+       "release_date": "2025-07-27",
+       "duration_ms": 229221,
        "explicit": false
       }
      ],
      "rank_source": "search",
      "reach": {
-      "listeners": 129,
-      "playcount": 517,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Earth+Altar"
-     }
-    },
-    {
-     "name": "Lumivore",
-     "spotify_name": "Lumivore",
-     "spotify_id": "4Wk8tstYnb47LYMDQqa3QE",
-     "url": "https://open.spotify.com/artist/4Wk8tstYnb47LYMDQqa3QE",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1785af3432c36c267c55f969542",
-     "tracks": [
-      {
-       "id": "2xFxMcGPdQpy9Aym2XqINi",
-       "uri": "spotify:track:2xFxMcGPdQpy9Aym2XqINi",
-       "name": "Comfort Food",
-       "popularity": null,
-       "album": "Comfort Food",
-       "album_type": "single",
-       "release_date": "2026-06-02",
-       "duration_ms": 296250,
-       "explicit": false
-      },
-      {
-       "id": "5UDqi6ujfk49pdgvQj4K91",
-       "uri": "spotify:track:5UDqi6ujfk49pdgvQj4K91",
-       "name": "SZL",
-       "popularity": null,
-       "album": "SZL",
-       "album_type": "single",
-       "release_date": "2026-07-06",
-       "duration_ms": 232846,
-       "explicit": true
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 16,
-      "playcount": 185,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Lumivore"
-     }
-    },
-    {
-     "name": "Goblin Vessel",
-     "spotify_name": "Goblin Vessel",
-     "spotify_id": "0MFwPV5a4XqEPyP1YHWsPQ",
-     "url": "https://open.spotify.com/artist/0MFwPV5a4XqEPyP1YHWsPQ",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab67616d0000485106fc23a789f026e1c0b5269f",
-     "tracks": [
-      {
-       "id": "0vsD85Qlu3W86XKTE12lUG",
-       "uri": "spotify:track:0vsD85Qlu3W86XKTE12lUG",
-       "name": "Banshee // Corrupted Entity",
-       "popularity": null,
-       "album": "COSMIC YAWN",
-       "album_type": "single",
-       "release_date": "2026-07-03",
-       "duration_ms": 272896,
-       "explicit": false
-      },
-      {
-       "id": "4QnvmzRN8ubAg5TGUwxPrS",
-       "uri": "spotify:track:4QnvmzRN8ubAg5TGUwxPrS",
-       "name": "Astral Witch",
-       "popularity": null,
-       "album": "COSMIC YAWN",
-       "album_type": "single",
-       "release_date": "2026-07-03",
-       "duration_ms": 203139,
-       "explicit": false
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 3,
-      "playcount": 18,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Goblin+Vessel"
-     }
-    }
-   ]
-  },
-  {
-   "id": "do604-2026-09-09-goetia-asphyxiated-empalement-tickets",
-   "name": "Goetia w/ Asphyxiated & Empalement",
-   "source": "do604",
-   "date": "2026-09-09",
-   "start": "2026-09-09T19:00-0700",
-   "venue": "The Cobalt",
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/9/goetia-asphyxiated-empalement-tickets",
-   "lat": null,
-   "lng": null,
-   "headliner": "Goetia",
-   "artists": [
-    {
-     "name": "Goetia",
-     "spotify_name": "Goetia",
-     "spotify_id": "1ML8kFJbaoMHGTGN4lH6re",
-     "url": "https://open.spotify.com/artist/1ML8kFJbaoMHGTGN4lH6re",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178a96901962bde59a2b6492690",
-     "tracks": [
-      {
-       "id": "5y5u4bR6lXpwAKkMGJ9tDb",
-       "uri": "spotify:track:5y5u4bR6lXpwAKkMGJ9tDb",
-       "name": "Excarnation",
-       "popularity": null,
-       "album": "Mortuary Cult",
-       "album_type": "album",
-       "release_date": "2026-06-12",
-       "duration_ms": 158603,
-       "explicit": false
-      },
-      {
-       "id": "4Zxw5sXHYyQd58z0zI7cPn",
-       "uri": "spotify:track:4Zxw5sXHYyQd58z0zI7cPn",
-       "name": "Lanterns of the Dead",
-       "popularity": null,
-       "album": "Mortuary Cult",
-       "album_type": "album",
-       "release_date": "2026-06-12",
-       "duration_ms": 180422,
-       "explicit": false
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 11144,
-      "playcount": 125070,
+      "listeners": 2440,
+      "playcount": 7181,
       "tags": [
-       "black metal",
-       "speedcore",
-       "hardcore",
-       "industrial hardcore"
-      ],
-      "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Goetia"
-     }
-    },
-    {
-     "name": "Asphyxiated",
-     "spotify_name": "Asphyxiated",
-     "spotify_id": "7aJILecIEXIkfViYpFTD5h",
-     "url": "https://open.spotify.com/artist/7aJILecIEXIkfViYpFTD5h",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab67616d0000485183df341999f1fb83764ecc62",
-     "tracks": [
-      {
-       "id": "6foNG3EnkroEnQ0x7WsqSN",
-       "uri": "spotify:track:6foNG3EnkroEnQ0x7WsqSN",
-       "name": "Vengeance Through Suicide",
-       "popularity": null,
-       "album": "Reborn In Evil",
-       "album_type": "single",
-       "release_date": "2025-05-23",
-       "duration_ms": 210000,
-       "explicit": true
-      },
-      {
-       "id": "4SvGnX3KWdsFR48QlDzfRy",
-       "uri": "spotify:track:4SvGnX3KWdsFR48QlDzfRy",
-       "name": "Reborn In Evil",
-       "popularity": null,
-       "album": "Reborn In Evil",
-       "album_type": "single",
-       "release_date": "2025-05-23",
-       "duration_ms": 178000,
-       "explicit": true
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 2843,
-      "playcount": 40909,
-      "tags": [
-       "thrash metal",
-       "death metal",
-       "brutal death metal",
-       "metal"
+       "funrock",
+       "rock",
+       "alternative",
+       "post-punk"
       ],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/asphyxiated"
-     }
-    },
-    {
-     "name": "Empalement",
-     "spotify_name": "Empalement",
-     "spotify_id": "4Ph9iovG0i6yyKwphl4f2b",
-     "url": "https://open.spotify.com/artist/4Ph9iovG0i6yyKwphl4f2b",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178a08422a3dc104bc70e0bfa77",
-     "tracks": [
-      {
-       "id": "3liKfeNKIYSaTCaiOpFZsq",
-       "uri": "spotify:track:3liKfeNKIYSaTCaiOpFZsq",
-       "name": "I Am Dust",
-       "popularity": null,
-       "album": "Celestial Perversion",
-       "album_type": "single",
-       "release_date": "2025-11-14",
-       "duration_ms": 223050,
-       "explicit": false
-      },
-      {
-       "id": "6jny9qHJC6SneHgckjFSmV",
-       "uri": "spotify:track:6jny9qHJC6SneHgckjFSmV",
-       "name": "A Summoning",
-       "popularity": null,
-       "album": "Celestial Perversion",
-       "album_type": "single",
-       "release_date": "2025-11-14",
-       "duration_ms": 41499,
-       "explicit": false
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 116,
-      "playcount": 729,
-      "tags": [
-       "black metal"
-      ],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Empalement"
+      "lastfm_url": "https://www.last.fm/music/The+Shindigs"
      }
     }
    ]
@@ -22140,6 +21736,69 @@
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Mivule"
+     }
+    }
+   ]
+  },
+  {
+   "id": "do604-2026-09-12-breakout-alt-pop-talent-chloe-star-annou",
+   "name": "Chloe Star Live show w/ Jenna Doe",
+   "source": "do604",
+   "date": "2026-09-12",
+   "start": "2026-09-12T21:00-0700",
+   "venue": "The Astoria",
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/9/12/breakout-alt-pop-talent-chloe-star-announces-north-american-fall-2026-tour-tickets",
+   "lat": null,
+   "lng": null,
+   "headliner": "Jenna Doe",
+   "artists": [
+    {
+     "name": "Jenna Doe",
+     "spotify_name": "Jenna Doe",
+     "spotify_id": "537KNo7PHzbkHiv5SGQ0eT",
+     "url": "https://open.spotify.com/artist/537KNo7PHzbkHiv5SGQ0eT",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f17891ddb30b72257b552712b599",
+     "tracks": [
+      {
+       "id": "08KAB8LahxJB28HExOmPnL",
+       "uri": "spotify:track:08KAB8LahxJB28HExOmPnL",
+       "name": "Shapeshift",
+       "popularity": null,
+       "album": "Shapeshift",
+       "album_type": "single",
+       "release_date": "2022-01-26",
+       "duration_ms": 145173,
+       "explicit": false
+      },
+      {
+       "id": "3YmZVcLHWCjMlHfLaM7nTf",
+       "uri": "spotify:track:3YmZVcLHWCjMlHfLaM7nTf",
+       "name": "Pink Slips",
+       "popularity": null,
+       "album": "Pink Slips",
+       "album_type": "single",
+       "release_date": "2021-07-13",
+       "duration_ms": 192320,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 111392,
+      "playcount": 854615,
+      "tags": [
+       "indie pop",
+       "pop",
+       "pop rock",
+       "spotify"
+      ],
+      "tier": 3,
+      "lastfm_url": "https://www.last.fm/music/Jenna+Doe"
      }
     }
    ]
@@ -23564,6 +23223,64 @@
    ]
   },
   {
+   "id": "do604-2026-09-17-vibe-series-tickets",
+   "name": "Vibe Series",
+   "source": "do604",
+   "date": "2026-09-17",
+   "start": "2026-09-17T19:00-0700",
+   "venue": "The Astoria",
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/9/17/vibe-series-tickets",
+   "lat": null,
+   "lng": null,
+   "headliner": "Vibe Series",
+   "artists": [
+    {
+     "name": "Vibe Series",
+     "spotify_name": "Vibe Series",
+     "spotify_id": "45s3K3DMObmPXSWWThKBEP",
+     "url": "https://open.spotify.com/artist/45s3K3DMObmPXSWWThKBEP",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab67616d00004851bd68ce37bdabe155e99f3893",
+     "tracks": [
+      {
+       "id": "0WBaSEdHg8cvwbyEr7gUSG",
+       "uri": "spotify:track:0WBaSEdHg8cvwbyEr7gUSG",
+       "name": "Good Vibe",
+       "popularity": null,
+       "album": "Good Vibe",
+       "album_type": "single",
+       "release_date": "2022-06-01",
+       "duration_ms": 192452,
+       "explicit": false
+      },
+      {
+       "id": "2keCOw1Gl0OrgJlceiCfYG",
+       "uri": "spotify:track:2keCOw1Gl0OrgJlceiCfYG",
+       "name": "Dollar",
+       "popularity": null,
+       "album": "Dollar",
+       "album_type": "single",
+       "release_date": "2023-01-15",
+       "duration_ms": 93714,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 24,
+      "playcount": 36,
+      "tags": [],
+      "tier": 1,
+      "lastfm_url": "https://www.last.fm/music/Vibe+Series"
+     }
+    }
+   ]
+  },
+  {
    "id": "do604-2026-09-18-sydnee-washington-tickets",
    "name": "Sydnee Washington",
    "source": "do604",
@@ -24110,6 +23827,117 @@
    ]
   },
   {
+   "id": "do604-2026-09-18-out-of-order-night-court-code-22-tickets",
+   "name": "Out of Order, Night Court, Code-22",
+   "source": "do604",
+   "date": "2026-09-18",
+   "start": "2026-09-18T19:00-0700",
+   "venue": "Green Auto",
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/9/18/out-of-order-night-court-code-22-tickets",
+   "lat": null,
+   "lng": null,
+   "headliner": "Out of Order",
+   "artists": [
+    {
+     "name": "Out of Order",
+     "spotify_name": "Out of Order",
+     "spotify_id": "5ivNe2g9EQLx5fV8FO9PVE",
+     "url": "https://open.spotify.com/artist/5ivNe2g9EQLx5fV8FO9PVE",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f178fdac9017d812bb9c775b6051",
+     "tracks": [
+      {
+       "id": "6jTSmGKnARxLwObe7o4wWU",
+       "uri": "spotify:track:6jTSmGKnARxLwObe7o4wWU",
+       "name": "Tonight",
+       "popularity": null,
+       "album": "Lex Talionis",
+       "album_type": "album",
+       "release_date": "2026-02-06",
+       "duration_ms": 250200,
+       "explicit": false
+      },
+      {
+       "id": "5nlpAss2Rcg5kQrlV4Ygmy",
+       "uri": "spotify:track:5nlpAss2Rcg5kQrlV4Ygmy",
+       "name": "Breonna",
+       "popularity": null,
+       "album": "Under The Knife",
+       "album_type": "album",
+       "release_date": "2023-07-15",
+       "duration_ms": 184866,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 6789,
+      "playcount": 45228,
+      "tags": [
+       "punk",
+       "hardcore",
+       "hardcore punk",
+       "punk rock"
+      ],
+      "tier": 2,
+      "lastfm_url": "https://www.last.fm/music/OUT+OF+ORDER"
+     }
+    },
+    {
+     "name": "Night Court",
+     "spotify_name": "Night Court",
+     "spotify_id": "4YbRzAVMyEH6iVaENG7LpD",
+     "url": "https://open.spotify.com/artist/4YbRzAVMyEH6iVaENG7LpD",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f1783c36334e331f23655b00e188",
+     "tracks": [
+      {
+       "id": "7IR60rKXU8YKsKCR6vJuo6",
+       "uri": "spotify:track:7IR60rKXU8YKsKCR6vJuo6",
+       "name": "Yr Driving",
+       "popularity": null,
+       "album": "Nervous Birds! One",
+       "album_type": "album",
+       "release_date": "2021-12-03",
+       "duration_ms": 62500,
+       "explicit": false
+      },
+      {
+       "id": "0ZqtYJvpCr6bNBCy43ce4J",
+       "uri": "spotify:track:0ZqtYJvpCr6bNBCy43ce4J",
+       "name": "Circus of Wolves",
+       "popularity": null,
+       "album": "Nervous Birds! One",
+       "album_type": "album",
+       "release_date": "2021-12-03",
+       "duration_ms": 82395,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 1960,
+      "playcount": 20277,
+      "tags": [
+       "synth-pop",
+       "electroclash",
+       "civil disturbance",
+       "local news"
+      ],
+      "tier": 1,
+      "lastfm_url": "https://www.last.fm/music/Night+Court"
+     }
+    }
+   ]
+  },
+  {
    "id": "do604-2026-09-19-cheap-flavor-baron-witiko-tickets",
    "name": "Cheap Flavor, Witiko, Baron",
    "source": "do604",
@@ -24212,7 +24040,7 @@
   },
   {
    "id": "do604-2026-09-19-neev-doherty-the-unbranded-leah-barely-t",
-   "name": "The Unbranded, Leah Barely, Neev Doherty",
+   "name": "The Unbranded, Leah Barley, Neev Doherty",
    "source": "do604",
    "date": "2026-09-19",
    "start": "2026-09-19T19:00-0700",
@@ -24264,6 +24092,49 @@
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/The+Unbranded"
+     }
+    },
+    {
+     "name": "Leah Barley",
+     "spotify_name": "Leah Barley",
+     "spotify_id": "3jKLR8Sm2oGuRulCEddQop",
+     "url": "https://open.spotify.com/artist/3jKLR8Sm2oGuRulCEddQop",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f1789c15980c1ad5dda3b2ca4441",
+     "tracks": [
+      {
+       "id": "6E2UTV3Xqo7KcmRtMA2fM1",
+       "uri": "spotify:track:6E2UTV3Xqo7KcmRtMA2fM1",
+       "name": "Don't Get Weird",
+       "popularity": null,
+       "album": "Don't Get Weird",
+       "album_type": "single",
+       "release_date": "2025-02-14",
+       "duration_ms": 140436,
+       "explicit": true
+      },
+      {
+       "id": "0uSfawQEEyCzHIIMTpRYmP",
+       "uri": "spotify:track:0uSfawQEEyCzHIIMTpRYmP",
+       "name": "Pack My Bags",
+       "popularity": null,
+       "album": "Awkward & Heartbroken",
+       "album_type": "single",
+       "release_date": "2025-02-14",
+       "duration_ms": 216211,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 71,
+      "playcount": 282,
+      "tags": [],
+      "tier": 1,
+      "lastfm_url": "https://www.last.fm/music/Leah+Barley"
      }
     },
     {
@@ -24508,6 +24379,244 @@
    ]
   },
   {
+   "id": "do604-2026-09-20-bloom-effect-seaglow-lotophage-witiko-da",
+   "name": "bloom effect, seaglow, Lotophage, Witiko, David Lunch, Softhead, Teltales, Beauatiufl",
+   "source": "do604",
+   "date": "2026-09-20",
+   "start": "2026-09-20T19:00-0700",
+   "venue": "Green Auto",
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/9/20/bloom-effect-seaglow-lotophage-witiko-david-lunch-softhead-teltales-beauatiufl-tickets",
+   "lat": null,
+   "lng": null,
+   "headliner": "bloom effect",
+   "artists": [
+    {
+     "name": "bloom effect",
+     "spotify_name": "bloom effect",
+     "spotify_id": "7feeAfl50bXOTpJMUR5JpP",
+     "url": "https://open.spotify.com/artist/7feeAfl50bXOTpJMUR5JpP",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f178d50f35e036348f73ff327d57",
+     "tracks": [
+      {
+       "id": "1o6lkGJPedglHAr2taDuLM",
+       "uri": "spotify:track:1o6lkGJPedglHAr2taDuLM",
+       "name": "second sight",
+       "popularity": null,
+       "album": "second sight",
+       "album_type": "single",
+       "release_date": "2025-08-22",
+       "duration_ms": 297558,
+       "explicit": false
+      },
+      {
+       "id": "4p1Fu6lQpbSQNyyV9i6Gq4",
+       "uri": "spotify:track:4p1Fu6lQpbSQNyyV9i6Gq4",
+       "name": "armour",
+       "popularity": null,
+       "album": "portents",
+       "album_type": "single",
+       "release_date": "2025-01-03",
+       "duration_ms": 270683,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 1771,
+      "playcount": 7358,
+      "tags": [
+       "shoegaze",
+       "rock",
+       "ambient",
+       "jazz"
+      ],
+      "tier": 1,
+      "lastfm_url": "https://www.last.fm/music/Bloom+Effect"
+     }
+    },
+    {
+     "name": "seaglow",
+     "spotify_name": "seaglow",
+     "spotify_id": "6BeXeArEAuniMboduR8pwk",
+     "url": "https://open.spotify.com/artist/6BeXeArEAuniMboduR8pwk",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f178b661667608c42458f7ca32e4",
+     "tracks": [
+      {
+       "id": "3QCTxcyFKVu6bpLmiearBT",
+       "uri": "spotify:track:3QCTxcyFKVu6bpLmiearBT",
+       "name": "Loon Lake",
+       "popularity": null,
+       "album": "dogfight",
+       "album_type": "single",
+       "release_date": "2025-09-20",
+       "duration_ms": 288624,
+       "explicit": false
+      },
+      {
+       "id": "0upe1M6T4h1de26hrwpEqo",
+       "uri": "spotify:track:0upe1M6T4h1de26hrwpEqo",
+       "name": "Dogs",
+       "popularity": null,
+       "album": "dogfight",
+       "album_type": "single",
+       "release_date": "2025-09-20",
+       "duration_ms": 264498,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 28,
+      "playcount": 104,
+      "tags": [],
+      "tier": 1,
+      "lastfm_url": "https://www.last.fm/music/seaglow"
+     }
+    },
+    {
+     "name": "Witiko",
+     "spotify_name": "Witiko",
+     "spotify_id": "73n0gSqQLd47wrVd077a1J",
+     "url": "https://open.spotify.com/artist/73n0gSqQLd47wrVd077a1J",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f1789aeda2c6583b56232a1f49e2",
+     "tracks": [
+      {
+       "id": "3OZk2HLC9dxFyiyiDpC9ji",
+       "uri": "spotify:track:3OZk2HLC9dxFyiyiDpC9ji",
+       "name": "Alright",
+       "popularity": null,
+       "album": "Alright",
+       "album_type": "single",
+       "release_date": "2024-01-19",
+       "duration_ms": 198635,
+       "explicit": false
+      },
+      {
+       "id": "3kPAndznh91GrCzoyhjNdX",
+       "uri": "spotify:track:3kPAndznh91GrCzoyhjNdX",
+       "name": "Metamorphosis",
+       "popularity": null,
+       "album": "Metamorphosis",
+       "album_type": "single",
+       "release_date": "2023-07-28",
+       "duration_ms": 282354,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 59,
+      "playcount": 538,
+      "tags": [],
+      "tier": 1,
+      "lastfm_url": "https://www.last.fm/music/Witiko"
+     }
+    },
+    {
+     "name": "David Lunch",
+     "spotify_name": "David Lunch",
+     "spotify_id": "35AMRYmKwE7pBkVqq7gWo7",
+     "url": "https://open.spotify.com/artist/35AMRYmKwE7pBkVqq7gWo7",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab67616d000048511dee07a2f5617445fe431180",
+     "tracks": [
+      {
+       "id": "61a7CIcr6RNfk71eVxRwzN",
+       "uri": "spotify:track:61a7CIcr6RNfk71eVxRwzN",
+       "name": "Freaks and Fools",
+       "popularity": null,
+       "album": "Freaks and Fools",
+       "album_type": "single",
+       "release_date": "2025-02-22",
+       "duration_ms": 282000,
+       "explicit": false
+      },
+      {
+       "id": "1FlMQmBh2OGNh1fOVwVqqs",
+       "uri": "spotify:track:1FlMQmBh2OGNh1fOVwVqqs",
+       "name": "we're all gonna die",
+       "popularity": null,
+       "album": "Life is Hell",
+       "album_type": "album",
+       "release_date": "2025-07-21",
+       "duration_ms": 149006,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 114,
+      "playcount": 291,
+      "tags": [],
+      "tier": 1,
+      "lastfm_url": "https://www.last.fm/music/David+Lunch"
+     }
+    },
+    {
+     "name": "Softhead",
+     "spotify_name": "softhead",
+     "spotify_id": "2nq3JoZK43Y5eeZPNReJI8",
+     "url": "https://open.spotify.com/artist/2nq3JoZK43Y5eeZPNReJI8",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f17877815e8454480b7c89a1940e",
+     "tracks": [
+      {
+       "id": "5unUI1k6I71ukEVsfVOlBe",
+       "uri": "spotify:track:5unUI1k6I71ukEVsfVOlBe",
+       "name": "Cirrus",
+       "popularity": null,
+       "album": "Dazed and Confused",
+       "album_type": "single",
+       "release_date": "2021-09-09",
+       "duration_ms": 110769,
+       "explicit": false
+      },
+      {
+       "id": "7ewwwKUD6pnqJqxz2nxGlD",
+       "uri": "spotify:track:7ewwwKUD6pnqJqxz2nxGlD",
+       "name": "Riding Around",
+       "popularity": null,
+       "album": "Riding Around",
+       "album_type": "single",
+       "release_date": "2024-05-30",
+       "duration_ms": 74666,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 28178,
+      "playcount": 199839,
+      "tags": [
+       "hip hop",
+       "jazz"
+      ],
+      "tier": 2,
+      "lastfm_url": "https://www.last.fm/music/Softhead"
+     }
+    }
+   ]
+  },
+  {
    "id": "do604-2026-09-21-denver-venoit-tickets",
    "name": "Denver Venoit",
    "source": "do604",
@@ -24728,6 +24837,64 @@
       ],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Houseguest"
+     }
+    }
+   ]
+  },
+  {
+   "id": "do604-2026-09-22-al-tuck-manuel-focus-d-l-forrest-tickets",
+   "name": "Al Tuck, Manuel Focus, D.L. Forrest,",
+   "source": "do604",
+   "date": "2026-09-22",
+   "start": "2026-09-22T19:00-0700",
+   "venue": "Green Auto",
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/9/22/al-tuck-manuel-focus-d-l-forrest-tickets",
+   "lat": null,
+   "lng": null,
+   "headliner": "D.L. Forrest",
+   "artists": [
+    {
+     "name": "D.L. Forrest",
+     "spotify_name": "D.L. Forrest",
+     "spotify_id": "20dEOUUYisukGha9yd2x0g",
+     "url": "https://open.spotify.com/artist/20dEOUUYisukGha9yd2x0g",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f178fedb20e1c3071b5679d172db",
+     "tracks": [
+      {
+       "id": "6g5cA9pAdBOIxFtgXeV310",
+       "uri": "spotify:track:6g5cA9pAdBOIxFtgXeV310",
+       "name": "Can't Sleep",
+       "popularity": null,
+       "album": "Can't Sleep",
+       "album_type": "single",
+       "release_date": "2026-08-05",
+       "duration_ms": 168681,
+       "explicit": false
+      },
+      {
+       "id": "6Cwjwd90JoyE09oicVVoQw",
+       "uri": "spotify:track:6Cwjwd90JoyE09oicVVoQw",
+       "name": "The Darker It Gets",
+       "popularity": null,
+       "album": "The Darker It Gets",
+       "album_type": "single",
+       "release_date": "2026-05-14",
+       "duration_ms": 144080,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 26,
+      "playcount": 77,
+      "tags": [],
+      "tier": 1,
+      "lastfm_url": "https://www.last.fm/music/D.L.+Forrest"
      }
     }
    ]
@@ -25508,7 +25675,7 @@
    "name": "Ensiferum // Firewind // Atavistia",
    "source": "do604",
    "date": "2026-09-25",
-   "start": "2026-09-25T19:00-0700",
+   "start": "2026-09-25T18:00-0700",
    "venue": "Wise Hall",
    "locality": "Vancouver",
    "url": "https://do604.com/events/2026/9/25/ensiferum-with-fire-wind-tickets",
@@ -27709,6 +27876,68 @@
       ],
       "tier": 3,
       "lastfm_url": "https://www.last.fm/music/YHWH+Nailgun"
+     }
+    }
+   ]
+  },
+  {
+   "id": "do604-2026-10-02-kybba-tickets",
+   "name": "Kybba",
+   "source": "do604",
+   "date": "2026-10-02",
+   "start": "2026-10-02T19:00-0700",
+   "venue": "Fortune Sound Club",
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/2/kybba-tickets",
+   "lat": null,
+   "lng": null,
+   "headliner": "Kybba",
+   "artists": [
+    {
+     "name": "Kybba",
+     "spotify_name": "Kybba",
+     "spotify_id": "5I8OAPN5jY1wvHwpnsRRsA",
+     "url": "https://open.spotify.com/artist/5I8OAPN5jY1wvHwpnsRRsA",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f1782f620848510915d42653a312",
+     "tracks": [
+      {
+       "id": "0ExNALbmBpY7IAZ2dzupnv",
+       "uri": "spotify:track:0ExNALbmBpY7IAZ2dzupnv",
+       "name": "Se Le Ve",
+       "popularity": null,
+       "album": "Se Le Ve",
+       "album_type": "single",
+       "release_date": "2026-06-11",
+       "duration_ms": 159183,
+       "explicit": true
+      },
+      {
+       "id": "2RnCVOUcOaPeTlFRW3NHQJ",
+       "uri": "spotify:track:2RnCVOUcOaPeTlFRW3NHQJ",
+       "name": "Ba Ba Bad Remix",
+       "popularity": null,
+       "album": "Ba Ba Bad Remix",
+       "album_type": "single",
+       "release_date": "2025-06-27",
+       "duration_ms": 146938,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 94512,
+      "playcount": 943493,
+      "tags": [
+       "dutch",
+       "dancehall",
+       "amsterdam"
+      ],
+      "tier": 3,
+      "lastfm_url": "https://www.last.fm/music/Kybba"
      }
     }
    ]
@@ -30554,63 +30783,190 @@
    ]
   },
   {
-   "id": "do604-2026-10-14-rett-madison-with-special-guests-tickets",
-   "name": "Rett Madison with Special Guests",
+   "id": "do604-2026-10-15-she-wants-revenge-tickets",
+   "name": "She Wants Revenge",
    "source": "do604",
-   "date": "2026-10-14",
-   "start": "2026-10-14T20:00-0700",
-   "venue": "Wise Hall",
+   "date": "2026-10-15",
+   "start": "2026-10-15T20:00-0700",
+   "venue": "The Pearl",
    "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/10/14/rett-madison-with-special-guests-tickets",
+   "url": "https://do604.com/events/2026/10/15/she-wants-revenge-tickets",
    "lat": null,
    "lng": null,
-   "headliner": "Rett Madison",
+   "headliner": "She Wants Revenge",
    "artists": [
     {
-     "name": "Rett Madison",
-     "spotify_name": "Rett Madison",
-     "spotify_id": "2uvAzG565dP2oXartAqh1F",
-     "url": "https://open.spotify.com/artist/2uvAzG565dP2oXartAqh1F",
+     "name": "She Wants Revenge",
+     "spotify_name": "She Wants Revenge",
+     "spotify_id": "2zRt0sfxNnqI8gLR7d8gWt",
+     "url": "https://open.spotify.com/artist/2zRt0sfxNnqI8gLR7d8gWt",
      "genres": [],
      "songkick_genres": [],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1788f57bdfe6c7ede4dda2bab61",
+     "image": "https://i.scdn.co/image/ab6761610000f1786d46fba0802fbbe8ef62d842",
      "tracks": [
       {
-       "id": "1IGpnASqOgw77lZD8M38GQ",
-       "uri": "spotify:track:1IGpnASqOgw77lZD8M38GQ",
-       "name": "Eleven Wednesdays",
+       "id": "1XYHqSfJK9ud9nuRjQcbXi",
+       "uri": "spotify:track:1XYHqSfJK9ud9nuRjQcbXi",
+       "name": "Tear You Apart",
        "popularity": null,
-       "album": "Eleven Wednesdays",
-       "album_type": "single",
-       "release_date": "2026-03-11",
-       "duration_ms": 228383,
-       "explicit": false
+       "album": "She Wants Revenge",
+       "album_type": "album",
+       "release_date": "2005-01-01",
+       "duration_ms": 284613,
+       "explicit": true
       },
       {
-       "id": "1ORRoKhwvtHW5xLTNSa6XX",
-       "uri": "spotify:track:1ORRoKhwvtHW5xLTNSa6XX",
-       "name": "One for Jackie, One for Crystal",
+       "id": "3gmcDVzsWcnLJyxpwOkMJq",
+       "uri": "spotify:track:3gmcDVzsWcnLJyxpwOkMJq",
+       "name": "Your Love",
        "popularity": null,
-       "album": "One for Jackie",
-       "album_type": "album",
-       "release_date": "2023-10-27",
-       "duration_ms": 224520,
-       "explicit": true
+       "album": "Up and Down",
+       "album_type": "single",
+       "release_date": "2009-09-22",
+       "duration_ms": 215841,
+       "explicit": false
       }
      ],
      "rank_source": "search",
      "reach": {
-      "listeners": 31698,
-      "playcount": 248468,
+      "listeners": 1480423,
+      "playcount": 55868892,
       "tags": [
-       "acoustic",
-       "folk",
-       "country"
+       "post-punk",
+       "darkwave",
+       "new wave",
+       "alternative"
       ],
-      "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Rett+Madison"
+      "tier": 4,
+      "lastfm_url": "https://www.last.fm/music/She+Wants+Revenge"
+     }
+    }
+   ]
+  },
+  {
+   "id": "do604-2026-10-15-mimosa-tickets",
+   "name": "Mimosa",
+   "source": "do604",
+   "date": "2026-10-15",
+   "start": "2026-10-15T20:00-0700",
+   "venue": "Frankie's Jazz Club",
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/15/mimosa-tickets",
+   "lat": null,
+   "lng": null,
+   "headliner": "Mimosa",
+   "artists": [
+    {
+     "name": "Mimosa",
+     "spotify_name": "Mimosa",
+     "spotify_id": "4BoAXqVwV8T2UH1xKPjCl8",
+     "url": "https://open.spotify.com/artist/4BoAXqVwV8T2UH1xKPjCl8",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f17848184fa6275c70ea76cab280",
+     "tracks": [
+      {
+       "id": "3DRpifzrQCW8CPszfwcH2W",
+       "uri": "spotify:track:3DRpifzrQCW8CPszfwcH2W",
+       "name": "Farewell Waltz",
+       "popularity": null,
+       "album": "Farewell Waltz",
+       "album_type": "single",
+       "release_date": "2023-12-13",
+       "duration_ms": 62994,
+       "explicit": false
+      },
+      {
+       "id": "4UDeolUbibvbobpyzDarKQ",
+       "uri": "spotify:track:4UDeolUbibvbobpyzDarKQ",
+       "name": "Rêverie",
+       "popularity": null,
+       "album": "Rêverie",
+       "album_type": "single",
+       "release_date": "2026-02-06",
+       "duration_ms": 109562,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 170280,
+      "playcount": 1535089,
+      "tags": [
+       "dubstep",
+       "glitch",
+       "electronic",
+       "idm"
+      ],
+      "tier": 3,
+      "lastfm_url": "https://www.last.fm/music/Mimosa"
+     }
+    }
+   ]
+  },
+  {
+   "id": "do604-2026-10-15-the-shindigs-tickets",
+   "name": "The Shindigs",
+   "source": "do604",
+   "date": "2026-10-15",
+   "start": "2026-10-15T20:02-0700",
+   "venue": "The Astoria",
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/15/the-shindigs-tickets",
+   "lat": null,
+   "lng": null,
+   "headliner": "The Shindigs",
+   "artists": [
+    {
+     "name": "The Shindigs",
+     "spotify_name": "The Shindigs",
+     "spotify_id": "0RlgKtcs9jaOJMnR0WR495",
+     "url": "https://open.spotify.com/artist/0RlgKtcs9jaOJMnR0WR495",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f1783290fa5d646b2dc5e521bbdf",
+     "tracks": [
+      {
+       "id": "0vouTaPvG46z6Zq24v770l",
+       "uri": "spotify:track:0vouTaPvG46z6Zq24v770l",
+       "name": "Warzone",
+       "popularity": null,
+       "album": "Warzone",
+       "album_type": "single",
+       "release_date": "2026-07-17",
+       "duration_ms": 128586,
+       "explicit": false
+      },
+      {
+       "id": "2SbpXRYXiDbkGAEzGyOwDZ",
+       "uri": "spotify:track:2SbpXRYXiDbkGAEzGyOwDZ",
+       "name": "Snowball",
+       "popularity": null,
+       "album": "Snowball",
+       "album_type": "single",
+       "release_date": "2025-07-27",
+       "duration_ms": 229221,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 2440,
+      "playcount": 7181,
+      "tags": [
+       "funrock",
+       "rock",
+       "alternative",
+       "post-punk"
+      ],
+      "tier": 1,
+      "lastfm_url": "https://www.last.fm/music/The+Shindigs"
      }
     }
    ]
@@ -30690,10 +31046,28 @@
   },
   {
    "artist": "Al Tuck",
-   "event": "Al Tuck @ 1181 E 24th Ave",
+   "event": "Al Tuck @ 1181 E 24th Ave (House Show)",
    "date": "2026-09-20",
    "reason": "no_tracks",
    "candidates": []
+  },
+  {
+   "artist": "Manuel Focus",
+   "event": "Al Tuck @ 1181 E 24th Ave (House Show)",
+   "date": "2026-09-20",
+   "reason": "no_tracks",
+   "candidates": []
+  },
+  {
+   "artist": "Lucy Jeffery",
+   "event": "Al Tuck @ 1181 E 24th Ave (House Show)",
+   "date": "2026-09-20",
+   "reason": "no_match",
+   "candidates": [
+    "Carla Jeffery",
+    "Lucy Thomas",
+    "Lucy Dacus"
+   ]
   },
   {
    "artist": "Elder",
@@ -30900,6 +31274,13 @@
    "candidates": []
   },
   {
+   "artist": "Friend Request",
+   "event": "Friend Request @ The Pearl",
+   "date": "2026-10-09",
+   "reason": "no_tracks",
+   "candidates": []
+  },
+  {
    "artist": "DAZY",
    "event": "Militarie Gun @ Rickshaw Theatre",
    "date": "2026-10-10",
@@ -30928,18 +31309,22 @@
    "candidates": []
   },
   {
-   "artist": "Ardytronics",
-   "event": "Ardytronics",
-   "date": "2026-09-09",
-   "reason": "not_on_lastfm",
+   "artist": "Nep",
+   "event": "Nep @ The Cobalt",
+   "date": "2026-10-15",
+   "reason": "no_tracks",
    "candidates": []
   },
   {
-   "artist": "Empress",
-   "event": "Earth Altar // Empress // Lumivore // Goblin Vessel",
-   "date": "2026-09-09",
-   "reason": "no_tracks",
-   "candidates": []
+   "artist": "Jarlath Regan",
+   "event": "Jarlath Regan @ Vogue Theatre",
+   "date": "2026-10-15",
+   "reason": "no_match",
+   "candidates": [
+    "Kathleen Regan",
+    "Katrine Sansregret",
+    "Jann Arden"
+   ]
   },
   {
    "artist": "Honeybear",
@@ -31067,8 +31452,8 @@
    "candidates": []
   },
   {
-   "artist": "Breakout Alt",
-   "event": "Breakout Alt-pop Talent Chloe Star ANNOUNCES North American Fall 2026 Tour",
+   "artist": "Chloe Star Live show",
+   "event": "Chloe Star Live show w/ Jenna Doe",
    "date": "2026-09-12",
    "reason": "not_on_lastfm",
    "candidates": []
@@ -31288,6 +31673,15 @@
    "candidates": []
   },
   {
+   "artist": "Code-22",
+   "event": "Out of Order, Night Court, Code-22",
+   "date": "2026-09-18",
+   "reason": "no_match",
+   "candidates": [
+    "codein227"
+   ]
+  },
+  {
    "artist": "Baron",
    "event": "Cheap Flavor, Witiko, Baron",
    "date": "2026-09-19",
@@ -31317,13 +31711,6 @@
    "candidates": []
   },
   {
-   "artist": "Leah Barely",
-   "event": "The Unbranded, Leah Barely, Neev Doherty",
-   "date": "2026-09-19",
-   "reason": "not_on_lastfm",
-   "candidates": []
-  },
-  {
    "artist": "Another Damn Disappointment",
    "event": "Another Damn Disappointment w/ GUESTS",
    "date": "2026-09-19",
@@ -31333,10 +31720,28 @@
    ]
   },
   {
+   "artist": "Club Dead",
+   "event": "Club Dead",
+   "date": "2026-09-19",
+   "reason": "no_match",
+   "candidates": [
+    "Dead Dads Club",
+    "Dead Fuse Club",
+    "Dead Boys Club"
+   ]
+  },
+  {
    "artist": "Lonesome Town Painters",
    "event": "Lonesome Town Painters",
    "date": "2026-09-20",
    "reason": "not_on_lastfm",
+   "candidates": []
+  },
+  {
+   "artist": "Lotophage",
+   "event": "bloom effect, seaglow, Lotophage, Witiko, David Lunch, Softhead, Teltales, Beauatiufl",
+   "date": "2026-09-20",
+   "reason": "no_match",
    "candidates": []
   },
   {
@@ -31725,6 +32130,13 @@
    "candidates": []
   },
   {
+   "artist": "ARC Showcase",
+   "event": "ARC Showcase",
+   "date": "2026-10-09",
+   "reason": "not_on_lastfm",
+   "candidates": []
+  },
+  {
    "artist": "Retrofitz",
    "event": "Retrofitz",
    "date": "2026-10-10",
@@ -31793,17 +32205,18 @@
    "date": "2026-10-14",
    "reason": "not_on_lastfm",
    "candidates": []
+  },
+  {
+   "artist": "Daniel Deorksen’s Bicameral Collapse",
+   "event": "Early Show: Daniel Deorksen’s Bicameral Collapse",
+   "date": "2026-10-15",
+   "reason": "not_on_lastfm",
+   "candidates": []
   }
  ],
  "pending": [],
  "stopped_reason": null,
  "skipped": [
-  {
-   "name": "ANNUAL FROSH BALL 2026 @ The Pearl",
-   "date": "2026-09-09",
-   "venue": "The Pearl",
-   "reason": "club_night"
-  },
   {
    "name": "FROSH KICKOFF 2026 @ The Pearl",
    "date": "2026-09-15",

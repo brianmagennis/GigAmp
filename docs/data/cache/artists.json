@@ -27099,5 +27099,1034 @@
 }
 ],
 "rank_source": "search"
+},
+"chloe star live show": {
+"query": "Chloe Star Live show",
+"fetched_at": "2026-09-10T17:47:53+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 2
+},
+"jenna doe": {
+"query": "Jenna Doe",
+"fetched_at": "2026-09-10T17:47:54+00:00",
+"reach": {
+"listeners": 111392,
+"playcount": 854615,
+"tags": [
+"indie pop",
+"pop",
+"pop rock",
+"spotify"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Jenna+Doe"
+},
+"matcher": 2,
+"spotify_id": "537KNo7PHzbkHiv5SGQ0eT",
+"spotify_name": "Jenna Doe",
+"url": "https://open.spotify.com/artist/537KNo7PHzbkHiv5SGQ0eT",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17891ddb30b72257b552712b599",
+"tracks": [
+{
+"id": "08KAB8LahxJB28HExOmPnL",
+"uri": "spotify:track:08KAB8LahxJB28HExOmPnL",
+"name": "Shapeshift",
+"popularity": null,
+"album": "Shapeshift",
+"album_type": "single",
+"release_date": "2022-01-26",
+"duration_ms": 145173,
+"explicit": false
+},
+{
+"id": "3YmZVcLHWCjMlHfLaM7nTf",
+"uri": "spotify:track:3YmZVcLHWCjMlHfLaM7nTf",
+"name": "Pink Slips",
+"popularity": null,
+"album": "Pink Slips",
+"album_type": "single",
+"release_date": "2021-07-13",
+"duration_ms": 192320,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"jody glenham": {
+"query": "Jody Glenham",
+"fetched_at": "2026-09-10T17:47:54+00:00",
+"reach": {
+"listeners": 2069,
+"playcount": 8165,
+"tags": [
+"alternative",
+"shoegaze",
+"dream pop"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Jody+Glenham"
+},
+"matcher": 2,
+"spotify_id": "4yC5LRKMoOFedYvLJKhiYW",
+"spotify_name": "Jody Glenham",
+"url": "https://open.spotify.com/artist/4yC5LRKMoOFedYvLJKhiYW",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17872c78249e7e97b336ff438aa",
+"tracks": [
+{
+"id": "41ewUUyEI6X0SQXZEvtmib",
+"uri": "spotify:track:41ewUUyEI6X0SQXZEvtmib",
+"name": "Overtime",
+"popularity": null,
+"album": "Overtime",
+"album_type": "single",
+"release_date": "2026-01-16",
+"duration_ms": 224844,
+"explicit": false
+},
+{
+"id": "7enjf4K9lXSK3KCOkAvkvE",
+"uri": "spotify:track:7enjf4K9lXSK3KCOkAvkvE",
+"name": "Ill Wind",
+"popularity": null,
+"album": "RSVP/Ill Wind (For Frances 7'')",
+"album_type": "single",
+"release_date": "2015-06-30",
+"duration_ms": 280020,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"vibe series": {
+"query": "Vibe Series",
+"fetched_at": "2026-09-10T17:47:55+00:00",
+"reach": {
+"listeners": 24,
+"playcount": 36,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Vibe+Series"
+},
+"matcher": 2,
+"spotify_id": "45s3K3DMObmPXSWWThKBEP",
+"spotify_name": "Vibe Series",
+"url": "https://open.spotify.com/artist/45s3K3DMObmPXSWWThKBEP",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab67616d00004851bd68ce37bdabe155e99f3893",
+"tracks": [
+{
+"id": "0WBaSEdHg8cvwbyEr7gUSG",
+"uri": "spotify:track:0WBaSEdHg8cvwbyEr7gUSG",
+"name": "Good Vibe",
+"popularity": null,
+"album": "Good Vibe",
+"album_type": "single",
+"release_date": "2022-06-01",
+"duration_ms": 192452,
+"explicit": false
+},
+{
+"id": "2keCOw1Gl0OrgJlceiCfYG",
+"uri": "spotify:track:2keCOw1Gl0OrgJlceiCfYG",
+"name": "Dollar",
+"popularity": null,
+"album": "Dollar",
+"album_type": "single",
+"release_date": "2023-01-15",
+"duration_ms": 93714,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"out of order": {
+"query": "Out of Order",
+"fetched_at": "2026-09-10T17:47:55+00:00",
+"reach": {
+"listeners": 6789,
+"playcount": 45228,
+"tags": [
+"punk",
+"hardcore",
+"hardcore punk",
+"punk rock"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/OUT+OF+ORDER"
+},
+"matcher": 2,
+"spotify_id": "5ivNe2g9EQLx5fV8FO9PVE",
+"spotify_name": "Out of Order",
+"url": "https://open.spotify.com/artist/5ivNe2g9EQLx5fV8FO9PVE",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178fdac9017d812bb9c775b6051",
+"tracks": [
+{
+"id": "6jTSmGKnARxLwObe7o4wWU",
+"uri": "spotify:track:6jTSmGKnARxLwObe7o4wWU",
+"name": "Tonight",
+"popularity": null,
+"album": "Lex Talionis",
+"album_type": "album",
+"release_date": "2026-02-06",
+"duration_ms": 250200,
+"explicit": false
+},
+{
+"id": "5nlpAss2Rcg5kQrlV4Ygmy",
+"uri": "spotify:track:5nlpAss2Rcg5kQrlV4Ygmy",
+"name": "Breonna",
+"popularity": null,
+"album": "Under The Knife",
+"album_type": "album",
+"release_date": "2023-07-15",
+"duration_ms": 184866,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"night court": {
+"query": "Night Court",
+"fetched_at": "2026-09-10T17:47:56+00:00",
+"reach": {
+"listeners": 1960,
+"playcount": 20277,
+"tags": [
+"synth-pop",
+"electroclash",
+"civil disturbance",
+"local news"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Night+Court"
+},
+"matcher": 2,
+"spotify_id": "4YbRzAVMyEH6iVaENG7LpD",
+"spotify_name": "Night Court",
+"url": "https://open.spotify.com/artist/4YbRzAVMyEH6iVaENG7LpD",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1783c36334e331f23655b00e188",
+"tracks": [
+{
+"id": "7IR60rKXU8YKsKCR6vJuo6",
+"uri": "spotify:track:7IR60rKXU8YKsKCR6vJuo6",
+"name": "Yr Driving",
+"popularity": null,
+"album": "Nervous Birds! One",
+"album_type": "album",
+"release_date": "2021-12-03",
+"duration_ms": 62500,
+"explicit": false
+},
+{
+"id": "0ZqtYJvpCr6bNBCy43ce4J",
+"uri": "spotify:track:0ZqtYJvpCr6bNBCy43ce4J",
+"name": "Circus of Wolves",
+"popularity": null,
+"album": "Nervous Birds! One",
+"album_type": "album",
+"release_date": "2021-12-03",
+"duration_ms": 82395,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"code 22": {
+"query": "Code-22",
+"fetched_at": "2026-09-10T17:47:56+00:00",
+"spotify_id": null,
+"reach": {
+"listeners": 30,
+"playcount": 153,
+"tags": [
+"acid",
+"goa",
+"rave",
+"hard trance"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Code-22"
+},
+"matcher": 2,
+"candidates": [
+"codein227"
+]
+},
+"leah barley": {
+"query": "Leah Barley",
+"fetched_at": "2026-09-10T17:47:57+00:00",
+"reach": {
+"listeners": 71,
+"playcount": 282,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Leah+Barley"
+},
+"matcher": 2,
+"spotify_id": "3jKLR8Sm2oGuRulCEddQop",
+"spotify_name": "Leah Barley",
+"url": "https://open.spotify.com/artist/3jKLR8Sm2oGuRulCEddQop",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1789c15980c1ad5dda3b2ca4441",
+"tracks": [
+{
+"id": "6E2UTV3Xqo7KcmRtMA2fM1",
+"uri": "spotify:track:6E2UTV3Xqo7KcmRtMA2fM1",
+"name": "Don't Get Weird",
+"popularity": null,
+"album": "Don't Get Weird",
+"album_type": "single",
+"release_date": "2025-02-14",
+"duration_ms": 140436,
+"explicit": true
+},
+{
+"id": "0uSfawQEEyCzHIIMTpRYmP",
+"uri": "spotify:track:0uSfawQEEyCzHIIMTpRYmP",
+"name": "Pack My Bags",
+"popularity": null,
+"album": "Awkward & Heartbroken",
+"album_type": "single",
+"release_date": "2025-02-14",
+"duration_ms": 216211,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"club dead": {
+"query": "Club Dead",
+"fetched_at": "2026-09-10T17:47:59+00:00",
+"spotify_id": null,
+"reach": {
+"listeners": 4,
+"playcount": 100,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Club+Dead"
+},
+"matcher": 2,
+"candidates": [
+"Dead Dads Club",
+"Dead Fuse Club",
+"Dead Boys Club"
+]
+},
+"bloom effect": {
+"query": "bloom effect",
+"fetched_at": "2026-09-10T17:48:00+00:00",
+"reach": {
+"listeners": 1771,
+"playcount": 7358,
+"tags": [
+"shoegaze",
+"rock",
+"ambient",
+"jazz"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Bloom+Effect"
+},
+"matcher": 2,
+"spotify_id": "7feeAfl50bXOTpJMUR5JpP",
+"spotify_name": "bloom effect",
+"url": "https://open.spotify.com/artist/7feeAfl50bXOTpJMUR5JpP",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178d50f35e036348f73ff327d57",
+"tracks": [
+{
+"id": "1o6lkGJPedglHAr2taDuLM",
+"uri": "spotify:track:1o6lkGJPedglHAr2taDuLM",
+"name": "second sight",
+"popularity": null,
+"album": "second sight",
+"album_type": "single",
+"release_date": "2025-08-22",
+"duration_ms": 297558,
+"explicit": false
+},
+{
+"id": "4p1Fu6lQpbSQNyyV9i6Gq4",
+"uri": "spotify:track:4p1Fu6lQpbSQNyyV9i6Gq4",
+"name": "armour",
+"popularity": null,
+"album": "portents",
+"album_type": "single",
+"release_date": "2025-01-03",
+"duration_ms": 270683,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"seaglow": {
+"query": "seaglow",
+"fetched_at": "2026-09-10T17:48:00+00:00",
+"reach": {
+"listeners": 28,
+"playcount": 104,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/seaglow"
+},
+"matcher": 2,
+"spotify_id": "6BeXeArEAuniMboduR8pwk",
+"spotify_name": "seaglow",
+"url": "https://open.spotify.com/artist/6BeXeArEAuniMboduR8pwk",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178b661667608c42458f7ca32e4",
+"tracks": [
+{
+"id": "3QCTxcyFKVu6bpLmiearBT",
+"uri": "spotify:track:3QCTxcyFKVu6bpLmiearBT",
+"name": "Loon Lake",
+"popularity": null,
+"album": "dogfight",
+"album_type": "single",
+"release_date": "2025-09-20",
+"duration_ms": 288624,
+"explicit": false
+},
+{
+"id": "0upe1M6T4h1de26hrwpEqo",
+"uri": "spotify:track:0upe1M6T4h1de26hrwpEqo",
+"name": "Dogs",
+"popularity": null,
+"album": "dogfight",
+"album_type": "single",
+"release_date": "2025-09-20",
+"duration_ms": 264498,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"lotophage": {
+"query": "Lotophage",
+"fetched_at": "2026-09-10T17:48:01+00:00",
+"spotify_id": null,
+"reach": {
+"listeners": 5,
+"playcount": 7,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Lotophage"
+},
+"matcher": 2,
+"candidates": []
+},
+"david lunch": {
+"query": "David Lunch",
+"fetched_at": "2026-09-10T17:48:01+00:00",
+"reach": {
+"listeners": 114,
+"playcount": 291,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/David+Lunch"
+},
+"matcher": 2,
+"spotify_id": "35AMRYmKwE7pBkVqq7gWo7",
+"spotify_name": "David Lunch",
+"url": "https://open.spotify.com/artist/35AMRYmKwE7pBkVqq7gWo7",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab67616d000048511dee07a2f5617445fe431180",
+"tracks": [
+{
+"id": "61a7CIcr6RNfk71eVxRwzN",
+"uri": "spotify:track:61a7CIcr6RNfk71eVxRwzN",
+"name": "Freaks and Fools",
+"popularity": null,
+"album": "Freaks and Fools",
+"album_type": "single",
+"release_date": "2025-02-22",
+"duration_ms": 282000,
+"explicit": false
+},
+{
+"id": "1FlMQmBh2OGNh1fOVwVqqs",
+"uri": "spotify:track:1FlMQmBh2OGNh1fOVwVqqs",
+"name": "we're all gonna die",
+"popularity": null,
+"album": "Life is Hell",
+"album_type": "album",
+"release_date": "2025-07-21",
+"duration_ms": 149006,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"softhead": {
+"query": "Softhead",
+"fetched_at": "2026-09-10T17:48:03+00:00",
+"reach": {
+"listeners": 28178,
+"playcount": 199839,
+"tags": [
+"hip hop",
+"jazz"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Softhead"
+},
+"matcher": 2,
+"spotify_id": "2nq3JoZK43Y5eeZPNReJI8",
+"spotify_name": "softhead",
+"url": "https://open.spotify.com/artist/2nq3JoZK43Y5eeZPNReJI8",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17877815e8454480b7c89a1940e",
+"tracks": [
+{
+"id": "5unUI1k6I71ukEVsfVOlBe",
+"uri": "spotify:track:5unUI1k6I71ukEVsfVOlBe",
+"name": "Cirrus",
+"popularity": null,
+"album": "Dazed and Confused",
+"album_type": "single",
+"release_date": "2021-09-09",
+"duration_ms": 110769,
+"explicit": false
+},
+{
+"id": "7ewwwKUD6pnqJqxz2nxGlD",
+"uri": "spotify:track:7ewwwKUD6pnqJqxz2nxGlD",
+"name": "Riding Around",
+"popularity": null,
+"album": "Riding Around",
+"album_type": "single",
+"release_date": "2024-05-30",
+"duration_ms": 74666,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"manuel focus": {
+"query": "Manuel Focus",
+"fetched_at": "2026-09-10T17:48:03+00:00",
+"reach": null,
+"matcher": 2,
+"spotify_id": "3IKpHWEZQ8pPp4PEsGuT28",
+"spotify_name": "Manu",
+"url": "https://open.spotify.com/artist/3IKpHWEZQ8pPp4PEsGuT28",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1784cde52d77f208a1bf4f0f254",
+"tracks": [],
+"rank_source": "search"
+},
+"lucy jeffery": {
+"query": "Lucy Jeffery",
+"fetched_at": "2026-09-10T17:48:05+00:00",
+"spotify_id": null,
+"reach": null,
+"matcher": 2,
+"candidates": [
+"Carla Jeffery",
+"Lucy Thomas",
+"Lucy Dacus"
+]
+},
+"d l forrest": {
+"query": "D.L. Forrest",
+"fetched_at": "2026-09-10T17:48:06+00:00",
+"reach": {
+"listeners": 26,
+"playcount": 77,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/D.L.+Forrest"
+},
+"matcher": 2,
+"spotify_id": "20dEOUUYisukGha9yd2x0g",
+"spotify_name": "D.L. Forrest",
+"url": "https://open.spotify.com/artist/20dEOUUYisukGha9yd2x0g",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178fedb20e1c3071b5679d172db",
+"tracks": [
+{
+"id": "6g5cA9pAdBOIxFtgXeV310",
+"uri": "spotify:track:6g5cA9pAdBOIxFtgXeV310",
+"name": "Can't Sleep",
+"popularity": null,
+"album": "Can't Sleep",
+"album_type": "single",
+"release_date": "2026-08-05",
+"duration_ms": 168681,
+"explicit": false
+},
+{
+"id": "6Cwjwd90JoyE09oicVVoQw",
+"uri": "spotify:track:6Cwjwd90JoyE09oicVVoQw",
+"name": "The Darker It Gets",
+"popularity": null,
+"album": "The Darker It Gets",
+"album_type": "single",
+"release_date": "2026-05-14",
+"duration_ms": 144080,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"kybba": {
+"query": "Kybba",
+"fetched_at": "2026-09-10T17:48:06+00:00",
+"reach": {
+"listeners": 94512,
+"playcount": 943493,
+"tags": [
+"dutch",
+"dancehall",
+"amsterdam"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Kybba"
+},
+"matcher": 2,
+"spotify_id": "5I8OAPN5jY1wvHwpnsRRsA",
+"spotify_name": "Kybba",
+"url": "https://open.spotify.com/artist/5I8OAPN5jY1wvHwpnsRRsA",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1782f620848510915d42653a312",
+"tracks": [
+{
+"id": "0ExNALbmBpY7IAZ2dzupnv",
+"uri": "spotify:track:0ExNALbmBpY7IAZ2dzupnv",
+"name": "Se Le Ve",
+"popularity": null,
+"album": "Se Le Ve",
+"album_type": "single",
+"release_date": "2026-06-11",
+"duration_ms": 159183,
+"explicit": true
+},
+{
+"id": "2RnCVOUcOaPeTlFRW3NHQJ",
+"uri": "spotify:track:2RnCVOUcOaPeTlFRW3NHQJ",
+"name": "Ba Ba Bad Remix",
+"popularity": null,
+"album": "Ba Ba Bad Remix",
+"album_type": "single",
+"release_date": "2025-06-27",
+"duration_ms": 146938,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"arc showcase": {
+"query": "ARC Showcase",
+"fetched_at": "2026-09-10T17:48:07+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 2
+},
+"friend request": {
+"query": "Friend Request",
+"fetched_at": "2026-09-10T17:48:07+00:00",
+"reach": {
+"listeners": 137,
+"playcount": 505,
+"tags": [
+"ambient",
+"dream pop",
+"electronic",
+"experimental pop"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Friend+Request"
+},
+"matcher": 2,
+"spotify_id": "1WCZS7Ojw6jtcLHQ5qF2sV",
+"spotify_name": "Friend Request",
+"url": "https://open.spotify.com/artist/1WCZS7Ojw6jtcLHQ5qF2sV",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1788f678a5d3507f8fb815cf458",
+"tracks": [],
+"rank_source": "search"
+},
+"daniel deorksens bicameral collapse": {
+"query": "Daniel Deorksen’s Bicameral Collapse",
+"fetched_at": "2026-09-10T17:48:08+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 2
+},
+"post sex nachos": {
+"query": "Post Sex Nachos",
+"fetched_at": "2026-09-10T17:48:08+00:00",
+"reach": {
+"listeners": 70365,
+"playcount": 688917,
+"tags": [
+"indie rock",
+"pop",
+"pop rock"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Post+Sex+Nachos"
+},
+"matcher": 2,
+"spotify_id": "3BRSFkEbxBXsZASWPOMOuP",
+"spotify_name": "Post Sex Nachos",
+"url": "https://open.spotify.com/artist/3BRSFkEbxBXsZASWPOMOuP",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178970c1e9e0015675cbcbd9250",
+"tracks": [
+{
+"id": "0UlXfoMdNQRn6cFy16RI2d",
+"uri": "spotify:track:0UlXfoMdNQRn6cFy16RI2d",
+"name": "SOS",
+"popularity": null,
+"album": "SOS",
+"album_type": "single",
+"release_date": "2025-11-07",
+"duration_ms": 184200,
+"explicit": false
+},
+{
+"id": "0Pljubwi0VenHXbIvNQRtw",
+"uri": "spotify:track:0Pljubwi0VenHXbIvNQRtw",
+"name": "Talk About It",
+"popularity": null,
+"album": "Prima/Vera",
+"album_type": "album",
+"release_date": "2024-02-09",
+"duration_ms": 232703,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"she wants revenge": {
+"query": "She Wants Revenge",
+"fetched_at": "2026-09-10T17:48:09+00:00",
+"reach": {
+"listeners": 1480423,
+"playcount": 55868892,
+"tags": [
+"post-punk",
+"darkwave",
+"new wave",
+"alternative"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/She+Wants+Revenge"
+},
+"matcher": 2,
+"spotify_id": "2zRt0sfxNnqI8gLR7d8gWt",
+"spotify_name": "She Wants Revenge",
+"url": "https://open.spotify.com/artist/2zRt0sfxNnqI8gLR7d8gWt",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1786d46fba0802fbbe8ef62d842",
+"tracks": [
+{
+"id": "1XYHqSfJK9ud9nuRjQcbXi",
+"uri": "spotify:track:1XYHqSfJK9ud9nuRjQcbXi",
+"name": "Tear You Apart",
+"popularity": null,
+"album": "She Wants Revenge",
+"album_type": "album",
+"release_date": "2005-01-01",
+"duration_ms": 284613,
+"explicit": true
+},
+{
+"id": "3gmcDVzsWcnLJyxpwOkMJq",
+"uri": "spotify:track:3gmcDVzsWcnLJyxpwOkMJq",
+"name": "Your Love",
+"popularity": null,
+"album": "Up and Down",
+"album_type": "single",
+"release_date": "2009-09-22",
+"duration_ms": 215841,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"mimosa": {
+"query": "Mimosa",
+"fetched_at": "2026-09-10T17:48:09+00:00",
+"reach": {
+"listeners": 170280,
+"playcount": 1535089,
+"tags": [
+"dubstep",
+"glitch",
+"electronic",
+"idm"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Mimosa"
+},
+"matcher": 2,
+"spotify_id": "4BoAXqVwV8T2UH1xKPjCl8",
+"spotify_name": "Mimosa",
+"url": "https://open.spotify.com/artist/4BoAXqVwV8T2UH1xKPjCl8",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17848184fa6275c70ea76cab280",
+"tracks": [
+{
+"id": "3DRpifzrQCW8CPszfwcH2W",
+"uri": "spotify:track:3DRpifzrQCW8CPszfwcH2W",
+"name": "Farewell Waltz",
+"popularity": null,
+"album": "Farewell Waltz",
+"album_type": "single",
+"release_date": "2023-12-13",
+"duration_ms": 62994,
+"explicit": false
+},
+{
+"id": "4UDeolUbibvbobpyzDarKQ",
+"uri": "spotify:track:4UDeolUbibvbobpyzDarKQ",
+"name": "Rêverie",
+"popularity": null,
+"album": "Rêverie",
+"album_type": "single",
+"release_date": "2026-02-06",
+"duration_ms": 109562,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"hovvdy": {
+"query": "Hovvdy",
+"fetched_at": "2026-09-10T17:48:10+00:00",
+"reach": {
+"listeners": 328343,
+"playcount": 5806311,
+"tags": [
+"lo-fi",
+"slowcore",
+"shoegaze",
+"indie rock"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Hovvdy"
+},
+"matcher": 2,
+"spotify_id": "59RNNqeEfkq3X5pfOQxZ3C",
+"spotify_name": "Hovvdy",
+"url": "https://open.spotify.com/artist/59RNNqeEfkq3X5pfOQxZ3C",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178b51ac99bf2208116f683dea7",
+"tracks": [
+{
+"id": "7CNzHJHDLfmEqGZDSKgqGj",
+"uri": "spotify:track:7CNzHJHDLfmEqGZDSKgqGj",
+"name": "Blast",
+"popularity": null,
+"album": "Big World",
+"album_type": "album",
+"release_date": "2026-08-14",
+"duration_ms": 197533,
+"explicit": false
+},
+{
+"id": "73X9SAt8qtPtbUjY1Ngl1N",
+"uri": "spotify:track:73X9SAt8qtPtbUjY1Ngl1N",
+"name": "What I Had",
+"popularity": null,
+"album": "Big World",
+"album_type": "album",
+"release_date": "2026-08-14",
+"duration_ms": 181333,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"richard marx": {
+"query": "Richard Marx",
+"fetched_at": "2026-09-10T17:48:10+00:00",
+"reach": {
+"listeners": 809763,
+"playcount": 7785134,
+"tags": [
+"pop",
+"soft rock",
+"rock"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/Richard+Marx"
+},
+"matcher": 2,
+"spotify_id": "0grdhNhiRLFBaFVyybqsj6",
+"spotify_name": "Richard Marx",
+"url": "https://open.spotify.com/artist/0grdhNhiRLFBaFVyybqsj6",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178ac0402ac44ac760f16a64ac2",
+"tracks": [
+{
+"id": "4LFwNJWoj74Yd71fIr1W8x",
+"uri": "spotify:track:4LFwNJWoj74Yd71fIr1W8x",
+"name": "Right Here Waiting",
+"popularity": null,
+"album": "Repeat Offender",
+"album_type": "album",
+"release_date": "1989-01-01",
+"duration_ms": 264333,
+"explicit": false
+},
+{
+"id": "2V2pxcEfn5zs79sE7qcewA",
+"uri": "spotify:track:2V2pxcEfn5zs79sE7qcewA",
+"name": "Now And Forever",
+"popularity": null,
+"album": "Paid Vacation",
+"album_type": "album",
+"release_date": "1994-01-01",
+"duration_ms": 214826,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"nep": {
+"query": "Nep",
+"fetched_at": "2026-09-10T17:48:11+00:00",
+"reach": {
+"listeners": 160811,
+"playcount": 2763329,
+"tags": [
+"pop",
+"industrial",
+"k-pop",
+"korean"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Nep"
+},
+"matcher": 2,
+"spotify_id": "5IMSbLzrwV9SZOWSLU1dl5",
+"spotify_name": "Nep",
+"url": "https://open.spotify.com/artist/5IMSbLzrwV9SZOWSLU1dl5",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17864a25c49400f8cec93869cef",
+"tracks": [],
+"rank_source": "search"
+},
+"jarlath regan": {
+"query": "Jarlath Regan",
+"fetched_at": "2026-09-10T17:48:11+00:00",
+"spotify_id": null,
+"reach": {
+"listeners": 209,
+"playcount": 4564,
+"tags": [
+"interview",
+"irish",
+"podcast"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Jarlath+Regan"
+},
+"matcher": 2,
+"candidates": [
+"Kathleen Regan",
+"Katrine Sansregret",
+"Jann Arden"
+]
+},
+"shindigs": {
+"query": "The Shindigs",
+"fetched_at": "2026-09-10T17:48:13+00:00",
+"reach": {
+"listeners": 2440,
+"playcount": 7181,
+"tags": [
+"funrock",
+"rock",
+"alternative",
+"post-punk"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/The+Shindigs"
+},
+"matcher": 2,
+"spotify_id": "0RlgKtcs9jaOJMnR0WR495",
+"spotify_name": "The Shindigs",
+"url": "https://open.spotify.com/artist/0RlgKtcs9jaOJMnR0WR495",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1783290fa5d646b2dc5e521bbdf",
+"tracks": [
+{
+"id": "0vouTaPvG46z6Zq24v770l",
+"uri": "spotify:track:0vouTaPvG46z6Zq24v770l",
+"name": "Warzone",
+"popularity": null,
+"album": "Warzone",
+"album_type": "single",
+"release_date": "2026-07-17",
+"duration_ms": 128586,
+"explicit": false
+},
+{
+"id": "2SbpXRYXiDbkGAEzGyOwDZ",
+"uri": "spotify:track:2SbpXRYXiDbkGAEzGyOwDZ",
+"name": "Snowball",
+"popularity": null,
+"album": "Snowball",
+"album_type": "single",
+"release_date": "2025-07-27",
+"duration_ms": 229221,
+"explicit": false
+}
+],
+"rank_source": "search"
 }
 }
