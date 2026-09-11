@@ -85,6 +85,19 @@
     artistGenres(a).some((g) => state.genres.some((w) => g.includes(w.toLowerCase())));
 
   const srcOk = (e) => state.sources.includes(e.source || "songkick");
+  // Same Spotify artist billed twice on one show ("Sasha & John Digweed" + "John Digweed") = one act.
+  function collapseSameSpotify(arts) {
+    const seen = new Map(), out = [];
+    for (const a of arts) {
+      const k = a.spotify_id || a.name;
+      const prev = seen.get(k);
+      if (!prev) { const c = { ...a, also_billed: [...(a.also_billed || [])] }; seen.set(k, c); out.push(c); continue; }
+      const exactNew = norm(a.name) === norm(a.spotify_name || ""), exactOld = norm(prev.name) === norm(prev.spotify_name || "");
+      if (exactNew && !exactOld) { const loserName = prev.name; Object.assign(prev, a, { also_billed: [loserName, ...(prev.also_billed || [])] }); }
+      else if (a.name !== prev.name && !prev.also_billed.includes(a.name)) prev.also_billed.push(a.name);
+    }
+    return out;
+  }
   function select() {
     const today = new Date(); today.setHours(0, 0, 0, 0);
     const end = new Date(today); end.setDate(end.getDate() + state.days);
@@ -97,7 +110,7 @@
       if (!srcOk(e)) continue;
       if (state.savedOnly && !saved.has(showKey(e))) continue;
       if (venues && !venues.has((e.venue || "").toLowerCase())) continue;
-      let arts = state.headliners ? e.artists.slice(0, 1) : e.artists;
+      let arts = collapseSameSpotify(state.headliners ? e.artists.slice(0, 1) : e.artists);
       arts = arts.filter(genreMatch).filter(reachOk);
       if (!arts.length) continue;
       nArtists += arts.length;
@@ -164,7 +177,7 @@
             <div class="artist">
               ${a.image ? `<img src="${esc(a.image)}" alt="" loading="lazy">` : ""}
               <div class="ainfo">
-                <div class="who"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.name)}</a>${a.spotify_name && norm(a.spotify_name) !== norm(a.name) ? `<small>as “${esc(a.spotify_name)}” on Spotify</small>` : ""}${a.reach?.listeners ? `<span class="reach" title="Last.fm listeners">${fmtListeners(a.reach.listeners)} listeners</span>` : `<span class="reach">not on Last.fm</span>`}${artistGenres(a).slice(0, 3).map((g) => `<small class="pill">${esc(g)}</small>`).join(" ")}</div>
+                <div class="who"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.name)}</a>${a.spotify_name && norm(a.spotify_name) !== norm(a.name) ? `<small>as “${esc(a.spotify_name)}” on Spotify</small>` : ""}${a.also_billed?.length ? `<small>also billed as ${a.also_billed.map((n) => `“${esc(n)}”`).join(", ")}</small>` : ""}${a.reach?.listeners ? `<span class="reach" title="Last.fm listeners">${fmtListeners(a.reach.listeners)} listeners</span>` : `<span class="reach">not on Last.fm</span>`}${artistGenres(a).slice(0, 3).map((g) => `<small class="pill">${esc(g)}</small>`).join(" ")}</div>
                 <div class="tracks">${a.tracks.map((t) => `<button class="play${playing && playing.trackId === t.id ? " on" : ""}" data-play="${t.id}" data-key="${esc(k)}" data-artist="${esc(a.name)}" data-track="${esc(t.name)}" title="Play in page">${playing && playing.trackId === t.id ? "◼" : "▶"}</button><a href="https://open.spotify.com/track/${t.id}" target="_blank" rel="noopener">${esc(t.name)}</a>`).join(`<span class="sep">·</span>`)}</div>
               </div>
             </div>`).join("")}
