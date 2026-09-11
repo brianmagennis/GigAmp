@@ -344,6 +344,7 @@ def build_city(city: dict, raw: dict, cache: dict, pending: list[str], stopped_r
                 unmatched.append({"artist": p["name"], "event": e["name"], "date": e["start"][:10],
                                   "reason": a.get("skip_reason") or ("no_tracks" if a.get("spotify_id") else "no_match"),
                                   "candidates": a.get("candidates", [])})
+        artists = collapse_same_spotify(artists)
         if artists:
             events_out.append({
                 "id": e["id"], "name": e["name"], "source": e.get("source", "songkick"),
@@ -370,6 +371,31 @@ def build_city(city: dict, raw: dict, cache: dict, pending: list[str], stopped_r
         "skipped": [{"name": s["name"], "date": s["start"][:10], "venue": s["venue"], "reason": s["skip_reason"]}
                     for s in raw.get("skipped", [])],
     }
+
+
+def collapse_same_spotify(artists: list[dict]) -> list[dict]:
+    """Two billed names that resolved to the same Spotify artist are one act on the bill
+    ("Sasha & John Digweed" -> John Digweed, plus "John Digweed"). Keep the entry whose
+    billed name matches Spotify exactly, else the first; remember the other billing."""
+    by_id, order = {}, []
+    for a in artists:
+        sid = a.get("spotify_id")
+        if sid not in by_id:
+            by_id[sid] = a
+            order.append(sid)
+            continue
+        kept = by_id[sid]
+        exact_new = norm(a["name"]) == norm(a.get("spotify_name", ""))
+        exact_old = norm(kept["name"]) == norm(kept.get("spotify_name", ""))
+        winner, loser = (a, kept) if (exact_new and not exact_old) else (kept, a)
+        winner.setdefault("also_billed", [])
+        if loser["name"] != winner["name"] and loser["name"] not in winner["also_billed"]:
+            winner["also_billed"].append(loser["name"])
+        for n in loser.get("also_billed", []):
+            if n not in winner["also_billed"] and n != winner["name"]:
+                winner["also_billed"].append(n)
+        by_id[sid] = winner
+    return [by_id[sid] for sid in order]
 
 
 def enrich_city(sp: Spotify, city: dict, cache: dict, lfm: LastFM | None = None) -> dict:
