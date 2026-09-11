@@ -42,7 +42,7 @@ RAW_DIR = DATA_DIR / "raw"
 CACHE_FILE = DATA_DIR / "cache" / "artists.json"
 CACHE_TTL_DAYS = 30          # re-check an artist's tracks roughly monthly
 MISS_TTL_DAYS = 14           # re-try artists we couldn't match after two weeks
-MATCHER_VERSION = 2          # bump when matching logic improves: cached misses get retried
+MATCHER_VERSION = 3          # bump when matching logic improves: cached misses get retried
 TRACKS_PER_ARTIST = 2
 MAX_CALLS_PER_RUN = int(os.environ.get("GIGAMP_MAX_CALLS", "0")) or None  # optional hard cap
 
@@ -149,9 +149,21 @@ def pick_artist(name: str, candidates: list[dict], strict: bool = False) -> dict
         return exact[0]
     if strict:
         return None                        # heuristic names (Do604 titles) must match exactly
-    fuzzy = [c for c in candidates if target and (target in norm(c["name"]) or norm(c["name"]) in target)]
-    if fuzzy and len(target) >= 4:
-        return fuzzy[0]
+    tw = target.split()
+    # Billing adds words around a real name: "Boy George And Culture Club" -> Culture Club,
+    # "Sasha & John Digweed" -> John Digweed. Safe when the candidate is a whole-word phrase
+    # inside the billed name and not trivially short; prefer the longest such candidate.
+    contained = [c for c in candidates if len(norm(c["name"])) >= 5 and f" {norm(c['name'])} " in f" {target} "]
+    if contained:
+        return max(contained, key=lambda c: len(norm(c["name"])))
+    for c in candidates:
+        cn = norm(c["name"]); cw = cn.split()
+        if not cn or not tw:
+            continue
+        # The other direction is where "Sleep" -> Sleep Token and "The Post" -> The Postal Service
+        # came from. Only allow it for multi-word billed names with at most one extra word.
+        if len(tw) >= 2 and f" {target} " in f" {cn} " and len(cw) <= len(tw) + 1:
+            return c
     return None
 
 
@@ -169,10 +181,17 @@ def _track_dict(t: dict) -> dict:
     }
 
 
+VERSION_RE = re.compile(r"\s*[-–(\[]\s*(?:\d{4}\s+)?(?:remaster(?:ed)?|remix|mix|edit|version|live|stripped|acoustic|"
+                        r"demo|mono|stereo|radio|single|album|extended|instrumental|deluxe|bonus|re-?recorded|"
+                        r"anniversary|from|feat\.?|ft\.?|prod\.?|with)\b.*$", re.I)
+
+
 def _dedupe_take(tracks: list[dict], n: int) -> list[dict]:
+    """Take the first n distinct songs, treating remasters/mixes/edits of a song as the same song."""
     out, seen = [], set()
     for t in tracks:
-        key = norm(t["name"])
+        base = re.sub(r"\s+[-–]\s+.*$|\s*\(.*?\)|\s*\[.*?\]", "", t["name"])
+        key = norm(VERSION_RE.sub("", base)) or norm(base) or norm(t["name"])
         if key in seen:
             continue                          # same song on album + single
         seen.add(key)
@@ -211,7 +230,8 @@ def lookup_artist(sp: Spotify, name: str, market: str, cache: dict, strict: bool
     if hit and hit.get("fetched_at"):
         age = datetime.now(timezone.utc) - datetime.fromisoformat(hit["fetched_at"])
         ttl = CACHE_TTL_DAYS if hit.get("spotify_id") else MISS_TTL_DAYS
-        stale_miss = not hit.get("spotify_id") and hit.get("matcher") != MATCHER_VERSION
+        stale_miss = hit.get("matcher") != MATCHER_VERSION and (
+            not hit.get("spotify_id") or norm(hit.get("spotify_name", "")) != norm(hit.get("query", name)))
         if age < timedelta(days=ttl) and not stale_miss:
             if "reach" not in hit and lfm and lfm.enabled:      # backfill Last.fm for older cache entries
                 info = lfm.artist_info(hit.get("spotify_name") or name)
@@ -285,6 +305,12 @@ def lookup_artist(sp: Spotify, name: str, market: str, cache: dict, strict: bool
         tracks = _dedupe_take(own, TRACKS_PER_ARTIST)
         rank_source = "search"
 
+    if lfm and lfm.enabled and norm(a["name"]) != norm(name):
+        # Billed as "Boy George And Culture Club", matched to Culture Club: measure the real act.
+        info = lfm.artist_info(a["name"])
+        if info and info["listeners"] > ((reach or {}).get("listeners") or 0):
+            reach = {"listeners": info["listeners"], "playcount": info["playcount"], "tags": info["tags"],
+                     "tier": tier_for(info["listeners"]), "lastfm_url": info["url"]}
     entry = {"query": name, "fetched_at": now, "reach": reach, "matcher": MATCHER_VERSION}
     entry.update(artist_entry(a, tracks, rank_source))
     cache[key] = entry
@@ -322,7 +348,8 @@ def build_city(city: dict, raw: dict, cache: dict, pending: list[str], stopped_r
             events_out.append({
                 "id": e["id"], "name": e["name"], "source": e.get("source", "songkick"),
                 "date": e["start"][:10], "start": e["start"],
-                "venue": e["venue"], "locality": e["locality"], "url": e["url"],
+                "venue": e["venue"], "venue_id": e.get("venue_id"), "locality": e["locality"], "url": e["url"],
+                "also_listed": e.get("also_listed", []),
                 "lat": e.get("lat"), "lng": e.get("lng"),
                 "headliner": artists[0]["name"], "artists": artists,
             })
@@ -335,6 +362,7 @@ def build_city(city: dict, raw: dict, cache: dict, pending: list[str], stopped_r
         "scraped_at": raw["scraped_at"],
         "horizon_days": raw["horizon_days"],
         "source": raw["source"],
+        "venues": raw.get("venues", {}),
         "events": events_out,
         "unmatched": unmatched,
         "pending": pending,                     # acts not yet looked up (quota); next run continues

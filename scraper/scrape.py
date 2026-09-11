@@ -21,7 +21,8 @@ import requests
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from do604 import scrape_do604, norm_venue  # noqa: E402
+from do604 import scrape_do604  # noqa: E402
+from venues import canonicalize, dedupe_shows  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = json.loads((ROOT / "scraper" / "cities.json").read_text())
@@ -35,7 +36,8 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
 TRIBUTE_RE = re.compile(
     r"\b(tribute|a tribute to|covers? band|cover show|the music of|plays the music of|"
     r"performs the (?:album|music|songs) of|celebrat(?:ing|ion of) the music of|"
-    r"the .{2,40} experience|revisited|reimagined|symphonic .{2,40} concert)\b",
+    r"the .{2,40} experience|revisited|reimagined|symphonic .{2,40} concert|\w{3,}mania|"
+    r"a celebration of|the songs of|an evening of .{2,30} music|played by|performed by candlelight|candlelight)\b",
     re.I,
 )
 # Club nights / themed party events: excluded, unless a real headline act is billed.
@@ -152,14 +154,15 @@ def scrape_city(city: dict, horizon_days: int, max_pages: int, fixture: Path | N
     do604_added = 0
     if (city.get("do604") or {}).get("enabled") and not fixture:
         try:
-            sk_keys = {(e["start"][:10], norm_venue(e["venue"] or "")) for e in all_events if e["start"]}
             for e in scrape_do604(city, horizon_days):
-                if (e["start"][:10], norm_venue(e["venue"] or "")) in sk_keys:
-                    continue
                 all_events.append(e)
                 do604_added += 1
         except Exception as ex:  # a Do604 outage must not sink the Songkick data
             print(f"do604: failed, continuing with Songkick only ({ex})", file=sys.stderr)
+
+    # One venue id per room regardless of spelling/source, then one record per show.
+    venues = canonicalize(all_events, city.get("venue_aliases"))
+    all_events, merged = dedupe_shows(all_events)
 
     kept, skipped, seen = [], [], set()
     for e in all_events:
@@ -169,7 +172,7 @@ def scrape_city(city: dict, horizon_days: int, max_pages: int, fixture: Path | N
             continue
         if e["status"] in ("EventCancelled", "EventPostponed"):
             continue
-        key = (e["start"][:10], (e["venue"] or "").lower(), tuple(p["name"].lower() for p in e["performers"]))
+        key = (e["start"][:10], e.get("venue_id") or (e["venue"] or "").lower(), tuple(p["name"].lower() for p in e["performers"]))
         if key in seen:
             continue
         seen.add(key)
@@ -188,6 +191,8 @@ def scrape_city(city: dict, horizon_days: int, max_pages: int, fixture: Path | N
         "horizon_days": horizon_days,
         "pages_fetched": page,
         "do604_events": do604_added,
+        "merged_duplicates": merged,
+        "venues": venues,
         "events": kept,
         "skipped": skipped,
     }
@@ -218,7 +223,8 @@ def main():
             continue
         out.write_text(json.dumps(result, indent=1, ensure_ascii=False))
         print(f"{city['slug']}: {len(result['events'])} events kept "
-              f"({result['do604_events']} from Do604), {len(result['skipped'])} skipped, "
+              f"({result['do604_events']} from Do604, {result['merged_duplicates']} duplicates merged, "
+              f"{len(result['venues'])} venues), {len(result['skipped'])} skipped, "
               f"{result['pages_fetched']} Songkick page(s) -> {out.relative_to(ROOT)}")
     if failures and not any((RAW_DIR / f"{c['slug']}.json").exists() for c in cities):
         sys.exit(1)

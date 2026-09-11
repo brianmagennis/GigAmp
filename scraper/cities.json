@@ -62,6 +62,58 @@
           "The Birdhouse",
           "Massey Theatre"
         ]
+      },
+      "venue_aliases": {
+        "Rickshaw Theatre": [
+          "The Rickshaw"
+        ],
+        "Guilt & Company": [
+          "Guilt & Co"
+        ],
+        "The Astoria": [
+          "Astoria Pub"
+        ],
+        "Biltmore Cabaret": [
+          "The Bitmore",
+          "The Biltmore"
+        ],
+        "The Cobalt": [
+          "Cobalt Cabaret",
+          "The Cobalt Cabaret",
+          "Cobalt Cabarat"
+        ],
+        "Fox Cabaret": [
+          "The Fox Cabaret"
+        ],
+        "The WISE Hall": [
+          "Wise Hall",
+          "WISE Hall",
+          "Wise Lounge"
+        ],
+        "Green Auto": [
+          "Green Auto Body",
+          "Green Auto Music",
+          "Green Auto (Main Stage)"
+        ],
+        "The Waldorf": [
+          "At The Waldorf",
+          "Waldorf Hotel"
+        ],
+        "Chan Centre for the Performing Arts": [
+          "The Chan Centre",
+          "Chan Shun Concert Hall"
+        ],
+        "St. James Hall": [
+          "St. James Community Square",
+          "Mel Lehan Hall"
+        ],
+        "Lana Lou's": [
+          "Lana Lou's Rock & Roll Eatery",
+          "LanaLou's"
+        ],
+        "Red Gate Arts Society": [
+          "Red Gate"
+        ]
       }
     }
   ],
