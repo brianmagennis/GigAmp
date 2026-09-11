@@ -5,13 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GigAmp</title>
 <meta name="description" content="A Spotify playlist of the acts playing your city's venues in the next month.">
-<link rel="canonical" href="https://gigamp.app/">
-<meta property="og:title" content="GigAmp">
-<meta property="og:description" content="A Spotify playlist of the acts playing your city's venues in the next month.">
-<meta property="og:url" content="https://gigamp.app/">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary"> 
-  //socials
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2318181b'/%3E%3Cpath d='M8 22V10l16 6z' fill='%23f5c542'/%3E%3C/svg%3E">
 <style>
 :root{
@@ -117,8 +110,14 @@ details.setup pre{background:var(--panel-2);border:1px solid var(--line);border-
 .artist .ainfo{flex:1;min-width:0}
 .play{background:none;border:0;color:var(--muted);padding:0 5px 0 0;font-size:11px;vertical-align:1px;cursor:pointer}
 .play:hover,.play.on{color:var(--accent)}
-.player{margin:8px 0 2px;max-width:560px}
-.player iframe{border-radius:12px;display:block}
+#dock{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(20,20,24,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:8px clamp(14px,3vw,32px) 10px}
+#dock .dockwrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(160px,280px) 1fr auto;gap:14px;align-items:center}
+@media (max-width:700px){#dock .dockwrap{grid-template-columns:1fr auto}#dockTitle{grid-column:1/-1}}
+#dockTitle{font-size:13.5px;color:var(--muted);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#dockTitle b{color:var(--text);margin-right:6px}
+#dockPlayer{min-width:0}#dockPlayer iframe,#dockPlayer #dockEmbed iframe{border-radius:12px;display:block}
+#dockClose{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;width:32px;height:32px;font-size:16px;line-height:1}
+body.has-dock{padding-bottom:120px}
 .btn.saved-toggle[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 #plLink{font-size:12.5px}#plLink a{color:var(--accent);text-decoration:none}
 .pill{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--line);font-size:11.5px;color:var(--muted);vertical-align:middle}
@@ -216,6 +215,13 @@ details.setup pre{background:var(--panel-2);border:1px solid var(--line);border-
         <span id="unmatched"></span>
       </p>
     </main>
+  </div>
+</div>
+<div id="dock" hidden>
+  <div class="dockwrap">
+    <div id="dockTitle"></div>
+    <div id="dockPlayer"></div>
+    <button id="dockClose" title="Close player" aria-label="Close player">×</button>
   </div>
 </div>
 <script src="config.js"></script>
