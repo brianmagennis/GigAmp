@@ -3,45 +3,11 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-09-11T05:29:35+00:00",
- "scraped_at": "2026-09-11T05:26:27+00:00",
+ "generated_at": "2026-09-11T17:50:20+00:00",
+ "scraped_at": "2026-09-11T17:47:56+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
  "venues": {
-  "rickshaw-theatre": {
-   "name": "Rickshaw Theatre",
-   "aliases": [
-    "The Rickshaw"
-   ],
-   "lat": 49.28102,
-   "lng": -123.09853
-  },
-  "red-room": {
-   "name": "Red Room",
-   "aliases": [],
-   "lat": 49.28425,
-   "lng": -123.11137
-  },
-  "the-pearl": {
-   "name": "The Pearl",
-   "aliases": [],
-   "lat": 49.28071,
-   "lng": -123.12143
-  },
-  "sofar-sounds": {
-   "name": "Sofar Sounds",
-   "aliases": [],
-   "lat": null,
-   "lng": null
-  },
-  "guilt-company": {
-   "name": "Guilt & Company",
-   "aliases": [
-    "Guilt & Co"
-   ],
-   "lat": 49.28379,
-   "lng": -123.10402
-  },
   "commodore-ballroom": {
    "name": "Commodore Ballroom",
    "aliases": [],
@@ -66,6 +32,12 @@
    "lat": 49.27939,
    "lng": -123.13002
   },
+  "the-pearl": {
+   "name": "The Pearl",
+   "aliases": [],
+   "lat": 49.28071,
+   "lng": -123.12143
+  },
   "rio-theatre": {
    "name": "Rio Theatre",
    "aliases": [
@@ -85,6 +57,12 @@
    "aliases": [],
    "lat": null,
    "lng": null
+  },
+  "red-room": {
+   "name": "Red Room",
+   "aliases": [],
+   "lat": 49.28425,
+   "lng": -123.11137
   },
   "freedom-mobile-arch": {
    "name": "Freedom Mobile Arch",
@@ -115,6 +93,14 @@
    "aliases": [],
    "lat": null,
    "lng": null
+  },
+  "rickshaw-theatre": {
+   "name": "Rickshaw Theatre",
+   "aliases": [
+    "The Rickshaw"
+   ],
+   "lat": 49.28102,
+   "lng": -123.09853
   },
   "st-james-hall": {
    "name": "St. James Hall",
@@ -259,6 +245,14 @@
    "lat": 49.24176,
    "lng": -122.96909
   },
+  "guilt-company": {
+   "name": "Guilt & Company",
+   "aliases": [
+    "Guilt & Co"
+   ],
+   "lat": 49.28379,
+   "lng": -123.10402
+  },
   "1181-e-24th-ave-house-show": {
    "name": "1181 E 24th Ave (House Show)",
    "aliases": [],
@@ -284,6 +278,12 @@
    ],
    "lat": 49.28147,
    "lng": -123.08793
+  },
+  "the-highbrow": {
+   "name": "The Highbrow",
+   "aliases": [],
+   "lat": null,
+   "lng": null
   },
   "doug-mitchell-thunderbird-sports-centre": {
    "name": "Doug Mitchell Thunderbird Sports Centre",
@@ -410,6 +410,12 @@
    "aliases": [],
    "lat": 49.14434,
    "lng": -122.29198
+  },
+  "york-theatre": {
+   "name": "York Theatre",
+   "aliases": [],
+   "lat": 49.27907,
+   "lng": -123.07046
   },
   "green-auto": {
    "name": "Green Auto",
@@ -1787,56 +1793,8 @@
    "also_listed": [],
    "lat": 49.29956,
    "lng": -123.13395,
-   "headliner": "Sasha & John Digweed",
+   "headliner": "John Digweed",
    "artists": [
-    {
-     "name": "Sasha & John Digweed",
-     "spotify_name": "John Digweed",
-     "spotify_id": "3xnDktxhudJR2Wv3HZDQ9W",
-     "url": "https://open.spotify.com/artist/3xnDktxhudJR2Wv3HZDQ9W",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1784ef0189e07eec59460b46c17",
-     "tracks": [
-      {
-       "id": "0RwUOlZ1XXtFCszhiQSBxN",
-       "uri": "spotify:track:0RwUOlZ1XXtFCszhiQSBxN",
-       "name": "Mantis",
-       "popularity": null,
-       "album": "Versus",
-       "album_type": "album",
-       "release_date": "2013-10-07",
-       "duration_ms": 449320,
-       "explicit": false
-      },
-      {
-       "id": "3wLIyQsH1vm9jmg0p5Dsga",
-       "uri": "spotify:track:3wLIyQsH1vm9jmg0p5Dsga",
-       "name": "Tripchain",
-       "popularity": null,
-       "album": "Tripchain / Scanalatura",
-       "album_type": "single",
-       "release_date": "2023-09-08",
-       "duration_ms": 405500,
-       "explicit": false
-      }
-     ],
-     "rank_source": "search",
-     "reach": {
-      "listeners": 129739,
-      "playcount": 1018819,
-      "tags": [
-       "progressive house",
-       "house",
-       "electronic",
-       "trance"
-      ],
-      "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/John+Digweed"
-     }
-    },
     {
      "name": "John Digweed",
      "spotify_name": "John Digweed",
@@ -1883,7 +1841,10 @@
       ],
       "tier": 3,
       "lastfm_url": "https://www.last.fm/music/John+Digweed"
-     }
+     },
+     "also_billed": [
+      "Sasha & John Digweed"
+     ]
     }
    ]
   },
@@ -8035,7 +7996,7 @@
    "name": "Lane 8 @ Deer Lake Park",
    "source": "songkick",
    "date": "2026-09-19",
-   "start": "2026-09-19T17:00:00",
+   "start": "2026-09-19T16:00:00",
    "venue": "Deer Lake Park",
    "venue_id": "deer-lake-park",
    "locality": "Burnaby",
@@ -15819,6 +15780,70 @@
    ]
   },
   {
+   "id": "43409956",
+   "name": "Cheryl Duvall @ The Highbrow",
+   "source": "songkick",
+   "date": "2026-09-27",
+   "start": "2026-09-27T15:00:00",
+   "venue": "The Highbrow",
+   "venue_id": "the-highbrow",
+   "locality": "New Westminster",
+   "url": "https://www.songkick.com/concerts/43409956-cheryl-duvall-at-highbrow",
+   "also_listed": [],
+   "lat": null,
+   "lng": null,
+   "headliner": "Cheryl Duvall",
+   "artists": [
+    {
+     "name": "Cheryl Duvall",
+     "spotify_name": "Cheryl Duvall",
+     "spotify_id": "6xZKj2fVZhnEtGKTWWsZaH",
+     "url": "https://open.spotify.com/artist/6xZKj2fVZhnEtGKTWWsZaH",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab67616d000048515758e0ba6ffaf1092a71883c",
+     "tracks": [
+      {
+       "id": "13CT019vPWAomU86U2DaM2",
+       "uri": "spotify:track:13CT019vPWAomU86U2DaM2",
+       "name": "The Complete Piano Solos (1989-2023) Vol. 1 - The Plains",
+       "popularity": null,
+       "album": "Linda Catlin Smith: The Complete Piano Solos (1989-2023) Vol. 1 - The Plains",
+       "album_type": "single",
+       "release_date": "2025-10-03",
+       "duration_ms": 4072190,
+       "explicit": false
+      },
+      {
+       "id": "3IhGPTW9TavViYb5GKkqBC",
+       "uri": "spotify:track:3IhGPTW9TavViYb5GKkqBC",
+       "name": "Poire",
+       "popularity": null,
+       "album": "Linda Catlin Smith: The Complete Piano Solos (1989-2023), Vol. 2 - The Underfolding and Early Works",
+       "album_type": "compilation",
+       "release_date": "2026-08-07",
+       "duration_ms": 220013,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 64,
+      "playcount": 257,
+      "tags": [
+       "contemporary classical",
+       "piano",
+       "avantgarde"
+      ],
+      "tier": 1,
+      "lastfm_url": "https://www.last.fm/music/Cheryl+Duvall"
+     }
+    }
+   ]
+  },
+  {
    "id": "do604-2026-09-27-judge-with-integrity-earth-crisis-and-wi",
    "name": "Judge with Integrity, Earth Crisis, Witness Chamber and Juice",
    "source": "do604",
@@ -17219,6 +17244,75 @@
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Cr%C3%BCzer"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4341062752",
+   "name": "The B-52's @ Rogers Arena",
+   "source": "songkick",
+   "date": "2026-09-28",
+   "start": "2026-09-28T19:00:00",
+   "venue": "Rogers Arena",
+   "venue_id": "rogers-arena",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43410627-b52s-at-rogers-arena",
+   "also_listed": [],
+   "lat": 49.27766,
+   "lng": -123.10811,
+   "headliner": "The B-52's",
+   "artists": [
+    {
+     "name": "The B-52's",
+     "spotify_name": "The B-52's",
+     "spotify_id": "3gdbcIdNypBsYNu3iiCjtN",
+     "url": "https://open.spotify.com/artist/3gdbcIdNypBsYNu3iiCjtN",
+     "genres": [],
+     "songkick_genres": [
+      "rock",
+      "pop",
+      "indie_alternative"
+     ],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f17885c1d77e63082caf426f6d59",
+     "tracks": [
+      {
+       "id": "4W4wYHtsrgDiivRASVOINL",
+       "uri": "spotify:track:4W4wYHtsrgDiivRASVOINL",
+       "name": "Love Shack",
+       "popularity": null,
+       "album": "Cosmic Thing",
+       "album_type": "album",
+       "release_date": "1989",
+       "duration_ms": 320680,
+       "explicit": false
+      },
+      {
+       "id": "2Q5wSOwq6BDSu7sSVMNrtT",
+       "uri": "spotify:track:2Q5wSOwq6BDSu7sSVMNrtT",
+       "name": "Rock Lobster",
+       "popularity": null,
+       "album": "The B-52's",
+       "album_type": "album",
+       "release_date": "1979",
+       "duration_ms": 409400,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "reach": {
+      "listeners": 1560921,
+      "playcount": 22618413,
+      "tags": [
+       "new wave",
+       "pop",
+       "alternative",
+       "rock"
+      ],
+      "tier": 4,
+      "lastfm_url": "https://www.last.fm/music/The+B-52%27s"
      }
     }
    ]

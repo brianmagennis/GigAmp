@@ -2,46 +2,12 @@
  "city": "vancouver",
  "city_name": "Vancouver, BC",
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
- "scraped_at": "2026-09-11T05:26:27+00:00",
+ "scraped_at": "2026-09-11T17:47:56+00:00",
  "horizon_days": 35,
  "pages_fetched": 6,
  "do604_events": 304,
  "merged_duplicates": 110,
  "venues": {
-  "rickshaw-theatre": {
-   "name": "Rickshaw Theatre",
-   "aliases": [
-    "The Rickshaw"
-   ],
-   "lat": 49.28102,
-   "lng": -123.09853
-  },
-  "red-room": {
-   "name": "Red Room",
-   "aliases": [],
-   "lat": 49.28425,
-   "lng": -123.11137
-  },
-  "the-pearl": {
-   "name": "The Pearl",
-   "aliases": [],
-   "lat": 49.28071,
-   "lng": -123.12143
-  },
-  "sofar-sounds": {
-   "name": "Sofar Sounds",
-   "aliases": [],
-   "lat": null,
-   "lng": null
-  },
-  "guilt-company": {
-   "name": "Guilt & Company",
-   "aliases": [
-    "Guilt & Co"
-   ],
-   "lat": 49.28379,
-   "lng": -123.10402
-  },
   "commodore-ballroom": {
    "name": "Commodore Ballroom",
    "aliases": [],
@@ -66,6 +32,12 @@
    "lat": 49.27939,
    "lng": -123.13002
   },
+  "the-pearl": {
+   "name": "The Pearl",
+   "aliases": [],
+   "lat": 49.28071,
+   "lng": -123.12143
+  },
   "rio-theatre": {
    "name": "Rio Theatre",
    "aliases": [
@@ -85,6 +57,12 @@
    "aliases": [],
    "lat": null,
    "lng": null
+  },
+  "red-room": {
+   "name": "Red Room",
+   "aliases": [],
+   "lat": 49.28425,
+   "lng": -123.11137
   },
   "freedom-mobile-arch": {
    "name": "Freedom Mobile Arch",
@@ -115,6 +93,14 @@
    "aliases": [],
    "lat": null,
    "lng": null
+  },
+  "rickshaw-theatre": {
+   "name": "Rickshaw Theatre",
+   "aliases": [
+    "The Rickshaw"
+   ],
+   "lat": 49.28102,
+   "lng": -123.09853
   },
   "st-james-hall": {
    "name": "St. James Hall",
@@ -259,6 +245,14 @@
    "lat": 49.24176,
    "lng": -122.96909
   },
+  "guilt-company": {
+   "name": "Guilt & Company",
+   "aliases": [
+    "Guilt & Co"
+   ],
+   "lat": 49.28379,
+   "lng": -123.10402
+  },
   "1181-e-24th-ave-house-show": {
    "name": "1181 E 24th Ave (House Show)",
    "aliases": [],
@@ -284,6 +278,12 @@
    ],
    "lat": 49.28147,
    "lng": -123.08793
+  },
+  "the-highbrow": {
+   "name": "The Highbrow",
+   "aliases": [],
+   "lat": null,
+   "lng": null
   },
   "doug-mitchell-thunderbird-sports-centre": {
    "name": "Doug Mitchell Thunderbird Sports Centre",
@@ -410,6 +410,12 @@
    "aliases": [],
    "lat": 49.14434,
    "lng": -122.29198
+  },
+  "york-theatre": {
+   "name": "York Theatre",
+   "aliases": [],
+   "lat": 49.27907,
+   "lng": -123.07046
   },
   "green-auto": {
    "name": "Green Auto",
@@ -3458,7 +3464,7 @@
    "source": "songkick",
    "id": "432945478",
    "name": "Lane 8 @ Deer Lake Park",
-   "start": "2026-09-19T17:00:00",
+   "start": "2026-09-19T16:00:00",
    "status": "EventScheduled",
    "venue": "Deer Lake Park",
    "venue_url": null,
@@ -6407,6 +6413,28 @@
    ]
   },
   {
+   "source": "songkick",
+   "id": "43409956",
+   "name": "Cheryl Duvall @ The Highbrow",
+   "start": "2026-09-27T15:00:00",
+   "status": "EventScheduled",
+   "venue": "The Highbrow",
+   "venue_url": null,
+   "locality": "New Westminster",
+   "lat": null,
+   "lng": null,
+   "url": "https://www.songkick.com/concerts/43409956-cheryl-duvall-at-highbrow",
+   "performers": [
+    {
+     "name": "Cheryl Duvall",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8406758-cheryl-duvall?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "The Highbrow",
+   "venue_id": "the-highbrow"
+  },
+  {
    "id": "do604-2026-09-27-nurse-even-this-is-bullshift-tickets",
    "name": "NURSE EVEN This is BullSHIFT",
    "start": "2026-09-27T17:00-0700",
@@ -6983,6 +7011,32 @@
    "venue_id": "the-astoria",
    "lat": 49.28147,
    "lng": -123.08793
+  },
+  {
+   "source": "songkick",
+   "id": "4341062752",
+   "name": "The B-52's @ Rogers Arena",
+   "start": "2026-09-28T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Rogers Arena",
+   "venue_url": "http://www.rogersarena.com",
+   "locality": "Vancouver",
+   "lat": 49.27766,
+   "lng": -123.10811,
+   "url": "https://www.songkick.com/concerts/43410627-b52s-at-rogers-arena",
+   "performers": [
+    {
+     "name": "The B-52's",
+     "songkick_genres": [
+      "rock",
+      "pop",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/360904-b52s?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Rogers Arena",
+   "venue_id": "rogers-arena"
   },
   {
    "source": "songkick",

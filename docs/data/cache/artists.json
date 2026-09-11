@@ -30413,5 +30413,53 @@
 }
 ],
 "rank_source": "search"
+},
+"cheryl duvall": {
+"query": "Cheryl Duvall",
+"fetched_at": "2026-09-11T17:50:19+00:00",
+"reach": {
+"listeners": 64,
+"playcount": 257,
+"tags": [
+"contemporary classical",
+"piano",
+"avantgarde"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Cheryl+Duvall"
+},
+"matcher": 3,
+"spotify_id": "6xZKj2fVZhnEtGKTWWsZaH",
+"spotify_name": "Cheryl Duvall",
+"url": "https://open.spotify.com/artist/6xZKj2fVZhnEtGKTWWsZaH",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab67616d000048515758e0ba6ffaf1092a71883c",
+"tracks": [
+{
+"id": "13CT019vPWAomU86U2DaM2",
+"uri": "spotify:track:13CT019vPWAomU86U2DaM2",
+"name": "The Complete Piano Solos (1989-2023) Vol. 1 - The Plains",
+"popularity": null,
+"album": "Linda Catlin Smith: The Complete Piano Solos (1989-2023) Vol. 1 - The Plains",
+"album_type": "single",
+"release_date": "2025-10-03",
+"duration_ms": 4072190,
+"explicit": false
+},
+{
+"id": "3IhGPTW9TavViYb5GKkqBC",
+"uri": "spotify:track:3IhGPTW9TavViYb5GKkqBC",
+"name": "Poire",
+"popularity": null,
+"album": "Linda Catlin Smith: The Complete Piano Solos (1989-2023), Vol. 2 - The Underfolding and Early Works",
+"album_type": "compilation",
+"release_date": "2026-08-07",
+"duration_ms": 220013,
+"explicit": false
+}
+],
+"rank_source": "search"
 }
 }
