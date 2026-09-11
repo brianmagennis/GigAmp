@@ -138,7 +138,7 @@
           <div class="showhead">
             <div class="venue"><span class="vname">${esc(e.venue || "Venue TBA")}</span>${e.source === "do604" ? ` <span class="pill">local</span>` : ""}${e.locality && !e.venue?.includes(e.locality) ? ` · ${esc(e.locality)}` : ""}${timeOf(e.start) ? `<span class="time">${timeOf(e.start).replace(" · ", "")}</span>` : ""}</div>
             <div class="showactions">
-              <a class="lnk" href="${esc(e.url)}" target="_blank" rel="noopener">${srcLabel} ↗</a>
+              <a class="lnk" href="${esc(e.url)}" target="_blank" rel="noopener">${srcLabel} ↗</a>${(e.also_listed || []).filter((x) => x.url).map((x) => `<a class="lnk" href="${esc(x.url)}" target="_blank" rel="noopener">${x.source === "do604" ? "Do604" : "Songkick"} ↗</a>`).join("")}
               <button class="star${isSaved ? " on" : ""}" data-save="${esc(k)}" title="${isSaved ? "Remove from my shows" : "Save to my shows"}" aria-pressed="${isSaved}">${isSaved ? "★" : "☆"}</button>
             </div>
           </div>
@@ -147,8 +147,7 @@
               ${a.image ? `<img src="${esc(a.image)}" alt="" loading="lazy">` : ""}
               <div class="ainfo">
                 <div class="who"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.name)}</a>${a.spotify_name && norm(a.spotify_name) !== norm(a.name) ? `<small>as “${esc(a.spotify_name)}” on Spotify</small>` : ""}${a.reach?.listeners ? `<span class="reach" title="Last.fm listeners">${fmtListeners(a.reach.listeners)} listeners</span>` : `<span class="reach">not on Last.fm</span>`}${artistGenres(a).slice(0, 3).map((g) => `<small class="pill">${esc(g)}</small>`).join(" ")}</div>
-                <div class="tracks">${a.tracks.map((t) => `<button class="play${playing && playing.trackId === t.id ? " on" : ""}" data-play="${t.id}" data-key="${esc(k)}" title="Play in page">${playing && playing.trackId === t.id ? "◼" : "▶"}</button><a href="https://open.spotify.com/track/${t.id}" target="_blank" rel="noopener">${esc(t.name)}</a>`).join(`<span class="sep">·</span>`)}</div>
-                ${playing && playing.key === k && a.tracks.some((t) => t.id === playing.trackId) ? `<div class="player"><iframe src="https://open.spotify.com/embed/track/${playing.trackId}?utm_source=generator&theme=0" width="100%" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify player"></iframe></div>` : ""}
+                <div class="tracks">${a.tracks.map((t) => `<button class="play${playing && playing.trackId === t.id ? " on" : ""}" data-play="${t.id}" data-key="${esc(k)}" data-artist="${esc(a.name)}" data-track="${esc(t.name)}" title="Play in page">${playing && playing.trackId === t.id ? "◼" : "▶"}</button><a href="https://open.spotify.com/track/${t.id}" target="_blank" rel="noopener">${esc(t.name)}</a>`).join(`<span class="sep">·</span>`)}</div>
               </div>
             </div>`).join("")}
         </article>`;
@@ -204,21 +203,77 @@
     renderVenues(); renderGenres(); renderReach(); renderResults(); writeHash();
   });
 
+  // ---------- docked player (lives outside #results so re-renders never interrupt playback) ----------
+  const dock = { api: null, controller: null, ready: false, pendingUri: null };
+  window.onSpotifyIframeApiReady = (IFrameAPI) => { dock.api = IFrameAPI; if (dock.pendingUri) dockPlay(dock.pendingUri); };
+  (function loadIframeApi() {
+    const sc = document.createElement("script"); sc.src = "https://open.spotify.com/embed/iframe-api/v1"; sc.async = true;
+    sc.onerror = () => { dock.api = "failed"; if (dock.pendingUri) dockPlay(dock.pendingUri); };
+    document.head.appendChild(sc);
+  })();
+  function dockPlay(uri) {
+    const host = $("#dockPlayer");
+    if (!dock.api) { dock.pendingUri = uri; return; }             // API still loading: play once it lands
+    dock.pendingUri = null;
+    if (dock.api === "failed") {                                 // fallback: plain embed (user presses play inside)
+      host.innerHTML = `<iframe src="https://open.spotify.com/embed/track/${uri.split(":").pop()}?utm_source=generator&theme=0" width="100%" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Spotify player"></iframe>`;
+      return;
+    }
+    if (dock.controller) { dock.controller.loadUri(uri); dock.controller.play(); return; }
+    host.innerHTML = `<div id="dockEmbed"></div>`;
+    dock.api.createController($("#dockEmbed"), { uri, width: "100%", height: 80, theme: "dark" }, (controller) => {
+      dock.controller = controller;
+      controller.addListener("ready", () => controller.play());
+      controller.addListener("playback_update", (ev) => {
+        // Reflect real player state on the ▶ buttons (paused inside the widget, track ended...)
+        const isPaused = ev?.data?.isPaused, pos = ev?.data?.position, dur = ev?.data?.duration;
+        if (isPaused && pos && dur && pos >= dur - 500) { playing = null; syncPlayButtons(); }
+      });
+    });
+  }
+  function syncPlayButtons() {
+    for (const b of document.querySelectorAll("[data-play]")) {
+      const on = !!playing && b.dataset.play === playing.trackId;
+      b.classList.toggle("on", on); b.textContent = on ? "◼" : "▶";
+    }
+  }
+  function showDock(artist, track) {
+    $("#dock").hidden = false; document.body.classList.add("has-dock");
+    $("#dockTitle").innerHTML = `<b>${esc(artist)}</b> <span>${esc(track)}</span>`;
+  }
+  function closeDock() {
+    playing = null; syncPlayButtons();
+    try { dock.controller?.pause(); } catch {}
+    $("#dock").hidden = true; document.body.classList.remove("has-dock");
+  }
+  $("#dockClose").onclick = closeDock;
+
   $("#results").addEventListener("click", (e) => {
     const pb = e.target.closest("[data-play]");
     if (pb) {
-      const id = pb.dataset.play, key = pb.dataset.key;
-      playing = playing && playing.trackId === id ? null : { key, trackId: id };
-      renderResults();
-      if (playing) document.querySelector(`.show[data-key="${CSS.escape(key)}"] .player`)?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      const id = pb.dataset.play;
+      if (playing && playing.trackId === id) {                  // same track: pause/stop
+        try { dock.controller?.pause(); } catch {}
+        playing = null; syncPlayButtons(); return;
+      }
+      playing = { key: pb.dataset.key, trackId: id };
+      showDock(pb.dataset.artist, pb.dataset.track);
+      dockPlay(`spotify:track:${id}`);
+      syncPlayButtons();
       return;
     }
     const sb = e.target.closest("[data-save]");
     if (sb) {
+      // Toggle in place: no re-render, so nothing playing is interrupted.
       const k = sb.dataset.save;
-      if (saved.has(k)) saved.delete(k); else saved.add(k);
+      const on = !saved.has(k);
+      if (on) saved.add(k); else saved.delete(k);
       store.set("gigamp:saved", [...saved]);
-      renderResults();
+      sb.classList.toggle("on", on); sb.textContent = on ? "★" : "☆"; sb.setAttribute("aria-pressed", on);
+      sb.title = on ? "Remove from my shows" : "Save to my shows";
+      sb.closest(".show")?.classList.toggle("saved", on);
+      $("#savedBtn").textContent = `★ My shows${saved.size ? ` (${saved.size})` : ""}`;
+      if (state.savedOnly && !on) renderResults();
     }
   });
   $("#savedBtn").onclick = () => { state.savedOnly = !state.savedOnly; renderResults(); };
