@@ -3,6 +3,24 @@
 (() => {
   const CFG = window.GIGAMP_CONFIG || {};
   const $ = (s) => document.querySelector(s);
+  // Guard against an index.html that predates this script (missing optional elements):
+  // create inert stand-ins so one missing id never takes the whole page down.
+  (function ensureElements() {
+    const need = {
+      dock: () => { const d = document.createElement("div"); d.id = "dock"; d.hidden = true;
+        d.innerHTML = `<div class="dockwrap"><div id="dockTitle"></div><div id="dockPlayer"></div><button id="dockClose" aria-label="Close player">×</button></div>`;
+        document.body.appendChild(d); },
+      savedBtn: () => { const b = document.createElement("button"); b.id = "savedBtn"; b.className = "btn ghost saved-toggle"; b.textContent = "★ My shows";
+        ($("#share") || document.body).insertAdjacentElement("beforebegin", b); },
+      plLink: () => { const sp = document.createElement("span"); sp.id = "plLink"; ($("#create") || document.body).insertAdjacentElement("afterend", sp); },
+      reachRange: () => { const wrap = document.createElement("div"); wrap.hidden = true; wrap.innerHTML =
+        `<div class="range" id="reachRange"><div class="track"></div><div class="fill" id="reachFill"></div><input type="range" id="reachMin" min="0" max="4" value="0"><input type="range" id="reachMax" min="0" max="4" value="4"></div><div id="reachLabel"></div>`;
+        document.body.appendChild(wrap); },
+    };
+    for (const [id, make] of Object.entries(need)) if (!document.getElementById(id)) { try { make(); } catch {} }
+    for (const id of ["status", "results", "unmatched", "dataAge", "subJson", "nShows", "nArtists", "nTracks"])
+      if (!document.getElementById(id)) { const el = document.createElement("div"); el.id = id; el.hidden = true; document.body.appendChild(el); }
+  })();
   const API = "https://api.spotify.com/v1";
   const SCOPES = "playlist-modify-public playlist-modify-private playlist-read-private";
   const ARENA_RE = /\b(arena|stadium|coliseum|place|amphitheatre|amphitheater|pne|forum|arch|centre for the performing arts)\b/i;
@@ -444,6 +462,7 @@
       }
       renderAll();
       await renderAuth();
-    } catch (e) { status(esc(e.message), true); }
+    } catch (e) { status(esc(e.message), true); console.error("GigAmp failed to start:", e); }
   })();
+  window.addEventListener("error", (ev) => { const el = $("#status"); if (el && !el.textContent) { el.textContent = "Something broke on this page: " + (ev.message || "unknown error") + ". Try a hard refresh (Cmd+Shift+R)."; el.className = "status err"; } });
 })();
