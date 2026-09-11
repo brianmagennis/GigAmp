@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GigAmp</title>
+<meta name="description" content="A Spotify playlist of the acts playing your city's venues in the next month.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2318181b'/%3E%3Cpath d='M8 22V10l16 6z' fill='%23f5c542'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0f0f11;--panel:#17171b;--panel-2:#1e1e24;--line:#2a2a32;--text:#f2f2f4;--muted:#9a9aa6;
+  --accent:#f5c542;--accent-ink:#1a1400;--spotify:#1db954;--danger:#ff6b6b;
+  --radius:12px;--font:ui-sans-serif,-apple-system,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 var(--font)}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+.wrap{max-width:1180px;margin:0 auto;padding:20px clamp(14px,3vw,32px) 60px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:6px 0 18px;border-bottom:1px solid var(--line);margin-bottom:22px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .mark{width:36px;height:36px;border-radius:9px;background:#18181b;border:1px solid var(--line);display:grid;place-items:center}
+.brand h1{font-size:20px;margin:0;letter-spacing:.2px}
+.brand small{display:block;color:var(--muted);font-size:12.5px;font-weight:400}
+.auth{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:13.5px}
+.btn{border:1px solid var(--line);background:var(--panel-2);color:var(--text);padding:9px 14px;border-radius:999px;font-weight:600;font-size:14px;transition:.15s}
+.btn:hover{border-color:#3a3a45;background:#25252d}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.primary:hover{filter:brightness(1.06)}
+.btn.spotify{background:var(--spotify);border-color:var(--spotify);color:#03170a}
+.btn.ghost{background:transparent}
+.btn:disabled{opacity:.5;cursor:not-allowed;filter:none}
+.grid{display:grid;grid-template-columns:340px 1fr;gap:22px}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+.panel h2{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+.panel + .panel{margin-top:14px}
+select,input[type=text]{width:100%;background:var(--panel-2);color:var(--text);border:1px solid var(--line);border-radius:9px;padding:9px 11px;font:inherit}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+.seg button{border:1px solid var(--line);background:var(--panel-2);color:var(--text);padding:6px 11px;border-radius:999px;font-size:13px}
+.seg button[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
+.row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.row .links{font-size:12.5px;color:var(--muted)}
+.row .links button{background:none;border:0;color:var(--muted);text-decoration:underline;padding:0 3px}
+.list{max-height:320px;overflow:auto;border:1px solid var(--line);border-radius:9px;padding:6px;background:var(--panel-2)}
+.list label{display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:7px;font-size:14px}
+.list label:hover{background:#26262e}
+.list label .n{margin-left:auto;color:var(--muted);font-size:12.5px;font-variant-numeric:tabular-nums}
+.list label .loc{color:var(--muted);font-size:12px}
+.list input{accent-color:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;max-height:220px;overflow:auto;padding:2px}
+.chip{border:1px solid var(--line);background:var(--panel-2);color:var(--text);padding:5px 10px;border-radius:999px;font-size:12.5px}
+.chip[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
+.chip .n{opacity:.6;margin-left:4px}
+.toggle{display:flex;align-items:center;gap:9px;font-size:14px;margin-top:10px}
+.toggle input{accent-color:var(--accent)}
+.summary{display:flex;flex-wrap:wrap;gap:18px;align-items:end;justify-content:space-between;margin-bottom:14px}
+.stats{display:flex;gap:22px}
+.stat b{display:block;font-size:26px;line-height:1;letter-spacing:-.5px}
+.stat span{color:var(--muted);font-size:12.5px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.actions input[type=text]{width:240px}
+.status{min-height:20px;color:var(--muted);font-size:13.5px;margin:6px 0 14px}
+.status.err{color:var(--danger)}
+.status a{color:var(--accent)}
+.day{margin:18px 0 8px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px}
+.day::after{content:"";flex:1;height:1px;background:var(--line)}
+.show{display:block;padding:12px 14px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:8px}
+.show .venue{color:var(--muted);font-size:13px}
+.show .venue a{color:var(--muted);text-decoration:none}
+.show .venue a:hover{text-decoration:underline}
+.artist{display:flex;gap:10px;align-items:flex-start;margin-top:8px}
+.artist img{width:38px;height:38px;border-radius:50%;object-fit:cover;background:#26262e;flex:none}
+.artist .who{font-weight:650}
+.artist .who a{text-decoration:none}
+.artist .who a:hover{text-decoration:underline}
+.artist .who small{color:var(--muted);font-weight:400;margin-left:6px;font-size:12px}
+.tracks{color:var(--muted);font-size:13px;margin-top:2px}
+.tracks a{color:var(--text);text-decoration:none}
+.tracks a:hover{text-decoration:underline}
+.tracks .sep{opacity:.5;margin:0 6px}
+.excluded{opacity:.45}
+.empty{padding:40px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:var(--radius)}
+.foot{margin-top:34px;color:var(--muted);font-size:12.5px;line-height:1.7}
+.foot a{color:var(--muted)}
+details.setup{margin-top:14px}
+details.setup summary{cursor:pointer;color:var(--muted);font-size:13.5px}
+details.setup pre{background:var(--panel-2);border:1px solid var(--line);border-radius:9px;padding:12px;overflow:auto;font-size:12.5px}
+.range{position:relative;height:44px;margin:6px 4px 0}
+.range input[type=range]{position:absolute;left:0;right:0;top:10px;width:100%;margin:0;-webkit-appearance:none;appearance:none;background:none;pointer-events:none;height:20px}
+.range input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;border-radius:50%;background:var(--accent);border:2px solid var(--bg);pointer-events:auto;cursor:grab;position:relative;z-index:2}
+.range input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--accent);border:2px solid var(--bg);pointer-events:auto;cursor:grab}
+.range .track{position:absolute;left:9px;right:9px;top:18px;height:4px;border-radius:2px;background:var(--line)}
+.range .fill{position:absolute;top:18px;height:4px;border-radius:2px;background:var(--accent)}
+.range .ticks{position:absolute;left:9px;right:9px;top:30px;display:flex;justify-content:space-between;font-size:10.5px;color:var(--muted);letter-spacing:.02em}
+.range .ticks span{flex:1;text-align:center;position:relative}
+.range .ticks span:first-child{text-align:left}.range .ticks span:last-child{text-align:right}
+.reach-label{font-size:13px;color:var(--muted);margin-top:2px}
+.reach-label b{color:var(--text);font-weight:600}
+.artist .who .reach{color:var(--muted);font-weight:400;font-size:12px;margin-left:6px}
+.showhead{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.showhead .vname{color:var(--text);font-weight:600}
+.showhead .time{margin-left:8px;color:var(--muted)}
+.showactions{display:flex;align-items:center;gap:8px;flex:none}
+.showactions .lnk{font-size:12.5px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 9px;white-space:nowrap}
+.showactions .lnk:hover{color:var(--text);border-color:#3a3a45}
+.star{background:none;border:1px solid var(--line);border-radius:999px;width:30px;height:26px;color:var(--muted);font-size:15px;line-height:1;padding:0}
+.star.on{color:var(--accent);border-color:var(--accent)}
+.show.saved{border-color:#4a4222}
+.artist .ainfo{flex:1;min-width:0}
+.play{background:none;border:0;color:var(--muted);padding:0 5px 0 0;font-size:11px;vertical-align:1px;cursor:pointer}
+.play:hover,.play.on{color:var(--accent)}
+#dock{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(20,20,24,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:8px clamp(14px,3vw,32px) 10px}
+#dock .dockwrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(160px,280px) 1fr auto;gap:14px;align-items:center}
+@media (max-width:700px){#dock .dockwrap{grid-template-columns:1fr auto}#dockTitle{grid-column:1/-1}}
+#dockTitle{font-size:13.5px;color:var(--muted);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#dockTitle b{color:var(--text);margin-right:6px}
+#dockPlayer{min-width:0}#dockPlayer iframe,#dockPlayer #dockEmbed iframe{border-radius:12px;display:block}
+#dockClose{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;width:32px;height:32px;font-size:16px;line-height:1}
+body.has-dock{padding-bottom:120px}
+.btn.saved-toggle[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+#plLink{font-size:12.5px}#plLink a{color:var(--accent);text-decoration:none}
+.pill{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--line);font-size:11.5px;color:var(--muted);vertical-align:middle}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="mark"><svg width="20" height="20" viewBox="0 0 32 32"><path d="M8 24V8l18 8z" fill="#f5c542"/></svg></div>
+      <h1>GigAmp <small>Hear who's playing near you, before they play.</small></h1>
+    </div>
+    <div class="auth" id="auth"></div>
+  </header>
+
+  <div class="grid">
+    <aside>
+      <section class="panel">
+        <h2>City</h2>
+        <select id="city"></select>
+        <div class="toggle" style="margin-top:12px"><span style="color:var(--muted);font-size:13px" id="dataAge"></span></div>
+      </section>
+
+      <section class="panel">
+        <h2>Sources</h2>
+        <label class="toggle" style="margin-top:0"><input type="checkbox" data-src="songkick" checked> Touring &amp; ticketed <span class="pill">Songkick</span></label>
+        <label class="toggle"><input type="checkbox" data-src="do604" checked> Local &amp; DIY rooms <span class="pill">Do604</span></label>
+      </section>
+
+      <section class="panel">
+        <h2>Window</h2>
+        <div class="seg" id="days">
+          <button data-days="7">7 days</button>
+          <button data-days="14">14 days</button>
+          <button data-days="30">30 days</button>
+          <button data-days="45">All listed</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="row"><h2 style="margin:0">Venues</h2>
+          <div class="links"><button id="vAll">all</button>·<button id="vNone">none</button>·<button id="vSmall">no arenas</button></div></div>
+        <div class="list" id="venues"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Audience size</h2>
+        <div class="range" id="reachRange">
+          <div class="track"></div><div class="fill" id="reachFill"></div>
+          <input type="range" id="reachMin" min="0" max="4" step="1" value="0" aria-label="Smallest audience">
+          <input type="range" id="reachMax" min="0" max="4" step="1" value="4" aria-label="Largest audience">
+          <div class="ticks"><span>unknown</span><span>underground</span><span>emerging</span><span>established</span><span>big</span></div>
+        </div>
+        <div class="reach-label" id="reachLabel"></div>
+      </section>
+
+      <section class="panel">
+        <div class="row"><h2 style="margin:0">Genres</h2>
+          <div class="links"><button id="gClear">clear</button></div></div>
+        <div class="chips" id="genres"></div>
+        <label class="toggle"><input type="checkbox" id="headliners"> Headliners only</label>
+      </section>
+    </aside>
+
+    <main>
+      <div class="summary">
+        <div class="stats">
+          <div class="stat"><b id="nShows">0</b><span>shows</span></div>
+          <div class="stat"><b id="nArtists">0</b><span>artists</span></div>
+          <div class="stat"><b id="nTracks">0</b><span>tracks</span></div>
+        </div>
+        <div class="actions">
+          <input type="text" id="plName" placeholder="Playlist name">
+          <button class="btn primary" id="create">Create playlist</button>
+          <span id="plLink"></span>
+          <button class="btn ghost saved-toggle" id="savedBtn" aria-pressed="false">★ My shows</button>
+          <button class="btn ghost" id="share">Copy share link</button>
+        </div>
+      </div>
+      <div class="status" id="status"></div>
+      <div id="results"></div>
+
+      <details class="setup" id="setup">
+        <summary>Weekly auto-refresh for this selection</summary>
+        <p style="color:var(--muted);font-size:13.5px">GigAmp refreshes its listings every Friday. To have this exact selection pushed to your playlist automatically, add the block below to <code>sync/subscribers.json</code> in the repo, run <code>sync/authorize.py</code> once to get a refresh token, and save it as the GitHub Actions secret named in <code>token_secret</code>.</p>
+        <pre id="subJson"></pre>
+      </details>
+
+      <p class="foot">
+        Listings from <a href="https://www.songkick.com" target="_blank" rel="noopener">Songkick</a>; artist matches and tracks from Spotify.
+        Two tracks per act: the most-listened track plus their next top song (usually the current single); press ▶ to hear one here (30-second previews unless you're logged in to Spotify in this browser).
+        ☆ saves a show to “My shows” on this device.
+        Audience size is total <a href="https://www.last.fm" target="_blank" rel="noopener">Last.fm</a> listeners, a stand-in for streaming reach that covers even the smallest acts: underground is under 5k, emerging 5k to 50k, established 50k to 500k, big above that.
+        Tribute acts and themed club nights are filtered out; headline DJs and producers stay in.
+        <span id="unmatched"></span>
+      </p>
+    </main>
+  </div>
+</div>
+<div id="dock" hidden>
+  <div class="dockwrap">
+    <div id="dockTitle"></div>
+    <div id="dockPlayer"></div>
+    <button id="dockClose" title="Close player" aria-label="Close player">×</button>
+  </div>
+</div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
