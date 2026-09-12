@@ -30461,5 +30461,524 @@
 }
 ],
 "rank_source": "search"
+},
+"jeff bonner": {
+"query": "Jeff Bonner",
+"fetched_at": "2026-09-12T17:20:02+00:00",
+"reach": {
+"listeners": 2,
+"playcount": 8,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Jeff+Bonner"
+},
+"matcher": 3,
+"spotify_id": "6qVUObox76Oo5rgT03ODcb",
+"spotify_name": "Jeff Bonner",
+"url": "https://open.spotify.com/artist/6qVUObox76Oo5rgT03ODcb",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab67616d000048510a8ac0176a6fde56f2d88f0b",
+"tracks": [
+{
+"id": "0dyKkomPoc16fDlOTw9LKC",
+"uri": "spotify:track:0dyKkomPoc16fDlOTw9LKC",
+"name": "Boney Fingers",
+"popularity": null,
+"album": "Boney Fingers",
+"album_type": "single",
+"release_date": "2026-02-27",
+"duration_ms": 185265,
+"explicit": false
+},
+{
+"id": "0WRv92wGHDp1AiVwsEwhzs",
+"uri": "spotify:track:0WRv92wGHDp1AiVwsEwhzs",
+"name": "How Lucky",
+"popularity": null,
+"album": "How Lucky",
+"album_type": "single",
+"release_date": "2025-05-09",
+"duration_ms": 206810,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"sullivan king": {
+"query": "Sullivan King",
+"fetched_at": "2026-09-12T17:20:03+00:00",
+"reach": {
+"listeners": 136570,
+"playcount": 2861166,
+"tags": [
+"brostep",
+"dubstep",
+"metalstep",
+"electronic"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Sullivan+King"
+},
+"matcher": 3,
+"spotify_id": "1CXuuw8HJhyN80HlNzvL1e",
+"spotify_name": "Sullivan King",
+"url": "https://open.spotify.com/artist/1CXuuw8HJhyN80HlNzvL1e",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1780902c734a791d597ffcd4544",
+"tracks": [
+{
+"id": "4ejAxzq1HNPfQAUf2QUgxz",
+"uri": "spotify:track:4ejAxzq1HNPfQAUf2QUgxz",
+"name": "Rumble",
+"popularity": null,
+"album": "Rumble",
+"album_type": "single",
+"release_date": "2026-07-31",
+"duration_ms": 135773,
+"explicit": false
+},
+{
+"id": "3WSDoGL8yrK4xq0bBJQgbp",
+"uri": "spotify:track:3WSDoGL8yrK4xq0bBJQgbp",
+"name": "Lately (feat. Jex)",
+"popularity": null,
+"album": "Lately (feat. Jex)",
+"album_type": "single",
+"release_date": "2026-08-26",
+"duration_ms": 209828,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"sim": {
+"query": "SiM",
+"fetched_at": "2026-09-12T17:20:04+00:00",
+"spotify_id": null,
+"reach": {
+"listeners": 538858,
+"playcount": 14104617,
+"tags": [
+"j-rock",
+"japanese",
+"punk rock",
+"rock"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/Sim"
+},
+"matcher": 3,
+"candidates": [
+"Simple Plan",
+"Super Simple Songs",
+"Simon & Garfunkel",
+"Simple Minds"
+]
+},
+"zero 9 36": {
+"query": "Zero 9:36",
+"fetched_at": "2026-09-12T17:20:05+00:00",
+"reach": {
+"listeners": 161842,
+"playcount": 2477985,
+"tags": [
+"rapcore",
+"rock",
+"electronic",
+"rap"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Zero+9:36"
+},
+"matcher": 3,
+"spotify_id": "1V599H9vfq6hWe2hGzyzI0",
+"spotify_name": "Zero 9:36",
+"url": "https://open.spotify.com/artist/1V599H9vfq6hWe2hGzyzI0",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1786a80f3bb27c333a81a7927b5",
+"tracks": [
+{
+"id": "1CG0oPmHCJz2ZsJB5ugSej",
+"uri": "spotify:track:1CG0oPmHCJz2ZsJB5ugSej",
+"name": "Blurry",
+"popularity": null,
+"album": "Blurry",
+"album_type": "single",
+"release_date": "2026-04-24",
+"duration_ms": 200000,
+"explicit": false
+},
+{
+"id": "5iaTwwgtEyJ7cy6lLTlGBb",
+"uri": "spotify:track:5iaTwwgtEyJ7cy6lLTlGBb",
+"name": "Adrenaline",
+"popularity": null,
+"album": "...If You Don’t Save Yourself",
+"album_type": "album",
+"release_date": "2021-02-26",
+"duration_ms": 204198,
+"explicit": true
+}
+],
+"rank_source": "search"
+},
+"ub40": {
+"query": "UB40",
+"fetched_at": "2026-09-12T17:20:06+00:00",
+"reach": {
+"listeners": 1474787,
+"playcount": 19170136,
+"tags": [
+"reggae",
+"ska",
+"pop"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/UB40"
+},
+"matcher": 3,
+"spotify_id": "69MEO1AADKg1IZrq2XLzo5",
+"spotify_name": "UB40",
+"url": "https://open.spotify.com/artist/69MEO1AADKg1IZrq2XLzo5",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1780169dd58a7b6e2a14f7b1726",
+"tracks": [
+{
+"id": "4uOKFydzAejjSFqYbv1XPt",
+"uri": "spotify:track:4uOKFydzAejjSFqYbv1XPt",
+"name": "Red Red Wine",
+"popularity": null,
+"album": "The Very Best Of",
+"album_type": "compilation",
+"release_date": "2000",
+"duration_ms": 183733,
+"explicit": false
+},
+{
+"id": "1YnVYHXoak0syv4xBRHQRb",
+"uri": "spotify:track:1YnVYHXoak0syv4xBRHQRb",
+"name": "Kingston Town",
+"popularity": null,
+"album": "Labour Of Love II",
+"album_type": "album",
+"release_date": "1989-01-01",
+"duration_ms": 231733,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"sawyer hill": {
+"query": "Sawyer Hill",
+"fetched_at": "2026-09-12T17:20:06+00:00",
+"reach": {
+"listeners": 155837,
+"playcount": 2502103,
+"tags": [
+"rock",
+"alternative",
+"indie rock",
+"punk"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Sawyer+Hill"
+},
+"matcher": 3,
+"spotify_id": "3CwWzT9t3z7DARyhDIzwIG",
+"spotify_name": "Sawyer Hill",
+"url": "https://open.spotify.com/artist/3CwWzT9t3z7DARyhDIzwIG",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1783b33264f73a05536d5d8b399",
+"tracks": [
+{
+"id": "2T5hu08najfwIGRnPTHkMs",
+"uri": "spotify:track:2T5hu08najfwIGRnPTHkMs",
+"name": "Bad Lovers",
+"popularity": null,
+"album": "Everybody's Home, Nobody's Happy",
+"album_type": "album",
+"release_date": "2026-08-21",
+"duration_ms": 219253,
+"explicit": false
+},
+{
+"id": "2dDjXlJa6pnOTGl8C8iChL",
+"uri": "spotify:track:2dDjXlJa6pnOTGl8C8iChL",
+"name": "Firestarters",
+"popularity": null,
+"album": "Firestarters",
+"album_type": "single",
+"release_date": "2023-10-13",
+"duration_ms": 205351,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"hulder": {
+"query": "Hulder",
+"fetched_at": "2026-09-12T17:20:07+00:00",
+"reach": {
+"listeners": 40429,
+"playcount": 783006,
+"tags": [
+"black metal",
+"metal",
+"belgian black metal",
+"belgium"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Hulder"
+},
+"matcher": 3,
+"spotify_id": "65vrcJ67suxLePeEhUtLLo",
+"spotify_name": "Hulder",
+"url": "https://open.spotify.com/artist/65vrcJ67suxLePeEhUtLLo",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1781f6ff549b2bbbb0819e40440",
+"tracks": [
+{
+"id": "04EkofZVuLXW5WyeDWrii4",
+"uri": "spotify:track:04EkofZVuLXW5WyeDWrii4",
+"name": "In Blood And In Earth",
+"popularity": null,
+"album": "Verbolgen",
+"album_type": "album",
+"release_date": "2026-08-07",
+"duration_ms": 429106,
+"explicit": false
+},
+{
+"id": "71ZvNwaoReLPx7flrEJXJd",
+"uri": "spotify:track:71ZvNwaoReLPx7flrEJXJd",
+"name": "The Crowning",
+"popularity": null,
+"album": "Verbolgen",
+"album_type": "album",
+"release_date": "2026-08-07",
+"duration_ms": 388066,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"antichrist siege machine": {
+"query": "Antichrist Siege Machine",
+"fetched_at": "2026-09-12T17:20:07+00:00",
+"reach": {
+"listeners": 25728,
+"playcount": 835086,
+"tags": [
+"black metal",
+"war metal",
+"death metal",
+"blackened death metal"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Antichrist+Siege+Machine"
+},
+"matcher": 3,
+"spotify_id": "0g132bsggkLIMT0pW9aa7s",
+"spotify_name": "Antichrist Siege Machine",
+"url": "https://open.spotify.com/artist/0g132bsggkLIMT0pW9aa7s",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1780f98bbbc6e4f5edfe3dc5b7e",
+"tracks": [
+{
+"id": "076gGw32LZtXrKdWBlBnVv",
+"uri": "spotify:track:076gGw32LZtXrKdWBlBnVv",
+"name": "Antichrist Siege Machine",
+"popularity": null,
+"album": "Purifying Blade",
+"album_type": "album",
+"release_date": "2021-10-08",
+"duration_ms": 311718,
+"explicit": false
+},
+{
+"id": "1aqHPcrg2lP5M2d2zo1W8u",
+"uri": "spotify:track:1aqHPcrg2lP5M2d2zo1W8u",
+"name": "Unleashed Hostility",
+"popularity": null,
+"album": "Purifying Blade",
+"album_type": "album",
+"release_date": "2021-10-08",
+"duration_ms": 190127,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"bebe stockwell": {
+"query": "Bebe Stockwell",
+"fetched_at": "2026-09-12T17:20:07+00:00",
+"reach": {
+"listeners": 52453,
+"playcount": 278666,
+"tags": [],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Bebe+Stockwell"
+},
+"matcher": 3,
+"spotify_id": "2KPSR6XA83w8XYrwWekhA9",
+"spotify_name": "Bebe Stockwell",
+"url": "https://open.spotify.com/artist/2KPSR6XA83w8XYrwWekhA9",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178cd3a4345431f3d5c84edb826",
+"tracks": [
+{
+"id": "4jM8r5G6yNfLbhf3kPm2s9",
+"uri": "spotify:track:4jM8r5G6yNfLbhf3kPm2s9",
+"name": "Want Me",
+"popularity": null,
+"album": "Want Me",
+"album_type": "single",
+"release_date": "2025-03-14",
+"duration_ms": 213419,
+"explicit": false
+},
+{
+"id": "4XBKe16o93ZSCKe7VH2Ajp",
+"uri": "spotify:track:4XBKe16o93ZSCKe7VH2Ajp",
+"name": "TV Mama",
+"popularity": null,
+"album": "TV Mama",
+"album_type": "single",
+"release_date": "2026-07-21",
+"duration_ms": 193296,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"shabooze": {
+"query": "Shabooze¥",
+"fetched_at": "2026-09-12T17:20:08+00:00",
+"spotify_id": null,
+"reach": {
+"listeners": 12,
+"playcount": 49,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Shabooze%C2%A5"
+},
+"matcher": 3,
+"candidates": [
+"Shaboozey",
+"Jelly Roll",
+"Dax",
+"BigXthaPlug"
+]
+},
+"carter faith": {
+"query": "Carter Faith",
+"fetched_at": "2026-09-12T17:20:09+00:00",
+"reach": {
+"listeners": 60644,
+"playcount": 746063,
+"tags": [
+"country",
+"us"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Carter+Faith"
+},
+"matcher": 3,
+"spotify_id": "4X5CTYQmx1NNyz9S1IpNko",
+"spotify_name": "Carter Faith",
+"url": "https://open.spotify.com/artist/4X5CTYQmx1NNyz9S1IpNko",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17858c9d71ddd2f3d00a9bf0514",
+"tracks": [
+{
+"id": "74Qu7xLd1FRWGwgLRh4EGI",
+"uri": "spotify:track:74Qu7xLd1FRWGwgLRh4EGI",
+"name": "Nothin' Better To Do (with Wyatt Flores)",
+"popularity": null,
+"album": "Nothin' Better To Do",
+"album_type": "single",
+"release_date": "2026-06-26",
+"duration_ms": 182214,
+"explicit": false
+},
+{
+"id": "6QN5ClFa3Ul4kFzsdw3Z8t",
+"uri": "spotify:track:6QN5ClFa3Ul4kFzsdw3Z8t",
+"name": "Betty",
+"popularity": null,
+"album": "Cherry Valley",
+"album_type": "album",
+"release_date": "2025-10-03",
+"duration_ms": 174666,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"cid": {
+"query": "CID",
+"fetched_at": "2026-09-12T17:20:09+00:00",
+"reach": {
+"listeners": 214323,
+"playcount": 1468545,
+"tags": [
+"electronic",
+"edm",
+"electro house"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Cid"
+},
+"matcher": 3,
+"spotify_id": "4FCzCS0KEgb0rgySWINItO",
+"spotify_name": "CID",
+"url": "https://open.spotify.com/artist/4FCzCS0KEgb0rgySWINItO",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178f8c717534576cbf925626910",
+"tracks": [
+{
+"id": "6Ar3apWGoJLPZ3zy6Eb94F",
+"uri": "spotify:track:6Ar3apWGoJLPZ3zy6Eb94F",
+"name": "Fancy $hit",
+"popularity": null,
+"album": "Fancy $hit",
+"album_type": "single",
+"release_date": "2025-09-05",
+"duration_ms": 168837,
+"explicit": true
+},
+{
+"id": "19PBU0nWYBOMzHOAxDBEcg",
+"uri": "spotify:track:19PBU0nWYBOMzHOAxDBEcg",
+"name": "Loaded Gun",
+"popularity": null,
+"album": "Loaded Gun",
+"album_type": "single",
+"release_date": "2026-03-27",
+"duration_ms": 194883,
+"explicit": false
+}
+],
+"rank_source": "search"
 }
 }
