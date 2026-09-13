@@ -30980,5 +30980,547 @@
 }
 ],
 "rank_source": "search"
+},
+"forming toronto": {
+"query": "FORMING (Toronto)",
+"fetched_at": "2026-09-13T17:31:29+00:00",
+"reach": {
+"listeners": 4940,
+"playcount": 85893,
+"tags": [
+"emo",
+"rock",
+"noise rock",
+"ambient"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Forming"
+},
+"matcher": 3,
+"spotify_id": "0Ymw0FLYmy4BITvvZ3MzSC",
+"spotify_name": "Forming",
+"url": "https://open.spotify.com/artist/0Ymw0FLYmy4BITvvZ3MzSC",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab67616d00004851c164a8b0c4f0c5ce2f3b0340",
+"tracks": [
+{
+"id": "5o1OOui0085wpfserPhtHl",
+"uri": "spotify:track:5o1OOui0085wpfserPhtHl",
+"name": "Hate My Gutz",
+"popularity": null,
+"album": "Forming",
+"album_type": "single",
+"release_date": "2010-06-01",
+"duration_ms": 233906,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"dirge": {
+"query": "Dirge",
+"fetched_at": "2026-09-13T17:31:31+00:00",
+"reach": {
+"listeners": 36250,
+"playcount": 623514,
+"tags": [
+"post-metal",
+"sludge",
+"doom metal",
+"post-rock"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Dirge"
+},
+"matcher": 3,
+"spotify_id": "2VZbu8qm3AKh9kBvwuB8Rt",
+"spotify_name": "Dirge",
+"url": "https://open.spotify.com/artist/2VZbu8qm3AKh9kBvwuB8Rt",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178348e1cd91ca25e7812109dca",
+"tracks": [],
+"rank_source": "search"
+},
+"marcus abramzik ensemble": {
+"query": "The Marcus Abramzik Ensemble",
+"fetched_at": "2026-09-13T17:31:32+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 3
+},
+"antichrist siege machine live in vancouver": {
+"query": "ANTICHRIST SIEGE MACHINE Live in Vancouver",
+"fetched_at": "2026-09-13T17:31:32+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 3
+},
+"paul oakenfold": {
+"query": "Paul Oakenfold",
+"fetched_at": "2026-09-13T17:31:33+00:00",
+"reach": {
+"listeners": 943707,
+"playcount": 12337775,
+"tags": [
+"trance",
+"electronic",
+"dance",
+"techno"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/Paul+Oakenfold"
+},
+"matcher": 3,
+"spotify_id": "5MO2kbaGGA2a8kL4c9qqHq",
+"spotify_name": "Paul Oakenfold",
+"url": "https://open.spotify.com/artist/5MO2kbaGGA2a8kL4c9qqHq",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178dcc8d87d5dd4dbed3dd0c95e",
+"tracks": [
+{
+"id": "7BaBvGmqicbGbIGVv2zi1W",
+"uri": "spotify:track:7BaBvGmqicbGbIGVv2zi1W",
+"name": "ResuRection",
+"popularity": null,
+"album": "ResuRection",
+"album_type": "single",
+"release_date": "2026-07-03",
+"duration_ms": 179154,
+"explicit": false
+},
+{
+"id": "4hz5itl0tUhW7zrpPLT6YH",
+"uri": "spotify:track:4hz5itl0tUhW7zrpPLT6YH",
+"name": "Ready Steady Go",
+"popularity": null,
+"album": "Southern Sun / Ready Steady Go",
+"album_type": "single",
+"release_date": "2002-03-19",
+"duration_ms": 205560,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"van jazz 2026 julio avila cuban band": {
+"query": "**Van Jazz 2026** Julio Avila - Cuban Band",
+"fetched_at": "2026-09-13T17:31:33+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 3
+},
+"wild t and spirit": {
+"query": "Wild T & The Spirit",
+"fetched_at": "2026-09-13T17:31:33+00:00",
+"reach": {
+"listeners": 895,
+"playcount": 6064,
+"tags": [
+"blues rock",
+"blues",
+"hard rock",
+"rock"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Wild+T+&+The+Spirit"
+},
+"matcher": 3,
+"spotify_id": "1lPrcM6qOL9b8Wfz4YFUAx",
+"spotify_name": "Wild T & The Spirit",
+"url": "https://open.spotify.com/artist/1lPrcM6qOL9b8Wfz4YFUAx",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab67616d00004851212e2b32a22eda1ff2e26767",
+"tracks": [
+{
+"id": "7js3l41VsvEUZvRnMXjfkJ",
+"uri": "spotify:track:7js3l41VsvEUZvRnMXjfkJ",
+"name": "Ill Play the Blues for You",
+"popularity": null,
+"album": "Fender Bender",
+"album_type": "album",
+"release_date": "2008-02-22",
+"duration_ms": 377506,
+"explicit": false
+},
+{
+"id": "2x0umOHSgHpHmPFSnWzyXk",
+"uri": "spotify:track:2x0umOHSgHpHmPFSnWzyXk",
+"name": "The Best That I Can",
+"popularity": null,
+"album": "Fender Bender",
+"album_type": "album",
+"release_date": "2008-02-22",
+"duration_ms": 403626,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"pink fuzz": {
+"query": "Pink Fuzz",
+"fetched_at": "2026-09-13T17:31:34+00:00",
+"reach": {
+"listeners": 8686,
+"playcount": 42356,
+"tags": [
+"fuzz",
+"indie rock",
+"garage rock",
+"stoner rock"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Pink+Fuzz"
+},
+"matcher": 3,
+"spotify_id": "1liWP89lUWfAWUowTe5eo7",
+"spotify_name": "Pink Fuzz",
+"url": "https://open.spotify.com/artist/1liWP89lUWfAWUowTe5eo7",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17837df5a5f7a254ad42c5f48d9",
+"tracks": [
+{
+"id": "6BKy0HpwAAx8Z2yWyZ7ngI",
+"uri": "spotify:track:6BKy0HpwAAx8Z2yWyZ7ngI",
+"name": "Decline",
+"popularity": null,
+"album": "Decline",
+"album_type": "single",
+"release_date": "2023-11-24",
+"duration_ms": 226733,
+"explicit": false
+},
+{
+"id": "3gyZof4OooXQ0tRHulfalN",
+"uri": "spotify:track:3gyZof4OooXQ0tRHulfalN",
+"name": "Enough",
+"popularity": null,
+"album": "Enough",
+"album_type": "single",
+"release_date": "2017-06-26",
+"duration_ms": 217761,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"well austin": {
+"query": "The Well (Austin)",
+"fetched_at": "2026-09-13T17:31:34+00:00",
+"reach": {
+"listeners": 35292,
+"playcount": 310656,
+"tags": [
+"stoner rock",
+"doom metal",
+"psychedelic rock",
+"stoner metal"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/The+Well"
+},
+"matcher": 3,
+"spotify_id": "2an1GKmmTWuqY8N1GYBk1t",
+"spotify_name": "The Well",
+"url": "https://open.spotify.com/artist/2an1GKmmTWuqY8N1GYBk1t",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1783466757d9092dfaf60514b7f",
+"tracks": [],
+"rank_source": "search"
+},
+"dawn pemberton": {
+"query": "Dawn Pemberton",
+"fetched_at": "2026-09-13T17:31:36+00:00",
+"reach": {
+"listeners": 294,
+"playcount": 1933,
+"tags": [
+"soul",
+"rnb",
+"indie soul",
+"soulful voices that ought to be cherished"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Dawn+Pemberton"
+},
+"matcher": 3,
+"spotify_id": "1nhMHvacUcBwhNToEU4WV7",
+"spotify_name": "Dawn Pemberton",
+"url": "https://open.spotify.com/artist/1nhMHvacUcBwhNToEU4WV7",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178f1eb6fe5994836fec77cad1e",
+"tracks": [
+{
+"id": "242iRyVvdneByTd8GgpcIN",
+"uri": "spotify:track:242iRyVvdneByTd8GgpcIN",
+"name": "Say Somethin'",
+"popularity": null,
+"album": "Say Somethin'",
+"album_type": "album",
+"release_date": "2014-10-31",
+"duration_ms": 343973,
+"explicit": false
+},
+{
+"id": "3mKVWlklRx7InZVjh4xmgV",
+"uri": "spotify:track:3mKVWlklRx7InZVjh4xmgV",
+"name": "Deeper",
+"popularity": null,
+"album": "Say Somethin'",
+"album_type": "album",
+"release_date": "2014-10-31",
+"duration_ms": 191573,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"van jazz 26 dawn pemberton and brown sugar": {
+"query": "Van Jazz 26' - Dawn Pemberton & The Brown Sugar",
+"fetched_at": "2026-09-13T17:31:37+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 3
+},
+"isabella hallia": {
+"query": "Isabella Hallia",
+"fetched_at": "2026-09-13T17:31:37+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 3
+},
+"meg james": {
+"query": "Meg James",
+"fetched_at": "2026-09-13T17:31:37+00:00",
+"reach": {
+"listeners": 20,
+"playcount": 70,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Meg+James"
+},
+"matcher": 3,
+"spotify_id": "5zf3NarnvJzIgvNsWkiLwL",
+"spotify_name": "Meg James",
+"url": "https://open.spotify.com/artist/5zf3NarnvJzIgvNsWkiLwL",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178e23c82d395c79287d5e16632",
+"tracks": [
+{
+"id": "5In8L1EmSCGliyrnIP22Ae",
+"uri": "spotify:track:5In8L1EmSCGliyrnIP22Ae",
+"name": "June, July",
+"popularity": null,
+"album": "June, July",
+"album_type": "single",
+"release_date": "2025-08-22",
+"duration_ms": 210128,
+"explicit": true
+},
+{
+"id": "38u3ZUsUsquUdTD25aUVNX",
+"uri": "spotify:track:38u3ZUsUsquUdTD25aUVNX",
+"name": "Whiskey Whispers",
+"popularity": null,
+"album": "Whiskey Whispers",
+"album_type": "single",
+"release_date": "2024-10-13",
+"duration_ms": 234511,
+"explicit": true
+}
+],
+"rank_source": "search"
+},
+"curves": {
+"query": "Curves",
+"fetched_at": "2026-09-13T17:31:37+00:00",
+"spotify_id": null,
+"reach": {
+"listeners": 965,
+"playcount": 4935,
+"tags": [
+"new wave",
+"synth pop",
+"garage rock",
+"rock"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/curves"
+},
+"matcher": 3,
+"candidates": [
+"Dangerous Curves",
+"Curvesight",
+"Real Women Have Curves Original Broadway Company"
+]
+},
+"van jazz 2026 dos santos": {
+"query": "**Van Jazz 2026** Dos Santos",
+"fetched_at": "2026-09-13T17:31:38+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 3
+},
+"los duendes": {
+"query": "Los Duendes",
+"fetched_at": "2026-09-13T17:31:38+00:00",
+"reach": {
+"listeners": 645,
+"playcount": 4208,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Los+Duendes"
+},
+"matcher": 3,
+"spotify_id": "43xlBLXWy4AF4MExZSS2kx",
+"spotify_name": "Los Duendes",
+"url": "https://open.spotify.com/artist/43xlBLXWy4AF4MExZSS2kx",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1782f71e34bb461115f03aebdd3",
+"tracks": [
+{
+"id": "2SM6UHM0yoTNkzrfXTS3AH",
+"uri": "spotify:track:2SM6UHM0yoTNkzrfXTS3AH",
+"name": "Carinito",
+"popularity": null,
+"album": "Los Duendes",
+"album_type": "single",
+"release_date": "2019-02-06",
+"duration_ms": 199220,
+"explicit": false
+},
+{
+"id": "2WzXgvJAPJq6KmHGVhOPTx",
+"uri": "spotify:track:2WzXgvJAPJq6KmHGVhOPTx",
+"name": "El Diablo",
+"popularity": null,
+"album": "El Diablo",
+"album_type": "single",
+"release_date": "2024-06-28",
+"duration_ms": 456648,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"gnash": {
+"query": "gnash",
+"fetched_at": "2026-09-13T17:31:38+00:00",
+"reach": {
+"listeners": 791586,
+"playcount": 9384510,
+"tags": [
+"pop",
+"rock",
+"grunge",
+"gnash"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/gnash"
+},
+"matcher": 3,
+"spotify_id": "3iri9nBFs9e4wN7PLIetAw",
+"spotify_name": "gnash",
+"url": "https://open.spotify.com/artist/3iri9nBFs9e4wN7PLIetAw",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1782ad5bfa97ccc44b4149db61f",
+"tracks": [
+{
+"id": "7vRriwrloYVaoAe3a9wJHe",
+"uri": "spotify:track:7vRriwrloYVaoAe3a9wJHe",
+"name": "i hate u, i love u (feat. olivia o'brien)",
+"popularity": null,
+"album": "us",
+"album_type": "album",
+"release_date": "2016-03-25",
+"duration_ms": 251033,
+"explicit": true
+},
+{
+"id": "6TFO7bRauf2CEXh9qy2QcY",
+"uri": "spotify:track:6TFO7bRauf2CEXh9qy2QcY",
+"name": "Lights Down Low",
+"popularity": null,
+"album": "Lights Down Low - EP",
+"album_type": "single",
+"release_date": "2016-10-14",
+"duration_ms": 225013,
+"explicit": false
+}
+],
+"rank_source": "search"
+},
+"malcolm todd": {
+"query": "Malcolm Todd",
+"fetched_at": "2026-09-13T17:31:39+00:00",
+"reach": {
+"listeners": 1736413,
+"playcount": 144817318,
+"tags": [
+"alternative rnb",
+"indie rock",
+"queer"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/Malcolm+Todd"
+},
+"matcher": 3,
+"spotify_id": "7eKkW1zo5uzW8kUntiiBvz",
+"spotify_name": "Malcolm Todd",
+"url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
+"tracks": [
+{
+"id": "0eAuGrXyGFYwur9ARUe7LJ",
+"uri": "spotify:track:0eAuGrXyGFYwur9ARUe7LJ",
+"name": "Earrings",
+"popularity": null,
+"album": "Sweet Boy",
+"album_type": "album",
+"release_date": "2024-04-05",
+"duration_ms": 151500,
+"explicit": false
+},
+{
+"id": "59c2xv2kMzYM6HR9oY6BIa",
+"uri": "spotify:track:59c2xv2kMzYM6HR9oY6BIa",
+"name": "Sweet Boy",
+"popularity": null,
+"album": "Sweet Boy",
+"album_type": "album",
+"release_date": "2024-04-05",
+"duration_ms": 180000,
+"explicit": true
+}
+],
+"rank_source": "search"
 }
 }
