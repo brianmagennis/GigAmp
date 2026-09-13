@@ -42,7 +42,7 @@ RAW_DIR = DATA_DIR / "raw"
 CACHE_FILE = DATA_DIR / "cache" / "artists.json"
 CACHE_TTL_DAYS = 30          # re-check an artist's tracks roughly monthly
 MISS_TTL_DAYS = 14           # re-try artists we couldn't match after two weeks
-MATCHER_VERSION = 3          # bump when matching logic improves: cached misses get retried
+MATCHER_VERSION = 4          # v4: Last.fm listener ranking picks the songs; Spotify only resolves IDs          # bump when matching logic improves: cached misses get retried
 TRACKS_PER_ARTIST = 2
 MAX_CALLS_PER_RUN = int(os.environ.get("GIGAMP_MAX_CALLS", "0")) or None  # optional hard cap
 
@@ -212,7 +212,130 @@ def artist_entry(a: dict, tracks: list[dict], rank_source: str) -> dict:
         "image": (a.get("images") or [{}])[-1].get("url"),
         "tracks": tracks,
         "rank_source": rank_source,
+        "mbid": None,
     }
+
+
+def _by_artist(pool: list[dict], artist_id: str) -> list[dict]:
+    return [t for t in pool if any(x["id"] == artist_id for x in t.get("artists", []))]
+
+
+def _song_key(title: str) -> str:
+    base = re.sub(r"\s+[-–]\s+.*$|\s*\(.*?\)|\s*\[.*?\]", "", title or "")
+    return norm(VERSION_RE.sub("", base)) or norm(base) or norm(title)
+
+
+def pick_tracks(sp: Spotify, a: dict, market: str, tracks_pool: list[dict],
+                lfm: LastFM | None, mbid: str | None) -> tuple[list[dict], str]:
+    """Choose the artist's two songs.
+
+    Ranking source, in order of preference:
+      1. Spotify artist top-tracks (Extended Quota Mode apps only; Dev Mode lost it Feb 2026)
+      2. Last.fm artist.getTopTracks - ranked by listeners, free, no quota. Spotify search is
+         then used only to resolve each chosen song to a track ID for the embed player.
+      3. Spotify search relevance (the old behaviour) when Last.fm has nothing.
+    """
+    if sp.top_tracks_available:
+        try:
+            j = sp.get(f"/artists/{a['id']}/top-tracks", market=market)
+            tracks = _dedupe_take(j.get("tracks", []), TRACKS_PER_ARTIST)
+            if tracks:
+                return tracks, "top_tracks"
+        except requests.HTTPError as e:
+            if e.response is not None and e.response.status_code in (403, 404, 410):
+                sp.top_tracks_available = False    # Development Mode: don't waste calls retrying
+            else:
+                raise
+
+    own = _by_artist(tracks_pool, a["id"])
+    lfm_top = lfm.top_tracks(a["name"], mbid) if (lfm and lfm.enabled) else []
+    if lfm_top:
+        wanted = []
+        for t in lfm_top:
+            k = _song_key(t["name"])
+            if k and k not in wanted:
+                wanted.append(k)
+        chosen, used = [], set()
+        pool_by_key = {}
+        for t in own:
+            pool_by_key.setdefault(_song_key(t["name"]), t)
+        for k in wanted:
+            if len(chosen) == TRACKS_PER_ARTIST:
+                break
+            t = pool_by_key.get(k)
+            if t is None and len(chosen) < TRACKS_PER_ARTIST:
+                # Not among the ten tracks the combined search returned: one targeted lookup.
+                title = next(x["name"] for x in lfm_top if _song_key(x["name"]) == k)
+                j = sp.get("/search", q=f'track:"{title}" artist:"{a["name"]}"', type="track", limit=5, market=market)
+                cands = _by_artist(j.get("tracks", {}).get("items", []), a["id"])
+                t = next((c for c in cands if _song_key(c["name"]) == k), cands[0] if cands else None)
+            if t and t["id"] not in used:
+                used.add(t["id"])
+                chosen.append(_track_dict(t))
+            if len(wanted) > 6 and len(chosen) == 0 and wanted.index(k) >= 3:
+                break                               # three misses in a row: not on Spotify under these titles
+        if len(chosen) == TRACKS_PER_ARTIST:
+            return chosen, "lastfm"
+        if chosen:                                  # top up from search order
+            for t in _dedupe_take(own, 6):
+                if t["id"] not in used and _song_key(t["name"]) not in {_song_key(c["name"]) for c in chosen}:
+                    chosen.append(t)
+                    if len(chosen) == TRACKS_PER_ARTIST:
+                        break
+            return chosen, "lastfm+search"
+
+    if not own:
+        # The scoped search's track list can be crowded out by look-alike names
+        # (artist:"Elder" also matches Elderbrook), so search tracks by the matched name.
+        j = sp.get("/search", q=f'artist:"{a["name"]}"', type="track", limit=10, market=market)
+        own = _by_artist(j.get("tracks", {}).get("items", []), a["id"])
+    if not own:
+        j = sp.get("/search", q=f'{a["name"]}', type="track", limit=10, market=market)
+        own = _by_artist(j.get("tracks", {}).get("items", []), a["id"])
+    return _dedupe_take(own, TRACKS_PER_ARTIST), "search"
+
+
+def rerank_cached(sp: Spotify, hit: dict, market: str, lfm: LastFM) -> None:
+    """One-off upgrade of a cached, search-ranked artist to Last.fm ranking. Costs Last.fm calls
+    (free) and at most a couple of Spotify calls when the top songs aren't in the cached pair."""
+    try:
+        lfm_top = lfm.top_tracks(hit["spotify_name"], (hit.get("reach") or {}).get("mbid"))
+        if not lfm_top:
+            return
+        wanted = []
+        for t in lfm_top:
+            k = _song_key(t["name"])
+            if k and k not in wanted:
+                wanted.append(k)
+        have = {_song_key(t["name"]): t for t in hit.get("tracks", [])}
+        chosen = [have[k] for k in wanted if k in have][:TRACKS_PER_ARTIST]
+        if len(chosen) < TRACKS_PER_ARTIST:
+            a = {"id": hit["spotify_id"], "name": hit["spotify_name"]}
+            for k in wanted:
+                if len(chosen) == TRACKS_PER_ARTIST:
+                    break
+                if k in {_song_key(c["name"]) for c in chosen}:
+                    continue
+                title = next(x["name"] for x in lfm_top if _song_key(x["name"]) == k)
+                j = sp.get("/search", q=f'track:"{title}" artist:"{a["name"]}"', type="track", limit=5, market=market)
+                cands = _by_artist(j.get("tracks", {}).get("items", []), a["id"])
+                t = next((c for c in cands if _song_key(c["name"]) == k), None)
+                if t:
+                    chosen.append(_track_dict(t))
+                if wanted.index(k) >= 3 and not chosen:
+                    break
+        if chosen:
+            for t in hit.get("tracks", []):
+                if len(chosen) == TRACKS_PER_ARTIST:
+                    break
+                if _song_key(t["name"]) not in {_song_key(c["name"]) for c in chosen}:
+                    chosen.append(t)
+            hit["tracks"] = chosen[:TRACKS_PER_ARTIST]
+            hit["rank_source"] = "lastfm" if len([k for k in wanted[:TRACKS_PER_ARTIST]]) else "lastfm+search"
+    except QuotaExceeded:
+        raise
+    except Exception as ex:                       # never let a re-rank break the run
+        print(f"rerank failed for {hit.get('spotify_name')}: {ex}", file=sys.stderr)
 
 
 def lookup_artist(sp: Spotify, name: str, market: str, cache: dict, strict: bool = False,
@@ -232,6 +355,11 @@ def lookup_artist(sp: Spotify, name: str, market: str, cache: dict, strict: bool
         ttl = CACHE_TTL_DAYS if hit.get("spotify_id") else MISS_TTL_DAYS
         stale_miss = hit.get("matcher") != MATCHER_VERSION and (
             not hit.get("spotify_id") or norm(hit.get("spotify_name", "")) != norm(hit.get("query", name)))
+        # Cached hits ranked by Spotify search get re-ranked by Last.fm listeners once, cheaply.
+        if (age < timedelta(days=ttl) and not stale_miss and hit.get("spotify_id") and lfm and lfm.enabled
+                and hit.get("rank_source") == "search" and hit.get("matcher") != MATCHER_VERSION):
+            rerank_cached(sp, hit, market, lfm)
+            hit["matcher"] = MATCHER_VERSION
         if age < timedelta(days=ttl) and not stale_miss:
             if "reach" not in hit and lfm and lfm.enabled:      # backfill Last.fm for older cache entries
                 info = lfm.artist_info(hit.get("spotify_name") or name)
@@ -248,7 +376,7 @@ def lookup_artist(sp: Spotify, name: str, market: str, cache: dict, strict: bool
         info = lfm.artist_info(name)
         if info:
             reach = {"listeners": info["listeners"], "playcount": info["playcount"], "tags": info["tags"],
-                     "tier": tier_for(info["listeners"]), "lastfm_url": info["url"]}
+                     "tier": tier_for(info["listeners"]), "lastfm_url": info["url"], "mbid": info.get("mbid")}
         elif strict:
             cache[key] = {"query": name, "fetched_at": now, "spotify_id": None, "reach": None,
                           "skip_reason": "not_on_lastfm", "matcher": MATCHER_VERSION}
@@ -280,30 +408,7 @@ def lookup_artist(sp: Spotify, name: str, market: str, cache: dict, strict: bool
                       "matcher": MATCHER_VERSION, "candidates": list(dict.fromkeys(seen_cands))[:6]}
         return cache[key]
 
-    tracks, rank_source = [], "search"
-    if sp.top_tracks_available:
-        try:
-            j = sp.get(f"/artists/{a['id']}/top-tracks", market=market)
-            tracks = _dedupe_take(j.get("tracks", []), TRACKS_PER_ARTIST)
-            rank_source = "top_tracks"
-        except requests.HTTPError as e:
-            if e.response is not None and e.response.status_code in (403, 404, 410):
-                sp.top_tracks_available = False    # Development Mode: don't waste calls retrying
-            else:
-                raise
-    if not tracks:
-        by_artist = lambda pool: [t for t in pool if any(x["id"] == a["id"] for x in t.get("artists", []))]
-        own = by_artist(tracks_pool)
-        if not own:
-            # The scoped search's track list can be crowded out by look-alike names
-            # (artist:"Elder" also matches Elderbrook), so search tracks by the matched name.
-            j = sp.get("/search", q=f'artist:"{a["name"]}"', type="track", limit=10, market=market)
-            own = by_artist(j.get("tracks", {}).get("items", []))
-        if not own:
-            j = sp.get("/search", q=f'{a["name"]}', type="track", limit=10, market=market)
-            own = by_artist(j.get("tracks", {}).get("items", []))
-        tracks = _dedupe_take(own, TRACKS_PER_ARTIST)
-        rank_source = "search"
+    tracks, rank_source = pick_tracks(sp, a, market, tracks_pool, lfm, (reach or {}).get("mbid"))
 
     if lfm and lfm.enabled and norm(a["name"]) != norm(name):
         # Billed as "Boy George And Culture Club", matched to Culture Club: measure the real act.
@@ -313,6 +418,7 @@ def lookup_artist(sp: Spotify, name: str, market: str, cache: dict, strict: bool
                      "tier": tier_for(info["listeners"]), "lastfm_url": info["url"]}
     entry = {"query": name, "fetched_at": now, "reach": reach, "matcher": MATCHER_VERSION}
     entry.update(artist_entry(a, tracks, rank_source))
+    entry["mbid"] = (reach or {}).get("mbid")
     cache[key] = entry
     return entry
 
@@ -338,6 +444,7 @@ def build_city(city: dict, raw: dict, cache: dict, pending: list[str], stopped_r
                     "image": a.get("image"),
                     "tracks": a["tracks"],
                     "rank_source": a.get("rank_source"),
+                    "mbid": a.get("mbid") or (a.get("reach") or {}).get("mbid"),
                     "reach": a.get("reach") or {"listeners": 0, "tier": 0, "tags": []},
                 })
             elif a and p["name"] not in {u["artist"] for u in unmatched}:   # looked up, no usable match
