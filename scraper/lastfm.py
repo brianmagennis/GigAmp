@@ -23,7 +23,12 @@ TAG_JUNK_RE = re.compile(
     r"^(seen live|all|favorites?|favourites?|awesome|love|beautiful|amazing|good|great|"
     r"under \d+ listeners|\d{2,4}s?|canada|canadian|vancouver|british columbia|usa|american|"
     r"british|uk|female vocalists?|male vocalists?|singer-songwriter|songwriter|"
-    r"my music|check out|new|local|indie\s*$)$", re.I)
+    r"my music|check out|new|local|indie\s*$|"
+    r"italian|italy|german|germany|french|france|swedish|sweden|norwegian|norway|finnish|finland|danish|denmark|"
+    r"japanese|japan|korean|korea|k-pop girl group|australian|australia|british|england|english|scottish|irish|ireland|"
+    r"spanish|spain|mexican|mexico|brazilian|brazil|dutch|netherlands|belgian|polish|russian|chinese|turkish|turkey|"
+    r"portuguese|portugal|icelandic|iceland|austrian|swiss|greek|argentin\w*|chilean|colombian|african|european|"
+    r"vancouver|toronto|montreal|seattle|portland|bc|ontario|quebec|nyc|new york|los angeles|california|texas|chicago)$", re.I)
 
 # Audience tiers on Last.fm total listeners (log-ish). Index doubles as slider position.
 TIERS = [
@@ -78,8 +83,29 @@ class LastFM:
             if listeners < 2:
                 return None
             return {"name": a.get("name"), "listeners": listeners, "playcount": int(stats.get("playcount") or 0),
-                    "tags": tags, "url": a.get("url")}
+                    "tags": tags, "url": a.get("url"), "mbid": a.get("mbid") or None}
         return None
+
+
+    def top_tracks(self, name: str, mbid: str | None = None, limit: int = 10) -> list[dict]:
+        """Artist's top tracks ranked by Last.fm listeners: [{'name','listeners','playcount'}]."""
+        if not self.key:
+            return []
+        params = {"method": "artist.getTopTracks", "api_key": self.key, "format": "json", "limit": limit, "autocorrect": 0}
+        params.update({"mbid": mbid} if mbid else {"artist": name})
+        for attempt in range(3):
+            r = self.s.get(API, params=params, headers={"User-Agent": UA}, timeout=20)
+            self.calls += 1
+            if r.status_code == 429 or r.status_code >= 500:
+                time.sleep(2 * (attempt + 1))
+                continue
+            j = r.json()
+            items = (j.get("toptracks") or {}).get("track") or []
+            if isinstance(items, dict):
+                items = [items]
+            return [{"name": t.get("name", ""), "listeners": int(t.get("listeners") or 0),
+                     "playcount": int(t.get("playcount") or 0)} for t in items if t.get("name")]
+        return []
 
 
 def from_env() -> LastFM:
