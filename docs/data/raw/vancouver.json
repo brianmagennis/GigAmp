@@ -2,7 +2,7 @@
  "city": "vancouver",
  "city_name": "Vancouver, BC",
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
- "scraped_at": "2026-09-13T17:28:59+00:00",
+ "scraped_at": "2026-09-13T22:28:34+00:00",
  "horizon_days": 35,
  "pages_fetched": 6,
  "do604_events": 297,
@@ -3136,46 +3136,6 @@
    ],
    "venue_raw": "Pacific Coliseum",
    "venue_id": "pacific-coliseum"
-  },
-  {
-   "source": "songkick",
-   "id": "43254190",
-   "name": "The Spits @ The Pearl",
-   "start": "2026-09-20T20:00:00",
-   "status": "EventScheduled",
-   "venue": "The Pearl",
-   "venue_url": "https://thepearlvancouver.com/",
-   "locality": "Vancouver",
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "url": "https://www.songkick.com/concerts/43254190-spits-at-pearl",
-   "performers": [
-    {
-     "name": "The Spits",
-     "songkick_genres": [
-      "comedy"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/125164-spits?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Toy Tiger",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Sleep Country",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "venue_raw": "The Pearl",
-   "venue_id": "the-pearl",
-   "also_listed": [
-    {
-     "source": "do604",
-     "url": "https://do604.com/events/2026/9/20/the-spits-with-special-guests-tickets"
-    }
-   ]
   },
   {
    "source": "songkick",
@@ -10178,36 +10138,6 @@
    ]
   },
   {
-   "source": "songkick",
-   "id": "43248094",
-   "name": "Wolves of Glendale @ Fortune Sound Club",
-   "start": "2026-10-10T20:00:00",
-   "status": "EventScheduled",
-   "venue": "Fortune Sound Club",
-   "venue_url": "http://www.fortunesoundclub.com/",
-   "locality": "Vancouver",
-   "lat": 49.28053,
-   "lng": -123.10075,
-   "url": "https://www.songkick.com/concerts/43248094-wolves-of-glendale-at-fortune-sound-club",
-   "performers": [
-    {
-     "name": "Wolves of Glendale",
-     "songkick_genres": [
-      "comedy"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/10286302-wolves-of-glendale?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Fortune Sound Club",
-   "venue_id": "fortune-sound-club",
-   "also_listed": [
-    {
-     "source": "do604",
-     "url": "https://do604.com/events/2026/10/10/wolves-of-glendal-tickets"
-    }
-   ]
-  },
-  {
    "id": "do604-2026-10-10-early-show-clave-jazz-tickets",
    "name": "Early Show: Clave Jazz",
    "start": "2026-10-10T19:00-0700",
@@ -11495,30 +11425,6 @@
   },
   {
    "source": "songkick",
-   "id": "43055517",
-   "name": "Jarlath Regan @ Vogue Theatre",
-   "start": "2026-10-15T20:00:00",
-   "status": "EventScheduled",
-   "venue": "Vogue Theatre",
-   "venue_url": "http://www.voguetheatre.com/",
-   "locality": "Vancouver",
-   "lat": 49.27981,
-   "lng": -123.12164,
-   "url": "https://www.songkick.com/concerts/43055517-jarlath-regan-at-vogue-theatre",
-   "performers": [
-    {
-     "name": "Jarlath Regan",
-     "songkick_genres": [
-      "comedy"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/2470671-jarlath-regan?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Vogue Theatre",
-   "venue_id": "vogue-theatre"
-  },
-  {
-   "source": "songkick",
    "id": "43379785",
    "name": "The Shindigs @ Astoria Pub",
    "start": "2026-10-15T20:00:00",
@@ -12781,6 +12687,47 @@
   },
   {
    "source": "songkick",
+   "id": "43254190",
+   "name": "The Spits @ The Pearl",
+   "start": "2026-09-20T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "lat": 49.28071,
+   "lng": -123.12143,
+   "url": "https://www.songkick.com/concerts/43254190-spits-at-pearl",
+   "performers": [
+    {
+     "name": "The Spits",
+     "songkick_genres": [
+      "comedy"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/125164-spits?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Toy Tiger",
+     "songkick_genres": [],
+     "strict": true
+    },
+    {
+     "name": "Sleep Country",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "venue_raw": "The Pearl",
+   "venue_id": "the-pearl",
+   "also_listed": [
+    {
+     "source": "do604",
+     "url": "https://do604.com/events/2026/9/20/the-spits-with-special-guests-tickets"
+    }
+   ],
+   "skip_reason": "non_music"
+  },
+  {
+   "source": "songkick",
    "id": "43063936",
    "name": "The Rock Orchestra By Candlelight @ Queen Elizabeth Theatre",
    "start": "2026-09-22T20:00:00",
@@ -12801,6 +12748,62 @@
    "venue_raw": "Queen Elizabeth Theatre",
    "venue_id": "queen-elizabeth-theatre",
    "skip_reason": "tribute"
+  },
+  {
+   "source": "songkick",
+   "id": "43248094",
+   "name": "Wolves of Glendale @ Fortune Sound Club",
+   "start": "2026-10-10T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Fortune Sound Club",
+   "venue_url": "http://www.fortunesoundclub.com/",
+   "locality": "Vancouver",
+   "lat": 49.28053,
+   "lng": -123.10075,
+   "url": "https://www.songkick.com/concerts/43248094-wolves-of-glendale-at-fortune-sound-club",
+   "performers": [
+    {
+     "name": "Wolves of Glendale",
+     "songkick_genres": [
+      "comedy"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10286302-wolves-of-glendale?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Fortune Sound Club",
+   "venue_id": "fortune-sound-club",
+   "also_listed": [
+    {
+     "source": "do604",
+     "url": "https://do604.com/events/2026/10/10/wolves-of-glendal-tickets"
+    }
+   ],
+   "skip_reason": "non_music"
+  },
+  {
+   "source": "songkick",
+   "id": "43055517",
+   "name": "Jarlath Regan @ Vogue Theatre",
+   "start": "2026-10-15T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Vogue Theatre",
+   "venue_url": "http://www.voguetheatre.com/",
+   "locality": "Vancouver",
+   "lat": 49.27981,
+   "lng": -123.12164,
+   "url": "https://www.songkick.com/concerts/43055517-jarlath-regan-at-vogue-theatre",
+   "performers": [
+    {
+     "name": "Jarlath Regan",
+     "songkick_genres": [
+      "comedy"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/2470671-jarlath-regan?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Vogue Theatre",
+   "venue_id": "vogue-theatre",
+   "skip_reason": "non_music"
   },
   {
    "source": "songkick",
