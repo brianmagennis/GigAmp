@@ -1,0 +1,541 @@
+{
+ "_comment": "GigAmp controlled genre vocabulary. Tags from Spotify, Last.fm and Songkick are mapped to the FIRST genre whose pattern matches (patterns are regexes tested against the lowercased tag, so order matters: specific before general). Anything that matches no genre is dropped. Edit here; scraper/common.py and docs/app.js both read this file.",
+ "max_per_artist": 3,
+ "genres": [
+  {
+   "id": "post-punk",
+   "label": "post-punk",
+   "match": [
+    "post[ -]?punk",
+    "darkwave",
+    "dark wave",
+    "coldwave",
+    "goth(?!ic metal)",
+    "new wave",
+    "no wave"
+   ]
+  },
+  {
+   "id": "hardcore",
+   "label": "hardcore",
+   "match": [
+    "hardcore",
+    "metalcore",
+    "deathcore",
+    "screamo",
+    "powerviolence",
+    "straight edge",
+    "beatdown",
+    "easycore",
+    "crust"
+   ]
+  },
+  {
+   "id": "emo",
+   "label": "emo",
+   "match": [
+    "\\bemo\\b",
+    "midwest emo",
+    "ramonescore"
+   ]
+  },
+  {
+   "id": "punk",
+   "label": "punk",
+   "match": [
+    "punk",
+    "\\boi!?\\b",
+    "\\bska\\b"
+   ]
+  },
+  {
+   "id": "metal",
+   "label": "metal",
+   "match": [
+    "metal",
+    "doom",
+    "sludge",
+    "grind",
+    "thrash",
+    "death(?!\\s*disco)",
+    "black ?metal",
+    "djent",
+    "stoner"
+   ]
+  },
+  {
+   "id": "grunge",
+   "label": "grunge",
+   "match": [
+    "grunge"
+   ]
+  },
+  {
+   "id": "shoegaze",
+   "label": "shoegaze",
+   "match": [
+    "shoegaze",
+    "nu ?gaze"
+   ]
+  },
+  {
+   "id": "dream-pop",
+   "label": "dream pop",
+   "match": [
+    "dream ?pop",
+    "ethereal"
+   ]
+  },
+  {
+   "id": "psychedelic",
+   "label": "psychedelic",
+   "match": [
+    "psych",
+    "krautrock",
+    "space rock",
+    "neo-psych"
+   ]
+  },
+  {
+   "id": "garage",
+   "label": "garage rock",
+   "match": [
+    "garage rock",
+    "garage punk",
+    "surf",
+    "rockabilly",
+    "rock ?n'? ?roll",
+    "rock and roll"
+   ]
+  },
+  {
+   "id": "noise",
+   "label": "noise",
+   "match": [
+    "noise",
+    "no-fi",
+    "power electronics",
+    "harsh"
+   ]
+  },
+  {
+   "id": "post-rock",
+   "label": "post-rock",
+   "match": [
+    "post[ -]?rock",
+    "math rock",
+    "instrumental rock"
+   ]
+  },
+  {
+   "id": "prog",
+   "label": "prog",
+   "match": [
+    "prog",
+    "progressive rock",
+    "art rock",
+    "avant"
+   ]
+  },
+  {
+   "id": "indie",
+   "label": "indie",
+   "match": [
+    "indie rock",
+    "indie folk",
+    "indie punk",
+    "indie soul",
+    "indie[ _-]alternative",
+    "^indie$",
+    "lo-?fi",
+    "bedroom",
+    "slacker",
+    "jangle",
+    "twee",
+    "c86",
+    "britpop",
+    "madchester"
+   ]
+  },
+  {
+   "id": "alternative",
+   "label": "alternative",
+   "match": [
+    "alternative",
+    "alt[ -]rock",
+    "college rock",
+    "^alt$"
+   ]
+  },
+  {
+   "id": "indie-pop",
+   "label": "indie pop",
+   "match": [
+    "indie ?pop",
+    "chamber pop",
+    "art pop",
+    "power pop",
+    "twee pop",
+    "noise pop",
+    "psychedelic pop"
+   ]
+  },
+  {
+   "id": "synth-pop",
+   "label": "synth-pop",
+   "match": [
+    "synth",
+    "electropop",
+    "electro ?pop",
+    "hyperpop",
+    "electroclash",
+    "chillwave",
+    "futurepop",
+    "italo"
+   ]
+  },
+  {
+   "id": "rock",
+   "label": "rock",
+   "match": [
+    "rock",
+    "hard rock",
+    "classic rock",
+    "blues rock",
+    "southern rock",
+    "glam"
+   ]
+  },
+  {
+   "id": "pop",
+   "label": "pop",
+   "match": [
+    "pop",
+    "k-pop",
+    "j-pop",
+    "dance ?pop"
+   ]
+  },
+  {
+   "id": "house",
+   "label": "house",
+   "match": [
+    "house",
+    "disco house",
+    "garage house",
+    "nu[ -]?disco"
+   ]
+  },
+  {
+   "id": "techno",
+   "label": "techno",
+   "match": [
+    "techno",
+    "minimal",
+    "acid",
+    "electro(?!nic|pop|clash| house)",
+    "ebm",
+    "industrial techno"
+   ]
+  },
+  {
+   "id": "bass",
+   "label": "bass / dnb",
+   "match": [
+    "dubstep",
+    "brostep",
+    "drum ?(and|&|n) ?bass",
+    "\\bdnb\\b",
+    "jungle",
+    "breakbeat",
+    "breaks",
+    "uk garage",
+    "grime",
+    "\\bbass\\b",
+    "footwork",
+    "juke",
+    "trap(?! metal)"
+   ]
+  },
+  {
+   "id": "trance",
+   "label": "trance",
+   "match": [
+    "trance",
+    "hardstyle",
+    "hard dance",
+    "eurodance",
+    "new rave"
+   ]
+  },
+  {
+   "id": "ambient",
+   "label": "ambient",
+   "match": [
+    "ambient",
+    "drone",
+    "downtempo",
+    "chill ?out",
+    "trip[ -]?hop",
+    "new age",
+    "modern classical",
+    "soundscape"
+   ]
+  },
+  {
+   "id": "industrial",
+   "label": "industrial",
+   "match": [
+    "industrial",
+    "witch house",
+    "power noise",
+    "aggrotech"
+   ]
+  },
+  {
+   "id": "experimental",
+   "label": "experimental",
+   "match": [
+    "experimental",
+    "glitch",
+    "idm",
+    "sound art",
+    "free improv",
+    "improv",
+    "outsider",
+    "musique concr",
+    "avant-garde",
+    "8-?bit",
+    "chiptune"
+   ]
+  },
+  {
+   "id": "electronic",
+   "label": "electronic",
+   "match": [
+    "electronic",
+    "electronica",
+    "\\bedm\\b",
+    "dance",
+    "club",
+    "rave",
+    "beats"
+   ]
+  },
+  {
+   "id": "hip-hop",
+   "label": "hip hop",
+   "match": [
+    "hip[ -]?hop",
+    "rap",
+    "boom bap",
+    "drill",
+    "phonk",
+    "\\bmc\\b"
+   ]
+  },
+  {
+   "id": "rnb",
+   "label": "r&b",
+   "match": [
+    "r ?& ?b",
+    "rnb",
+    "r_and_b",
+    "r and b",
+    "neo[ -]?soul",
+    "contemporary r"
+   ]
+  },
+  {
+   "id": "soul",
+   "label": "soul",
+   "match": [
+    "soul",
+    "motown",
+    "gospel",
+    "funk[ _]soul",
+    "soul[ _]funk"
+   ]
+  },
+  {
+   "id": "funk",
+   "label": "funk",
+   "match": [
+    "funk",
+    "afrobeat",
+    "boogie",
+    "groove",
+    "acid jazz"
+   ]
+  },
+  {
+   "id": "disco",
+   "label": "disco",
+   "match": [
+    "disco",
+    "boogie"
+   ]
+  },
+  {
+   "id": "jazz",
+   "label": "jazz",
+   "match": [
+    "jazz",
+    "bebop",
+    "big band",
+    "swing",
+    "fusion",
+    "bossa"
+   ]
+  },
+  {
+   "id": "blues",
+   "label": "blues",
+   "match": [
+    "blues",
+    "folk[ _]blues"
+   ]
+  },
+  {
+   "id": "americana",
+   "label": "americana",
+   "match": [
+    "americana",
+    "alt[ -]?country",
+    "roots",
+    "cowpunk",
+    "red dirt"
+   ]
+  },
+  {
+   "id": "country",
+   "label": "country",
+   "match": [
+    "country",
+    "honky",
+    "bluegrass",
+    "western",
+    "outlaw"
+   ]
+  },
+  {
+   "id": "folk",
+   "label": "folk",
+   "match": [
+    "folk",
+    "acoustic",
+    "celtic",
+    "trad",
+    "bluegrass",
+    "old[ -]time",
+    "chanson"
+   ]
+  },
+  {
+   "id": "singer-songwriter",
+   "label": "singer-songwriter",
+   "match": [
+    "singer[ -]?songwriter",
+    "songwriter",
+    "troubadour"
+   ]
+  },
+  {
+   "id": "latin",
+   "label": "latin",
+   "match": [
+    "latin",
+    "cumbia",
+    "salsa",
+    "reggaeton",
+    "bachata",
+    "\\bmpb\\b",
+    "forr",
+    "samba",
+    "tango",
+    "flamenco",
+    "bolero",
+    "mariachi",
+    "tejano"
+   ]
+  },
+  {
+   "id": "reggae",
+   "label": "reggae / dub",
+   "match": [
+    "reggae",
+    "\\bdub\\b",
+    "dancehall",
+    "roots reggae",
+    "rocksteady"
+   ]
+  },
+  {
+   "id": "world",
+   "label": "world",
+   "match": [
+    "world",
+    "afro",
+    "desi",
+    "bhangra",
+    "bollywood",
+    "\\bindian\\b",
+    "arabic",
+    "balkan",
+    "klezmer",
+    "highlife",
+    "anatolian",
+    "turkish psych",
+    "gnawa",
+    "african"
+   ]
+  },
+  {
+   "id": "classical",
+   "label": "classical",
+   "match": [
+    "classical",
+    "orchestra",
+    "chamber",
+    "baroque",
+    "opera",
+    "composer",
+    "contemporary classical",
+    "minimalism",
+    "soundtrack",
+    "film score",
+    "video game music"
+   ]
+  },
+  {
+   "id": "spoken",
+   "label": "comedy / spoken",
+   "match": [
+    "comedy",
+    "spoken word",
+    "poetry",
+    "storytelling"
+   ]
+  }
+ ],
+ "junk": [
+  "lidarr",
+  "add_to",
+  "add to",
+  "need to",
+  "my top",
+  "^my ",
+  "seen live",
+  "favou?rite",
+  "check out",
+  "\\d{4}",
+  "^all$",
+  "^new$",
+  "^video$",
+  "^guitar$",
+  "^piano$",
+  "^(fe)?male$",
+  "vocal(ist)?s?$",
+  "^local$"
+ ]
+}

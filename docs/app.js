@@ -73,10 +73,32 @@
   }
 
   // ---------- selection (mirrors scraper/common.py) ----------
-  // Spotify genres > Last.fm community tags > Songkick coarse tags (mirrors common.py)
-  const artistGenres = (a) => (a.genres && a.genres.length) ? a.genres.map((g) => g.toLowerCase())
-    : (a.reach?.tags?.length) ? a.reach.tags.map((g) => g.toLowerCase()).filter((g) => !TAG_JUNK.test(g))
-    : (a.songkick_genres || []).map((g) => SONGKICK_GENRE_LABELS[g] || g.replace(/_/g, " "));
+  // Controlled genre vocabulary (docs/genres.json), mirrors scraper/common.py. Loaded at boot;
+  // until then (or if it fails) fall back to the precomputed genres_canon on each artist.
+  let VOCAB = null;
+  async function loadVocab() {
+    try {
+      const v = await (await fetch("genres.json", { cache: "no-cache" })).json();
+      VOCAB = { max: v.max_per_artist || 3, junk: (v.junk || []).map((p) => new RegExp(p, "i")),
+        genres: v.genres.map((g) => ({ id: g.id, label: g.label, pats: g.match.map((p) => new RegExp(p, "i")) })) };
+    } catch { VOCAB = null; }
+  }
+  function mapTag(tag) {
+    if (!VOCAB) return null;
+    let t = String(tag || "").trim().toLowerCase();
+    if (!t || VOCAB.junk.some((p) => p.test(t))) return null;
+    t = t.replace(/_/g, " ");
+    for (const g of VOCAB.genres) if (g.pats.some((p) => p.test(t))) return g.label;
+    return null;
+  }
+  const artistGenres = (a) => {
+    if (a.genres_canon) return a.genres_canon.map((g) => g.toLowerCase());
+    if (!VOCAB) return [];
+    const raw = [...(a.genres || []), ...(a.reach?.tags || []), ...(a.songkick_genres || [])];
+    const out = [];
+    for (const tag of raw) { const g = mapTag(tag); if (g && !out.includes(g)) out.push(g); if (out.length >= VOCAB.max) break; }
+    return out;
+  };
   const TIER_NAMES = ["unknown", "underground", "emerging", "established", "big"];
   const tierOf = (a) => Number(a.reach?.tier || 0);
   const reachOk = (a) => tierOf(a) >= state.reach[0] && tierOf(a) <= state.reach[1];
@@ -468,7 +490,7 @@
       if (!location.hash) { try { const s = localStorage.getItem("gigamp:sel"); if (s) history.replaceState(null, "", s); } catch {} }
       const firstVisit = !location.hash;
       readHash();
-      await loadIndex(); renderCity(); await loadCity();
+      await Promise.all([loadIndex(), loadVocab()]); renderCity(); await loadCity();
       if (firstVisit && state.venues === null) {
         const small = [...new Set(state.data.events.map((e) => e.venue))].filter((v) => v && !ARENA_RE.test(v));
         if (small.length < new Set(state.data.events.map((e) => e.venue)).size) state.venues = small;
