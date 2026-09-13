@@ -116,6 +116,17 @@ metro URL, e.g. `https://www.songkick.com/metro-areas/17835-uk-london` -> `17835
 - Cancelled and postponed shows are dropped; duplicates are merged.
 - Acts with no Spotify match are listed as `unmatched` in the city JSON for review.
 
+## How the two songs are chosen
+
+Ranking comes from Last.fm `artist.getTopTracks` (tracks ordered by listener count, free,
+no quota). Spotify search is used only to resolve each chosen song to a track ID for the
+embed player, normally from the ten tracks the single artist search already returned, else
+one targeted `track:"..." artist:"..."` search. If Last.fm has no data for an act, the old
+Spotify search-relevance order is used. `rank_source` on each artist records which path
+applied (`lastfm`, `lastfm+search`, `search`, or `top_tracks` on Extended Quota apps).
+Each artist also carries a MusicBrainz id (`mbid`) when Last.fm knows one, a
+platform-neutral key should the embed source ever need to change.
+
 ## Spotify API notes (September 2026)
 
 Spotify's Development Mode (what a personal app gets) is capped at 5 users, requires
