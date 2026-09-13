@@ -1,3 +1,39 @@
+
+Claude Desktop (macOS), Connected
+/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Index · HTML
 <!doctype html>
 <html lang="en">
 <head>
@@ -132,7 +168,7 @@ body.has-dock{padding-bottom:120px}
     </div>
     <div class="auth" id="auth"></div>
   </header>
-
+ 
   <div class="grid">
     <aside>
       <section class="panel">
@@ -140,13 +176,13 @@ body.has-dock{padding-bottom:120px}
         <select id="city"></select>
         <div class="toggle" style="margin-top:12px"><span style="color:var(--muted);font-size:13px" id="dataAge"></span></div>
       </section>
-
+ 
       <section class="panel">
         <h2>Sources</h2>
         <label class="toggle" style="margin-top:0"><input type="checkbox" data-src="songkick" checked> Touring &amp; ticketed <span class="pill">Songkick</span></label>
         <label class="toggle"><input type="checkbox" data-src="do604" checked> Local &amp; DIY rooms <span class="pill">Do604</span></label>
       </section>
-
+ 
       <section class="panel">
         <h2>Window</h2>
         <div class="seg" id="days">
@@ -156,13 +192,13 @@ body.has-dock{padding-bottom:120px}
           <button data-days="45">All listed</button>
         </div>
       </section>
-
+ 
       <section class="panel">
         <div class="row"><h2 style="margin:0">Venues</h2>
           <div class="links"><button id="vAll">all</button>·<button id="vNone">none</button>·<button id="vSmall">no arenas</button></div></div>
         <div class="list" id="venues"></div>
       </section>
-
+ 
       <section class="panel">
         <h2>Audience size</h2>
         <div class="range" id="reachRange">
@@ -173,7 +209,7 @@ body.has-dock{padding-bottom:120px}
         </div>
         <div class="reach-label" id="reachLabel"></div>
       </section>
-
+ 
       <section class="panel">
         <div class="row"><h2 style="margin:0">Genres</h2>
           <div class="links"><button id="gClear">clear</button></div></div>
@@ -181,7 +217,7 @@ body.has-dock{padding-bottom:120px}
         <label class="toggle"><input type="checkbox" id="headliners"> Headliners only</label>
       </section>
     </aside>
-
+ 
     <main>
       <div class="summary">
         <div class="stats">
@@ -199,16 +235,16 @@ body.has-dock{padding-bottom:120px}
       </div>
       <div class="status" id="status"></div>
       <div id="results"></div>
-
+ 
       <details class="setup" id="setup">
         <summary>Weekly auto-refresh for this selection</summary>
         <p style="color:var(--muted);font-size:13.5px">GigAmp refreshes its listings every Friday. To have this exact selection pushed to your playlist automatically, add the block below to <code>sync/subscribers.json</code> in the repo, run <code>sync/authorize.py</code> once to get a refresh token, and save it as the GitHub Actions secret named in <code>token_secret</code>.</p>
         <pre id="subJson"></pre>
       </details>
-
+ 
       <p class="foot">
         Listings from <a href="https://www.songkick.com" target="_blank" rel="noopener">Songkick</a>; artist matches and tracks from Spotify.
-        Two tracks per act: the most-listened track plus their next top song (usually the current single); press ▶ to hear one here (30-second previews unless you're logged in to Spotify in this browser).
+        Two tracks per act: the two songs Last.fm listeners play most, resolved on Spotify so you can hear them here; press ▶ to play (30-second previews unless you're logged in to Spotify in this browser).
         ☆ saves a show to “My shows” on this device.
         Audience size is total <a href="https://www.last.fm" target="_blank" rel="noopener">Last.fm</a> listeners, a stand-in for streaming reach that covers even the smallest acts: underground is under 5k, emerging 5k to 50k, established 50k to 500k, big above that.
         Tribute acts and themed club nights are filtered out; headline DJs and producers stay in.
@@ -228,3 +264,4 @@ body.has-dock{padding-bottom:120px}
 <script src="app.js"></script>
 </body>
 </html>
+ 
