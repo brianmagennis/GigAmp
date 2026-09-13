@@ -361,10 +361,14 @@ def lookup_artist(sp: Spotify, name: str, market: str, cache: dict, strict: bool
             rerank_cached(sp, hit, market, lfm)
             hit["matcher"] = MATCHER_VERSION
         if age < timedelta(days=ttl) and not stale_miss:
-            if "reach" not in hit and lfm and lfm.enabled:      # backfill Last.fm for older cache entries
+            needs_lfm = "reach" not in hit or (hit.get("reach") and "mbid" not in hit["reach"])
+            if needs_lfm and lfm and lfm.enabled:      # backfill Last.fm (and the MusicBrainz id) for older cache entries
                 info = lfm.artist_info(hit.get("spotify_name") or name)
                 hit["reach"] = ({"listeners": info["listeners"], "playcount": info["playcount"], "tags": info["tags"],
-                                 "tier": tier_for(info["listeners"]), "lastfm_url": info["url"]} if info else None)
+                                 "tier": tier_for(info["listeners"]), "lastfm_url": info["url"], "mbid": info.get("mbid")}
+                                if info else (hit.get("reach") or None))
+                if info and info.get("mbid"):
+                    hit["mbid"] = info["mbid"]
             return hit
 
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
