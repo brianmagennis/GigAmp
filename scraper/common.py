@@ -1,5 +1,42 @@
 """Shared selection logic (mirrors docs/app.js — keep the two in step)."""
+import json
+import re
 from datetime import date, timedelta
+from pathlib import Path
+
+# Controlled genre vocabulary shared with the site (docs/genres.json).
+_VOCAB = json.loads((Path(__file__).resolve().parent.parent / "docs" / "genres.json").read_text())
+GENRES = [(g["id"], g["label"], [re.compile(p, re.I) for p in g["match"]]) for g in _VOCAB["genres"]]
+GENRE_LABEL = {gid: label for gid, label, _ in GENRES}
+JUNK = [re.compile(p, re.I) for p in _VOCAB.get("junk", [])]
+MAX_GENRES = int(_VOCAB.get("max_per_artist", 3))
+
+
+def map_tag(tag: str) -> str | None:
+    """Map one raw tag to a canonical genre id, or None if it isn't a genre."""
+    t = (tag or "").strip().lower()
+    if not t or any(p.search(t) for p in JUNK):
+        return None
+    t = t.replace("_", " ")
+    for gid, _, pats in GENRES:
+        if any(p.search(t) for p in pats):
+            return gid
+    return None
+
+
+def canonical_genres(artist: dict) -> list[str]:
+    """Canonical genre labels for an artist: Spotify genres first, then Last.fm tags,
+    then Songkick's coarse tags; mapped through the vocabulary, deduped, capped."""
+    raw = list(artist.get("genres") or []) + list(((artist.get("reach") or {}).get("tags")) or []) \
+        + list(artist.get("songkick_genres") or [])
+    out = []
+    for tag in raw:
+        gid = map_tag(tag)
+        if gid and GENRE_LABEL[gid] not in out:
+            out.append(GENRE_LABEL[gid])
+        if len(out) == MAX_GENRES:
+            break
+    return out
 
 SONGKICK_GENRE_LABELS = {
     "indie_alternative": "indie / alternative",
@@ -23,14 +60,10 @@ SONGKICK_GENRE_LABELS = {
 
 
 def artist_genres(artist: dict) -> list[str]:
-    """Spotify genres > Last.fm community tags > Songkick coarse tags."""
-    g = [x.lower() for x in artist.get("genres") or []]
-    if g:
-        return g
-    tags = ((artist.get("reach") or {}).get("tags") or [])
-    if tags:
-        return [t.lower() for t in tags]
-    return [SONGKICK_GENRE_LABELS.get(x, x.replace("_", " ")) for x in artist.get("songkick_genres") or []]
+    """Canonical genres (precomputed at build time when present)."""
+    if artist.get("genres_canon") is not None:
+        return [g.lower() for g in artist["genres_canon"]]
+    return [g.lower() for g in canonical_genres(artist)]
 
 
 def reach_tier(artist: dict) -> int:

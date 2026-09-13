@@ -177,6 +177,9 @@ def scrape_city(city: dict, horizon_days: int, max_pages: int, fixture: Path | N
             continue
         seen.add(key)
         reason = classify(e["name"] or "", [p["name"] for p in e["performers"]])
+        sk_genres = [g for p in e["performers"] for g in (p.get("songkick_genres") or [])]
+        if not reason and sk_genres and all(g == "comedy" for g in sk_genres):
+            reason = "non_music"                   # Songkick lists stand-up under a 'comedy' genre tag
         if reason:
             e["skip_reason"] = reason
             skipped.append(e)

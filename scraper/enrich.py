@@ -34,6 +34,7 @@ import requests
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from lastfm import LastFM, tier_for  # noqa: E402
 import lastfm as lastfm_mod  # noqa: E402
+from common import canonical_genres  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = json.loads((ROOT / "scraper" / "cities.json").read_text())
@@ -451,6 +452,7 @@ def build_city(city: dict, raw: dict, cache: dict, pending: list[str], stopped_r
                     "mbid": a.get("mbid") or (a.get("reach") or {}).get("mbid"),
                     "reach": a.get("reach") or {"listeners": 0, "tier": 0, "tags": []},
                 })
+                artists[-1]["genres_canon"] = canonical_genres(artists[-1])
             elif a and p["name"] not in {u["artist"] for u in unmatched}:   # looked up, no usable match
                 unmatched.append({"artist": p["name"], "event": e["name"], "date": e["start"][:10],
                                   "reason": a.get("skip_reason") or ("no_tracks" if a.get("spotify_id") else "no_match"),
