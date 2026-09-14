@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-09-13T22:32:27+00:00",
+ "generated_at": "2026-09-14T19:30:43+00:00",
  "scraped_at": "2026-09-13T22:28:34+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -34034,17 +34034,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f1784f4001d81d610a3446659a20",
      "tracks": [
       {
-       "id": "4O861s04eh857rRIcKkKbH",
-       "uri": "spotify:track:4O861s04eh857rRIcKkKbH",
-       "name": "Burn",
-       "popularity": null,
-       "album": "Bloom Burn",
-       "album_type": "album",
-       "release_date": "2020-02-28",
-       "duration_ms": 223826,
-       "explicit": false
-      },
-      {
        "id": "7irdHjaATYpBGyrN9IAFVb",
        "uri": "spotify:track:7irdHjaATYpBGyrN9IAFVb",
        "name": "Better",
@@ -34054,16 +34043,28 @@
        "release_date": "2020-02-28",
        "duration_ms": 179386,
        "explicit": false
+      },
+      {
+       "id": "0xLXJQsdSkdROHRGa4s8yl",
+       "uri": "spotify:track:0xLXJQsdSkdROHRGa4s8yl",
+       "name": "Talk Show Host",
+       "popularity": null,
+       "album": "Krystle Dos Santos",
+       "album_type": "album",
+       "release_date": "2008-07-03",
+       "duration_ms": 179960,
+       "explicit": false
       }
      ],
-     "rank_source": "search",
+     "rank_source": "lastfm",
      "mbid": null,
      "reach": {
       "listeners": 264,
       "playcount": 1281,
       "tags": [],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/KRYSTLE+DOS+SANTOS"
+      "lastfm_url": "https://www.last.fm/music/KRYSTLE+DOS+SANTOS",
+      "mbid": null
      },
      "genres_canon": []
     },
@@ -34090,30 +34091,31 @@
        "explicit": false
       },
       {
-       "id": "1P1JTlj8kENh5P6eEVTIsu",
-       "uri": "spotify:track:1P1JTlj8kENh5P6eEVTIsu",
-       "name": "After Dark",
+       "id": "0ReYyN5RTPn57K0V2DbNiR",
+       "uri": "spotify:track:0ReYyN5RTPn57K0V2DbNiR",
+       "name": "No Label - Esma Remix",
        "popularity": null,
-       "album": "Evidence of Things Not Seen",
+       "album": "Lovework",
        "album_type": "album",
-       "release_date": "2014-10-28",
-       "duration_ms": 206458,
+       "release_date": "2007-02-27",
+       "duration_ms": 204120,
        "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "2584dbb7-683d-498a-a2c5-05147e07587e",
      "reach": {
-      "listeners": 18026,
-      "playcount": 133398,
+      "listeners": 18027,
+      "playcount": 133409,
       "tags": [
        "hip-hop",
-       "seattle",
        "rap",
-       "northwest"
+       "northwest",
+       "hip hop"
       ],
       "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Gabriel+Teodros"
+      "lastfm_url": "https://www.last.fm/music/Gabriel+Teodros",
+      "mbid": "2584dbb7-683d-498a-a2c5-05147e07587e"
      },
      "genres_canon": [
       "hip hop"
@@ -34153,17 +34155,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178f526d38c0c8a803c9f993d86",
      "tracks": [
       {
-       "id": "4CW9o3qctXKwBRHhi0sUKv",
-       "uri": "spotify:track:4CW9o3qctXKwBRHhi0sUKv",
-       "name": "For the Western",
-       "popularity": null,
-       "album": "Bloomfield & Isleville",
-       "album_type": "single",
-       "release_date": "2016-05-25",
-       "duration_ms": 301825,
-       "explicit": false
-      },
-      {
        "id": "059oi8kpPq54E1GSvT7VYa",
        "uri": "spotify:track:059oi8kpPq54E1GSvT7VYa",
        "name": "For My Smoke",
@@ -34173,16 +34164,28 @@
        "release_date": "2004-07-30",
        "duration_ms": 303813,
        "explicit": false
+      },
+      {
+       "id": "0JB7eGegqNn4cIMJpixbbd",
+       "uri": "spotify:track:0JB7eGegqNn4cIMJpixbbd",
+       "name": "16 Shells From A Thirty-Ought Six",
+       "popularity": null,
+       "album": "For My Smoke",
+       "album_type": "album",
+       "release_date": "2004-07-30",
+       "duration_ms": 299720,
+       "explicit": false
       }
      ],
-     "rank_source": "search",
+     "rank_source": "lastfm",
      "mbid": null,
      "reach": {
       "listeners": 179,
       "playcount": 1628,
       "tags": [],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Shiloh+Lindsey"
+      "lastfm_url": "https://www.last.fm/music/Shiloh+Lindsey",
+      "mbid": null
      },
      "genres_canon": []
     }
@@ -34278,33 +34281,33 @@
      "image": "https://i.scdn.co/image/ab6761610000f178776a50cf87b2db3ec7475423",
      "tracks": [
       {
-       "id": "0YJ13bs9lvWwYkhsf4ZT45",
-       "uri": "spotify:track:0YJ13bs9lvWwYkhsf4ZT45",
-       "name": "Don't Bother",
+       "id": "1FMQK6iaXXdKQ9ZeroOjQi",
+       "uri": "spotify:track:1FMQK6iaXXdKQ9ZeroOjQi",
+       "name": "Lonely Bones",
        "popularity": null,
-       "album": "Don't Bother",
-       "album_type": "single",
-       "release_date": "2026-08-21",
-       "duration_ms": 217228,
+       "album": "Grief Rights",
+       "album_type": "album",
+       "release_date": "2018-05-04",
+       "duration_ms": 232289,
        "explicit": false
       },
       {
-       "id": "0iLcqAFdcb3YoAQEtRtH8W",
-       "uri": "spotify:track:0iLcqAFdcb3YoAQEtRtH8W",
-       "name": "96 Sunfire",
+       "id": "4AXjGPr9n1rIinrw5FAVXc",
+       "uri": "spotify:track:4AXjGPr9n1rIinrw5FAVXc",
+       "name": "North American Dream",
        "popularity": null,
-       "album": "96 Sunfire",
-       "album_type": "single",
-       "release_date": "2026-02-27",
-       "duration_ms": 210532,
-       "explicit": false
+       "album": "Grief Rights",
+       "album_type": "album",
+       "release_date": "2018-05-04",
+       "duration_ms": 207435,
+       "explicit": true
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "99119507-b65f-453e-9ddd-63f8f5233997",
      "reach": {
-      "listeners": 9752,
-      "playcount": 104941,
+      "listeners": 9757,
+      "playcount": 104984,
       "tags": [
        "rock",
        "alternative",
@@ -34312,7 +34315,8 @@
        "canadiana"
       ],
       "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/The+Honest+Heart+Collective"
+      "lastfm_url": "https://www.last.fm/music/The+Honest+Heart+Collective",
+      "mbid": "99119507-b65f-453e-9ddd-63f8f5233997"
      },
      "genres_canon": [
       "rock",
@@ -34590,36 +34594,37 @@
      "image": "https://i.scdn.co/image/ab6761610000f178d99262b5adf5ba964cfba6b4",
      "tracks": [
       {
-       "id": "1cTC2W0U5Gj2gSrGJQLScH",
-       "uri": "spotify:track:1cTC2W0U5Gj2gSrGJQLScH",
-       "name": "Rabbits",
+       "id": "2LeBBjOBHUZ2iTfHwcPDx2",
+       "uri": "spotify:track:2LeBBjOBHUZ2iTfHwcPDx2",
+       "name": "Even in a Car",
        "popularity": null,
-       "album": "Rabbits",
-       "album_type": "single",
-       "release_date": "2026-07-22",
-       "duration_ms": 232628,
+       "album": "Rattlesnake Dream",
+       "album_type": "album",
+       "release_date": "2023-06-02",
+       "duration_ms": 232722,
        "explicit": false
       },
       {
-       "id": "1OtAErC6il9LNNKK5UkJ2C",
-       "uri": "spotify:track:1OtAErC6il9LNNKK5UkJ2C",
-       "name": "I Found a River",
+       "id": "5G9fPEoXEtw4NSHaYjssGl",
+       "uri": "spotify:track:5G9fPEoXEtw4NSHaYjssGl",
+       "name": "Let It Pass",
        "popularity": null,
-       "album": "I Found a River",
-       "album_type": "single",
-       "release_date": "2026-06-04",
-       "duration_ms": 155555,
+       "album": "Rattlesnake Dream",
+       "album_type": "album",
+       "release_date": "2023-06-02",
+       "duration_ms": 212773,
        "explicit": false
       }
      ],
-     "rank_source": "search",
+     "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 1254,
-      "playcount": 6953,
+      "listeners": 1257,
+      "playcount": 7000,
       "tags": [],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Starpainter"
+      "lastfm_url": "https://www.last.fm/music/Starpainter",
+      "mbid": null
      },
      "genres_canon": []
     },
@@ -34657,14 +34662,15 @@
        "explicit": false
       }
      ],
-     "rank_source": "search",
+     "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 326,
-      "playcount": 2647,
+      "listeners": 327,
+      "playcount": 2668,
       "tags": [],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Carter+Felker"
+      "lastfm_url": "https://www.last.fm/music/Carter+Felker",
+      "mbid": null
      },
      "genres_canon": []
     },
@@ -34680,17 +34686,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178194e7035f8f0d7cf74db1175",
      "tracks": [
       {
-       "id": "30yiXuVG2LWGqKdrv4nxUp",
-       "uri": "spotify:track:30yiXuVG2LWGqKdrv4nxUp",
-       "name": "First Aid",
-       "popularity": null,
-       "album": "First Aid",
-       "album_type": "single",
-       "release_date": "2025-11-14",
-       "duration_ms": 282047,
-       "explicit": false
-      },
-      {
        "id": "7mGYJWdrDWvYj0XTReYg5s",
        "uri": "spotify:track:7mGYJWdrDWvYj0XTReYg5s",
        "name": "Natural Wine",
@@ -34700,16 +34695,28 @@
        "release_date": "2025-06-04",
        "duration_ms": 168933,
        "explicit": false
+      },
+      {
+       "id": "30yiXuVG2LWGqKdrv4nxUp",
+       "uri": "spotify:track:30yiXuVG2LWGqKdrv4nxUp",
+       "name": "First Aid",
+       "popularity": null,
+       "album": "First Aid",
+       "album_type": "single",
+       "release_date": "2025-11-14",
+       "duration_ms": 282047,
+       "explicit": false
       }
      ],
-     "rank_source": "search",
+     "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 4096,
-      "playcount": 14543,
+      "listeners": 4099,
+      "playcount": 14554,
       "tags": [],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Paesler"
+      "lastfm_url": "https://www.last.fm/music/Paesler",
+      "mbid": null
      },
      "genres_canon": []
     }
@@ -34747,17 +34754,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f17886986fd933294cb07ecd2e99",
      "tracks": [
       {
-       "id": "77mq1sH79ZrnFz4X9AjQ5s",
-       "uri": "spotify:track:77mq1sH79ZrnFz4X9AjQ5s",
-       "name": "I Feel So Weird!",
-       "popularity": null,
-       "album": "Too Much to Ask",
-       "album_type": "album",
-       "release_date": "2022-08-02",
-       "duration_ms": 156373,
-       "explicit": false
-      },
-      {
        "id": "37d8EPbS6y4PUjdrBeKO7k",
        "uri": "spotify:track:37d8EPbS6y4PUjdrBeKO7k",
        "name": "We Need a Bigger Dumpster",
@@ -34767,13 +34763,24 @@
        "release_date": "2022-08-02",
        "duration_ms": 225349,
        "explicit": false
+      },
+      {
+       "id": "77mq1sH79ZrnFz4X9AjQ5s",
+       "uri": "spotify:track:77mq1sH79ZrnFz4X9AjQ5s",
+       "name": "I Feel So Weird!",
+       "popularity": null,
+       "album": "Too Much to Ask",
+       "album_type": "album",
+       "release_date": "2022-08-02",
+       "duration_ms": 156373,
+       "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "fc0b6d53-d174-4b91-9c8e-dc0564275ff6",
      "reach": {
-      "listeners": 135983,
-      "playcount": 5320990,
+      "listeners": 136340,
+      "playcount": 5330277,
       "tags": [
        "indie rock",
        "post-punk",
@@ -34781,7 +34788,8 @@
        "geek rock"
       ],
       "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Cheekface"
+      "lastfm_url": "https://www.last.fm/music/Cheekface",
+      "mbid": "fc0b6d53-d174-4b91-9c8e-dc0564275ff6"
      },
      "genres_canon": [
       "indie",
@@ -34829,14 +34837,15 @@
        "explicit": false
       }
      ],
-     "rank_source": "search",
+     "rank_source": "lastfm",
      "mbid": null,
      "reach": {
       "listeners": 15,
       "playcount": 76,
       "tags": [],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Mike+Allen+Trio"
+      "lastfm_url": "https://www.last.fm/music/Mike+Allen+Trio",
+      "mbid": null
      },
      "genres_canon": []
     }
@@ -34893,11 +34902,11 @@
        "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "2d098124-cb9d-4e80-992f-47e47c405452",
      "reach": {
-      "listeners": 427964,
-      "playcount": 5910580,
+      "listeners": 428139,
+      "playcount": 5912718,
       "tags": [
        "progressive house",
        "electro house",
@@ -34905,7 +34914,8 @@
        "progressive trance"
       ],
       "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Tinlicker"
+      "lastfm_url": "https://www.last.fm/music/Tinlicker",
+      "mbid": "2d098124-cb9d-4e80-992f-47e47c405452"
      },
      "genres_canon": [
       "prog",
@@ -34964,19 +34974,19 @@
        "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "1e29feb4-34b3-4032-b054-c13d737cfdf5",
      "reach": {
-      "listeners": 520656,
-      "playcount": 4329597,
+      "listeners": 520871,
+      "playcount": 4330969,
       "tags": [
        "techno",
        "minimal",
-       "electronic",
-       "french"
+       "electronic"
       ],
       "tier": 4,
-      "lastfm_url": "https://www.last.fm/music/Matt+Sassari"
+      "lastfm_url": "https://www.last.fm/music/Matt+Sassari",
+      "mbid": "1e29feb4-34b3-4032-b054-c13d737cfdf5"
      },
      "genres_canon": [
       "techno",
@@ -35012,33 +35022,33 @@
      "image": "https://i.scdn.co/image/ab6761610000f1780902c734a791d597ffcd4544",
      "tracks": [
       {
-       "id": "4ejAxzq1HNPfQAUf2QUgxz",
-       "uri": "spotify:track:4ejAxzq1HNPfQAUf2QUgxz",
-       "name": "Rumble",
+       "id": "0g99a6hwgqs20q0H1PmfQv",
+       "uri": "spotify:track:0g99a6hwgqs20q0H1PmfQv",
+       "name": "Someone Else",
        "popularity": null,
-       "album": "Rumble",
-       "album_type": "single",
-       "release_date": "2026-07-31",
-       "duration_ms": 135773,
-       "explicit": false
+       "album": "Thrones of Blood",
+       "album_type": "album",
+       "release_date": "2023-03-17",
+       "duration_ms": 226758,
+       "explicit": true
       },
       {
-       "id": "3WSDoGL8yrK4xq0bBJQgbp",
-       "uri": "spotify:track:3WSDoGL8yrK4xq0bBJQgbp",
-       "name": "Lately (feat. Jex)",
+       "id": "4fo7f7s4YJ0KTZ0ECWEg1N",
+       "uri": "spotify:track:4fo7f7s4YJ0KTZ0ECWEg1N",
+       "name": "The Dead March",
        "popularity": null,
-       "album": "Lately (feat. Jex)",
-       "album_type": "single",
-       "release_date": "2026-08-26",
-       "duration_ms": 209828,
+       "album": "Thrones of Blood",
+       "album_type": "album",
+       "release_date": "2023-03-17",
+       "duration_ms": 162356,
        "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "f1e0c3fb-1ecb-49fa-bebd-5b0aedb33737",
      "reach": {
-      "listeners": 136570,
-      "playcount": 2861166,
+      "listeners": 136615,
+      "playcount": 2861774,
       "tags": [
        "brostep",
        "dubstep",
@@ -35046,7 +35056,8 @@
        "electronic"
       ],
       "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Sullivan+King"
+      "lastfm_url": "https://www.last.fm/music/Sullivan+King",
+      "mbid": "f1e0c3fb-1ecb-49fa-bebd-5b0aedb33737"
      },
      "genres_canon": [
       "bass / dnb",
@@ -35155,17 +35166,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f1786a80f3bb27c333a81a7927b5",
      "tracks": [
       {
-       "id": "1CG0oPmHCJz2ZsJB5ugSej",
-       "uri": "spotify:track:1CG0oPmHCJz2ZsJB5ugSej",
-       "name": "Blurry",
-       "popularity": null,
-       "album": "Blurry",
-       "album_type": "single",
-       "release_date": "2026-04-24",
-       "duration_ms": 200000,
-       "explicit": false
-      },
-      {
        "id": "5iaTwwgtEyJ7cy6lLTlGBb",
        "uri": "spotify:track:5iaTwwgtEyJ7cy6lLTlGBb",
        "name": "Adrenaline",
@@ -35175,13 +35175,24 @@
        "release_date": "2021-02-26",
        "duration_ms": 204198,
        "explicit": true
+      },
+      {
+       "id": "6MTfKxsjHEsH8GtHfKEXAA",
+       "uri": "spotify:track:6MTfKxsjHEsH8GtHfKEXAA",
+       "name": "The End",
+       "popularity": null,
+       "album": "...If You Don’t Save Yourself",
+       "album_type": "album",
+       "release_date": "2021-02-26",
+       "duration_ms": 169567,
+       "explicit": true
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "dd2172f4-5404-4e62-9dce-0f94dbec8675",
      "reach": {
-      "listeners": 161842,
-      "playcount": 2477985,
+      "listeners": 161899,
+      "playcount": 2478853,
       "tags": [
        "rapcore",
        "rock",
@@ -35189,7 +35200,8 @@
        "rap"
       ],
       "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Zero+9:36"
+      "lastfm_url": "https://www.last.fm/music/Zero+9:36",
+      "mbid": "dd2172f4-5404-4e62-9dce-0f94dbec8675"
      },
      "genres_canon": [
       "hip hop",
@@ -35242,25 +35254,26 @@
        "explicit": false
       },
       {
-       "id": "4XBKe16o93ZSCKe7VH2Ajp",
-       "uri": "spotify:track:4XBKe16o93ZSCKe7VH2Ajp",
-       "name": "TV Mama",
+       "id": "6p95Fy7WYNpxeAaId7WLGk",
+       "uri": "spotify:track:6p95Fy7WYNpxeAaId7WLGk",
+       "name": "Love Me Back",
        "popularity": null,
-       "album": "TV Mama",
+       "album": "Love Me Back",
        "album_type": "single",
-       "release_date": "2026-07-21",
-       "duration_ms": 193296,
+       "release_date": "2022-07-15",
+       "duration_ms": 148066,
        "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "cea9a5c5-d1ac-4b6f-aa46-b31c370894b3",
      "reach": {
-      "listeners": 52453,
-      "playcount": 278666,
+      "listeners": 52478,
+      "playcount": 278805,
       "tags": [],
       "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Bebe+Stockwell"
+      "lastfm_url": "https://www.last.fm/music/Bebe+Stockwell",
+      "mbid": "cea9a5c5-d1ac-4b6f-aa46-b31c370894b3"
      },
      "genres_canon": []
     }
@@ -35302,33 +35315,33 @@
      "image": "https://i.scdn.co/image/ab6761610000f1781f6ff549b2bbbb0819e40440",
      "tracks": [
       {
-       "id": "04EkofZVuLXW5WyeDWrii4",
-       "uri": "spotify:track:04EkofZVuLXW5WyeDWrii4",
-       "name": "In Blood And In Earth",
+       "id": "0UJNkotdjGsoiDBRmuBQmM",
+       "uri": "spotify:track:0UJNkotdjGsoiDBRmuBQmM",
+       "name": "Bestial Form of Humanity",
        "popularity": null,
-       "album": "Verbolgen",
+       "album": "De Oproeping Van Middeleeuwse Duisternis",
        "album_type": "album",
-       "release_date": "2026-08-07",
-       "duration_ms": 429106,
+       "release_date": "2019-05-31",
+       "duration_ms": 290247,
        "explicit": false
       },
       {
-       "id": "71ZvNwaoReLPx7flrEJXJd",
-       "uri": "spotify:track:71ZvNwaoReLPx7flrEJXJd",
-       "name": "The Crowning",
+       "id": "2nhQJrfauTFjOUxTvCTN7B",
+       "uri": "spotify:track:2nhQJrfauTFjOUxTvCTN7B",
+       "name": "Upon Frigid Winds",
        "popularity": null,
-       "album": "Verbolgen",
+       "album": "Godslastering: Hymns of a Forlorn Peasantry",
        "album_type": "album",
-       "release_date": "2026-08-07",
-       "duration_ms": 388066,
+       "release_date": "2021-01-22",
+       "duration_ms": 201740,
        "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "77a7f107-38ad-4443-8167-9af8f37cb30e",
      "reach": {
-      "listeners": 40429,
-      "playcount": 783006,
+      "listeners": 40453,
+      "playcount": 783598,
       "tags": [
        "black metal",
        "metal",
@@ -35336,7 +35349,8 @@
        "belgium"
       ],
       "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Hulder"
+      "lastfm_url": "https://www.last.fm/music/Hulder",
+      "mbid": "77a7f107-38ad-4443-8167-9af8f37cb30e"
      },
      "genres_canon": [
       "metal"
@@ -35354,17 +35368,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f1780f98bbbc6e4f5edfe3dc5b7e",
      "tracks": [
       {
-       "id": "076gGw32LZtXrKdWBlBnVv",
-       "uri": "spotify:track:076gGw32LZtXrKdWBlBnVv",
-       "name": "Antichrist Siege Machine",
-       "popularity": null,
-       "album": "Purifying Blade",
-       "album_type": "album",
-       "release_date": "2021-10-08",
-       "duration_ms": 311718,
-       "explicit": false
-      },
-      {
        "id": "1aqHPcrg2lP5M2d2zo1W8u",
        "uri": "spotify:track:1aqHPcrg2lP5M2d2zo1W8u",
        "name": "Unleashed Hostility",
@@ -35374,13 +35377,24 @@
        "release_date": "2021-10-08",
        "duration_ms": 190127,
        "explicit": false
+      },
+      {
+       "id": "79muH9522rttqM4d5Va7D9",
+       "uri": "spotify:track:79muH9522rttqM4d5Va7D9",
+       "name": "Carried into Darkness",
+       "popularity": null,
+       "album": "Purifying Blade",
+       "album_type": "album",
+       "release_date": "2021-10-08",
+       "duration_ms": 160408,
+       "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "57f2bfc7-7e85-4c27-b6f5-44746198b338",
      "reach": {
-      "listeners": 25728,
-      "playcount": 835086,
+      "listeners": 25738,
+      "playcount": 835624,
       "tags": [
        "black metal",
        "war metal",
@@ -35388,7 +35402,8 @@
        "blackened death metal"
       ],
       "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Antichrist+Siege+Machine"
+      "lastfm_url": "https://www.last.fm/music/Antichrist+Siege+Machine",
+      "mbid": "57f2bfc7-7e85-4c27-b6f5-44746198b338"
      },
      "genres_canon": [
       "metal"
@@ -35428,17 +35443,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f1783b33264f73a05536d5d8b399",
      "tracks": [
       {
-       "id": "2T5hu08najfwIGRnPTHkMs",
-       "uri": "spotify:track:2T5hu08najfwIGRnPTHkMs",
-       "name": "Bad Lovers",
-       "popularity": null,
-       "album": "Everybody's Home, Nobody's Happy",
-       "album_type": "album",
-       "release_date": "2026-08-21",
-       "duration_ms": 219253,
-       "explicit": false
-      },
-      {
        "id": "2dDjXlJa6pnOTGl8C8iChL",
        "uri": "spotify:track:2dDjXlJa6pnOTGl8C8iChL",
        "name": "Firestarters",
@@ -35448,13 +35452,24 @@
        "release_date": "2023-10-13",
        "duration_ms": 205351,
        "explicit": false
+      },
+      {
+       "id": "2hzdutjZmHEyM2EB0JqDsx",
+       "uri": "spotify:track:2hzdutjZmHEyM2EB0JqDsx",
+       "name": "Look At The Time",
+       "popularity": null,
+       "album": "Look At The Time",
+       "album_type": "single",
+       "release_date": "2023-06-28",
+       "duration_ms": 260575,
+       "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "2f1b9381-5269-4f80-817d-99663cad5c43",
      "reach": {
-      "listeners": 155837,
-      "playcount": 2502103,
+      "listeners": 155916,
+      "playcount": 2503892,
       "tags": [
        "rock",
        "alternative",
@@ -35462,7 +35477,8 @@
        "punk"
       ],
       "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Sawyer+Hill"
+      "lastfm_url": "https://www.last.fm/music/Sawyer+Hill",
+      "mbid": "2f1b9381-5269-4f80-817d-99663cad5c43"
      },
      "genres_canon": [
       "rock",
@@ -35703,18 +35719,19 @@
        "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "7113aab7-628f-4050-ae49-dbecac110ca8",
      "reach": {
-      "listeners": 1474787,
-      "playcount": 19170136,
+      "listeners": 1474988,
+      "playcount": 19172582,
       "tags": [
        "reggae",
        "ska",
        "pop"
       ],
       "tier": 4,
-      "lastfm_url": "https://www.last.fm/music/UB40"
+      "lastfm_url": "https://www.last.fm/music/UB40",
+      "mbid": "7113aab7-628f-4050-ae49-dbecac110ca8"
      },
      "genres_canon": [
       "reggae / dub",
@@ -35751,17 +35768,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178dcc8d87d5dd4dbed3dd0c95e",
      "tracks": [
       {
-       "id": "7BaBvGmqicbGbIGVv2zi1W",
-       "uri": "spotify:track:7BaBvGmqicbGbIGVv2zi1W",
-       "name": "ResuRection",
-       "popularity": null,
-       "album": "ResuRection",
-       "album_type": "single",
-       "release_date": "2026-07-03",
-       "duration_ms": 179154,
-       "explicit": false
-      },
-      {
        "id": "4hz5itl0tUhW7zrpPLT6YH",
        "uri": "spotify:track:4hz5itl0tUhW7zrpPLT6YH",
        "name": "Ready Steady Go",
@@ -35771,13 +35777,24 @@
        "release_date": "2002-03-19",
        "duration_ms": 205560,
        "explicit": false
+      },
+      {
+       "id": "7uRPUuUJpqMLvl785x4Een",
+       "uri": "spotify:track:7uRPUuUJpqMLvl785x4Een",
+       "name": "Starry Eyed Surprise",
+       "popularity": null,
+       "album": "Bunkka (Remastered)",
+       "album_type": "album",
+       "release_date": "2002",
+       "duration_ms": 227722,
+       "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "7bf1f441-ccf1-4258-9797-07c8d16eb44c",
      "reach": {
-      "listeners": 943707,
-      "playcount": 12337775,
+      "listeners": 943770,
+      "playcount": 12338410,
       "tags": [
        "trance",
        "electronic",
@@ -35785,7 +35802,8 @@
        "techno"
       ],
       "tier": 4,
-      "lastfm_url": "https://www.last.fm/music/Paul+Oakenfold"
+      "lastfm_url": "https://www.last.fm/music/Paul+Oakenfold",
+      "mbid": "7bf1f441-ccf1-4258-9797-07c8d16eb44c"
      },
      "genres_canon": [
       "trance",
@@ -35833,14 +35851,15 @@
        "explicit": false
       }
      ],
-     "rank_source": "search",
+     "rank_source": "lastfm",
      "mbid": null,
      "reach": {
       "listeners": 15,
       "playcount": 76,
       "tags": [],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Mike+Allen+Trio"
+      "lastfm_url": "https://www.last.fm/music/Mike+Allen+Trio",
+      "mbid": null
      },
      "genres_canon": []
     }
@@ -35875,17 +35894,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f17858c9d71ddd2f3d00a9bf0514",
      "tracks": [
       {
-       "id": "74Qu7xLd1FRWGwgLRh4EGI",
-       "uri": "spotify:track:74Qu7xLd1FRWGwgLRh4EGI",
-       "name": "Nothin' Better To Do (with Wyatt Flores)",
-       "popularity": null,
-       "album": "Nothin' Better To Do",
-       "album_type": "single",
-       "release_date": "2026-06-26",
-       "duration_ms": 182214,
-       "explicit": false
-      },
-      {
        "id": "6QN5ClFa3Ul4kFzsdw3Z8t",
        "uri": "spotify:track:6QN5ClFa3Ul4kFzsdw3Z8t",
        "name": "Betty",
@@ -35895,19 +35903,31 @@
        "release_date": "2025-10-03",
        "duration_ms": 174666,
        "explicit": false
+      },
+      {
+       "id": "3fA0FKdkPmBa62MSxwewKE",
+       "uri": "spotify:track:3fA0FKdkPmBa62MSxwewKE",
+       "name": "Greener Pasture",
+       "popularity": null,
+       "album": "Greener Pasture",
+       "album_type": "single",
+       "release_date": "2022-02-25",
+       "duration_ms": 189442,
+       "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "60c143b1-f1c1-404b-a674-ce51a05f022c",
      "reach": {
-      "listeners": 60644,
-      "playcount": 746063,
+      "listeners": 60671,
+      "playcount": 746547,
       "tags": [
        "country",
        "us"
       ],
       "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Carter+Faith"
+      "lastfm_url": "https://www.last.fm/music/Carter+Faith",
+      "mbid": "60c143b1-f1c1-404b-a674-ce51a05f022c"
      },
      "genres_canon": [
       "country",
@@ -35977,7 +35997,8 @@
        "rock"
       ],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Wild+T+&+The+Spirit"
+      "lastfm_url": "https://www.last.fm/music/Wild+T+&+The+Spirit",
+      "mbid": null
      },
      "genres_canon": [
       "rock",
@@ -36026,29 +36047,30 @@
        "explicit": true
       },
       {
-       "id": "19PBU0nWYBOMzHOAxDBEcg",
-       "uri": "spotify:track:19PBU0nWYBOMzHOAxDBEcg",
-       "name": "Loaded Gun",
+       "id": "6F3rgQfSns1slUnMfHXjOA",
+       "uri": "spotify:track:6F3rgQfSns1slUnMfHXjOA",
+       "name": "Sweet Memories",
        "popularity": null,
-       "album": "Loaded Gun",
+       "album": "Sweet Memories",
        "album_type": "single",
-       "release_date": "2026-03-27",
-       "duration_ms": 194883,
+       "release_date": "2016-08-26",
+       "duration_ms": 157451,
        "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "0cbe33c5-c213-4e4a-910b-9442f822cbb5",
      "reach": {
-      "listeners": 214323,
-      "playcount": 1468545,
+      "listeners": 214383,
+      "playcount": 1468811,
       "tags": [
        "electronic",
        "edm",
        "electro house"
       ],
       "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Cid"
+      "lastfm_url": "https://www.last.fm/music/Cid",
+      "mbid": "0cbe33c5-c213-4e4a-910b-9442f822cbb5"
      },
      "genres_canon": [
       "electronic",
@@ -36118,11 +36140,11 @@
        "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "01dab8e8-0fbe-47ee-ba32-1608514c5abe",
      "reach": {
-      "listeners": 8686,
-      "playcount": 42356,
+      "listeners": 8688,
+      "playcount": 42370,
       "tags": [
        "fuzz",
        "indie rock",
@@ -36130,12 +36152,70 @@
        "stoner rock"
       ],
       "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Pink+Fuzz"
+      "lastfm_url": "https://www.last.fm/music/Pink+Fuzz",
+      "mbid": "01dab8e8-0fbe-47ee-ba32-1608514c5abe"
      },
      "genres_canon": [
       "indie",
       "garage rock",
       "metal"
+     ]
+    },
+    {
+     "name": "The Well (Austin)",
+     "spotify_name": "The Well",
+     "spotify_id": "2an1GKmmTWuqY8N1GYBk1t",
+     "url": "https://open.spotify.com/artist/2an1GKmmTWuqY8N1GYBk1t",
+     "genres": [],
+     "songkick_genres": [
+      "metal",
+      "indie_alternative"
+     ],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f1783466757d9092dfaf60514b7f",
+     "tracks": [
+      {
+       "id": "1LeXlBPH87zfe6O11ZxqCQ",
+       "uri": "spotify:track:1LeXlBPH87zfe6O11ZxqCQ",
+       "name": "Mortal Bones",
+       "popularity": null,
+       "album": "Samsara",
+       "album_type": "album",
+       "release_date": "2014-09-23",
+       "duration_ms": 331468,
+       "explicit": false
+      },
+      {
+       "id": "54aAxXX1BQouhB7ALc9YBT",
+       "uri": "spotify:track:54aAxXX1BQouhB7ALc9YBT",
+       "name": "Black Eyed Gods",
+       "popularity": null,
+       "album": "Pagan Science",
+       "album_type": "album",
+       "release_date": "2016-10-14",
+       "duration_ms": 235330,
+       "explicit": false
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": null,
+     "reach": {
+      "listeners": 35306,
+      "playcount": 310738,
+      "tags": [
+       "stoner rock",
+       "doom metal",
+       "psychedelic rock",
+       "stoner metal"
+      ],
+      "tier": 2,
+      "lastfm_url": "https://www.last.fm/music/The+Well"
+     },
+     "genres_canon": [
+      "metal",
+      "psychedelic",
+      "indie"
      ]
     },
     {
@@ -36226,17 +36306,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178f1eb6fe5994836fec77cad1e",
      "tracks": [
       {
-       "id": "242iRyVvdneByTd8GgpcIN",
-       "uri": "spotify:track:242iRyVvdneByTd8GgpcIN",
-       "name": "Say Somethin'",
-       "popularity": null,
-       "album": "Say Somethin'",
-       "album_type": "album",
-       "release_date": "2014-10-31",
-       "duration_ms": 343973,
-       "explicit": false
-      },
-      {
        "id": "3mKVWlklRx7InZVjh4xmgV",
        "uri": "spotify:track:3mKVWlklRx7InZVjh4xmgV",
        "name": "Deeper",
@@ -36246,10 +36315,21 @@
        "release_date": "2014-10-31",
        "duration_ms": 191573,
        "explicit": false
+      },
+      {
+       "id": "242iRyVvdneByTd8GgpcIN",
+       "uri": "spotify:track:242iRyVvdneByTd8GgpcIN",
+       "name": "Say Somethin'",
+       "popularity": null,
+       "album": "Say Somethin'",
+       "album_type": "album",
+       "release_date": "2014-10-31",
+       "duration_ms": 343973,
+       "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "59bea280-8c18-4b16-ba7d-e18e2892630d",
      "reach": {
       "listeners": 294,
       "playcount": 1933,
@@ -36260,7 +36340,8 @@
        "soulful voices that ought to be cherished"
       ],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Dawn+Pemberton"
+      "lastfm_url": "https://www.last.fm/music/Dawn+Pemberton",
+      "mbid": "59bea280-8c18-4b16-ba7d-e18e2892630d"
      },
      "genres_canon": [
       "soul",
@@ -36297,17 +36378,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178e23c82d395c79287d5e16632",
      "tracks": [
       {
-       "id": "5In8L1EmSCGliyrnIP22Ae",
-       "uri": "spotify:track:5In8L1EmSCGliyrnIP22Ae",
-       "name": "June, July",
-       "popularity": null,
-       "album": "June, July",
-       "album_type": "single",
-       "release_date": "2025-08-22",
-       "duration_ms": 210128,
-       "explicit": true
-      },
-      {
        "id": "38u3ZUsUsquUdTD25aUVNX",
        "uri": "spotify:track:38u3ZUsUsquUdTD25aUVNX",
        "name": "Whiskey Whispers",
@@ -36317,16 +36387,28 @@
        "release_date": "2024-10-13",
        "duration_ms": 234511,
        "explicit": true
+      },
+      {
+       "id": "0E2IRo1OIk64ImUcun4QG0",
+       "uri": "spotify:track:0E2IRo1OIk64ImUcun4QG0",
+       "name": "Deserving",
+       "popularity": null,
+       "album": "Astoria",
+       "album_type": "album",
+       "release_date": "2026-02-20",
+       "duration_ms": 173078,
+       "explicit": true
       }
      ],
-     "rank_source": "search",
+     "rank_source": "lastfm",
      "mbid": null,
      "reach": {
       "listeners": 20,
       "playcount": 70,
       "tags": [],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Meg+James"
+      "lastfm_url": "https://www.last.fm/music/Meg+James",
+      "mbid": null
      },
      "genres_canon": []
     }
@@ -36384,18 +36466,19 @@
        "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "7113aab7-628f-4050-ae49-dbecac110ca8",
      "reach": {
-      "listeners": 1474787,
-      "playcount": 19170136,
+      "listeners": 1474988,
+      "playcount": 19172582,
       "tags": [
        "reggae",
        "ska",
        "pop"
       ],
       "tier": 4,
-      "lastfm_url": "https://www.last.fm/music/UB40"
+      "lastfm_url": "https://www.last.fm/music/UB40",
+      "mbid": "7113aab7-628f-4050-ae49-dbecac110ca8"
      },
      "genres_canon": [
       "reggae / dub",
@@ -36455,13 +36538,14 @@
       }
      ],
      "rank_source": "search",
-     "mbid": null,
+     "mbid": "c73d5a36-c382-43bf-9cde-514864d6f845",
      "reach": {
       "listeners": 645,
-      "playcount": 4208,
+      "playcount": 4211,
       "tags": [],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Los+Duendes"
+      "lastfm_url": "https://www.last.fm/music/Los+Duendes",
+      "mbid": "c73d5a36-c382-43bf-9cde-514864d6f845"
      },
      "genres_canon": []
     }
@@ -36513,22 +36597,22 @@
        "explicit": true
       },
       {
-       "id": "6TFO7bRauf2CEXh9qy2QcY",
-       "uri": "spotify:track:6TFO7bRauf2CEXh9qy2QcY",
-       "name": "Lights Down Low",
+       "id": "3Uu6pcfL9xsdfsKRx3DXRf",
+       "uri": "spotify:track:3Uu6pcfL9xsdfsKRx3DXRf",
+       "name": "the broken hearts club",
        "popularity": null,
-       "album": "Lights Down Low - EP",
-       "album_type": "single",
-       "release_date": "2016-10-14",
-       "duration_ms": 225013,
+       "album": "we",
+       "album_type": "album",
+       "release_date": "2019-01-11",
+       "duration_ms": 184694,
        "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "02f44a81-34f0-4f52-9ab7-c3cfcdb60333",
      "reach": {
-      "listeners": 791586,
-      "playcount": 9384510,
+      "listeners": 791678,
+      "playcount": 9385189,
       "tags": [
        "pop",
        "rock",
@@ -36536,7 +36620,8 @@
        "gnash"
       ],
       "tier": 4,
-      "lastfm_url": "https://www.last.fm/music/gnash"
+      "lastfm_url": "https://www.last.fm/music/gnash",
+      "mbid": "02f44a81-34f0-4f52-9ab7-c3cfcdb60333"
      },
      "genres_canon": [
       "pop",
@@ -36595,18 +36680,19 @@
        "explicit": true
       }
      ],
-     "rank_source": "search",
-     "mbid": null,
+     "rank_source": "lastfm",
+     "mbid": "6c2a79b8-2b5c-4c2d-b495-6a446811bf9d",
      "reach": {
-      "listeners": 1736413,
-      "playcount": 144817318,
+      "listeners": 1737885,
+      "playcount": 144968298,
       "tags": [
        "alternative rnb",
        "indie rock",
        "queer"
       ],
       "tier": 4,
-      "lastfm_url": "https://www.last.fm/music/Malcolm+Todd"
+      "lastfm_url": "https://www.last.fm/music/Malcolm+Todd",
+      "mbid": "6c2a79b8-2b5c-4c2d-b495-6a446811bf9d"
      },
      "genres_canon": [
       "alternative",
@@ -37751,9 +37837,9 @@
    "date": "2026-10-16",
    "reason": "no_match",
    "candidates": [
-    "Unknown Artist - Knowone",
     "Shirley Kwan",
     "Jade Kwan",
+    "Kim Kwang Seok",
     "Kwan Gor",
     "kwn",
     "Kwanza Jones"
@@ -37796,7 +37882,7 @@
     "Simple Plan",
     "Super Simple Songs",
     "Simon & Garfunkel",
-    "Simple Minds"
+    "Simply Red"
    ]
   },
   {
@@ -37827,17 +37913,11 @@
    "reason": "no_match",
    "candidates": [
     "Shaboozey",
-    "Jelly Roll",
     "Dax",
-    "BigXthaPlug"
+    "HARDY",
+    "BigXthaPlug",
+    "Jelly Roll"
    ]
-  },
-  {
-   "artist": "The Well (Austin)",
-   "event": "Pink Fuzz @ Astoria Pub",
-   "date": "2026-10-18",
-   "reason": "no_tracks",
-   "candidates": []
   },
   {
    "artist": "Van Jazz 26' - Dawn Pemberton & The Brown Sugar",
@@ -37872,53 +37952,8 @@
    "candidates": []
   }
  ],
- "pending": [
-  "The Honest Heart Collective",
-  "CHROM",
-  "Krystle Dos Santos",
-  "Gabriel Teodros",
-  "Shiloh Lindsey",
-  "Starpainter",
-  "Carter Felker",
-  "Paesler",
-  "Kwan",
-  "Mike Allen Trio",
-  "Drum Legend Carl Allen",
-  "**Van Jazz 2026*** Earthball & Peregrine Falls",
-  "Cheekface",
-  "special guest Waitress",
-  "Tinlicker",
-  "Matt Sassari",
-  "Sullivan King",
-  "Dirge",
-  "SiM",
-  "Zero 9:36",
-  "The Marcus Abramzik Ensemble",
-  "Hulder",
-  "Antichrist Siege Machine",
-  "ANTICHRIST SIEGE MACHINE Live in Vancouver",
-  "Sawyer Hill",
-  "UB40",
-  "Bebe Stockwell",
-  "Paul Oakenfold",
-  "**Van Jazz 2026** Julio Avila - Cuban Band",
-  "Shabooze¥",
-  "Carter Faith",
-  "Wild T & The Spirit",
-  "CID",
-  "Pink Fuzz",
-  "The Well (Austin)",
-  "Dawn Pemberton",
-  "Van Jazz 26' - Dawn Pemberton & The Brown Sugar",
-  "Isabella Hallia",
-  "Meg James",
-  "Curves",
-  "**Van Jazz 2026** Dos Santos",
-  "Los Duendes",
-  "gnash",
-  "Malcolm Todd"
- ],
- "stopped_reason": "Spotify daily quota exceeded after 1 calls (Retry-After 68343s ≈ 18h)",
+ "pending": [],
+ "stopped_reason": null,
  "skipped": [
   {
    "name": "FROSH KICKOFF 2026 @ The Pearl",
