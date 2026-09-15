@@ -33517,8 +33517,8 @@
 "query": "The Well (Austin)",
 "fetched_at": "2026-09-14T19:30:38+00:00",
 "reach": {
-"listeners": 35306,
-"playcount": 310738,
+"listeners": 35326,
+"playcount": 310993,
 "tags": [
 "stoner rock",
 "doom metal",
@@ -33526,7 +33526,8 @@
 "stoner metal"
 ],
 "tier": 2,
-"lastfm_url": "https://www.last.fm/music/The+Well"
+"lastfm_url": "https://www.last.fm/music/The+Well",
+"mbid": "a0cb4b84-b8c7-4ff7-b86e-bb3dcb82df32"
 },
 "matcher": 4,
 "spotify_id": "2an1GKmmTWuqY8N1GYBk1t",
@@ -33561,7 +33562,7 @@
 }
 ],
 "rank_source": "lastfm",
-"mbid": null
+"mbid": "a0cb4b84-b8c7-4ff7-b86e-bb3dcb82df32"
 },
 "dawn pemberton": {
 "query": "Dawn Pemberton",

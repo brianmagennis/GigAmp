@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-09-14T19:30:43+00:00",
+ "generated_at": "2026-09-15T18:18:47+00:00",
  "scraped_at": "2026-09-13T22:28:34+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -36199,10 +36199,10 @@
       }
      ],
      "rank_source": "lastfm",
-     "mbid": null,
+     "mbid": "a0cb4b84-b8c7-4ff7-b86e-bb3dcb82df32",
      "reach": {
-      "listeners": 35306,
-      "playcount": 310738,
+      "listeners": 35326,
+      "playcount": 310993,
       "tags": [
        "stoner rock",
        "doom metal",
@@ -36210,7 +36210,8 @@
        "stoner metal"
       ],
       "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/The+Well"
+      "lastfm_url": "https://www.last.fm/music/The+Well",
+      "mbid": "a0cb4b84-b8c7-4ff7-b86e-bb3dcb82df32"
      },
      "genres_canon": [
       "metal",
