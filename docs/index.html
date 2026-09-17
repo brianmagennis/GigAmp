@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GigAmp</title>
-<meta name="description" content="A Spotify playlist of the acts playing your city's venues in the next month.">
+<meta name="description" content="Hear the acts playing your city in the next month, and find the ones you didn't know you wanted to see.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2318181b'/%3E%3Cpath d='M8 22V10l16 6z' fill='%23f5c542'/%3E%3C/svg%3E">
 <style>
 :root{
@@ -13,6 +13,7 @@
   --radius:12px;--font:ui-sans-serif,-apple-system,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
 }
 *{box-sizing:border-box}
+[hidden]{display:none !important}   /* class rules like .allHead set display, which beats the UA [hidden] rule */
 html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 var(--font)}
 a{color:inherit}
 button{font:inherit;cursor:pointer}
@@ -27,11 +28,12 @@ header{display:flex;align-items:center;justify-content:space-between;gap:16px;pa
 .btn:hover{border-color:#3a3a45;background:#25252d}
 .btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 .btn.primary:hover{filter:brightness(1.06)}
-.btn.spotify{background:var(--spotify);border-color:var(--spotify);color:#03170a}
 .btn.ghost{background:transparent}
 .btn:disabled{opacity:.5;cursor:not-allowed;filter:none}
 .grid{display:grid;grid-template-columns:340px 1fr;gap:22px}
-@media (max-width:900px){.grid{grid-template-columns:1fr}}
+/* On one column the filter rail would push the comparison game and the listings
+   below the fold, so the content column comes first on narrow screens. */
+@media (max-width:900px){.grid{grid-template-columns:1fr}.grid>main{order:1}.grid>aside{order:2}}
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
 .panel h2{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
 .panel + .panel{margin-top:14px}
@@ -59,7 +61,6 @@ select,input[type=text]{width:100%;background:var(--panel-2);color:var(--text);b
 .stat b{display:block;font-size:26px;line-height:1;letter-spacing:-.5px}
 .stat span{color:var(--muted);font-size:12.5px}
 .actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.actions input[type=text]{width:240px}
 .status{min-height:20px;color:var(--muted);font-size:13.5px;margin:6px 0 14px}
 .status.err{color:var(--danger)}
 .status a{color:var(--accent)}
@@ -119,8 +120,69 @@ details.setup pre{background:var(--panel-2);border:1px solid var(--line);border-
 #dockClose{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;width:32px;height:32px;font-size:16px;line-height:1}
 body.has-dock{padding-bottom:120px}
 .btn.saved-toggle[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
-#plLink{font-size:12.5px}#plLink a{color:var(--accent);text-decoration:none}
 .pill{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--line);font-size:11.5px;color:var(--muted);vertical-align:middle}
+
+/* ---------- onboarding: the artist comparison game ---------- */
+#onboard{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 18px;margin-bottom:20px}
+.obHead{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:14px;flex-wrap:wrap}
+.obKicker{font-size:17px;font-weight:650;letter-spacing:-.2px}
+.obSub{color:var(--muted);font-size:13.5px;margin-top:3px}
+.obProg{display:flex;align-items:center;gap:6px;flex:none}
+.obDot{width:7px;height:7px;border-radius:50%;background:var(--line);display:inline-block}
+.obDot.done{background:var(--accent)}
+.obDot.now{background:var(--text)}
+.btn.obSkip{padding:5px 11px;font-size:12.5px;color:var(--muted);margin-left:8px}
+.obDone{color:var(--muted);font-size:14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.obDone b{color:var(--text)}
+.vsRow{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:stretch}
+.vsOr{align-self:center;color:var(--muted);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase}
+.vsCard{background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius);padding:16px 14px;display:flex;flex-direction:column;align-items:center;gap:9px;text-align:center}
+.vsArt{width:84px;height:84px;border-radius:50%;background:#26262e;overflow:hidden;flex:none}
+.vsArt img{width:100%;height:100%;object-fit:cover;display:block}
+.vsName{font-size:17px;font-weight:650;line-height:1.25}
+.vsMeta{display:flex;flex-wrap:wrap;gap:5px;justify-content:center;align-items:center;min-height:20px}
+.vsMeta .reach{color:var(--muted);font-size:11.5px}
+.vsPlay{width:100%;max-width:220px;font-size:13.5px;padding:8px 12px}
+.vsPlay.on{border-color:var(--accent);color:var(--accent)}
+.vsChoose{width:100%;max-width:220px;margin-top:auto}
+.vsNoTrack{color:var(--muted);font-size:12.5px}
+@media (max-width:640px){
+  /* Stacked, both acts have to stay on one screen or it stops being a comparison. */
+  .vsRow{grid-template-columns:1fr;gap:6px}
+  .vsOr{text-align:center}
+  .vsCard{flex-direction:row;flex-wrap:wrap;align-items:center;text-align:left;padding:11px 12px;gap:9px}
+  .vsArt{width:50px;height:50px}
+  .vsName{font-size:16px;flex:1;min-width:0}
+  .vsMeta{width:100%;justify-content:flex-start;min-height:0}
+  .vsPlay,.vsChoose{flex:1 1 120px;max-width:none;margin-top:0;padding:8px 10px;font-size:13.5px}
+  .obKicker{font-size:16px}
+}
+
+/* ---------- For You ---------- */
+#forYou{margin-bottom:26px}
+.fyHead{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.fyTitle{margin:0;font-size:22px;letter-spacing:-.3px}
+.fySub{color:var(--muted);font-size:13.5px;margin-top:3px}
+.rail{margin-bottom:20px}
+.railHead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:0 0 9px}
+.railHead h3{margin:0;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.railBlurb{color:var(--muted);font-size:12.5px}
+.railItems{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.rec{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:12px 13px}
+.rec.saved{border-color:#4a4222}
+.recWhy{font-size:12px;color:var(--accent);margin-bottom:8px;line-height:1.35}
+.recBody{display:flex;gap:11px;align-items:flex-start}
+.recImg{width:46px;height:46px;border-radius:50%;object-fit:cover;background:#26262e;flex:none}
+.recInfo{min-width:0;flex:1}
+.recName{font-weight:650;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.recWhen{color:var(--muted);font-size:12.5px;margin-top:2px}
+.recActs{display:flex;align-items:center;gap:8px;margin-top:8px;flex-wrap:wrap}
+.recTrack{color:var(--muted);font-size:12.5px;margin-right:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60%}
+.recActs .lnk{font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 9px}
+.recActs .lnk:hover{color:var(--text);border-color:#3a3a45}
+.allHead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:0 0 12px;padding-top:6px;border-top:1px solid var(--line)}
+.allHead h2{margin:14px 0 0;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.allHead span{color:var(--muted);font-size:12.5px;margin-top:14px}
 </style>
 </head>
 <body>
@@ -130,7 +192,7 @@ body.has-dock{padding-bottom:120px}
       <div class="mark"><svg width="20" height="20" viewBox="0 0 32 32"><path d="M8 24V8l18 8z" fill="#f5c542"/></svg></div>
       <h1>GigAmp <small>Hear who's playing near you, before they play.</small></h1>
     </div>
-    <div class="auth" id="auth"></div>
+    <div class="auth"><button class="btn ghost" id="tuneBtn" hidden>Tune For You</button></div>
   </header>
 
   <div class="grid">
@@ -183,6 +245,14 @@ body.has-dock{padding-bottom:120px}
     </aside>
 
     <main>
+      <section id="onboard" hidden></section>
+      <section id="forYou" hidden></section>
+
+      <div class="allHead" id="allGigsHead" hidden>
+        <h2>All gigs</h2>
+        <span>Everything on in your city. Nothing is hidden by your taste profile.</span>
+      </div>
+
       <div class="summary">
         <div class="stats">
           <div class="stat"><b id="nShows">0</b><span>shows</span></div>
@@ -190,9 +260,7 @@ body.has-dock{padding-bottom:120px}
           <div class="stat"><b id="nTracks">0</b><span>tracks</span></div>
         </div>
         <div class="actions">
-          <input type="text" id="plName" placeholder="Playlist name">
-          <button class="btn primary" id="create">Create playlist</button>
-          <span id="plLink"></span>
+          <button class="btn primary" id="copyList">Copy for Spotify</button>
           <button class="btn ghost saved-toggle" id="savedBtn" aria-pressed="false">★ My shows</button>
           <button class="btn ghost" id="share">Copy share link</button>
         </div>
@@ -202,13 +270,15 @@ body.has-dock{padding-bottom:120px}
 
       <details class="setup" id="setup">
         <summary>Weekly auto-refresh for this selection</summary>
-        <p style="color:var(--muted);font-size:13.5px">GigAmp refreshes its listings every Friday. To have this exact selection pushed to your playlist automatically, add the block below to <code>sync/subscribers.json</code> in the repo, run <code>sync/authorize.py</code> once to get a refresh token, and save it as the GitHub Actions secret named in <code>token_secret</code>.</p>
+        <p style="color:var(--muted);font-size:13.5px">GigAmp refreshes its listings every Friday. To have this exact selection pushed to a playlist automatically, add the block below to <code>sync/subscribers.json</code> in the repo, run <code>sync/authorize.py</code> once to get a refresh token, and save it as the GitHub Actions secret named in <code>token_secret</code>.</p>
+        <label class="toggle" style="margin-bottom:10px">Playlist name <input type="text" id="plName" placeholder="Playlist name"></label>
         <pre id="subJson"></pre>
       </details>
 
       <p class="foot">
-        Listings from <a href="https://www.songkick.com" target="_blank" rel="noopener">Songkick</a>; artist matches and tracks from Spotify.
-        Two tracks per act: the two songs Last.fm listeners play most, resolved on Spotify so you can hear them here; press ▶ to play (30-second previews unless you're logged in to Spotify in this browser).
+        Listings from <a href="https://www.songkick.com" target="_blank" rel="noopener">Songkick</a> and <a href="https://do604.com" target="_blank" rel="noopener">Do604</a>; artist matches and tracks from Spotify.
+        Two tracks per act: the two songs Last.fm listeners play most, resolved on Spotify so you can hear them here; press ▶ to play.
+        No sign-in, no account. Your picks, saved shows and For You profile stay in this browser.
         ☆ saves a show to “My shows” on this device.
         Audience size is total <a href="https://www.last.fm" target="_blank" rel="noopener">Last.fm</a> listeners, a stand-in for streaming reach that covers even the smallest acts: underground is under 5k, emerging 5k to 50k, established 50k to 500k, big above that.
         Tribute acts and themed club nights are filtered out; headline DJs and producers stay in.
