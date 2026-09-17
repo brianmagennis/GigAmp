@@ -121,22 +121,37 @@ ok(railTitles.some((t) => /because you liked/i.test(t)), "a 'Because you liked X
 ok(railTitles.some((t) => /before they blow up/i.test(t)), "a 'Before they blow up' rail");
 ok(/We've got your vibe/.test(await page.locator("#fyTitle").textContent()), "no 'profile complete' congratulation");
 const railCounts = await page.evaluate(() =>
-  [...document.querySelectorAll("#forYou .rail")].map((r) => r.querySelectorAll(".rec").length));
+  [...document.querySelectorAll("#forYou .rail")].map((r) => r.querySelectorAll(".show").length));
+// The rails must use the same card as All Gigs, stacked the same way.
+const sameCard = await page.evaluate(() => {
+  const rail = document.querySelector("#forYou .show"), all = document.querySelector("#results .show");
+  if (!rail || !all) return { ok: false, why: "missing card" };
+  const parts = (el) => [...el.querySelectorAll("*")].map((n) => n.className).filter((c) => typeof c === "string" && c);
+  const railParts = new Set(parts(rail)), allParts = new Set(parts(all));
+  const missing = [...allParts].filter((c) => !railParts.has(c) && c !== "sep");
+  return { ok: missing.length === 0, why: missing.join(", "),
+    stacked: getComputedStyle(document.querySelector("#forYou .railItems")).display };
+});
+ok(sameCard.ok, "a rail card is built from the same parts as an All Gigs card", sameCard.why || "identical");
+ok(sameCard.stacked === "block", "rail cards stack one per row like the main list", sameCard.stacked);
+ok(await page.locator("#forYou .show .artist").count() >= railCounts.reduce((a, b) => a + b, 0),
+  "rail cards list the whole bill, not just the lead act");
 ok(railCounts.every((n) => n === 2), "every rail shows exactly two shows", railCounts.join(", "));
 ok(railTitles.some((t) => /something a little different/i.test(t)), "a 'Something a little different' rail");
 ok(await page.locator("#forYou .railMore[data-more]").count() > 0, "at least one rail offers more");
-const beforeMore = await page.locator('[data-rail="emerging"] .rec').count();
+const beforeMore = await page.locator('[data-rail="emerging"] .show').count();
 await page.locator('[data-rail="emerging"] .railMore[data-more]').first().click();
 await page.waitForTimeout(120);
-const afterMore = await page.locator('[data-rail="emerging"] .rec').count();
+const afterMore = await page.locator('[data-rail="emerging"] .show').count();
 ok(afterMore > beforeMore, "the more link expands that rail in place", `${beforeMore} -> ${afterMore}`);
 await page.locator('[data-rail="emerging"] .railMore[data-more]').first().click();
 await page.waitForTimeout(120);
-ok(await page.locator('[data-rail="emerging"] .rec').count() === beforeMore, "and collapses again");
+ok(await page.locator('[data-rail="emerging"] .show').count() === beforeMore, "and collapses again");
 const stretch = await page.evaluate(() =>
-  [...document.querySelectorAll('[data-rail="stretch"] .recWhy')].map((e) => e.textContent.trim()));
-ok(stretch.length > 0 && stretch.every((w) => /this one is|further from your usual/i.test(w)),
+  [...document.querySelectorAll('[data-rail="stretch"] .show .why')].map((e) => e.textContent.trim()));
+ok(stretch.length > 0 && stretch.every((w) => /you lean .+\. .+ is |further from your usual/i.test(w)),
   "the stretch rail says what is different about each pick", stretch[0] || "(none)");
+ok(new Set(stretch).size === stretch.length, "and does not repeat the same sentence on every card");
 // Seed artists exist to measure taste; they must never be offered as a gig.
 const seedOnly = await page.evaluate(async () => {
   const j = await (await fetch("seed-artists.json")).json();
@@ -145,7 +160,7 @@ const seedOnly = await page.evaluate(async () => {
   return j.artists.map((a) => a.name).filter((n) => !playing.has(n));
 });
 const railNames = await page.evaluate(() =>
-  [...document.querySelectorAll("#forYou .recName")].map((e) => e.childNodes[0].textContent.trim()));
+  [...document.querySelectorAll("#forYou .artist .who a")].map((e) => e.textContent.trim()));
 ok(seedOnly.length > 10, "the fixture has seed artists with no local gig", `${seedOnly.length}`);
 ok(!railNames.some((n) => seedOnly.includes(n)), "no act without a local gig is ever recommended");
 const usedSeedOnly = await page.evaluate((names) => {
@@ -153,16 +168,17 @@ const usedSeedOnly = await page.evaluate((names) => {
   return names.filter((n) => s.has(n));
 }, seedOnly);
 ok(usedSeedOnly.length > 0, "but the game does use acts with no local gig", usedSeedOnly.join(", "));
-const whys = await page.locator("#forYou .recWhy").allTextContents();
+const whys = await page.locator("#forYou .show .why").allTextContents();
 ok(whys.length > 0 && whys.every((w) => w.trim().length > 0), "every recommendation carries a reason", `${whys.length} cards`);
 ok(!whys.some((w) => /^recommended for you$/i.test(w.trim())), "no bare 'Recommended for you'");
-const cards = await page.evaluate(() => [...document.querySelectorAll("#forYou .rec")].map((c) => ({
-  artist: c.querySelector(".recName").childNodes[0].textContent.trim(),
-  why: c.querySelector(".recWhy").textContent.trim(),
+const cards = await page.evaluate(() => [...document.querySelectorAll("#forYou .show")].map((c) => ({
+  artist: c.querySelector(".artist .who a").textContent.trim(),
+  all: [...c.querySelectorAll(".artist .who a")].map((a) => a.textContent.trim()),
+  why: c.querySelector(".why").textContent.trim(),
   rail: c.closest(".rail").dataset.rail })));
-const names = cards.map((c) => c.artist);
-ok(new Set(names).size === names.length, "no artist appears twice anywhere in For You",
-  `${names.length} cards, ${new Set(names).size} distinct acts`);
+const names = cards.flatMap((c) => c.all);
+ok(new Set(names).size === names.length, "no artist appears twice anywhere in For You, support acts included",
+  `${names.length} billed slots, ${new Set(names).size} distinct acts`);
 ok(!cards.some((c) => new RegExp(`You liked ${c.artist.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\.`).test(c.why)),
   "no card explains itself with its own artist");
 const obShown = await page.evaluate(() => {
@@ -171,9 +187,12 @@ const obShown = await page.evaluate(() => {
 ok(!cards.filter((c) => c.rail === "emerging").some((c) => obShown.includes(c.artist)),
   "Before they blow up never offers an act the visitor already saw in the game");
 const emergingTiers = await page.evaluate(() =>
-  [...document.querySelectorAll('[data-rail="emerging"] .recName .pill')].map((e) => e.textContent));
-ok(emergingTiers.length > 0 && emergingTiers.every((t) => /underground|emerging/.test(t)),
-  "Before they blow up only contains smaller acts", emergingTiers.join(", "));
+  [...document.querySelectorAll('[data-rail="emerging"] .show')].map((c) => {
+    const key = c.querySelector(".artist").dataset.artistId;
+    return window.__gigamp.state.poolByKey.get(key)?.tier;
+  }));
+ok(emergingTiers.length > 0 && emergingTiers.every((t) => t > 0 && t <= 2),
+  "Before they blow up only leads with smaller acts", emergingTiers.join(", "));
 await page.screenshot({ path: path.join(SHOTS, "03-foryou.png"), fullPage: false });
 
 console.log("\n4. For You is a layer, not a filter");
@@ -276,8 +295,16 @@ await windowKnob.press("ArrowLeft");
 await page.waitForTimeout(120);
 const daysAfter = await page.evaluate(() => window.__gigamp.state.days);
 ok(daysAfter < daysBefore, "arrow keys turn a dial", `${daysBefore} -> ${daysAfter} days`);
-ok(/days|listed/i.test(await page.locator('.knob:has([data-knob="window"]) .knobValue').textContent()),
-  "the dial reads out its current value");
+const windowOpts = await page.locator('.knob:has([data-knob="window"]) .knobOpt').allTextContents();
+ok(windowOpts.join(",") === "7 days,14 days,30 days,All listed", "every dial position is written out", windowOpts.join(" · "));
+const litUp = await page.locator('.knob:has([data-knob="window"]) .knobOpt.on').allTextContents();
+ok(litUp.length === 1 && /14 days/.test(litUp[0]), "and only the chosen one is highlighted", litUp.join(","));
+// The words are controls in their own right.
+await page.locator('.knob:has([data-knob="window"]) .knobOpt', { hasText: "30 days" }).click();
+await page.waitForTimeout(140);
+ok(await page.evaluate(() => window.__gigamp.state.days) === 30, "clicking a position word selects it");
+ok(/30 days/.test((await page.locator('.knob:has([data-knob="window"]) .knobOpt.on').allTextContents())[0]),
+  "and the highlight follows");
 // Chrome maps the SVG transform attribute onto CSS transform, so a stray CSS
 // transform-origin silently throws the pointer clean off its dial.
 const strays = await page.evaluate(() => {
@@ -316,16 +343,46 @@ await clickPos(0, 5);
 await page.waitForTimeout(100);
 await page.screenshot({ path: path.join(SHOTS, "08-faceplate.png"), fullPage: false });
 
-console.log("\n7b. Modules collapse");
-ok(await page.locator("#filterModule").evaluate((e) => !e.open), "the filters module starts collapsed");
-ok(await page.locator("#venues").isHidden(), "so the venue list is not on screen");
-await page.locator("#filterModule > summary").click();
+console.log("\n7b. Advanced search sits under the dials");
+const order = await page.evaluate(() => [...document.querySelectorAll("main > *")].map((e) => e.id || e.className.split(" ")[0]));
+ok(order.indexOf("advancedModule") === order.findIndex((x) => x === "faceplate") + 1,
+  "Advanced search is the first thing under the faceplate", order.join(" → "));
+ok(/advanced search/i.test(await page.locator("#advancedModule > summary h2").textContent()), "and is called Advanced search");
+ok(await page.locator("#advancedModule").evaluate((e) => !e.open), "it starts collapsed");
+ok(await page.locator("#venues").isHidden() && await page.locator("#genres").isHidden(), "so venues and genres are out of the way");
+await page.locator("#advancedModule > summary").click();
 await page.waitForTimeout(120);
-ok(await page.locator("#venues").isVisible(), "opening it reveals the venue list");
-ok(await page.locator("#forYouModule").evaluate((e) => e.open), "For You starts open");
-await page.locator("#forYouModule > summary").click();
+ok(await page.locator("#venues").isVisible() && await page.locator("#genres").isVisible(),
+  "opening it brings back both the venue and genre filters");
+ok(await page.locator("#genres .chip").count() > 0, "the genre chips are populated");
+
+console.log("\n7c. The whole feature collapses");
+ok(await page.locator("#personalModule").evaluate((e) => e.open), "For you starts open");
+await page.locator("#personalModule > summary").click();
+await page.waitForTimeout(140);
+ok(await page.locator("#forYou").isHidden(), "collapsing it hides the rails");
+ok(await page.locator("#onboard").isHidden(), "and the survey with them");
+ok(await page.locator("#results .show").first().isVisible(), "the full show list is right there");
+await page.reload({ waitUntil: "domcontentloaded" });
+await page.waitForFunction(() => document.querySelectorAll("#results .show").length > 0, null, { timeout: 15000 });
+ok(await page.locator("#personalModule").evaluate((e) => !e.open), "and it is still collapsed on the next visit");
+await page.locator("#personalModule > summary").click();
 await page.waitForTimeout(120);
-ok(await page.locator("#forYou").isHidden(), "and collapses when asked");
+
+console.log("\n7d. Who is missing");
+await page.locator("#advancedModule").evaluate((e) => { e.open = true; });
+await page.waitForTimeout(80);
+const missing = await page.evaluate(() => {
+  const w = document.querySelector("#missingWrap");
+  return { hidden: w.hidden, head: document.querySelector("#missingHead").textContent,
+    rows: document.querySelectorAll("#missing tbody tr").length,
+    unmatched: window.__gigamp.state.data.unmatched.length };
+});
+if (missing.unmatched === 0) {
+  ok(missing.hidden, "nothing to show when no acts were left out (fixture has none)");
+} else {
+  ok(!missing.hidden && missing.rows > 0, "the acts with no Spotify match are listed", missing.head);
+}
 
 console.log("\n8. Fresh visitor can browse and skip");
 const p2 = await ctx.newPage();

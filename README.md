@@ -2,7 +2,19 @@
 
 This folder is where Claude writes the latest GigAmp code. Upload from here.
 
-## Current release: v0.10 (17 Sep 2026)
+## Current release: v0.11 (17 Sep 2026)
+
+- The whole personalised block (survey + For You) is one module you can collapse to
+  drop straight to the show list, and that choice is remembered.
+- Venue and genre filters moved into **Advanced search**, directly under the dials.
+- Each dial lists all its positions and highlights the selected one; the words are
+  clickable too.
+- **Advanced search now lists the billed acts left out of the listings**, grouped by
+  why (never scrobbled / no Spotify match / matched but no playable track) with the
+  near-miss names Spotify offered. That data was always in `docs/data/<city>.json`
+  under `unmatched` — the site just never showed it.
+
+## Previous: v0.10 (17 Sep 2026)
 
 - Taste survey artists now come from a Last.fm seed pool and no longer need a local
   gig. Local and emerging acts still appear in the later rounds.

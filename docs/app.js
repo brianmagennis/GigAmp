@@ -23,10 +23,12 @@
         ($("#results") || document.body).insertAdjacentElement("beforebegin", s); },
       plName: () => { const i = document.createElement("input"); i.type = "text"; i.id = "plName"; i.hidden = true; document.body.appendChild(i); },
       city: () => { const sel = document.createElement("select"); sel.id = "city"; sel.hidden = true; document.body.appendChild(sel); },
-      forYouModule: () => { const d = document.createElement("details"); d.id = "forYouModule"; d.className = "module"; d.hidden = true;
-        d.innerHTML = `<summary><h2 id="fyTitle">For you</h2><span class="modSub" id="fySub"></span></summary><div class="modBody"><div id="forYou"></div></div>`;
+      personalModule: () => { const d = document.createElement("details"); d.id = "personalModule"; d.className = "module"; d.hidden = true;
+        d.innerHTML = `<summary><h2 id="fyTitle">For you</h2><span class="modSub" id="fySub"></span></summary><div class="modBody"><section id="onboard"></section><div id="forYou"></div></div>`;
         ($("#results") || document.body).insertAdjacentElement("beforebegin", d); },
-      filterModule: () => { const d = document.createElement("details"); d.id = "filterModule"; d.className = "module"; document.body.appendChild(d); },
+      advancedModule: () => { const d = document.createElement("details"); d.id = "advancedModule"; d.className = "module"; document.body.appendChild(d); },
+      missingWrap: () => { const d = document.createElement("details"); d.id = "missingWrap"; d.hidden = true;
+        d.innerHTML = `<summary id="missingHead"></summary><div id="missing"></div>`; document.body.appendChild(d); },
     };
     for (const [id, make] of Object.entries(need)) if (!document.getElementById(id)) { try { make(); } catch {} }
     for (const id of ["status", "results", "unmatched", "dataAge", "subJson", "nShows", "nArtists", "nTracks", "allGigsHead",
@@ -135,6 +137,7 @@
 
   /* ---- persisted taste: explicit / behaviour / derived, kept apart ------- */
   const TASTE_KEY = "gigamp:taste";
+  const UI_KEY = "gigamp:ui";          // which modules the visitor left open
   const blankTaste = () => ({
     v: 1,
     // What the user told us.
@@ -515,7 +518,10 @@
     const pair = nextPair(n);
     if (!pair) return finishOnboarding();
     state.round = { n, a: pair[0], b: pair[1], shownAt: Date.now(), plays: {} };
+    $("#personalModule").hidden = false;
+    applyUiState();
     renderOnboard();
+    syncPersonalHeader();
   }
   /** Neither act means anything to them. Record it so the pair never returns, but
       write no preference: a guessed answer is worse than no answer. */
@@ -720,14 +726,17 @@
       const ax = it.stretch.ax, poles = AXIS_POLES[ax.k];
       const toward = poles.to[it.lead.v[ax.i] > 0 ? 1 : 0];
       const from = poles.from[ax.b > 0 ? 1 : 0];
-      it.reason = toward && from ? `You lean ${from}. This one is ${toward}.` : "Further from your usual";
+      // Name the act: two cards on the same axis otherwise carry the identical line.
+      it.reason = toward && from ? `You lean ${from}. ${it.lead.name} is ${toward}.` : "Further from your usual";
     }
     return { id: "stretch", title: "Something a little different", items,
       blurb: "Close to your taste in every way but one." };
   }
   // Shared dedupe bookkeeping for the rails above.
-  const free = (c, ctx) => !ctx.events.has(showKey(c.e)) && !ctx.artists.has(c.lead.key);
-  const claim = (c, ctx) => { ctx.events.add(showKey(c.e)); ctx.artists.add(c.lead.key); };
+  // Now that a rail card shows the whole bill, "no artist twice" has to cover every
+  // act on the card, not just the one the rail is about.
+  const free = (c, ctx) => !ctx.events.has(showKey(c.e)) && !c.artists.some((a) => ctx.artists.has(artistKey(a)));
+  const claim = (c, ctx) => { ctx.events.add(showKey(c.e)); for (const a of c.artists) ctx.artists.add(artistKey(a)); };
   function dedupeByArtist(list, ctx, n) {
     const out = [], seen = new Set();
     for (const c of list) {
@@ -766,10 +775,10 @@
      so nothing here depends on a gesture anyone has to discover. */
   const REACH_PRESETS = [
     { label: "All sizes", range: [0, 4] },
-    { label: "Underground", sub: "under 5k", range: [0, 1] },
-    { label: "Small & rising", sub: "under 50k", range: [0, 2] },
-    { label: "Mid-size", sub: "5k to 500k", range: [2, 3] },
-    { label: "Big names", sub: "50k up", range: [3, 4] },
+    { label: "Underground", sub: "under 5k listeners", range: [0, 1] },
+    { label: "Rising", sub: "under 50k listeners", range: [0, 2] },
+    { label: "Mid-size", sub: "5k to 500k listeners", range: [2, 3] },
+    { label: "Big names", sub: "50k listeners up", range: [3, 4] },
   ];
   const SOURCE_PRESETS = [
     { label: "Everything", value: ["songkick", "do604"] },
@@ -835,12 +844,16 @@
     host.innerHTML = KNOBS.map((k) => {
       const opts = k.options(), i = k.index();
       const cur = i >= 0 ? opts[i] : { label: "Custom", sub: `${TIER_NAMES[state.reach[0]]}–${TIER_NAMES[state.reach[1]]}` };
+      // Every position is written out and the chosen one is highlighted, so the dial
+      // reads like a faceplate rather than a mystery. The words are buttons too.
+      const words = opts.map((o, n) => `<button class="knobOpt${n === i ? " on" : ""}" data-knob-opt="${k.id}:${n}"
+        title="${esc(o.label)}${o.sub ? " — " + esc(o.sub) : ""}">${esc(o.label)}</button>`).join("");
       return `<div class="knob">
         <div class="knobLabel">${esc(k.label)}</div>
         <div class="knobDial" data-knob="${k.id}" role="slider" tabindex="0"
              aria-label="${esc(k.label)}" aria-valuemin="0" aria-valuemax="${opts.length - 1}"
              aria-valuenow="${Math.max(0, i)}" aria-valuetext="${esc(cur.label)}">${knobSvg(i, opts.length)}</div>
-        <div class="knobValue">${esc(cur.label)}${cur.sub ? `<small>${esc(cur.sub)}</small>` : ""}</div>
+        <div class="knobOpts">${i < 0 ? `<button class="knobOpt on" disabled>${esc(cur.label)}</button>` : ""}${words}</div>
       </div>`;
     }).join("");
     // Many cities will not fit on a dial; fall back to the select in the filters module.
@@ -866,6 +879,13 @@
     k.set(i);
   }
   $("#knobs").addEventListener("click", (ev) => {
+    const opt = ev.target.closest("[data-knob-opt]");
+    if (opt) {
+      const [id, n] = opt.dataset.knobOpt.split(":");
+      const k = KNOBS.find((x) => x.id === id);
+      if (k) k.set(knobStep(k, +n));
+      return;
+    }
     const el = ev.target.closest("[data-knob]"); if (!el) return;
     onKnobPoint(el, ev);
   });
@@ -940,48 +960,114 @@
     }).join("");
     el.hidden = false;
     el.innerHTML = `
-      <div class="obHead">
-        <div>
-          <div class="obKicker">${tuning ? "A few more to sharpen this" : r.n === 0 ? "Let's figure out what you might want to see live" : r.n >= 4 ? "Getting harder" : "Which would you rather see live?"}</div>
-          ${r.n === 0 && !tuning ? `<div class="obSub">Two acts, pick one. Press play if you don't remember how they sound.</div>` : ""}
-        </div>
-        <div class="obProg">${dots}<button class="btn ghost obSkip" id="obSkip">${tuning ? "Done" : "Skip survey"}</button></div>
-      </div>
+      <div class="obHead"><div class="obKicker">${tuning ? "A few more to sharpen this" : r.n === 0 ? "Let's figure out what you might want to see live" : r.n >= 4 ? "Getting harder" : "Which would you rather see live?"}</div></div>
       <div class="vsRow">
         ${artistCard(r.a, "a")}
         <div class="vsOr">vs</div>
         ${artistCard(r.b, "b")}
       </div>
-      <div class="obFoot"><button class="btn ghost obPass" id="obPass">Neither — skip this pair</button></div>`;
+      <div class="obFoot">
+        <span class="obProg">${dots}</span>
+        <button class="btn ghost obPass" id="obPass">Neither</button>
+        <button class="btn ghost obSkip" id="obSkip">${tuning ? "Done" : "Skip survey"}</button>
+      </div>`;
     $("#obSkip").onclick = () => finishOnboarding(!tuning);
     $("#obPass").onclick = passRound;
   }
 
   /* ---- For You ---- */
-  function gigCard(item) {
-    const e = item.e, k = showKey(e), isSaved = saved.has(k);
-    const lead = item.lead, t = lead.tracks[0];
-    const on = playing && t && playing.trackId === t.id;
-    const srcLabel = e.source === "do604" ? "Details" : "Tickets";
-    return `<article class="rec${isSaved ? " saved" : ""}" data-key="${esc(k)}">
-      <div class="recWhy">${esc(item.reason || "")}</div>
-      <div class="recBody">
-        ${lead.image ? `<img class="recImg" src="${esc(lead.image)}" alt="" loading="lazy">` : ""}
-        <div class="recInfo">
-          <div class="recName">${esc(lead.name)}${lead.tier ? `<span class="pill">${TIER_NAMES[lead.tier]}</span>` : ""}</div>
-          <div class="recWhen">${fmtDate(e.date)} · ${esc(e.venue || "Venue TBA")}${e.source === "do604" ? ` <span class="pill">local</span>` : ""}</div>
-          <div class="recActs">
-            ${t ? `<button class="play${on ? " on" : ""}" data-play="${esc(t.id)}" data-key="${esc(k)}" data-artist="${esc(lead.name)}" data-track="${esc(t.name)}" data-pool="${esc(lead.key)}" title="Play">${on ? "◼" : "▶"}</button><span class="recTrack">${esc(t.name)}</span>` : ""}
-            <button class="star${isSaved ? " on" : ""}" data-save="${esc(k)}" aria-pressed="${isSaved}" title="${isSaved ? "Remove from my shows" : "Save to my shows"}">${isSaved ? "★" : "☆"}</button>
-            <a class="lnk" href="${esc(e.url)}" target="_blank" rel="noopener" data-ticket="${esc(lead.key)}">${srcLabel} ↗</a>
-          </div>
+  /** The one show card on the site. All Gigs and every For You rail render this,
+      so the two can never drift apart; the rails just pass a reason line and a
+      date, which All Gigs gets from its own day heading instead. */
+  function showCard(e, artists, opts = {}) {
+    const k = showKey(e), isSaved = saved.has(k);
+    const srcLabel = e.source === "do604" ? "Details on Do604" : "Tickets & info";
+    return `<article class="show${isSaved ? " saved" : ""}" data-key="${esc(k)}">
+      ${opts.why ? `<div class="why">${esc(opts.why)}</div>` : ""}
+      <div class="showhead">
+        <div class="venue">${opts.withDate ? `<span class="vdate">${fmtDate(e.date)}</span> · ` : ""}<span class="vname">${esc(e.venue || "Venue TBA")}</span>${e.source === "do604" ? ` <span class="pill">local</span>` : ""}${e.locality && !e.venue?.includes(e.locality) ? ` · ${esc(e.locality)}` : ""}${timeOf(e.start) ? `<span class="time">${timeOf(e.start).replace(" · ", "")}</span>` : ""}</div>
+        <div class="showactions">
+          <a class="lnk" href="${esc(e.url)}" target="_blank" rel="noopener" data-ticket="${esc(artistKey(artists[0] || {}))}">${srcLabel} ↗</a>${(e.also_listed || []).filter((x) => x.url).map((x) => `<a class="lnk" href="${esc(x.url)}" target="_blank" rel="noopener">${x.source === "do604" ? "Do604" : "Songkick"} ↗</a>`).join("")}
+          <button class="star${isSaved ? " on" : ""}" data-save="${esc(k)}" title="${isSaved ? "Remove from my shows" : "Save to my shows"}" aria-pressed="${isSaved}">${isSaved ? "★" : "☆"}</button>
         </div>
       </div>
+      ${artists.map((a) => artistRow(a, k)).join("")}
     </article>`;
   }
+  function artistRow(a, k) {
+    return `<div class="artist" data-artist-id="${esc(artistKey(a))}">
+      ${a.image ? `<img src="${esc(a.image)}" alt="" loading="lazy">` : ""}
+      <div class="ainfo">
+        <div class="who"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.name)}</a>${a.spotify_name && norm(a.spotify_name) !== norm(a.name) ? `<small>as “${esc(a.spotify_name)}” on Spotify</small>` : ""}${a.also_billed?.length ? `<small>also billed as ${a.also_billed.map((n) => `“${esc(n)}”`).join(", ")}</small>` : ""}${a.reach?.listeners ? `<span class="reach" title="Last.fm listeners">${fmtListeners(a.reach.listeners)} listeners</span>` : `<span class="reach">not on Last.fm</span>`}${artistGenres(a).slice(0, 3).map((g) => `<small class="pill">${esc(g)}</small>`).join(" ")}</div>
+        <div class="tracks">${(a.tracks || []).map((t) => `<button class="play${playing && playing.trackId === t.id ? " on" : ""}" data-play="${t.id}" data-key="${esc(k)}" data-artist="${esc(a.name)}" data-track="${esc(t.name)}" data-pool="${esc(artistKey(a))}" title="Play in page">${playing && playing.trackId === t.id ? "◼" : "▶"}</button><a href="https://open.spotify.com/track/${t.id}" target="_blank" rel="noopener">${esc(t.name)}</a>`).join(`<span class="sep">·</span>`)}</div>
+      </div>
+    </div>`;
+  }
+  // A rail card is the same card, carrying its reason and its own date.
+  const gigCard = (item) => showCard(item.e, item.artists, { why: item.reason, withDate: true });
+
+  /** Open state for the two modules. For you is open until the visitor closes it;
+      Advanced search is closed until they open it. Both choices stick. */
+  function applyUiState() {
+    const ui = store.get(UI_KEY, {});
+    state.applyingUi = true;
+    $("#personalModule").open = ui.personalModule !== undefined ? ui.personalModule : true;
+    $("#advancedModule").open = ui.advancedModule !== undefined ? ui.advancedModule : false;
+    state.applyingUi = false;
+  }
+  function syncPersonalHeader(done) {
+    const running = state.onboarding && state.round;
+    if (running) {
+      $("#fyTitle").textContent = "For you";
+      const n = answeredCount() + 1;
+      $("#fySub").textContent = `${(taste.onboarding.targetRounds ? "tuning" : "question")} ${n}${taste.onboarding.targetRounds ? "" : ` of about ${OB.minRounds}`} · collapse to skip straight to the listings`;
+      return;
+    }
+    if (done === undefined) done = taste.onboarding.done;
+    $("#fyTitle").textContent = hasTaste() && done ? "We've got your vibe" : "For you";
+    // The taste line lives in the body; repeating it in the header just doubles it up.
+    const t = state.fyCount || 0;
+    $("#fySub").textContent = t ? `${t} show${t === 1 ? "" : "s"} picked for you` : "";
+  }
+
+  /** Who the listings are missing. The data has carried this all along in
+      `unmatched`; the site simply never showed it. Grouped by why, because
+      "billed but not on Spotify" and "matched but no playable track" are
+      different problems. */
+  function renderMissing() {
+    const rows = state.data.unmatched || [];
+    const wrap = $("#missingWrap");
+    if (!rows.length) { wrap.hidden = true; return; }
+    wrap.hidden = false;
+    const REASONS = {
+      not_on_lastfm: "Nobody has ever scrobbled this name, so it was never sent to Spotify",
+      no_match: "Searched on Spotify, no artist matched the billed name",
+      no_tracks: "Matched an artist on Spotify, but no playable track came back",
+    };
+    const byReason = new Map();
+    for (const r of rows) {
+      const key = r.reason || "no_match";
+      if (!byReason.has(key)) byReason.set(key, []);
+      byReason.get(key).push(r);
+    }
+    $("#missingHead").textContent = `${rows.length} billed act${rows.length === 1 ? "" : "s"} left out`;
+    $("#missing").innerHTML =
+      `<p class="note">GigAmp needs a Spotify track to let you hear an act, so anything it cannot
+        resolve is left out of the listings. These are the names it could not place.</p>` +
+      [...byReason.entries()].sort((a, b) => b[1].length - a[1].length).map(([reason, list]) => `
+        <h4 style="margin:12px 0 4px;font-size:12.5px;color:var(--text)">${esc(REASONS[reason] || reason)} <span class="pill">${list.length}</span></h4>
+        <table><tbody>${list.slice(0, 60).map((r) => `<tr>
+          <td class="who">${esc(r.artist)}</td>
+          <td class="why">${esc(r.date || "")}${r.event ? ` · ${esc(r.event)}` : ""}${
+            r.candidates?.length ? `<div class="cand">Spotify offered: ${r.candidates.map(esc).join(", ")}</div>` : ""}</td>
+        </tr>`).join("")}</tbody></table>
+        ${list.length > 60 ? `<p class="note">…and ${list.length - 60} more.</p>` : ""}`).join("");
+  }
+
   function renderForYou() {
-    const mod = $("#forYouModule"), el = $("#forYou");
-    const hide = () => { mod.hidden = true; el.innerHTML = ""; $("#allGigsHead").hidden = true; };
+    const mod = $("#personalModule"), el = $("#forYou");
+    // The module still has to show while the survey is running, even with no taste yet.
+    const hide = () => { el.innerHTML = ""; mod.hidden = !state.onboarding; $("#allGigsHead").hidden = true; syncPersonalHeader(); };
     if (!state.data || !hasTaste()) return hide();
     const cands = recommendCandidates();
     const ctx = { events: new Set(), artists: new Set() };
@@ -991,11 +1077,11 @@
     if (!rails.length) return hide();
 
     mod.hidden = false;
-    if (!mod.dataset.touched) mod.open = true;             // open by default, but respect a manual collapse
+    applyUiState();
     const done = taste.onboarding.done && !state.onboarding;
-    $("#fyTitle").textContent = done ? "We've got your vibe" : "Shaping up";
     const total = rails.reduce((n, r) => n + Math.min(r.items.length, RAIL.size), 0);
-    $("#fySub").textContent = `${total} show${total === 1 ? "" : "s"} picked for you`;
+    state.fyCount = total;
+    syncPersonalHeader(done);
     el.innerHTML = `
       <p class="fyLine">${esc(tasteLine())} <button class="railMore" id="fyTune" style="margin-left:6px">${done ? "tune this" : "keep going"}</button></p>
       ${rails.map((r) => {
@@ -1030,25 +1116,7 @@
       let html = "", day = "";
       for (const e of r.shows) {
         if (e.date !== day) { day = e.date; html += `<div class="day">${fmtDate(e.date)}</div>`; }
-        const k = showKey(e), isSaved = saved.has(k);
-        const srcLabel = e.source === "do604" ? "Details on Do604" : "Tickets & info";
-        html += `<article class="show${isSaved ? " saved" : ""}" data-key="${esc(k)}">
-          <div class="showhead">
-            <div class="venue"><span class="vname">${esc(e.venue || "Venue TBA")}</span>${e.source === "do604" ? ` <span class="pill">local</span>` : ""}${e.locality && !e.venue?.includes(e.locality) ? ` · ${esc(e.locality)}` : ""}${timeOf(e.start) ? `<span class="time">${timeOf(e.start).replace(" · ", "")}</span>` : ""}</div>
-            <div class="showactions">
-              <a class="lnk" href="${esc(e.url)}" target="_blank" rel="noopener" data-ticket="${esc(artistKey(e.artists[0] || {}))}">${srcLabel} ↗</a>${(e.also_listed || []).filter((x) => x.url).map((x) => `<a class="lnk" href="${esc(x.url)}" target="_blank" rel="noopener">${x.source === "do604" ? "Do604" : "Songkick"} ↗</a>`).join("")}
-              <button class="star${isSaved ? " on" : ""}" data-save="${esc(k)}" title="${isSaved ? "Remove from my shows" : "Save to my shows"}" aria-pressed="${isSaved}">${isSaved ? "★" : "☆"}</button>
-            </div>
-          </div>
-          ${e.artists.map((a) => `
-            <div class="artist" data-artist-id="${esc(artistKey(a))}">
-              ${a.image ? `<img src="${esc(a.image)}" alt="" loading="lazy">` : ""}
-              <div class="ainfo">
-                <div class="who"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.name)}</a>${a.spotify_name && norm(a.spotify_name) !== norm(a.name) ? `<small>as “${esc(a.spotify_name)}” on Spotify</small>` : ""}${a.also_billed?.length ? `<small>also billed as ${a.also_billed.map((n) => `“${esc(n)}”`).join(", ")}</small>` : ""}${a.reach?.listeners ? `<span class="reach" title="Last.fm listeners">${fmtListeners(a.reach.listeners)} listeners</span>` : `<span class="reach">not on Last.fm</span>`}${artistGenres(a).slice(0, 3).map((g) => `<small class="pill">${esc(g)}</small>`).join(" ")}</div>
-                <div class="tracks">${a.tracks.map((t) => `<button class="play${playing && playing.trackId === t.id ? " on" : ""}" data-play="${t.id}" data-key="${esc(k)}" data-artist="${esc(a.name)}" data-track="${esc(t.name)}" data-pool="${esc(artistKey(a))}" title="Play in page">${playing && playing.trackId === t.id ? "◼" : "▶"}</button><a href="https://open.spotify.com/track/${t.id}" target="_blank" rel="noopener">${esc(t.name)}</a>`).join(`<span class="sep">·</span>`)}</div>
-              </div>
-            </div>`).join("")}
-        </article>`;
+        html += showCard(e, e.artists);
       }
       $("#results").innerHTML = html;
     }
@@ -1089,7 +1157,7 @@
   function renderSources() { for (const b of document.querySelectorAll("[data-src]")) b.checked = state.sources.includes(b.dataset.src); }
   function renderAll() {
     renderSources(); renderKnobs(); renderVenues(); renderGenres(); renderReach();
-    renderFilterSummary(); renderOnboard(); renderForYou(); renderResults(); writeHash();
+    renderFilterSummary(); renderMissing(); renderOnboard(); renderForYou(); renderResults(); writeHash();
   }
   /** One line on the collapsed filters module, so nothing is silently narrowing the list. */
   function renderFilterSummary() {
@@ -1205,7 +1273,16 @@
   $("#savedBtn").onclick = () => { state.savedOnly = !state.savedOnly; renderResults(); };
   $("#tuneBtn").onclick = () => { startOnboarding("tune"); $("#onboard").scrollIntoView({ behavior: "smooth", block: "start" }); };
   // Remember a manual collapse of For You so a re-render does not reopen it.
-  $("#forYouModule").addEventListener("toggle", (e) => { e.target.dataset.touched = "1"; });
+  // Collapsing the whole personalised block is remembered, so someone who only wants
+  // the listings gets them straight away on every visit.
+  for (const id of ["personalModule", "advancedModule"]) {
+    $("#" + id).addEventListener("toggle", (e) => {
+      if (state.applyingUi) return;
+      const ui = store.get(UI_KEY, {});
+      ui[id] = e.target.open;
+      store.set(UI_KEY, ui);
+    });
+  }
 
   // ---------- events ----------
   $("#city").addEventListener("change", async (e) => { state.city = e.target.value; state.venues = null; state.genres = []; await loadCity(); buildPool(); renderAll(); });
