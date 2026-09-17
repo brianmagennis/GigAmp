@@ -16,6 +16,17 @@ window.GIGAMP_CONFIG = {
     minRounds: 5,
     maxRounds: 8,
     settledAxes: 4,
-    settledConf: 0.5
+    settledConf: 0.5,
+    // "Tune For You" asks this many further questions on the least certain axes
+    // instead of starting over, and maxPasses caps how many pairs someone can
+    // skip before we stop asking.
+    tuneRounds: 3,
+    maxPasses: 6
+  },
+
+  // For You rails: cards shown per rail, and how many a "more" link reveals.
+  rails: {
+    size: 2,
+    expanded: 6
   }
 };

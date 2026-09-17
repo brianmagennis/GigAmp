@@ -22,9 +22,15 @@
       forYou: () => { const s = document.createElement("section"); s.id = "forYou"; s.hidden = true;
         ($("#results") || document.body).insertAdjacentElement("beforebegin", s); },
       plName: () => { const i = document.createElement("input"); i.type = "text"; i.id = "plName"; i.hidden = true; document.body.appendChild(i); },
+      city: () => { const sel = document.createElement("select"); sel.id = "city"; sel.hidden = true; document.body.appendChild(sel); },
+      forYouModule: () => { const d = document.createElement("details"); d.id = "forYouModule"; d.className = "module"; d.hidden = true;
+        d.innerHTML = `<summary><h2 id="fyTitle">For you</h2><span class="modSub" id="fySub"></span></summary><div class="modBody"><div id="forYou"></div></div>`;
+        ($("#results") || document.body).insertAdjacentElement("beforebegin", d); },
+      filterModule: () => { const d = document.createElement("details"); d.id = "filterModule"; d.className = "module"; document.body.appendChild(d); },
     };
     for (const [id, make] of Object.entries(need)) if (!document.getElementById(id)) { try { make(); } catch {} }
-    for (const id of ["status", "results", "unmatched", "dataAge", "subJson", "nShows", "nArtists", "nTracks", "allGigsHead", "tuneBtn", "copyList"])
+    for (const id of ["status", "results", "unmatched", "dataAge", "subJson", "nShows", "nArtists", "nTracks", "allGigsHead",
+      "tuneBtn", "copyList", "knobs", "fySub", "fyTitle", "filterSummary", "faceCount", "citySelectWrap", "forYou"])
       if (!document.getElementById(id)) { const el = document.createElement("div"); el.id = id; el.hidden = true; document.body.appendChild(el); }
   })();
 
@@ -137,7 +143,7 @@
     behaviour: { plays: {}, ticketClicks: {}, dismissed: [] },
     // What we calculated. Always rebuildable from the two above.
     derived: { axes: {}, artistAffinity: {}, genreAffinity: {}, updatedAt: null },
-    onboarding: { done: false, rounds: 0, startedAt: null, completedAt: null, skipped: false },
+    onboarding: { done: false, rounds: 0, startedAt: null, completedAt: null, skipped: false, targetRounds: 0 },
   });
   let taste = blankTaste();
   const saveTaste = () => store.set(TASTE_KEY, taste);
@@ -237,10 +243,12 @@
     reach: [0, 4],    // inclusive tier range: 0 unknown, 1 underground, 2 emerging, 3 established, 4 big
     savedOnly: false,
     index: null, data: null,
-    pool: [],         // artist pool for comparisons and recommendations
+    seeds: [],        // well-known acts from docs/seed-artists.json, no local gig required
+    pool: [],         // comparison pool: seeds plus local acts
     poolByKey: new Map(),
     round: null,      // the comparison on screen: { n, a, b, plays:{} }
     onboarding: false,
+    railOpen: new Set(),
   };
   const store = {
     get(k, d) { try { return JSON.parse(localStorage.getItem(k) ?? "null") ?? d; } catch { return d; } },
@@ -354,8 +362,8 @@
      comparison game and For You can see acts the sidebar is currently hiding. */
   function buildPool() {
     const by = new Map();
+    // Local acts first: anything with a gig in this city, whatever its size.
     for (const e of state.data.events) {
-      const inWindow = true;
       for (const a of collapseSameSpotify(e.artists)) {
         if (!a.tracks || !a.tracks.length) continue;         // needs a track so Play works
         const key = artistKey(a);
@@ -364,13 +372,25 @@
           const { v, known } = artistVector(a);
           p = { key, name: a.name, image: a.image, url: a.url, tracks: a.tracks,
             tier: tierOf(a), listeners: a.reach?.listeners || 0, genres: artistGenres(a),
-            v, known, events: [], nextDate: null };
+            v, known, local: true, events: [], nextDate: null };
           by.set(key, p);
         }
+        p.local = true;
         p.events.push(e);
         if (!p.nextDate || e.date < p.nextDate) p.nextDate = e.date;
-        void inWindow;
       }
+    }
+    // Then the seed pool. These are the measuring instrument for the taste game and
+    // are deliberately NOT required to be playing here; they never enter the rails,
+    // which only ever rank real gigs.
+    for (const a of state.seeds) {
+      if (!a.tracks || !a.tracks.length) continue;
+      const key = artistKey(a);
+      if (by.has(key)) continue;                             // already here with a real gig
+      const { v, known } = artistVector(a);
+      by.set(key, { key, name: a.name, image: a.image, url: a.url, tracks: a.tracks,
+        tier: tierOf(a), listeners: a.reach?.listeners || 0, genres: artistGenres(a),
+        v, known, local: false, events: [], nextDate: null });
     }
     state.pool = [...by.values()].filter((p) => p.known);
     state.poolByKey = by;
@@ -386,7 +406,9 @@
   /* ===================================================================== */
   /* Adaptive comparison selection                                          */
   /* ===================================================================== */
-  const OB = Object.assign({ minRounds: 5, maxRounds: 8, settledAxes: 4, settledConf: 0.5 }, CFG.onboarding || {});
+  const OB = Object.assign({ minRounds: 5, maxRounds: 8, settledAxes: 4, settledConf: 0.5,
+    tuneRounds: 3, maxPasses: 6 }, CFG.onboarding || {});
+  const RAIL = Object.assign({ size: 2, expanded: 6 }, CFG.rails || {});
   const SEP_MAX = 2.2, SEP_MIN = 0.55;
 
   const shownKeys = () => {
@@ -438,11 +460,14 @@
         let score = info - 1.4 * Math.abs(sep - targetSep);
         score += famW * (familiarity(a) + familiarity(b)) / 2;
         if (alignW) score += alignW * (tasteSim(a.v) + tasteSim(b.v)) / 2;
-        // Late on, a rising local act opposite something known is the interesting question.
+        // Late on, a rising local act opposite something known is the interesting
+        // question, and it is the one place the game itself can surface a discovery.
         if (emergingRound) {
           const lo = (p) => p.tier > 0 && p.tier <= 2;
           if (lo(a) !== lo(b)) score += 0.45;
           if (lo(a) && lo(b)) score += 0.2;
+          if (a.local !== b.local) score += 0.35;
+          if ((a.local && a.tier <= 2) || (b.local && b.tier <= 2)) score += 0.3;
         }
         // Two acts with identical genre vectors teach nothing.
         if (sep < 0.12) score -= 3;
@@ -455,27 +480,55 @@
     return round % 2 ? [best[1], best[0]] : best;
   }
 
+  const answeredCount = () => taste.explicit.comparisons.filter((c) => c.chose).length;
+  const shownCount = () => taste.explicit.comparisons.length;
+
   function onboardingComplete() {
-    const n = taste.explicit.comparisons.filter((c) => c.chose).length;
+    const n = answeredCount();
+    // A "tune" run sets a target a few rounds above where the profile already is.
+    // Without this the stop rule is satisfied the moment the run starts and the
+    // whole thing finishes before a single question is drawn.
+    const target = taste.onboarding.targetRounds || 0;
+    if (n < target) return n >= OB.maxRounds + OB.tuneRounds;
     if (n >= OB.maxRounds) return true;
     if (n >= OB.minRounds && settledAxes() >= OB.settledAxes) return true;
     return false;
   }
 
-  function startOnboarding(force) {
+  /** mode: undefined = first run, "tune" = a few more questions on what is least certain. */
+  function startOnboarding(mode) {
     if (!state.pool.length) return;
-    if (force) { taste.onboarding.done = false; taste.onboarding.skipped = false; }
+    if (mode === "tune") {
+      taste.onboarding.done = false;
+      taste.onboarding.skipped = false;
+      taste.onboarding.targetRounds = answeredCount() + OB.tuneRounds;
+    }
     if (!taste.onboarding.startedAt) taste.onboarding.startedAt = Date.now();
     state.onboarding = true;
     nextRound();
   }
   function nextRound() {
-    const n = taste.explicit.comparisons.filter((c) => c.chose).length;
+    const n = answeredCount();
     if (onboardingComplete()) return finishOnboarding();
+    // Somebody who passes on everything would otherwise loop forever through the pool.
+    if (shownCount() >= OB.maxRounds + OB.maxPasses + (taste.onboarding.targetRounds || 0)) return finishOnboarding();
     const pair = nextPair(n);
     if (!pair) return finishOnboarding();
     state.round = { n, a: pair[0], b: pair[1], shownAt: Date.now(), plays: {} };
     renderOnboard();
+  }
+  /** Neither act means anything to them. Record it so the pair never returns, but
+      write no preference: a guessed answer is worse than no answer. */
+  function passRound() {
+    const r = state.round; if (!r) return;
+    const snap = (p) => ({ key: p.key, name: p.name, v: p.v, genres: p.genres, tier: p.tier });
+    taste.explicit.comparisons.push({
+      round: r.n, a: snap(r.a), b: snap(r.b), chose: null, passed: true,
+      shownAt: r.shownAt, answeredAt: Date.now(), plays: { ...r.plays },
+    });
+    state.round = null;
+    saveTaste();
+    nextRound();
   }
   function answerRound(key) {
     const r = state.round; if (!r) return;
@@ -484,7 +537,7 @@
       round: r.n, a: snap(r.a), b: snap(r.b), chose: key,
       shownAt: r.shownAt, answeredAt: Date.now(), plays: { ...r.plays },
     });
-    taste.onboarding.rounds = taste.explicit.comparisons.filter((c) => c.chose).length;
+    taste.onboarding.rounds = answeredCount();
     state.round = null;
     recomputeDerived(); saveTaste();
     nextRound();
@@ -494,6 +547,7 @@
     state.onboarding = false; state.round = null;
     taste.onboarding.done = true;
     taste.onboarding.skipped = !!skipped;
+    taste.onboarding.targetRounds = 0;
     taste.onboarding.completedAt = Date.now();
     recomputeDerived(); saveTaste();
     renderOnboard(); renderForYou();
@@ -542,12 +596,14 @@
     return out;
   }
 
-  /* Rails. Two dedupe rules run across the whole For You block:
-     an event appears at most once, and so does an ARTIST. Three nights of the
-     same band is a calendar, not discovery. */
+  /* Rails. Two dedupe rules run across the whole For You block: an event appears
+     at most once, and so does an ARTIST. Three nights of the same band is a
+     calendar, not discovery. Each rail shows RAIL.size cards with a link to open
+     the rest, so the section stays short without throwing away good matches. */
   function railBecause(cands, ctx) {
     // Seed on artists they actually chose. Later rounds are the more refined
     // answers, so a late pick outranks an early one at the same affinity.
+    // The seed itself may have no gig at all — it is a reference point, not a listing.
     const roundOf = new Map();
     taste.explicit.comparisons.forEach((c, i) => { if (c.chose) roundOf.set(c.chose, i); });
     const picks = Object.entries(taste.derived.artistAffinity)
@@ -569,13 +625,14 @@
       const own = pool.filter((c) => c.lead.key === seed.key).sort((a, b) => a.e.start.localeCompare(b.e.start))[0];
       const others = pool.filter((c) => c.lead.key !== seed.key && c.rel > 0.55)
         .sort((a, b) => (b.rel * 0.6 + b.score * 0.4) - (a.rel * 0.6 + a.score * 0.4));
-      const items = dedupeByArtist([...(own ? [own] : []), ...others], ctx, 4);
-      if (items.length < 2) continue;
+      const items = dedupeByArtist([...(own ? [own] : []), ...others], ctx, RAIL.expanded);
+      if (items.length < RAIL.size) continue;
       for (const it of items) {
         claim(it, ctx);
         it.reason = it.lead.key === seed.key ? `You picked ${seed.name} — they're playing` : `Because you liked ${seed.name}`;
       }
       rails.push({ id: "because", title: `Because you liked ${seed.name}`, items });
+      if (rails.length === 2) break;
     }
     return rails;
   }
@@ -588,13 +645,13 @@
     const items = dedupeByArtist(
       cands.filter((c) => free(c, ctx))
         .filter((c) => c.lead.tier > 0 && c.lead.tier <= 2 && c.score > 0.18 && !known.has(c.lead.key))
-        .sort((a, b) => b.score - a.score), ctx, 4);
+        .sort((a, b) => b.score - a.score), ctx, RAIL.expanded);
     if (!items.length) return null;
     // The act of theirs this one most resembles, never the act itself.
     const nearest = (p) => {
       let bk = null, bs = 0;
-      for (const [k, s] of Object.entries(taste.derived.artistAffinity)) {
-        if (s <= 0.5 || k === p.key) continue;
+      for (const [k, sc] of Object.entries(taste.derived.artistAffinity)) {
+        if (sc <= 0.5 || k === p.key) continue;
         const q = state.poolByKey.get(k); if (!q) continue;
         const sim = vecSim(p.v, q.v);
         if (sim > bs) { bs = sim; bk = q; }
@@ -609,15 +666,64 @@
     }
     return { id: "emerging", title: "Before they blow up", items, blurb: "Smaller acts that match your picks, playing here soon." };
   }
-  function railMore(cands, ctx) {
-    const items = dedupeByArtist(cands.filter((c) => free(c, ctx) && c.score > 0.05), ctx, 6);
+
+  /* Words for each end of each axis. Two sets, because the sentence needs
+     "You lean <from>. This one is <to>." to read like English in both directions.
+     An axis with no usable phrase on the side we need is simply not used. */
+  const AXIS_POLES = {
+    guitar: { from: ["electronic music", "guitars"], to: ["electronic", "guitar music"] },
+    energy: { from: ["the gentler stuff", "loud and fast"], to: ["gentler", "louder"] },
+    pop:    { from: ["leftfield", "big hooks"], to: ["more leftfield", "poppier"] },
+    urban:  { from: ["", "hip hop and r&b"], to: ["", "hip hop"] },
+    roots:  { from: ["", "roots and acoustic"], to: ["", "roots music"] },
+    dance:  { from: ["music to listen to", "music to dance to"], to: ["for listening", "made for dancing"] },
+    reach:  { from: ["smaller rooms", "the big names"], to: ["a much smaller act", "a much bigger name"] },
+  };
+  /** Something a little different: agrees with the profile on most axes but sits
+      a real distance away on exactly one confident axis. Not the leftovers rail —
+      if nothing is genuinely a stretch, this shows nothing at all. */
+  function railStretch(cands, ctx) {
+    const axes = AXES.map((k, i) => ({ k, i, b: beliefOf(k), c: confOf(k) }))
+      .filter((x) => x.c >= 0.45 && Math.abs(x.b) >= 0.35);
+    if (!axes.length) return null;
+    const scored = [];
+    for (const c of cands) {
+      if (!free(c, ctx)) continue;
+      let best = null;
+      for (const ax of axes) {
+        const poles = AXIS_POLES[ax.k];
+        if (!poles.from[ax.b > 0 ? 1 : 0] || !poles.to[c.lead.v[ax.i] > 0 ? 1 : 0]) continue;
+        const away = Math.abs(c.lead.v[ax.i] - ax.b);
+        if (away < 0.9) continue;                        // not actually a stretch
+        if (Math.sign(c.lead.v[ax.i]) === Math.sign(ax.b)) continue;
+        // Agreement on everything except the axis we are stretching.
+        let num = 0, den = 0;
+        for (let j = 0; j < AXES.length; j++) {
+          if (j === ax.i) continue;
+          const cf = confOf(AXES[j]), bl = beliefOf(AXES[j]);
+          num += cf * bl * c.lead.v[j];
+          den += cf * Math.abs(bl);
+        }
+        const rest = den > 0.001 ? num / den : 0;
+        if (rest < 0.15) continue;                       // otherwise it is just unrelated
+        const s = rest * 0.6 + Math.min(1, away / 2) * 0.4;
+        if (!best || s > best.s) best = { s, ax, away, rest };
+      }
+      if (best) scored.push({ ...c, stretch: best });
+    }
+    if (!scored.length) return null;
+    scored.sort((a, b) => b.stretch.s - a.stretch.s);
+    const items = dedupeByArtist(scored, ctx, RAIL.expanded);
     if (!items.length) return null;
     for (const it of items) {
       claim(it, ctx);
-      const g = (it.lead.genres || [])[0];
-      it.reason = g ? `${g} · matches your picks` : "Matches your picks";
+      const ax = it.stretch.ax, poles = AXIS_POLES[ax.k];
+      const toward = poles.to[it.lead.v[ax.i] > 0 ? 1 : 0];
+      const from = poles.from[ax.b > 0 ? 1 : 0];
+      it.reason = toward && from ? `You lean ${from}. This one is ${toward}.` : "Further from your usual";
     }
-    return { id: "more", title: "You might like this", items };
+    return { id: "stretch", title: "Something a little different", items,
+      blurb: "Close to your taste in every way but one." };
   }
   // Shared dedupe bookkeeping for the rails above.
   const free = (c, ctx) => !ctx.events.has(showKey(c.e)) && !ctx.artists.has(c.lead.key);
@@ -654,14 +760,129 @@
   }
 
   // ---------- rendering ----------
-  function renderCity() {
-    const sel = $("#city");
-    sel.innerHTML = state.index.cities.map((c) => `<option value="${c.slug}">${c.name}</option>`).join("");
-    sel.value = state.city;
+  /* ---- the faceplate: four click-to-step dials ----------------------------
+     A dial points at the value you click, like a real one: the click angle picks
+     the position. Clicking the centre cap steps on by one, and the arrow keys work,
+     so nothing here depends on a gesture anyone has to discover. */
+  const REACH_PRESETS = [
+    { label: "All sizes", range: [0, 4] },
+    { label: "Underground", sub: "under 5k", range: [0, 1] },
+    { label: "Small & rising", sub: "under 50k", range: [0, 2] },
+    { label: "Mid-size", sub: "5k to 500k", range: [2, 3] },
+    { label: "Big names", sub: "50k up", range: [3, 4] },
+  ];
+  const SOURCE_PRESETS = [
+    { label: "Everything", value: ["songkick", "do604"] },
+    { label: "Touring", sub: "ticketed", value: ["songkick"] },
+    { label: "Local", sub: "DIY rooms", value: ["do604"] },
+  ];
+  const WINDOW_PRESETS = [
+    { label: "7 days", value: 7 }, { label: "14 days", value: 14 },
+    { label: "30 days", value: 30 }, { label: "All listed", value: 45 },
+  ];
+  const sameArr = (a, b) => a.length === b.length && a.every((x) => b.includes(x));
+
+  const KNOBS = [
+    {
+      id: "city", label: "City",
+      options: () => state.index.cities.map((c) => ({ label: c.name.split(",")[0], sub: (c.name.split(",")[1] || "").trim() })),
+      index: () => Math.max(0, state.index.cities.findIndex((c) => c.slug === state.city)),
+      set: async (i) => {
+        const c = state.index.cities[i]; if (!c || c.slug === state.city) return;
+        state.city = c.slug; state.venues = null; state.genres = [];
+        await loadCity(); buildPool(); renderAll();
+      },
+    },
+    {
+      id: "source", label: "Sources",
+      options: () => SOURCE_PRESETS,
+      index: () => Math.max(0, SOURCE_PRESETS.findIndex((p) => sameArr(p.value, state.sources))),
+      set: (i) => { state.sources = [...SOURCE_PRESETS[i].value]; renderSources(); renderVenues(); renderGenres(); renderReach(); renderKnobs(); renderForYou(); renderResults(); writeHash(); },
+    },
+    {
+      id: "size", label: "Audience",
+      options: () => REACH_PRESETS,
+      index: () => { const i = REACH_PRESETS.findIndex((p) => p.range[0] === state.reach[0] && p.range[1] === state.reach[1]); return i < 0 ? -1 : i; },
+      set: (i) => { state.reach = [...REACH_PRESETS[i].range]; renderReach(); renderKnobs(); renderResults(); writeHash(); },
+    },
+    {
+      id: "window", label: "Window",
+      options: () => WINDOW_PRESETS,
+      index: () => Math.max(0, WINDOW_PRESETS.findIndex((p) => p.value === state.days)),
+      set: (i) => { state.days = WINDOW_PRESETS[i].value; renderKnobs(); renderForYou(); renderResults(); writeHash(); },
+    },
+  ];
+  const SWEEP = 270;                                    // degrees from first tick to last
+  const angleFor = (i, n) => n <= 1 ? 0 : -SWEEP / 2 + (SWEEP * i) / (n - 1);
+
+  function knobSvg(i, n) {
+    const ticks = Array.from({ length: n }, (_, k) => {
+      const a = (angleFor(k, n) - 90) * Math.PI / 180;
+      const x1 = 50 + 39 * Math.cos(a), y1 = 50 + 39 * Math.sin(a);
+      const x2 = 50 + 48 * Math.cos(a), y2 = 50 + 48 * Math.sin(a);
+      return `<line class="tick${k === i ? " on" : ""}" x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"/>`;
+    }).join("");
+    const rot = i < 0 ? 0 : angleFor(i, n);
+    return `<svg viewBox="0 0 100 100" aria-hidden="true">${ticks}
+      <circle class="face" cx="50" cy="50" r="32"/>
+      <circle class="skirt" cx="50" cy="50" r="26"/>
+      <line class="pointer" x1="50" y1="42" x2="50" y2="21" transform="rotate(${rot.toFixed(1)} 50 50)"${i < 0 ? ' opacity="0.25"' : ""}/>
+      <circle class="cap" cx="50" cy="50" r="7"/></svg>`;
   }
-  function renderDays() {
-    for (const b of $("#days").children) b.setAttribute("aria-pressed", +b.dataset.days === state.days);
+  function renderKnobs() {
+    if (!state.index || !state.data) return;
+    const host = $("#knobs");
+    host.innerHTML = KNOBS.map((k) => {
+      const opts = k.options(), i = k.index();
+      const cur = i >= 0 ? opts[i] : { label: "Custom", sub: `${TIER_NAMES[state.reach[0]]}–${TIER_NAMES[state.reach[1]]}` };
+      return `<div class="knob">
+        <div class="knobLabel">${esc(k.label)}</div>
+        <div class="knobDial" data-knob="${k.id}" role="slider" tabindex="0"
+             aria-label="${esc(k.label)}" aria-valuemin="0" aria-valuemax="${opts.length - 1}"
+             aria-valuenow="${Math.max(0, i)}" aria-valuetext="${esc(cur.label)}">${knobSvg(i, opts.length)}</div>
+        <div class="knobValue">${esc(cur.label)}${cur.sub ? `<small>${esc(cur.sub)}</small>` : ""}</div>
+      </div>`;
+    }).join("");
+    // Many cities will not fit on a dial; fall back to the select in the filters module.
+    const many = state.index.cities.length > 6;
+    $("#citySelectWrap").hidden = !many;
+    if (many) { const sel = $("#city"); sel.innerHTML = state.index.cities.map((c) => `<option value="${c.slug}">${esc(c.name)}</option>`).join(""); sel.value = state.city; }
+    const gen = new Date(state.data.generated_at);
+    $("#faceCount").textContent = `updated ${gen.toLocaleDateString(undefined, { month: "short", day: "numeric" })}`;
   }
+  function knobStep(k, i) { const n = k.options().length; return Math.max(0, Math.min(n - 1, i)); }
+  function onKnobPoint(el, ev) {
+    const k = KNOBS.find((x) => x.id === el.dataset.knob); if (!k) return;
+    const n = k.options().length, box = el.getBoundingClientRect();
+    const dx = ev.clientX - (box.left + box.width / 2), dy = ev.clientY - (box.top + box.height / 2);
+    const r = Math.hypot(dx, dy) / (box.width / 2);
+    let i;
+    if (r < 0.34) { i = knobStep(k, (Math.max(0, k.index()) + 1) % n); }   // centre cap: step on
+    else {
+      let deg = Math.atan2(dx, -dy) * 180 / Math.PI;                       // 0 = pointing up
+      deg = Math.max(-SWEEP / 2, Math.min(SWEEP / 2, deg));
+      i = knobStep(k, Math.round(((deg + SWEEP / 2) / SWEEP) * (n - 1)));
+    }
+    k.set(i);
+  }
+  $("#knobs").addEventListener("click", (ev) => {
+    const el = ev.target.closest("[data-knob]"); if (!el) return;
+    onKnobPoint(el, ev);
+  });
+  $("#knobs").addEventListener("keydown", (ev) => {
+    const el = ev.target.closest("[data-knob]"); if (!el) return;
+    const k = KNOBS.find((x) => x.id === el.dataset.knob); if (!k) return;
+    const n = k.options().length, cur = Math.max(0, k.index());
+    let i = null;
+    if (ev.key === "ArrowRight" || ev.key === "ArrowUp") i = knobStep(k, cur + 1);
+    else if (ev.key === "ArrowLeft" || ev.key === "ArrowDown") i = knobStep(k, cur - 1);
+    else if (ev.key === "Home") i = 0;
+    else if (ev.key === "End") i = n - 1;
+    else if (ev.key === " " || ev.key === "Enter") i = knobStep(k, (cur + 1) % n);
+    if (i === null) return;
+    ev.preventDefault();
+    k.set(i);
+  });
   function renderVenues() {
     const counts = new Map(), locs = new Map();
     for (const e of state.data.events.filter(srcOk)) {
@@ -705,31 +926,35 @@
       if (taste.onboarding.done) {
         el.hidden = false;
         el.innerHTML = `<div class="obDone"><b>No problem.</b> Everything below is every gig in town. <button class="btn ghost" id="obRestart">Try the taste game</button></div>`;
-        $("#obRestart").onclick = () => startOnboarding(true);
+        $("#obRestart").onclick = () => startOnboarding("tune");
         return;
       }
       el.hidden = true; el.innerHTML = ""; return;
     }
     const r = state.round;
-    const total = Math.max(OB.minRounds, Math.min(OB.maxRounds, r.n + (onboardingComplete() ? 0 : 2)));
-    const dots = Array.from({ length: OB.maxRounds }, (_, i) =>
-      `<span class="obDot${i < r.n ? " done" : i === r.n ? " now" : ""}"></span>`).join("");
+    const tuning = (taste.onboarding.targetRounds || 0) > 0;
+    const dots = Array.from({ length: tuning ? OB.tuneRounds : OB.maxRounds }, (_, i) => {
+      const base = tuning ? taste.onboarding.targetRounds - OB.tuneRounds : 0;
+      const at = r.n - base;
+      return `<span class="obDot${i < at ? " done" : i === at ? " now" : ""}"></span>`;
+    }).join("");
     el.hidden = false;
     el.innerHTML = `
       <div class="obHead">
         <div>
-          <div class="obKicker">${r.n === 0 ? "Let's figure out what you might want to see live" : r.n >= 4 ? "Getting harder" : "Which would you rather see live?"}</div>
-          ${r.n === 0 ? `<div class="obSub">Two acts, pick one. Press play if you don't remember how they sound.</div>` : ""}
+          <div class="obKicker">${tuning ? "A few more to sharpen this" : r.n === 0 ? "Let's figure out what you might want to see live" : r.n >= 4 ? "Getting harder" : "Which would you rather see live?"}</div>
+          ${r.n === 0 && !tuning ? `<div class="obSub">Two acts, pick one. Press play if you don't remember how they sound.</div>` : ""}
         </div>
-        <div class="obProg">${dots}<button class="btn ghost obSkip" id="obSkip">Skip</button></div>
+        <div class="obProg">${dots}<button class="btn ghost obSkip" id="obSkip">${tuning ? "Done" : "Skip survey"}</button></div>
       </div>
       <div class="vsRow">
         ${artistCard(r.a, "a")}
         <div class="vsOr">vs</div>
         ${artistCard(r.b, "b")}
-      </div>`;
-    $("#obSkip").onclick = () => finishOnboarding(true);
-    void total;
+      </div>
+      <div class="obFoot"><button class="btn ghost obPass" id="obPass">Neither — skip this pair</button></div>`;
+    $("#obSkip").onclick = () => finishOnboarding(!tuning);
+    $("#obPass").onclick = passRound;
   }
 
   /* ---- For You ---- */
@@ -755,30 +980,41 @@
     </article>`;
   }
   function renderForYou() {
-    const el = $("#forYou");
-    if (!state.data || !hasTaste()) { el.hidden = true; el.innerHTML = ""; $("#allGigsHead").hidden = true; return; }
+    const mod = $("#forYouModule"), el = $("#forYou");
+    const hide = () => { mod.hidden = true; el.innerHTML = ""; $("#allGigsHead").hidden = true; };
+    if (!state.data || !hasTaste()) return hide();
     const cands = recommendCandidates();
     const ctx = { events: new Set(), artists: new Set() };
     const rails = [...railBecause(cands, ctx)];
     const em = railEmerging(cands, ctx); if (em) rails.push(em);
-    const more = railMore(cands, ctx); if (more) rails.push(more);
-    if (!rails.length) { el.hidden = true; el.innerHTML = ""; $("#allGigsHead").hidden = true; return; }
-    el.hidden = false;
+    const st = railStretch(cands, ctx); if (st) rails.push(st);
+    if (!rails.length) return hide();
+
+    mod.hidden = false;
+    if (!mod.dataset.touched) mod.open = true;             // open by default, but respect a manual collapse
     const done = taste.onboarding.done && !state.onboarding;
+    $("#fyTitle").textContent = done ? "We've got your vibe" : "Shaping up";
+    const total = rails.reduce((n, r) => n + Math.min(r.items.length, RAIL.size), 0);
+    $("#fySub").textContent = `${total} show${total === 1 ? "" : "s"} picked for you`;
     el.innerHTML = `
-      <div class="fyHead">
-        <div>
-          <h2 class="fyTitle">${done ? "We've got your vibe" : "Shaping up"}</h2>
-          <div class="fySub">${esc(tasteLine())}</div>
-        </div>
-        <button class="btn ghost" id="fyTune">${done ? "Tune this" : "Keep going"}</button>
-      </div>
-      ${rails.map((r) => `
-        <div class="rail" data-rail="${r.id}">
-          <div class="railHead"><h3>${esc(r.title)}</h3>${r.blurb ? `<span class="railBlurb">${esc(r.blurb)}</span>` : ""}</div>
-          <div class="railItems">${r.items.map(gigCard).join("")}</div>
-        </div>`).join("")}`;
-    $("#fyTune").onclick = () => { startOnboarding(true); $("#onboard").scrollIntoView({ behavior: "smooth", block: "start" }); };
+      <p class="fyLine">${esc(tasteLine())} <button class="railMore" id="fyTune" style="margin-left:6px">${done ? "tune this" : "keep going"}</button></p>
+      ${rails.map((r) => {
+        const open = state.railOpen.has(r.id + "|" + r.title);
+        const shown = open ? r.items : r.items.slice(0, RAIL.size);
+        const hidden = r.items.length - shown.length;
+        return `<div class="rail" data-rail="${r.id}">
+          <div class="railHead">
+            <h3>${esc(r.title)}</h3>${r.blurb ? `<span class="railBlurb">${esc(r.blurb)}</span>` : ""}
+            ${hidden > 0 || open ? `<button class="railMore" data-more="${esc(r.id + "|" + r.title)}">${open ? "show less" : `${hidden} more`}</button>` : ""}
+          </div>
+          <div class="railItems">${shown.map(gigCard).join("")}</div>
+        </div>`;
+      }).join("")}`;
+    $("#fyTune").onclick = (ev) => {
+      ev.preventDefault();
+      startOnboarding("tune");
+      $("#onboard").scrollIntoView({ behavior: "smooth", block: "start" });
+    };
     $("#allGigsHead").hidden = false;
   }
 
@@ -830,7 +1066,7 @@
     $("#unmatched").textContent = um ? ` ${um} billed act${um === 1 ? "" : "s"} had no Spotify match and ${um === 1 ? "was" : "were"} left out.` : "";
     const gen = new Date(state.data.generated_at);
     const pend = state.data.pending?.length || 0;
-    $("#dataAge").textContent = `Listings updated ${gen.toLocaleDateString(undefined, { month: "short", day: "numeric" })} · ${state.data.events.length} shows over ${state.data.horizon_days} days` + (pend ? ` · ${pend} acts still being matched` : "");
+    $("#dataAge").textContent = `${state.data.events.length} shows over ${state.data.horizon_days} days` + (pend ? ` · ${pend} acts still being matched` : "");
   }
   function renderReach() {
     const [lo, hi] = state.reach;
@@ -846,12 +1082,24 @@
   function onReachInput() {
     let lo = +$("#reachMin").value, hi = +$("#reachMax").value;
     if (lo > hi) { if (this && this.id === "reachMin") hi = lo; else lo = hi; }
-    state.reach = [lo, hi]; renderReach(); renderResults(); writeHash();
+    state.reach = [lo, hi]; renderReach(); renderKnobs(); renderFilterSummary(); renderResults(); writeHash();
   }
   $("#reachMin").addEventListener("input", onReachInput); $("#reachMax").addEventListener("input", onReachInput);
   window.addEventListener("resize", () => state.data && renderReach());
   function renderSources() { for (const b of document.querySelectorAll("[data-src]")) b.checked = state.sources.includes(b.dataset.src); }
-  function renderAll() { renderSources(); renderDays(); renderVenues(); renderGenres(); renderReach(); renderOnboard(); renderForYou(); renderResults(); writeHash(); }
+  function renderAll() {
+    renderSources(); renderKnobs(); renderVenues(); renderGenres(); renderReach();
+    renderFilterSummary(); renderOnboard(); renderForYou(); renderResults(); writeHash();
+  }
+  /** One line on the collapsed filters module, so nothing is silently narrowing the list. */
+  function renderFilterSummary() {
+    const bits = [];
+    if (state.venues) bits.push(`${state.venues.length} venue${state.venues.length === 1 ? "" : "s"}`);
+    if (state.genres.length) bits.push(state.genres.slice(0, 3).join(", ") + (state.genres.length > 3 ? "…" : ""));
+    if (state.headliners) bits.push("headliners only");
+    if (state.reach[0] !== 0 || state.reach[1] !== 4) bits.push(`${TIER_NAMES[state.reach[0]]}–${TIER_NAMES[state.reach[1]]}`);
+    $("#filterSummary").textContent = bits.length ? bits.join(" · ") : "all venues, all genres";
+  }
   for (const b of document.querySelectorAll("[data-src]")) b.addEventListener("change", () => {
     state.sources = [...document.querySelectorAll("[data-src]")].filter((x) => x.checked).map((x) => x.dataset.src);
     renderVenues(); renderGenres(); renderReach(); renderForYou(); renderResults(); writeHash();
@@ -943,34 +1191,41 @@
       const sb = e.target.closest("[data-save]");
       if (sb) { handleSaveClick(sb); if (state.savedOnly) renderResults(); return; }
       const ch = e.target.closest("[data-choose]"); if (ch) return answerRound(ch.dataset.choose);
+      const mb = e.target.closest("[data-more]");
+      if (mb) {
+        const k = mb.dataset.more;
+        if (state.railOpen.has(k)) state.railOpen.delete(k); else state.railOpen.add(k);
+        renderForYou(); return;
+      }
       const tk = e.target.closest("[data-ticket]");
       if (tk) { const k = tk.dataset.ticket; if (k) { taste.behaviour.ticketClicks[k] = (taste.behaviour.ticketClicks[k] || 0) + 1; recomputeDerived(); saveTaste(); } }
     });
   }
   delegate($("#results")); delegate($("#onboard")); delegate($("#forYou"));
   $("#savedBtn").onclick = () => { state.savedOnly = !state.savedOnly; renderResults(); };
-  $("#tuneBtn").onclick = () => { startOnboarding(true); $("#onboard").scrollIntoView({ behavior: "smooth", block: "start" }); };
+  $("#tuneBtn").onclick = () => { startOnboarding("tune"); $("#onboard").scrollIntoView({ behavior: "smooth", block: "start" }); };
+  // Remember a manual collapse of For You so a re-render does not reopen it.
+  $("#forYouModule").addEventListener("toggle", (e) => { e.target.dataset.touched = "1"; });
 
   // ---------- events ----------
   $("#city").addEventListener("change", async (e) => { state.city = e.target.value; state.venues = null; state.genres = []; await loadCity(); buildPool(); renderAll(); });
-  $("#days").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; state.days = +b.dataset.days; renderDays(); renderForYou(); renderResults(); writeHash(); });
   $("#venues").addEventListener("change", () => {
     const boxes = [...$("#venues").querySelectorAll("input")];
     const on = boxes.filter((b) => b.checked).map((b) => b.dataset.v);
     state.venues = on.length === boxes.length ? null : on;
-    renderResults(); writeHash();
+    renderFilterSummary(); renderResults(); writeHash();
   });
-  $("#vAll").onclick = () => { state.venues = null; renderVenues(); renderResults(); writeHash(); };
-  $("#vNone").onclick = () => { state.venues = []; renderVenues(); renderResults(); writeHash(); };
-  $("#vSmall").onclick = () => { state.venues = [...new Set(state.data.events.map((e) => e.venue))].filter((v) => v && !ARENA_RE.test(v)); renderVenues(); renderResults(); writeHash(); };
+  $("#vAll").onclick = () => { state.venues = null; renderVenues(); renderFilterSummary(); renderResults(); writeHash(); };
+  $("#vNone").onclick = () => { state.venues = []; renderVenues(); renderFilterSummary(); renderResults(); writeHash(); };
+  $("#vSmall").onclick = () => { state.venues = [...new Set(state.data.events.map((e) => e.venue))].filter((v) => v && !ARENA_RE.test(v)); renderVenues(); renderFilterSummary(); renderResults(); writeHash(); };
   $("#genres").addEventListener("click", (e) => {
     const b = e.target.closest(".chip"); if (!b) return;
     const g = b.dataset.g; const i = state.genres.indexOf(g);
     if (i >= 0) state.genres.splice(i, 1); else state.genres.push(g);
-    renderGenres(); renderResults(); writeHash();
+    renderGenres(); renderFilterSummary(); renderResults(); writeHash();
   });
-  $("#gClear").onclick = () => { state.genres = []; renderGenres(); renderResults(); writeHash(); };
-  $("#headliners").addEventListener("change", (e) => { state.headliners = e.target.checked; renderResults(); writeHash(); });
+  $("#gClear").onclick = () => { state.genres = []; renderGenres(); renderFilterSummary(); renderResults(); writeHash(); };
+  $("#headliners").addEventListener("change", (e) => { state.headliners = e.target.checked; renderFilterSummary(); renderResults(); writeHash(); });
   $("#share").onclick = async () => {
     writeHash();
     try { await navigator.clipboard.writeText(location.href); status("Link copied. Anyone opening it sees this exact selection."); }
@@ -997,6 +1252,17 @@
     state.index = await r.json();
     if (!state.city || !state.index.cities.some((c) => c.slug === state.city)) state.city = CFG.defaultCity || state.index.cities[0]?.slug;
   }
+  /** The taste-game pool. Optional: an older deploy, or a repo whose pipeline has
+      not run seed_artists.py yet, has no such file and simply falls back to the
+      acts playing in the city, which is how v0.9 behaved. */
+  async function loadSeeds() {
+    try {
+      const r = await fetch("seed-artists.json", { cache: "no-cache" });
+      if (!r.ok) return;
+      const j = await r.json();
+      state.seeds = Array.isArray(j.artists) ? j.artists : [];
+    } catch { state.seeds = []; }
+  }
   async function loadCity() {
     const r = await fetch(`data/${state.city}.json`, { cache: "no-cache" });
     if (!r.ok) throw new Error(`No data for ${state.city}`);
@@ -1019,20 +1285,20 @@
       taste = Object.assign(blankTaste(), store.get(TASTE_KEY, null) || {});
       taste.explicit = Object.assign({ comparisons: [], savedArtists: [] }, taste.explicit);
       taste.behaviour = Object.assign({ plays: {}, ticketClicks: {}, dismissed: [] }, taste.behaviour);
-      taste.onboarding = Object.assign({ done: false, rounds: 0, startedAt: null, completedAt: null, skipped: false }, taste.onboarding);
+      taste.onboarding = Object.assign({ done: false, rounds: 0, startedAt: null, completedAt: null, skipped: false, targetRounds: 0 }, taste.onboarding);
       recomputeDerived();                       // derived state is always rebuilt, never trusted from storage
 
       if (!location.hash) { try { const s = localStorage.getItem("gigamp:sel"); if (s) history.replaceState(null, "", s); } catch {} }
       const firstVisit = !location.hash;
       readHash();
-      await Promise.all([loadIndex(), loadVocab()]); renderCity(); await loadCity();
+      await Promise.all([loadIndex(), loadVocab(), loadSeeds()]); await loadCity();
       if (firstVisit && state.venues === null) {
         const small = [...new Set(state.data.events.map((e) => e.venue))].filter((v) => v && !ARENA_RE.test(v));
         if (small.length < new Set(state.data.events.map((e) => e.venue)).size) state.venues = small;
       }
       buildPool();
       $("#tuneBtn").hidden = !(taste.onboarding.done || hasTaste());
-      if (!taste.onboarding.done && CFG.onboardingEnabled !== false && state.pool.length >= 8) startOnboarding(false);
+      if (!taste.onboarding.done && CFG.onboardingEnabled !== false && state.pool.length >= 8) startOnboarding();
       renderAll();
     } catch (e) { status(esc(e.message), true); console.error("GigAmp failed to start:", e); }
   })();

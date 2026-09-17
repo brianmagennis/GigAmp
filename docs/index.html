@@ -9,16 +9,17 @@
 <style>
 :root{
   --bg:#0f0f11;--panel:#17171b;--panel-2:#1e1e24;--line:#2a2a32;--text:#f2f2f4;--muted:#9a9aa6;
-  --accent:#f5c542;--accent-ink:#1a1400;--spotify:#1db954;--danger:#ff6b6b;
+  --accent:#f5c542;--accent-ink:#1a1400;--danger:#ff6b6b;
+  --metal-1:#2b2b33;--metal-2:#1b1b21;--knob-1:#3a3a44;--knob-2:#1d1d23;
   --radius:12px;--font:ui-sans-serif,-apple-system,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
 }
 *{box-sizing:border-box}
-[hidden]{display:none !important}   /* class rules like .allHead set display, which beats the UA [hidden] rule */
+[hidden]{display:none !important}   /* class rules set display, which beats the UA [hidden] rule */
 html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 var(--font)}
 a{color:inherit}
 button{font:inherit;cursor:pointer}
-.wrap{max-width:1180px;margin:0 auto;padding:20px clamp(14px,3vw,32px) 60px}
-header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:6px 0 18px;border-bottom:1px solid var(--line);margin-bottom:22px}
+.wrap{max-width:900px;margin:0 auto;padding:20px clamp(14px,3vw,32px) 60px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:6px 0 18px;border-bottom:1px solid var(--line);margin-bottom:18px}
 .brand{display:flex;align-items:center;gap:12px}
 .brand .mark{width:36px;height:36px;border-radius:9px;background:#18181b;border:1px solid var(--line);display:grid;place-items:center}
 .brand h1{font-size:20px;margin:0;letter-spacing:.2px}
@@ -30,63 +31,78 @@ header{display:flex;align-items:center;justify-content:space-between;gap:16px;pa
 .btn.primary:hover{filter:brightness(1.06)}
 .btn.ghost{background:transparent}
 .btn:disabled{opacity:.5;cursor:not-allowed;filter:none}
-.grid{display:grid;grid-template-columns:340px 1fr;gap:22px}
-/* On one column the filter rail would push the comparison game and the listings
-   below the fold, so the content column comes first on narrow screens. */
-@media (max-width:900px){.grid{grid-template-columns:1fr}.grid>main{order:1}.grid>aside{order:2}}
-.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
-.panel h2{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
-.panel + .panel{margin-top:14px}
-select,input[type=text]{width:100%;background:var(--panel-2);color:var(--text);border:1px solid var(--line);border-radius:9px;padding:9px 11px;font:inherit}
-.seg{display:flex;gap:6px;flex-wrap:wrap}
-.seg button{border:1px solid var(--line);background:var(--panel-2);color:var(--text);padding:6px 11px;border-radius:999px;font-size:13px}
-.seg button[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
-.row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
-.row .links{font-size:12.5px;color:var(--muted)}
-.row .links button{background:none;border:0;color:var(--muted);text-decoration:underline;padding:0 3px}
-.list{max-height:320px;overflow:auto;border:1px solid var(--line);border-radius:9px;padding:6px;background:var(--panel-2)}
+.pill{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--line);font-size:11.5px;color:var(--muted);vertical-align:middle}
+
+/* ---------- the faceplate: four dials, always on ---------- */
+.faceplate{
+  background:linear-gradient(180deg,var(--metal-1),var(--metal-2));
+  border:1px solid #33333d;border-radius:var(--radius);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07), 0 1px 2px rgba(0,0,0,.4);
+  padding:14px 16px 12px;margin-bottom:16px;
+}
+.knobs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.knob{display:flex;flex-direction:column;align-items:center;gap:5px;min-width:0}
+.knobLabel{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.knobDial{width:92px;height:92px;position:relative;border-radius:50%;outline:none;cursor:pointer;touch-action:manipulation}
+.knobDial:focus-visible{box-shadow:0 0 0 3px rgba(245,197,66,.45)}
+.knobDial svg{width:100%;height:100%;display:block;overflow:visible}
+.knobDial .face{fill:url(#knobGrad);stroke:#55555f;stroke-width:1.5}
+.knobDial .skirt{fill:none;stroke:rgba(255,255,255,.05);stroke-width:1}
+.knobDial .tick{stroke:#6d6d7b;stroke-width:2.5;stroke-linecap:round}
+.knobDial .tick.on{stroke:var(--accent);stroke-width:3.5}
+/* No transform-origin here: Chrome maps the SVG transform attribute onto the CSS
+   transform property, and rotate(deg cx cy) already carries its own centre - setting
+   an origin as well applies the offset twice and throws the pointer off the dial. */
+.knobDial .pointer{stroke:var(--accent);stroke-width:4;stroke-linecap:round;
+  transition:transform .2s cubic-bezier(.3,1.4,.5,1);filter:drop-shadow(0 0 3px rgba(245,197,66,.5))}
+.knobDial .cap{fill:#0e0e12;stroke:#5a5a66;stroke-width:1.2}
+.knobDial:hover .face{stroke:#6a6a78}
+.knobValue{font-size:12px;font-weight:650;text-align:center;line-height:1.25;min-height:30px;padding:0 2px}
+.knobValue small{display:block;font-weight:400;color:var(--muted);font-size:11px}
+.faceFoot{margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.06);color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+/* Stay one row on a phone. Stacked 2x2 the faceplate fills the whole first screen
+   and pushes the actual content below the fold. */
+@media (max-width:560px){
+  .knobs{gap:6px}
+  .knobDial{width:58px;height:58px}
+  .knobDial .tick{stroke-width:3}
+  .knobDial .tick.on{stroke-width:4}
+  .knobDial .pointer{stroke-width:5}
+  .knobLabel{font-size:9px;letter-spacing:.08em}
+  .knobValue{font-size:11px;min-height:26px;line-height:1.2}
+  .knobValue small{font-size:10px}
+  .faceplate{padding:11px 12px 8px}
+  .faceFoot{display:none}          /* the same counts are in the stats row below */
+}
+
+/* ---------- collapsible modules ---------- */
+.module{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:14px;overflow:hidden}
+.module>summary{list-style:none;cursor:pointer;padding:12px 15px;display:flex;align-items:center;gap:10px;user-select:none}
+.module>summary::-webkit-details-marker{display:none}
+.module>summary::after{content:"";margin-left:auto;width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg) translateY(-2px);transition:transform .18s}
+.module[open]>summary::after{transform:rotate(225deg) translateY(-2px)}
+.module>summary h2{margin:0;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--text)}
+.modSub{color:var(--muted);font-size:12.5px;font-weight:400;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.modBody{padding:0 15px 15px}
+.sub{margin-top:14px}
+.sub h3{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;display:flex;align-items:center;gap:10px}
+.sub h3 .links{margin-left:auto;font-size:12px;font-weight:400;text-transform:none;letter-spacing:0}
+.sub h3 .links button{background:none;border:0;color:var(--muted);text-decoration:underline;padding:0 3px;cursor:pointer}
+.list{max-height:260px;overflow:auto;border:1px solid var(--line);border-radius:9px;padding:6px;background:var(--panel-2)}
 .list label{display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:7px;font-size:14px}
 .list label:hover{background:#26262e}
 .list label .n{margin-left:auto;color:var(--muted);font-size:12.5px;font-variant-numeric:tabular-nums}
 .list label .loc{color:var(--muted);font-size:12px}
 .list input{accent-color:var(--accent)}
-.chips{display:flex;flex-wrap:wrap;gap:6px;max-height:220px;overflow:auto;padding:2px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;max-height:190px;overflow:auto;padding:2px}
 .chip{border:1px solid var(--line);background:var(--panel-2);color:var(--text);padding:5px 10px;border-radius:999px;font-size:12.5px}
 .chip[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
 .chip .n{opacity:.6;margin-left:4px}
 .toggle{display:flex;align-items:center;gap:9px;font-size:14px;margin-top:10px}
 .toggle input{accent-color:var(--accent)}
-.summary{display:flex;flex-wrap:wrap;gap:18px;align-items:end;justify-content:space-between;margin-bottom:14px}
-.stats{display:flex;gap:22px}
-.stat b{display:block;font-size:26px;line-height:1;letter-spacing:-.5px}
-.stat span{color:var(--muted);font-size:12.5px}
-.actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.status{min-height:20px;color:var(--muted);font-size:13.5px;margin:6px 0 14px}
-.status.err{color:var(--danger)}
-.status a{color:var(--accent)}
-.day{margin:18px 0 8px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px}
-.day::after{content:"";flex:1;height:1px;background:var(--line)}
-.show{display:block;padding:12px 14px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:8px}
-.show .venue{color:var(--muted);font-size:13px}
-.show .venue a{color:var(--muted);text-decoration:none}
-.show .venue a:hover{text-decoration:underline}
-.artist{display:flex;gap:10px;align-items:flex-start;margin-top:8px}
-.artist img{width:38px;height:38px;border-radius:50%;object-fit:cover;background:#26262e;flex:none}
-.artist .who{font-weight:650}
-.artist .who a{text-decoration:none}
-.artist .who a:hover{text-decoration:underline}
-.artist .who small{color:var(--muted);font-weight:400;margin-left:6px;font-size:12px}
-.tracks{color:var(--muted);font-size:13px;margin-top:2px}
-.tracks a{color:var(--text);text-decoration:none}
-.tracks a:hover{text-decoration:underline}
-.tracks .sep{opacity:.5;margin:0 6px}
-.excluded{opacity:.45}
-.empty{padding:40px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:var(--radius)}
-.foot{margin-top:34px;color:var(--muted);font-size:12.5px;line-height:1.7}
-.foot a{color:var(--muted)}
-details.setup{margin-top:14px}
-details.setup summary{cursor:pointer;color:var(--muted);font-size:13.5px}
-details.setup pre{background:var(--panel-2);border:1px solid var(--line);border-radius:9px;padding:12px;overflow:auto;font-size:12.5px}
+select,input[type=text]{width:100%;background:var(--panel-2);color:var(--text);border:1px solid var(--line);border-radius:9px;padding:9px 11px;font:inherit}
+
+/* fine audience-size range, inside the filters module */
 .range{position:relative;height:44px;margin:6px 4px 0}
 .range input[type=range]{position:absolute;left:0;right:0;top:10px;width:100%;margin:0;-webkit-appearance:none;appearance:none;background:none;pointer-events:none;height:20px}
 .range input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;border-radius:50%;background:var(--accent);border:2px solid var(--bg);pointer-events:auto;cursor:grab;position:relative;z-index:2}
@@ -94,37 +110,14 @@ details.setup pre{background:var(--panel-2);border:1px solid var(--line);border-
 .range .track{position:absolute;left:9px;right:9px;top:18px;height:4px;border-radius:2px;background:var(--line)}
 .range .fill{position:absolute;top:18px;height:4px;border-radius:2px;background:var(--accent)}
 .range .ticks{position:absolute;left:9px;right:9px;top:30px;display:flex;justify-content:space-between;font-size:10.5px;color:var(--muted);letter-spacing:.02em}
-.range .ticks span{flex:1;text-align:center;position:relative}
+.range .ticks span{flex:1;text-align:center}
 .range .ticks span:first-child{text-align:left}.range .ticks span:last-child{text-align:right}
 .reach-label{font-size:13px;color:var(--muted);margin-top:2px}
 .reach-label b{color:var(--text);font-weight:600}
-.artist .who .reach{color:var(--muted);font-weight:400;font-size:12px;margin-left:6px}
-.showhead{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
-.showhead .vname{color:var(--text);font-weight:600}
-.showhead .time{margin-left:8px;color:var(--muted)}
-.showactions{display:flex;align-items:center;gap:8px;flex:none}
-.showactions .lnk{font-size:12.5px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 9px;white-space:nowrap}
-.showactions .lnk:hover{color:var(--text);border-color:#3a3a45}
-.star{background:none;border:1px solid var(--line);border-radius:999px;width:30px;height:26px;color:var(--muted);font-size:15px;line-height:1;padding:0}
-.star.on{color:var(--accent);border-color:var(--accent)}
-.show.saved{border-color:#4a4222}
-.artist .ainfo{flex:1;min-width:0}
-.play{background:none;border:0;color:var(--muted);padding:0 5px 0 0;font-size:11px;vertical-align:1px;cursor:pointer}
-.play:hover,.play.on{color:var(--accent)}
-#dock{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(20,20,24,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:8px clamp(14px,3vw,32px) 10px}
-#dock .dockwrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(160px,280px) 1fr auto;gap:14px;align-items:center}
-@media (max-width:700px){#dock .dockwrap{grid-template-columns:1fr auto}#dockTitle{grid-column:1/-1}}
-#dockTitle{font-size:13.5px;color:var(--muted);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-#dockTitle b{color:var(--text);margin-right:6px}
-#dockPlayer{min-width:0}#dockPlayer iframe,#dockPlayer #dockEmbed iframe{border-radius:12px;display:block}
-#dockClose{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;width:32px;height:32px;font-size:16px;line-height:1}
-body.has-dock{padding-bottom:120px}
-.btn.saved-toggle[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
-.pill{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--line);font-size:11.5px;color:var(--muted);vertical-align:middle}
 
-/* ---------- onboarding: the artist comparison game ---------- */
-#onboard{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 18px;margin-bottom:20px}
-.obHead{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:14px;flex-wrap:wrap}
+/* ---------- the comparison game ---------- */
+#onboard{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:15px 15px 16px;margin-bottom:16px}
+.obHead{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:13px;flex-wrap:wrap}
 .obKicker{font-size:17px;font-weight:650;letter-spacing:-.2px}
 .obSub{color:var(--muted);font-size:13.5px;margin-top:3px}
 .obProg{display:flex;align-items:center;gap:6px;flex:none}
@@ -136,8 +129,8 @@ body.has-dock{padding-bottom:120px}
 .obDone b{color:var(--text)}
 .vsRow{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:stretch}
 .vsOr{align-self:center;color:var(--muted);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase}
-.vsCard{background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius);padding:16px 14px;display:flex;flex-direction:column;align-items:center;gap:9px;text-align:center}
-.vsArt{width:84px;height:84px;border-radius:50%;background:#26262e;overflow:hidden;flex:none}
+.vsCard{background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius);padding:15px 14px;display:flex;flex-direction:column;align-items:center;gap:9px;text-align:center}
+.vsArt{width:78px;height:78px;border-radius:50%;background:#26262e;overflow:hidden;flex:none}
 .vsArt img{width:100%;height:100%;object-fit:cover;display:block}
 .vsName{font-size:17px;font-weight:650;line-height:1.25}
 .vsMeta{display:flex;flex-wrap:wrap;gap:5px;justify-content:center;align-items:center;min-height:20px}
@@ -146,46 +139,112 @@ body.has-dock{padding-bottom:120px}
 .vsPlay.on{border-color:var(--accent);color:var(--accent)}
 .vsChoose{width:100%;max-width:220px;margin-top:auto}
 .vsNoTrack{color:var(--muted);font-size:12.5px}
+.obFoot{display:flex;justify-content:center;margin-top:12px}
+.btn.obPass{font-size:13px;padding:7px 14px;color:var(--muted)}
 @media (max-width:640px){
-  /* Stacked, both acts have to stay on one screen or it stops being a comparison. */
-  .vsRow{grid-template-columns:1fr;gap:6px}
-  .vsOr{text-align:center}
-  .vsCard{flex-direction:row;flex-wrap:wrap;align-items:center;text-align:left;padding:11px 12px;gap:9px}
-  .vsArt{width:50px;height:50px}
-  .vsName{font-size:16px;flex:1;min-width:0}
-  .vsMeta{width:100%;justify-content:flex-start;min-height:0}
-  .vsPlay,.vsChoose{flex:1 1 120px;max-width:none;margin-top:0;padding:8px 10px;font-size:13.5px}
-  .obKicker{font-size:16px}
+  /* Stacked. Both acts have to stay on one screen or it stops being a comparison,
+     so everything above them is trimmed to the bone. */
+  #onboard{padding:12px 12px 12px}
+  .obHead{margin-bottom:9px;gap:8px}
+  .obKicker{font-size:15.5px;line-height:1.3}
+  .obSub{display:none}
+  .vsRow{grid-template-columns:1fr;gap:4px}
+  .vsOr{text-align:center;font-size:11px}
+  .vsCard{flex-direction:row;flex-wrap:wrap;align-items:center;text-align:left;padding:9px 11px;gap:8px}
+  .vsArt{width:46px;height:46px}
+  .vsName{font-size:15.5px;flex:1;min-width:0}
+  .vsMeta{width:100%;justify-content:flex-start;min-height:0;gap:4px}
+  .vsPlay,.vsChoose{flex:1 1 120px;max-width:none;margin-top:0;padding:7px 10px;font-size:13px}
+  .obFoot{margin-top:8px}
+  .btn.obPass{padding:5px 12px;font-size:12.5px}
 }
 
 /* ---------- For You ---------- */
-#forYou{margin-bottom:26px}
-.fyHead{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:14px}
-.fyTitle{margin:0;font-size:22px;letter-spacing:-.3px}
-.fySub{color:var(--muted);font-size:13.5px;margin-top:3px}
-.rail{margin-bottom:20px}
-.railHead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:0 0 9px}
-.railHead h3{margin:0;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
-.railBlurb{color:var(--muted);font-size:12.5px}
-.railItems{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
-.rec{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:12px 13px}
+.fyLine{color:var(--muted);font-size:13px;margin:0 0 12px}
+.rail{margin-bottom:16px}
+.rail:last-child{margin-bottom:2px}
+.railHead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:0 0 8px}
+.railHead h3{margin:0;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent)}
+.railMore{margin-left:auto;background:none;border:0;color:var(--muted);font-size:12px;text-decoration:underline;padding:0}
+.railItems{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:9px}
+.rec{background:var(--panel-2);border:1px solid var(--line);border-radius:10px;padding:11px 12px}
 .rec.saved{border-color:#4a4222}
-.recWhy{font-size:12px;color:var(--accent);margin-bottom:8px;line-height:1.35}
-.recBody{display:flex;gap:11px;align-items:flex-start}
-.recImg{width:46px;height:46px;border-radius:50%;object-fit:cover;background:#26262e;flex:none}
+.recWhy{font-size:11.5px;color:var(--accent);margin-bottom:7px;line-height:1.35}
+.recBody{display:flex;gap:10px;align-items:flex-start}
+.recImg{width:42px;height:42px;border-radius:50%;object-fit:cover;background:#26262e;flex:none}
 .recInfo{min-width:0;flex:1}
 .recName{font-weight:650;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
 .recWhen{color:var(--muted);font-size:12.5px;margin-top:2px}
-.recActs{display:flex;align-items:center;gap:8px;margin-top:8px;flex-wrap:wrap}
-.recTrack{color:var(--muted);font-size:12.5px;margin-right:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60%}
+.recActs{display:flex;align-items:center;gap:8px;margin-top:7px;flex-wrap:wrap}
+.recTrack{color:var(--muted);font-size:12.5px;margin-right:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:55%}
 .recActs .lnk{font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 9px}
 .recActs .lnk:hover{color:var(--text);border-color:#3a3a45}
-.allHead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:0 0 12px;padding-top:6px;border-top:1px solid var(--line)}
-.allHead h2{margin:14px 0 0;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.allHead span{color:var(--muted);font-size:12.5px;margin-top:14px}
+
+/* ---------- all gigs ---------- */
+.allHead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:22px 0 10px}
+.allHead h2{margin:0;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.allHead span{color:var(--muted);font-size:12.5px}
+.summary{display:flex;flex-wrap:wrap;gap:16px;align-items:end;justify-content:space-between;margin-bottom:12px}
+.stats{display:flex;gap:20px}
+.stat b{display:block;font-size:24px;line-height:1;letter-spacing:-.5px}
+.stat span{color:var(--muted);font-size:12.5px}
+.actions{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.status{min-height:20px;color:var(--muted);font-size:13.5px;margin:6px 0 12px}
+.status.err{color:var(--danger)}
+.status a{color:var(--accent)}
+.day{margin:18px 0 8px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px}
+.day::after{content:"";flex:1;height:1px;background:var(--line)}
+.show{display:block;padding:12px 14px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:8px}
+.show .venue{color:var(--muted);font-size:13px}
+.showhead{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.showhead .vname{color:var(--text);font-weight:600}
+.showhead .time{margin-left:8px;color:var(--muted)}
+.showactions{display:flex;align-items:center;gap:8px;flex:none}
+.showactions .lnk{font-size:12.5px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 9px;white-space:nowrap}
+.showactions .lnk:hover{color:var(--text);border-color:#3a3a45}
+.star{background:none;border:1px solid var(--line);border-radius:999px;width:30px;height:26px;color:var(--muted);font-size:15px;line-height:1;padding:0}
+.star.on{color:var(--accent);border-color:var(--accent)}
+.show.saved{border-color:#4a4222}
+.artist{display:flex;gap:10px;align-items:flex-start;margin-top:8px}
+.artist img{width:38px;height:38px;border-radius:50%;object-fit:cover;background:#26262e;flex:none}
+.artist .ainfo{flex:1;min-width:0}
+.artist .who{font-weight:650}
+.artist .who a{text-decoration:none}
+.artist .who a:hover{text-decoration:underline}
+.artist .who small{color:var(--muted);font-weight:400;margin-left:6px;font-size:12px}
+.artist .who .reach{color:var(--muted);font-weight:400;font-size:12px;margin-left:6px}
+.tracks{color:var(--muted);font-size:13px;margin-top:2px}
+.tracks a{color:var(--text);text-decoration:none}
+.tracks a:hover{text-decoration:underline}
+.tracks .sep{opacity:.5;margin:0 6px}
+.play{background:none;border:0;color:var(--muted);padding:0 5px 0 0;font-size:11px;vertical-align:1px;cursor:pointer}
+.play:hover,.play.on{color:var(--accent)}
+.empty{padding:40px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:var(--radius)}
+.foot{margin-top:30px;color:var(--muted);font-size:12.5px;line-height:1.7}
+.foot a{color:var(--muted)}
+details.setup{margin-top:14px}
+details.setup summary{cursor:pointer;color:var(--muted);font-size:13.5px}
+details.setup pre{background:var(--panel-2);border:1px solid var(--line);border-radius:9px;padding:12px;overflow:auto;font-size:12.5px}
+.btn.saved-toggle[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+
+/* ---------- docked player ---------- */
+#dock{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(20,20,24,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:8px clamp(14px,3vw,32px) 10px}
+#dock .dockwrap{max-width:900px;margin:0 auto;display:grid;grid-template-columns:minmax(160px,260px) 1fr auto;gap:14px;align-items:center}
+@media (max-width:700px){#dock .dockwrap{grid-template-columns:1fr auto}#dockTitle{grid-column:1/-1}}
+#dockTitle{font-size:13.5px;color:var(--muted);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#dockTitle b{color:var(--text);margin-right:6px}
+#dockPlayer{min-width:0}#dockPlayer iframe,#dockPlayer #dockEmbed iframe{border-radius:12px;display:block}
+#dockClose{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;width:32px;height:32px;font-size:16px;line-height:1}
+body.has-dock{padding-bottom:120px}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <radialGradient id="knobGrad" cx="34%" cy="26%" r="82%">
+    <stop offset="0%" stop-color="#63636f"/><stop offset="55%" stop-color="#3a3a45"/><stop offset="100%" stop-color="#1c1c23"/>
+  </radialGradient>
+</defs></svg>
+
 <div class="wrap">
   <header>
     <div class="brand">
@@ -195,97 +254,88 @@ body.has-dock{padding-bottom:120px}
     <div class="auth"><button class="btn ghost" id="tuneBtn" hidden>Tune For You</button></div>
   </header>
 
-  <div class="grid">
-    <aside>
-      <section class="panel">
-        <h2>City</h2>
-        <select id="city"></select>
-        <div class="toggle" style="margin-top:12px"><span style="color:var(--muted);font-size:13px" id="dataAge"></span></div>
-      </section>
-
-      <section class="panel">
-        <h2>Sources</h2>
-        <label class="toggle" style="margin-top:0"><input type="checkbox" data-src="songkick" checked> Touring &amp; ticketed <span class="pill">Songkick</span></label>
-        <label class="toggle"><input type="checkbox" data-src="do604" checked> Local &amp; DIY rooms <span class="pill">Do604</span></label>
-      </section>
-
-      <section class="panel">
-        <h2>Window</h2>
-        <div class="seg" id="days">
-          <button data-days="7">7 days</button>
-          <button data-days="14">14 days</button>
-          <button data-days="30">30 days</button>
-          <button data-days="45">All listed</button>
-        </div>
-      </section>
-
-      <section class="panel">
-        <div class="row"><h2 style="margin:0">Venues</h2>
-          <div class="links"><button id="vAll">all</button>·<button id="vNone">none</button>·<button id="vSmall">no arenas</button></div></div>
-        <div class="list" id="venues"></div>
-      </section>
-
-      <section class="panel">
-        <h2>Audience size</h2>
-        <div class="range" id="reachRange">
-          <div class="track"></div><div class="fill" id="reachFill"></div>
-          <input type="range" id="reachMin" min="0" max="4" step="1" value="0" aria-label="Smallest audience">
-          <input type="range" id="reachMax" min="0" max="4" step="1" value="4" aria-label="Largest audience">
-          <div class="ticks"><span>unknown</span><span>underground</span><span>emerging</span><span>established</span><span>big</span></div>
-        </div>
-        <div class="reach-label" id="reachLabel"></div>
-      </section>
-
-      <section class="panel">
-        <div class="row"><h2 style="margin:0">Genres</h2>
-          <div class="links"><button id="gClear">clear</button></div></div>
-        <div class="chips" id="genres"></div>
-        <label class="toggle"><input type="checkbox" id="headliners"> Headliners only</label>
-      </section>
-    </aside>
-
-    <main>
-      <section id="onboard" hidden></section>
-      <section id="forYou" hidden></section>
-
-      <div class="allHead" id="allGigsHead" hidden>
-        <h2>All gigs</h2>
-        <span>Everything on in your city. Nothing is hidden by your taste profile.</span>
+  <main>
+    <section class="faceplate">
+      <div class="knobs" id="knobs"></div>
+      <div class="faceFoot">
+        <span id="dataAge"></span>
+        <span id="faceCount"></span>
       </div>
+    </section>
 
-      <div class="summary">
-        <div class="stats">
-          <div class="stat"><b id="nShows">0</b><span>shows</span></div>
-          <div class="stat"><b id="nArtists">0</b><span>artists</span></div>
-          <div class="stat"><b id="nTracks">0</b><span>tracks</span></div>
+    <section id="onboard" hidden></section>
+
+    <details class="module" id="forYouModule" hidden>
+      <summary><h2 id="fyTitle">For you</h2><span class="modSub" id="fySub"></span></summary>
+      <div class="modBody"><div id="forYou"></div></div>
+    </details>
+
+    <details class="module" id="filterModule">
+      <summary><h2>Filters</h2><span class="modSub" id="filterSummary"></span></summary>
+      <div class="modBody">
+        <div class="sub">
+          <h3>Venues <span class="links"><button id="vAll">all</button>·<button id="vNone">none</button>·<button id="vSmall">no arenas</button></span></h3>
+          <div class="list" id="venues"></div>
         </div>
-        <div class="actions">
-          <button class="btn primary" id="copyList">Copy for Spotify</button>
-          <button class="btn ghost saved-toggle" id="savedBtn" aria-pressed="false">★ My shows</button>
-          <button class="btn ghost" id="share">Copy share link</button>
+        <div class="sub">
+          <h3>Genres <span class="links"><button id="gClear">clear</button></span></h3>
+          <div class="chips" id="genres"></div>
+          <label class="toggle"><input type="checkbox" id="headliners"> Headliners only</label>
+        </div>
+        <div class="sub">
+          <h3>Audience size, finer</h3>
+          <div class="range" id="reachRange">
+            <div class="track"></div><div class="fill" id="reachFill"></div>
+            <input type="range" id="reachMin" min="0" max="4" step="1" value="0" aria-label="Smallest audience">
+            <input type="range" id="reachMax" min="0" max="4" step="1" value="4" aria-label="Largest audience">
+            <div class="ticks"><span>unknown</span><span>underground</span><span>emerging</span><span>established</span><span>big</span></div>
+          </div>
+          <div class="reach-label" id="reachLabel"></div>
+        </div>
+        <div class="sub" id="citySelectWrap" hidden>
+          <h3>City</h3>
+          <select id="city"></select>
         </div>
       </div>
-      <div class="status" id="status"></div>
-      <div id="results"></div>
+    </details>
 
-      <details class="setup" id="setup">
-        <summary>Weekly auto-refresh for this selection</summary>
-        <p style="color:var(--muted);font-size:13.5px">GigAmp refreshes its listings every Friday. To have this exact selection pushed to a playlist automatically, add the block below to <code>sync/subscribers.json</code> in the repo, run <code>sync/authorize.py</code> once to get a refresh token, and save it as the GitHub Actions secret named in <code>token_secret</code>.</p>
-        <label class="toggle" style="margin-bottom:10px">Playlist name <input type="text" id="plName" placeholder="Playlist name"></label>
-        <pre id="subJson"></pre>
-      </details>
+    <div class="allHead" id="allGigsHead">
+      <h2>All gigs</h2>
+      <span>Everything on in your city. Nothing is hidden by your taste profile.</span>
+    </div>
 
-      <p class="foot">
-        Listings from <a href="https://www.songkick.com" target="_blank" rel="noopener">Songkick</a> and <a href="https://do604.com" target="_blank" rel="noopener">Do604</a>; artist matches and tracks from Spotify.
-        Two tracks per act: the two songs Last.fm listeners play most, resolved on Spotify so you can hear them here; press ▶ to play.
-        No sign-in, no account. Your picks, saved shows and For You profile stay in this browser.
-        ☆ saves a show to “My shows” on this device.
-        Audience size is total <a href="https://www.last.fm" target="_blank" rel="noopener">Last.fm</a> listeners, a stand-in for streaming reach that covers even the smallest acts: underground is under 5k, emerging 5k to 50k, established 50k to 500k, big above that.
-        Tribute acts and themed club nights are filtered out; headline DJs and producers stay in.
-        <span id="unmatched"></span>
-      </p>
-    </main>
-  </div>
+    <div class="summary">
+      <div class="stats">
+        <div class="stat"><b id="nShows">0</b><span>shows</span></div>
+        <div class="stat"><b id="nArtists">0</b><span>artists</span></div>
+        <div class="stat"><b id="nTracks">0</b><span>tracks</span></div>
+      </div>
+      <div class="actions">
+        <button class="btn primary" id="copyList">Copy for Spotify</button>
+        <button class="btn ghost saved-toggle" id="savedBtn" aria-pressed="false">★ My shows</button>
+        <button class="btn ghost" id="share">Copy share link</button>
+      </div>
+    </div>
+    <div class="status" id="status"></div>
+    <div id="results"></div>
+
+    <details class="setup" id="setup">
+      <summary>Weekly auto-refresh for this selection</summary>
+      <p style="color:var(--muted);font-size:13.5px">GigAmp refreshes its listings every Friday. To have this exact selection pushed to a playlist automatically, add the block below to <code>sync/subscribers.json</code> in the repo, run <code>sync/authorize.py</code> once to get a refresh token, and save it as the GitHub Actions secret named in <code>token_secret</code>.</p>
+      <label class="toggle" style="margin-bottom:10px">Playlist name <input type="text" id="plName" placeholder="Playlist name"></label>
+      <pre id="subJson"></pre>
+    </details>
+
+    <p class="foot">
+      Listings from <a href="https://www.songkick.com" target="_blank" rel="noopener">Songkick</a> and <a href="https://do604.com" target="_blank" rel="noopener">Do604</a>; artist matches and tracks from Spotify.
+      Two tracks per act: the two songs Last.fm listeners play most, resolved on Spotify so you can hear them here; press ▶ to play.
+      No sign-in, no account. Your picks, saved shows and For You profile stay in this browser.
+      ☆ saves a show to “My shows” on this device.
+      Audience size is total <a href="https://www.last.fm" target="_blank" rel="noopener">Last.fm</a> listeners, a stand-in for streaming reach that covers even the smallest acts: underground is under 5k, emerging 5k to 50k, established 50k to 500k, big above that.
+      Tribute acts and themed club nights are filtered out; headline DJs and producers stay in.
+      <span id="unmatched"></span>
+    </p>
+  </main>
 </div>
 <div id="dock" hidden>
   <div class="dockwrap">

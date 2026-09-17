@@ -108,5 +108,30 @@ class LastFM:
         return []
 
 
+    def tag_top_artists(self, tag: str, limit: int = 12) -> list[dict]:
+        """Most-listened artists carrying a tag: [{'name','listeners'}].
+
+        Used by seed_artists.py to build the comparison pool for the taste game,
+        which deliberately is NOT limited to acts with a local show.
+        """
+        if not self.key:
+            return []
+        for attempt in range(3):
+            r = self.s.get(API, params={"method": "tag.getTopArtists", "tag": tag, "limit": limit,
+                                        "api_key": self.key, "format": "json"},
+                           headers={"User-Agent": UA}, timeout=20)
+            self.calls += 1
+            if r.status_code == 429 or r.status_code >= 500:
+                time.sleep(2 * (attempt + 1))
+                continue
+            j = r.json()
+            items = (j.get("topartists") or {}).get("artist") or []
+            if isinstance(items, dict):
+                items = [items]
+            return [{"name": a.get("name", ""), "listeners": int(a.get("listeners") or 0)}
+                    for a in items if a.get("name")]
+        return []
+
+
 def from_env() -> LastFM:
     return LastFM(os.environ.get("LASTFM_API_KEY"))

@@ -1,154 +1,79 @@
-# GigAmp
+# GigAmp — working folder
 
-Hear who's playing near you, before they play. GigAmp turns a city's upcoming gig
-listings into a Spotify playlist: pick your city, tick the venues you actually go to,
-filter by genre, and get two tracks per act (their most-listened song plus their next
-top song, which is usually the current single). A weekly GitHub Action keeps the
-listings fresh and can re-sync your playlist every Friday without you touching it.
+This folder is where Claude writes the latest GigAmp code. Upload from here.
 
-Runs entirely on GitHub: Pages hosts the site, Actions does the scraping. No server.
+## Current release: v0.10 (17 Sep 2026)
 
-```
-scraper/scrape.py      Songkick metro listings (+ Do604)  ->  docs/data/raw/<city>.json
-scraper/do604.py       Do604 daily music listings for small/DIY rooms (curated venue list)
-scraper/enrich.py      Spotify artist match + top tracks  ->  docs/data/<city>.json
-scraper/lastfm.py      Last.fm audience size + tags per act; free pre-filter before Spotify
-scraper/common.py      Selection rules shared with the site (window, venues, genres, reach)
-docs/                  Static site (GitHub Pages) with in-browser Spotify login (PKCE)
-sync/sync_playlists.py Weekly unattended playlist refresh for subscribers
-sync/authorize.py      One-time helper to mint a refresh token for auto-sync
-.github/workflows/     Daily cron: scrape -> enrich -> commit; Friday: sync playlists
-```
+- Taste survey artists now come from a Last.fm seed pool and no longer need a local
+  gig. Local and emerging acts still appear in the later rounds.
+- Amp faceplate: City, Sources, Audience, Window as click-to-step dials, always visible.
+- Single column of collapsible modules: faceplate, For You, Filters, then the show list.
+- For You is three rails of two shows each, with a "more" link.
+- "Tune For You" asks three further questions instead of silently doing nothing.
+- Every round has a "Neither — skip this pair" so a guess never pollutes the profile.
 
-## Setup (about 15 minutes)
+## What to upload to GitHub
 
-### 1. Create the GitHub repo
+1. Drag the whole `docs` folder in. `index.html`, `app.js` and `config.js` must always
+   go up together — the page and the script are versioned as a pair.
+2. Drag the whole `scraper` folder in. `seed_artists.py` is new; `lastfm.py` has a new
+   `tag_top_artists` method that the new script needs. `enrich.py`, `scrape.py`,
+   `do604.py`, `venues.py`, `common.py` and `cities.json` are unchanged, so they are
+   not in here — only upload what is here and leave the rest alone.
+3. `tests` is optional developer tooling. Nothing in `docs` depends on it.
 
-Push this folder to a new repository on your GitHub account (public or private both
-work; Pages on a private repo needs GitHub Pro). Then:
+## One workflow change you need to make by hand
 
-- Settings -> Pages -> Source: "Deploy from a branch", branch `main`, folder `/docs`.
-  Note the URL it gives you, e.g. `https://<you>.github.io/gigamp/`.
-- Settings -> Actions -> General -> Workflow permissions: "Read and write permissions".
+`.github/workflows/refresh.yml` is not in this folder (it is not in the release zips),
+so add this step yourself, after the `enrich.py` step and before the commit step:
 
-### 2. Create the Spotify app
+    - name: Refresh taste-survey seed pool
+      run: python scraper/seed_artists.py
+      env:
+        SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+        SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+        LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
 
-At https://developer.spotify.com/dashboard, Create app:
+Make sure the commit step also picks up `docs/seed-artists.json`.
 
-- Name: GigAmp. Redirect URIs, add both:
-  - your Pages URL exactly, with trailing slash: `https://<you>.github.io/gigamp/`
-  - `http://127.0.0.1:8888/callback` (for the auto-sync helper)
-- API used: Web API. Save.
-- Settings -> User Management: add the Spotify account email of everyone who will log
-  in (Development Mode allows 5, each must have Premium; the owner must too).
-- Copy the Client ID into `docs/config.js` (`spotifyClientId`). Commit and push.
-- Copy Client ID and Client Secret into the repo's Actions secrets
-  (Settings -> Secrets and variables -> Actions): `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`.
+The first run resolves roughly 300 new artists on Spotify, which is the largest single
+demand this project has made on the Dev Mode daily quota. If it trips, the script writes
+what it got and exits 0, and the next run fills in the rest. To be gentle the first time:
 
-### 2b. Last.fm key (audience-size slider)
+    python scraper/seed_artists.py --max-new 80
 
-Get a free API key at https://www.last.fm/api/account/create (any app name; no callback
-needed) and add it as the Actions secret `LASTFM_API_KEY`. Without it the site still works
-but every act shows as "unknown" size and the Spotify pre-filter is off.
+The site works without the file — it falls back to surveying acts that have local gigs,
+which is how v0.9 behaved — so uploading `docs` before the pipeline has run is safe.
 
-### 3. First data run
+## What is deliberately NOT in here
 
-Actions -> "Weekly refresh" -> Run workflow. A few minutes later `docs/data/` has the
-Vancouver dataset and the site is live.
+- `docs/data/` — listings JSON, generated weekly by the Action.
+- `docs/seed-artists.json` — the seed pool, generated by `scraper/seed_artists.py`.
 
-Spotify's Development Mode has an unpublished daily request quota (you get a 429 with
-`QUOTA_EXCEEDED` and a ~24 h Retry-After). GigAmp is built for it: one request per act,
-nearest shows first, and when the quota trips it saves what it has and stops cleanly.
-The workflow runs daily so the artist cache fills in over a few days; from then on each
-day only needs to look up the handful of newly announced acts. Playlists sync on Fridays.
+Both are produced by the pipeline. If either appears in this folder it is synthetic test
+data written by `tests/make_fixture.py`; do not upload it or it will overwrite the real
+thing.
 
-Once data is there, open the site, log in with Spotify, pick venues and genres, Create playlist.
+## Files
 
-### 4. Optional: weekly auto-sync of your playlist
+    docs/index.html    page shell, all styles, the faceplate markup
+    docs/app.js        listings, comparison game, taste model, For You, the dials
+    docs/config.js     city default, survey tuning, rail sizes
+    docs/genres.json   the 43-genre controlled vocabulary (shared with scraper/common.py)
 
-The site's "Weekly auto-refresh for this selection" panel prints a JSON block for your
-current selection. Paste it into `sync/subscribers.json`, then on your Mac:
+    scraper/seed_artists.py  builds docs/seed-artists.json from Last.fm tag charts
+    scraper/lastfm.py        adds tag_top_artists()
 
-```
-pip install requests
-SPOTIFY_CLIENT_ID=... SPOTIFY_CLIENT_SECRET=... python sync/authorize.py
-```
+    tests/make_fixture.py     synthetic docs/data + docs/seed-artists.json, no scraper needed
+    tests/browser_test.mjs    74 end-to-end checks in headless Chromium, desktop and phone
+    tests/selector_test.mjs   39 checks driving six simulated listeners through the survey
 
-It opens a Spotify login and prints a refresh token. Save it as an Actions secret with
-the name you used in `token_secret` (the default entry uses `SPOTIFY_REFRESH_TOKEN_BRIAN`),
-and add a matching line under the "Sync subscriber playlists" step in
-`.github/workflows/refresh.yml` if you add more subscribers. From then on the Friday
-run rebuilds the playlist for the rolling window. Past shows fall off, new bookings appear.
+Running the tests needs Node and Playwright:
 
-## Audience size ("reach")
+    python3 tests/make_fixture.py
+    node tests/browser_test.mjs
+    node tests/selector_test.mjs
 
-Spotify does not expose monthly listeners, and Development Mode apps no longer get
-`followers` or `popularity`, so GigAmp uses Last.fm total listeners as the audience-size
-signal. It covers even tiny acts and tracks streaming scale well on a log axis. Tiers:
-unknown (not on Last.fm), underground (<5k), emerging (5k-50k), established (50k-500k),
-big (500k+). The site's slider selects a tier range; the same `reach: [min, max]` goes in
-a subscriber entry for auto-sync. Last.fm community tags also fill in genres where Spotify
-returns none. Last.fm is queried before Spotify, and heuristic (Do604) names that Last.fm
-has never seen skip the Spotify request entirely, which protects the daily quota.
+## Also in this folder
 
-## Sources
-
-Songkick is the primary source: structured artist data, strong for anything ticketed or
-touring. It misses the DIY layer (Songkick lists 2 Green Auto shows where Do604 lists 20),
-so Do604 is a second source for a curated list of small rooms (`do604.venues` in
-`cities.json`; edit it freely). Do604 titles are free text, so artist names are parsed
-heuristically and only kept when Spotify has an exact-name match. Where both sources
-list the same date and venue, Songkick wins. The site has a Sources toggle so you can
-look at the touring layer, the local layer, or both.
-
-## Adding a city
-
-Add an entry to `scraper/cities.json`. The `songkick_metro_id` is the slug in a Songkick
-metro URL, e.g. `https://www.songkick.com/metro-areas/17835-uk-london` -> `17835-uk-london`.
-`market` is the Spotify market code used for track availability. Run the workflow.
-
-## Filters
-
-- Tribute and cover acts are dropped (`TRIBUTE_RE` in `scraper/scrape.py`).
-- Themed club nights (emo night, disco parties, frosh, etc.) are dropped, but headline
-  DJs and producers are ordinary billed acts and stay in (`CLUB_NIGHT_RE`).
-- Comedy, film, orchestral and other non-gig listings are dropped (`NON_MUSIC_RE`).
-- Cancelled and postponed shows are dropped; duplicates are merged.
-- Acts with no Spotify match are listed as `unmatched` in the city JSON for review.
-
-## How the two songs are chosen
-
-Ranking comes from Last.fm `artist.getTopTracks` (tracks ordered by listener count, free,
-no quota). Spotify search is used only to resolve each chosen song to a track ID for the
-embed player, normally from the ten tracks the single artist search already returned, else
-one targeted `track:"..." artist:"..."` search. If Last.fm has no data for an act, the old
-Spotify search-relevance order is used. `rank_source` on each artist records which path
-applied (`lastfm`, `lastfm+search`, `search`, or `top_tracks` on Extended Quota apps).
-Each artist also carries a MusicBrainz id (`mbid`) when Last.fm knows one, a
-platform-neutral key should the embed source ever need to change.
-
-## Spotify API notes (September 2026)
-
-Spotify's Development Mode (what a personal app gets) is capped at 5 users, requires
-Premium, and since February 2026 no longer serves `/artists/{id}/top-tracks` or
-`popularity` fields. GigAmp handles this automatically: it tries top-tracks first (works
-for Extended Quota Mode apps and gives Spotify's own "Popular" ranking), and otherwise
-falls back to an artist-scoped track search, whose relevance order tracks streaming
-popularity closely. The `rank_source` field on each artist records which was used.
-If you get access to an Extended Quota Mode app, just swap the Client ID and secret.
-
-Playlist writes use the renamed `/playlists/{id}/items` endpoint with a fallback to
-the legacy `/tracks` path.
-
-## Local development
-
-```
-pip install -r requirements.txt
-python scraper/scrape.py --city vancouver
-SPOTIFY_CLIENT_ID=... SPOTIFY_CLIENT_SECRET=... python scraper/enrich.py --city vancouver
-cd docs && python -m http.server 8000     # then open http://localhost:8000
-python -m pytest tests/
-```
-
-Songkick's pages are fetched politely (one request every 1.5 s, a handful of pages a
-week). If they change their markup, `parse_page` in `scrape.py` is the only place to fix.
+`Code Sept 10/` is an older snapshot of the scraper from before v0.8. Left untouched.
