@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-09-18T17:46:41+00:00",
+ "generated_at": "2026-09-19T17:22:52+00:00",
  "cities": [
   {
    "slug": "vancouver",
    "name": "Vancouver, BC",
    "timezone": "America/Vancouver",
-   "events": 370,
-   "artists": 595,
+   "events": 369,
+   "artists": 591,
    "pending": 0,
-   "generated_at": "2026-09-18T17:47:56+00:00"
+   "generated_at": "2026-09-19T17:23:06+00:00"
   }
  ]
 }

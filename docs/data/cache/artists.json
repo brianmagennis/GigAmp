@@ -37161,8 +37161,8 @@
 "query": "Brit Floyd",
 "fetched_at": "2026-09-18T17:47:41+00:00",
 "reach": {
-"listeners": 20279,
-"playcount": 91921,
+"listeners": 20283,
+"playcount": 91952,
 "tags": [
 "trance",
 "electronic",
@@ -37170,7 +37170,8 @@
 "progressive trance"
 ],
 "tier": 2,
-"lastfm_url": "https://www.last.fm/music/Floyd"
+"lastfm_url": "https://www.last.fm/music/Floyd",
+"mbid": "92756aa3-5434-4038-97bb-3e384b7c0348"
 },
 "matcher": 4,
 "spotify_id": "3KCDjhsDSiD1qqlHh5pOp0",
@@ -37182,7 +37183,7 @@
 "image": "https://i.scdn.co/image/ab6761610000f178ede23243b31111bb1be4de99",
 "tracks": [],
 "rank_source": "search",
-"mbid": null
+"mbid": "92756aa3-5434-4038-97bb-3e384b7c0348"
 },
 "meat computer": {
 "query": "meat computer",
@@ -37923,5 +37924,977 @@
 "DJ HOLLANDEZ",
 "DJ Dollynho Da Lapa"
 ]
+},
+"rumpus": {
+"query": "RUMPUS",
+"fetched_at": "2026-09-19T17:22:52+00:00",
+"reach": {
+"listeners": 4403,
+"playcount": 19963,
+"tags": [
+"alternative and punk",
+"alternative rock"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Rumpus",
+"mbid": "5a2639dc-86f1-4cc8-abe5-1b654eb3745b"
+},
+"matcher": 4,
+"spotify_id": "4T4r8Uk43XoKw47hE7en9w",
+"spotify_name": "Rumpus",
+"url": "https://open.spotify.com/artist/4T4r8Uk43XoKw47hE7en9w",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178dc29f27ad3cc707fa50cf3f2",
+"tracks": [
+{
+"id": "1at9cS8JOVmkXh6zWZNwQT",
+"uri": "spotify:track:1at9cS8JOVmkXh6zWZNwQT",
+"name": "Gimmie the Goop (the Goop Anthem)",
+"popularity": null,
+"album": "Gimmie the Goop (the Goop Anthem)",
+"album_type": "single",
+"release_date": "2026-01-30",
+"duration_ms": 126479,
+"explicit": true
+}
+],
+"rank_source": "lastfm+search",
+"mbid": "5a2639dc-86f1-4cc8-abe5-1b654eb3745b"
+},
+"pineo and loeb": {
+"query": "PINEO & LOEB",
+"fetched_at": "2026-09-19T17:22:55+00:00",
+"reach": {
+"listeners": 8038,
+"playcount": 34124,
+"tags": [
+"electronic"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/PINEO+&+LOEB",
+"mbid": "a4606c27-bfbe-411a-a6f7-8c250444dd41"
+},
+"matcher": 4,
+"spotify_id": "7LildCOU5me58NKlvsLVRI",
+"spotify_name": "PINEO & LOEB",
+"url": "https://open.spotify.com/artist/7LildCOU5me58NKlvsLVRI",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178c9ef9cce9dbb6ad0cccdaad3",
+"tracks": [
+{
+"id": "2hPfdamZuGnp01jMtb4MAM",
+"uri": "spotify:track:2hPfdamZuGnp01jMtb4MAM",
+"name": "Attached 2 U",
+"popularity": null,
+"album": "RADIANCE",
+"album_type": "album",
+"release_date": "2023-03-03",
+"duration_ms": 181000,
+"explicit": false
+},
+{
+"id": "0HzQks2s1J4xA5iRD5qXIB",
+"uri": "spotify:track:0HzQks2s1J4xA5iRD5qXIB",
+"name": "Don't Go… - Original Mix",
+"popularity": null,
+"album": "LIFEBLOOD",
+"album_type": "album",
+"release_date": "2017-09-29",
+"duration_ms": 213534,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "a4606c27-bfbe-411a-a6f7-8c250444dd41"
+},
+"sophie hunter": {
+"query": "Sophie Hunter",
+"fetched_at": "2026-09-19T17:22:55+00:00",
+"reach": {
+"listeners": 94690,
+"playcount": 1732067,
+"tags": [
+"rap",
+"electronic"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/sophie+hunter",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "3L2gl8O5cKVCbAnSWUFZxf",
+"spotify_name": "Sophie Hunter",
+"url": "https://open.spotify.com/artist/3L2gl8O5cKVCbAnSWUFZxf",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1780ee08c0387b80df69eb82ab0",
+"tracks": [
+{
+"id": "5HzScPy2qtIW2S0u2sD5rP",
+"uri": "spotify:track:5HzScPy2qtIW2S0u2sD5rP",
+"name": "CVNT",
+"popularity": null,
+"album": "CVNT",
+"album_type": "single",
+"release_date": "2022-10-16",
+"duration_ms": 144077,
+"explicit": true
+},
+{
+"id": "64BO08oRsnWxOTcOi8m557",
+"uri": "spotify:track:64BO08oRsnWxOTcOi8m557",
+"name": "Mic Check",
+"popularity": null,
+"album": "Mic Check",
+"album_type": "single",
+"release_date": "2024-04-22",
+"duration_ms": 218443,
+"explicit": true
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"jimmy baldwin band": {
+"query": "Jimmy Baldwin Band",
+"fetched_at": "2026-09-19T17:22:56+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 4
+},
+"jack garton": {
+"query": "Jack Garton",
+"fetched_at": "2026-09-19T17:22:56+00:00",
+"reach": {
+"listeners": 139,
+"playcount": 1838,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Jack+Garton",
+"mbid": "96de5f4f-ef09-434b-a516-3a7fb4cd8212"
+},
+"matcher": 4,
+"spotify_id": "115AJKSYjiehNrCFuBKzQA",
+"spotify_name": "Jack Garton",
+"url": "https://open.spotify.com/artist/115AJKSYjiehNrCFuBKzQA",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178f1100992f844965125c18008",
+"tracks": [
+{
+"id": "4iKzHgI46qMVjdW6WbAhCP",
+"uri": "spotify:track:4iKzHgI46qMVjdW6WbAhCP",
+"name": "Watching Kurosawa",
+"popularity": null,
+"album": "Original Skin",
+"album_type": "album",
+"release_date": "2023-12-03",
+"duration_ms": 267035,
+"explicit": false
+},
+{
+"id": "1djTrKkIKNJ4TiE93Wntal",
+"uri": "spotify:track:1djTrKkIKNJ4TiE93Wntal",
+"name": "Move the Mess Around",
+"popularity": null,
+"album": "Move the Mess Around",
+"album_type": "album",
+"release_date": "2016-06-03",
+"duration_ms": 264853,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "96de5f4f-ef09-434b-a516-3a7fb4cd8212"
+},
+"nightshades": {
+"query": "Nightshades",
+"fetched_at": "2026-09-19T17:22:56+00:00",
+"reach": {
+"listeners": 2151,
+"playcount": 9755,
+"tags": [
+"alternative"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Nightshades",
+"mbid": "092e2013-233e-42ef-9f68-64935537b1e9"
+},
+"matcher": 4,
+"spotify_id": "4Q3MSwm9VZ20BMkRYjlKGL",
+"spotify_name": "nightshades",
+"url": "https://open.spotify.com/artist/4Q3MSwm9VZ20BMkRYjlKGL",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178b86a6aa014482586ffb71933",
+"tracks": [
+{
+"id": "7CUFk0t1Ye7gLxETWmPHmA",
+"uri": "spotify:track:7CUFk0t1Ye7gLxETWmPHmA",
+"name": "See That Bear",
+"popularity": null,
+"album": "Inside Joke",
+"album_type": "album",
+"release_date": "2025-07-09",
+"duration_ms": 177881,
+"explicit": false
+},
+{
+"id": "6WVViSDfyQ9nas19wzaKAd",
+"uri": "spotify:track:6WVViSDfyQ9nas19wzaKAd",
+"name": "Orpheus",
+"popularity": null,
+"album": "Inside Joke",
+"album_type": "album",
+"release_date": "2025-07-09",
+"duration_ms": 268963,
+"explicit": true
+}
+],
+"rank_source": "lastfm",
+"mbid": "092e2013-233e-42ef-9f68-64935537b1e9"
+},
+"we are scientists": {
+"query": "We Are Scientists",
+"fetched_at": "2026-09-19T17:22:57+00:00",
+"reach": {
+"listeners": 1438078,
+"playcount": 31809671,
+"tags": [
+"indie rock",
+"alternative",
+"rock",
+"alternative rock"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/We+Are+Scientists",
+"mbid": "9386b36e-87f3-4716-a219-79a07a4e29cc"
+},
+"matcher": 4,
+"spotify_id": "35YNL4wwv11ZkmeWWL51y7",
+"spotify_name": "We Are Scientists",
+"url": "https://open.spotify.com/artist/35YNL4wwv11ZkmeWWL51y7",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1784420dc2f2789339128554a78",
+"tracks": [
+{
+"id": "0iUano4euaiUETVUd1u0cx",
+"uri": "spotify:track:0iUano4euaiUETVUd1u0cx",
+"name": "Nobody Move, Nobody Get Hurt",
+"popularity": null,
+"album": "With Love And Squalor",
+"album_type": "album",
+"release_date": "2005-01-01",
+"duration_ms": 192311,
+"explicit": false
+},
+{
+"id": "37MkbRqfMdO4qlNj7C4Wfa",
+"uri": "spotify:track:37MkbRqfMdO4qlNj7C4Wfa",
+"name": "The Great Escape",
+"popularity": null,
+"album": "With Love And Squalor",
+"album_type": "album",
+"release_date": "2005-01-01",
+"duration_ms": 198832,
+"explicit": true
+}
+],
+"rank_source": "lastfm",
+"mbid": "9386b36e-87f3-4716-a219-79a07a4e29cc"
+},
+"jon and roy": {
+"query": "Jon and Roy",
+"fetched_at": "2026-09-19T17:22:57+00:00",
+"reach": {
+"listeners": 138753,
+"playcount": 1306725,
+"tags": [
+"mellow",
+"folk",
+"acoustic",
+"reggae"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Jon+and+Roy",
+"mbid": "e027fd1a-990a-452f-b4e2-4356b37b96fc"
+},
+"matcher": 4,
+"spotify_id": "1K0Gi1qUFGSyZUFXvJF4F2",
+"spotify_name": "Jon and Roy",
+"url": "https://open.spotify.com/artist/1K0Gi1qUFGSyZUFXvJF4F2",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17822a27a6239583a7ff0cf2bba",
+"tracks": [
+{
+"id": "1sU9hziSWwjRuYjPek0o6o",
+"uri": "spotify:track:1sU9hziSWwjRuYjPek0o6o",
+"name": "Nothing but Everything",
+"popularity": null,
+"album": "The Road Ahead Is Golden",
+"album_type": "album",
+"release_date": "2017-06-08",
+"duration_ms": 214537,
+"explicit": false
+},
+{
+"id": "4mMNes6dhbLuqkDUsxwMcr",
+"uri": "spotify:track:4mMNes6dhbLuqkDUsxwMcr",
+"name": "Every Night",
+"popularity": null,
+"album": "By My Side",
+"album_type": "album",
+"release_date": "2014-05-27",
+"duration_ms": 198399,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "e027fd1a-990a-452f-b4e2-4356b37b96fc"
+},
+"skinny dyck": {
+"query": "Skinny Dyck",
+"fetched_at": "2026-09-19T17:22:58+00:00",
+"reach": {
+"listeners": 25052,
+"playcount": 106482,
+"tags": [],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Skinny+Dyck",
+"mbid": "069e00c6-d15b-42d6-a758-db1384cd766c"
+},
+"matcher": 4,
+"spotify_id": "1saewocg14MmejEW9t4SZL",
+"spotify_name": "Skinny Dyck",
+"url": "https://open.spotify.com/artist/1saewocg14MmejEW9t4SZL",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17805997676b83affaec07d4b13",
+"tracks": [
+{
+"id": "2EPVnpHcW722JXgRKDO7PA",
+"uri": "spotify:track:2EPVnpHcW722JXgRKDO7PA",
+"name": "Dreamin'",
+"popularity": null,
+"album": "Get to Know Lonesome",
+"album_type": "album",
+"release_date": "2020-07-03",
+"duration_ms": 226750,
+"explicit": false
+},
+{
+"id": "7vyEZR8x9bU4c7zcryIeVz",
+"uri": "spotify:track:7vyEZR8x9bU4c7zcryIeVz",
+"name": "Easygoing",
+"popularity": null,
+"album": "Easygoing",
+"album_type": "album",
+"release_date": "2024-10-25",
+"duration_ms": 232466,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "069e00c6-d15b-42d6-a758-db1384cd766c"
+},
+"faber drive": {
+"query": "Faber Drive",
+"fetched_at": "2026-09-19T17:22:58+00:00",
+"reach": {
+"listeners": 169224,
+"playcount": 3223128,
+"tags": [
+"pop punk",
+"alternative rock",
+"alternative",
+"rock"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Faber+Drive",
+"mbid": "098302e3-7240-4fc6-82da-ee5b92bf1037"
+},
+"matcher": 4,
+"spotify_id": "3SziwNj6JCnqd2ajUdXlIT",
+"spotify_name": "Faber Drive",
+"url": "https://open.spotify.com/artist/3SziwNj6JCnqd2ajUdXlIT",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1787c43e3792b2121d4f0a004af",
+"tracks": [
+{
+"id": "60yCKKra9QzWZtfgQ7EfNe",
+"uri": "spotify:track:60yCKKra9QzWZtfgQ7EfNe",
+"name": "Tongue Tied",
+"popularity": null,
+"album": "Seven Second Surgery",
+"album_type": "album",
+"release_date": "2007-05-01",
+"duration_ms": 210653,
+"explicit": false
+},
+{
+"id": "3yt45V8pGMdNzAQBXXXJF7",
+"uri": "spotify:track:3yt45V8pGMdNzAQBXXXJF7",
+"name": "Second Chance",
+"popularity": null,
+"album": "Seven Second Surgery",
+"album_type": "album",
+"release_date": "2007-05-01",
+"duration_ms": 222093,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "098302e3-7240-4fc6-82da-ee5b92bf1037"
+},
+"kota friend": {
+"query": "KOTA The Friend",
+"fetched_at": "2026-09-19T17:22:59+00:00",
+"reach": {
+"listeners": 499827,
+"playcount": 14332363,
+"tags": [
+"hip-hop",
+"rap",
+"jazz rap",
+"jazz hop"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/KOTA+The+Friend",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "2AfU5LYBVCiCtuCCfM7uVX",
+"spotify_name": "Kota the Friend",
+"url": "https://open.spotify.com/artist/2AfU5LYBVCiCtuCCfM7uVX",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178305f14af938528751d1fc9de",
+"tracks": [
+{
+"id": "3DbBgbnDUOml329rAp2Tbr",
+"uri": "spotify:track:3DbBgbnDUOml329rAp2Tbr",
+"name": "Colorado",
+"popularity": null,
+"album": "Colorado",
+"album_type": "single",
+"release_date": "2018-10-24",
+"duration_ms": 206500,
+"explicit": true
+},
+{
+"id": "6tqIes4TjudsjfIpK4P2Jh",
+"uri": "spotify:track:6tqIes4TjudsjfIpK4P2Jh",
+"name": "Long Beach",
+"popularity": null,
+"album": "EVERYTHING",
+"album_type": "album",
+"release_date": "2020-05-22",
+"duration_ms": 252778,
+"explicit": true
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"just happy to be": {
+"query": "Just Happy to Be",
+"fetched_at": "2026-09-19T17:22:59+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 4
+},
+"moontricks": {
+"query": "Moontricks",
+"fetched_at": "2026-09-19T17:22:59+00:00",
+"reach": {
+"listeners": 24885,
+"playcount": 237724,
+"tags": [
+"folk",
+"bluegrass",
+"blues"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Moontricks",
+"mbid": "23fc6dff-c119-432e-b9e8-2f712a0bdd6d"
+},
+"matcher": 4,
+"spotify_id": "6o52orvClP7ba1qV4zMVlg",
+"spotify_name": "Moontricks",
+"url": "https://open.spotify.com/artist/6o52orvClP7ba1qV4zMVlg",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178703d4ec1e0cdbe6a1883a9fc",
+"tracks": [
+{
+"id": "299MugSdBRCWC220u9eNTU",
+"uri": "spotify:track:299MugSdBRCWC220u9eNTU",
+"name": "Mountains",
+"popularity": null,
+"album": "Mountains",
+"album_type": "single",
+"release_date": "2017-03-03",
+"duration_ms": 244277,
+"explicit": false
+},
+{
+"id": "2eII7kQp92E20ijKxRVcDK",
+"uri": "spotify:track:2eII7kQp92E20ijKxRVcDK",
+"name": "Home",
+"popularity": null,
+"album": "Home EP",
+"album_type": "single",
+"release_date": "2015-10-23",
+"duration_ms": 286000,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "23fc6dff-c119-432e-b9e8-2f712a0bdd6d"
+},
+"kr3ture": {
+"query": "KR3TURE",
+"fetched_at": "2026-09-19T17:23:00+00:00",
+"reach": {
+"listeners": 28073,
+"playcount": 234088,
+"tags": [
+"electronic",
+"united states"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Kr3Ture",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "5Da6Z6taYuywICqGUwocwu",
+"spotify_name": "KR3TURE",
+"url": "https://open.spotify.com/artist/5Da6Z6taYuywICqGUwocwu",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1782b64d3d0fa1a8747454c90ed",
+"tracks": [
+{
+"id": "2DHtD6MrR7Zy2XKqGnZYK7",
+"uri": "spotify:track:2DHtD6MrR7Zy2XKqGnZYK7",
+"name": "Watch it Grow",
+"popularity": null,
+"album": "Watch it Grow",
+"album_type": "single",
+"release_date": "2017-04-11",
+"duration_ms": 209825,
+"explicit": false
+},
+{
+"id": "2ihO0xVqrWCiQTbntkQmsn",
+"uri": "spotify:track:2ihO0xVqrWCiQTbntkQmsn",
+"name": "Anthropocene",
+"popularity": null,
+"album": "Anthropocene",
+"album_type": "single",
+"release_date": "2018-05-17",
+"duration_ms": 222680,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"frase": {
+"query": "The Frase",
+"fetched_at": "2026-09-19T17:23:00+00:00",
+"spotify_id": null,
+"reach": {
+"listeners": 9,
+"playcount": 331,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/The+Frase",
+"mbid": null
+},
+"matcher": 4,
+"candidates": [
+"The Fraser Family",
+"The 78th Fraser Highlanders Pipe Band",
+"The Pipers of the Quebec City 78th Fraser Highlanders",
+"The Rare Occasions",
+"Grateful Dead",
+"The Fratellis"
+]
+},
+"van jazz 2026 diles que no me maten": {
+"query": "**Van Jazz 2026** Diles Que No Me Maten",
+"fetched_at": "2026-09-19T17:23:01+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 4
+},
+"infidelity": {
+"query": "Infidelity",
+"fetched_at": "2026-09-19T17:23:01+00:00",
+"reach": {
+"listeners": 2331,
+"playcount": 20042,
+"tags": [
+"rundevilrun records"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Infidelity",
+"mbid": "909783dc-535d-4df0-aaaa-6086f38bea97"
+},
+"matcher": 4,
+"spotify_id": "58V849SCN7s8vh50uhWHBE",
+"spotify_name": "Infidelity",
+"url": "https://open.spotify.com/artist/58V849SCN7s8vh50uhWHBE",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17862cf63b81bbe1392c07903a3",
+"tracks": [
+{
+"id": "76Dz7w4zQT50AyBq5lqU8O",
+"uri": "spotify:track:76Dz7w4zQT50AyBq5lqU8O",
+"name": "TILL AND TRULY SO",
+"popularity": null,
+"album": "LEECH",
+"album_type": "album",
+"release_date": "2024-10-04",
+"duration_ms": 124800,
+"explicit": false
+},
+{
+"id": "3hmaIhozrnMryzScV09LoP",
+"uri": "spotify:track:3hmaIhozrnMryzScV09LoP",
+"name": "ladybug (bad influence)",
+"popularity": null,
+"album": "fly, summer dragon",
+"album_type": "album",
+"release_date": "2023-01-08",
+"duration_ms": 224000,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "909783dc-535d-4df0-aaaa-6086f38bea97"
+},
+"phoebe bridgers": {
+"query": "Phoebe Bridgers",
+"fetched_at": "2026-09-19T17:23:02+00:00",
+"reach": {
+"listeners": 2279099,
+"playcount": 311938324,
+"tags": [
+"indie folk",
+"folk",
+"indie rock"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/Phoebe+Bridgers",
+"mbid": "96855c21-b832-4366-ba12-0d2330c36a86"
+},
+"matcher": 4,
+"spotify_id": "1r1uxoy19fzMxunt3ONAkG",
+"spotify_name": "Phoebe Bridgers",
+"url": "https://open.spotify.com/artist/1r1uxoy19fzMxunt3ONAkG",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1786e2d4ab2b84463aa4c349311",
+"tracks": [
+{
+"id": "25Syi9wnfn6ZGAmiOBypPq",
+"uri": "spotify:track:25Syi9wnfn6ZGAmiOBypPq",
+"name": "Motion Sickness",
+"popularity": null,
+"album": "Stranger in the Alps (Deluxe Edition)",
+"album_type": "album",
+"release_date": "2018-10-02",
+"duration_ms": 229760,
+"explicit": false
+},
+{
+"id": "21uFPefbgeR3QLVJWATlrr",
+"uri": "spotify:track:21uFPefbgeR3QLVJWATlrr",
+"name": "Scott Street",
+"popularity": null,
+"album": "Stranger in the Alps (Deluxe Edition)",
+"album_type": "album",
+"release_date": "2018-10-02",
+"duration_ms": 305000,
+"explicit": true
+}
+],
+"rank_source": "lastfm",
+"mbid": "96855c21-b832-4366-ba12-0d2330c36a86"
+},
+"alex g": {
+"query": "Alex G",
+"fetched_at": "2026-09-19T17:23:03+00:00",
+"reach": {
+"listeners": 2184142,
+"playcount": 272477077,
+"tags": [
+"lo-fi",
+"indie rock",
+"indie folk"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/Alex+G",
+"mbid": "7545a8ca-a3c9-490f-93f9-68886dcddff1"
+},
+"matcher": 4,
+"spotify_id": "6lcwlkAjBPSKnFBZjjZFJs",
+"spotify_name": "Alex G",
+"url": "https://open.spotify.com/artist/6lcwlkAjBPSKnFBZjjZFJs",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178cfa32469a372188d27bd17b7",
+"tracks": [
+{
+"id": "4HuiEuJ7ZW8jewUuZBg6sk",
+"uri": "spotify:track:4HuiEuJ7ZW8jewUuZBg6sk",
+"name": "Sarah",
+"popularity": null,
+"album": "Trick",
+"album_type": "album",
+"release_date": "2012-11-05",
+"duration_ms": 176146,
+"explicit": false
+},
+{
+"id": "4p9iQNEmsIGkB6eG8Val8n",
+"uri": "spotify:track:4p9iQNEmsIGkB6eG8Val8n",
+"name": "Mary",
+"popularity": null,
+"album": "Trick",
+"album_type": "album",
+"release_date": "2012-11-05",
+"duration_ms": 197733,
+"explicit": true
+}
+],
+"rank_source": "lastfm",
+"mbid": "7545a8ca-a3c9-490f-93f9-68886dcddff1"
+},
+"charles wesley godwin": {
+"query": "Charles Wesley Godwin",
+"fetched_at": "2026-09-19T17:23:03+00:00",
+"reach": {
+"listeners": 143032,
+"playcount": 2965298,
+"tags": [
+"country",
+"americana",
+"folk",
+"alternative country"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Charles+Wesley+Godwin",
+"mbid": "082e1531-e8ff-43ef-8f1c-7c6600b0c00d"
+},
+"matcher": 4,
+"spotify_id": "2ErsJAz6qJ5cqjoVAvfvaC",
+"spotify_name": "Charles Wesley Godwin",
+"url": "https://open.spotify.com/artist/2ErsJAz6qJ5cqjoVAvfvaC",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178bf4f605fc86259ad71b45794",
+"tracks": [
+{
+"id": "5etrSAugIe3FXuG6em9Atj",
+"uri": "spotify:track:5etrSAugIe3FXuG6em9Atj",
+"name": "All Again",
+"popularity": null,
+"album": "Family Ties",
+"album_type": "album",
+"release_date": "2023-09-22",
+"duration_ms": 228346,
+"explicit": true
+},
+{
+"id": "7vN6yDVTOphQUXJ1leQgPB",
+"uri": "spotify:track:7vN6yDVTOphQUXJ1leQgPB",
+"name": "Winter's Come and Gone - from The Hunger Games: The Ballad of Songbirds & Snakes",
+"popularity": null,
+"album": "The Hunger Games: The Ballad of Songbirds & Snakes (Music From & Inspired By)",
+"album_type": "album",
+"release_date": "2023-11-17",
+"duration_ms": 169243,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "082e1531-e8ff-43ef-8f1c-7c6600b0c00d"
+},
+"lily fitts": {
+"query": "Lily Fitts",
+"fetched_at": "2026-09-19T17:23:03+00:00",
+"reach": {
+"listeners": 39867,
+"playcount": 488193,
+"tags": [
+"folk"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Lily+Fitts",
+"mbid": "2ec5d162-db5c-4b07-a731-e650a34e264c"
+},
+"matcher": 4,
+"spotify_id": "1mY66135CEOJg0KTwDIk4N",
+"spotify_name": "Lily Fitts",
+"url": "https://open.spotify.com/artist/1mY66135CEOJg0KTwDIk4N",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1780f932f2d4868af1004c904ec",
+"tracks": [
+{
+"id": "7gxXeE4sH4aHtYwXulaxAK",
+"uri": "spotify:track:7gxXeE4sH4aHtYwXulaxAK",
+"name": "Lose You Now",
+"popularity": null,
+"album": "Lose You Now",
+"album_type": "single",
+"release_date": "2024-04-26",
+"duration_ms": 198572,
+"explicit": false
+},
+{
+"id": "6vOREHD8dHkIhPppoKb00H",
+"uri": "spotify:track:6vOREHD8dHkIhPppoKb00H",
+"name": "Hurts Like Hell",
+"popularity": null,
+"album": "Hurts Like Hell",
+"album_type": "single",
+"release_date": "2023-07-21",
+"duration_ms": 163636,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "2ec5d162-db5c-4b07-a731-e650a34e264c"
+},
+"sunset rollercoaster": {
+"query": "Sunset Rollercoaster",
+"fetched_at": "2026-09-19T17:23:04+00:00",
+"reach": {
+"listeners": 270917,
+"playcount": 3675902,
+"tags": [
+"indie rock",
+"taiwanese",
+"psychedelic",
+"soul"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Sunset+Rollercoaster",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "7BqRcZsHYYQeqMAOp7e532",
+"spotify_name": "落日飛車 Sunset Rollercoaster",
+"url": "https://open.spotify.com/artist/7BqRcZsHYYQeqMAOp7e532",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17817dd503b5c1841cd238c9aa7",
+"tracks": [
+{
+"id": "7npPPrZEDmeHMk6mxvIeFa",
+"uri": "spotify:track:7npPPrZEDmeHMk6mxvIeFa",
+"name": "My Jinji",
+"popularity": null,
+"album": "JINJI KIKKO",
+"album_type": "single",
+"release_date": "2016-03-01",
+"duration_ms": 400560,
+"explicit": false
+},
+{
+"id": "1YTzatjgpsZVPMrNXa9r2Y",
+"uri": "spotify:track:1YTzatjgpsZVPMrNXa9r2Y",
+"name": "I Know You Know I Love You",
+"popularity": null,
+"album": "BOSSA NOVA",
+"album_type": "album",
+"release_date": "2011-09-22",
+"duration_ms": 120693,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"devault": {
+"query": "DEVAULT",
+"fetched_at": "2026-09-19T17:23:05+00:00",
+"reach": {
+"listeners": 195920,
+"playcount": 1652084,
+"tags": [
+"electronic",
+"united states",
+"pop"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/DeVault",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "1VBAKMui4zm5MnBWNn3NbL",
+"spotify_name": "Devault",
+"url": "https://open.spotify.com/artist/1VBAKMui4zm5MnBWNn3NbL",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178669860fe69ee33857a3bdeb6",
+"tracks": [
+{
+"id": "284RMlPbsmixQAjz9umvtc",
+"uri": "spotify:track:284RMlPbsmixQAjz9umvtc",
+"name": "Never Like Me",
+"popularity": null,
+"album": "Sensation",
+"album_type": "album",
+"release_date": "2024-09-13",
+"duration_ms": 194526,
+"explicit": true
+},
+{
+"id": "23Hxd8ph2vJWlXngubtyuO",
+"uri": "spotify:track:23Hxd8ph2vJWlXngubtyuO",
+"name": "Feels Like Us",
+"popularity": null,
+"album": "Feels Like Us",
+"album_type": "single",
+"release_date": "2025-11-14",
+"duration_ms": 234545,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
 }
 }
