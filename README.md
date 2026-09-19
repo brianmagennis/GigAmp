@@ -2,7 +2,25 @@
 
 This folder is where Claude writes the latest GigAmp code. Upload from here.
 
-## Current release: v0.14 (19 Sep 2026)
+## Current release: v0.15 (19 Sep 2026)
+
+- **Tune For You and Tune this work again.** They had quietly died for anyone who had
+  used the site more than once. The stop rule checked a *lifetime* answered count
+  against a ceiling of maxRounds + tuneRounds, so once you had answered 11 comparisons
+  across all your visits, every later tune decided it was already finished before it
+  drew a question - and the scroll then landed you in For You, which is exactly what it
+  looked like. A tune run now counts from where it started and nothing else applies
+  while it is running. The pass guard is per-run for the same reason, and when the pool
+  runs dry the acts you saw longest ago come round again instead of the run stopping dead.
+- **The sync/subscribers.json block is gone from the page.** That was repo setup
+  instructions for the weekly Action, on screen for visitors since v0.8. Removed along
+  with all its wiring.
+- Tests: 122 -> 128 checks. The new ones tune three more times from a returning profile
+  and insist each run asks its three questions, which is the case the old suite missed:
+  it only ever tuned once, from a fresh profile. Two more assert the setup block stays off
+  the page.
+
+## Previous: v0.14 (19 Sep 2026)
 
 - **Copy for Spotify actually works now.** It was copying "Artist - Track" lines, which
   Spotify has no way to import - a straight bug against mechanism 1 in
@@ -119,7 +137,7 @@ thing.
     scraper/lastfm.py        adds tag_top_artists()
 
     tests/make_fixture.py     synthetic docs/data + docs/seed-artists.json, no scraper needed
-    tests/browser_test.mjs    74 end-to-end checks in headless Chromium, desktop and phone
+    tests/browser_test.mjs    128 end-to-end checks in headless Chromium, desktop and phone
     tests/selector_test.mjs   39 checks driving six simulated listeners through the survey
 
 Running the tests needs Node and Playwright:

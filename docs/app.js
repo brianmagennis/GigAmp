@@ -21,7 +21,6 @@
         ($("#results") || document.body).insertAdjacentElement("beforebegin", s); },
       forYou: () => { const s = document.createElement("section"); s.id = "forYou"; s.hidden = true;
         ($("#results") || document.body).insertAdjacentElement("beforebegin", s); },
-      plName: () => { const i = document.createElement("input"); i.type = "text"; i.id = "plName"; i.hidden = true; document.body.appendChild(i); },
       city: () => { const sel = document.createElement("select"); sel.id = "city"; sel.hidden = true; document.body.appendChild(sel); },
       personalModule: () => { const d = document.createElement("details"); d.id = "personalModule"; d.className = "module"; d.hidden = true;
         d.innerHTML = `<summary><h2 id="fyTitle">For you</h2><span class="modSub" id="fySub"></span></summary><div class="modBody"><section id="onboard"></section><div id="forYou"></div></div>`;
@@ -32,7 +31,7 @@
         ($("#knobs") || document.body).insertAdjacentElement("beforebegin", d); },
     };
     for (const [id, make] of Object.entries(need)) if (!document.getElementById(id)) { try { make(); } catch {} }
-    for (const id of ["status", "results", "unmatched", "dataAge", "subJson", "nShows", "nArtists", "nTracks", "allGigsHead",
+    for (const id of ["status", "results", "unmatched", "dataAge", "nShows", "nArtists", "nTracks", "allGigsHead",
       "tuneBtn", "copyList", "knobs", "fySub", "fyTitle", "filterSummary", "faceCount", "citySelectWrap", "forYou", "faceNow"])
       if (!document.getElementById(id)) { const el = document.createElement("div"); el.id = id; el.hidden = true; document.body.appendChild(el); }
   })();
@@ -456,6 +455,16 @@
     const emergingRound = round >= 4;
 
     let cands = state.pool.filter((p) => !used.has(p.key));
+    if (cands.length < 2) {
+      // Someone who keeps tuning eventually sees every act in the pool. Rather than
+      // stopping dead, let the ones they saw longest ago come round again.
+      const lastSeen = new Map();
+      taste.explicit.comparisons.forEach((c, i) => { lastSeen.set(c.a.key, i); lastSeen.set(c.b.key, i); });
+      cands = [...state.pool]
+        .filter((p) => !state.round || (p.key !== state.round.a.key && p.key !== state.round.b.key))
+        .sort((a, b) => (lastSeen.get(a.key) ?? -1) - (lastSeen.get(b.key) ?? -1))
+        .slice(0, 80);
+    }
     if (cands.length < 2) return null;
 
     // The first rounds are only useful if the visitor recognises both names, so
@@ -514,8 +523,12 @@
     // A "tune" run sets a target a few rounds above where the profile already is.
     // Without this the stop rule is satisfied the moment the run starts and the
     // whole thing finishes before a single question is drawn.
-    const target = taste.onboarding.targetRounds || 0;
-    if (n < target) return n >= OB.maxRounds + OB.tuneRounds;
+    // A tune run asks for a fixed number more, counted from where it started, and
+    // NOTHING else applies while it is running. The old fallback to a lifetime
+    // ceiling meant that once someone had answered maxRounds + tuneRounds across
+    // all their visits, every later tune finished before drawing a question -
+    // which looked exactly like the button doing nothing.
+    if (taste.onboarding.targetRounds) return n >= taste.onboarding.targetRounds;
     if (n >= OB.maxRounds) return true;
     if (n >= OB.minRounds && settledAxes() >= OB.settledAxes) return true;
     return false;
@@ -531,15 +544,19 @@
     }
     if (!taste.onboarding.startedAt) taste.onboarding.startedAt = Date.now();
     state.onboarding = true;
+    state.runShown = 0;              // pass guard counts this run, not a lifetime
     nextRound();
   }
   function nextRound() {
     const n = answeredCount();
     if (onboardingComplete()) return finishOnboarding();
     // Somebody who passes on everything would otherwise loop forever through the pool.
-    if (shownCount() >= OB.maxRounds + OB.maxPasses + (taste.onboarding.targetRounds || 0)) return finishOnboarding();
+    // Counted per run: a lifetime count would strand a returning visitor.
+    const cap = (taste.onboarding.targetRounds ? OB.tuneRounds : OB.maxRounds) + OB.maxPasses;
+    if ((state.runShown || 0) >= cap) return finishOnboarding();
     const pair = nextPair(n);
     if (!pair) return finishOnboarding();
+    state.runShown = (state.runShown || 0) + 1;
     state.round = { n, a: pair[0], b: pair[1], shownAt: Date.now(), plays: {} };
     $("#personalModule").hidden = false;
     applyUiState();
@@ -1185,13 +1202,6 @@
     $("#savedBtn").textContent = `★ My shows${saved.size ? ` (${saved.size})` : ""}`;
     $("#savedBtn").setAttribute("aria-pressed", state.savedOnly);
     if (!r.shows.length && state.savedOnly) $("#results").innerHTML = `<div class="empty">No saved shows in this window. Tap ☆ on a show to save it.</div>`;
-    const cityName = state.data.city_name.split(",")[0];
-    if (!$("#plName").value) $("#plName").value = `${CFG.playlistPrefix || "GigAmp"} · ${cityName}`;
-    $("#subJson").textContent = JSON.stringify({
-      id: "me", city: state.city, playlist_name: $("#plName").value, days: state.days,
-      venues: state.venues || [], exclude_venues: [], genres: state.genres, sources: state.sources, reach: state.reach,
-      headliners_only: state.headliners, public: false, token_secret: "SPOTIFY_REFRESH_TOKEN_ME",
-    }, null, 2);
     const um = state.data.unmatched?.length || 0;
     $("#unmatched").textContent = um ? ` ${um} billed act${um === 1 ? "" : "s"} had no Spotify match and ${um === 1 ? "was" : "were"} left out.` : "";
     const gen = new Date(state.data.generated_at);

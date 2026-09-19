@@ -333,13 +333,6 @@ body.has-dock{padding-bottom:120px}
     <div class="status" id="status"></div>
     <div id="results"></div>
 
-    <details class="setup" id="setup">
-      <summary>Weekly auto-refresh for this selection</summary>
-      <p style="color:var(--muted);font-size:13.5px">GigAmp refreshes its listings every Friday. To have this exact selection pushed to a playlist automatically, add the block below to <code>sync/subscribers.json</code> in the repo, run <code>sync/authorize.py</code> once to get a refresh token, and save it as the GitHub Actions secret named in <code>token_secret</code>.</p>
-      <label class="toggle" style="margin-bottom:10px">Playlist name <input type="text" id="plName" placeholder="Playlist name"></label>
-      <pre id="subJson"></pre>
-    </details>
-
     <p class="foot">
       Listings from <a href="https://www.songkick.com" target="_blank" rel="noopener">Songkick</a> and <a href="https://do604.com" target="_blank" rel="noopener">Do604</a>; artist matches and tracks from Spotify.
       Two tracks per act: the two songs Last.fm listeners play most, resolved on Spotify so you can hear them here; press ▶ to play.

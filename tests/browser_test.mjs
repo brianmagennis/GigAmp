@@ -55,6 +55,10 @@ ok(!/code_challenge|code_verifier|refresh_token/.test(src), "PKCE code is gone")
 ok(!/gigamp:tok/.test(src), "token storage is gone");
 ok(/open\.spotify\.com\/embed\/iframe-api/.test(src), "embed player kept (it never needed auth)");
 ok(await page.locator("#copyList").isVisible(), "Copy for Spotify replaces Create playlist");
+// Developer plumbing that was never meant to be on a visitor's screen.
+ok(!/subscribers\.json|token_secret|SPOTIFY_REFRESH_TOKEN/.test(html),
+  "no repo config instructions on the page");
+ok(await page.locator("#setup").count() === 0, "the sync setup block is gone");
 
 console.log("\n2. The comparison game");
 await page.waitForSelector("#onboard .vsCard", { timeout: 10000 });
@@ -306,6 +310,29 @@ const after = await page.evaluate(() => window.__gigamp.taste.explicit.compariso
 ok(tuneRounds === 3, "it asks exactly the three configured extra questions", `${tuneRounds}`);
 ok(after === before + 3, "and keeps everything already learned", `${before} -> ${after}`);
 ok(await page.locator("#forYou .rail").count() > 0, "For You is back afterwards");
+
+console.log("\n6b2. Tune keeps working on later visits");
+// The bug this covers: the stop rule fell back to a LIFETIME ceiling while a tune was
+// running, so once someone had answered maxRounds + tuneRounds across all their visits,
+// every later tune finished before drawing a question. One tune passed; the fourth did
+// nothing. Tune repeatedly, reloading in between, and insist it keeps asking.
+for (let pass = 2; pass <= 4; pass++) {
+  await page.reload({ waitUntil: "domcontentloaded" });
+  await page.waitForFunction(() => document.querySelectorAll("#results .show").length > 0, null, { timeout: 15000 });
+  const before = await page.evaluate(() => window.__gigamp.taste.explicit.comparisons.filter((c) => c.chose).length);
+  await page.locator("#tuneBtn").click();
+  await page.waitForTimeout(220);
+  const drew = await page.locator("#onboard .vsCard").count() === 2;
+  let asked = 0;
+  while (await page.locator("#onboard .vsCard").count() === 2 && asked < 8) {
+    await page.evaluate(() => document.querySelector("#onboard [data-choose]").click());
+    await page.waitForTimeout(90); asked++;
+  }
+  const after = await page.evaluate(() => window.__gigamp.taste.explicit.comparisons.filter((c) => c.chose).length);
+  ok(drew && asked === 3 && after === before + 3,
+    `tune #${pass} still asks three questions`, `lifetime ${before} → ${after}, asked ${asked}`);
+}
+ok(await page.locator("#forYou .rail").count() > 0, "and For You is intact after all that tuning");
 
 console.log("\n6c. Skipping a single pair");
 {
