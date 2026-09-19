@@ -40,6 +40,9 @@ header{display:flex;align-items:center;justify-content:space-between;gap:16px;pa
   box-shadow:inset 0 1px 0 rgba(255,255,255,.07), 0 1px 2px rgba(0,0,0,.4);
   padding:14px 16px 12px;margin-bottom:16px;
 }
+/* On a wide screen the dials are simply always there; the summary row is only a
+   phone affordance, so it is hidden and the panel is forced open. */
+.faceSummary{display:none}
 .knobs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .knob{display:flex;flex-direction:column;align-items:center;gap:5px;min-width:0}
 .knobLabel{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
@@ -66,19 +69,25 @@ header{display:flex;align-items:center;justify-content:space-between;gap:16px;pa
 .faceFoot{margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.06);color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 /* Stay one row on a phone. Stacked 2x2 the faceplate fills the whole first screen
    and pushes the actual content below the fold. */
+/* A 58px rotary is a poor touch target, and four of them squeezed into one row
+   was the worst of both worlds. On a phone the faceplate is normally a one-line
+   readout; tapping it opens full-size dials, two across, with every position
+   written out. Collapsed it is shorter than the old row, so the survey gains
+   room rather than losing it. */
 @media (max-width:560px){
-  .knobs{gap:6px}
-  .knobDial{width:58px;height:58px}
-  .knobDial .tick{stroke-width:3}
-  .knobDial .tick.on{stroke-width:4}
-  .knobDial .pointer{stroke-width:5}
-  .knobLabel{font-size:9px;letter-spacing:.08em}
-  /* No room for the full list of positions on a phone: show the chosen one only. */
-  .knobOpts{min-height:24px}
-  .knobOpt{font-size:10.5px}
-  .knobOpt:not(.on){display:none}
-  .faceplate{padding:11px 12px 8px}
-  .faceFoot{display:none}          /* the same counts are in the stats row below */
+  .faceplate{padding:0}
+  .faceSummary{display:flex;align-items:center;gap:10px;padding:11px 13px;cursor:pointer;
+    list-style:none;font-size:13px;color:var(--text);user-select:none}
+  .faceSummary::-webkit-details-marker{display:none}
+  .faceSummary::after{content:"";margin-left:auto;width:7px;height:7px;flex:none;
+    border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);
+    transform:rotate(45deg) translateY(-2px);transition:transform .18s}
+  .faceplate[open] .faceSummary::after{transform:rotate(225deg) translateY(-2px)}
+  .faceLabel{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);flex:none}
+  #faceNow{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+  .knobs{grid-template-columns:repeat(2,1fr);gap:14px 8px;padding:2px 13px 13px}
+  .knobOpts{min-height:0}
+  .faceFoot{margin:0 13px;padding-bottom:11px}
 }
 
 /* ---------- collapsible modules ---------- */
@@ -166,8 +175,6 @@ select,input[type=text]{width:100%;background:var(--panel-2);color:var(--text);b
   .vsPlay,.vsChoose{flex:1 1 120px;max-width:none;margin-top:0;padding:7px 10px;font-size:13px}
   .obFoot{margin-top:8px}
   .btn.obPass,.btn.obSkip{padding:4px 10px;font-size:12px}
-  .knobDial{width:54px;height:54px}
-  .knobOpts{min-height:18px}
 }
 
 /* ---------- For You ---------- */
@@ -181,13 +188,7 @@ select,input[type=text]{width:100%;background:var(--panel-2);color:var(--text);b
 /* Rail items are the same stacked show cards as All Gigs, not a second card design. */
 .railItems{display:block}
 .show .why{font-size:12px;color:var(--accent);margin:0 0 8px;line-height:1.35}
-.missing>summary{cursor:pointer;color:var(--muted);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
-.missing table{width:100%;border-collapse:collapse;font-size:12.5px}
-.missing td{padding:4px 8px 4px 0;vertical-align:top;border-top:1px solid var(--line)}
-.missing td.who{color:var(--text);font-weight:600;white-space:nowrap}
-.missing td.why{color:var(--muted)}
-.missing .cand{color:var(--muted);opacity:.8}
-.missing .note{color:var(--muted);font-size:12px;margin:2px 0 10px;line-height:1.5}
+.show .alsoOn{color:var(--muted);font-size:12px;margin-top:7px;padding-left:48px}
 
 /* ---------- all gigs ---------- */
 .allHead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:22px 0 10px}
@@ -201,6 +202,7 @@ select,input[type=text]{width:100%;background:var(--panel-2);color:var(--text);b
 .status{min-height:20px;color:var(--muted);font-size:13.5px;margin:6px 0 12px}
 .status.err{color:var(--danger)}
 .status a{color:var(--accent)}
+.status .linkish{background:none;border:0;color:var(--accent);text-decoration:underline;padding:0;font-size:inherit}
 .day{margin:18px 0 8px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px}
 .day::after{content:"";flex:1;height:1px;background:var(--line)}
 .show{display:block;padding:12px 14px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:8px}
@@ -265,28 +267,20 @@ body.has-dock{padding-bottom:120px}
   </header>
 
   <main>
-    <section class="faceplate">
+    <details class="faceplate" id="facePanel" open>
+      <summary class="faceSummary"><span class="faceLabel">Search</span><span id="faceNow"></span></summary>
       <div class="knobs" id="knobs"></div>
       <div class="faceFoot">
         <span id="dataAge"></span>
         <span id="faceCount"></span>
       </div>
-    </section>
+    </details>
 
     <details class="module" id="advancedModule">
       <summary><h2>Advanced search</h2><span class="modSub" id="filterSummary"></span></summary>
       <div class="modBody">
         <div class="sub">
-          <h3>Venues <span class="links"><button id="vAll">all</button>·<button id="vNone">none</button>·<button id="vSmall">no arenas</button></span></h3>
-          <div class="list" id="venues"></div>
-        </div>
-        <div class="sub">
-          <h3>Genres <span class="links"><button id="gClear">clear</button></span></h3>
-          <div class="chips" id="genres"></div>
-          <label class="toggle"><input type="checkbox" id="headliners"> Headliners only</label>
-        </div>
-        <div class="sub">
-          <h3>Audience size, finer</h3>
+          <h3>Audience size</h3>
           <div class="range" id="reachRange">
             <div class="track"></div><div class="fill" id="reachFill"></div>
             <input type="range" id="reachMin" min="0" max="4" step="1" value="0" aria-label="Smallest audience">
@@ -295,14 +289,19 @@ body.has-dock{padding-bottom:120px}
           </div>
           <div class="reach-label" id="reachLabel"></div>
         </div>
+        <div class="sub">
+          <h3>Venues <span class="links"><button id="vAll">select all</button>·<button id="vNone">clear</button>·<button id="vSmall">no arenas</button></span></h3>
+          <div class="list" id="venues"></div>
+        </div>
+        <div class="sub">
+          <h3>Genres <span class="links"><button id="gAll">select all</button>·<button id="gClear">clear</button></span></h3>
+          <div class="chips" id="genres"></div>
+          <label class="toggle"><input type="checkbox" id="headliners"> Headliners only</label>
+        </div>
         <div class="sub" id="citySelectWrap" hidden>
           <h3>City</h3>
           <select id="city"></select>
         </div>
-        <details class="sub missing" id="missingWrap" hidden>
-          <summary id="missingHead"></summary>
-          <div id="missing"></div>
-        </details>
       </div>
     </details>
 

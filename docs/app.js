@@ -27,12 +27,13 @@
         d.innerHTML = `<summary><h2 id="fyTitle">For you</h2><span class="modSub" id="fySub"></span></summary><div class="modBody"><section id="onboard"></section><div id="forYou"></div></div>`;
         ($("#results") || document.body).insertAdjacentElement("beforebegin", d); },
       advancedModule: () => { const d = document.createElement("details"); d.id = "advancedModule"; d.className = "module"; document.body.appendChild(d); },
-      missingWrap: () => { const d = document.createElement("details"); d.id = "missingWrap"; d.hidden = true;
-        d.innerHTML = `<summary id="missingHead"></summary><div id="missing"></div>`; document.body.appendChild(d); },
+      facePanel: () => { const d = document.createElement("details"); d.id = "facePanel"; d.className = "faceplate"; d.open = true;
+        d.innerHTML = `<summary class="faceSummary"><span class="faceLabel">Search</span><span id="faceNow"></span></summary>`;
+        ($("#knobs") || document.body).insertAdjacentElement("beforebegin", d); },
     };
     for (const [id, make] of Object.entries(need)) if (!document.getElementById(id)) { try { make(); } catch {} }
     for (const id of ["status", "results", "unmatched", "dataAge", "subJson", "nShows", "nArtists", "nTracks", "allGigsHead",
-      "tuneBtn", "copyList", "knobs", "fySub", "fyTitle", "filterSummary", "faceCount", "citySelectWrap", "forYou"])
+      "tuneBtn", "copyList", "knobs", "fySub", "fyTitle", "filterSummary", "faceCount", "citySelectWrap", "forYou", "faceNow"])
       if (!document.getElementById(id)) { const el = document.createElement("div"); el.id = id; el.hidden = true; document.body.appendChild(el); }
   })();
 
@@ -138,6 +139,7 @@
   /* ---- persisted taste: explicit / behaviour / derived, kept apart ------- */
   const TASTE_KEY = "gigamp:taste";
   const UI_KEY = "gigamp:ui";          // which modules the visitor left open
+  const ROT_KEY = "gigamp:rot";        // rotates the "because you liked" seed per visit
   const blankTaste = () => ({
     v: 1,
     // What the user told us.
@@ -210,9 +212,30 @@
     for (const [key, n] of Object.entries(taste.behaviour.plays || {})) bump(artistAffinity, key, Math.min(0.4, 0.2 * n));
     for (const [key, n] of Object.entries(taste.behaviour.ticketClicks || {})) bump(artistAffinity, key, Math.min(0.6, 0.3 * n));
     for (const key of taste.explicit.savedArtists || []) bump(artistAffinity, key, 0.8);
+    for (const [key, w] of savedArtistWeights()) bump(artistAffinity, key, w);
 
     taste.derived = { axes, artistAffinity, genreAffinity, updatedAt: Date.now() };
   }
+
+  /** Artists on the shows the visitor starred. Starring is a stronger statement of
+      intent than anything the survey can ask, so it feeds the same affinity score. */
+  function savedArtistWeights() {
+    const out = new Map();
+    if (!state.data) return out;
+    for (const e of state.data.events) {
+      if (!saved.has(showKey(e))) continue;
+      const arts = collapseSameSpotify(e.artists);
+      arts.forEach((a, i) => {
+        // The act on the poster is why the show was starred; the rest of the bill
+        // counts, but not enough on its own to become a "because you liked" seed.
+        const w = i === 0 ? 0.9 : 0.45;
+        const k = artistKey(a);
+        out.set(k, Math.max(out.get(k) || 0, w));
+      });
+    }
+    return out;
+  }
+  const savedArtistKeys = () => new Set([...savedArtistWeights()].filter(([, w]) => w >= 0.9).map(([k]) => k));
 
   const beliefOf = (k) => taste.derived.axes[k]?.value || 0;
   const confOf = (k) => taste.derived.axes[k]?.conf || 0;
@@ -411,7 +434,7 @@
   /* ===================================================================== */
   const OB = Object.assign({ minRounds: 5, maxRounds: 8, settledAxes: 4, settledConf: 0.5,
     tuneRounds: 3, maxPasses: 6 }, CFG.onboarding || {});
-  const RAIL = Object.assign({ size: 2, expanded: 6 }, CFG.rails || {});
+  const RAIL = Object.assign({ size: 2, expanded: 6, seedPool: 6 }, CFG.rails || {});
   const SEP_MAX = 2.2, SEP_MIN = 0.55;
 
   const shownKeys = () => {
@@ -606,28 +629,50 @@
      at most once, and so does an ARTIST. Three nights of the same band is a
      calendar, not discovery. Each rail shows RAIL.size cards with a link to open
      the rest, so the section stays short without throwing away good matches. */
-  function railBecause(cands, ctx) {
-    // Seed on artists they actually chose. Later rounds are the more refined
-    // answers, so a late pick outranks an early one at the same affinity.
-    // The seed itself may have no gig at all — it is a reference point, not a listing.
-    const roundOf = new Map();
-    taste.explicit.comparisons.forEach((c, i) => { if (c.chose) roundOf.set(c.chose, i); });
-    const picks = Object.entries(taste.derived.artistAffinity)
-      .filter(([, s]) => s > 0.5)
-      .sort((a, b) => (b[1] - a[1]) || ((roundOf.get(b[0]) ?? -1) - (roundOf.get(a[0]) ?? -1)))
-      .map(([k]) => state.poolByKey.get(k)).filter(Boolean);
-    const seeds = [];
-    for (const p of picks) {
-      // One "because you liked" rail unless a second pick sits somewhere genuinely
-      // different in taste space — two rails about the same corner is just padding.
-      if (seeds.length && seeds.every((s) => vecSim(s.v, p.v) > 0.5)) continue;
-      seeds.push(p);
-      if (seeds.length === 2) break;
+  /** Which act this visit's rail is built around. Every act they picked in the
+      survey or starred a show for is a candidate; the rail rotates through them
+      one per page load, so the section is not the same two gigs every time. */
+  function becauseSeeds() {
+    // Two sources, both newest first: acts they starred a show for, and acts they
+    // picked in the survey. They are interleaved rather than ranked, because a star
+    // from this morning should not queue behind eight survey answers, and eight
+    // stars should not bury the survey either.
+    const stars = [];
+    const headliner = new Map();
+    if (state.data) {
+      for (const e of state.data.events) {
+        const arts = collapseSameSpotify(e.artists).filter((a) => a.tracks?.length);
+        if (arts.length) headliner.set(showKey(e), artistKey(arts[0]));
+      }
     }
-    const rails = [];
-    for (const seed of seeds) {
+    for (const k of [...saved].reverse()) {
+      const a = headliner.get(k);
+      if (a && !stars.includes(a)) stars.push(a);
+    }
+    const picks = [];
+    for (let i = taste.explicit.comparisons.length - 1; i >= 0; i--) {
+      const c = taste.explicit.comparisons[i];
+      if (c.chose && !picks.includes(c.chose)) picks.push(c.chose);
+    }
+    const out = [], seen = new Set();
+    for (let i = 0; i < Math.max(stars.length, picks.length) && out.length < RAIL.seedPool; i++) {
+      for (const k of [stars[i], picks[i]]) {
+        if (!k || seen.has(k) || out.length >= RAIL.seedPool) continue;
+        const p = state.poolByKey.get(k);
+        if (!p) continue;
+        seen.add(k); out.push(p);
+      }
+    }
+    return out;
+  }
+  function railBecause(cands, ctx) {
+    const seeds = becauseSeeds();
+    if (!seeds.length) return [];
+    // Rotate on every load, and skip a seed that cannot fill a rail this time.
+    const spin = store.get(ROT_KEY, 0);
+    for (let n = 0; n < seeds.length; n++) {
+      const seed = seeds[(spin + n) % seeds.length];
       const pool = cands.filter((c) => free(c, ctx)).map((c) => ({ ...c, rel: vecSim(seed.v, c.lead.v) }));
-      // The seed's own next show can lead the rail, but only once and only one of them.
       const own = pool.filter((c) => c.lead.key === seed.key).sort((a, b) => a.e.start.localeCompare(b.e.start))[0];
       const others = pool.filter((c) => c.lead.key !== seed.key && c.rel > 0.55)
         .sort((a, b) => (b.rel * 0.6 + b.score * 0.4) - (a.rel * 0.6 + a.score * 0.4));
@@ -635,12 +680,16 @@
       if (items.length < RAIL.size) continue;
       for (const it of items) {
         claim(it, ctx);
-        it.reason = it.lead.key === seed.key ? `You picked ${seed.name} — they're playing` : `Because you liked ${seed.name}`;
+        // The rail heading already says "Because you liked X". Repeating it on every
+        // card just reads as noise, so a card says what the link actually is.
+        if (it.lead.key === seed.key) { it.reason = "The act you picked — playing here"; continue; }
+        const shared = (it.lead.genres || []).filter((g) => (seed.genres || []).includes(g));
+        it.reason = shared.length ? `Also ${shared.slice(0, 2).join(" and ")}`
+          : it.rel > 0.8 ? "Very close to that" : "In the same corner";
       }
-      rails.push({ id: "because", title: `Because you liked ${seed.name}`, items });
-      if (rails.length === 2) break;
+      return [{ id: "because", title: `Because you liked ${seed.name}`, items, seedKey: seed.key }];
     }
-    return rails;
+    return [];
   }
   function railEmerging(cands, ctx) {
     // Only acts the visitor has given no sign of already knowing: anything they
@@ -664,12 +713,20 @@
       }
       return bk;
     };
-    for (const it of items) {
+    // Only the first card makes the full argument; repeating "You liked X" on every
+    // card in the rail just drones.
+    items.forEach((it, i) => {
       claim(it, ctx);
       const seed = nearest(it.lead);
-      it.reason = seed ? `You liked ${seed.name}. Catch ${it.lead.name} first.`
+      if (i === 0) {
+        it.reason = seed ? `You liked ${seed.name}. Catch ${it.lead.name} first.`
+          : `${TIER_NAMES[it.lead.tier]} act that fits your picks`;
+        return;
+      }
+      const shared = seed ? (it.lead.genres || []).filter((g) => (seed.genres || []).includes(g)) : [];
+      it.reason = shared.length ? `Also ${shared.slice(0, 2).join(" and ")}, and barely known yet`
         : `${TIER_NAMES[it.lead.tier]} act that fits your picks`;
-    }
+    });
     return { id: "emerging", title: "Before they blow up", items, blurb: "Smaller acts that match your picks, playing here soon." };
   }
 
@@ -721,22 +778,23 @@
     scored.sort((a, b) => b.stretch.s - a.stretch.s);
     const items = dedupeByArtist(scored, ctx, RAIL.expanded);
     if (!items.length) return null;
-    for (const it of items) {
+    items.forEach((it, i) => {
       claim(it, ctx);
       const ax = it.stretch.ax, poles = AXIS_POLES[ax.k];
       const toward = poles.to[it.lead.v[ax.i] > 0 ? 1 : 0];
       const from = poles.from[ax.b > 0 ? 1 : 0];
-      // Name the act: two cards on the same axis otherwise carry the identical line.
-      it.reason = toward && from ? `You lean ${from}. ${it.lead.name} is ${toward}.` : "Further from your usual";
-    }
+      if (!toward) { it.reason = "Further from your usual"; return; }
+      // The first card explains the contrast; the rest just state it.
+      it.reason = i === 0 && from ? `You lean ${from}. ${it.lead.name} is ${toward}.`
+        : `${it.lead.name} is ${toward}`;
+    });
     return { id: "stretch", title: "Something a little different", items,
       blurb: "Close to your taste in every way but one." };
   }
   // Shared dedupe bookkeeping for the rails above.
-  // Now that a rail card shows the whole bill, "no artist twice" has to cover every
-  // act on the card, not just the one the rail is about.
-  const free = (c, ctx) => !ctx.events.has(showKey(c.e)) && !c.artists.some((a) => ctx.artists.has(artistKey(a)));
-  const claim = (c, ctx) => { ctx.events.add(showKey(c.e)); for (const a of c.artists) ctx.artists.add(artistKey(a)); };
+  // Only the lead act is rendered on a rail card, so that is what must not repeat.
+  const free = (c, ctx) => !ctx.events.has(showKey(c.e)) && !ctx.artists.has(c.lead.key);
+  const claim = (c, ctx) => { ctx.events.add(showKey(c.e)); ctx.artists.add(c.lead.key); };
   function dedupeByArtist(list, ctx, n) {
     const out = [], seen = new Set();
     for (const c of list) {
@@ -773,12 +831,16 @@
      A dial points at the value you click, like a real one: the click angle picks
      the position. Clicking the centre cap steps on by one, and the arrow keys work,
      so nothing here depends on a gesture anyone has to discover. */
-  const REACH_PRESETS = [
-    { label: "All sizes", range: [0, 4] },
-    { label: "Underground", sub: "under 5k listeners", range: [0, 1] },
-    { label: "Rising", sub: "under 50k listeners", range: [0, 2] },
-    { label: "Mid-size", sub: "5k to 500k listeners", range: [2, 3] },
-    { label: "Big names", sub: "50k listeners up", range: [3, 4] },
+  /* Audience size on the faceplate is a ceiling, not a range: "nothing bigger than
+     this". That is genuinely one value, so a single-pointer dial is honest rather
+     than a lossy stand-in for two, and it behaves like a volume knob - turned down
+     for the underground, up for everything. Anyone who wants a floor as well uses
+     the two-ended slider in Advanced search, and the dial then reads "custom". */
+  const CEILING_PRESETS = [
+    { label: "Underground only", sub: "under 5k listeners", max: 1 },
+    { label: "Up to emerging", sub: "under 50k listeners", max: 2 },
+    { label: "Up to established", sub: "under 500k listeners", max: 3 },
+    { label: "Any size", sub: "no limit", max: 4 },
   ];
   const SOURCE_PRESETS = [
     { label: "Everything", value: ["songkick", "do604"] },
@@ -790,6 +852,17 @@
     { label: "30 days", value: 30 }, { label: "All listed", value: 45 },
   ];
   const sameArr = (a, b) => a.length === b.length && a.every((x) => b.includes(x));
+  /** A phrase for the current audience range. The raw tier names read badly on their
+      own ("unknown–emerging"), so a named preset wins and anything else is spelled out. */
+  function reachLabel() {
+    const [lo, hi] = state.reach;
+    if (lo === 0) {
+      const hit = CEILING_PRESETS.find((p) => p.max === hi);
+      if (hit) return hit.label.toLowerCase();
+    }
+    if (lo === hi) return `${TIER_NAMES[lo]} acts only`;
+    return `${TIER_NAMES[lo]} to ${TIER_NAMES[hi]} acts`;
+  }
 
   const KNOBS = [
     {
@@ -810,9 +883,10 @@
     },
     {
       id: "size", label: "Audience",
-      options: () => REACH_PRESETS,
-      index: () => { const i = REACH_PRESETS.findIndex((p) => p.range[0] === state.reach[0] && p.range[1] === state.reach[1]); return i < 0 ? -1 : i; },
-      set: (i) => { state.reach = [...REACH_PRESETS[i].range]; renderReach(); renderKnobs(); renderResults(); writeHash(); },
+      options: () => CEILING_PRESETS,
+      // A floor set on the slider is not a ceiling, so the dial declines to guess.
+      index: () => state.reach[0] !== 0 ? -1 : CEILING_PRESETS.findIndex((p) => p.max === state.reach[1]),
+      set: (i) => { state.reach = [0, CEILING_PRESETS[i].max]; renderReach(); renderKnobs(); renderFilterSummary(); renderForYou(); renderResults(); writeHash(); },
     },
     {
       id: "window", label: "Window",
@@ -838,12 +912,21 @@
       <line class="pointer" x1="50" y1="42" x2="50" y2="21" transform="rotate(${rot.toFixed(1)} 50 50)"${i < 0 ? ' opacity="0.25"' : ""}/>
       <circle class="cap" cx="50" cy="50" r="7"/></svg>`;
   }
+  const NARROW = () => window.matchMedia("(max-width:560px)").matches;
+  /** The panel is only collapsible on a phone. On a wide screen it is forced open,
+      whatever a previous phone session stored, or the dials would vanish entirely. */
+  function applyFaceState() {
+    const el = $("#facePanel");
+    state.applyingUi = true;
+    el.open = NARROW() ? (store.get(UI_KEY, {}).facePanel ?? false) : true;
+    state.applyingUi = false;
+  }
   function renderKnobs() {
     if (!state.index || !state.data) return;
     const host = $("#knobs");
     host.innerHTML = KNOBS.map((k) => {
       const opts = k.options(), i = k.index();
-      const cur = i >= 0 ? opts[i] : { label: "Custom", sub: `${TIER_NAMES[state.reach[0]]}–${TIER_NAMES[state.reach[1]]}` };
+      const cur = i >= 0 ? opts[i] : { label: "Custom", sub: reachLabel() };
       // Every position is written out and the chosen one is highlighted, so the dial
       // reads like a faceplate rather than a mystery. The words are buttons too.
       const words = opts.map((o, n) => `<button class="knobOpt${n === i ? " on" : ""}" data-knob-opt="${k.id}:${n}"
@@ -862,6 +945,12 @@
     if (many) { const sel = $("#city"); sel.innerHTML = state.index.cities.map((c) => `<option value="${c.slug}">${esc(c.name)}</option>`).join(""); sel.value = state.city; }
     const gen = new Date(state.data.generated_at);
     $("#faceCount").textContent = `updated ${gen.toLocaleDateString(undefined, { month: "short", day: "numeric" })}`;
+    // The collapsed phone readout: every dial's current position on one line.
+    $("#faceNow").textContent = KNOBS.map((k) => {
+      const i = k.index();
+      return i >= 0 ? k.options()[i].label : reachLabel();
+    }).join(" · ");
+    applyFaceState();
   }
   function knobStep(k, i) { const n = k.options().length; return Math.max(0, Math.min(n - 1, i)); }
   function onKnobPoint(el, ev) {
@@ -992,6 +1081,7 @@
         </div>
       </div>
       ${artists.map((a) => artistRow(a, k)).join("")}
+      ${opts.more ? `<div class="alsoOn">+${opts.more} more on the bill</div>` : ""}
     </article>`;
   }
   function artistRow(a, k) {
@@ -1003,8 +1093,14 @@
       </div>
     </div>`;
   }
-  // A rail card is the same card, carrying its reason and its own date.
-  const gigCard = (item) => showCard(item.e, item.artists, { why: item.reason, withDate: true });
+  /* A rail card is the same card as All Gigs, but only the act the rail is actually
+     about. Three rails of full bills ran to six screens; the rest of the lineup is a
+     tap away in the list below, so the card names it and moves on. */
+  const gigCard = (item) => {
+    const lead = item.artists.find((a) => artistKey(a) === item.lead.key) || item.artists[0];
+    return showCard(item.e, [lead],
+      { why: item.reason, withDate: true, more: Math.max(0, item.artists.length - 1) });
+  };
 
   /** Open state for the two modules. For you is open until the visitor closes it;
       Advanced search is closed until they open it. Both choices stick. */
@@ -1028,40 +1124,6 @@
     // The taste line lives in the body; repeating it in the header just doubles it up.
     const t = state.fyCount || 0;
     $("#fySub").textContent = t ? `${t} show${t === 1 ? "" : "s"} picked for you` : "";
-  }
-
-  /** Who the listings are missing. The data has carried this all along in
-      `unmatched`; the site simply never showed it. Grouped by why, because
-      "billed but not on Spotify" and "matched but no playable track" are
-      different problems. */
-  function renderMissing() {
-    const rows = state.data.unmatched || [];
-    const wrap = $("#missingWrap");
-    if (!rows.length) { wrap.hidden = true; return; }
-    wrap.hidden = false;
-    const REASONS = {
-      not_on_lastfm: "Nobody has ever scrobbled this name, so it was never sent to Spotify",
-      no_match: "Searched on Spotify, no artist matched the billed name",
-      no_tracks: "Matched an artist on Spotify, but no playable track came back",
-    };
-    const byReason = new Map();
-    for (const r of rows) {
-      const key = r.reason || "no_match";
-      if (!byReason.has(key)) byReason.set(key, []);
-      byReason.get(key).push(r);
-    }
-    $("#missingHead").textContent = `${rows.length} billed act${rows.length === 1 ? "" : "s"} left out`;
-    $("#missing").innerHTML =
-      `<p class="note">GigAmp needs a Spotify track to let you hear an act, so anything it cannot
-        resolve is left out of the listings. These are the names it could not place.</p>` +
-      [...byReason.entries()].sort((a, b) => b[1].length - a[1].length).map(([reason, list]) => `
-        <h4 style="margin:12px 0 4px;font-size:12.5px;color:var(--text)">${esc(REASONS[reason] || reason)} <span class="pill">${list.length}</span></h4>
-        <table><tbody>${list.slice(0, 60).map((r) => `<tr>
-          <td class="who">${esc(r.artist)}</td>
-          <td class="why">${esc(r.date || "")}${r.event ? ` · ${esc(r.event)}` : ""}${
-            r.candidates?.length ? `<div class="cand">Spotify offered: ${r.candidates.map(esc).join(", ")}</div>` : ""}</td>
-        </tr>`).join("")}</tbody></table>
-        ${list.length > 60 ? `<p class="note">…and ${list.length - 60} more.</p>` : ""}`).join("");
   }
 
   function renderForYou() {
@@ -1150,14 +1212,14 @@
   function onReachInput() {
     let lo = +$("#reachMin").value, hi = +$("#reachMax").value;
     if (lo > hi) { if (this && this.id === "reachMin") hi = lo; else lo = hi; }
-    state.reach = [lo, hi]; renderReach(); renderKnobs(); renderFilterSummary(); renderResults(); writeHash();
+    state.reach = [lo, hi]; renderReach(); renderKnobs(); renderFilterSummary(); renderForYou(); renderResults(); writeHash();
   }
   $("#reachMin").addEventListener("input", onReachInput); $("#reachMax").addEventListener("input", onReachInput);
   window.addEventListener("resize", () => state.data && renderReach());
   function renderSources() { for (const b of document.querySelectorAll("[data-src]")) b.checked = state.sources.includes(b.dataset.src); }
   function renderAll() {
     renderSources(); renderKnobs(); renderVenues(); renderGenres(); renderReach();
-    renderFilterSummary(); renderMissing(); renderOnboard(); renderForYou(); renderResults(); writeHash();
+    renderFilterSummary(); renderOnboard(); renderForYou(); renderResults(); writeHash();
   }
   /** One line on the collapsed filters module, so nothing is silently narrowing the list. */
   function renderFilterSummary() {
@@ -1165,7 +1227,7 @@
     if (state.venues) bits.push(`${state.venues.length} venue${state.venues.length === 1 ? "" : "s"}`);
     if (state.genres.length) bits.push(state.genres.slice(0, 3).join(", ") + (state.genres.length > 3 ? "…" : ""));
     if (state.headliners) bits.push("headliners only");
-    if (state.reach[0] !== 0 || state.reach[1] !== 4) bits.push(`${TIER_NAMES[state.reach[0]]}–${TIER_NAMES[state.reach[1]]}`);
+    if (state.reach[0] !== 0 || state.reach[1] !== 4) bits.push(reachLabel());
     $("#filterSummary").textContent = bits.length ? bits.join(" · ") : "all venues, all genres";
   }
   for (const b of document.querySelectorAll("[data-src]")) b.addEventListener("change", () => {
@@ -1252,6 +1314,9 @@
       b.closest(".show,.rec")?.classList.toggle("saved", on);
     }
     $("#savedBtn").textContent = `★ My shows${saved.size ? ` (${saved.size})` : ""}`;
+    // Starring is taste. Fold it in now; the rails pick it up on the next load rather
+    // than rearranging themselves under the hand that just tapped one.
+    recomputeDerived(); saveTaste();
   }
   function delegate(root) {
     root.addEventListener("click", (e) => {
@@ -1275,9 +1340,11 @@
   // Remember a manual collapse of For You so a re-render does not reopen it.
   // Collapsing the whole personalised block is remembered, so someone who only wants
   // the listings gets them straight away on every visit.
-  for (const id of ["personalModule", "advancedModule"]) {
+  window.matchMedia("(max-width:560px)").addEventListener("change", applyFaceState);
+  for (const id of ["personalModule", "advancedModule", "facePanel"]) {
     $("#" + id).addEventListener("toggle", (e) => {
       if (state.applyingUi) return;
+      if (id === "facePanel" && !NARROW()) return;      // desktop has no collapsed state to remember
       const ui = store.get(UI_KEY, {});
       ui[id] = e.target.open;
       store.set(UI_KEY, ui);
@@ -1302,6 +1369,12 @@
     renderGenres(); renderFilterSummary(); renderResults(); writeHash();
   });
   $("#gClear").onclick = () => { state.genres = []; renderGenres(); renderFilterSummary(); renderResults(); writeHash(); };
+  // Ticking every genre is the same result as ticking none, but it is the starting
+  // point for "everything except these two", which is what people actually want.
+  $("#gAll").onclick = () => {
+    state.genres = [...$("#genres").querySelectorAll(".chip")].map((b) => b.dataset.g);
+    renderGenres(); renderFilterSummary(); renderResults(); writeHash();
+  };
   $("#headliners").addEventListener("change", (e) => { state.headliners = e.target.checked; renderFilterSummary(); renderResults(); writeHash(); });
   $("#share").onclick = async () => {
     writeHash();
@@ -1310,17 +1383,39 @@
   };
   // Playlist handoff without any sign-in: the track list goes to the clipboard,
   // ready to paste into a Spotify (or anything else) search / import box.
-  $("#copyList").onclick = async () => {
-    const r = select(); if (!r.shows.length) return;
-    const lines = [], seen = new Set();
-    for (const s of r.shows) for (const a of s.artists) for (const t of a.tracks) {
+  /* Spotify has no "paste a tracklist" import, so the old Artist - Track text did
+     nothing on the Spotify side. What its desktop app and web player DO accept is a
+     paste of track URLs straight into a playlist (mechanism 1 in the export plan),
+     and we already hold a Spotify track id for every song. The plain list stays as a
+     second option, because that is the format Soundiiz and TuneMyMusic take. */
+  function exportTracks() {
+    const r = select();
+    const urls = [], text = [], seenId = new Set(), seenLine = new Set();
+    for (const sh of r.shows) for (const a of sh.artists) for (const t of a.tracks) {
+      if (t.id && !seenId.has(t.id)) { seenId.add(t.id); urls.push(`https://open.spotify.com/track/${t.id}`); }
       const line = `${a.name} - ${t.name}`;
-      if (!seen.has(line)) { seen.add(line); lines.push(line); }
+      if (!seenLine.has(line)) { seenLine.add(line); text.push(line); }
     }
-    const text = lines.join("\n");
-    try { await navigator.clipboard.writeText(text); status(`${lines.length} tracks copied. Paste them into a Spotify playlist, or any importer.`); }
-    catch { status("Copy failed — your browser blocked clipboard access."); }
-  };
+    return { urls, text };
+  }
+  async function copyOut(what) {
+    const { urls, text } = exportTracks();
+    const payload = what === "text" ? text : urls;
+    if (!payload.length) return;
+    try { await navigator.clipboard.writeText(payload.join("\n")); }
+    catch { return status("Copy failed — your browser blocked clipboard access.", true); }
+    if (what === "text") {
+      status(`${payload.length} tracks copied as a plain list. Paste it into Soundiiz or TuneMyMusic to build the playlist on any service.`);
+      return;
+    }
+    status(NARROW()
+      ? `${payload.length} Spotify links copied. The Spotify phone app can't paste a list — open this on a computer, or use <button class="linkish" data-copy="text">the plain list</button> with a transfer service.`
+      : `${payload.length} Spotify links copied. In Spotify (desktop app or web player) open a playlist, click the empty space below the tracks, and paste. <button class="linkish" data-copy="text">Need a plain list instead?</button>`);
+  }
+  $("#copyList").onclick = () => copyOut("spotify");
+  $("#status").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-copy]"); if (b) copyOut(b.dataset.copy);
+  });
 
   // ---------- data ----------
   async function loadIndex() {
@@ -1374,6 +1469,8 @@
         if (small.length < new Set(state.data.events.map((e) => e.venue)).size) state.venues = small;
       }
       buildPool();
+      recomputeDerived();                      // starred shows only resolve once the city data is in
+      store.set(ROT_KEY, (store.get(ROT_KEY, 0) + 1) % 997);   // next visit leads with a different act
       $("#tuneBtn").hidden = !(taste.onboarding.done || hasTaste());
       if (!taste.onboarding.done && CFG.onboardingEnabled !== false && state.pool.length >= 8) startOnboarding();
       renderAll();

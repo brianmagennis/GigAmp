@@ -2,7 +2,49 @@
 
 This folder is where Claude writes the latest GigAmp code. Upload from here.
 
-## Current release: v0.11 (17 Sep 2026)
+## Current release: v0.14 (19 Sep 2026)
+
+- **Copy for Spotify actually works now.** It was copying "Artist - Track" lines, which
+  Spotify has no way to import - a straight bug against mechanism 1 in
+  `claude/multi-platform-playlist-export.md`. It now copies
+  `https://open.spotify.com/track/<id>` one per line, which the Spotify desktop app and
+  web player accept when pasted into a playlist, and the status line says where to
+  paste. A "plain list" link beside it still gives the Artist - Track text for Soundiiz
+  and TuneMyMusic. On a phone it says so rather than pretending.
+- **Phone faceplate**: normally a one-line readout ("Vancouver · Everything · Any size ·
+  30 days"), 43px tall. Tap it and the dials open at full 92px, two across, every
+  position written out and tappable. Four 58px rotaries in a row were a bad touch
+  target; collapsed this is shorter than that row was, so the survey gains room.
+  Desktop is unchanged and never collapses.
+- **For You is about half as tall**: a rail card shows the act it is about plus
+  "+N more on the bill", instead of the whole lineup. Section is now ~1 screen.
+
+## Previous: v0.13 (17 Sep 2026)
+
+- Audience size is back on the faceplate as a fourth dial, but as a **ceiling**, not a
+  range: Underground only / Up to emerging / Up to established / Any size. A ceiling is
+  genuinely one value, so the single pointer is honest rather than a lossy stand-in for
+  two. It behaves like a volume knob - turned down for the underground, up for anything.
+- The two-ended slider in Advanced search is unchanged and is still the way to set a
+  floor. Dial and slider stay in step; if you set a floor the dial reads "custom"
+  rather than pointing somewhere wrong.
+
+## Previous: v0.12 (17 Sep 2026)
+
+- The "acts left out" panel is gone again.
+- Audience size is no longer a dial; it is the slider at the top of Advanced search.
+  Three dials remain: City, Sources, Window.
+- Venues and Genres both have **select all** and **clear**, so "everything except
+  these two" is a couple of clicks.
+- The collapsed Advanced search summary no longer reads "unknown-emerging"; it names
+  the preset ("rising") or spells the range out.
+- **Because you liked** is one rail, not two. It rotates to a different act on every
+  page load, and starring a show makes that act a seed - a fresh star leads within a
+  few refreshes. Cards inside it no longer repeat the heading.
+- No rail repeats its opening clause across its cards, and a card's reason always
+  names the act at the top of that card's bill.
+
+## Previous: v0.11 (17 Sep 2026)
 
 - The whole personalised block (survey + For You) is one module you can collapse to
   drop straight to the show list, and that choice is remembered.

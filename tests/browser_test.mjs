@@ -33,7 +33,8 @@ await new Promise((r) => server.listen(0, r));
 const base = `http://127.0.0.1:${server.address().port}/`;
 
 const browser = await chromium.launch();
-const ctx = await browser.newContext({ viewport: { width: 1280, height: 1000 } });
+const ctx = await browser.newContext({ viewport: { width: 1280, height: 1000 },
+  permissions: ["clipboard-read", "clipboard-write"] });
 // The page loads the Spotify embed API from the network; block it so the test is
 // offline-deterministic. app.js already has an onerror fallback for exactly this.
 await ctx.route("**open.spotify.com/**", (r) => r.abort());
@@ -134,8 +135,16 @@ const sameCard = await page.evaluate(() => {
 });
 ok(sameCard.ok, "a rail card is built from the same parts as an All Gigs card", sameCard.why || "identical");
 ok(sameCard.stacked === "block", "rail cards stack one per row like the main list", sameCard.stacked);
-ok(await page.locator("#forYou .show .artist").count() >= railCounts.reduce((a, b) => a + b, 0),
-  "rail cards list the whole bill, not just the lead act");
+// Full bills ran the section to six screens; a rail card is the act it is about.
+const perCard = await page.evaluate(() =>
+  [...document.querySelectorAll("#forYou .show")].map((c) => c.querySelectorAll(".artist").length));
+ok(perCard.every((n) => n === 1), "a rail card shows one act, not the whole bill", perCard.join(","));
+const alsoOn = await page.evaluate(() =>
+  [...document.querySelectorAll("#forYou .show")].map((c) => c.querySelector(".alsoOn")?.textContent || ""));
+ok(alsoOn.some((t) => /\+\d+ more on the bill/.test(t)), "and says how many others are on it",
+  alsoOn.filter(Boolean)[0] || "(none had support acts)");
+const fyHeight = await page.evaluate(() => Math.round(document.querySelector("#forYou").getBoundingClientRect().height));
+ok(fyHeight < 1600, "the whole section is under two desktop screens", `${fyHeight}px`);
 ok(railCounts.every((n) => n === 2), "every rail shows exactly two shows", railCounts.join(", "));
 ok(railTitles.some((t) => /something a little different/i.test(t)), "a 'Something a little different' rail");
 ok(await page.locator("#forYou .railMore[data-more]").count() > 0, "at least one rail offers more");
@@ -149,8 +158,8 @@ await page.waitForTimeout(120);
 ok(await page.locator('[data-rail="emerging"] .show').count() === beforeMore, "and collapses again");
 const stretch = await page.evaluate(() =>
   [...document.querySelectorAll('[data-rail="stretch"] .show .why')].map((e) => e.textContent.trim()));
-ok(stretch.length > 0 && stretch.every((w) => /you lean .+\. .+ is |further from your usual/i.test(w)),
-  "the stretch rail says what is different about each pick", stretch[0] || "(none)");
+ok(stretch.length > 0 && stretch.every((w) => / is .+|further from your usual/i.test(w)),
+  "the stretch rail says what is different about each pick", stretch.join(" | "));
 ok(new Set(stretch).size === stretch.length, "and does not repeat the same sentence on every card");
 // Seed artists exist to measure taste; they must never be offered as a gig.
 const seedOnly = await page.evaluate(async () => {
@@ -171,14 +180,34 @@ ok(usedSeedOnly.length > 0, "but the game does use acts with no local gig", used
 const whys = await page.locator("#forYou .show .why").allTextContents();
 ok(whys.length > 0 && whys.every((w) => w.trim().length > 0), "every recommendation carries a reason", `${whys.length} cards`);
 ok(!whys.some((w) => /^recommended for you$/i.test(w.trim())), "no bare 'Recommended for you'");
+// A rail that says the same thing on every card reads as filler.
+const repeats = await page.evaluate(() => {
+  const bad = [];
+  for (const rail of document.querySelectorAll("#forYou .rail")) {
+    const first = [...rail.querySelectorAll(".show .why")].map((e) => e.textContent.trim().split(/[.·]/)[0].trim());
+    if (new Set(first).size !== first.length) bad.push(rail.dataset.rail + ": " + first.join(" / "));
+  }
+  return bad;
+});
+ok(repeats.length === 0, "no rail repeats the same opening clause across its cards", repeats.join("; ") || "all distinct");
+// The act a card is about has to be the act at the top of that card's bill.
+const leadFirst = await page.evaluate(() =>
+  [...document.querySelectorAll("#forYou .show")].every((c) => {
+    const why = c.querySelector(".why").textContent;
+    const first = c.querySelector(".artist .who a").textContent.trim();
+    const named = [...c.querySelectorAll(".artist .who a")].map((a) => a.textContent.trim())
+      .filter((n) => why.includes(n));
+    return named.length === 0 || named.includes(first);
+  }));
+ok(leadFirst, "a card's reason names the act at the top of its bill, not one further down");
 const cards = await page.evaluate(() => [...document.querySelectorAll("#forYou .show")].map((c) => ({
   artist: c.querySelector(".artist .who a").textContent.trim(),
   all: [...c.querySelectorAll(".artist .who a")].map((a) => a.textContent.trim()),
   why: c.querySelector(".why").textContent.trim(),
   rail: c.closest(".rail").dataset.rail })));
 const names = cards.flatMap((c) => c.all);
-ok(new Set(names).size === names.length, "no artist appears twice anywhere in For You, support acts included",
-  `${names.length} billed slots, ${new Set(names).size} distinct acts`);
+ok(new Set(names).size === names.length, "no act is recommended twice anywhere in For You",
+  `${names.length} cards, ${new Set(names).size} distinct acts`);
 ok(!cards.some((c) => new RegExp(`You liked ${c.artist.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\.`).test(c.why)),
   "no card explains itself with its own artist");
 const obShown = await page.evaluate(() => {
@@ -194,6 +223,27 @@ const emergingTiers = await page.evaluate(() =>
 ok(emergingTiers.length > 0 && emergingTiers.every((t) => t > 0 && t <= 2),
   "Before they blow up only leads with smaller acts", emergingTiers.join(", "));
 await page.screenshot({ path: path.join(SHOTS, "03-foryou.png"), fullPage: false });
+
+console.log("\n3b. Copy for Spotify");
+// Spotify has no paste-a-tracklist import, so a list of "Artist - Track" does nothing
+// there. What its desktop app and web player DO accept is a paste of track URLs.
+await page.locator("#copyList").click();
+await page.waitForTimeout(200);
+const clip = await page.evaluate(() => navigator.clipboard.readText());
+const clipLines = clip.split("\n").filter(Boolean);
+ok(clipLines.length > 0 && clipLines.every((l) => /^https:\/\/open\.spotify\.com\/track\/[A-Za-z0-9]+$/.test(l)),
+  "it copies Spotify track links, which is what Spotify actually accepts",
+  `${clipLines.length} lines, e.g. ${clipLines[0]}`);
+ok(new Set(clipLines).size === clipLines.length, "no duplicate tracks");
+const howTo = await page.locator("#status").textContent();
+ok(/paste/i.test(howTo) && /desktop|web player/i.test(howTo),
+  "and says where the paste actually works", howTo.slice(0, 90));
+// The plain list is still there for the transfer services, one click away.
+await page.locator('#status [data-copy="text"]').click();
+await page.waitForTimeout(200);
+const clip2 = (await page.evaluate(() => navigator.clipboard.readText())).split("\n").filter(Boolean);
+ok(clip2.every((l) => / - /.test(l) && !/^https/.test(l)),
+  "and a plain Artist - Track list is one click away for Soundiiz", clip2[0] || "(empty)");
 
 console.log("\n4. For You is a layer, not a filter");
 const totals = await page.evaluate(() => {
@@ -322,30 +372,63 @@ const strays = await page.evaluate(() => {
 ok(strays.length === 0, "every dial's pointer and ticks stay inside the dial", strays.join("; ") || "none stray");
 // The dial sweeps 270 degrees with the gap at the bottom, like an amp. Clicking at a
 // position's own angle must select that position - that is the whole interaction.
-const sizeKnob = page.locator('[data-knob="size"]');
-const box = await sizeKnob.boundingBox();
+const srcKnob = page.locator('[data-knob="source"]');
+const box = await srcKnob.boundingBox();
 const clickPos = async (i, n) => {
   const deg = -135 + (270 * i) / (n - 1), rad = (deg - 90) * Math.PI / 180;
   const r = box.width * 0.42;
   await page.mouse.click(box.x + box.width / 2 + r * Math.cos(rad), box.y + box.height / 2 + r * Math.sin(rad));
   await page.waitForTimeout(140);
 };
-await clickPos(4, 5);
+await clickPos(2, 3);
+ok((await page.evaluate(() => window.__gigamp.state.sources)).join() === "do604",
+  "clicking a dial where you want it points it there");
+ok((await page.evaluate(() => location.hash)).includes("s=do604"), "and the change is in the share link");
+await clickPos(0, 3);
+ok((await page.evaluate(() => window.__gigamp.state.sources)).length === 2, "and again for a different position");
+
+// The Audience dial is a ceiling: one pointer, and it only ever sets the upper end.
+const sizeOpts = await page.locator('.knob:has([data-knob="size"]) .knobOpt').allTextContents();
+ok(sizeOpts.join(",") === "Underground only,Up to emerging,Up to established,Any size",
+  "the audience dial reads as a ceiling, smallest to largest", sizeOpts.join(" · "));
+await page.locator('.knob:has([data-knob="size"]) .knobOpt', { hasText: "Up to emerging" }).click();
+await page.waitForTimeout(140);
 let reach = await page.evaluate(() => window.__gigamp.state.reach);
-ok(reach[0] === 3 && reach[1] === 4, "clicking a dial where you want it points it there", JSON.stringify(reach));
-ok((await page.evaluate(() => location.hash)).includes("r=3-4"), "and the change is in the share link");
-await clickPos(1, 5);
-reach = await page.evaluate(() => window.__gigamp.state.reach);
-ok(reach[0] === 0 && reach[1] === 1, "and again for a different position", JSON.stringify(reach));
+ok(reach[0] === 0 && reach[1] === 2, "turning it down sets the ceiling and leaves the floor alone", JSON.stringify(reach));
+ok((await page.evaluate(() => location.hash)).includes("r=0-2"), "and the change is in the share link");
+
+// The slider in Advanced search is still the full two-ended control, and the two stay in step.
+await page.locator("#advancedModule").evaluate((e) => { e.open = true; });
+await page.waitForTimeout(80);
+ok(await page.locator("#reachRange").isVisible(), "the two-ended slider is still in Advanced search");
 const fine = await page.evaluate(() => [+document.querySelector("#reachMin").value, +document.querySelector("#reachMax").value]);
-ok(fine[0] === 0 && fine[1] === 1, "the finer slider inside Filters stays in step with the dial", JSON.stringify(fine));
-await clickPos(0, 5);
-await page.waitForTimeout(100);
+ok(fine[0] === 0 && fine[1] === 2, "the slider followed the dial", JSON.stringify(fine));
+const summary = await page.locator("#filterSummary").textContent();
+ok(!/unknown/i.test(summary), "the collapsed summary never says 'unknown-emerging'", summary);
+ok(/up to emerging/i.test(summary), "it names the ceiling instead", summary);
+
+// Setting a floor is something a ceiling dial cannot express, so it must not pretend.
+await page.evaluate(() => {
+  const el = document.querySelector("#reachMin");
+  el.value = "3"; el.dispatchEvent(new Event("input", { bubbles: true }));
+});
+await page.waitForTimeout(140);
+const lit = await page.locator('.knob:has([data-knob="size"]) .knobOpt.on').allTextContents();
+ok(lit.length === 1 && /custom/i.test(lit[0]), "a floor set on the slider shows the dial as custom, not a wrong position", lit.join(","));
+ok(!/unknown/i.test(await page.locator("#filterSummary").textContent()), "and the summary still reads properly",
+  await page.locator("#filterSummary").textContent());
+await page.locator('.knob:has([data-knob="size"]) .knobOpt', { hasText: "Any size" }).click();
+await page.waitForTimeout(140);
+reach = await page.evaluate(() => window.__gigamp.state.reach);
+ok(reach[0] === 0 && reach[1] === 4, "and the dial clears the floor when you turn it back up", JSON.stringify(reach));
+await page.locator("#advancedModule").evaluate((e) => { e.open = false; });   // leave it as we found it
+await page.waitForTimeout(80);
+
 await page.screenshot({ path: path.join(SHOTS, "08-faceplate.png"), fullPage: false });
 
 console.log("\n7b. Advanced search sits under the dials");
 const order = await page.evaluate(() => [...document.querySelectorAll("main > *")].map((e) => e.id || e.className.split(" ")[0]));
-ok(order.indexOf("advancedModule") === order.findIndex((x) => x === "faceplate") + 1,
+ok(order.indexOf("advancedModule") === order.indexOf("facePanel") + 1,
   "Advanced search is the first thing under the faceplate", order.join(" → "));
 ok(/advanced search/i.test(await page.locator("#advancedModule > summary h2").textContent()), "and is called Advanced search");
 ok(await page.locator("#advancedModule").evaluate((e) => !e.open), "it starts collapsed");
@@ -355,6 +438,23 @@ await page.waitForTimeout(120);
 ok(await page.locator("#venues").isVisible() && await page.locator("#genres").isVisible(),
   "opening it brings back both the venue and genre filters");
 ok(await page.locator("#genres .chip").count() > 0, "the genre chips are populated");
+
+// Both lists can be filled and emptied, which is what makes "everything except these" possible.
+const nChips = await page.locator("#genres .chip").count();
+await page.locator("#gAll").click(); await page.waitForTimeout(120);
+ok(await page.locator('#genres .chip[aria-pressed="true"]').count() === nChips, "select all ticks every genre");
+await page.locator('#genres .chip[aria-pressed="true"]').first().click(); await page.waitForTimeout(120);
+ok(await page.evaluate(() => window.__gigamp.state.genres.length) === nChips - 1,
+  "so you can then drop the one genre you do not want");
+await page.locator("#gClear").click(); await page.waitForTimeout(120);
+ok(await page.evaluate(() => window.__gigamp.state.genres.length) === 0, "clear empties them again");
+await page.locator("#vNone").click(); await page.waitForTimeout(120);
+ok(await page.evaluate(() => window.__gigamp.state.venues?.length) === 0, "clear empties the venues");
+await page.locator("#vAll").click(); await page.waitForTimeout(120);
+ok(await page.evaluate(() => window.__gigamp.state.venues) === null, "select all restores every venue");
+ok((await page.locator("#vAll").textContent()).trim() === "select all" &&
+   (await page.locator("#gAll").textContent()).trim() === "select all", "both lists say the same thing");
+await page.screenshot({ path: path.join(SHOTS, "09-advanced.png"), fullPage: false });
 
 console.log("\n7c. The whole feature collapses");
 ok(await page.locator("#personalModule").evaluate((e) => e.open), "For you starts open");
@@ -369,19 +469,53 @@ ok(await page.locator("#personalModule").evaluate((e) => !e.open), "and it is st
 await page.locator("#personalModule > summary").click();
 await page.waitForTimeout(120);
 
-console.log("\n7d. Who is missing");
-await page.locator("#advancedModule").evaluate((e) => { e.open = true; });
-await page.waitForTimeout(80);
-const missing = await page.evaluate(() => {
-  const w = document.querySelector("#missingWrap");
-  return { hidden: w.hidden, head: document.querySelector("#missingHead").textContent,
-    rows: document.querySelectorAll("#missing tbody tr").length,
-    unmatched: window.__gigamp.state.data.unmatched.length };
+console.log("\n7e. Because you liked — rotation and starred gigs");
+const titles = [];
+for (let i = 0; i < 5; i++) {
+  await page.reload({ waitUntil: "domcontentloaded" });
+  await page.waitForSelector("#forYou .rail", { timeout: 15000 });
+  titles.push((await page.locator('[data-rail="because"] .railHead h3').textContent()).trim());
+}
+console.log("  across five loads:", [...new Set(titles)].join(" | "));
+ok(new Set(titles).size > 1, "the rail leads with a different act between refreshes",
+  `${new Set(titles).size} distinct over 5 loads`);
+ok(await page.locator('[data-rail="because"]').count() === 1, "only one Because you liked rail");
+const becauseWhys = await page.locator('[data-rail="because"] .show .why').allTextContents();
+ok(!becauseWhys.some((w) => /because you liked/i.test(w)),
+  "the cards inside it never repeat the heading", becauseWhys.join(" | "));
+ok(becauseWhys.every((w) => w.trim().length > 0), "but each still says what the link is");
+
+// Starring a show is a stronger statement than any survey answer, so it feeds the same seed list.
+const starred = await page.evaluate(() => {
+  const g = window.__gigamp;
+  // a show whose lead act the survey never touched
+  const seen = new Set();
+  for (const c of g.taste.explicit.comparisons) { seen.add(c.a.key); seen.add(c.b.key); }
+  for (const e of g.state.data.events) {
+    const arts = e.artists.filter((a) => a.tracks?.length);
+    if (!arts.length) continue;
+    const key = arts[0].spotify_id;
+    if (seen.has(key) || (g.taste.derived.artistAffinity[key] || 0) > 0.5) continue;
+    const btn = document.querySelector(`[data-save="${(e.id || "").replace(/"/g, '\\"')}"]`);
+    if (!btn) continue;
+    btn.click();
+    return { name: arts[0].name, key };
+  }
+  return null;
 });
-if (missing.unmatched === 0) {
-  ok(missing.hidden, "nothing to show when no acts were left out (fixture has none)");
+if (!starred) {
+  ok(false, "could not find an unstarred show to test with");
 } else {
-  ok(!missing.hidden && missing.rows > 0, "the acts with no Spotify match are listed", missing.head);
+  const aff = await page.evaluate((k) => window.__gigamp.taste.derived.artistAffinity[k] || 0, starred.key);
+  ok(aff > 0.5, `starring a show makes its act a taste signal (${starred.name})`, `affinity ${aff.toFixed(2)}`);
+  const seeds = [];
+  for (let i = 0; i < 8 && !seeds.includes(starred.name); i++) {
+    await page.reload({ waitUntil: "domcontentloaded" });
+    await page.waitForSelector("#forYou .rail", { timeout: 15000 });
+    seeds.push((await page.locator('[data-rail="because"] .railHead h3').textContent()).replace(/^Because you liked /, "").trim());
+  }
+  ok(seeds.includes(starred.name), "and the rail leads with it within a few refreshes",
+    seeds.join(" → "));
 }
 
 console.log("\n8. Fresh visitor can browse and skip");
@@ -409,15 +543,38 @@ console.log("\n9. On a phone");
   await pm.waitForSelector("#onboard .vsCard", { timeout: 15000 });
   const m = await pm.evaluate(() => {
     const cards = [...document.querySelectorAll("#onboard .vsCard")].map((c) => c.getBoundingClientRect());
-    const rows = new Set([...document.querySelectorAll(".knob")].map((k) => Math.round(k.getBoundingClientRect().top)));
     return { lastCardBottom: Math.round(cards[cards.length - 1].bottom), vh: window.innerHeight,
-      knobRows: rows.size, overflowX: document.documentElement.scrollWidth > window.innerWidth,
-      faceH: Math.round(document.querySelector(".faceplate").getBoundingClientRect().height) };
+      overflowX: document.documentElement.scrollWidth > window.innerWidth,
+      faceOpen: document.querySelector("#facePanel").open,
+      faceH: Math.round(document.querySelector("#facePanel").getBoundingClientRect().height),
+      readout: document.querySelector("#faceNow").textContent };
   });
-  ok(m.knobRows === 1, "the faceplate stays one row of dials", `${m.knobRows} row(s), ${m.faceH}px tall`);
+  ok(!m.faceOpen, "the faceplate starts as a one-line readout on a phone", `${m.faceH}px`);
+  ok(/·/.test(m.readout), "which shows every dial's current position", m.readout);
   ok(!m.overflowX, "no sideways scrolling");
   ok(m.lastCardBottom <= m.vh, "both acts fit on one screen, buttons included",
     `cards end at ${m.lastCardBottom} of ${m.vh}`);
+
+  // Tapping it opens dials at full size rather than the old 58px squeeze.
+  await pm.locator("#facePanel > summary").click();
+  await pm.waitForTimeout(160);
+  const open = await pm.evaluate(() => {
+    const d = [...document.querySelectorAll(".knobDial")].map((k) => k.getBoundingClientRect());
+    const rows = new Set(d.map((r) => Math.round(r.top)));
+    const opts = [...document.querySelectorAll('.knob:has([data-knob="window"]) .knobOpt')]
+      .filter((o) => o.getBoundingClientRect().height > 0).length;
+    return { size: Math.round(d[0].width), rows: rows.size, visibleOpts: opts,
+      overflowX: document.documentElement.scrollWidth > window.innerWidth };
+  });
+  ok(open.size >= 80, "the dials open at full size", `${open.size}px`);
+  ok(open.rows === 2, "two across rather than four squeezed into one row", `${open.rows} rows`);
+  ok(open.visibleOpts === 4, "and every position is readable, not just the selected one", `${open.visibleOpts} shown`);
+  ok(!open.overflowX, "still no sideways scrolling when open");
+  // The choice sticks.
+  await pm.reload({ waitUntil: "domcontentloaded" });
+  await pm.waitForSelector("#onboard .vsCard", { timeout: 15000 });
+  ok(await pm.locator("#facePanel").evaluate((e) => e.open), "and it is still open on the next visit");
+
   await pm.close(); await mob.close();
 }
 

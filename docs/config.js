@@ -27,6 +27,9 @@ window.GIGAMP_CONFIG = {
   // For You rails: cards shown per rail, and how many a "more" link reveals.
   rails: {
     size: 2,
-    expanded: 6
+    expanded: 6,
+    // "Because you liked" rotates through this many of the visitor's strongest
+    // signals, one per page load, so the section is not identical every visit.
+    seedPool: 6
   }
 };
