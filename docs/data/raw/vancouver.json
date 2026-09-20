@@ -2,74 +2,12 @@
  "city": "vancouver",
  "city_name": "Vancouver, BC",
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
- "scraped_at": "2026-09-19T17:20:23+00:00",
+ "scraped_at": "2026-09-20T17:32:25+00:00",
  "horizon_days": 35,
  "pages_fetched": 6,
- "do604_events": 310,
- "merged_duplicates": 122,
+ "do604_events": 301,
+ "merged_duplicates": 119,
  "venues": {
-  "deer-lake-park": {
-   "name": "Deer Lake Park",
-   "aliases": [],
-   "lat": 49.23543,
-   "lng": -122.97797
-  },
-  "malkin-bowl": {
-   "name": "Malkin Bowl",
-   "aliases": [],
-   "lat": 49.29956,
-   "lng": -123.13395
-  },
-  "the-pearl": {
-   "name": "The Pearl",
-   "aliases": [],
-   "lat": 49.28071,
-   "lng": -123.12143
-  },
-  "pacific-coliseum": {
-   "name": "Pacific Coliseum",
-   "aliases": [],
-   "lat": 49.28549,
-   "lng": -123.04361
-  },
-  "rickshaw-theatre": {
-   "name": "Rickshaw Theatre",
-   "aliases": [
-    "The Rickshaw"
-   ],
-   "lat": 49.28102,
-   "lng": -123.09853
-  },
-  "the-american": {
-   "name": "The American",
-   "aliases": [],
-   "lat": 49.27621,
-   "lng": -123.09948
-  },
-  "biltmore-cabaret": {
-   "name": "Biltmore Cabaret",
-   "aliases": [],
-   "lat": 49.26041,
-   "lng": -123.09668
-  },
-  "celebrities": {
-   "name": "Celebrities",
-   "aliases": [],
-   "lat": 49.27942,
-   "lng": -123.12994
-  },
-  "fortune-sound-club": {
-   "name": "Fortune Sound Club",
-   "aliases": [],
-   "lat": 49.28053,
-   "lng": -123.10075
-  },
-  "village-studios": {
-   "name": "Village Studios",
-   "aliases": [],
-   "lat": 49.27939,
-   "lng": -123.13002
-  },
   "bc-place-stadium": {
    "name": "BC Place Stadium",
    "aliases": [],
@@ -93,6 +31,26 @@
    "aliases": [],
    "lat": 49.24176,
    "lng": -122.96909
+  },
+  "the-pearl": {
+   "name": "The Pearl",
+   "aliases": [],
+   "lat": 49.28071,
+   "lng": -123.12143
+  },
+  "rickshaw-theatre": {
+   "name": "Rickshaw Theatre",
+   "aliases": [
+    "The Rickshaw"
+   ],
+   "lat": 49.28102,
+   "lng": -123.09853
+  },
+  "pacific-coliseum": {
+   "name": "Pacific Coliseum",
+   "aliases": [],
+   "lat": 49.28549,
+   "lng": -123.04361
   },
   "guilt-company": {
    "name": "Guilt & Company",
@@ -163,6 +121,24 @@
    "lat": 49.27981,
    "lng": -123.12164
   },
+  "biltmore-cabaret": {
+   "name": "Biltmore Cabaret",
+   "aliases": [],
+   "lat": 49.26041,
+   "lng": -123.09668
+  },
+  "malkin-bowl": {
+   "name": "Malkin Bowl",
+   "aliases": [],
+   "lat": 49.29956,
+   "lng": -123.13395
+  },
+  "fortune-sound-club": {
+   "name": "Fortune Sound Club",
+   "aliases": [],
+   "lat": 49.28053,
+   "lng": -123.10075
+  },
   "brackendale-art-gallery": {
    "name": "Brackendale Art Gallery",
    "aliases": [],
@@ -190,6 +166,24 @@
    ],
    "lat": 49.26327,
    "lng": -123.17624
+  },
+  "village-studios": {
+   "name": "Village Studios",
+   "aliases": [],
+   "lat": 49.27939,
+   "lng": -123.13002
+  },
+  "the-american": {
+   "name": "The American",
+   "aliases": [],
+   "lat": 49.27621,
+   "lng": -123.09948
+  },
+  "celebrities": {
+   "name": "Celebrities",
+   "aliases": [],
+   "lat": 49.27942,
+   "lng": -123.12994
   },
   "the-cobalt": {
    "name": "The Cobalt",
@@ -431,488 +425,6 @@
   }
  },
  "events": [
-  {
-   "source": "songkick",
-   "id": "432945478",
-   "name": "Lane 8 @ Deer Lake Park",
-   "start": "2026-09-19T16:00:00",
-   "status": "EventScheduled",
-   "venue": "Deer Lake Park",
-   "venue_url": null,
-   "locality": "Burnaby",
-   "lat": 49.23543,
-   "lng": -122.97797,
-   "url": "https://www.songkick.com/concerts/43294547-lane-8-at-deer-lake-park",
-   "performers": [
-    {
-     "name": "Lane 8",
-     "songkick_genres": [
-      "electronic",
-      "pop",
-      "funk_soul"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/6321339-lane-8?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Elderbrook",
-     "songkick_genres": [
-      "electronic",
-      "pop",
-      "funk_soul"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/8456948-elderbrook?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "nimino",
-     "songkick_genres": [
-      "electronic",
-      "pop",
-      "funk_soul"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/10250539-nimino?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Tobiahs",
-     "songkick_genres": [
-      "electronic",
-      "pop",
-      "funk_soul"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/9748914-tobiahs?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Deer Lake Park",
-   "venue_id": "deer-lake-park"
-  },
-  {
-   "source": "songkick",
-   "id": "43091389",
-   "name": "Bahamas @ Malkin Bowl",
-   "start": "2026-09-19T18:00:00",
-   "status": "EventScheduled",
-   "venue": "Malkin Bowl",
-   "venue_url": "http://www.malkinbowl.com/",
-   "locality": "Vancouver",
-   "lat": 49.29956,
-   "lng": -123.13395,
-   "url": "https://www.songkick.com/concerts/43091389-bahamas-at-malkin-bowl",
-   "performers": [
-    {
-     "name": "Bahamas",
-     "songkick_genres": [
-      "indie_alternative",
-      "country",
-      "folk_blues"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/297228-bahamas?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Malkin Bowl",
-   "venue_id": "malkin-bowl"
-  },
-  {
-   "source": "songkick",
-   "id": "43183575",
-   "name": "Elder Island @ The Pearl",
-   "start": "2026-09-19T19:00:00",
-   "status": "EventScheduled",
-   "venue": "The Pearl",
-   "venue_url": "https://thepearlvancouver.com/",
-   "locality": "Vancouver",
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "url": "https://www.songkick.com/concerts/43183575-elder-island-at-pearl",
-   "performers": [
-    {
-     "name": "Elder Island",
-     "songkick_genres": [
-      "electronic"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/7930018-elder-island?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Elder Island - Hello Baby Okay",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Glassio",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "venue_raw": "The Pearl",
-   "venue_id": "the-pearl",
-   "also_listed": [
-    {
-     "source": "do604",
-     "url": "https://do604.com/events/2026/9/19/elder-island-hello-baby-ok-tickets"
-    }
-   ]
-  },
-  {
-   "source": "songkick",
-   "id": "43263557",
-   "name": "The Greyboy Allstars @ Rickshaw Theatre",
-   "start": "2026-09-19T20:00:00",
-   "status": "EventScheduled",
-   "venue": "Rickshaw Theatre",
-   "venue_url": "http://www.liveatrickshaw.com",
-   "locality": "Vancouver",
-   "lat": 49.28102,
-   "lng": -123.09853,
-   "url": "https://www.songkick.com/concerts/43263557-greyboy-allstars-at-rickshaw-theatre",
-   "performers": [
-    {
-     "name": "The Greyboy Allstars",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/316903-greyboy-allstars?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Rickshaw Theatre",
-   "venue_id": "rickshaw-theatre",
-   "also_listed": [
-    {
-     "source": "do604",
-     "url": "https://do604.com/events/2026/9/19/the-greyboy-allstars-tickets"
-    }
-   ]
-  },
-  {
-   "source": "songkick",
-   "id": "42788517",
-   "name": "When Chai Met Toast @ Biltmore Cabaret",
-   "start": "2026-09-19T20:00:00",
-   "status": "EventScheduled",
-   "venue": "Biltmore Cabaret",
-   "venue_url": "http://www.biltmorecabaret.com",
-   "locality": "Vancouver",
-   "lat": 49.26041,
-   "lng": -123.09668,
-   "url": "https://www.songkick.com/concerts/42788517-when-chai-met-toast-at-biltmore-cabaret",
-   "performers": [
-    {
-     "name": "When Chai Met Toast",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/9324429-when-chai-met-toast?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Biltmore Cabaret",
-   "venue_id": "biltmore-cabaret",
-   "also_listed": [
-    {
-     "source": "do604",
-     "url": "https://do604.com/events/2026/9/19/when-chai-met-toast-tickets"
-    }
-   ]
-  },
-  {
-   "id": "do604-2026-09-19-cheap-flavor-baron-witiko-tickets",
-   "name": "Cheap Flavor, Witiko, Baron",
-   "start": "2026-09-19T19:00-0700",
-   "status": "EventScheduled",
-   "venue": "Fox Cabaret",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/19/cheap-flavor-baron-witiko-tickets",
-   "performers": [
-    {
-     "name": "Cheap Flavor",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Witiko",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Baron",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "source": "do604",
-   "venue_raw": "The Fox Cabaret",
-   "venue_id": "fox-cabaret",
-   "lat": 49.26426,
-   "lng": -123.10118
-  },
-  {
-   "id": "do604-2026-09-19-early-show-son-de-todos-tickets",
-   "name": "Early Show: Dari",
-   "start": "2026-09-19T19:00-0700",
-   "status": "EventScheduled",
-   "venue": "Guilt & Company",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/19/early-show-son-de-todos-tickets",
-   "performers": [
-    {
-     "name": "Dari",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "source": "do604",
-   "venue_raw": "Guilt & Company",
-   "venue_id": "guilt-company",
-   "lat": 49.28379,
-   "lng": -123.10402
-  },
-  {
-   "id": "do604-2026-09-19-dino-dinicolo-s-sound-of-soul-tickets",
-   "name": "Dino and the Sound of Soul",
-   "start": "2026-09-19T22:00-0700",
-   "status": "EventScheduled",
-   "venue": "Guilt & Company",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/19/dino-dinicolo-s-sound-of-soul-tickets",
-   "performers": [
-    {
-     "name": "Dino and the Sound of Soul",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "source": "do604",
-   "venue_raw": "Guilt & Company",
-   "venue_id": "guilt-company",
-   "lat": 49.28379,
-   "lng": -123.10402
-  },
-  {
-   "id": "do604-2026-09-19-neev-doherty-the-unbranded-leah-barely-t",
-   "name": "The Unbranded, Leah Barley, Neev Doherty",
-   "start": "2026-09-19T19:00-0700",
-   "status": "EventScheduled",
-   "venue": "Green Auto",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/19/neev-doherty-the-unbranded-leah-barely-tickets",
-   "performers": [
-    {
-     "name": "The Unbranded",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Leah Barley",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Neev Doherty",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "source": "do604",
-   "venue_raw": "Green Auto",
-   "venue_id": "green-auto"
-  },
-  {
-   "id": "do604-2026-09-19-great-shame-the-furniture-hardball-ticke",
-   "name": "Great Shame, The Furniture, Hardball",
-   "start": "2026-09-19T19:00-0700",
-   "status": "EventScheduled",
-   "venue": "Green Auto",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/19/great-shame-the-furniture-hardball-tickets",
-   "performers": [
-    {
-     "name": "Great Shame",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "The Furniture",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Hardball",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "source": "do604",
-   "venue_raw": "Green Auto",
-   "venue_id": "green-auto"
-  },
-  {
-   "id": "do604-2026-09-19-another-damn-disappointment-w-guests-tic",
-   "name": "Another Damn Disappointment w/ GUESTS",
-   "start": "2026-09-19T19:00-0700",
-   "status": "EventScheduled",
-   "venue": "The Cobalt",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/19/another-damn-disappointment-w-guests-tickets",
-   "performers": [
-    {
-     "name": "Another Damn Disappointment",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "source": "do604",
-   "venue_raw": "The Cobalt",
-   "venue_id": "the-cobalt",
-   "lat": 49.2765,
-   "lng": -123.10008
-  },
-  {
-   "id": "do604-2026-09-19-club-dead-tickets",
-   "name": "Club Dead",
-   "start": "2026-09-19T22:30-0700",
-   "status": "EventScheduled",
-   "venue": "The Astoria",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/19/club-dead-tickets",
-   "performers": [
-    {
-     "name": "Club Dead",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "source": "do604",
-   "venue_raw": "The Astoria",
-   "venue_id": "the-astoria",
-   "lat": 49.28147,
-   "lng": -123.08793
-  },
-  {
-   "source": "songkick",
-   "id": "43240199",
-   "name": "Ali @ The American",
-   "start": "2026-09-19T19:30:00",
-   "status": "EventScheduled",
-   "venue": "The American",
-   "venue_url": "https://www.theamerican.bar",
-   "locality": "Vancouver",
-   "lat": 49.27621,
-   "lng": -123.09948,
-   "url": "https://www.songkick.com/concerts/43240199-ali-at-american",
-   "performers": [
-    {
-     "name": "Ali",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/55171-ali?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Wack",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "venue_raw": "The American",
-   "venue_id": "the-american",
-   "also_listed": [
-    {
-     "source": "do604",
-     "url": "https://do604.com/events/2026/9/19/ali-w-special-guests-tickets"
-    }
-   ]
-  },
-  {
-   "source": "songkick",
-   "id": "43194156",
-   "name": "Johnny Blue Skies @ Pacific Coliseum",
-   "start": "2026-09-19T20:00:00",
-   "status": "EventScheduled",
-   "venue": "Pacific Coliseum",
-   "venue_url": "http://www.pne.ca/",
-   "locality": "Vancouver",
-   "lat": 49.28549,
-   "lng": -123.04361,
-   "url": "https://www.songkick.com/concerts/43194156-johnny-blue-skies-at-pacific-coliseum",
-   "performers": [
-    {
-     "name": "Johnny Blue Skies",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10340568-johnny-blue-skies?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Pacific Coliseum",
-   "venue_id": "pacific-coliseum"
-  },
-  {
-   "source": "songkick",
-   "id": "43348537",
-   "name": "MoBlack @ Fortune Sound Club",
-   "start": "2026-09-19T22:00:00",
-   "status": "EventScheduled",
-   "venue": "Fortune Sound Club",
-   "venue_url": "http://www.fortunesoundclub.com/",
-   "locality": "Vancouver",
-   "lat": 49.28053,
-   "lng": -123.10075,
-   "url": "https://www.songkick.com/concerts/43348537-moblack-at-fortune-sound-club",
-   "performers": [
-    {
-     "name": "MoBlack",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10085008-moblack?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Fortune Sound Club",
-   "venue_id": "fortune-sound-club",
-   "also_listed": [
-    {
-     "source": "do604",
-     "url": "https://do604.com/events/2026/9/19/moblack-tickets"
-    }
-   ]
-  },
-  {
-   "source": "songkick",
-   "id": "43270094",
-   "name": "Twin Diplomacy @ Celebrities",
-   "start": "2026-09-19T22:00:00",
-   "status": "EventScheduled",
-   "venue": "Celebrities",
-   "venue_url": "http://celebritiesnightclub.com",
-   "locality": "Vancouver",
-   "lat": 49.27942,
-   "lng": -123.12994,
-   "url": "https://www.songkick.com/concerts/43270094-twin-diplomacy-at-celebrities",
-   "performers": [
-    {
-     "name": "Twin Diplomacy",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10366310-twin-diplomacy?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Celebrities",
-   "venue_id": "celebrities"
-  },
-  {
-   "source": "songkick",
-   "id": "43240216",
-   "name": "Julian Fijma @ Village Studios",
-   "start": "2026-09-19T23:00:00",
-   "status": "EventScheduled",
-   "venue": "Village Studios",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": 49.27939,
-   "lng": -123.13002,
-   "url": "https://www.songkick.com/concerts/43240216-julian-fijma-at-village-studios",
-   "performers": [
-    {
-     "name": "Julian Fijma",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10402224-julian-fijma?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Village Studios",
-   "venue_id": "village-studios"
-  },
   {
    "source": "songkick",
    "id": "43317782",
@@ -13018,55 +12530,149 @@
    ],
    "venue_raw": "Celebrities",
    "venue_id": "celebrities"
+  },
+  {
+   "source": "songkick",
+   "id": "43423471",
+   "name": "Imaad Wasif @ Green Auto",
+   "start": "2026-10-25",
+   "status": "EventScheduled",
+   "venue": "Green Auto",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "lat": null,
+   "lng": null,
+   "url": "https://www.songkick.com/concerts/43423471-imaad-wasif-at-green-auto",
+   "performers": [
+    {
+     "name": "Imaad Wasif",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/261519-imaad-wasif?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Malcolm Jack",
+     "songkick_genres": [],
+     "strict": true
+    },
+    {
+     "name": "Clara Sanchez",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "venue_raw": "Green Auto",
+   "venue_id": "green-auto",
+   "also_listed": [
+    {
+     "source": "do604",
+     "url": "https://do604.com/events/2026/10/25/imaad-wasif-malcolm-jack-clara-sanchez-tickets"
+    }
+   ]
+  },
+  {
+   "id": "do604-2026-10-25-bedouine-tickets",
+   "name": "Bedouine",
+   "start": "2026-10-25T18:00-0700",
+   "status": "EventScheduled",
+   "venue": "Biltmore Cabaret",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/25/bedouine-tickets",
+   "performers": [
+    {
+     "name": "Bedouine",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604",
+   "venue_raw": "Biltmore Cabaret",
+   "venue_id": "biltmore-cabaret",
+   "lat": 49.26041,
+   "lng": -123.09668
+  },
+  {
+   "id": "do604-2026-10-25-jodi-proznick-mark-mclean-quartet-ticket",
+   "name": "Jodi Proznick / Mark Mclean Quartet",
+   "start": "2026-10-25T18:00-0700",
+   "status": "EventScheduled",
+   "venue": "Frankie's Jazz Club",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/25/jodi-proznick-mark-mclean-quartet-tickets",
+   "performers": [
+    {
+     "name": "Jodi Proznick",
+     "songkick_genres": [],
+     "strict": true
+    },
+    {
+     "name": "Mark Mclean Quartet",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604",
+   "venue_raw": "Frankie's Jazz Club",
+   "venue_id": "frankie-s-jazz-club"
+  },
+  {
+   "id": "do604-2026-10-25-rocky-horror-music-show-at-the-hollywood",
+   "name": "Rocky Horror Music Show at the Hollywood",
+   "start": "2026-10-25T19:00-0700",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/25/rocky-horror-music-show-at-the-hollywood-tickets",
+   "performers": [
+    {
+     "name": "Rocky Horror Music Show at the Hollywood",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604",
+   "venue_raw": "Hollywood Theatre",
+   "venue_id": "hollywood-theatre",
+   "lat": 49.26444,
+   "lng": -123.17453
+  },
+  {
+   "source": "songkick",
+   "id": "43353400",
+   "name": "Olive Klug @ The WISE Hall",
+   "start": "2026-10-25T19:30:00",
+   "status": "EventScheduled",
+   "venue": "The WISE Hall",
+   "venue_url": "https://www.facebook.com/thewiseclub/",
+   "locality": "Vancouver",
+   "lat": 49.2773,
+   "lng": -123.06607,
+   "url": "https://www.songkick.com/concerts/43353400-olive-klug-at-wise-hall",
+   "performers": [
+    {
+     "name": "Olive Klug",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10240922-olive-klug?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Frail Talk",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10164184-frail-talk?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "The WISE Hall",
+   "venue_id": "the-wise-hall",
+   "also_listed": [
+    {
+     "source": "do604",
+     "url": "https://do604.com/events/2026/10/25/olive-klug-with-special-guests-tickets"
+    }
+   ]
   }
  ],
  "skipped": [
-  {
-   "id": "do604-2026-09-19-soju-rave-tickets",
-   "name": "Soju Rave",
-   "start": "2026-09-19T23:00-0700",
-   "status": "EventScheduled",
-   "venue": "The Pearl",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/19/soju-rave-tickets",
-   "performers": [
-    {
-     "name": "Soju Rave",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "source": "do604",
-   "venue_raw": "The Pearl",
-   "venue_id": "the-pearl",
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "skip_reason": "club_night"
-  },
-  {
-   "id": "do604-2026-09-19-emo-night-round-2-still-not-over-it-tick",
-   "name": "Emo Night Round 2: Still Not Over It",
-   "start": "2026-09-19T19:00-0700",
-   "status": "EventScheduled",
-   "venue": "The Astoria",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/19/emo-night-round-2-still-not-over-it-tickets",
-   "performers": [
-    {
-     "name": "Emo Night Round 2: Still Not Over It",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "source": "do604",
-   "venue_raw": "The Astoria",
-   "venue_id": "the-astoria",
-   "lat": 49.28147,
-   "lng": -123.08793,
-   "skip_reason": "club_night"
-  },
   {
    "source": "songkick",
    "id": "43254190",

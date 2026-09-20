@@ -38896,5 +38896,359 @@
 ],
 "rank_source": "lastfm",
 "mbid": null
+},
+"imaad wasif": {
+"query": "Imaad Wasif",
+"fetched_at": "2026-09-20T17:34:46+00:00",
+"reach": {
+"listeners": 19326,
+"playcount": 311662,
+"tags": [
+"folk",
+"psychedelic",
+"indie folk"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Imaad+Wasif",
+"mbid": "36ba97f0-24ec-4a91-8161-279c2f647b69"
+},
+"matcher": 4,
+"spotify_id": "4stGUCL6VDvSDDi4f0jpeV",
+"spotify_name": "Imaad Wasif",
+"url": "https://open.spotify.com/artist/4stGUCL6VDvSDDi4f0jpeV",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178137c38a4c11c88d26e40a561",
+"tracks": [
+{
+"id": "2xZcmhUQyqDaagGStltI7m",
+"uri": "spotify:track:2xZcmhUQyqDaagGStltI7m",
+"name": "Priestess",
+"popularity": null,
+"album": "The Voidist",
+"album_type": "album",
+"release_date": "2009-10-13",
+"duration_ms": 189093,
+"explicit": false
+},
+{
+"id": "5tjzVbjaeB6qFoWWDNvlxg",
+"uri": "spotify:track:5tjzVbjaeB6qFoWWDNvlxg",
+"name": "Redeemer",
+"popularity": null,
+"album": "The Voidist",
+"album_type": "album",
+"release_date": "2009-10-13",
+"duration_ms": 207413,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "36ba97f0-24ec-4a91-8161-279c2f647b69"
+},
+"malcolm jack": {
+"query": "Malcolm Jack",
+"fetched_at": "2026-09-20T17:34:48+00:00",
+"reach": {
+"listeners": 61,
+"playcount": 1262,
+"tags": [
+"rock",
+"psychedelic",
+"folk",
+"alternative"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Malcolm+Jack",
+"mbid": "ab7d3fd2-99c2-4e30-b7a5-227fcec4c63b"
+},
+"matcher": 4,
+"spotify_id": "5CM53nwFcC5g1qOR3Lgp91",
+"spotify_name": "Malcolm Jack",
+"url": "https://open.spotify.com/artist/5CM53nwFcC5g1qOR3Lgp91",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17802ea88d7db15453b06002474",
+"tracks": [
+{
+"id": "0cueyZAUSJhLgwNIn5ZkEE",
+"uri": "spotify:track:0cueyZAUSJhLgwNIn5ZkEE",
+"name": "Mirror Moon",
+"popularity": null,
+"album": "Mirror Moon",
+"album_type": "album",
+"release_date": "2018-11-02",
+"duration_ms": 203049,
+"explicit": false
+}
+],
+"rank_source": "search",
+"mbid": "ab7d3fd2-99c2-4e30-b7a5-227fcec4c63b"
+},
+"clara sanchez": {
+"query": "Clara Sanchez",
+"fetched_at": "2026-09-20T17:34:50+00:00",
+"reach": {
+"listeners": 161,
+"playcount": 539,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Clara+Sanchez",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "3ZH6ayQw1Z7PnYxP2A417v",
+"spotify_name": "clara sanchez",
+"url": "https://open.spotify.com/artist/3ZH6ayQw1Z7PnYxP2A417v",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178639a79012bf699ef737ec92b",
+"tracks": [
+{
+"id": "58I1505jbEToQYGL1QP9DF",
+"uri": "spotify:track:58I1505jbEToQYGL1QP9DF",
+"name": "the woman you need",
+"popularity": null,
+"album": "the woman you need",
+"album_type": "single",
+"release_date": "2021-12-10",
+"duration_ms": 201864,
+"explicit": false
+},
+{
+"id": "5fVtrYt08H6cHdtX6NERrI",
+"uri": "spotify:track:5fVtrYt08H6cHdtX6NERrI",
+"name": "ben",
+"popularity": null,
+"album": "the woman you need",
+"album_type": "single",
+"release_date": "2021-12-10",
+"duration_ms": 176707,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"bedouine": {
+"query": "Bedouine",
+"fetched_at": "2026-09-20T17:34:51+00:00",
+"reach": {
+"listeners": 233322,
+"playcount": 3414699,
+"tags": [
+"folk",
+"chamber folk",
+"indie folk"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Bedouine",
+"mbid": "a3bc4e59-18bd-4936-b605-2b01e33a6da9"
+},
+"matcher": 4,
+"spotify_id": "6IiZemRMna678qNhiRkYI5",
+"spotify_name": "Bedouine",
+"url": "https://open.spotify.com/artist/6IiZemRMna678qNhiRkYI5",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178c8b762d7b5ee0a96fa6ae382",
+"tracks": [
+{
+"id": "3azlo5j5KZPq3qlFlGSDiH",
+"uri": "spotify:track:3azlo5j5KZPq3qlFlGSDiH",
+"name": "One of These Days",
+"popularity": null,
+"album": "Bedouine (Deluxe)",
+"album_type": "album",
+"release_date": "2017-06-23",
+"duration_ms": 178720,
+"explicit": false
+},
+{
+"id": "1BWOUFGSAbPzrhZxDMno2K",
+"uri": "spotify:track:1BWOUFGSAbPzrhZxDMno2K",
+"name": "Nice and Quiet",
+"popularity": null,
+"album": "Bedouine (Deluxe)",
+"album_type": "album",
+"release_date": "2017-06-23",
+"duration_ms": 231066,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "a3bc4e59-18bd-4936-b605-2b01e33a6da9"
+},
+"jodi proznick": {
+"query": "Jodi Proznick",
+"fetched_at": "2026-09-20T17:34:51+00:00",
+"reach": {
+"listeners": 1547,
+"playcount": 8194,
+"tags": [
+"bass",
+"jazz",
+"tenor-sax",
+"contrebasse"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Jodi+Proznick",
+"mbid": "c5b0e1fb-12c7-48a0-8c69-46ad285b90f3"
+},
+"matcher": 4,
+"spotify_id": "2spdlVyq7KgDP7s3EVQcDO",
+"spotify_name": "Jodi Proznick",
+"url": "https://open.spotify.com/artist/2spdlVyq7KgDP7s3EVQcDO",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1783a596aed4e1cdce5b6e09571",
+"tracks": [
+{
+"id": "0rPQ4rMDWP2jq1BHed0T82",
+"uri": "spotify:track:0rPQ4rMDWP2jq1BHed0T82",
+"name": "All Too Soon",
+"popularity": null,
+"album": "Foundations",
+"album_type": "album",
+"release_date": "2007-03-06",
+"duration_ms": 389880,
+"explicit": false
+},
+{
+"id": "1ber1HL0imiOPhsO1taPht",
+"uri": "spotify:track:1ber1HL0imiOPhsO1taPht",
+"name": "Help Me",
+"popularity": null,
+"album": "Foundations",
+"album_type": "album",
+"release_date": "2007-03-06",
+"duration_ms": 380933,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "c5b0e1fb-12c7-48a0-8c69-46ad285b90f3"
+},
+"mark mclean quartet": {
+"query": "Mark Mclean Quartet",
+"fetched_at": "2026-09-20T17:34:52+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 4
+},
+"rocky horror music show at hollywood": {
+"query": "Rocky Horror Music Show at the Hollywood",
+"fetched_at": "2026-09-20T17:34:52+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 4
+},
+"olive klug": {
+"query": "Olive Klug",
+"fetched_at": "2026-09-20T17:34:52+00:00",
+"reach": {
+"listeners": 103639,
+"playcount": 986368,
+"tags": [
+"folk",
+"indie folk",
+"folk pop",
+"funk_add_to_lidarr_batch_20"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Olive+Klug",
+"mbid": "94a1fbe1-39c1-4165-9cd0-661f60ec5212"
+},
+"matcher": 4,
+"spotify_id": "3SEtmo8E5DJVuGddKYqeiU",
+"spotify_name": "Olive Klug",
+"url": "https://open.spotify.com/artist/3SEtmo8E5DJVuGddKYqeiU",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17809f97358ef7f45626431b730",
+"tracks": [
+{
+"id": "72Q3BQhu0w6A81ouAUp7UL",
+"uri": "spotify:track:72Q3BQhu0w6A81ouAUp7UL",
+"name": "Raining in June",
+"popularity": null,
+"album": "Raining in June",
+"album_type": "single",
+"release_date": "2021-08-28",
+"duration_ms": 166138,
+"explicit": false
+},
+{
+"id": "6eVv0TmghpiUQb3u5CSzkf",
+"uri": "spotify:track:6eVv0TmghpiUQb3u5CSzkf",
+"name": "Dancing in the Moonlight",
+"popularity": null,
+"album": "Dancing in the Moonlight",
+"album_type": "single",
+"release_date": "2021-07-02",
+"duration_ms": 182429,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "94a1fbe1-39c1-4165-9cd0-661f60ec5212"
+},
+"frail talk": {
+"query": "Frail Talk",
+"fetched_at": "2026-09-20T17:34:54+00:00",
+"reach": {
+"listeners": 20967,
+"playcount": 101767,
+"tags": [
+"indie folk",
+"squiggly",
+"colorado indie"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Frail+Talk",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "7stmp1OR4yaVInBIXIeKBf",
+"spotify_name": "Frail Talk",
+"url": "https://open.spotify.com/artist/7stmp1OR4yaVInBIXIeKBf",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178bc35fd718c31067efd3dc855",
+"tracks": [
+{
+"id": "5WCPn3XkHCrwJUMc6vSj3X",
+"uri": "spotify:track:5WCPn3XkHCrwJUMc6vSj3X",
+"name": "Sunday Dreamin'",
+"popularity": null,
+"album": "New Creation Myths",
+"album_type": "album",
+"release_date": "2021-09-10",
+"duration_ms": 185002,
+"explicit": false
+},
+{
+"id": "52NJ39DFONkwlViJUUcV00",
+"uri": "spotify:track:52NJ39DFONkwlViJUUcV00",
+"name": "Silly Boy",
+"popularity": null,
+"album": "New Creation Myths",
+"album_type": "album",
+"release_date": "2021-09-10",
+"duration_ms": 239616,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
 }
 }
