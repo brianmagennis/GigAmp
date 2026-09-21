@@ -2,42 +2,12 @@
  "city": "vancouver",
  "city_name": "Vancouver, BC",
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
- "scraped_at": "2026-09-20T17:32:25+00:00",
+ "scraped_at": "2026-09-21T19:36:42+00:00",
  "horizon_days": 35,
  "pages_fetched": 6,
- "do604_events": 301,
+ "do604_events": 307,
  "merged_duplicates": 119,
  "venues": {
-  "bc-place-stadium": {
-   "name": "BC Place Stadium",
-   "aliases": [],
-   "lat": 49.27576,
-   "lng": -123.11164
-  },
-  "rogers-arena": {
-   "name": "Rogers Arena",
-   "aliases": [],
-   "lat": 49.27766,
-   "lng": -123.10811
-  },
-  "freedom-mobile-arch": {
-   "name": "Freedom Mobile Arch",
-   "aliases": [],
-   "lat": 49.28607,
-   "lng": -123.03697
-  },
-  "shadbolt-centre-for-the-arts": {
-   "name": "Shadbolt Centre for the Arts",
-   "aliases": [],
-   "lat": 49.24176,
-   "lng": -122.96909
-  },
-  "the-pearl": {
-   "name": "The Pearl",
-   "aliases": [],
-   "lat": 49.28071,
-   "lng": -123.12143
-  },
   "rickshaw-theatre": {
    "name": "Rickshaw Theatre",
    "aliases": [
@@ -45,32 +15,6 @@
    ],
    "lat": 49.28102,
    "lng": -123.09853
-  },
-  "pacific-coliseum": {
-   "name": "Pacific Coliseum",
-   "aliases": [],
-   "lat": 49.28549,
-   "lng": -123.04361
-  },
-  "guilt-company": {
-   "name": "Guilt & Company",
-   "aliases": [
-    "Guilt & Co"
-   ],
-   "lat": 49.28379,
-   "lng": -123.10402
-  },
-  "1181-e-24th-ave-house-show": {
-   "name": "1181 E 24th Ave (House Show)",
-   "aliases": [],
-   "lat": 49.2493,
-   "lng": -123.08064
-  },
-  "commodore-ballroom": {
-   "name": "Commodore Ballroom",
-   "aliases": [],
-   "lat": 49.28065,
-   "lng": -123.12089
   },
   "hollywood-theatre": {
    "name": "Hollywood Theatre",
@@ -121,6 +65,18 @@
    "lat": 49.27981,
    "lng": -123.12164
   },
+  "the-pearl": {
+   "name": "The Pearl",
+   "aliases": [],
+   "lat": 49.28071,
+   "lng": -123.12143
+  },
+  "commodore-ballroom": {
+   "name": "Commodore Ballroom",
+   "aliases": [],
+   "lat": 49.28065,
+   "lng": -123.12089
+  },
   "biltmore-cabaret": {
    "name": "Biltmore Cabaret",
    "aliases": [],
@@ -159,6 +115,12 @@
    "lat": null,
    "lng": null
   },
+  "freedom-mobile-arch": {
+   "name": "Freedom Mobile Arch",
+   "aliases": [],
+   "lat": 49.28607,
+   "lng": -123.03697
+  },
   "st-james-hall": {
    "name": "St. James Hall",
    "aliases": [
@@ -184,6 +146,12 @@
    "aliases": [],
    "lat": 49.27942,
    "lng": -123.12994
+  },
+  "rogers-arena": {
+   "name": "Rogers Arena",
+   "aliases": [],
+   "lat": 49.27766,
+   "lng": -123.10811
   },
   "the-cobalt": {
    "name": "The Cobalt",
@@ -224,6 +192,26 @@
    "aliases": [],
    "lat": 49.28303,
    "lng": -123.09627
+  },
+  "guilt-company": {
+   "name": "Guilt & Company",
+   "aliases": [
+    "Guilt & Co"
+   ],
+   "lat": 49.28379,
+   "lng": -123.10402
+  },
+  "bc-place-stadium": {
+   "name": "BC Place Stadium",
+   "aliases": [],
+   "lat": 49.27576,
+   "lng": -123.11164
+  },
+  "pacific-coliseum": {
+   "name": "Pacific Coliseum",
+   "aliases": [],
+   "lat": 49.28549,
+   "lng": -123.04361
   },
   "vancouver": {
    "name": "Vancouver",
@@ -377,6 +365,12 @@
    "lat": null,
    "lng": null
   },
+  "pacific-spirit-united-church": {
+   "name": "Pacific Spirit United Church",
+   "aliases": [],
+   "lat": 49.23113,
+   "lng": -123.15901
+  },
   "the-centre-in-vancouver": {
    "name": "The Centre in Vancouver",
    "aliases": [],
@@ -389,6 +383,20 @@
    "lat": 49.28868,
    "lng": -123.11121
   },
+  "the-brighton-pub": {
+   "name": "The Brighton Pub",
+   "aliases": [],
+   "lat": 49.28138,
+   "lng": -123.05521
+  },
+  "red-gate-arts-society": {
+   "name": "Red Gate Arts Society",
+   "aliases": [
+    "Red Gate"
+   ],
+   "lat": 49.26769,
+   "lng": -123.10125
+  },
   "frankie-s-jazz-club": {
    "name": "Frankie's Jazz Club",
    "aliases": [],
@@ -398,14 +406,6 @@
   "blue-light-studio": {
    "name": "Blue Light Studio",
    "aliases": [],
-   "lat": null,
-   "lng": null
-  },
-  "red-gate-arts-society": {
-   "name": "Red Gate Arts Society",
-   "aliases": [
-    "Red Gate"
-   ],
    "lat": null,
    "lng": null
   },
@@ -425,364 +425,6 @@
   }
  },
  "events": [
-  {
-   "source": "songkick",
-   "id": "43317782",
-   "name": "Basia Bulat @ Shadbolt Centre for the Arts",
-   "start": "2026-09-20",
-   "status": "EventScheduled",
-   "venue": "Shadbolt Centre for the Arts",
-   "venue_url": "https://tickets.shadboltcentre.com",
-   "locality": "Burnaby",
-   "lat": 49.24176,
-   "lng": -122.96909,
-   "url": "https://www.songkick.com/concerts/43317782-basia-bulat-at-shadbolt-centre-for-the-arts",
-   "performers": [
-    {
-     "name": "Basia Bulat",
-     "songkick_genres": [
-      "folk_blues"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/70896-basia-bulat?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Shadbolt Centre for the Arts",
-   "venue_id": "shadbolt-centre-for-the-arts"
-  },
-  {
-   "source": "songkick",
-   "id": "43346844",
-   "name": "Noah Derksen @ Guilt & Co",
-   "start": "2026-09-20",
-   "status": "EventScheduled",
-   "venue": "Guilt & Company",
-   "venue_url": "http://www.guiltandcompany.com/",
-   "locality": "Vancouver",
-   "lat": 49.28379,
-   "lng": -123.10402,
-   "url": "https://www.songkick.com/concerts/43346844-noah-derksen-at-guilt-and-co",
-   "performers": [
-    {
-     "name": "Noah Derksen",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/8698238-noah-derksen?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Guilt & Co",
-   "venue_id": "guilt-company",
-   "also_listed": [
-    {
-     "source": "do604",
-     "url": "https://do604.com/events/2026/9/20/early-show-noah-derksen-tickets"
-    }
-   ]
-  },
-  {
-   "id": "do604-2026-09-20-lonesome-town-painters-tickets",
-   "name": "Lonesome Town Painters",
-   "start": "2026-09-20T21:00-0700",
-   "status": "EventScheduled",
-   "venue": "Guilt & Company",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/20/lonesome-town-painters-tickets",
-   "performers": [
-    {
-     "name": "Lonesome Town Painters",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "source": "do604",
-   "venue_raw": "Guilt & Company",
-   "venue_id": "guilt-company",
-   "lat": 49.28379,
-   "lng": -123.10402
-  },
-  {
-   "source": "songkick",
-   "id": "42853092",
-   "name": "Foo Fighters @ BC Place Stadium",
-   "start": "2026-09-20T17:30:00",
-   "status": "EventScheduled",
-   "venue": "BC Place Stadium",
-   "venue_url": "http://www.bcplacestadium.com/",
-   "locality": "Vancouver",
-   "lat": 49.27576,
-   "lng": -123.11164,
-   "url": "https://www.songkick.com/concerts/42853092-foo-fighters-at-bc-place-stadium",
-   "performers": [
-    {
-     "name": "Foo Fighters",
-     "songkick_genres": [
-      "rock",
-      "metal",
-      "indie_alternative"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/29315-foo-fighters?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Queens of the Stone Age",
-     "songkick_genres": [
-      "rock",
-      "metal",
-      "indie_alternative"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/479466-queens-of-the-stone-age?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Gouge Away",
-     "songkick_genres": [
-      "rock",
-      "metal",
-      "indie_alternative"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/6590694-gouge-away?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "BC Place Stadium",
-   "venue_id": "bc-place-stadium"
-  },
-  {
-   "source": "songkick",
-   "id": "43123812",
-   "name": "Unsane @ Rickshaw Theatre",
-   "start": "2026-09-20T19:00:00",
-   "status": "EventScheduled",
-   "venue": "Rickshaw Theatre",
-   "venue_url": "http://www.liveatrickshaw.com",
-   "locality": "Vancouver",
-   "lat": 49.28102,
-   "lng": -123.09853,
-   "url": "https://www.songkick.com/concerts/43123812-unsane-at-rickshaw-theatre",
-   "performers": [
-    {
-     "name": "Unsane",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/47002-unsane?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "The C*nts",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/5578923-cnts?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Disruptions",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10291844-disruptions?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "CNTS",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "venue_raw": "Rickshaw Theatre",
-   "venue_id": "rickshaw-theatre",
-   "also_listed": [
-    {
-     "source": "do604",
-     "url": "https://do604.com/events/2026/9/20/unsane-with-cnts-tickets"
-    }
-   ]
-  },
-  {
-   "id": "do604-2026-09-20-bloom-effect-seaglow-lotophage-witiko-da",
-   "name": "bloom effect, seaglow, Lotophage, Witiko, David Lunch, Softhead, Teltales, Beauatiufl",
-   "start": "2026-09-20T19:00-0700",
-   "status": "EventScheduled",
-   "venue": "Green Auto",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "url": "https://do604.com/events/2026/9/20/bloom-effect-seaglow-lotophage-witiko-david-lunch-softhead-teltales-beauatiufl-tickets",
-   "performers": [
-    {
-     "name": "bloom effect",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "seaglow",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Lotophage",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Witiko",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "David Lunch",
-     "songkick_genres": [],
-     "strict": true
-    },
-    {
-     "name": "Softhead",
-     "songkick_genres": [],
-     "strict": true
-    }
-   ],
-   "source": "do604",
-   "venue_raw": "Green Auto",
-   "venue_id": "green-auto"
-  },
-  {
-   "source": "songkick",
-   "id": "43181161",
-   "name": "Bring Me The Horizon @ Rogers Arena",
-   "start": "2026-09-20T19:00:00",
-   "status": "EventScheduled",
-   "venue": "Rogers Arena",
-   "venue_url": "http://www.rogersarena.com",
-   "locality": "Vancouver",
-   "lat": 49.27766,
-   "lng": -123.10811,
-   "url": "https://www.songkick.com/concerts/43181161-bring-me-the-horizon-at-rogers-arena",
-   "performers": [
-    {
-     "name": "Bring Me The Horizon",
-     "songkick_genres": [
-      "metal",
-      "rock",
-      "indie_alternative"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/347077-bring-me-the-horizon?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Motionless In White",
-     "songkick_genres": [
-      "metal",
-      "rock",
-      "indie_alternative"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/2053409-motionless-in-white?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "The Plot In You",
-     "songkick_genres": [
-      "metal",
-      "rock",
-      "indie_alternative"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/3666316-plot-in-you?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Rogers Arena",
-   "venue_id": "rogers-arena"
-  },
-  {
-   "source": "songkick",
-   "id": "432820052026",
-   "name": "Sleep: North America 2026 @ Commodore Ballroom",
-   "start": "2026-09-20T19:00:00",
-   "status": "EventScheduled",
-   "venue": "Commodore Ballroom",
-   "venue_url": "http://www.commodoreballroom.ca/",
-   "locality": "Vancouver",
-   "lat": 49.28065,
-   "lng": -123.12089,
-   "url": "https://www.songkick.com/festivals/3792253-sleep-north-america/id/43282005-sleep-north-america-2026",
-   "performers": [
-    {
-     "name": "Sleep",
-     "songkick_genres": [
-      "metal",
-      "rock"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/512162-sleep?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Commodore Ballroom",
-   "venue_id": "commodore-ballroom"
-  },
-  {
-   "source": "songkick",
-   "id": "43214577",
-   "name": "Sarah McLachlan @ Freedom Mobile Arch",
-   "start": "2026-09-20T19:30:00",
-   "status": "EventScheduled",
-   "venue": "Freedom Mobile Arch",
-   "venue_url": "https://www.pne.ca/venue/freedom-mobile-arch/",
-   "locality": "Vancouver",
-   "lat": 49.28607,
-   "lng": -123.03697,
-   "url": "https://www.songkick.com/concerts/43214577-sarah-mclachlan-at-freedom-mobile-arch",
-   "performers": [
-    {
-     "name": "Sarah McLachlan",
-     "songkick_genres": [
-      "folk_blues",
-      "rock",
-      "pop"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/144963-sarah-mclachlan?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Freedom Mobile Arch",
-   "venue_id": "freedom-mobile-arch"
-  },
-  {
-   "source": "songkick",
-   "id": "43329015",
-   "name": "Sonu Nigam @ Pacific Coliseum",
-   "start": "2026-09-20T19:30:00",
-   "status": "EventScheduled",
-   "venue": "Pacific Coliseum",
-   "venue_url": "http://www.pne.ca/",
-   "locality": "Vancouver",
-   "lat": 49.28549,
-   "lng": -123.04361,
-   "url": "https://www.songkick.com/concerts/43329015-sonu-nigam-at-pacific-coliseum",
-   "performers": [
-    {
-     "name": "Sonu Nigam",
-     "songkick_genres": [
-      "classical",
-      "rock"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/134274-sonu-nigam?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Pacific Coliseum",
-   "venue_id": "pacific-coliseum"
-  },
-  {
-   "source": "songkick",
-   "id": "433858021181",
-   "name": "Al Tuck @ 1181 E 24th Ave (House Show)",
-   "start": "2026-09-20T20:00:00",
-   "status": "EventScheduled",
-   "venue": "1181 E 24th Ave (House Show)",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": 49.2493,
-   "lng": -123.08064,
-   "url": "https://www.songkick.com/concerts/43385802-al-tuck-at-1181-e-24th-ave",
-   "performers": [
-    {
-     "name": "Al Tuck",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/288303-al-tuck?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Manuel Focus",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10414402-manuel-focus?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Lucy Jeffery",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10414403-lucy-jeffery?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "1181 E 24th Ave (House Show)",
-   "venue_id": "1181-e-24th-ave-house-show"
-  },
   {
    "source": "songkick",
    "id": "43376582",
@@ -2205,7 +1847,9 @@
    ],
    "source": "do604",
    "venue_raw": "Red Gate Arts Society",
-   "venue_id": "red-gate-arts-society"
+   "venue_id": "red-gate-arts-society",
+   "lat": 49.26769,
+   "lng": -123.10125
   },
   {
    "id": "do604-2026-09-25-one-world-fusion-tickets",
@@ -2370,6 +2014,36 @@
   },
   {
    "source": "songkick",
+   "id": "43009265",
+   "name": "The Growlers @ The Pearl",
+   "start": "2026-09-25T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "lat": 49.28071,
+   "lng": -123.12143,
+   "url": "https://www.songkick.com/concerts/43009265-growlers-at-pearl",
+   "performers": [
+    {
+     "name": "The Growlers",
+     "songkick_genres": [
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/577120-growlers?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "The Pearl",
+   "venue_id": "the-pearl",
+   "also_listed": [
+    {
+     "source": "do604",
+     "url": "https://do604.com/events/2026/9/25/the-growlers-tickets"
+    }
+   ]
+  },
+  {
+   "source": "songkick",
    "id": "43217584",
    "name": "Chance the Rapper @ Freedom Mobile Arch",
    "start": "2026-09-25T20:00:00",
@@ -2391,30 +2065,6 @@
    ],
    "venue_raw": "Freedom Mobile Arch",
    "venue_id": "freedom-mobile-arch"
-  },
-  {
-   "source": "songkick",
-   "id": "43009265",
-   "name": "The Growlers @ The Pearl",
-   "start": "2026-09-25T20:00:00",
-   "status": "EventScheduled",
-   "venue": "The Pearl",
-   "venue_url": "https://thepearlvancouver.com/",
-   "locality": "Vancouver",
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "url": "https://www.songkick.com/concerts/43009265-growlers-at-pearl",
-   "performers": [
-    {
-     "name": "The Growlers",
-     "songkick_genres": [
-      "rock"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/577120-growlers?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The Pearl",
-   "venue_id": "the-pearl"
   },
   {
    "source": "songkick",
@@ -2764,7 +2414,31 @@
    ],
    "source": "do604",
    "venue_raw": "Red Gate Arts Society",
-   "venue_id": "red-gate-arts-society"
+   "venue_id": "red-gate-arts-society",
+   "lat": 49.26769,
+   "lng": -123.10125
+  },
+  {
+   "id": "do604-2026-09-26-gutter-night-tickets",
+   "name": "Gutter Night",
+   "start": "2026-09-26T19:00-0700",
+   "status": "EventScheduled",
+   "venue": "The Astoria",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/9/26/gutter-night-tickets",
+   "performers": [
+    {
+     "name": "Gutter Night",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604",
+   "venue_raw": "The Astoria",
+   "venue_id": "the-astoria",
+   "lat": 49.28147,
+   "lng": -123.08793
   },
   {
    "source": "songkick",
@@ -2880,6 +2554,36 @@
    "lng": -123.10075
   },
   {
+   "source": "songkick",
+   "id": "43009266",
+   "name": "The Growlers @ The Pearl",
+   "start": "2026-09-26T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "lat": 49.28071,
+   "lng": -123.12143,
+   "url": "https://www.songkick.com/concerts/43009266-growlers-at-pearl",
+   "performers": [
+    {
+     "name": "The Growlers",
+     "songkick_genres": [
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/577120-growlers?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "The Pearl",
+   "venue_id": "the-pearl",
+   "also_listed": [
+    {
+     "source": "do604",
+     "url": "https://do604.com/events/2026/9/26/the-growlers-tickets"
+    }
+   ]
+  },
+  {
    "id": "do604-2026-09-26-steve-kaldestad-quartet-feat-bryn-robert",
    "name": "STEVE KALDESTAD QUARTET feat. BRYN ROBERTS",
    "start": "2026-09-26T20:00-0700",
@@ -2903,30 +2607,6 @@
    "source": "do604",
    "venue_raw": "Frankie's Jazz Club",
    "venue_id": "frankie-s-jazz-club"
-  },
-  {
-   "source": "songkick",
-   "id": "43009266",
-   "name": "The Growlers @ The Pearl",
-   "start": "2026-09-26T20:00:00",
-   "status": "EventScheduled",
-   "venue": "The Pearl",
-   "venue_url": "https://thepearlvancouver.com/",
-   "locality": "Vancouver",
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "url": "https://www.songkick.com/concerts/43009266-growlers-at-pearl",
-   "performers": [
-    {
-     "name": "The Growlers",
-     "songkick_genres": [
-      "rock"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/577120-growlers?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The Pearl",
-   "venue_id": "the-pearl"
   },
   {
    "source": "songkick",
@@ -4719,7 +4399,9 @@
    ],
    "source": "do604",
    "venue_raw": "Red Gate Arts Society",
-   "venue_id": "red-gate-arts-society"
+   "venue_id": "red-gate-arts-society",
+   "lat": 49.26769,
+   "lng": -123.10125
   },
   {
    "id": "do604-2026-10-01-patrick-kao-sextet-tickets",
@@ -5080,7 +4762,9 @@
    ],
    "source": "do604",
    "venue_raw": "Red Gate Arts Society",
-   "venue_id": "red-gate-arts-society"
+   "venue_id": "red-gate-arts-society",
+   "lat": 49.26769,
+   "lng": -123.10125
   },
   {
    "id": "do604-2026-10-02-chasen-wayne-and-the-honky-tonk-machine-",
@@ -5505,7 +5189,7 @@
   },
   {
    "id": "do604-2026-10-03-early-show-ribcage-tickets",
-   "name": "Early Show: Ribcage",
+   "name": "Early Show: Love Seat Deluxe",
    "start": "2026-10-03T19:00-0700",
    "status": "EventScheduled",
    "venue": "Guilt & Company",
@@ -5514,7 +5198,7 @@
    "url": "https://do604.com/events/2026/10/3/early-show-ribcage-tickets",
    "performers": [
     {
-     "name": "Ribcage",
+     "name": "Love Seat Deluxe",
      "songkick_genres": [],
      "strict": true
     }
@@ -6652,6 +6336,28 @@
    "venue_id": "queen-elizabeth-theatre"
   },
   {
+   "id": "do604-2026-10-06-jon-q-public-tickets",
+   "name": "Jon Q Public",
+   "start": "2026-10-06T21:00-0700",
+   "status": "EventScheduled",
+   "venue": "The Roxy Cabaret",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/6/jon-q-public-tickets",
+   "performers": [
+    {
+     "name": "Jon Q Public",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604",
+   "venue_raw": "The Roxy",
+   "venue_id": "the-roxy-cabaret",
+   "lat": 49.2799,
+   "lng": -123.12205
+  },
+  {
    "source": "songkick",
    "id": "433351702026",
    "name": "VIFF Live: Derrick Gee's Radio Hour 2026 @ Granville Island Stage",
@@ -6709,6 +6415,11 @@
       "rock"
      ],
      "songkick_url": "https://www.songkick.com/artists/483092-elvenking?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Greyhawk",
+     "songkick_genres": [],
+     "strict": true
     }
    ],
    "venue_raw": "Rickshaw Theatre",
@@ -7674,7 +7385,9 @@
    ],
    "source": "do604",
    "venue_raw": "Red Gate",
-   "venue_id": "red-gate-arts-society"
+   "venue_id": "red-gate-arts-society",
+   "lat": 49.26769,
+   "lng": -123.10125
   },
   {
    "source": "songkick",
@@ -7795,6 +7508,28 @@
    ],
    "venue_raw": "Queen Elizabeth Theatre",
    "venue_id": "queen-elizabeth-theatre"
+  },
+  {
+   "id": "do604-2026-10-09-the-grouches-tickets-d0qzkoq",
+   "name": "The Grouches",
+   "start": "2026-10-09T20:00-0700",
+   "status": "EventScheduled",
+   "venue": "The Roxy Cabaret",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/9/the-grouches-tickets-d0qzkoq",
+   "performers": [
+    {
+     "name": "The Grouches",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604",
+   "venue_raw": "The Roxy",
+   "venue_id": "the-roxy-cabaret",
+   "lat": 49.2799,
+   "lng": -123.12205
   },
   {
    "id": "do604-2026-10-09-jacqui-naylor-quartet-tickets",
@@ -8661,6 +8396,28 @@
    "lng": -123.09668
   },
   {
+   "id": "do604-2026-10-12-the-fly-1986-tickets",
+   "name": "The Fly (1986)",
+   "start": "2026-10-12T19:00-0700",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/12/the-fly-1986-tickets",
+   "performers": [
+    {
+     "name": "The Fly",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604",
+   "venue_raw": "Hollywood Theatre",
+   "venue_id": "hollywood-theatre",
+   "lat": 49.26444,
+   "lng": -123.17453
+  },
+  {
    "id": "do604-2026-10-12-early-show-dani-black-tickets",
    "name": "Early Show: Dani Black",
    "start": "2026-10-12T19:00-0700",
@@ -9118,7 +8875,7 @@
   },
   {
    "id": "do604-2026-10-14-early-show-groffie-x-mina-tickets",
-   "name": "Early Show: Groffie x Mina",
+   "name": "Early Show: Groffie",
    "start": "2026-10-14T19:00-0700",
    "status": "EventScheduled",
    "venue": "Guilt & Company",
@@ -9127,7 +8884,7 @@
    "url": "https://do604.com/events/2026/10/14/early-show-groffie-x-mina-tickets",
    "performers": [
     {
-     "name": "Groffie x Mina",
+     "name": "Groffie",
      "songkick_genres": [],
      "strict": true
     }
@@ -9279,6 +9036,28 @@
      "url": "https://do604.com/events/2026/10/14/rett-madison-with-special-guests-tickets"
     }
    ]
+  },
+  {
+   "source": "songkick",
+   "id": "43425130",
+   "name": "Meredith Bates @ Vancouver",
+   "start": "2026-10-15",
+   "status": "EventScheduled",
+   "venue": "Vancouver",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "lat": null,
+   "lng": null,
+   "url": "https://www.songkick.com/concerts/43425130-meredith-bates-at-unknown-venue",
+   "performers": [
+    {
+     "name": "Meredith Bates",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8988284-meredith-bates?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Vancouver",
+   "venue_id": "vancouver"
   },
   {
    "source": "songkick",
@@ -9704,7 +9483,9 @@
    ],
    "source": "do604",
    "venue_raw": "Red Gate Arts Society",
-   "venue_id": "red-gate-arts-society"
+   "venue_id": "red-gate-arts-society",
+   "lat": 49.26769,
+   "lng": -123.10125
   },
   {
    "id": "do604-2026-10-16-chrom-live-in-vancouver-tickets-b3wnexw",
@@ -10143,7 +9924,7 @@
      "songkick_url": "https://www.songkick.com/artists/9230659-antichrist-siege-machine?utm_medium=organic&utm_source=microformat"
     },
     {
-     "name": "ANTICHRIST SIEGE MACHINE Live in Vancouver",
+     "name": "Empalement",
      "songkick_genres": [],
      "strict": true
     }
@@ -10210,6 +9991,28 @@
    "venue_id": "guilt-company",
    "lat": 49.28379,
    "lng": -123.10402
+  },
+  {
+   "id": "do604-2026-10-17-dawson-forsey-tickets",
+   "name": "Dawson Forsey",
+   "start": "2026-10-17T19:00-0700",
+   "status": "EventScheduled",
+   "venue": "Red Gate Arts Society",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/17/dawson-forsey-tickets",
+   "performers": [
+    {
+     "name": "Dawson Forsey",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604",
+   "venue_raw": "Red Gate Arts Society",
+   "venue_id": "red-gate-arts-society",
+   "lat": 49.26769,
+   "lng": -123.10125
   },
   {
    "source": "songkick",
@@ -10613,7 +10416,9 @@
    ],
    "source": "do604",
    "venue_raw": "Red Gate Arts Society",
-   "venue_id": "red-gate-arts-society"
+   "venue_id": "red-gate-arts-society",
+   "lat": 49.26769,
+   "lng": -123.10125
   },
   {
    "id": "do604-2026-10-18-goodwife-ghost-darling-ears-slowicide-ti",
@@ -11911,6 +11716,28 @@
    "lng": -123.09853
   },
   {
+   "id": "do604-2026-10-23-empanadas-ilegales-album-release-show-ti",
+   "name": "Empanadas Ilegales - Album Release Show",
+   "start": "2026-10-23T19:00-0700",
+   "status": "EventScheduled",
+   "venue": "Hollywood Theatre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/23/empanadas-ilegales-album-release-show-tickets",
+   "performers": [
+    {
+     "name": "Empanadas Ilegales",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604",
+   "venue_raw": "Hollywood Theatre",
+   "venue_id": "hollywood-theatre",
+   "lat": 49.26444,
+   "lng": -123.17453
+  },
+  {
    "id": "do604-2026-10-23-early-show-terminal-station-tickets",
    "name": "Early Show: Terminal Station",
    "start": "2026-10-23T19:00-0700",
@@ -11979,6 +11806,28 @@
      "url": "https://do604.com/events/2026/10/23/kostnateni-and-liminal-shroud-with-guests-xiphoid-dementia-and-infinexhuma-tickets"
     }
    ]
+  },
+  {
+   "source": "songkick",
+   "id": "43425132",
+   "name": "Meredith Bates @ Pacific Spirit United Church",
+   "start": "2026-10-23T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Pacific Spirit United Church",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "lat": 49.23113,
+   "lng": -123.15901,
+   "url": "https://www.songkick.com/concerts/43425132-meredith-bates-at-pacific-spirit-united-church",
+   "performers": [
+    {
+     "name": "Meredith Bates",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8988284-meredith-bates?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Pacific Spirit United Church",
+   "venue_id": "pacific-spirit-united-church"
   },
   {
    "id": "do604-2026-10-23-weeds-gestrin-rud-arai-celebrate-25-year",
@@ -12670,36 +12519,117 @@
      "url": "https://do604.com/events/2026/10/25/olive-klug-with-special-guests-tickets"
     }
    ]
-  }
- ],
- "skipped": [
+  },
+  {
+   "id": "do604-2026-10-26-early-show-sarah-eske-tickets",
+   "name": "Early Show: Sarah Eské",
+   "start": "2026-10-26T19:00-0700",
+   "status": "EventScheduled",
+   "venue": "Guilt & Company",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/26/early-show-sarah-eske-tickets",
+   "performers": [
+    {
+     "name": "Sarah Eské",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604",
+   "venue_raw": "Guilt & Company",
+   "venue_id": "guilt-company",
+   "lat": 49.28379,
+   "lng": -123.10402
+  },
+  {
+   "id": "do604-2026-10-26-joe-rotundo-the-interstellar-riders-tick",
+   "name": "Joe Rotundo & the Interstellar Riders",
+   "start": "2026-10-26T21:00-0700",
+   "status": "EventScheduled",
+   "venue": "Guilt & Company",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/26/joe-rotundo-the-interstellar-riders-tickets",
+   "performers": [
+    {
+     "name": "Joe Rotundo & the Interstellar Riders",
+     "songkick_genres": [],
+     "strict": true
+    }
+   ],
+   "source": "do604",
+   "venue_raw": "Guilt & Company",
+   "venue_id": "guilt-company",
+   "lat": 49.28379,
+   "lng": -123.10402
+  },
   {
    "source": "songkick",
-   "id": "43254190",
-   "name": "The Spits @ The Pearl",
-   "start": "2026-09-20T20:00:00",
+   "id": "43277293",
+   "name": "The Dillinger Escape Plan @ Commodore Ballroom",
+   "start": "2026-10-26T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "lat": 49.28065,
+   "lng": -123.12089,
+   "url": "https://www.songkick.com/concerts/43277293-dillinger-escape-plan-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "The Dillinger Escape Plan",
+     "songkick_genres": [
+      "metal",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/4744-dillinger-escape-plan?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "XCOMM",
+     "songkick_genres": [
+      "metal",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10365803-xcomm?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Squid Pisser",
+     "songkick_genres": [
+      "metal",
+      "rock"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/10322668-squid-pisser?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Commodore Ballroom",
+   "venue_id": "commodore-ballroom"
+  },
+  {
+   "source": "songkick",
+   "id": "43289418",
+   "name": "Free Throw @ The Pearl",
+   "start": "2026-10-26T19:30:00",
    "status": "EventScheduled",
    "venue": "The Pearl",
    "venue_url": "https://thepearlvancouver.com/",
    "locality": "Vancouver",
    "lat": 49.28071,
    "lng": -123.12143,
-   "url": "https://www.songkick.com/concerts/43254190-spits-at-pearl",
+   "url": "https://www.songkick.com/concerts/43289418-free-throw-at-pearl",
    "performers": [
     {
-     "name": "The Spits",
-     "songkick_genres": [
-      "comedy"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/125164-spits?utm_medium=organic&utm_source=microformat"
+     "name": "Free Throw",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/6066924-free-throw?utm_medium=organic&utm_source=microformat"
     },
     {
-     "name": "Toy Tiger",
+     "name": "Microwave",
      "songkick_genres": [],
      "strict": true
     },
     {
-     "name": "Sleep Country",
+     "name": "Carly Cosgrove",
      "songkick_genres": [],
      "strict": true
     }
@@ -12709,11 +12639,12 @@
    "also_listed": [
     {
      "source": "do604",
-     "url": "https://do604.com/events/2026/9/20/the-spits-with-special-guests-tickets"
+     "url": "https://do604.com/events/2026/10/26/microwave-free-throw-with-carly-cosgrove-tickets"
     }
-   ],
-   "skip_reason": "non_music"
-  },
+   ]
+  }
+ ],
+ "skipped": [
   {
    "source": "songkick",
    "id": "43063936",
@@ -12808,23 +12739,6 @@
    "performers": [],
    "venue_raw": "River Rock Casino",
    "venue_id": "river-rock-casino-resort",
-   "skip_reason": "no_performers"
-  },
-  {
-   "source": "songkick",
-   "id": "433145612026",
-   "name": "**VAN JAZZ 2026 @ The American",
-   "start": "2026-10-23T19:30:00",
-   "status": "EventScheduled",
-   "venue": "The American",
-   "venue_url": "https://www.theamerican.bar",
-   "locality": "Vancouver",
-   "lat": 49.27621,
-   "lng": -123.09948,
-   "url": "https://www.songkick.com/festivals/3795268-van-jazz/id/43314561-van-jazz-2026",
-   "performers": [],
-   "venue_raw": "The American",
-   "venue_id": "the-american",
    "skip_reason": "no_performers"
   },
   {

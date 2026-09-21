@@ -25224,14 +25224,15 @@
 "fetched_at": "2026-09-08T18:00:05+00:00",
 "reach": {
 "listeners": 116,
-"playcount": 729,
+"playcount": 736,
 "tags": [
 "black metal"
 ],
 "tier": 1,
-"lastfm_url": "https://www.last.fm/music/Empalement"
+"lastfm_url": "https://www.last.fm/music/Empalement",
+"mbid": null
 },
-"matcher": 2,
+"matcher": 4,
 "spotify_id": "4Ph9iovG0i6yyKwphl4f2b",
 "spotify_name": "Empalement",
 "url": "https://open.spotify.com/artist/4Ph9iovG0i6yyKwphl4f2b",
@@ -25263,7 +25264,7 @@
 "explicit": false
 }
 ],
-"rank_source": "search"
+"rank_source": "lastfm"
 },
 "haunted within": {
 "query": "The Haunted Within",
@@ -39250,5 +39251,748 @@
 ],
 "rank_source": "lastfm",
 "mbid": null
+},
+"gutter night": {
+"query": "Gutter Night",
+"fetched_at": "2026-09-21T19:39:18+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 4
+},
+"love seat deluxe": {
+"query": "Love Seat Deluxe",
+"fetched_at": "2026-09-21T19:39:18+00:00",
+"spotify_id": null,
+"reach": {
+"listeners": 2,
+"playcount": 30,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Love+Seat+Deluxe",
+"mbid": null
+},
+"matcher": 4,
+"candidates": []
+},
+"jon q public": {
+"query": "Jon Q Public",
+"fetched_at": "2026-09-21T19:39:19+00:00",
+"reach": {
+"listeners": 24,
+"playcount": 67,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Jon+Q+Public",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "4PqO9hLQuOQiLIhn37xHZ1",
+"spotify_name": "Jon Q Public",
+"url": "https://open.spotify.com/artist/4PqO9hLQuOQiLIhn37xHZ1",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178682788986198d71ae2f311bd",
+"tracks": [
+{
+"id": "5rvQxSNzscnfV5ttw5cflE",
+"uri": "spotify:track:5rvQxSNzscnfV5ttw5cflE",
+"name": "U.F.O. Over Marietta - 2025 Version",
+"popularity": null,
+"album": "Crackheads Boxing Club & the Split Decision (2025 Version)",
+"album_type": "album",
+"release_date": "2025-07-18",
+"duration_ms": 108205,
+"explicit": false
+},
+{
+"id": "3SD4Eqsc5aBIV9te9UxIck",
+"uri": "spotify:track:3SD4Eqsc5aBIV9te9UxIck",
+"name": "Everybody's Saying - 2025 Version",
+"popularity": null,
+"album": "Crackheads Boxing Club & the Split Decision (2025 Version)",
+"album_type": "album",
+"release_date": "2025-07-18",
+"duration_ms": 112386,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"greyhawk": {
+"query": "Greyhawk",
+"fetched_at": "2026-09-21T19:39:20+00:00",
+"reach": {
+"listeners": 4142,
+"playcount": 74347,
+"tags": [
+"heavy metal",
+"power metal",
+"traditional heavy metal",
+"nwothm"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Greyhawk",
+"mbid": "8ce933fe-f64d-4693-ba2b-1349225f01c3"
+},
+"matcher": 4,
+"spotify_id": "2eOmJMVlhgac2iA8V2fR4W",
+"spotify_name": "Greyhawk",
+"url": "https://open.spotify.com/artist/2eOmJMVlhgac2iA8V2fR4W",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1782ea392f8403be4200d85ee76",
+"tracks": [
+{
+"id": "71qLGwDLT3Wjn7ZEAWauTw",
+"uri": "spotify:track:71qLGwDLT3Wjn7ZEAWauTw",
+"name": "Frozen Star",
+"popularity": null,
+"album": "Keepers of the Flame",
+"album_type": "album",
+"release_date": "2020-06-16",
+"duration_ms": 190320,
+"explicit": false
+},
+{
+"id": "6uP0OumffYSHsBFZO1uzuL",
+"uri": "spotify:track:6uP0OumffYSHsBFZO1uzuL",
+"name": "Don't Wait for the Wizard",
+"popularity": null,
+"album": "Keepers of the Flame",
+"album_type": "album",
+"release_date": "2020-06-16",
+"duration_ms": 303600,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "8ce933fe-f64d-4693-ba2b-1349225f01c3"
+},
+"grouches": {
+"query": "The Grouches",
+"fetched_at": "2026-09-21T19:39:20+00:00",
+"reach": {
+"listeners": 69,
+"playcount": 944,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/The+Grouches",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "5VsxNAWeBnSRC3Xc7zE8CQ",
+"spotify_name": "The Grouches",
+"url": "https://open.spotify.com/artist/5VsxNAWeBnSRC3Xc7zE8CQ",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab67616d00004851fbbca2e6396624fbe43e4e79",
+"tracks": [
+{
+"id": "4yScjjwS1LEuBMAXSg3oBy",
+"uri": "spotify:track:4yScjjwS1LEuBMAXSg3oBy",
+"name": "I Don't Want You Around",
+"popularity": null,
+"album": "1st Demo",
+"album_type": "album",
+"release_date": "2025-12-19",
+"duration_ms": 153600,
+"explicit": true
+},
+{
+"id": "1sp9z6Rv54GmOjUSRMNqvy",
+"uri": "spotify:track:1sp9z6Rv54GmOjUSRMNqvy",
+"name": "All My Lies",
+"popularity": null,
+"album": "1st Demo",
+"album_type": "album",
+"release_date": "2025-12-19",
+"duration_ms": 131239,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"fly": {
+"query": "The Fly",
+"fetched_at": "2026-09-21T19:39:21+00:00",
+"spotify_id": null,
+"reach": {
+"listeners": 10302,
+"playcount": 74133,
+"tags": [
+"rock",
+"pop rock",
+"lithuanian",
+"pop"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/The+Fly",
+"mbid": "0e940904-0b7c-49ae-ba7c-14d6d8238e75"
+},
+"matcher": 4,
+"candidates": [
+"The Flys",
+"The Flying Burrito Brothers",
+"The Flying Lizards"
+]
+},
+"groffie": {
+"query": "Groffie",
+"fetched_at": "2026-09-21T19:39:22+00:00",
+"reach": {
+"listeners": 9,
+"playcount": 25,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Groffie",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "3Gidp0sOShQci6rOpCEnUf",
+"spotify_name": "Groffie",
+"url": "https://open.spotify.com/artist/3Gidp0sOShQci6rOpCEnUf",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1784eacab65a846aec2422a8ad6",
+"tracks": [
+{
+"id": "4jXVmD9WXMCd5MqWDkCV8P",
+"uri": "spotify:track:4jXVmD9WXMCd5MqWDkCV8P",
+"name": "Sun and Moon",
+"popularity": null,
+"album": "Sun and Moon",
+"album_type": "single",
+"release_date": "2021-03-07",
+"duration_ms": 157013,
+"explicit": false
+},
+{
+"id": "3VZXbUTxQVhKrBKxTuZQ28",
+"uri": "spotify:track:3VZXbUTxQVhKrBKxTuZQ28",
+"name": "C H A N G E S",
+"popularity": null,
+"album": "C H A N G E S",
+"album_type": "single",
+"release_date": "2021-08-18",
+"duration_ms": 172496,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"meredith bates": {
+"query": "Meredith Bates",
+"fetched_at": "2026-09-21T19:39:22+00:00",
+"reach": {
+"listeners": 510,
+"playcount": 1854,
+"tags": [
+"contemporary classical",
+"experimental",
+"jazz",
+"classical"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Meredith+Bates",
+"mbid": "2259de0c-e6c2-4050-8f7c-8edf8135141e"
+},
+"matcher": 4,
+"spotify_id": "5KdDd4yJycj9d2LK9KNctX",
+"spotify_name": "Meredith Bates",
+"url": "https://open.spotify.com/artist/5KdDd4yJycj9d2LK9KNctX",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178a7ec583e5cd2a43aa407f0dd",
+"tracks": [
+{
+"id": "5nj7A5FrRg64zrDCXQBbX7",
+"uri": "spotify:track:5nj7A5FrRg64zrDCXQBbX7",
+"name": "Book I - 4th Incantation (memory)",
+"popularity": null,
+"album": "The Observer Effect",
+"album_type": "album",
+"release_date": "2026-03-13",
+"duration_ms": 1866866,
+"explicit": false
+},
+{
+"id": "7foDkooQaDd7OHHCjqnMKJ",
+"uri": "spotify:track:7foDkooQaDd7OHHCjqnMKJ",
+"name": "Disturbance",
+"popularity": null,
+"album": "Tesseract",
+"album_type": "album",
+"release_date": "2023-06-02",
+"duration_ms": 501160,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "2259de0c-e6c2-4050-8f7c-8edf8135141e"
+},
+"dawson forsey": {
+"query": "Dawson Forsey",
+"fetched_at": "2026-09-21T19:39:23+00:00",
+"reach": {
+"listeners": 581,
+"playcount": 1763,
+"tags": [
+"alt-country",
+"folk",
+"lo-fi"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Dawson+Forsey",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "3mBblChddPIXIc37OkBf7U",
+"spotify_name": "Dawson Forsey",
+"url": "https://open.spotify.com/artist/3mBblChddPIXIc37OkBf7U",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178d987d1b4875bc841627467a2",
+"tracks": [
+{
+"id": "6ft3NXSgUr2J5h6OW98ng6",
+"uri": "spotify:track:6ft3NXSgUr2J5h6OW98ng6",
+"name": "Forgotten Man",
+"popularity": null,
+"album": "Get Out",
+"album_type": "single",
+"release_date": "2020-07-17",
+"duration_ms": 202826,
+"explicit": false
+},
+{
+"id": "1C7LQtFvtNzDhR1Gy3eBe6",
+"uri": "spotify:track:1C7LQtFvtNzDhR1Gy3eBe6",
+"name": "Get Out",
+"popularity": null,
+"album": "Get Out",
+"album_type": "single",
+"release_date": "2020-07-17",
+"duration_ms": 160012,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"empanadas ilegales": {
+"query": "Empanadas Ilegales",
+"fetched_at": "2026-09-21T19:39:24+00:00",
+"reach": {
+"listeners": 3711,
+"playcount": 13884,
+"tags": [
+"cumbia",
+"psychedelic",
+"latin",
+"vocal"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Empanadas+Ilegales",
+"mbid": "2bb30366-f779-43c8-8c63-eb0909195cb8"
+},
+"matcher": 4,
+"spotify_id": "2aF4A990msBzfN1SRQ6PL9",
+"spotify_name": "Empanadas Ilegales",
+"url": "https://open.spotify.com/artist/2aF4A990msBzfN1SRQ6PL9",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178dc834ffd9d7f3dcf7bbecbea",
+"tracks": [
+{
+"id": "6BYXML6IiFI6I0h4AkZV0C",
+"uri": "spotify:track:6BYXML6IiFI6I0h4AkZV0C",
+"name": "Bailecito de MORD",
+"popularity": null,
+"album": "Sancocho Trifásico",
+"album_type": "album",
+"release_date": "2025-06-06",
+"duration_ms": 232124,
+"explicit": false
+},
+{
+"id": "22d3SDOr9Ve2jdCgRvzloU",
+"uri": "spotify:track:22d3SDOr9Ve2jdCgRvzloU",
+"name": "Gher Bede (Sanguijuela)",
+"popularity": null,
+"album": "Sancocho Trifásico",
+"album_type": "album",
+"release_date": "2025-06-06",
+"duration_ms": 303514,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "2bb30366-f779-43c8-8c63-eb0909195cb8"
+},
+"sarah eske": {
+"query": "Sarah Eské",
+"fetched_at": "2026-09-21T19:39:25+00:00",
+"reach": {
+"listeners": 7,
+"playcount": 11,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Sarah+Esk%C3%A9",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "7kpFQFZXeyiYdyJ3z1qX7q",
+"spotify_name": "Sarah Eské",
+"url": "https://open.spotify.com/artist/7kpFQFZXeyiYdyJ3z1qX7q",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17858fa9ad7b847b0ff97736c67",
+"tracks": [
+{
+"id": "4HcLqhpYFI6bYAMiNi8Fol",
+"uri": "spotify:track:4HcLqhpYFI6bYAMiNi8Fol",
+"name": "All My Life",
+"popularity": null,
+"album": "All My Life",
+"album_type": "album",
+"release_date": "2013-10-16",
+"duration_ms": 228000,
+"explicit": false
+},
+{
+"id": "6rUPwcOiaZ9WJzSegCzJa4",
+"uri": "spotify:track:6rUPwcOiaZ9WJzSegCzJa4",
+"name": "Sidelines",
+"popularity": null,
+"album": "Sidelines",
+"album_type": "single",
+"release_date": "2020-03-05",
+"duration_ms": 223448,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"dillinger escape plan": {
+"query": "The Dillinger Escape Plan",
+"fetched_at": "2026-09-21T19:39:26+00:00",
+"reach": {
+"listeners": 631339,
+"playcount": 35666968,
+"tags": [
+"mathcore",
+"experimental",
+"hardcore",
+"metalcore"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/The+Dillinger+Escape+Plan",
+"mbid": "1bc41dff-5397-4c53-bb50-469d2c277197"
+},
+"matcher": 4,
+"spotify_id": "7IGcjaMGAtsvKBLQX26W4i",
+"spotify_name": "The Dillinger Escape Plan",
+"url": "https://open.spotify.com/artist/7IGcjaMGAtsvKBLQX26W4i",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178fb994f3ad1f2a58320e9b422",
+"tracks": [
+{
+"id": "4TOZ8TuZQRMEgJjNsgewg2",
+"uri": "spotify:track:4TOZ8TuZQRMEgJjNsgewg2",
+"name": "Milk Lizard",
+"popularity": null,
+"album": "Ire Works",
+"album_type": "album",
+"release_date": "2007-11-13",
+"duration_ms": 235266,
+"explicit": false
+},
+{
+"id": "7d8u78sSmLggpjU9tk0o2J",
+"uri": "spotify:track:7d8u78sSmLggpjU9tk0o2J",
+"name": "One of Us is the Killer",
+"popularity": null,
+"album": "One Of Us Is The Killer",
+"album_type": "album",
+"release_date": "2013-05-14",
+"duration_ms": 208177,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "1bc41dff-5397-4c53-bb50-469d2c277197"
+},
+"xcomm": {
+"query": "XCOMM",
+"fetched_at": "2026-09-21T19:39:26+00:00",
+"reach": {
+"listeners": 18997,
+"playcount": 83849,
+"tags": [
+"hardcore punk",
+"hardcore",
+"punk",
+"alternative rock"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/XCOMM",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "5cpYeQPUGJh6KsQhnd6P8T",
+"spotify_name": "XCOMM",
+"url": "https://open.spotify.com/artist/5cpYeQPUGJh6KsQhnd6P8T",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178933939ae8701ea89da57947b",
+"tracks": [
+{
+"id": "63K815LnB0PK5S79cPbInE",
+"uri": "spotify:track:63K815LnB0PK5S79cPbInE",
+"name": "Fake ID",
+"popularity": null,
+"album": "Time To Burn",
+"album_type": "album",
+"release_date": "2026-05-22",
+"duration_ms": 126806,
+"explicit": true
+},
+{
+"id": "79BXR9Y8zZItnMQFGjCCWE",
+"uri": "spotify:track:79BXR9Y8zZItnMQFGjCCWE",
+"name": "Pirates",
+"popularity": null,
+"album": "Time To Burn",
+"album_type": "album",
+"release_date": "2026-05-22",
+"duration_ms": 153671,
+"explicit": true
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"squid pisser": {
+"query": "Squid Pisser",
+"fetched_at": "2026-09-21T19:39:27+00:00",
+"reach": {
+"listeners": 7390,
+"playcount": 92941,
+"tags": [
+"noisecore",
+"grindcore",
+"mathcore",
+"noise rock"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Squid+Pisser",
+"mbid": "53a1d56b-8dff-4258-91f3-5694ddc11a43"
+},
+"matcher": 4,
+"spotify_id": "3nIvWbFFRRFRszChghIEWq",
+"spotify_name": "Squid Pisser",
+"url": "https://open.spotify.com/artist/3nIvWbFFRRFRszChghIEWq",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178d620efd93d0dc709116deb79",
+"tracks": [
+{
+"id": "01MHPljwf4Dz6OXqxBFAWm",
+"uri": "spotify:track:01MHPljwf4Dz6OXqxBFAWm",
+"name": "Liquified Remains",
+"popularity": null,
+"album": "My Tadpole Legion",
+"album_type": "album",
+"release_date": "2023-04-14",
+"duration_ms": 134149,
+"explicit": false
+},
+{
+"id": "2Y0ys0JiiSzi0rjeWTXq8b",
+"uri": "spotify:track:2Y0ys0JiiSzi0rjeWTXq8b",
+"name": "Vaporize A Neighbor",
+"popularity": null,
+"album": "Dreams Of Puke",
+"album_type": "album",
+"release_date": "2024-06-14",
+"duration_ms": 159724,
+"explicit": true
+}
+],
+"rank_source": "lastfm",
+"mbid": "53a1d56b-8dff-4258-91f3-5694ddc11a43"
+},
+"free throw": {
+"query": "Free Throw",
+"fetched_at": "2026-09-21T19:39:28+00:00",
+"reach": {
+"listeners": 387006,
+"playcount": 15618139,
+"tags": [
+"emo",
+"punk",
+"midwest emo",
+"twinkle daddies"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Free+Throw",
+"mbid": "1ca441fa-7cea-4f29-939b-06d8741f74c7"
+},
+"matcher": 4,
+"spotify_id": "49b68DLRK5eCbtJf7Xx4Cc",
+"spotify_name": "Free Throw",
+"url": "https://open.spotify.com/artist/49b68DLRK5eCbtJf7Xx4Cc",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17896deb725dc5951b2e9fa76a3",
+"tracks": [
+{
+"id": "5oBarQJHCnHLzyezz0XzFx",
+"uri": "spotify:track:5oBarQJHCnHLzyezz0XzFx",
+"name": "Two Beers In",
+"popularity": null,
+"album": "Those Days Are Gone",
+"album_type": "album",
+"release_date": "2014-09-16",
+"duration_ms": 135625,
+"explicit": true
+},
+{
+"id": "2UfANGKFk5GVIngWsJF02V",
+"uri": "spotify:track:2UfANGKFk5GVIngWsJF02V",
+"name": "Hey Ken, Someone Methodically Mushed the Donuts",
+"popularity": null,
+"album": "Those Days Are Gone",
+"album_type": "album",
+"release_date": "2014-09-16",
+"duration_ms": 168598,
+"explicit": true
+}
+],
+"rank_source": "lastfm",
+"mbid": "1ca441fa-7cea-4f29-939b-06d8741f74c7"
+},
+"microwave": {
+"query": "Microwave",
+"fetched_at": "2026-09-21T19:39:29+00:00",
+"reach": {
+"listeners": 262961,
+"playcount": 11778538,
+"tags": [
+"emo",
+"alternative rock",
+"rock",
+"post-hardcore"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Microwave",
+"mbid": "c79032e6-f077-4cf7-9de3-ad29084a723e"
+},
+"matcher": 4,
+"spotify_id": "7ptm7G8z8VVvwBnDq8fAmD",
+"spotify_name": "Microwave",
+"url": "https://open.spotify.com/artist/7ptm7G8z8VVvwBnDq8fAmD",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178804ee37f1a9ce90663b688c2",
+"tracks": [
+{
+"id": "4j9Pj2QjtAeplNL0pAYGhM",
+"uri": "spotify:track:4j9Pj2QjtAeplNL0pAYGhM",
+"name": "But Not Often,",
+"popularity": null,
+"album": "Split",
+"album_type": "single",
+"release_date": "2015-10-09",
+"duration_ms": 192067,
+"explicit": true
+},
+{
+"id": "0evxhZMwW1nHuaBCYYXM9L",
+"uri": "spotify:track:0evxhZMwW1nHuaBCYYXM9L",
+"name": "Lighterless",
+"popularity": null,
+"album": "Much Love",
+"album_type": "album",
+"release_date": "2016-09-30",
+"duration_ms": 246933,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "c79032e6-f077-4cf7-9de3-ad29084a723e"
+},
+"carly cosgrove": {
+"query": "Carly Cosgrove",
+"fetched_at": "2026-09-21T19:39:29+00:00",
+"reach": {
+"listeners": 77746,
+"playcount": 2795997,
+"tags": [],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/+noredirect/Carly+Cosgrove",
+"mbid": "eae44dc7-1758-4f3b-b335-56b7a23260cc"
+},
+"matcher": 4,
+"spotify_id": "4h3DxZa1JxZhSB1a64ziKx",
+"spotify_name": "Carly Cosgrove",
+"url": "https://open.spotify.com/artist/4h3DxZa1JxZhSB1a64ziKx",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1786fb93c1549c84bc53b258d96",
+"tracks": [
+{
+"id": "2ux59Zvg7EDCJGfxD1pJF9",
+"uri": "spotify:track:2ux59Zvg7EDCJGfxD1pJF9",
+"name": "Don't Lick The Swingset",
+"popularity": null,
+"album": "Don't Lick The Swingset",
+"album_type": "single",
+"release_date": "2023-02-09",
+"duration_ms": 215755,
+"explicit": false
+},
+{
+"id": "2L8eTF6iQtez7xsduIK3DN",
+"uri": "spotify:track:2L8eTF6iQtez7xsduIK3DN",
+"name": "What Are You, A Cop?",
+"popularity": null,
+"album": "The Cleanest of Houses Are Empty",
+"album_type": "album",
+"release_date": "2024-06-14",
+"duration_ms": 251431,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "eae44dc7-1758-4f3b-b335-56b7a23260cc"
+},
+"joe rotundo and interstellar riders": {
+"query": "Joe Rotundo & the Interstellar Riders",
+"fetched_at": "2026-09-21T19:39:29+00:00",
+"spotify_id": null,
+"reach": null,
+"skip_reason": "not_on_lastfm",
+"matcher": 4
 }
 }
