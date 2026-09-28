@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-09-27T18:32:34+00:00",
+ "generated_at": "2026-09-28T20:38:42+00:00",
  "scraped_at": "2026-09-22T18:10:28+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -30231,6 +30231,78 @@
    ]
   },
   {
+   "id": "do604-2026-10-18-curves-tickets",
+   "name": "Curves",
+   "source": "do604",
+   "date": "2026-10-18",
+   "start": "2026-10-18T19:00-0700",
+   "venue": "Red Gate Arts Society",
+   "venue_id": "red-gate-arts-society",
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/18/curves-tickets",
+   "also_listed": [],
+   "lat": 49.26769,
+   "lng": -123.10125,
+   "headliner": "Curves",
+   "artists": [
+    {
+     "name": "Curves",
+     "spotify_name": "Curves",
+     "spotify_id": "12NmANxo4lQlTXpHMkD4CF",
+     "url": "https://open.spotify.com/artist/12NmANxo4lQlTXpHMkD4CF",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f178b92b937dc8783b6a1f8f594f",
+     "tracks": [
+      {
+       "id": "3ovLKWe3pn96Y2ujaZ3Vut",
+       "uri": "spotify:track:3ovLKWe3pn96Y2ujaZ3Vut",
+       "name": "Stallone",
+       "popularity": null,
+       "album": "Stallone",
+       "album_type": "single",
+       "release_date": "2020-05-28",
+       "duration_ms": 220795,
+       "explicit": false
+      },
+      {
+       "id": "49oBjnO5iGDfNLJNbR8fxL",
+       "uri": "spotify:track:49oBjnO5iGDfNLJNbR8fxL",
+       "name": "Perfumery",
+       "popularity": null,
+       "album": "Perfumery",
+       "album_type": "single",
+       "release_date": "2016-10-26",
+       "duration_ms": 234150,
+       "explicit": false
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": null,
+     "reach": {
+      "listeners": 969,
+      "playcount": 4955,
+      "tags": [
+       "synth pop",
+       "new wave",
+       "garage rock",
+       "rock"
+      ],
+      "tier": 1,
+      "lastfm_url": "https://www.last.fm/music/curves",
+      "mbid": null
+     },
+     "genres_canon": [
+      "synth-pop",
+      "post-punk",
+      "garage rock"
+     ]
+    }
+   ]
+  },
+  {
    "id": "do604-2026-10-18-goodwife-ghost-darling-ears-slowicide-ti",
    "name": "Goodwife, Ghost Darling, EARS, Slowicide",
    "source": "do604",
@@ -37563,12 +37635,8 @@
    "artist": "Manuel Focus",
    "event": "Al Tuck, Manuel Focus, D.L. Forrest,",
    "date": "2026-09-22",
-   "reason": "no_match",
-   "candidates": [
-    "Manic Focus",
-    "Manuel Castillo",
-    "Manuel Gardner Fernandes"
-   ]
+   "reason": "not_on_lastfm",
+   "candidates": []
   },
   {
    "artist": "Dear Viridian",
@@ -37583,8 +37651,8 @@
    "date": "2026-09-22",
    "reason": "no_match",
    "candidates": [
-    "The Graveyard Ghosts",
     "Graveyard Ghosts",
+    "The Graveyard Ghosts",
     "Ghosts in the Graveyard"
    ]
   },
@@ -37601,11 +37669,10 @@
    "date": "2026-09-23",
    "reason": "no_match",
    "candidates": [
-    "Fleetwood Mac",
-    "Fuerza Regida",
     "Brent Faiyaz",
-    "Future",
-    "Frank Ocean"
+    "Frank Ocean",
+    "Fleetwood Mac",
+    "Future"
    ]
   },
   {
@@ -37692,8 +37759,8 @@
    "reason": "no_match",
    "candidates": [
     "Earshot",
-    "Music for Dog's Ears",
-    "Open Ears"
+    "Open Ears",
+    "Music for Dog's Ears"
    ]
   },
   {
@@ -37704,7 +37771,7 @@
    "candidates": [
     "Stitches",
     "Stitched Up Heart",
-    "Stitchnem"
+    "Young Stitch"
    ]
   },
   {
@@ -37715,8 +37782,8 @@
    "candidates": [
     "for KING & COUNTRY",
     "No King For Countrymen",
-    "Josiah Queen",
-    "CAIN"
+    "Forrest Frank",
+    "Josiah Queen"
    ]
   },
   {
@@ -37832,8 +37899,8 @@
    "reason": "no_match",
    "candidates": [
     "Me In Colour",
-    "Colour in the Clouds",
-    "Colours in Context"
+    "Colours in Context",
+    "Colour in the Clouds"
    ]
   },
   {
@@ -37843,7 +37910,7 @@
    "reason": "no_match",
    "candidates": [
     "Sprain",
-    "YHWH Nailgun",
+    "Shearing",
     "George Shearing"
    ]
   },
@@ -37892,9 +37959,9 @@
    "date": "2026-10-01",
    "reason": "no_match",
    "candidates": [
-    "New Artist Spotlight",
-    "Artist Rescue",
-    "Piba and Hosea Artist Development"
+    "Artist Page Redirect Cleanup 2023",
+    "The Artist Ren",
+    "Lejwe La Motheo Artist Development"
    ]
   },
   {
@@ -37953,8 +38020,8 @@
    "reason": "no_match",
    "candidates": [
     "Tiny Habits",
-    "HABITAAT",
-    "Ex Habit"
+    "Ex Habit",
+    "HABITAAT"
    ]
   },
   {
@@ -37982,7 +38049,7 @@
    "artist": "Alyssajb",
    "event": "DJ Assault @ The Pearl",
    "date": "2026-10-03",
-   "reason": "not_on_lastfm",
+   "reason": "no_match",
    "candidates": []
   },
   {
@@ -38073,8 +38140,8 @@
    "reason": "no_match",
    "candidates": [
     "Joshua Chuquimia Crampton",
-    "Dijon",
-    "Joanne Robertson"
+    "Cindy Lee",
+    "John Talabot"
    ]
   },
   {
@@ -38083,9 +38150,9 @@
    "date": "2026-10-06",
    "reason": "no_match",
    "candidates": [
+    "Eraserheads",
     "Headstones",
-    "Headpins",
-    "Mr. ESQ"
+    "K-OS"
    ]
   },
   {
@@ -38094,9 +38161,9 @@
    "date": "2026-10-06",
    "reason": "no_match",
    "candidates": [
-    "HeyKids Comptine Pour Bébé",
+    "Hey Rosetta!",
     "hey, nothing",
-    "Hey Violet"
+    "HeyKids Comptine Pour Bébé"
    ]
   },
   {
@@ -38129,8 +38196,7 @@
     "Derrick LeFevre, Richard Kendrick and Nick Gee",
     "Derrick LeFevre, Richard Kendrick, Chris Poland, Nick Gee",
     "Derrick Leonárd",
-    "Derrick Gottfried",
-    "Derrick Sound"
+    "Derrick Gottfried"
    ]
   },
   {
@@ -38174,8 +38240,8 @@
    "date": "2026-10-08",
    "reason": "no_match",
    "candidates": [
-    "The Versions",
     "The Version Sessions",
+    "The Versions",
     "The Inversions"
    ]
   },
@@ -38302,7 +38368,7 @@
    "candidates": [
     "The Army, The Navy",
     "The Band Of The Royal New Zealand Navy",
-    "Bands of the US Army, Navy, Air Force, Marines, and Coast Guard"
+    "The Royal New Zealand Navy Band"
    ]
   },
   {
@@ -38408,7 +38474,7 @@
    "candidates": [
     "CHROMANCE",
     "Chromeo",
-    "Chromatics"
+    "CHROMA"
    ]
   },
   {
@@ -38428,12 +38494,12 @@
    "date": "2026-10-16",
    "reason": "no_match",
    "candidates": [
+    "Unknown Artist - Knowone",
     "Shirley Kwan",
     "Jade Kwan",
-    "Kim Kwang Seok",
     "Kwan Gor",
     "kwn",
-    "Kwanza Jones"
+    "KwanLi"
    ]
   },
   {
@@ -38518,10 +38584,10 @@
    "reason": "no_match",
    "candidates": [
     "Shaboozey",
+    "Jelly Roll",
     "Dax",
-    "HARDY",
     "BigXthaPlug",
-    "Jelly Roll"
+    "Noeline Hofmann"
    ]
   },
   {
@@ -38537,17 +38603,6 @@
    "date": "2026-10-18",
    "reason": "not_on_lastfm",
    "candidates": []
-  },
-  {
-   "artist": "Curves",
-   "event": "Curves",
-   "date": "2026-10-18",
-   "reason": "no_match",
-   "candidates": [
-    "Dangerous Curves",
-    "Curvesight",
-    "Real Women Have Curves Original Broadway Company"
-   ]
   },
   {
    "artist": "Ghost Darling",

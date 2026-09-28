@@ -2085,11 +2085,11 @@
 },
 "stitch": {
 "query": "stitch",
-"fetched_at": "2026-09-13T21:39:23+00:00",
+"fetched_at": "2026-09-28T20:38:19+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 6635,
-"playcount": 36836,
+"listeners": 6661,
+"playcount": 37045,
 "tags": [
 "heavy metal",
 "darkpsy",
@@ -2104,7 +2104,7 @@
 "candidates": [
 "Stitches",
 "Stitched Up Heart",
-"Stitchnem"
+"Young Stitch"
 ]
 },
 "mother sun": {
@@ -10209,7 +10209,7 @@
 },
 "ruby lane organ trio": {
 "query": "The Ruby Lane Organ Trio",
-"fetched_at": "2026-09-13T21:39:59+00:00",
+"fetched_at": "2026-09-28T20:38:17+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -10368,7 +10368,7 @@
 },
 "leonard and lab rats": {
 "query": "Leonard and the Lab Rats",
-"fetched_at": "2026-09-13T21:39:59+00:00",
+"fetched_at": "2026-09-28T20:38:17+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -10639,11 +10639,11 @@
 },
 "f": {
 "query": "F",
-"fetched_at": "2026-09-13T21:40:02+00:00",
+"fetched_at": "2026-09-28T20:38:17+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 49498,
-"playcount": 603597,
+"listeners": 49602,
+"playcount": 604689,
 "tags": [
 "dubstep",
 "electronic",
@@ -10656,11 +10656,10 @@
 },
 "matcher": 4,
 "candidates": [
-"Fleetwood Mac",
-"Fuerza Regida",
 "Brent Faiyaz",
-"Future",
-"Frank Ocean"
+"Frank Ocean",
+"Fleetwood Mac",
+"Future"
 ]
 },
 "fucked up": {
@@ -10764,7 +10763,7 @@
 },
 "rocket revellers": {
 "query": "The Rocket Revellers",
-"fetched_at": "2026-09-13T21:40:03+00:00",
+"fetched_at": "2026-09-28T20:38:18+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -10968,7 +10967,7 @@
 },
 "maggie winters": {
 "query": "Maggie Winters",
-"fetched_at": "2026-09-13T21:40:05+00:00",
+"fetched_at": "2026-09-28T20:38:18+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 3,
@@ -11620,7 +11619,7 @@
 },
 "speak of devil and hip hop mecanix": {
 "query": "Speak Of The Devil & Hip Hop Mecanix!",
-"fetched_at": "2026-09-13T21:40:08+00:00",
+"fetched_at": "2026-09-28T20:38:18+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -11794,11 +11793,11 @@
 },
 "ears": {
 "query": "EARS",
-"fetched_at": "2026-09-13T21:40:11+00:00",
+"fetched_at": "2026-09-28T20:38:18+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 8598,
-"playcount": 68207,
+"listeners": 8605,
+"playcount": 68237,
 "tags": [
 "grime",
 "uk garage",
@@ -11812,8 +11811,8 @@
 "matcher": 4,
 "candidates": [
 "Earshot",
-"Music for Dog's Ears",
-"Open Ears"
+"Open Ears",
+"Music for Dog's Ears"
 ]
 },
 "tall mary": {
@@ -12009,7 +12008,7 @@
 },
 "for king country": {
 "query": "for KING + COUNTRY",
-"fetched_at": "2026-09-13T21:40:12+00:00",
+"fetched_at": "2026-09-28T20:38:19+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 4,
@@ -12023,8 +12022,8 @@
 "candidates": [
 "for KING & COUNTRY",
 "No King For Countrymen",
-"Josiah Queen",
-"CAIN"
+"Forrest Frank",
+"Josiah Queen"
 ]
 },
 "dwayne gretzky": {
@@ -12385,7 +12384,7 @@
 },
 "day fever canada": {
 "query": "Day Fever Canada",
-"fetched_at": "2026-09-13T21:40:16+00:00",
+"fetched_at": "2026-09-28T20:38:20+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -13533,7 +13532,7 @@
 },
 "nurse even this is bullshift": {
 "query": "NURSE EVEN This is BullSHIFT",
-"fetched_at": "2026-09-13T21:40:29+00:00",
+"fetched_at": "2026-09-28T20:38:21+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -13701,7 +13700,7 @@
 },
 "kristian braathen trio cd release": {
 "query": "Kristian Braathen Trio Cd Release",
-"fetched_at": "2026-09-13T21:40:32+00:00",
+"fetched_at": "2026-09-28T20:38:21+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -14333,7 +14332,7 @@
 },
 "paul caldwell and human condition": {
 "query": "Paul Caldwell & the Human Condition",
-"fetched_at": "2026-09-13T21:40:39+00:00",
+"fetched_at": "2026-09-28T20:38:21+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -14729,7 +14728,7 @@
 },
 "kayden gorden ensemble": {
 "query": "The Kayden Gorden Ensemble",
-"fetched_at": "2026-09-13T21:40:41+00:00",
+"fetched_at": "2026-09-28T20:38:21+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -15655,11 +15654,11 @@
 },
 "shearling": {
 "query": "shearling",
-"fetched_at": "2026-09-13T21:40:47+00:00",
+"fetched_at": "2026-09-28T20:38:22+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 11912,
-"playcount": 75985,
+"listeners": 12001,
+"playcount": 79020,
 "tags": [
 "noise rock",
 "post-rock",
@@ -15673,7 +15672,7 @@
 "matcher": 4,
 "candidates": [
 "Sprain",
-"YHWH Nailgun",
+"Shearing",
 "George Shearing"
 ]
 },
@@ -15824,11 +15823,11 @@
 },
 "jesse barrera and albert posis": {
 "query": "Jesse Barrera & Albert Posis",
-"fetched_at": "2026-09-13T21:40:49+00:00",
+"fetched_at": "2026-09-28T20:38:23+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 698,
-"playcount": 3447,
+"listeners": 709,
+"playcount": 3485,
 "tags": [],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Jesse+Barrera+&+Albert+Posis",
@@ -16440,7 +16439,7 @@
 },
 "dave hause and mermaid": {
 "query": "Dave Hause & The Mermaid",
-"fetched_at": "2026-09-13T21:40:59+00:00",
+"fetched_at": "2026-09-28T20:38:24+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 2,
@@ -16541,7 +16540,7 @@
 },
 "chen baker": {
 "query": "Chen Baker",
-"fetched_at": "2026-09-13T21:41:03+00:00",
+"fetched_at": "2026-09-28T20:38:24+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -16640,11 +16639,11 @@
 },
 "yep": {
 "query": "Yep",
-"fetched_at": "2026-09-13T21:41:01+00:00",
+"fetched_at": "2026-09-28T20:38:24+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 802,
-"playcount": 3974,
+"listeners": 803,
+"playcount": 3977,
 "tags": [
 "psychedelic rock",
 "rock",
@@ -16657,9 +16656,9 @@
 },
 "matcher": 4,
 "candidates": [
-"New Artist Spotlight",
-"Artist Rescue",
-"Piba and Hosea Artist Development"
+"Artist Page Redirect Cleanup 2023",
+"The Artist Ren",
+"Lejwe La Motheo Artist Development"
 ]
 },
 "mountain grass unit": {
@@ -16713,7 +16712,7 @@
 },
 "patrick kao sextet": {
 "query": "Patrick Kao Sextet",
-"fetched_at": "2026-09-13T21:41:03+00:00",
+"fetched_at": "2026-09-28T20:38:25+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -16822,7 +16821,7 @@
 },
 "juh mill": {
 "query": "Juh-Mill",
-"fetched_at": "2026-09-13T21:41:03+00:00",
+"fetched_at": "2026-09-28T20:38:25+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -17672,7 +17671,7 @@
 },
 "gisto and grateful livin": {
 "query": "Gisto & the Grateful Livin",
-"fetched_at": "2026-09-13T21:41:10+00:00",
+"fetched_at": "2026-09-28T20:38:25+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -18168,16 +18167,16 @@
 },
 "brass": {
 "query": "Brass",
-"fetched_at": "2026-09-13T21:41:15+00:00",
+"fetched_at": "2026-09-28T20:38:26+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 15219,
-"playcount": 109490,
+"listeners": 15228,
+"playcount": 109541,
 "tags": [
 "emo",
 "indie rock",
-"post-hardcore",
-"lounge"
+"lounge",
+"post-hardcore"
 ],
 "tier": 2,
 "lastfm_url": "https://www.last.fm/music/Brass",
@@ -18732,7 +18731,7 @@
 },
 "dreaded soul": {
 "query": "Dreaded Soul",
-"fetched_at": "2026-09-13T21:41:21+00:00",
+"fetched_at": "2026-09-28T20:38:26+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -19039,7 +19038,7 @@
 },
 "roy styffe quartet": {
 "query": "Roy Styffe Quartet",
-"fetched_at": "2026-09-13T21:41:26+00:00",
+"fetched_at": "2026-09-28T20:38:27+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -19453,7 +19452,7 @@
 },
 "hollywood alberta": {
 "query": "Hollywood Alberta",
-"fetched_at": "2026-09-13T21:41:33+00:00",
+"fetched_at": "2026-09-28T20:38:27+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -19924,11 +19923,11 @@
 },
 "los thuthanaka": {
 "query": "Los Thuthanaka",
-"fetched_at": "2026-09-13T21:41:36+00:00",
+"fetched_at": "2026-09-28T20:38:27+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 6470,
-"playcount": 143863,
+"listeners": 6556,
+"playcount": 146665,
 "tags": [
 "experimental rock",
 "latin electronic",
@@ -19942,8 +19941,8 @@
 "matcher": 4,
 "candidates": [
 "Joshua Chuquimia Crampton",
-"Dijon",
-"Joanne Robertson"
+"Cindy Lee",
+"John Talabot"
 ]
 },
 "funk yourself": {
@@ -19993,7 +19992,7 @@
 },
 "eraserhead xiu xiu": {
 "query": "ERASERHEAD XIU XIU",
-"fetched_at": "2026-09-13T21:41:37+00:00",
+"fetched_at": "2026-09-28T20:38:28+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 3,
@@ -20005,14 +20004,14 @@
 },
 "matcher": 4,
 "candidates": [
+"Eraserheads",
 "Headstones",
-"Headpins",
-"Mr. ESQ"
+"K-OS"
 ]
 },
 "conor janda": {
 "query": "Conor Janda",
-"fetched_at": "2026-09-13T21:41:38+00:00",
+"fetched_at": "2026-09-28T20:38:29+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 6,
@@ -20687,7 +20686,7 @@
 },
 "underneath harlem moon": {
 "query": "Underneath the Harlem Moon",
-"fetched_at": "2026-09-13T21:41:44+00:00",
+"fetched_at": "2026-09-28T20:38:29+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 4,
@@ -20702,11 +20701,11 @@
 },
 "derrick gee": {
 "query": "Derrick Gee",
-"fetched_at": "2026-09-13T21:41:44+00:00",
+"fetched_at": "2026-09-28T20:38:30+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 419,
-"playcount": 1462,
+"listeners": 435,
+"playcount": 1491,
 "tags": [],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Derrick+Gee",
@@ -20717,8 +20716,7 @@
 "Derrick LeFevre, Richard Kendrick and Nick Gee",
 "Derrick LeFevre, Richard Kendrick, Chris Poland, Nick Gee",
 "Derrick Leonárd",
-"Derrick Gottfried",
-"Derrick Sound"
+"Derrick Gottfried"
 ]
 },
 "skerryvore": {
@@ -22122,7 +22120,7 @@
 },
 "aversions": {
 "query": "The Aversions",
-"fetched_at": "2026-09-13T21:41:55+00:00",
+"fetched_at": "2026-09-28T20:38:31+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 60,
@@ -22137,8 +22135,8 @@
 },
 "matcher": 4,
 "candidates": [
-"The Versions",
 "The Version Sessions",
+"The Versions",
 "The Inversions"
 ]
 },
@@ -22536,11 +22534,11 @@
 },
 "will burkart": {
 "query": "Will Burkart",
-"fetched_at": "2026-09-13T21:42:12+00:00",
+"fetched_at": "2026-09-28T20:38:33+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 36,
-"playcount": 143,
+"listeners": 37,
+"playcount": 145,
 "tags": [],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Will+Burkart",
@@ -23339,7 +23337,7 @@
 },
 "jacqui naylor quartet": {
 "query": "Jacqui Naylor Quartet",
-"fetched_at": "2026-09-13T21:42:12+00:00",
+"fetched_at": "2026-09-28T20:38:32+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -23790,7 +23788,7 @@
 },
 "clave jazz": {
 "query": "Clave Jazz",
-"fetched_at": "2026-09-13T21:42:17+00:00",
+"fetched_at": "2026-09-28T20:38:33+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -24152,7 +24150,7 @@
 },
 "retrofitz": {
 "query": "Retrofitz",
-"fetched_at": "2026-09-13T21:42:20+00:00",
+"fetched_at": "2026-09-28T20:38:33+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -24160,7 +24158,7 @@
 },
 "emil wakim": {
 "query": "Emil Wakim",
-"fetched_at": "2026-09-13T21:42:20+00:00",
+"fetched_at": "2026-09-28T20:38:33+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -24168,7 +24166,7 @@
 },
 "steve smith quartet": {
 "query": "Steve Smith Quartet",
-"fetched_at": "2026-09-13T21:42:20+00:00",
+"fetched_at": "2026-09-28T20:38:33+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -24661,7 +24659,7 @@
 },
 "harrison ivaz organ trio": {
 "query": "The Harrison Ivaz Organ Trio",
-"fetched_at": "2026-09-13T21:42:24+00:00",
+"fetched_at": "2026-09-28T20:38:35+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -24954,7 +24952,7 @@
 },
 "dear viridian": {
 "query": "Dear Viridian",
-"fetched_at": "2026-09-13T21:39:58+00:00",
+"fetched_at": "2026-09-28T20:38:16+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -26183,7 +26181,7 @@
 },
 "graveyard ghost": {
 "query": "Graveyard Ghost",
-"fetched_at": "2026-09-13T21:39:58+00:00",
+"fetched_at": "2026-09-28T20:38:16+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 62,
@@ -26197,14 +26195,14 @@
 },
 "matcher": 4,
 "candidates": [
-"The Graveyard Ghosts",
 "Graveyard Ghosts",
+"The Graveyard Ghosts",
 "Ghosts in the Graveyard"
 ]
 },
 "misty raine boogie": {
 "query": "Misty Raine Boogie",
-"fetched_at": "2026-09-13T21:39:59+00:00",
+"fetched_at": "2026-09-28T20:38:16+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -26263,7 +26261,7 @@
 },
 "speed reaper": {
 "query": "Speed Reaper",
-"fetched_at": "2026-09-13T21:40:00+00:00",
+"fetched_at": "2026-09-28T20:38:17+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -26503,11 +26501,11 @@
 },
 "author": {
 "query": "Author",
-"fetched_at": "2026-09-13T21:40:17+00:00",
+"fetched_at": "2026-09-28T20:38:20+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 24829,
-"playcount": 277300,
+"listeners": 24855,
+"playcount": 277464,
 "tags": [
 "dubstep",
 "black metal",
@@ -26674,11 +26672,11 @@
 },
 "fields of": {
 "query": "Fields Of",
-"fetched_at": "2026-09-13T21:40:20+00:00",
+"fetched_at": "2026-09-28T20:38:20+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 15,
-"playcount": 58,
+"listeners": 16,
+"playcount": 61,
 "tags": [],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/fields+of",
@@ -27042,7 +27040,7 @@
 },
 "anqi sun": {
 "query": "Anqi Sun",
-"fetched_at": "2026-09-13T21:41:03+00:00",
+"fetched_at": "2026-09-28T20:38:25+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -27206,14 +27204,14 @@
 },
 "habit": {
 "query": "Habit",
-"fetched_at": "2026-09-13T21:41:08+00:00",
+"fetched_at": "2026-09-28T20:38:25+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 1960,
-"playcount": 13002,
+"listeners": 1968,
+"playcount": 13042,
 "tags": [
-"neurofunk",
-"drum and bass"
+"drum and bass",
+"neurofunk"
 ],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Habit",
@@ -27222,8 +27220,8 @@
 "matcher": 4,
 "candidates": [
 "Tiny Habits",
-"HABITAAT",
-"Ex Habit"
+"Ex Habit",
+"HABITAAT"
 ]
 },
 "motorama": {
@@ -27303,7 +27301,7 @@
 },
 "harramt": {
 "query": "Harramt",
-"fetched_at": "2026-09-13T21:41:11+00:00",
+"fetched_at": "2026-09-28T20:38:25+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -28276,7 +28274,7 @@
 },
 "single malts": {
 "query": "The Single Malts",
-"fetched_at": "2026-09-13T21:42:32+00:00",
+"fetched_at": "2026-09-28T20:38:35+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 2,
@@ -28284,8 +28282,8 @@
 "tags": [
 "acoustic",
 "folk",
-"indie pop",
-"indie rock"
+"indie rock",
+"indie pop"
 ],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/The+Single+Malts",
@@ -28687,7 +28685,7 @@
 },
 "fabio frizzi performs frizzi2fulci": {
 "query": "Fabio Frizzi performs FRIZZI2FULCI",
-"fetched_at": "2026-09-13T21:42:33+00:00",
+"fetched_at": "2026-09-28T20:38:35+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -28695,7 +28693,7 @@
 },
 "guest ethan mccarthy": {
 "query": "guest Ethan McCarthy",
-"fetched_at": "2026-09-13T21:42:33+00:00",
+"fetched_at": "2026-09-28T20:38:35+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -29056,7 +29054,7 @@
 },
 "best in vancouver 2026 macmann": {
 "query": "Best In Vancouver 2026: Macmann",
-"fetched_at": "2026-09-13T21:42:33+00:00",
+"fetched_at": "2026-09-28T20:38:35+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -29709,15 +29707,11 @@
 },
 "manuel focus": {
 "query": "Manuel Focus",
-"fetched_at": "2026-09-13T21:39:48+00:00",
+"fetched_at": "2026-09-28T20:38:15+00:00",
 "spotify_id": null,
 "reach": null,
-"matcher": 4,
-"candidates": [
-"Manic Focus",
-"Manuel Castillo",
-"Manuel Gardner Fernandes"
-]
+"skip_reason": "not_on_lastfm",
+"matcher": 4
 },
 "lucy jeffery": {
 "query": "Lucy Jeffery",
@@ -29827,7 +29821,7 @@
 },
 "arc showcase": {
 "query": "ARC Showcase",
-"fetched_at": "2026-09-13T21:42:02+00:00",
+"fetched_at": "2026-09-28T20:38:32+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -29886,7 +29880,7 @@
 },
 "daniel deorksens bicameral collapse": {
 "query": "Daniel Deorksen’s Bicameral Collapse",
-"fetched_at": "2026-09-13T21:42:36+00:00",
+"fetched_at": "2026-09-28T20:38:36+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -30899,7 +30893,7 @@
 },
 "quicksand and fucked up": {
 "query": "Quicksand & Fucked Up",
-"fetched_at": "2026-09-13T21:40:03+00:00",
+"fetched_at": "2026-09-28T20:38:18+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -31067,11 +31061,11 @@
 },
 "in colour": {
 "query": "In Colour",
-"fetched_at": "2026-09-13T21:40:41+00:00",
+"fetched_at": "2026-09-28T20:38:21+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 1870,
-"playcount": 11143,
+"listeners": 1872,
+"playcount": 11153,
 "tags": [
 "eurodance",
 "rock",
@@ -31085,8 +31079,8 @@
 "matcher": 4,
 "candidates": [
 "Me In Colour",
-"Colour in the Clouds",
-"Colours in Context"
+"Colours in Context",
+"Colour in the Clouds"
 ]
 },
 "mirager": {
@@ -31206,7 +31200,7 @@
 },
 "donna dada": {
 "query": "Donna Dada",
-"fetched_at": "2026-09-13T21:41:22+00:00",
+"fetched_at": "2026-09-28T20:38:26+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 5,
@@ -31221,15 +31215,22 @@
 },
 "alyssajb": {
 "query": "Alyssajb",
-"fetched_at": "2026-09-13T21:41:23+00:00",
+"fetched_at": "2026-09-28T20:38:26+00:00",
 "spotify_id": null,
-"reach": null,
-"skip_reason": "not_on_lastfm",
-"matcher": 4
+"reach": {
+"listeners": 2,
+"playcount": 2,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/ALYSSAJB",
+"mbid": null
+},
+"matcher": 4,
+"candidates": []
 },
 "softesthan": {
 "query": "Softesthan",
-"fetched_at": "2026-09-13T21:41:23+00:00",
+"fetched_at": "2026-09-28T20:38:27+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -31338,7 +31339,7 @@
 },
 "guest jairus sharif": {
 "query": "guest Jairus Sharif",
-"fetched_at": "2026-09-13T21:41:42+00:00",
+"fetched_at": "2026-09-28T20:38:29+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -31346,11 +31347,11 @@
 },
 "hey": {
 "query": "hey",
-"fetched_at": "2026-09-13T21:41:43+00:00",
+"fetched_at": "2026-09-28T20:38:29+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 312650,
-"playcount": 32985921,
+"listeners": 312904,
+"playcount": 32996976,
 "tags": [
 "rock",
 "alternative",
@@ -31362,9 +31363,9 @@
 },
 "matcher": 4,
 "candidates": [
-"HeyKids Comptine Pour Bébé",
+"Hey Rosetta!",
 "hey, nothing",
-"Hey Violet"
+"HeyKids Comptine Pour Bébé"
 ]
 },
 "nothing": {
@@ -31471,7 +31472,7 @@
 },
 "zolas swooner": {
 "query": "The Zolas Swooner",
-"fetched_at": "2026-09-13T21:41:49+00:00",
+"fetched_at": "2026-09-28T20:38:31+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -31479,7 +31480,7 @@
 },
 "buzz kull and kontravoid": {
 "query": "Buzz Kull & Kontravoid",
-"fetched_at": "2026-09-13T21:41:49+00:00",
+"fetched_at": "2026-09-28T20:38:31+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -31487,7 +31488,7 @@
 },
 "samuel bonnet trio slow": {
 "query": "Samuel Bonnet Trio \"Slow",
-"fetched_at": "2026-09-13T21:41:58+00:00",
+"fetched_at": "2026-09-28T20:38:31+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -31495,7 +31496,7 @@
 },
 "and lola": {
 "query": "and LöLä",
-"fetched_at": "2026-09-13T21:41:55+00:00",
+"fetched_at": "2026-09-28T20:38:31+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -31601,7 +31602,7 @@
 },
 "maro so much has changed": {
 "query": "Maro So Much Has Changed",
-"fetched_at": "2026-09-13T21:41:59+00:00",
+"fetched_at": "2026-09-28T20:38:32+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -31660,7 +31661,7 @@
 },
 "dj evilyn 13": {
 "query": "DJ Evilyn 13",
-"fetched_at": "2026-09-13T21:42:08+00:00",
+"fetched_at": "2026-09-28T20:38:32+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -31668,7 +31669,7 @@
 },
 "halloween bash": {
 "query": "Halloween Bash",
-"fetched_at": "2026-09-13T21:42:11+00:00",
+"fetched_at": "2026-09-28T20:38:32+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 64,
@@ -31778,7 +31779,7 @@
 },
 "beach bow": {
 "query": "Beach Bow",
-"fetched_at": "2026-09-13T21:42:12+00:00",
+"fetched_at": "2026-09-28T20:38:32+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -31786,7 +31787,7 @@
 },
 "militarie gun 20 songs for 20 dollars": {
 "query": "Militarie Gun - 20 Songs for 20 Dollars",
-"fetched_at": "2026-09-13T21:42:19+00:00",
+"fetched_at": "2026-09-28T20:38:33+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -31794,11 +31795,11 @@
 },
 "army": {
 "query": "The Army",
-"fetched_at": "2026-09-13T21:42:22+00:00",
+"fetched_at": "2026-09-28T20:38:33+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 502,
-"playcount": 1645,
+"listeners": 505,
+"playcount": 1653,
 "tags": [
 "ska"
 ],
@@ -31815,7 +31816,7 @@
 },
 "navy": {
 "query": "The Navy",
-"fetched_at": "2026-09-13T21:42:22+00:00",
+"fetched_at": "2026-09-28T20:38:34+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 10,
@@ -31831,12 +31832,12 @@
 "candidates": [
 "The Army, The Navy",
 "The Band Of The Royal New Zealand Navy",
-"Bands of the US Army, Navy, Air Force, Marines, and Coast Guard"
+"The Royal New Zealand Navy Band"
 ]
 },
 "van jazz 2026 derya yildirim": {
 "query": "**Van Jazz 2026 **Derya Yildirim",
-"fetched_at": "2026-09-13T21:42:36+00:00",
+"fetched_at": "2026-09-28T20:38:35+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -31844,7 +31845,7 @@
 },
 "grup simsek": {
 "query": "Grup Şimșek",
-"fetched_at": "2026-09-13T21:42:36+00:00",
+"fetched_at": "2026-09-28T20:38:35+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -32004,7 +32005,7 @@
 },
 "van jazz 26 beles band": {
 "query": "Van Jazz 26' - Beles Band",
-"fetched_at": "2026-09-13T21:42:40+00:00",
+"fetched_at": "2026-09-28T20:38:36+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -32012,7 +32013,7 @@
 },
 "special guest gabriel teodros": {
 "query": "special guest Gabriel Teodros",
-"fetched_at": "2026-09-13T21:42:41+00:00",
+"fetched_at": "2026-09-28T20:38:36+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -32020,14 +32021,14 @@
 },
 "stop podcasting yourself": {
 "query": "Stop Podcasting Yourself",
-"fetched_at": "2026-09-13T21:42:41+00:00",
+"fetched_at": "2026-09-28T20:38:36+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 263,
-"playcount": 15498,
+"playcount": 15516,
 "tags": [
-"podcast",
-"comedy"
+"comedy",
+"podcast"
 ],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Stop+Podcasting+Yourself",
@@ -32134,11 +32135,11 @@
 },
 "chrom": {
 "query": "CHROM",
-"fetched_at": "2026-09-14T19:30:18+00:00",
+"fetched_at": "2026-09-28T20:38:36+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 30344,
-"playcount": 771394,
+"listeners": 30404,
+"playcount": 773482,
 "tags": [
 "futurepop",
 "ebm",
@@ -32153,7 +32154,7 @@
 "candidates": [
 "CHROMANCE",
 "Chromeo",
-"Chromatics"
+"CHROMA"
 ]
 },
 "krystle dos santos": {
@@ -32434,11 +32435,11 @@
 },
 "kwan": {
 "query": "Kwan",
-"fetched_at": "2026-09-14T19:30:21+00:00",
+"fetched_at": "2026-09-28T20:38:37+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 58111,
-"playcount": 901935,
+"listeners": 58145,
+"playcount": 902547,
 "tags": [
 "hip-hop",
 "alternative",
@@ -32451,12 +32452,12 @@
 },
 "matcher": 4,
 "candidates": [
+"Unknown Artist - Knowone",
 "Shirley Kwan",
 "Jade Kwan",
-"Kim Kwang Seok",
 "Kwan Gor",
 "kwn",
-"Kwanza Jones"
+"KwanLi"
 ]
 },
 "mike allen trio": {
@@ -32495,7 +32496,7 @@
 },
 "drum legend carl allen": {
 "query": "Drum Legend Carl Allen",
-"fetched_at": "2026-09-14T19:30:24+00:00",
+"fetched_at": "2026-09-28T20:38:38+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -32503,7 +32504,7 @@
 },
 "van jazz 2026 earthball and peregrine falls": {
 "query": "**Van Jazz 2026*** Earthball & Peregrine Falls",
-"fetched_at": "2026-09-14T19:30:24+00:00",
+"fetched_at": "2026-09-28T20:38:38+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -32562,7 +32563,7 @@
 },
 "special guest waitress": {
 "query": "special guest Waitress",
-"fetched_at": "2026-09-14T19:30:24+00:00",
+"fetched_at": "2026-09-28T20:38:38+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -32817,11 +32818,11 @@
 },
 "sim": {
 "query": "SiM",
-"fetched_at": "2026-09-14T19:30:27+00:00",
+"fetched_at": "2026-09-28T20:38:38+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 539213,
-"playcount": 14110662,
+"listeners": 541510,
+"playcount": 14156263,
 "tags": [
 "j-rock",
 "punk rock",
@@ -33142,7 +33143,7 @@
 },
 "shabooze": {
 "query": "Shabooze¥",
-"fetched_at": "2026-09-14T19:30:32+00:00",
+"fetched_at": "2026-09-28T20:38:39+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 12,
@@ -33155,10 +33156,10 @@
 "matcher": 4,
 "candidates": [
 "Shaboozey",
+"Jelly Roll",
 "Dax",
-"HARDY",
 "BigXthaPlug",
-"Jelly Roll"
+"Noeline Hofmann"
 ]
 },
 "carter faith": {
@@ -33340,7 +33341,7 @@
 },
 "marcus abramzik ensemble": {
 "query": "The Marcus Abramzik Ensemble",
-"fetched_at": "2026-09-14T19:30:28+00:00",
+"fetched_at": "2026-09-28T20:38:39+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -33407,7 +33408,7 @@
 },
 "van jazz 2026 julio avila cuban band": {
 "query": "**Van Jazz 2026** Julio Avila - Cuban Band",
-"fetched_at": "2026-09-14T19:30:32+00:00",
+"fetched_at": "2026-09-28T20:38:39+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -33618,7 +33619,7 @@
 },
 "van jazz 26 dawn pemberton and brown sugar": {
 "query": "Van Jazz 26' - Dawn Pemberton & The Brown Sugar",
-"fetched_at": "2026-09-14T19:30:40+00:00",
+"fetched_at": "2026-09-28T20:38:40+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -33626,7 +33627,7 @@
 },
 "isabella hallia": {
 "query": "Isabella Hallia",
-"fetched_at": "2026-09-14T19:30:40+00:00",
+"fetched_at": "2026-09-28T20:38:41+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -33679,14 +33680,13 @@
 },
 "curves": {
 "query": "Curves",
-"fetched_at": "2026-09-14T19:30:41+00:00",
-"spotify_id": null,
+"fetched_at": "2026-09-28T20:38:41+00:00",
 "reach": {
-"listeners": 965,
-"playcount": 4935,
+"listeners": 969,
+"playcount": 4955,
 "tags": [
-"new wave",
 "synth pop",
+"new wave",
 "garage rock",
 "rock"
 ],
@@ -33695,15 +33695,43 @@
 "mbid": null
 },
 "matcher": 4,
-"candidates": [
-"Dangerous Curves",
-"Curvesight",
-"Real Women Have Curves Original Broadway Company"
-]
+"spotify_id": "12NmANxo4lQlTXpHMkD4CF",
+"spotify_name": "Curves",
+"url": "https://open.spotify.com/artist/12NmANxo4lQlTXpHMkD4CF",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178b92b937dc8783b6a1f8f594f",
+"tracks": [
+{
+"id": "3ovLKWe3pn96Y2ujaZ3Vut",
+"uri": "spotify:track:3ovLKWe3pn96Y2ujaZ3Vut",
+"name": "Stallone",
+"popularity": null,
+"album": "Stallone",
+"album_type": "single",
+"release_date": "2020-05-28",
+"duration_ms": 220795,
+"explicit": false
+},
+{
+"id": "49oBjnO5iGDfNLJNbR8fxL",
+"uri": "spotify:track:49oBjnO5iGDfNLJNbR8fxL",
+"name": "Perfumery",
+"popularity": null,
+"album": "Perfumery",
+"album_type": "single",
+"release_date": "2016-10-26",
+"duration_ms": 234150,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
 },
 "van jazz 2026 dos santos": {
 "query": "**Van Jazz 2026** Dos Santos",
-"fetched_at": "2026-09-14T19:30:42+00:00",
+"fetched_at": "2026-09-28T20:38:42+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
