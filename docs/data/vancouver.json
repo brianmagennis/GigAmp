@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-10-01T19:43:00+00:00",
+ "generated_at": "2026-10-02T19:25:16+00:00",
  "scraped_at": "2026-10-01T19:38:51+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -9403,8 +9403,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 1210,
-      "playcount": 11853,
+      "listeners": 1211,
+      "playcount": 11856,
       "tags": [
        "post-hardcore",
        "punk",
@@ -9412,7 +9412,8 @@
        "hardcore"
       ],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Water+Margin"
+      "lastfm_url": "https://www.last.fm/music/Water+Margin",
+      "mbid": null
      },
      "genres_canon": [
       "hardcore",
@@ -33111,7 +33112,7 @@
    "reason": "no_match",
    "candidates": [
     "Veer Davinder",
-    "Davina Michelle",
+    "DaVinci Sound",
     "Bhai Davinder Singh Ji Sodhi"
    ]
   },
@@ -33336,8 +33337,8 @@
    "reason": "no_match",
    "candidates": [
     "Wuthering Waves",
-    "Wutah",
-    "Afriyie Wutah"
+    "wutai",
+    "Wutah"
    ]
   },
   {
@@ -33628,8 +33629,7 @@
    "reason": "no_match",
    "candidates": [
     "DJ Moulay",
-    "DJ HOLLANDEZ",
-    "DJ Dollynho Da Lapa"
+    "DJ HOLLANDEZ"
    ]
   },
   {

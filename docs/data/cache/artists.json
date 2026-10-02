@@ -34596,7 +34596,7 @@
 },
 "chasen wayne and honky tonk machine": {
 "query": "Chasen Wayne and the Honky Tonk Machine",
-"fetched_at": "2026-09-18T17:46:56+00:00",
+"fetched_at": "2026-10-02T19:25:13+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -34698,7 +34698,7 @@
 },
 "mom cuts my hair": {
 "query": "Mom Cuts My Hair",
-"fetched_at": "2026-09-18T17:46:57+00:00",
+"fetched_at": "2026-10-02T19:25:13+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -34706,7 +34706,7 @@
 },
 "salem trials no faith in fortune endr black ivar": {
 "query": "Salem Trials/No Faith In Fortune/ENDR/Black Ivar",
-"fetched_at": "2026-09-18T17:46:57+00:00",
+"fetched_at": "2026-10-02T19:25:13+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -34846,11 +34846,11 @@
 },
 "davin": {
 "query": "Davin",
-"fetched_at": "2026-09-18T17:46:59+00:00",
+"fetched_at": "2026-10-02T19:25:13+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 4214,
-"playcount": 30317,
+"listeners": 4222,
+"playcount": 30351,
 "tags": [],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/+noredirect/Davin",
@@ -34859,7 +34859,7 @@
 "matcher": 4,
 "candidates": [
 "Veer Davinder",
-"Davina Michelle",
+"DaVinci Sound",
 "Bhai Davinder Singh Ji Sodhi"
 ]
 },
@@ -35057,16 +35057,16 @@
 },
 "wut": {
 "query": "WUT",
-"fetched_at": "2026-09-18T17:47:02+00:00",
+"fetched_at": "2026-10-02T19:25:14+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 1486,
-"playcount": 11282,
+"listeners": 1490,
+"playcount": 11289,
 "tags": [
 "punk",
 "deutschpunk",
 "hardcore punk",
-"hardcore"
+"indie rock"
 ],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Wut",
@@ -35075,8 +35075,8 @@
 "matcher": 4,
 "candidates": [
 "Wuthering Waves",
-"Wutah",
-"Afriyie Wutah"
+"wutai",
+"Wutah"
 ]
 },
 "worrywart": {
@@ -35173,7 +35173,7 @@
 },
 "after dark john lee organ trio": {
 "query": "AFTER DARK: John Lee Organ Trio",
-"fetched_at": "2026-09-18T17:47:04+00:00",
+"fetched_at": "2026-10-02T19:25:15+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -35181,7 +35181,7 @@
 },
 "kosma busheikin": {
 "query": "Kosma Busheikin",
-"fetched_at": "2026-09-18T17:47:04+00:00",
+"fetched_at": "2026-10-02T19:25:15+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -35189,7 +35189,7 @@
 },
 "graham villette": {
 "query": "Graham Villette",
-"fetched_at": "2026-09-18T17:47:04+00:00",
+"fetched_at": "2026-10-02T19:25:15+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -35243,7 +35243,7 @@
 },
 "ghost darling": {
 "query": "Ghost Darling",
-"fetched_at": "2026-09-18T17:47:06+00:00",
+"fetched_at": "2026-10-02T19:25:15+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 7,
@@ -35842,7 +35842,7 @@
 },
 "john goblikon": {
 "query": "John Goblikon",
-"fetched_at": "2026-09-18T17:47:15+00:00",
+"fetched_at": "2026-10-02T19:25:15+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -35850,7 +35850,7 @@
 },
 "rc wesley": {
 "query": "RC Wesley",
-"fetched_at": "2026-09-18T17:47:15+00:00",
+"fetched_at": "2026-10-02T19:25:15+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -36641,7 +36641,7 @@
 },
 "best in van 2026 trip switch": {
 "query": "Best In Van 2026: Trip Switch",
-"fetched_at": "2026-09-18T17:47:32+00:00",
+"fetched_at": "2026-10-02T19:25:15+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -36741,7 +36741,7 @@
 },
 "blasting company plays over garden wall": {
 "query": "The Blasting Company Plays Over The Garden Wall",
-"fetched_at": "2026-09-18T17:47:33+00:00",
+"fetched_at": "2026-10-02T19:25:16+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -36897,7 +36897,7 @@
 },
 "adrienne robles": {
 "query": "Adrienne Robles",
-"fetched_at": "2026-09-18T17:47:36+00:00",
+"fetched_at": "2026-10-02T19:25:16+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -37330,7 +37330,7 @@
 },
 "van jazz 2026 fonville fribush": {
 "query": "**Van Jazz 2026** Fonville/Fribush",
-"fetched_at": "2026-09-18T17:47:46+00:00",
+"fetched_at": "2026-10-02T19:25:16+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -37535,7 +37535,7 @@
 },
 "zappa nite": {
 "query": "Zappa Nite",
-"fetched_at": "2026-09-18T17:47:48+00:00",
+"fetched_at": "2026-10-02T19:25:16+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -37792,8 +37792,8 @@
 "mbid": "f36808d1-cc90-4dda-9606-eaad0464682e"
 },
 "guests xiphoid dementia": {
-"query": "Guests: XIPHOID DEMENTIA",
-"fetched_at": "2026-09-18T17:47:53+00:00",
+"query": "Guests: Xiphoid Dementia",
+"fetched_at": "2026-10-02T19:25:16+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -37902,7 +37902,7 @@
 },
 "weeds gestrin rud arai celebrate 25 years": {
 "query": "WEEDS/GESTRIN/RUD/ARAI celebrate 25 Years",
-"fetched_at": "2026-09-18T17:47:54+00:00",
+"fetched_at": "2026-10-02T19:25:16+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -37961,14 +37961,13 @@
 },
 "dj jollay": {
 "query": "DJ Jollay",
-"fetched_at": "2026-09-18T17:47:55+00:00",
+"fetched_at": "2026-10-02T19:25:16+00:00",
 "spotify_id": null,
 "reach": null,
 "matcher": 4,
 "candidates": [
 "DJ Moulay",
-"DJ HOLLANDEZ",
-"DJ Dollynho Da Lapa"
+"DJ HOLLANDEZ"
 ]
 },
 "rumpus": {
@@ -40964,8 +40963,8 @@
 "query": "water margin (CAN)",
 "fetched_at": "2026-10-01T19:41:35+00:00",
 "reach": {
-"listeners": 1210,
-"playcount": 11853,
+"listeners": 1211,
+"playcount": 11856,
 "tags": [
 "post-hardcore",
 "punk",
@@ -40973,7 +40972,8 @@
 "hardcore"
 ],
 "tier": 1,
-"lastfm_url": "https://www.last.fm/music/Water+Margin"
+"lastfm_url": "https://www.last.fm/music/Water+Margin",
+"mbid": null
 },
 "matcher": 4,
 "spotify_id": "62UkQuPfwmboPjptlkMUp8",
