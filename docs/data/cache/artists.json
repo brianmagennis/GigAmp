@@ -39306,7 +39306,7 @@
 },
 "love seat deluxe": {
 "query": "Love Seat Deluxe",
-"fetched_at": "2026-09-21T19:39:18+00:00",
+"fetched_at": "2026-10-05T21:32:06+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 2,
@@ -39464,11 +39464,11 @@
 },
 "fly": {
 "query": "The Fly",
-"fetched_at": "2026-09-21T19:39:21+00:00",
+"fetched_at": "2026-10-05T21:32:06+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 10302,
-"playcount": 74133,
+"listeners": 10334,
+"playcount": 74273,
 "tags": [
 "rock",
 "pop rock",
@@ -40033,7 +40033,7 @@
 },
 "joe rotundo and interstellar riders": {
 "query": "Joe Rotundo & the Interstellar Riders",
-"fetched_at": "2026-09-21T19:39:29+00:00",
+"fetched_at": "2026-10-05T21:32:07+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
