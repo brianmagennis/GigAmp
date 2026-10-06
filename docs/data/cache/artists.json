@@ -1,7 +1,16 @@
 {
 "pernell reichert": {
 "query": "Pernell Reichert",
-"fetched_at": "2026-09-06T06:20:45+00:00",
+"fetched_at": "2026-10-06T19:36:52+00:00",
+"reach": {
+"listeners": 11,
+"playcount": 41,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Pernell+Reichert",
+"mbid": "f28f3504-d0cf-453c-b798-fe6ec7f14997"
+},
+"matcher": 4,
 "spotify_id": "5GpD8pjBkiK8WIOgDbHm2Z",
 "spotify_name": "Pernell Reichert",
 "url": "https://open.spotify.com/artist/5GpD8pjBkiK8WIOgDbHm2Z",
@@ -34,15 +43,6 @@
 }
 ],
 "rank_source": "lastfm",
-"reach": {
-"listeners": 11,
-"playcount": 41,
-"tags": [],
-"tier": 1,
-"lastfm_url": "https://www.last.fm/music/Pernell+Reichert",
-"mbid": "f28f3504-d0cf-453c-b798-fe6ec7f14997"
-},
-"matcher": 4,
 "mbid": "f28f3504-d0cf-453c-b798-fe6ec7f14997"
 },
 "boy george and culture club": {
@@ -40330,7 +40330,7 @@
 },
 "wait wait what": {
 "query": "Wait Wait What",
-"fetched_at": "2026-09-22T18:13:00+00:00",
+"fetched_at": "2026-10-06T19:36:54+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -40338,7 +40338,7 @@
 },
 "taking tiger mountain": {
 "query": "Taking Tiger Mountain",
-"fetched_at": "2026-09-22T18:13:00+00:00",
+"fetched_at": "2026-10-06T19:36:54+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 20,
@@ -40506,7 +40506,7 @@
 },
 "vampcouver 6 halloween classic": {
 "query": "Vampcouver 6: Halloween Classic",
-"fetched_at": "2026-09-22T18:13:02+00:00",
+"fetched_at": "2026-10-06T19:36:55+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",
@@ -40564,14 +40564,14 @@
 },
 "adri": {
 "query": "Adri",
-"fetched_at": "2026-09-22T18:13:03+00:00",
+"fetched_at": "2026-10-06T19:36:55+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 9265,
-"playcount": 120320,
+"listeners": 9315,
+"playcount": 121310,
 "tags": [
-"hungary",
 "underground",
+"hungary",
 "form all nighter",
 "magyarorszag"
 ],
@@ -40581,8 +40581,8 @@
 },
 "matcher": 4,
 "candidates": [
-"Adrien Nunez",
 "Adrianne Lenker",
+"Adrien Nunez",
 "Adriatique"
 ]
 },
@@ -40838,7 +40838,7 @@
 },
 "teresa marie and three": {
 "query": "Teresa Marie & the Three",
-"fetched_at": "2026-09-22T18:13:07+00:00",
+"fetched_at": "2026-10-06T19:37:00+00:00",
 "spotify_id": null,
 "reach": null,
 "skip_reason": "not_on_lastfm",

@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-10-05T21:32:07+00:00",
+ "generated_at": "2026-10-06T19:37:00+00:00",
  "scraped_at": "2026-10-01T19:38:51+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -33715,8 +33715,8 @@
    "date": "2026-10-27",
    "reason": "no_match",
    "candidates": [
-    "Adrien Nunez",
     "Adrianne Lenker",
+    "Adrien Nunez",
     "Adriatique"
    ]
   },
