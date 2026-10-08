@@ -22499,7 +22499,7 @@
 },
 "brown paper bag": {
 "query": "Brown Paper Bag",
-"fetched_at": "2026-09-08T18:01:02+00:00",
+"fetched_at": "2026-10-08T20:00:54+00:00",
 "reach": {
 "listeners": 388,
 "playcount": 1270,
@@ -22518,17 +22518,6 @@
 "image": "https://i.scdn.co/image/ab6761610000f178b0c0495579c45dc25146bed9",
 "tracks": [
 {
-"id": "4YqYXY164IXhTWB2sJ2MPu",
-"uri": "spotify:track:4YqYXY164IXhTWB2sJ2MPu",
-"name": "Off My Nut",
-"popularity": null,
-"album": "Spectral Cat",
-"album_type": "album",
-"release_date": "2020-07-02",
-"duration_ms": 213942,
-"explicit": false
-},
-{
 "id": "20DgAUBZmp3TyQjQWOK7Y5",
 "uri": "spotify:track:20DgAUBZmp3TyQjQWOK7Y5",
 "name": "Networx",
@@ -22537,6 +22526,17 @@
 "album_type": "single",
 "release_date": "2019-12-18",
 "duration_ms": 521369,
+"explicit": false
+},
+{
+"id": "4YqYXY164IXhTWB2sJ2MPu",
+"uri": "spotify:track:4YqYXY164IXhTWB2sJ2MPu",
+"name": "Off My Nut",
+"popularity": null,
+"album": "Spectral Cat",
+"album_type": "album",
+"release_date": "2020-07-02",
+"duration_ms": 213942,
 "explicit": false
 }
 ],
@@ -27505,10 +27505,10 @@
 },
 "matty miller and barge boys": {
 "query": "Matty Miller & the Barge Boys",
-"fetched_at": "2026-09-08T18:00:59+00:00",
+"fetched_at": "2026-10-08T20:00:49+00:00",
 "reach": {
-"listeners": 395,
-"playcount": 809,
+"listeners": 398,
+"playcount": 812,
 "tags": [],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Matty+Miller+&+The+Barge+Boys",
@@ -27524,29 +27524,30 @@
 "image": "https://i.scdn.co/image/ab6761610000f178784329265cf6336dd5fbf9ef",
 "tracks": [
 {
-"id": "36D8NMcmLt9rH2dxmTKUET",
-"uri": "spotify:track:36D8NMcmLt9rH2dxmTKUET",
-"name": "Brain Candy",
+"id": "65fz95qmQgbnouVZsfURi3",
+"uri": "spotify:track:65fz95qmQgbnouVZsfURi3",
+"name": "She Was Gone",
 "popularity": null,
-"album": "Brain Candy",
+"album": "She Was Gone",
 "album_type": "single",
-"release_date": "2026-01-19",
-"duration_ms": 171406,
+"release_date": "2023-11-15",
+"duration_ms": 233546,
 "explicit": false
 },
 {
-"id": "5MT5OwWhsAtGAAjc10nmMT",
-"uri": "spotify:track:5MT5OwWhsAtGAAjc10nmMT",
-"name": "What a Loser.",
+"id": "76KQABSe3FcYPGen8C9O5m",
+"uri": "spotify:track:76KQABSe3FcYPGen8C9O5m",
+"name": "Stiletto",
 "popularity": null,
-"album": "What a Loser.",
+"album": "Stiletto",
 "album_type": "single",
-"release_date": "2026-05-25",
-"duration_ms": 163779,
-"explicit": true
+"release_date": "2024-03-13",
+"duration_ms": 227802,
+"explicit": false
 }
 ],
-"rank_source": "lastfm"
+"rank_source": "lastfm",
+"mbid": null
 },
 "anna smyrk": {
 "query": "Anna Smyrk",
@@ -27643,10 +27644,10 @@
 },
 "moaa": {
 "query": "MØAA",
-"fetched_at": "2026-09-08T18:01:03+00:00",
+"fetched_at": "2026-10-08T20:00:58+00:00",
 "reach": {
-"listeners": 17752,
-"playcount": 164894,
+"listeners": 17873,
+"playcount": 165597,
 "tags": [
 "post-punk",
 "shoegaze",
@@ -27689,14 +27690,15 @@
 "explicit": false
 }
 ],
-"rank_source": "lastfm"
+"rank_source": "lastfm",
+"mbid": null
 },
 "whethan": {
 "query": "Whethan",
-"fetched_at": "2026-09-08T18:01:03+00:00",
+"fetched_at": "2026-10-08T20:00:58+00:00",
 "reach": {
-"listeners": 933736,
-"playcount": 12713943,
+"listeners": 936042,
+"playcount": 12738225,
 "tags": [
 "electronic",
 "pop",
@@ -27744,10 +27746,10 @@
 },
 "haley smalls": {
 "query": "Haley Smalls",
-"fetched_at": "2026-09-08T18:01:04+00:00",
+"fetched_at": "2026-10-08T20:01:00+00:00",
 "reach": {
-"listeners": 22808,
-"playcount": 186993,
+"listeners": 22980,
+"playcount": 188669,
 "tags": [
 "rnb",
 "soul",
@@ -27794,10 +27796,10 @@
 },
 "sam wallace": {
 "query": "Sam Wallace",
-"fetched_at": "2026-09-08T18:01:04+00:00",
+"fetched_at": "2026-10-08T20:01:07+00:00",
 "reach": {
-"listeners": 1307,
-"playcount": 7154,
+"listeners": 1308,
+"playcount": 7163,
 "tags": [
 "ambient",
 "chillout",
@@ -27818,6 +27820,17 @@
 "image": "https://i.scdn.co/image/ab67616d000048511cbaa4181eeb9ddb1ee813e2",
 "tracks": [
 {
+"id": "4wod35SU8WtHwWkFEfHG3W",
+"uri": "spotify:track:4wod35SU8WtHwWkFEfHG3W",
+"name": "Shelter",
+"popularity": null,
+"album": "Shelter Ep",
+"album_type": "single",
+"release_date": "2017-09-10",
+"duration_ms": 494237,
+"explicit": false
+},
+{
 "id": "15XE9j3E0Xmng9VLJGhajp",
 "uri": "spotify:track:15XE9j3E0Xmng9VLJGhajp",
 "name": "Hurts",
@@ -27827,17 +27840,6 @@
 "release_date": "2017-09-10",
 "duration_ms": 251538,
 "explicit": false
-},
-{
-"id": "3Or2kiID692qn6NINcnlDC",
-"uri": "spotify:track:3Or2kiID692qn6NINcnlDC",
-"name": "Run",
-"popularity": null,
-"album": "Shelter Ep",
-"album_type": "single",
-"release_date": "2017-09-10",
-"duration_ms": 232075,
-"explicit": false
 }
 ],
 "rank_source": "lastfm",
@@ -27845,10 +27847,10 @@
 },
 "jungle giants": {
 "query": "The Jungle Giants",
-"fetched_at": "2026-09-08T18:01:05+00:00",
+"fetched_at": "2026-10-08T20:01:08+00:00",
 "reach": {
-"listeners": 481759,
-"playcount": 8070817,
+"listeners": 482587,
+"playcount": 8081018,
 "tags": [
 "indie pop",
 "indie rock",
@@ -27868,6 +27870,17 @@
 "image": "https://i.scdn.co/image/ab6761610000f17812ad3aab597f77adea203bf3",
 "tracks": [
 {
+"id": "60UIAiMjZtOZD9s0NpW3Qh",
+"uri": "spotify:track:60UIAiMjZtOZD9s0NpW3Qh",
+"name": "She's A Riot",
+"popularity": null,
+"album": "Learn To Exist",
+"album_type": "album",
+"release_date": "2013-08-30",
+"duration_ms": 221493,
+"explicit": false
+},
+{
 "id": "2p9p2WMCH2ctlt5mUjbykS",
 "uri": "spotify:track:2p9p2WMCH2ctlt5mUjbykS",
 "name": "Used To Be In Love",
@@ -27876,17 +27889,6 @@
 "album_type": "album",
 "release_date": "2017-07-07",
 "duration_ms": 222786,
-"explicit": false
-},
-{
-"id": "1vIkfCStqvLcMlp41M8zjQ",
-"uri": "spotify:track:1vIkfCStqvLcMlp41M8zjQ",
-"name": "On Your Way Down",
-"popularity": null,
-"album": "Quiet Ferocity",
-"album_type": "album",
-"release_date": "2017-07-07",
-"duration_ms": 225000,
 "explicit": false
 }
 ],
