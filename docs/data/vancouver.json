@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-10-07T20:07:33+00:00",
+ "generated_at": "2026-10-09T19:35:49+00:00",
  "scraped_at": "2026-10-07T20:02:03+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -1141,33 +1141,33 @@
      "image": "https://i.scdn.co/image/ab6761610000f178784329265cf6336dd5fbf9ef",
      "tracks": [
       {
-       "id": "36D8NMcmLt9rH2dxmTKUET",
-       "uri": "spotify:track:36D8NMcmLt9rH2dxmTKUET",
-       "name": "Brain Candy",
+       "id": "65fz95qmQgbnouVZsfURi3",
+       "uri": "spotify:track:65fz95qmQgbnouVZsfURi3",
+       "name": "She Was Gone",
        "popularity": null,
-       "album": "Brain Candy",
+       "album": "She Was Gone",
        "album_type": "single",
-       "release_date": "2026-01-19",
-       "duration_ms": 171406,
+       "release_date": "2023-11-15",
+       "duration_ms": 233546,
        "explicit": false
       },
       {
-       "id": "5MT5OwWhsAtGAAjc10nmMT",
-       "uri": "spotify:track:5MT5OwWhsAtGAAjc10nmMT",
-       "name": "What a Loser.",
+       "id": "76KQABSe3FcYPGen8C9O5m",
+       "uri": "spotify:track:76KQABSe3FcYPGen8C9O5m",
+       "name": "Stiletto",
        "popularity": null,
-       "album": "What a Loser.",
+       "album": "Stiletto",
        "album_type": "single",
-       "release_date": "2026-05-25",
-       "duration_ms": 163779,
-       "explicit": true
+       "release_date": "2024-03-13",
+       "duration_ms": 227802,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 395,
-      "playcount": 809,
+      "listeners": 398,
+      "playcount": 812,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Matty+Miller+&+The+Barge+Boys",
@@ -2135,17 +2135,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178b0c0495579c45dc25146bed9",
      "tracks": [
       {
-       "id": "4YqYXY164IXhTWB2sJ2MPu",
-       "uri": "spotify:track:4YqYXY164IXhTWB2sJ2MPu",
-       "name": "Off My Nut",
-       "popularity": null,
-       "album": "Spectral Cat",
-       "album_type": "album",
-       "release_date": "2020-07-02",
-       "duration_ms": 213942,
-       "explicit": false
-      },
-      {
        "id": "20DgAUBZmp3TyQjQWOK7Y5",
        "uri": "spotify:track:20DgAUBZmp3TyQjQWOK7Y5",
        "name": "Networx",
@@ -2154,6 +2143,17 @@
        "album_type": "single",
        "release_date": "2019-12-18",
        "duration_ms": 521369,
+       "explicit": false
+      },
+      {
+       "id": "4YqYXY164IXhTWB2sJ2MPu",
+       "uri": "spotify:track:4YqYXY164IXhTWB2sJ2MPu",
+       "name": "Off My Nut",
+       "popularity": null,
+       "album": "Spectral Cat",
+       "album_type": "album",
+       "release_date": "2020-07-02",
+       "duration_ms": 213942,
        "explicit": false
       }
      ],
@@ -3450,8 +3450,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 17752,
-      "playcount": 164894,
+      "listeners": 17873,
+      "playcount": 165597,
       "tags": [
        "post-punk",
        "shoegaze",
@@ -4474,8 +4474,8 @@
      "rank_source": "lastfm",
      "mbid": "9dbb9d00-e2d3-484d-8049-10e5e125913c",
      "reach": {
-      "listeners": 933736,
-      "playcount": 12713943,
+      "listeners": 936042,
+      "playcount": 12738225,
       "tags": [
        "electronic",
        "pop",
@@ -6888,6 +6888,17 @@
      "image": "https://i.scdn.co/image/ab6761610000f17812ad3aab597f77adea203bf3",
      "tracks": [
       {
+       "id": "60UIAiMjZtOZD9s0NpW3Qh",
+       "uri": "spotify:track:60UIAiMjZtOZD9s0NpW3Qh",
+       "name": "She's A Riot",
+       "popularity": null,
+       "album": "Learn To Exist",
+       "album_type": "album",
+       "release_date": "2013-08-30",
+       "duration_ms": 221493,
+       "explicit": false
+      },
+      {
        "id": "2p9p2WMCH2ctlt5mUjbykS",
        "uri": "spotify:track:2p9p2WMCH2ctlt5mUjbykS",
        "name": "Used To Be In Love",
@@ -6897,24 +6908,13 @@
        "release_date": "2017-07-07",
        "duration_ms": 222786,
        "explicit": false
-      },
-      {
-       "id": "1vIkfCStqvLcMlp41M8zjQ",
-       "uri": "spotify:track:1vIkfCStqvLcMlp41M8zjQ",
-       "name": "On Your Way Down",
-       "popularity": null,
-       "album": "Quiet Ferocity",
-       "album_type": "album",
-       "release_date": "2017-07-07",
-       "duration_ms": 225000,
-       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "5f57853c-8e3c-4ed3-b71c-a67787ab58c9",
      "reach": {
-      "listeners": 481759,
-      "playcount": 8070817,
+      "listeners": 482587,
+      "playcount": 8081018,
       "tags": [
        "indie pop",
        "indie rock",
@@ -6991,8 +6991,8 @@
      "rank_source": "lastfm",
      "mbid": "055012f8-421f-448e-9741-23e8d82638f2",
      "reach": {
-      "listeners": 191625,
-      "playcount": 2032734,
+      "listeners": 192151,
+      "playcount": 2039466,
       "tags": [
        "guitar",
        "instrumental",
@@ -7061,8 +7061,8 @@
      "rank_source": "lastfm",
      "mbid": "134afce4-5fc0-4afa-9931-1aab6297ea74",
      "reach": {
-      "listeners": 22808,
-      "playcount": 186993,
+      "listeners": 22980,
+      "playcount": 188669,
       "tags": [
        "rnb",
        "soul",
@@ -7107,6 +7107,17 @@
      "image": "https://i.scdn.co/image/ab67616d000048511cbaa4181eeb9ddb1ee813e2",
      "tracks": [
       {
+       "id": "4wod35SU8WtHwWkFEfHG3W",
+       "uri": "spotify:track:4wod35SU8WtHwWkFEfHG3W",
+       "name": "Shelter",
+       "popularity": null,
+       "album": "Shelter Ep",
+       "album_type": "single",
+       "release_date": "2017-09-10",
+       "duration_ms": 494237,
+       "explicit": false
+      },
+      {
        "id": "15XE9j3E0Xmng9VLJGhajp",
        "uri": "spotify:track:15XE9j3E0Xmng9VLJGhajp",
        "name": "Hurts",
@@ -7116,24 +7127,13 @@
        "release_date": "2017-09-10",
        "duration_ms": 251538,
        "explicit": false
-      },
-      {
-       "id": "3Or2kiID692qn6NINcnlDC",
-       "uri": "spotify:track:3Or2kiID692qn6NINcnlDC",
-       "name": "Run",
-       "popularity": null,
-       "album": "Shelter Ep",
-       "album_type": "single",
-       "release_date": "2017-09-10",
-       "duration_ms": 232075,
-       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "03dea6bc-e11b-486f-ab06-bdca73925a1c",
      "reach": {
-      "listeners": 1307,
-      "playcount": 7154,
+      "listeners": 1308,
+      "playcount": 7163,
       "tags": [
        "ambient",
        "chillout",
@@ -7265,8 +7265,8 @@
      "rank_source": "lastfm",
      "mbid": "b3f83f97-92c3-4eb3-afbf-87c1b9a6f0ed",
      "reach": {
-      "listeners": 171073,
-      "playcount": 4904109,
+      "listeners": 171672,
+      "playcount": 4920269,
       "tags": [
        "soul",
        "jazz",
@@ -7320,8 +7320,8 @@
      "rank_source": "lastfm",
      "mbid": "ca5b20e5-ac2d-439b-badd-7134d14ecef5",
      "reach": {
-      "listeners": 102896,
-      "playcount": 1412803,
+      "listeners": 103219,
+      "playcount": 1419094,
       "tags": [
        "industrial metal",
        "industrial",
@@ -7370,6 +7370,17 @@
      "image": "https://i.scdn.co/image/ab6761610000f1788a0644455ebfa7d3976f5101",
      "tracks": [
       {
+       "id": "3DarAbFujv6eYNliUTyqtz",
+       "uri": "spotify:track:3DarAbFujv6eYNliUTyqtz",
+       "name": "Kiss Me More (feat. SZA)",
+       "popularity": null,
+       "album": "Planet Her",
+       "album_type": "album",
+       "release_date": "2021-06-25",
+       "duration_ms": 208666,
+       "explicit": true
+      },
+      {
        "id": "6Uj1ctrBOjOas8xZXGqKk4",
        "uri": "spotify:track:6Uj1ctrBOjOas8xZXGqKk4",
        "name": "Woman",
@@ -7379,24 +7390,13 @@
        "release_date": "2021-06-25",
        "duration_ms": 172626,
        "explicit": true
-      },
-      {
-       "id": "60ynsPSSKe6O3sfwRnIBRf",
-       "uri": "spotify:track:60ynsPSSKe6O3sfwRnIBRf",
-       "name": "Streets",
-       "popularity": null,
-       "album": "Hot Pink",
-       "album_type": "album",
-       "release_date": "2019-11-07",
-       "duration_ms": 226978,
-       "explicit": true
       }
      ],
      "rank_source": "lastfm",
      "mbid": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
      "reach": {
-      "listeners": 3796534,
-      "playcount": 491560371,
+      "listeners": 3821413,
+      "playcount": 493642839,
       "tags": [
        "pop",
        "rnb",
@@ -7474,8 +7474,8 @@
      "rank_source": "lastfm",
      "mbid": "6dc9bc09-a0c7-40f9-b491-f90845927533",
      "reach": {
-      "listeners": 463113,
-      "playcount": 12806414,
+      "listeners": 469501,
+      "playcount": 13077814,
       "tags": [
        "coldwave",
        "ebm",
@@ -7517,22 +7517,22 @@
        "explicit": false
       },
       {
-       "id": "2EaYZcdX3hifEfEEQ4thbi",
-       "uri": "spotify:track:2EaYZcdX3hifEfEEQ4thbi",
-       "name": "Racing Man",
+       "id": "6DDQThqdsL7T2O6i3rbg9c",
+       "uri": "spotify:track:6DDQThqdsL7T2O6i3rbg9c",
+       "name": "United",
        "popularity": null,
-       "album": "Racing Man",
+       "album": "Kassie Krut",
        "album_type": "single",
-       "release_date": "2024-10-29",
-       "duration_ms": 229648,
+       "release_date": "2024-12-06",
+       "duration_ms": 136784,
        "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "2775f41c-fd65-4ccb-8726-e318ed5f4495",
      "reach": {
-      "listeners": 33451,
-      "playcount": 219941,
+      "listeners": 33673,
+      "playcount": 221328,
       "tags": [
        "experimental",
        "electronic",
@@ -7589,22 +7589,22 @@
        "explicit": true
       },
       {
-       "id": "2WFNSeBczMYbMnGkDW7LyR",
-       "uri": "spotify:track:2WFNSeBczMYbMnGkDW7LyR",
-       "name": "the prom",
+       "id": "1kADZJDyRUbmlLxYiqi077",
+       "uri": "spotify:track:1kADZJDyRUbmlLxYiqi077",
+       "name": "fuck this town",
        "popularity": null,
-       "album": "i care so much that i dont care at all",
-       "album_type": "album",
-       "release_date": "2023-07-14",
-       "duration_ms": 131950,
-       "explicit": false
+       "album": "fuck this town",
+       "album_type": "single",
+       "release_date": "2021-07-09",
+       "duration_ms": 115875,
+       "explicit": true
       }
      ],
      "rank_source": "lastfm",
      "mbid": "fd36f43e-5bd1-488e-b844-0e059250ef78",
      "reach": {
-      "listeners": 628822,
-      "playcount": 109911972,
+      "listeners": 633373,
+      "playcount": 110759143,
       "tags": [
        "hyperpop",
        "digicore",
@@ -7652,33 +7652,33 @@
      "image": "https://i.scdn.co/image/ab6761610000f1783c79f8b04e49c6757124e44d",
      "tracks": [
       {
-       "id": "4qIluUXW2uoi0tafnAtQUb",
-       "uri": "spotify:track:4qIluUXW2uoi0tafnAtQUb",
-       "name": "Etude",
+       "id": "4EH5lHknr3Eze9Smx7JTjl",
+       "uri": "spotify:track:4EH5lHknr3Eze9Smx7JTjl",
+       "name": "Nocturne",
        "popularity": null,
-       "album": "Squint",
+       "album": "Arclight",
        "album_type": "album",
-       "release_date": "2021-06-11",
-       "duration_ms": 147268,
+       "release_date": "2016-03-11",
+       "duration_ms": 199015,
        "explicit": false
       },
       {
-       "id": "2sdeVQEoohNkfZFrVsoYkc",
-       "uri": "spotify:track:2sdeVQEoohNkfZFrVsoYkc",
-       "name": "Nothing Happens Here",
+       "id": "10nj6Dcg3oPRNCQ2QRI83M",
+       "uri": "spotify:track:10nj6Dcg3oPRNCQ2QRI83M",
+       "name": "Day and Age",
        "popularity": null,
-       "album": "Nothing Happens Here",
-       "album_type": "single",
-       "release_date": "2024-02-07",
-       "duration_ms": 254560,
+       "album": "World's Fair",
+       "album_type": "album",
+       "release_date": "2015-02-03",
+       "duration_ms": 161427,
        "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "c116b504-ce24-4264-96dc-d10a7458236f",
      "reach": {
-      "listeners": 169399,
-      "playcount": 2233369,
+      "listeners": 169802,
+      "playcount": 2239793,
       "tags": [
        "jazz",
        "guitar",
@@ -7704,7 +7704,7 @@
      ],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f17827ca385f6c482982230c8940",
+     "image": "https://i.scdn.co/image/ab6761610000f1788a132ef01ff496858e9a41c9",
      "tracks": [
       {
        "id": "6lEr0uF4mJJAODSXfQ6WvR",
@@ -7732,13 +7732,13 @@
      "rank_source": "lastfm",
      "mbid": "56bac337-4772-4c7f-8e50-2a8bbe093d24",
      "reach": {
-      "listeners": 42601,
-      "playcount": 414641,
+      "listeners": 43042,
+      "playcount": 419452,
       "tags": [
        "acoustic",
+       "latin",
        "folk",
-       "jazz",
-       "singer-songwriters"
+       "downtempo"
       ],
       "tier": 2,
       "lastfm_url": "https://www.last.fm/music/Laura+Itandehui",
@@ -7746,8 +7746,8 @@
      },
      "genres_canon": [
       "folk",
-      "jazz",
-      "singer-songwriter"
+      "latin",
+      "ambient"
      ]
     }
    ]
@@ -7784,17 +7784,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f1789e456f8fd528ae3d874f9641",
      "tracks": [
       {
-       "id": "4yneuJA8YzsP1pwjnrExGq",
-       "uri": "spotify:track:4yneuJA8YzsP1pwjnrExGq",
-       "name": "Tell Me U Need Me",
-       "popularity": null,
-       "album": "Tell Me U Need Me",
-       "album_type": "single",
-       "release_date": "2026-06-12",
-       "duration_ms": 166093,
-       "explicit": false
-      },
-      {
        "id": "5iM0LxwcbxW5GL536p25R8",
        "uri": "spotify:track:5iM0LxwcbxW5GL536p25R8",
        "name": "Even a Worm Will Turn",
@@ -7804,13 +7793,24 @@
        "release_date": "2025-07-11",
        "duration_ms": 116172,
        "explicit": true
+      },
+      {
+       "id": "05NEFGpLb9kN7zoT5Csdtp",
+       "uri": "spotify:track:05NEFGpLb9kN7zoT5Csdtp",
+       "name": "Bare Minimum",
+       "popularity": null,
+       "album": "Bare Minimum",
+       "album_type": "single",
+       "release_date": "2024-02-23",
+       "duration_ms": 187566,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "da01f7e8-4c91-4ba0-bda3-f140b1ab10c9",
      "reach": {
-      "listeners": 622,
-      "playcount": 2783,
+      "listeners": 629,
+      "playcount": 2942,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Emma+Alves",
@@ -7907,22 +7907,22 @@
        "explicit": true
       },
       {
-       "id": "7cL3jnYfTXs7zoLbyo61jQ",
-       "uri": "spotify:track:7cL3jnYfTXs7zoLbyo61jQ",
-       "name": "ROLL IT UP",
+       "id": "4uS1Nx7CSByeduHsdfXiVb",
+       "uri": "spotify:track:4uS1Nx7CSByeduHsdfXiVb",
+       "name": "DROP TOP BEATER",
        "popularity": null,
-       "album": "GROW UP!",
+       "album": "CHPT. 9: 4 MiLLiON PPL LiVE iN LOS ANGELES",
        "album_type": "single",
-       "release_date": "2025-01-24",
-       "duration_ms": 175951,
+       "release_date": "2024-02-09",
+       "duration_ms": 154709,
        "explicit": true
       }
      ],
      "rank_source": "lastfm",
      "mbid": "76e00cd4-cd2d-4eed-b9e3-83c5e0a24428",
      "reach": {
-      "listeners": 109148,
-      "playcount": 1606192,
+      "listeners": 109769,
+      "playcount": 1616288,
       "tags": [
        "groove",
        "pop rap"
@@ -8030,17 +8030,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178c7688aad1bf03986934d7e26",
      "tracks": [
       {
-       "id": "7BqBn9nzAq8spo5e7cZ0dJ",
-       "uri": "spotify:track:7BqBn9nzAq8spo5e7cZ0dJ",
-       "name": "Just the Way You Are",
-       "popularity": null,
-       "album": "Doo-Wops & Hooligans",
-       "album_type": "album",
-       "release_date": "2010-05-11",
-       "duration_ms": 220734,
-       "explicit": false
-      },
-      {
        "id": "3w3y8KPTfNeOKPiqUTakBh",
        "uri": "spotify:track:3w3y8KPTfNeOKPiqUTakBh",
        "name": "Locked out of Heaven",
@@ -8050,13 +8039,24 @@
        "release_date": "2012-12-07",
        "duration_ms": 233478,
        "explicit": false
+      },
+      {
+       "id": "7BqBn9nzAq8spo5e7cZ0dJ",
+       "uri": "spotify:track:7BqBn9nzAq8spo5e7cZ0dJ",
+       "name": "Just the Way You Are",
+       "popularity": null,
+       "album": "Doo-Wops & Hooligans",
+       "album_type": "album",
+       "release_date": "2010-05-11",
+       "duration_ms": 220734,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
      "reach": {
-      "listeners": 5441460,
-      "playcount": 324411652,
+      "listeners": 5466791,
+      "playcount": 325811458,
       "tags": [
        "pop",
        "rnb",
@@ -8086,6 +8086,17 @@
      "image": "https://i.scdn.co/image/ab67616d0000485125d81f67acf22191d055af20",
      "tracks": [
       {
+       "id": "2OwFw10OqoVGGrBNomRXKs",
+       "uri": "spotify:track:2OwFw10OqoVGGrBNomRXKs",
+       "name": "Fantasia Of Time",
+       "popularity": null,
+       "album": "Journeyman Years",
+       "album_type": "album",
+       "release_date": "2021-04-02",
+       "duration_ms": 126000,
+       "explicit": false
+      },
+      {
        "id": "6nxIOM7OnxBUqrU6GlXueS",
        "uri": "spotify:track:6nxIOM7OnxBUqrU6GlXueS",
        "name": "Silver Moon",
@@ -8095,24 +8106,13 @@
        "release_date": "2021-04-02",
        "duration_ms": 138000,
        "explicit": false
-      },
-      {
-       "id": "6rb6BPtABex7sAPOPmYBkJ",
-       "uri": "spotify:track:6rb6BPtABex7sAPOPmYBkJ",
-       "name": "Emerging Beauty",
-       "popularity": null,
-       "album": "Romantic Escape",
-       "album_type": "album",
-       "release_date": "2021-04-02",
-       "duration_ms": 120000,
-       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 182,
-      "playcount": 294,
+      "listeners": 184,
+      "playcount": 297,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/DJ+PEE+WEE",
@@ -8161,8 +8161,8 @@
      "rank_source": "lastfm",
      "mbid": "8be564c3-dfba-440b-af8c-4ffbceeef45e",
      "reach": {
-      "listeners": 2043634,
-      "playcount": 75968521,
+      "listeners": 2058245,
+      "playcount": 76499789,
       "tags": [
        "pop",
        "rnb",
@@ -8232,12 +8232,12 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 47409,
-      "playcount": 510147,
+      "listeners": 47559,
+      "playcount": 512284,
       "tags": [
        "anatolian rock",
-       "psychedelic rock",
        "psychedelic",
+       "psychedelic rock",
        "folk"
       ],
       "tier": 2,
@@ -8262,17 +8262,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178a7c1546afecb0959978454c2",
      "tracks": [
       {
-       "id": "6qa9ImotbPJJ287VzSSN9X",
-       "uri": "spotify:track:6qa9ImotbPJJ287VzSSN9X",
-       "name": "Under the Silver Moon",
-       "popularity": null,
-       "album": "Under the Silver Moon",
-       "album_type": "single",
-       "release_date": "2026-03-09",
-       "duration_ms": 207600,
-       "explicit": false
-      },
-      {
        "id": "0La1VlmPQNwvTyJD3qIxGL",
        "uri": "spotify:track:0La1VlmPQNwvTyJD3qIxGL",
        "name": "Not Today",
@@ -8282,13 +8271,24 @@
        "release_date": "2024-08-09",
        "duration_ms": 186300,
        "explicit": false
+      },
+      {
+       "id": "3lNXj5FX51jm3jqqWVUpXM",
+       "uri": "spotify:track:3lNXj5FX51jm3jqqWVUpXM",
+       "name": "I Know",
+       "popularity": null,
+       "album": "Perak",
+       "album_type": "album",
+       "release_date": "2024-08-09",
+       "duration_ms": 172777,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "84543b66-bb03-4a68-8378-e3d62fabb120",
      "reach": {
-      "listeners": 48864,
-      "playcount": 333714,
+      "listeners": 49129,
+      "playcount": 338069,
       "tags": [
        "rnb",
        "soul",
@@ -8349,22 +8349,22 @@
        "explicit": false
       },
       {
-       "id": "7lgx7t5ZLkdOjiOAjSx9d6",
-       "uri": "spotify:track:7lgx7t5ZLkdOjiOAjSx9d6",
-       "name": "no more regrets",
+       "id": "5Jpj3lCgX06bu6STIjUYKN",
+       "uri": "spotify:track:5Jpj3lCgX06bu6STIjUYKN",
+       "name": "cough drops",
        "popularity": null,
-       "album": "no more regrets",
+       "album": "cough drops",
        "album_type": "single",
-       "release_date": "2026-05-01",
-       "duration_ms": 178477,
+       "release_date": "2022-10-05",
+       "duration_ms": 163990,
        "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 465454,
-      "playcount": 7574939,
+      "listeners": 469941,
+      "playcount": 7702336,
       "tags": [
        "indie pop",
        "alternative",
@@ -8469,33 +8469,33 @@
      "image": "https://i.scdn.co/image/ab6761610000f1788f57bdfe6c7ede4dda2bab61",
      "tracks": [
       {
-       "id": "1ORRoKhwvtHW5xLTNSa6XX",
-       "uri": "spotify:track:1ORRoKhwvtHW5xLTNSa6XX",
-       "name": "One for Jackie, One for Crystal",
+       "id": "0Bmvy929vju507HOdoe8ox",
+       "uri": "spotify:track:0Bmvy929vju507HOdoe8ox",
+       "name": "Pin-Up Daddy",
        "popularity": null,
-       "album": "One for Jackie",
+       "album": "Pin-Up Daddy",
        "album_type": "album",
-       "release_date": "2023-10-27",
-       "duration_ms": 224520,
-       "explicit": true
+       "release_date": "2021-09-15",
+       "duration_ms": 251158,
+       "explicit": false
       },
       {
-       "id": "1IGpnASqOgw77lZD8M38GQ",
-       "uri": "spotify:track:1IGpnASqOgw77lZD8M38GQ",
-       "name": "Eleven Wednesdays",
+       "id": "36giTqlFtFPE0Iac51cYZc",
+       "uri": "spotify:track:36giTqlFtFPE0Iac51cYZc",
+       "name": "God Is a Woman",
        "popularity": null,
-       "album": "Eleven Wednesdays",
+       "album": "God Is a Woman",
        "album_type": "single",
-       "release_date": "2026-03-11",
-       "duration_ms": 228383,
-       "explicit": false
+       "release_date": "2018-06-22",
+       "duration_ms": 212112,
+       "explicit": true
       }
      ],
      "rank_source": "lastfm",
      "mbid": "5c7339eb-413e-4f2a-b0de-227e22fcad57",
      "reach": {
-      "listeners": 31711,
-      "playcount": 248547,
+      "listeners": 31855,
+      "playcount": 249766,
       "tags": [
        "acoustic",
        "folk",
@@ -10213,17 +10213,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178c7688aad1bf03986934d7e26",
      "tracks": [
       {
-       "id": "7BqBn9nzAq8spo5e7cZ0dJ",
-       "uri": "spotify:track:7BqBn9nzAq8spo5e7cZ0dJ",
-       "name": "Just the Way You Are",
-       "popularity": null,
-       "album": "Doo-Wops & Hooligans",
-       "album_type": "album",
-       "release_date": "2010-05-11",
-       "duration_ms": 220734,
-       "explicit": false
-      },
-      {
        "id": "3w3y8KPTfNeOKPiqUTakBh",
        "uri": "spotify:track:3w3y8KPTfNeOKPiqUTakBh",
        "name": "Locked out of Heaven",
@@ -10233,13 +10222,24 @@
        "release_date": "2012-12-07",
        "duration_ms": 233478,
        "explicit": false
+      },
+      {
+       "id": "7BqBn9nzAq8spo5e7cZ0dJ",
+       "uri": "spotify:track:7BqBn9nzAq8spo5e7cZ0dJ",
+       "name": "Just the Way You Are",
+       "popularity": null,
+       "album": "Doo-Wops & Hooligans",
+       "album_type": "album",
+       "release_date": "2010-05-11",
+       "duration_ms": 220734,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
      "reach": {
-      "listeners": 5441460,
-      "playcount": 324411652,
+      "listeners": 5466791,
+      "playcount": 325811458,
       "tags": [
        "pop",
        "rnb",
@@ -10269,6 +10269,17 @@
      "image": "https://i.scdn.co/image/ab67616d0000485125d81f67acf22191d055af20",
      "tracks": [
       {
+       "id": "2OwFw10OqoVGGrBNomRXKs",
+       "uri": "spotify:track:2OwFw10OqoVGGrBNomRXKs",
+       "name": "Fantasia Of Time",
+       "popularity": null,
+       "album": "Journeyman Years",
+       "album_type": "album",
+       "release_date": "2021-04-02",
+       "duration_ms": 126000,
+       "explicit": false
+      },
+      {
        "id": "6nxIOM7OnxBUqrU6GlXueS",
        "uri": "spotify:track:6nxIOM7OnxBUqrU6GlXueS",
        "name": "Silver Moon",
@@ -10278,24 +10289,13 @@
        "release_date": "2021-04-02",
        "duration_ms": 138000,
        "explicit": false
-      },
-      {
-       "id": "6rb6BPtABex7sAPOPmYBkJ",
-       "uri": "spotify:track:6rb6BPtABex7sAPOPmYBkJ",
-       "name": "Emerging Beauty",
-       "popularity": null,
-       "album": "Romantic Escape",
-       "album_type": "album",
-       "release_date": "2021-04-02",
-       "duration_ms": 120000,
-       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 182,
-      "playcount": 294,
+      "listeners": 184,
+      "playcount": 297,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/DJ+PEE+WEE",
@@ -10344,8 +10344,8 @@
      "rank_source": "lastfm",
      "mbid": "8be564c3-dfba-440b-af8c-4ffbceeef45e",
      "reach": {
-      "listeners": 2043634,
-      "playcount": 75968521,
+      "listeners": 2058245,
+      "playcount": 76499789,
       "tags": [
        "pop",
        "rnb",
@@ -11191,6 +11191,17 @@
      "image": "https://i.scdn.co/image/ab6761610000f178a08422a3dc104bc70e0bfa77",
      "tracks": [
       {
+       "id": "10ML03YWivFNtCpQn5SpcA",
+       "uri": "spotify:track:10ML03YWivFNtCpQn5SpcA",
+       "name": "Awaken, Idiot God",
+       "popularity": null,
+       "album": "Awaken, Idiot God",
+       "album_type": "single",
+       "release_date": "2025-10-17",
+       "duration_ms": 187569,
+       "explicit": false
+      },
+      {
        "id": "3liKfeNKIYSaTCaiOpFZsq",
        "uri": "spotify:track:3liKfeNKIYSaTCaiOpFZsq",
        "name": "I Am Dust",
@@ -11200,24 +11211,13 @@
        "release_date": "2025-11-14",
        "duration_ms": 223050,
        "explicit": false
-      },
-      {
-       "id": "6jny9qHJC6SneHgckjFSmV",
-       "uri": "spotify:track:6jny9qHJC6SneHgckjFSmV",
-       "name": "A Summoning",
-       "popularity": null,
-       "album": "Celestial Perversion",
-       "album_type": "single",
-       "release_date": "2025-11-14",
-       "duration_ms": 41499,
-       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 116,
-      "playcount": 736,
+      "listeners": 118,
+      "playcount": 774,
       "tags": [
        "black metal"
       ],
@@ -11471,17 +11471,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178c7688aad1bf03986934d7e26",
      "tracks": [
       {
-       "id": "7BqBn9nzAq8spo5e7cZ0dJ",
-       "uri": "spotify:track:7BqBn9nzAq8spo5e7cZ0dJ",
-       "name": "Just the Way You Are",
-       "popularity": null,
-       "album": "Doo-Wops & Hooligans",
-       "album_type": "album",
-       "release_date": "2010-05-11",
-       "duration_ms": 220734,
-       "explicit": false
-      },
-      {
        "id": "3w3y8KPTfNeOKPiqUTakBh",
        "uri": "spotify:track:3w3y8KPTfNeOKPiqUTakBh",
        "name": "Locked out of Heaven",
@@ -11491,13 +11480,24 @@
        "release_date": "2012-12-07",
        "duration_ms": 233478,
        "explicit": false
+      },
+      {
+       "id": "7BqBn9nzAq8spo5e7cZ0dJ",
+       "uri": "spotify:track:7BqBn9nzAq8spo5e7cZ0dJ",
+       "name": "Just the Way You Are",
+       "popularity": null,
+       "album": "Doo-Wops & Hooligans",
+       "album_type": "album",
+       "release_date": "2010-05-11",
+       "duration_ms": 220734,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
      "reach": {
-      "listeners": 5441460,
-      "playcount": 324411652,
+      "listeners": 5466791,
+      "playcount": 325811458,
       "tags": [
        "pop",
        "rnb",
@@ -11527,6 +11527,17 @@
      "image": "https://i.scdn.co/image/ab67616d0000485125d81f67acf22191d055af20",
      "tracks": [
       {
+       "id": "2OwFw10OqoVGGrBNomRXKs",
+       "uri": "spotify:track:2OwFw10OqoVGGrBNomRXKs",
+       "name": "Fantasia Of Time",
+       "popularity": null,
+       "album": "Journeyman Years",
+       "album_type": "album",
+       "release_date": "2021-04-02",
+       "duration_ms": 126000,
+       "explicit": false
+      },
+      {
        "id": "6nxIOM7OnxBUqrU6GlXueS",
        "uri": "spotify:track:6nxIOM7OnxBUqrU6GlXueS",
        "name": "Silver Moon",
@@ -11536,24 +11547,13 @@
        "release_date": "2021-04-02",
        "duration_ms": 138000,
        "explicit": false
-      },
-      {
-       "id": "6rb6BPtABex7sAPOPmYBkJ",
-       "uri": "spotify:track:6rb6BPtABex7sAPOPmYBkJ",
-       "name": "Emerging Beauty",
-       "popularity": null,
-       "album": "Romantic Escape",
-       "album_type": "album",
-       "release_date": "2021-04-02",
-       "duration_ms": 120000,
-       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 182,
-      "playcount": 294,
+      "listeners": 184,
+      "playcount": 297,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/DJ+PEE+WEE",
@@ -11602,8 +11602,8 @@
      "rank_source": "lastfm",
      "mbid": "8be564c3-dfba-440b-af8c-4ffbceeef45e",
      "reach": {
-      "listeners": 2043634,
-      "playcount": 75968521,
+      "listeners": 2058245,
+      "playcount": 76499789,
       "tags": [
        "pop",
        "rnb",
@@ -14198,17 +14198,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178c7688aad1bf03986934d7e26",
      "tracks": [
       {
-       "id": "7BqBn9nzAq8spo5e7cZ0dJ",
-       "uri": "spotify:track:7BqBn9nzAq8spo5e7cZ0dJ",
-       "name": "Just the Way You Are",
-       "popularity": null,
-       "album": "Doo-Wops & Hooligans",
-       "album_type": "album",
-       "release_date": "2010-05-11",
-       "duration_ms": 220734,
-       "explicit": false
-      },
-      {
        "id": "3w3y8KPTfNeOKPiqUTakBh",
        "uri": "spotify:track:3w3y8KPTfNeOKPiqUTakBh",
        "name": "Locked out of Heaven",
@@ -14218,13 +14207,24 @@
        "release_date": "2012-12-07",
        "duration_ms": 233478,
        "explicit": false
+      },
+      {
+       "id": "7BqBn9nzAq8spo5e7cZ0dJ",
+       "uri": "spotify:track:7BqBn9nzAq8spo5e7cZ0dJ",
+       "name": "Just the Way You Are",
+       "popularity": null,
+       "album": "Doo-Wops & Hooligans",
+       "album_type": "album",
+       "release_date": "2010-05-11",
+       "duration_ms": 220734,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
      "reach": {
-      "listeners": 5441460,
-      "playcount": 324411652,
+      "listeners": 5466791,
+      "playcount": 325811458,
       "tags": [
        "pop",
        "rnb",
@@ -14254,6 +14254,17 @@
      "image": "https://i.scdn.co/image/ab67616d0000485125d81f67acf22191d055af20",
      "tracks": [
       {
+       "id": "2OwFw10OqoVGGrBNomRXKs",
+       "uri": "spotify:track:2OwFw10OqoVGGrBNomRXKs",
+       "name": "Fantasia Of Time",
+       "popularity": null,
+       "album": "Journeyman Years",
+       "album_type": "album",
+       "release_date": "2021-04-02",
+       "duration_ms": 126000,
+       "explicit": false
+      },
+      {
        "id": "6nxIOM7OnxBUqrU6GlXueS",
        "uri": "spotify:track:6nxIOM7OnxBUqrU6GlXueS",
        "name": "Silver Moon",
@@ -14263,24 +14274,13 @@
        "release_date": "2021-04-02",
        "duration_ms": 138000,
        "explicit": false
-      },
-      {
-       "id": "6rb6BPtABex7sAPOPmYBkJ",
-       "uri": "spotify:track:6rb6BPtABex7sAPOPmYBkJ",
-       "name": "Emerging Beauty",
-       "popularity": null,
-       "album": "Romantic Escape",
-       "album_type": "album",
-       "release_date": "2021-04-02",
-       "duration_ms": 120000,
-       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 182,
-      "playcount": 294,
+      "listeners": 184,
+      "playcount": 297,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/DJ+PEE+WEE",
@@ -14329,8 +14329,8 @@
      "rank_source": "lastfm",
      "mbid": "8be564c3-dfba-440b-af8c-4ffbceeef45e",
      "reach": {
-      "listeners": 2043634,
-      "playcount": 75968521,
+      "listeners": 2058245,
+      "playcount": 76499789,
       "tags": [
        "pop",
        "rnb",
@@ -15075,17 +15075,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178c7688aad1bf03986934d7e26",
      "tracks": [
       {
-       "id": "7BqBn9nzAq8spo5e7cZ0dJ",
-       "uri": "spotify:track:7BqBn9nzAq8spo5e7cZ0dJ",
-       "name": "Just the Way You Are",
-       "popularity": null,
-       "album": "Doo-Wops & Hooligans",
-       "album_type": "album",
-       "release_date": "2010-05-11",
-       "duration_ms": 220734,
-       "explicit": false
-      },
-      {
        "id": "3w3y8KPTfNeOKPiqUTakBh",
        "uri": "spotify:track:3w3y8KPTfNeOKPiqUTakBh",
        "name": "Locked out of Heaven",
@@ -15095,13 +15084,24 @@
        "release_date": "2012-12-07",
        "duration_ms": 233478,
        "explicit": false
+      },
+      {
+       "id": "7BqBn9nzAq8spo5e7cZ0dJ",
+       "uri": "spotify:track:7BqBn9nzAq8spo5e7cZ0dJ",
+       "name": "Just the Way You Are",
+       "popularity": null,
+       "album": "Doo-Wops & Hooligans",
+       "album_type": "album",
+       "release_date": "2010-05-11",
+       "duration_ms": 220734,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
      "reach": {
-      "listeners": 5441460,
-      "playcount": 324411652,
+      "listeners": 5466791,
+      "playcount": 325811458,
       "tags": [
        "pop",
        "rnb",
@@ -15131,6 +15131,17 @@
      "image": "https://i.scdn.co/image/ab67616d0000485125d81f67acf22191d055af20",
      "tracks": [
       {
+       "id": "2OwFw10OqoVGGrBNomRXKs",
+       "uri": "spotify:track:2OwFw10OqoVGGrBNomRXKs",
+       "name": "Fantasia Of Time",
+       "popularity": null,
+       "album": "Journeyman Years",
+       "album_type": "album",
+       "release_date": "2021-04-02",
+       "duration_ms": 126000,
+       "explicit": false
+      },
+      {
        "id": "6nxIOM7OnxBUqrU6GlXueS",
        "uri": "spotify:track:6nxIOM7OnxBUqrU6GlXueS",
        "name": "Silver Moon",
@@ -15140,24 +15151,13 @@
        "release_date": "2021-04-02",
        "duration_ms": 138000,
        "explicit": false
-      },
-      {
-       "id": "6rb6BPtABex7sAPOPmYBkJ",
-       "uri": "spotify:track:6rb6BPtABex7sAPOPmYBkJ",
-       "name": "Emerging Beauty",
-       "popularity": null,
-       "album": "Romantic Escape",
-       "album_type": "album",
-       "release_date": "2021-04-02",
-       "duration_ms": 120000,
-       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 182,
-      "playcount": 294,
+      "listeners": 184,
+      "playcount": 297,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/DJ+PEE+WEE",
@@ -23435,16 +23435,27 @@
        "release_date": "2026-08-14",
        "duration_ms": 237493,
        "explicit": false
+      },
+      {
+       "id": "3ayaGx9Hh3gTcu4p1seYKh",
+       "uri": "spotify:track:3ayaGx9Hh3gTcu4p1seYKh",
+       "name": "Off The Menu",
+       "popularity": null,
+       "album": "Off The Menu",
+       "album_type": "single",
+       "release_date": "2026-09-18",
+       "duration_ms": 204800,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 18,
-      "playcount": 27,
+      "listeners": 17,
+      "playcount": 115,
       "tags": [],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Powerm%C3%B6nger",
+      "lastfm_url": "https://www.last.fm/music/PowerMonger",
       "mbid": null
      },
      "genres_canon": [
@@ -27664,47 +27675,47 @@
     },
     {
      "name": "CRUZER",
-     "spotify_name": "Crüzer",
-     "spotify_id": "7lpxHDuZAtCjtqR1qzVvze",
-     "url": "https://open.spotify.com/artist/7lpxHDuZAtCjtqR1qzVvze",
+     "spotify_name": "Cruzer",
+     "spotify_id": "6v16xWYAkWSHsuwpfkG6CD",
+     "url": "https://open.spotify.com/artist/6v16xWYAkWSHsuwpfkG6CD",
      "genres": [],
      "songkick_genres": [],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1787617979c6f0d28a1a32134e6",
+     "image": "https://i.scdn.co/image/ab6761610000f1781b5832bded48b1741933cc11",
      "tracks": [
       {
-       "id": "7uciRKa5Tq2SSIbe09AZMQ",
-       "uri": "spotify:track:7uciRKa5Tq2SSIbe09AZMQ",
-       "name": "Pit Vyper",
+       "id": "0ZChLjV5xkUroJPp604W90",
+       "uri": "spotify:track:0ZChLjV5xkUroJPp604W90",
+       "name": "Anger",
        "popularity": null,
-       "album": "Pit Vyper",
+       "album": "Emotions",
        "album_type": "single",
-       "release_date": "2025-02-14",
-       "duration_ms": 284733,
-       "explicit": true
+       "release_date": "2025-05-16",
+       "duration_ms": 141688,
+       "explicit": false
       },
       {
-       "id": "51szcL9rObi7CmpPzcOwHo",
-       "uri": "spotify:track:51szcL9rObi7CmpPzcOwHo",
-       "name": "Look to the Skies",
+       "id": "74kfX8dTx0aVo0BvvPZC3W",
+       "uri": "spotify:track:74kfX8dTx0aVo0BvvPZC3W",
+       "name": "Introducing The Matrix",
        "popularity": null,
-       "album": "Look to the Skies",
+       "album": "Introducing The Matrix",
        "album_type": "single",
-       "release_date": "2025-04-04",
-       "duration_ms": 258746,
+       "release_date": "2024-10-26",
+       "duration_ms": 156316,
        "explicit": false
       }
      ],
      "rank_source": "lastfm",
-     "mbid": null,
+     "mbid": "a6d60e98-b829-4e32-b15c-a126903800ba",
      "reach": {
-      "listeners": 85,
-      "playcount": 393,
+      "listeners": 236,
+      "playcount": 1584,
       "tags": [],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Cr%C3%BCzer",
-      "mbid": null
+      "lastfm_url": "https://www.last.fm/music/Cruzer",
+      "mbid": "a6d60e98-b829-4e32-b15c-a126903800ba"
      },
      "genres_canon": []
     }
@@ -29479,11 +29490,12 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 160,
-      "playcount": 280,
+      "listeners": 161,
+      "playcount": 282,
       "tags": [],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/R&B+ONLY"
+      "lastfm_url": "https://www.last.fm/music/R&B+ONLY",
+      "mbid": null
      },
      "genres_canon": []
     }
