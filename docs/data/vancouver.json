@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-10-09T19:35:49+00:00",
+ "generated_at": "2026-10-10T18:44:01+00:00",
  "scraped_at": "2026-10-07T20:02:03+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -2366,7 +2366,7 @@
      "songkick_genres": [],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab67616d00004851bd68ce37bdabe155e99f3893",
+     "image": "https://i.scdn.co/image/ab67616d0000485172e47986b2f57224f9e53fe8",
      "tracks": [
       {
        "id": "0WBaSEdHg8cvwbyEr7gUSG",
@@ -3989,7 +3989,7 @@
        "ambient",
        "dream pop",
        "electronic",
-       "experimental pop"
+       "chillwave"
       ],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Friend+Request",
@@ -8687,8 +8687,8 @@
      "rank_source": "lastfm",
      "mbid": "545fce1f-f8d6-46e8-8e01-60a911216541",
      "reach": {
-      "listeners": 328456,
-      "playcount": 5810444,
+      "listeners": 329539,
+      "playcount": 5840504,
       "tags": [
        "lo-fi",
        "slowcore",
@@ -8763,8 +8763,8 @@
      "rank_source": "lastfm",
      "mbid": "bfbcb58b-2403-4550-944e-e405e733524a",
      "reach": {
-      "listeners": 70443,
-      "playcount": 689500,
+      "listeners": 71102,
+      "playcount": 698579,
       "tags": [
        "indie rock",
        "pop",
@@ -8839,12 +8839,13 @@
      "rank_source": "lastfm",
      "mbid": "0ca95f28-1981-475f-b2d1-05359aa94095",
      "reach": {
-      "listeners": 160890,
-      "playcount": 2764807,
+      "listeners": 161701,
+      "playcount": 2779489,
       "tags": [
        "pop",
        "industrial",
-       "k-pop"
+       "k-pop",
+       "bedroom pop"
       ],
       "tier": 3,
       "lastfm_url": "https://www.last.fm/music/Nep",
@@ -8852,7 +8853,8 @@
      },
      "genres_canon": [
       "pop",
-      "industrial"
+      "industrial",
+      "indie"
      ]
     },
     {
@@ -8949,22 +8951,22 @@
        "explicit": true
       },
       {
-       "id": "3gmcDVzsWcnLJyxpwOkMJq",
-       "uri": "spotify:track:3gmcDVzsWcnLJyxpwOkMJq",
-       "name": "Your Love",
+       "id": "48aJ5BmJiVnz2AurXSWP2R",
+       "uri": "spotify:track:48aJ5BmJiVnz2AurXSWP2R",
+       "name": "Out Of Control",
        "popularity": null,
-       "album": "Up and Down",
-       "album_type": "single",
-       "release_date": "2009-09-22",
-       "duration_ms": 215841,
+       "album": "She Wants Revenge",
+       "album_type": "album",
+       "release_date": "2005-01-01",
+       "duration_ms": 217293,
        "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "f434ae2b-b203-490d-a8ac-aa9cd51c0e73",
      "reach": {
-      "listeners": 1481349,
-      "playcount": 55906953,
+      "listeners": 1490433,
+      "playcount": 56270160,
       "tags": [
        "post-punk",
        "darkwave",
@@ -9058,43 +9060,32 @@
    "artists": [
     {
      "name": "Mimosa",
-     "spotify_name": "Mimosa",
-     "spotify_id": "4BoAXqVwV8T2UH1xKPjCl8",
-     "url": "https://open.spotify.com/artist/4BoAXqVwV8T2UH1xKPjCl8",
+     "spotify_name": "MIMOSA",
+     "spotify_id": "64XUJ8nVZaAZ8U42pvw7Rl",
+     "url": "https://open.spotify.com/artist/64XUJ8nVZaAZ8U42pvw7Rl",
      "genres": [],
      "songkick_genres": [],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f17848184fa6275c70ea76cab280",
+     "image": "https://i.scdn.co/image/ab6761610000f178e7382a523097fbbbe8365469",
      "tracks": [
       {
-       "id": "3DRpifzrQCW8CPszfwcH2W",
-       "uri": "spotify:track:3DRpifzrQCW8CPszfwcH2W",
-       "name": "Farewell Waltz",
+       "id": "4xbkjchDDYsX3OoyeF4MUB",
+       "uri": "spotify:track:4xbkjchDDYsX3OoyeF4MUB",
+       "name": "Côte d'Azur",
        "popularity": null,
-       "album": "Farewell Waltz",
+       "album": "Côte d'Azur",
        "album_type": "single",
-       "release_date": "2023-12-13",
-       "duration_ms": 62994,
-       "explicit": false
-      },
-      {
-       "id": "4UDeolUbibvbobpyzDarKQ",
-       "uri": "spotify:track:4UDeolUbibvbobpyzDarKQ",
-       "name": "Rêverie",
-       "popularity": null,
-       "album": "Rêverie",
-       "album_type": "single",
-       "release_date": "2026-02-06",
-       "duration_ms": 109562,
+       "release_date": "2024-01-12",
+       "duration_ms": 193157,
        "explicit": false
       }
      ],
      "rank_source": "search",
      "mbid": "bc38e367-9d50-4baa-b801-ee659120ed22",
      "reach": {
-      "listeners": 170288,
-      "playcount": 1535114,
+      "listeners": 170612,
+      "playcount": 1536597,
       "tags": [
        "dubstep",
        "glitch",
@@ -9154,22 +9145,22 @@
        "explicit": false
       },
       {
-       "id": "2V2pxcEfn5zs79sE7qcewA",
-       "uri": "spotify:track:2V2pxcEfn5zs79sE7qcewA",
-       "name": "Now And Forever",
+       "id": "1ntKYuqLlmV3sTZoNyeHhM",
+       "uri": "spotify:track:1ntKYuqLlmV3sTZoNyeHhM",
+       "name": "Hazard",
        "popularity": null,
-       "album": "Paid Vacation",
+       "album": "Rush Street",
        "album_type": "album",
-       "release_date": "1994-01-01",
-       "duration_ms": 214826,
+       "release_date": "1991-01-01",
+       "duration_ms": 317306,
        "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "e33c460f-011a-469a-b934-08932a3729c4",
      "reach": {
-      "listeners": 809959,
-      "playcount": 7787280,
+      "listeners": 812075,
+      "playcount": 7807012,
       "tags": [
        "pop",
        "soft rock",
@@ -9229,22 +9220,22 @@
        "explicit": false
       },
       {
-       "id": "2SbpXRYXiDbkGAEzGyOwDZ",
-       "uri": "spotify:track:2SbpXRYXiDbkGAEzGyOwDZ",
-       "name": "Snowball",
+       "id": "0kjxdD8Ahn7XxQcrsHXZyS",
+       "uri": "spotify:track:0kjxdD8Ahn7XxQcrsHXZyS",
+       "name": "All For Nothing",
        "popularity": null,
-       "album": "Snowball",
+       "album": "Back in a Heartbeat",
        "album_type": "single",
-       "release_date": "2025-07-27",
-       "duration_ms": 229221,
+       "release_date": "2026-10-02",
+       "duration_ms": 241986,
        "explicit": false
       }
      ],
      "rank_source": "search",
      "mbid": "6043fb89-1a6f-46ba-a39b-d81d1527f409",
      "reach": {
-      "listeners": 2441,
-      "playcount": 7182,
+      "listeners": 2456,
+      "playcount": 7245,
       "tags": [
        "funrock",
        "rock",
@@ -27816,58 +27807,6 @@
       "mbid": null
      },
      "genres_canon": []
-    },
-    {
-     "name": "softhead",
-     "spotify_name": "softhead",
-     "spotify_id": "2nq3JoZK43Y5eeZPNReJI8",
-     "url": "https://open.spotify.com/artist/2nq3JoZK43Y5eeZPNReJI8",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f17877815e8454480b7c89a1940e",
-     "tracks": [
-      {
-       "id": "5unUI1k6I71ukEVsfVOlBe",
-       "uri": "spotify:track:5unUI1k6I71ukEVsfVOlBe",
-       "name": "Cirrus",
-       "popularity": null,
-       "album": "Dazed and Confused",
-       "album_type": "single",
-       "release_date": "2021-09-09",
-       "duration_ms": 110769,
-       "explicit": false
-      },
-      {
-       "id": "4xhLpuypn1JCVdklz1FLYt",
-       "uri": "spotify:track:4xhLpuypn1JCVdklz1FLYt",
-       "name": "Liliac",
-       "popularity": null,
-       "album": "Liliac",
-       "album_type": "single",
-       "release_date": "2022-05-06",
-       "duration_ms": 91428,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": null,
-     "reach": {
-      "listeners": 28179,
-      "playcount": 199842,
-      "tags": [
-       "hip hop",
-       "jazz"
-      ],
-      "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Softhead",
-      "mbid": null
-     },
-     "genres_canon": [
-      "hip hop",
-      "jazz"
-     ]
     }
    ]
   },
@@ -33453,6 +33392,13 @@
    "event": "UNREAL CITY ’27 FUNDRAISER: Semi, good for it, Rainbows End, softhead",
    "date": "2026-11-06",
    "reason": "not_on_lastfm",
+   "candidates": []
+  },
+  {
+   "artist": "softhead",
+   "event": "UNREAL CITY ’27 FUNDRAISER: Semi, good for it, Rainbows End, softhead",
+   "date": "2026-11-06",
+   "reason": "no_tracks",
    "candidates": []
   },
   {
