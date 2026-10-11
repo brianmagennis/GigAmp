@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-10-10T18:44:01+00:00",
+ "generated_at": "2026-10-11T19:03:11+00:00",
  "scraped_at": "2026-10-07T20:02:03+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -827,8 +827,8 @@
      "rank_source": "lastfm",
      "mbid": "18cbea79-4620-41b0-9553-2689b87b18d3",
      "reach": {
-      "listeners": 44256,
-      "playcount": 1037833,
+      "listeners": 45658,
+      "playcount": 1067597,
       "tags": [
        "pop rock",
        "nu metal",
@@ -3480,17 +3480,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178ade6b4299e15528c28816ddc",
      "tracks": [
       {
-       "id": "67R5B7wVon1jUoHGCecJpd",
-       "uri": "spotify:track:67R5B7wVon1jUoHGCecJpd",
-       "name": "Waiting - Single Mix",
-       "popularity": null,
-       "album": "Waiting",
-       "album_type": "single",
-       "release_date": "2024-06-14",
-       "duration_ms": 246421,
-       "explicit": false
-      },
-      {
        "id": "4mMhAxT10WkVVwGoiSwPTK",
        "uri": "spotify:track:4mMhAxT10WkVVwGoiSwPTK",
        "name": "Far Away",
@@ -3500,18 +3489,29 @@
        "release_date": "2022-05-27",
        "duration_ms": 258454,
        "explicit": false
+      },
+      {
+       "id": "67R5B7wVon1jUoHGCecJpd",
+       "uri": "spotify:track:67R5B7wVon1jUoHGCecJpd",
+       "name": "Waiting - Single Mix",
+       "popularity": null,
+       "album": "Waiting",
+       "album_type": "single",
+       "release_date": "2024-06-14",
+       "duration_ms": 246421,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "bfec6c34-9b1c-4ada-94fc-4295fa5ff53c",
      "reach": {
-      "listeners": 15338,
-      "playcount": 188944,
+      "listeners": 15467,
+      "playcount": 191287,
       "tags": [
        "synthpop",
        "new wave",
        "synthwave",
-       "brian tarney"
+       "rutracker"
       ],
       "tier": 2,
       "lastfm_url": "https://www.last.fm/music/Sacred+Skin",
@@ -4055,11 +4055,12 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 826,
-      "playcount": 9024,
+      "listeners": 837,
+      "playcount": 9185,
       "tags": [
        "country",
-       "psychobilly"
+       "psychobilly",
+       "cowpunk"
       ],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Spank+Williams",
@@ -4067,7 +4068,8 @@
      },
      "genres_canon": [
       "country",
-      "psychedelic"
+      "psychedelic",
+      "punk"
      ]
     },
     {
@@ -4082,6 +4084,17 @@
      "image": "https://i.scdn.co/image/ab6761610000f178f0a48ee9f30fdaba49cc9667",
      "tracks": [
       {
+       "id": "5j4eiumYSJggM3mMZAcWrI",
+       "uri": "spotify:track:5j4eiumYSJggM3mMZAcWrI",
+       "name": "Stranger",
+       "popularity": null,
+       "album": "Stranger",
+       "album_type": "single",
+       "release_date": "2026-02-05",
+       "duration_ms": 211000,
+       "explicit": false
+      },
+      {
        "id": "4IS4x8yftWRkAdO0kEkriz",
        "uri": "spotify:track:4IS4x8yftWRkAdO0kEkriz",
        "name": "Wait, a minute (let me catch my breath)",
@@ -4091,24 +4104,13 @@
        "release_date": "2026-04-02",
        "duration_ms": 177000,
        "explicit": false
-      },
-      {
-       "id": "0hqkwF4DPM1OCLUONGyQHQ",
-       "uri": "spotify:track:0hqkwF4DPM1OCLUONGyQHQ",
-       "name": "Apathy",
-       "popularity": null,
-       "album": "Apathy",
-       "album_type": "single",
-       "release_date": "2025-11-14",
-       "duration_ms": 129728,
-       "explicit": true
       }
      ],
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 906,
-      "playcount": 3755,
+      "listeners": 970,
+      "playcount": 4039,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Calcutta+Cowboy",
@@ -8393,17 +8395,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178fae5c9d5cd76323124ea5f9d",
      "tracks": [
       {
-       "id": "5rxMKmvHoRtwlnaYyxMGHb",
-       "uri": "spotify:track:5rxMKmvHoRtwlnaYyxMGHb",
-       "name": "Fun",
-       "popularity": null,
-       "album": "Sol Del Sur",
-       "album_type": "single",
-       "release_date": "2020-07-10",
-       "duration_ms": 149849,
-       "explicit": false
-      },
-      {
        "id": "61EuOHKJepAeaXUTGUqfH4",
        "uri": "spotify:track:61EuOHKJepAeaXUTGUqfH4",
        "name": "Sol Del Sur",
@@ -8413,16 +8404,27 @@
        "release_date": "2020-07-10",
        "duration_ms": 145298,
        "explicit": false
+      },
+      {
+       "id": "5rxMKmvHoRtwlnaYyxMGHb",
+       "uri": "spotify:track:5rxMKmvHoRtwlnaYyxMGHb",
+       "name": "Fun",
+       "popularity": null,
+       "album": "Sol Del Sur",
+       "album_type": "single",
+       "release_date": "2020-07-10",
+       "duration_ms": 149849,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "4ef0f37a-c8bd-43a1-a6b6-8e1218fd6d6c",
      "reach": {
-      "listeners": 181243,
-      "playcount": 1977346,
+      "listeners": 182804,
+      "playcount": 1986315,
       "tags": [
-       "surf rock",
        "garage rock",
+       "surf rock",
        "surf",
        "garage punk"
       ],
@@ -8995,7 +8997,7 @@
      ],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178c2b60b9afff191eff42bdf78",
+     "image": "https://i.scdn.co/image/ab6761610000f178b57c2c74383d72dc8a5b92db",
      "tracks": [
       {
        "id": "46wUbWmzkErgLoBnfrFZ5f",
@@ -9023,13 +9025,12 @@
      "rank_source": "lastfm",
      "mbid": "03fc75f0-eada-439a-8cf2-0185be70c13e",
      "reach": {
-      "listeners": 98142,
-      "playcount": 2007776,
+      "listeners": 98914,
+      "playcount": 2025327,
       "tags": [
        "post-punk",
        "gothic rock",
-       "goth",
-       "gothic"
+       "goth"
       ],
       "tier": 3,
       "lastfm_url": "https://www.last.fm/music/Rosegarden+Funeral+Party",
@@ -9357,6 +9358,17 @@
      "image": "https://i.scdn.co/image/ab6761610000f1787f05a6c3cd9eec0b83150b69",
      "tracks": [
       {
+       "id": "2H30WL3exSctlDC9GyRbD4",
+       "uri": "spotify:track:2H30WL3exSctlDC9GyRbD4",
+       "name": "Live Well",
+       "popularity": null,
+       "album": "So Long Forever",
+       "album_type": "album",
+       "release_date": "2016-11-04",
+       "duration_ms": 249840,
+       "explicit": false
+      },
+      {
        "id": "2DkZisoN9h1dLa8Sn5sx0n",
        "uri": "spotify:track:2DkZisoN9h1dLa8Sn5sx0n",
        "name": "Bitter",
@@ -9366,28 +9378,17 @@
        "release_date": "2016-11-04",
        "duration_ms": 233360,
        "explicit": false
-      },
-      {
-       "id": "60DSysH1dDIThBHXpNxSNv",
-       "uri": "spotify:track:60DSysH1dDIThBHXpNxSNv",
-       "name": "Greyhound",
-       "popularity": null,
-       "album": "Greyhound",
-       "album_type": "single",
-       "release_date": "2025-01-14",
-       "duration_ms": 226235,
-       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "9ea6e46d-049e-4967-9491-89bc8aacaa20",
      "reach": {
-      "listeners": 708677,
-      "playcount": 15847116,
+      "listeners": 712063,
+      "playcount": 15943513,
       "tags": [
        "alt-country",
-       "folk",
-       "heavy metal"
+       "heavy metal",
+       "folk"
       ],
       "tier": 4,
       "lastfm_url": "https://www.last.fm/music/Palace",
@@ -9395,8 +9396,8 @@
      },
      "genres_canon": [
       "americana",
-      "folk",
-      "metal"
+      "metal",
+      "folk"
      ]
     }
    ]
@@ -9614,17 +9615,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f1784f4001d81d610a3446659a20",
      "tracks": [
       {
-       "id": "7irdHjaATYpBGyrN9IAFVb",
-       "uri": "spotify:track:7irdHjaATYpBGyrN9IAFVb",
-       "name": "Better",
-       "popularity": null,
-       "album": "Bloom Burn",
-       "album_type": "album",
-       "release_date": "2020-02-28",
-       "duration_ms": 179386,
-       "explicit": false
-      },
-      {
        "id": "0xLXJQsdSkdROHRGa4s8yl",
        "uri": "spotify:track:0xLXJQsdSkdROHRGa4s8yl",
        "name": "Talk Show Host",
@@ -9634,13 +9624,24 @@
        "release_date": "2008-07-03",
        "duration_ms": 179960,
        "explicit": false
+      },
+      {
+       "id": "6u0NYmWvqlBR6es8a6gm2c",
+       "uri": "spotify:track:6u0NYmWvqlBR6es8a6gm2c",
+       "name": "Bop Bop Beatdown",
+       "popularity": null,
+       "album": "Fame Fatale",
+       "album_type": "album",
+       "release_date": "2011-02-01",
+       "duration_ms": 213066,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
       "listeners": 264,
-      "playcount": 1281,
+      "playcount": 1282,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/KRYSTLE+DOS+SANTOS",
@@ -9685,13 +9686,13 @@
      "rank_source": "lastfm",
      "mbid": "2584dbb7-683d-498a-a2c5-05147e07587e",
      "reach": {
-      "listeners": 18027,
-      "playcount": 133409,
+      "listeners": 18054,
+      "playcount": 133502,
       "tags": [
        "hip-hop",
        "rap",
        "northwest",
-       "hip hop"
+       "underground hip-hop"
       ],
       "tier": 2,
       "lastfm_url": "https://www.last.fm/music/Gabriel+Teodros",
@@ -9735,17 +9736,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178f526d38c0c8a803c9f993d86",
      "tracks": [
       {
-       "id": "059oi8kpPq54E1GSvT7VYa",
-       "uri": "spotify:track:059oi8kpPq54E1GSvT7VYa",
-       "name": "For My Smoke",
-       "popularity": null,
-       "album": "For My Smoke",
-       "album_type": "album",
-       "release_date": "2004-07-30",
-       "duration_ms": 303813,
-       "explicit": false
-      },
-      {
        "id": "0JB7eGegqNn4cIMJpixbbd",
        "uri": "spotify:track:0JB7eGegqNn4cIMJpixbbd",
        "name": "16 Shells From A Thirty-Ought Six",
@@ -9755,13 +9745,24 @@
        "release_date": "2004-07-30",
        "duration_ms": 299720,
        "explicit": false
+      },
+      {
+       "id": "3sN72b6sh267xXYZDw2lUY",
+       "uri": "spotify:track:3sN72b6sh267xXYZDw2lUY",
+       "name": "Diamonds",
+       "popularity": null,
+       "album": "For My Smoke",
+       "album_type": "album",
+       "release_date": "2004-07-30",
+       "duration_ms": 253666,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 179,
-      "playcount": 1628,
+      "listeners": 186,
+      "playcount": 1637,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Shiloh+Lindsey",
@@ -9798,17 +9799,6 @@
      "image": null,
      "tracks": [
       {
-       "id": "6tkuPsJ2BYJCobqFlQtelZ",
-       "uri": "spotify:track:6tkuPsJ2BYJCobqFlQtelZ",
-       "name": "udstal",
-       "popularity": null,
-       "album": "en/ix",
-       "album_type": "album",
-       "release_date": "2022-04-07",
-       "duration_ms": 680000,
-       "explicit": false
-      },
-      {
        "id": "5VKZgN2ZIje5bV0K9fLdXE",
        "uri": "spotify:track:5VKZgN2ZIje5bV0K9fLdXE",
        "name": "W.W.K. (When We Kiss) - Erryc Knight",
@@ -9817,6 +9807,17 @@
        "album_type": "single",
        "release_date": "2023-09-22",
        "duration_ms": 182857,
+       "explicit": false
+      },
+      {
+       "id": "6tkuPsJ2BYJCobqFlQtelZ",
+       "uri": "spotify:track:6tkuPsJ2BYJCobqFlQtelZ",
+       "name": "udstal",
+       "popularity": null,
+       "album": "en/ix",
+       "album_type": "album",
+       "release_date": "2022-04-07",
+       "duration_ms": 680000,
        "explicit": false
       }
      ],
@@ -9886,12 +9887,12 @@
      "rank_source": "lastfm",
      "mbid": "99119507-b65f-453e-9ddd-63f8f5233997",
      "reach": {
-      "listeners": 9757,
-      "playcount": 104984,
+      "listeners": 9820,
+      "playcount": 107638,
       "tags": [
        "rock",
-       "alternative",
        "folk rock",
+       "alternative",
        "canadiana"
       ],
       "tier": 2,
@@ -10386,6 +10387,17 @@
      "image": "https://i.scdn.co/image/ab6761610000f17886986fd933294cb07ecd2e99",
      "tracks": [
       {
+       "id": "2YBVnFZlsRR4ssWXodkWPY",
+       "uri": "spotify:track:2YBVnFZlsRR4ssWXodkWPY",
+       "name": "\"Listen to Your Heart.\" \"No.\"",
+       "popularity": null,
+       "album": "Emphatically No.",
+       "album_type": "album",
+       "release_date": "2021-01-11",
+       "duration_ms": 140086,
+       "explicit": false
+      },
+      {
        "id": "37d8EPbS6y4PUjdrBeKO7k",
        "uri": "spotify:track:37d8EPbS6y4PUjdrBeKO7k",
        "name": "We Need a Bigger Dumpster",
@@ -10395,24 +10407,13 @@
        "release_date": "2022-08-02",
        "duration_ms": 225349,
        "explicit": false
-      },
-      {
-       "id": "77mq1sH79ZrnFz4X9AjQ5s",
-       "uri": "spotify:track:77mq1sH79ZrnFz4X9AjQ5s",
-       "name": "I Feel So Weird!",
-       "popularity": null,
-       "album": "Too Much to Ask",
-       "album_type": "album",
-       "release_date": "2022-08-02",
-       "duration_ms": 156373,
-       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "fc0b6d53-d174-4b91-9c8e-dc0564275ff6",
      "reach": {
-      "listeners": 136340,
-      "playcount": 5330277,
+      "listeners": 138881,
+      "playcount": 5391947,
       "tags": [
        "indie rock",
        "post-punk",
@@ -10469,7 +10470,7 @@
        "explicit": false
       }
      ],
-     "rank_source": "lastfm",
+     "rank_source": "lastfm+search",
      "mbid": null,
      "reach": {
       "listeners": 15,
@@ -10523,22 +10524,22 @@
        "explicit": false
       },
       {
-       "id": "3PUnmXpIRfLa8yI9wfgJPC",
-       "uri": "spotify:track:3PUnmXpIRfLa8yI9wfgJPC",
-       "name": "Children",
+       "id": "5cGBQ9W3XtRuRQFgDklDrI",
+       "uri": "spotify:track:5cGBQ9W3XtRuRQFgDklDrI",
+       "name": "Voodoo",
        "popularity": null,
-       "album": "Children",
+       "album": "Perfect Mistakes",
        "album_type": "single",
-       "release_date": "2020-09-25",
-       "duration_ms": 245927,
+       "release_date": "2022-10-04",
+       "duration_ms": 233804,
        "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "2d098124-cb9d-4e80-992f-47e47c405452",
      "reach": {
-      "listeners": 428139,
-      "playcount": 5912718,
+      "listeners": 429303,
+      "playcount": 5931295,
       "tags": [
        "progressive house",
        "electro house",
@@ -10653,6 +10654,17 @@
      "image": "https://i.scdn.co/image/ab6761610000f1781a07967552537f6f10e6fe51",
      "tracks": [
       {
+       "id": "5ZduaRci3iNUiDfJbBfAaf",
+       "uri": "spotify:track:5ZduaRci3iNUiDfJbBfAaf",
+       "name": "Give It To Me - Full Vocal Mix",
+       "popularity": null,
+       "album": "Give It To Me (Full Vocal Mix)",
+       "album_type": "single",
+       "release_date": "2021-10-22",
+       "duration_ms": 102860,
+       "explicit": false
+      },
+      {
        "id": "7xFy1kfgGWJWTpx1vSHBLi",
        "uri": "spotify:track:7xFy1kfgGWJWTpx1vSHBLi",
        "name": "It Feels So Good",
@@ -10662,28 +10674,18 @@
        "release_date": "2024-11-01",
        "duration_ms": 160973,
        "explicit": false
-      },
-      {
-       "id": "0nD1ddzxpTjcYlGh8GCLsh",
-       "uri": "spotify:track:0nD1ddzxpTjcYlGh8GCLsh",
-       "name": "Baiana - Club Mix",
-       "popularity": null,
-       "album": "Baiana (Club Mix)",
-       "album_type": "single",
-       "release_date": "2025-05-02",
-       "duration_ms": 206250,
-       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "1e29feb4-34b3-4032-b054-c13d737cfdf5",
      "reach": {
-      "listeners": 520871,
-      "playcount": 4330969,
+      "listeners": 522270,
+      "playcount": 4340605,
       "tags": [
        "techno",
        "minimal",
-       "electronic"
+       "electronic",
+       "tech-house"
       ],
       "tier": 4,
       "lastfm_url": "https://www.last.fm/music/Matt+Sassari",
@@ -10691,7 +10693,8 @@
      },
      "genres_canon": [
       "techno",
-      "electronic"
+      "electronic",
+      "house"
      ]
     }
    ]
@@ -11796,7 +11799,7 @@
        "explicit": false
       }
      ],
-     "rank_source": "lastfm",
+     "rank_source": "lastfm+search",
      "mbid": null,
      "reach": {
       "listeners": 15,
@@ -12245,19 +12248,8 @@
      "songkick_genres": [],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1780766d8bd04f485c80850620c",
+     "image": "https://i.scdn.co/image/ab6761610000f17812e8898ca31c732958d95c48",
      "tracks": [
-      {
-       "id": "0mwBF3mUGXkUsE3MCfAHwL",
-       "uri": "spotify:track:0mwBF3mUGXkUsE3MCfAHwL",
-       "name": "Demon Queen",
-       "popularity": null,
-       "album": "Nebula",
-       "album_type": "album",
-       "release_date": "2023-05-19",
-       "duration_ms": 195054,
-       "explicit": false
-      },
       {
        "id": "6ohDjqis2dheEkwxzSzo4M",
        "uri": "spotify:track:6ohDjqis2dheEkwxzSzo4M",
@@ -12268,13 +12260,24 @@
        "release_date": "2023-05-19",
        "duration_ms": 225358,
        "explicit": false
+      },
+      {
+       "id": "0mwBF3mUGXkUsE3MCfAHwL",
+       "uri": "spotify:track:0mwBF3mUGXkUsE3MCfAHwL",
+       "name": "Demon Queen",
+       "popularity": null,
+       "album": "Nebula",
+       "album_type": "album",
+       "release_date": "2023-05-19",
+       "duration_ms": 195054,
+       "explicit": false
       }
      ],
      "rank_source": "search",
      "mbid": null,
      "reach": {
-      "listeners": 28093,
-      "playcount": 188432,
+      "listeners": 28115,
+      "playcount": 188668,
       "tags": [
        "garage rock",
        "stoner rock",
@@ -22039,7 +22042,7 @@
        "explicit": false
       }
      ],
-     "rank_source": "lastfm",
+     "rank_source": "lastfm+search",
      "mbid": null,
      "reach": {
       "listeners": 46,
@@ -27315,11 +27318,12 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 826,
-      "playcount": 9024,
+      "listeners": 837,
+      "playcount": 9185,
       "tags": [
        "country",
-       "psychobilly"
+       "psychobilly",
+       "cowpunk"
       ],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Spank+Williams",
@@ -27327,7 +27331,8 @@
      },
      "genres_canon": [
       "country",
-      "psychedelic"
+      "psychedelic",
+      "punk"
      ]
     }
    ]
