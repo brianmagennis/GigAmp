@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-10-12T22:10:54+00:00",
+ "generated_at": "2026-10-13T20:17:21+00:00",
  "scraped_at": "2026-10-07T20:02:03+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -10808,6 +10808,77 @@
    ]
   },
   {
+   "id": "do604-2026-10-17-dirge-inherent-suffering-record-release-",
+   "name": "Dirge 'Inherent Suffering' record release",
+   "source": "do604",
+   "date": "2026-10-17",
+   "start": "2026-10-17T18:00-0700",
+   "venue": "Green Auto",
+   "venue_id": "green-auto",
+   "locality": "Vancouver",
+   "url": "https://do604.com/events/2026/10/17/dirge-inherent-suffering-record-release-tickets",
+   "also_listed": [],
+   "lat": null,
+   "lng": null,
+   "headliner": "Dirge",
+   "artists": [
+    {
+     "name": "Dirge",
+     "spotify_name": "Dirge",
+     "spotify_id": "2VZbu8qm3AKh9kBvwuB8Rt",
+     "url": "https://open.spotify.com/artist/2VZbu8qm3AKh9kBvwuB8Rt",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f178348e1cd91ca25e7812109dca",
+     "tracks": [
+      {
+       "id": "6pLXOH9v6E46rXkm01sj9F",
+       "uri": "spotify:track:6pLXOH9v6E46rXkm01sj9F",
+       "name": "Human Shrapnel",
+       "popularity": null,
+       "album": "Inherent Suffering",
+       "album_type": "album",
+       "release_date": "2026-09-17",
+       "duration_ms": 112954,
+       "explicit": false
+      },
+      {
+       "id": "2j4dbWiHTzlGPcNFH0dq1s",
+       "uri": "spotify:track:2j4dbWiHTzlGPcNFH0dq1s",
+       "name": "Mission: Insufferable",
+       "popularity": null,
+       "album": "Inherent Suffering",
+       "album_type": "album",
+       "release_date": "2026-09-17",
+       "duration_ms": 40491,
+       "explicit": false
+      }
+     ],
+     "rank_source": "search",
+     "mbid": "4c24bc91-9c62-41b6-babb-f4c51200194b",
+     "reach": {
+      "listeners": 36325,
+      "playcount": 625616,
+      "tags": [
+       "post-metal",
+       "sludge",
+       "doom metal",
+       "post-rock"
+      ],
+      "tier": 2,
+      "lastfm_url": "https://www.last.fm/music/Dirge",
+      "mbid": "4c24bc91-9c62-41b6-babb-f4c51200194b"
+     },
+     "genres_canon": [
+      "metal",
+      "post-rock"
+     ]
+    }
+   ]
+  },
+  {
    "id": "do604-2026-10-17-big-rig-bennett-mitchell-jon-mckiel-tick",
    "name": "Big Rig, Bennett Mitchell, Jon McKiel",
    "source": "do604",
@@ -11716,17 +11787,6 @@
      "image": "https://i.scdn.co/image/ab6761610000f178dcc8d87d5dd4dbed3dd0c95e",
      "tracks": [
       {
-       "id": "4hz5itl0tUhW7zrpPLT6YH",
-       "uri": "spotify:track:4hz5itl0tUhW7zrpPLT6YH",
-       "name": "Ready Steady Go",
-       "popularity": null,
-       "album": "Southern Sun / Ready Steady Go",
-       "album_type": "single",
-       "release_date": "2002-03-19",
-       "duration_ms": 205560,
-       "explicit": false
-      },
-      {
        "id": "7uRPUuUJpqMLvl785x4Een",
        "uri": "spotify:track:7uRPUuUJpqMLvl785x4Een",
        "name": "Starry Eyed Surprise",
@@ -11736,13 +11796,24 @@
        "release_date": "2002",
        "duration_ms": 227722,
        "explicit": false
+      },
+      {
+       "id": "2ufzVMZ5WswvaBgNvEEhcb",
+       "uri": "spotify:track:2ufzVMZ5WswvaBgNvEEhcb",
+       "name": "Zoo York",
+       "popularity": null,
+       "album": "Bunkka (Remastered)",
+       "album_type": "album",
+       "release_date": "2002",
+       "duration_ms": 326977,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "7bf1f441-ccf1-4258-9797-07c8d16eb44c",
      "reach": {
-      "listeners": 943770,
-      "playcount": 12338410,
+      "listeners": 944602,
+      "playcount": 12350325,
       "tags": [
        "trance",
        "electronic",
@@ -11936,7 +12007,7 @@
      "mbid": null,
      "reach": {
       "listeners": 895,
-      "playcount": 6064,
+      "playcount": 6072,
       "tags": [
        "blues rock",
        "blues",
@@ -12162,11 +12233,11 @@
      "rank_source": "lastfm",
      "mbid": "01dab8e8-0fbe-47ee-ba32-1608514c5abe",
      "reach": {
-      "listeners": 8688,
-      "playcount": 42370,
+      "listeners": 8813,
+      "playcount": 42982,
       "tags": [
-       "fuzz",
        "indie rock",
+       "fuzz",
        "garage rock",
        "stoner rock"
       ],
@@ -12337,27 +12408,27 @@
        "explicit": false
       },
       {
-       "id": "242iRyVvdneByTd8GgpcIN",
-       "uri": "spotify:track:242iRyVvdneByTd8GgpcIN",
-       "name": "Say Somethin'",
+       "id": "6LFVo9IwLTLMDPpR2odlI0",
+       "uri": "spotify:track:6LFVo9IwLTLMDPpR2odlI0",
+       "name": "For You",
        "popularity": null,
        "album": "Say Somethin'",
        "album_type": "album",
        "release_date": "2014-10-31",
-       "duration_ms": 343973,
+       "duration_ms": 243893,
        "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "59bea280-8c18-4b16-ba7d-e18e2892630d",
      "reach": {
-      "listeners": 294,
-      "playcount": 1933,
+      "listeners": 295,
+      "playcount": 1935,
       "tags": [
        "soul",
        "rnb",
        "indie soul",
-       "soulful voices that ought to be cherished"
+       "underground soul"
       ],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Dawn+Pemberton",
@@ -12938,8 +13009,8 @@
      "rank_source": "lastfm",
      "mbid": "02f44a81-34f0-4f52-9ab7-c3cfcdb60333",
      "reach": {
-      "listeners": 791678,
-      "playcount": 9385189,
+      "listeners": 794505,
+      "playcount": 9406334,
       "tags": [
        "pop",
        "rock",
@@ -12996,26 +13067,26 @@
        "explicit": false
       },
       {
-       "id": "59c2xv2kMzYM6HR9oY6BIa",
-       "uri": "spotify:track:59c2xv2kMzYM6HR9oY6BIa",
-       "name": "Sweet Boy",
+       "id": "5vPUv0xziXbV4lnWeVNXNq",
+       "uri": "spotify:track:5vPUv0xziXbV4lnWeVNXNq",
+       "name": "Roommates",
        "popularity": null,
        "album": "Sweet Boy",
        "album_type": "album",
        "release_date": "2024-04-05",
-       "duration_ms": 180000,
-       "explicit": true
+       "duration_ms": 214504,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "6c2a79b8-2b5c-4c2d-b495-6a446811bf9d",
      "reach": {
-      "listeners": 1737885,
-      "playcount": 144968298,
+      "listeners": 1778853,
+      "playcount": 149665006,
       "tags": [
        "alternative rnb",
-       "indie rock",
-       "queer"
+       "fav",
+       "bedroom pop"
       ],
       "tier": 4,
       "lastfm_url": "https://www.last.fm/music/Malcolm+Todd",
@@ -32733,13 +32804,6 @@
    "event": "AFTER DARK: John Lee Organ Trio featuring Kosma Busheikin & Graham Villette",
    "date": "2026-10-16",
    "reason": "not_on_lastfm",
-   "candidates": []
-  },
-  {
-   "artist": "Dirge",
-   "event": "Dirge 'Inherent Suffering' record release",
-   "date": "2026-10-17",
-   "reason": "no_tracks",
    "candidates": []
   },
   {
