@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-10-14T18:47:47+00:00",
+ "generated_at": "2026-10-15T18:25:27+00:00",
  "scraped_at": "2026-10-14T18:45:01+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -3513,10 +3513,10 @@
       }
      ],
      "rank_source": "lastfm",
-     "mbid": "a0cb4b84-b8c7-4ff7-b86e-bb3dcb82df32",
+     "mbid": null,
      "reach": {
-      "listeners": 35326,
-      "playcount": 310993,
+      "listeners": 35720,
+      "playcount": 316898,
       "tags": [
        "stoner rock",
        "doom metal",
@@ -3524,8 +3524,7 @@
        "stoner metal"
       ],
       "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/The+Well",
-      "mbid": "a0cb4b84-b8c7-4ff7-b86e-bb3dcb82df32"
+      "lastfm_url": "https://www.last.fm/music/The+Well"
      },
      "genres_canon": [
       "metal",
@@ -19078,16 +19077,17 @@
       }
      ],
      "rank_source": "lastfm",
-     "mbid": null,
+     "mbid": "61604b45-8a91-4e33-a1b6-45d7b1fec4e5",
      "reach": {
-      "listeners": 757767,
-      "playcount": 24525838,
+      "listeners": 757813,
+      "playcount": 24527006,
       "tags": [
        "indie rock",
        "indie pop"
       ],
       "tier": 4,
-      "lastfm_url": "https://www.last.fm/music/Destroyer"
+      "lastfm_url": "https://www.last.fm/music/Destroyer",
+      "mbid": "61604b45-8a91-4e33-a1b6-45d7b1fec4e5"
      },
      "genres_canon": [
       "indie",
@@ -20558,16 +20558,17 @@
       }
      ],
      "rank_source": "lastfm",
-     "mbid": null,
+     "mbid": "61604b45-8a91-4e33-a1b6-45d7b1fec4e5",
      "reach": {
-      "listeners": 757767,
-      "playcount": 24525838,
+      "listeners": 757813,
+      "playcount": 24527006,
       "tags": [
        "indie rock",
        "indie pop"
       ],
       "tier": 4,
-      "lastfm_url": "https://www.last.fm/music/Destroyer"
+      "lastfm_url": "https://www.last.fm/music/Destroyer",
+      "mbid": "61604b45-8a91-4e33-a1b6-45d7b1fec4e5"
      },
      "genres_canon": [
       "indie",
@@ -21589,10 +21590,10 @@
       }
      ],
      "rank_source": "lastfm",
-     "mbid": null,
+     "mbid": "2bf761c6-4bcf-4cfc-a388-8fcb2eea8cc8",
      "reach": {
-      "listeners": 1602184,
-      "playcount": 58998352,
+      "listeners": 1602487,
+      "playcount": 59019590,
       "tags": [
        "rnb",
        "pop",
@@ -21600,7 +21601,8 @@
        "amapiano"
       ],
       "tier": 4,
-      "lastfm_url": "https://www.last.fm/music/Tyla"
+      "lastfm_url": "https://www.last.fm/music/Tyla",
+      "mbid": "2bf761c6-4bcf-4cfc-a388-8fcb2eea8cc8"
      },
      "genres_canon": [
       "r&b",

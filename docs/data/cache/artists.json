@@ -33546,10 +33546,10 @@
 },
 "well austin": {
 "query": "The Well (Austin)",
-"fetched_at": "2026-09-14T19:30:38+00:00",
+"fetched_at": "2026-10-15T18:25:24+00:00",
 "reach": {
-"listeners": 35326,
-"playcount": 310993,
+"listeners": 35720,
+"playcount": 316898,
 "tags": [
 "stoner rock",
 "doom metal",
@@ -33557,8 +33557,7 @@
 "stoner metal"
 ],
 "tier": 2,
-"lastfm_url": "https://www.last.fm/music/The+Well",
-"mbid": "a0cb4b84-b8c7-4ff7-b86e-bb3dcb82df32"
+"lastfm_url": "https://www.last.fm/music/The+Well"
 },
 "matcher": 4,
 "spotify_id": "2an1GKmmTWuqY8N1GYBk1t",
@@ -33593,7 +33592,7 @@
 }
 ],
 "rank_source": "lastfm",
-"mbid": "a0cb4b84-b8c7-4ff7-b86e-bb3dcb82df32"
+"mbid": null
 },
 "dawn pemberton": {
 "query": "Dawn Pemberton",
@@ -52441,14 +52440,15 @@
 "query": "Destroyer (CA)",
 "fetched_at": "2026-10-14T18:47:06+00:00",
 "reach": {
-"listeners": 757767,
-"playcount": 24525838,
+"listeners": 757813,
+"playcount": 24527006,
 "tags": [
 "indie rock",
 "indie pop"
 ],
 "tier": 4,
-"lastfm_url": "https://www.last.fm/music/Destroyer"
+"lastfm_url": "https://www.last.fm/music/Destroyer",
+"mbid": "61604b45-8a91-4e33-a1b6-45d7b1fec4e5"
 },
 "matcher": 4,
 "spotify_id": "22ojy4H4ZVpowC4lRRC8In",
@@ -52483,7 +52483,7 @@
 }
 ],
 "rank_source": "lastfm",
-"mbid": null
+"mbid": "61604b45-8a91-4e33-a1b6-45d7b1fec4e5"
 },
 "margaret glaspy": {
 "query": "Margaret Glaspy",
@@ -54148,8 +54148,8 @@
 "query": "Tyla (SA)",
 "fetched_at": "2026-10-14T18:47:34+00:00",
 "reach": {
-"listeners": 1602184,
-"playcount": 58998352,
+"listeners": 1602487,
+"playcount": 59019590,
 "tags": [
 "rnb",
 "pop",
@@ -54157,7 +54157,8 @@
 "amapiano"
 ],
 "tier": 4,
-"lastfm_url": "https://www.last.fm/music/Tyla"
+"lastfm_url": "https://www.last.fm/music/Tyla",
+"mbid": "2bf761c6-4bcf-4cfc-a388-8fcb2eea8cc8"
 },
 "matcher": 4,
 "spotify_id": "3SozjO3Lat463tQICI9LcE",
@@ -54192,7 +54193,7 @@
 }
 ],
 "rank_source": "lastfm",
-"mbid": null
+"mbid": "2bf761c6-4bcf-4cfc-a388-8fcb2eea8cc8"
 },
 "bonobo": {
 "query": "Bonobo",
