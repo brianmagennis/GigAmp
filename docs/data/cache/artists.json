@@ -33548,8 +33548,8 @@
 "query": "The Well (Austin)",
 "fetched_at": "2026-10-15T18:25:24+00:00",
 "reach": {
-"listeners": 35720,
-"playcount": 316898,
+"listeners": 35736,
+"playcount": 317082,
 "tags": [
 "stoner rock",
 "doom metal",
@@ -33557,7 +33557,8 @@
 "stoner metal"
 ],
 "tier": 2,
-"lastfm_url": "https://www.last.fm/music/The+Well"
+"lastfm_url": "https://www.last.fm/music/The+Well",
+"mbid": "a0cb4b84-b8c7-4ff7-b86e-bb3dcb82df32"
 },
 "matcher": 4,
 "spotify_id": "2an1GKmmTWuqY8N1GYBk1t",
@@ -33592,7 +33593,7 @@
 }
 ],
 "rank_source": "lastfm",
-"mbid": null
+"mbid": "a0cb4b84-b8c7-4ff7-b86e-bb3dcb82df32"
 },
 "dawn pemberton": {
 "query": "Dawn Pemberton",
@@ -43418,7 +43419,7 @@
 },
 "dooms night": {
 "query": "Dooms Night",
-"fetched_at": "2026-10-01T19:42:22+00:00",
+"fetched_at": "2026-10-16T18:12:48+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 167,
@@ -43430,9 +43431,9 @@
 },
 "matcher": 4,
 "candidates": [
-"Darren Styles",
 "Alesso",
-"ARMNHMR"
+"Darren Styles",
+"Timmy Trumpet"
 ]
 },
 "alesso": {
