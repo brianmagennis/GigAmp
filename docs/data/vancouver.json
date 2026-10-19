@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-10-18T17:26:52+00:00",
+ "generated_at": "2026-10-19T20:02:30+00:00",
  "scraped_at": "2026-10-14T18:45:01+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -3700,14 +3700,14 @@
        "explicit": false
       },
       {
-       "id": "6W9DuhAJWByg8R2vpWmQK4",
-       "uri": "spotify:track:6W9DuhAJWByg8R2vpWmQK4",
-       "name": "Read the Signs",
+       "id": "698jllkqHwDTIttTlDLKs4",
+       "uri": "spotify:track:698jllkqHwDTIttTlDLKs4",
+       "name": "Soul Friend (Radio Edit)",
        "popularity": null,
-       "album": "Looking for You",
-       "album_type": "album",
-       "release_date": "2026-08-14",
-       "duration_ms": 286974,
+       "album": "Soul Friend",
+       "album_type": "single",
+       "release_date": "2026-10-02",
+       "duration_ms": 214670,
        "explicit": false
       }
      ],
@@ -3715,7 +3715,7 @@
      "mbid": null,
      "reach": {
       "listeners": 4653,
-      "playcount": 24976,
+      "playcount": 24983,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/+noredirect/Sarah+Conner",
@@ -4122,8 +4122,8 @@
      "rank_source": "lastfm",
      "mbid": "b8089b7f-1d18-4e72-b1f7-5a20d6463bee",
      "reach": {
-      "listeners": 34184,
-      "playcount": 237677,
+      "listeners": 34414,
+      "playcount": 240021,
       "tags": [
        "country",
        "beer"
@@ -4173,8 +4173,8 @@
      "rank_source": "lastfm",
      "mbid": "2d5b06e1-a5a0-4da3-93f3-e9649641531e",
      "reach": {
-      "listeners": 1466,
-      "playcount": 5572,
+      "listeners": 1485,
+      "playcount": 5684,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Dalton+Davis",
@@ -4282,19 +4282,19 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 8498,
-      "playcount": 28441,
+      "listeners": 8738,
+      "playcount": 32218,
       "tags": [
-       "punk",
-       "alternative rock"
+       "alternative rock",
+       "punk"
       ],
       "tier": 2,
       "lastfm_url": "https://www.last.fm/music/Dumb+Crush",
       "mbid": null
      },
      "genres_canon": [
-      "punk",
-      "alternative"
+      "alternative",
+      "punk"
      ]
     },
     {
@@ -4334,8 +4334,8 @@
      "rank_source": "lastfm",
      "mbid": "e9e42d37-8e3e-4b0d-8ec6-514121752a8a",
      "reach": {
-      "listeners": 356,
-      "playcount": 1344,
+      "listeners": 357,
+      "playcount": 1353,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Summer%27s+Brother",
@@ -4352,7 +4352,7 @@
      "songkick_genres": [],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178d6ce8c776f91d1244f012f67",
+     "image": "https://i.scdn.co/image/ab6761610000f1786f6be2d59a5954b946855a09",
      "tracks": [
       {
        "id": "3hxk8h6WfOq0CwJzuOaXYP",
@@ -4380,8 +4380,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 952,
-      "playcount": 6904,
+      "listeners": 953,
+      "playcount": 6915,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Haleluya+Hailu",
@@ -4420,19 +4420,19 @@
      "image": "https://i.scdn.co/image/ab6761610000f178946c4c799ae8e5042ccf7b47",
      "tracks": [
       {
-       "id": "5sbs0qh9EIOsAVa3DmFFd4",
-       "uri": "spotify:track:5sbs0qh9EIOsAVa3DmFFd4",
+       "id": "73SrEPT0ROr8HEhUWuHFwo",
+       "uri": "spotify:track:73SrEPT0ROr8HEhUWuHFwo",
        "name": "After Tonight",
        "popularity": null,
        "album": "Holly",
        "album_type": "album",
        "release_date": "2007-07-24",
-       "duration_ms": 240440,
+       "duration_ms": 240346,
        "explicit": false
       },
       {
-       "id": "0myQAbMnCi1jR9X8bjUkne",
-       "uri": "spotify:track:0myQAbMnCi1jR9X8bjUkne",
+       "id": "5deO0FWzfJB9x5S9kIDqF4",
+       "uri": "spotify:track:5deO0FWzfJB9x5S9kIDqF4",
        "name": "Criminal",
        "popularity": null,
        "album": "Holly",
@@ -4445,8 +4445,8 @@
      "rank_source": "lastfm",
      "mbid": "f8471a38-0575-4dcf-b657-401377ad293c",
      "reach": {
-      "listeners": 505515,
-      "playcount": 5978841,
+      "listeners": 505689,
+      "playcount": 5980824,
       "tags": [
        "acoustic",
        "folk"
@@ -4514,8 +4514,8 @@
      "rank_source": "lastfm",
      "mbid": "60aab671-33e6-43a5-9b98-5c5d6c56b732",
      "reach": {
-      "listeners": 32991,
-      "playcount": 370781,
+      "listeners": 33116,
+      "playcount": 372539,
       "tags": [
        "folk",
        "celtic"
@@ -4582,8 +4582,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 2138,
-      "playcount": 22286,
+      "listeners": 2147,
+      "playcount": 22323,
       "tags": [
        "country",
        "rockabilly",
@@ -4656,8 +4656,8 @@
      "rank_source": "lastfm",
      "mbid": "73fe4a37-6860-4bb5-b3ec-0d0c367900ea",
      "reach": {
-      "listeners": 380702,
-      "playcount": 16261253,
+      "listeners": 381206,
+      "playcount": 16291360,
       "tags": [
        "metalcore",
        "metal",
@@ -4712,8 +4712,8 @@
      "rank_source": "lastfm",
      "mbid": "310c1e0e-b267-4055-971d-9d2526d8660c",
      "reach": {
-      "listeners": 97043,
-      "playcount": 3340557,
+      "listeners": 97402,
+      "playcount": 3356377,
       "tags": [
        "post-hardcore",
        "metalcore",
@@ -4740,7 +4740,7 @@
      ],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178ddafbe6c71fbaa6b8e0576e1",
+     "image": "https://i.scdn.co/image/ab6761610000f1782c207b92a3be8a6a2bc4134e",
      "tracks": [
       {
        "id": "5oaHeAd7iPdOPkFBJXiUkS",
@@ -4768,8 +4768,8 @@
      "rank_source": "lastfm",
      "mbid": "a0ee061a-3118-4f3b-9f6c-252c15b67738",
      "reach": {
-      "listeners": 11568,
-      "playcount": 194070,
+      "listeners": 11753,
+      "playcount": 197363,
       "tags": [
        "metalcore",
        "hardcore",
@@ -5018,8 +5018,8 @@
      "rank_source": "lastfm",
      "mbid": "becca5db-ec3a-404d-8e94-03ebf27276e3",
      "reach": {
-      "listeners": 143332,
-      "playcount": 3896069,
+      "listeners": 144476,
+      "playcount": 3995505,
       "tags": [
        "indie rock",
        "jangle pop"
@@ -5086,11 +5086,11 @@
      "rank_source": "lastfm",
      "mbid": "42c654b5-8754-4d49-a76a-ec2a144882ee",
      "reach": {
-      "listeners": 200561,
-      "playcount": 5481106,
+      "listeners": 203878,
+      "playcount": 5602723,
       "tags": [
-       "rock",
        "indie rock",
+       "rock",
        "alt-country",
        "emo"
       ],
@@ -5099,9 +5099,183 @@
       "mbid": "42c654b5-8754-4d49-a76a-ec2a144882ee"
      },
      "genres_canon": [
-      "rock",
       "indie",
+      "rock",
       "americana"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "43276637",
+   "name": "Doc Walker @ Clarke Theatre",
+   "source": "songkick",
+   "date": "2026-10-20",
+   "start": "2026-10-20T19:30:00",
+   "venue": "Clarke Theatre",
+   "venue_id": "clarke-theatre",
+   "locality": "Mission",
+   "url": "https://www.songkick.com/concerts/43276637-doc-walker-at-clarke-theatre",
+   "also_listed": [],
+   "lat": 49.14434,
+   "lng": -122.29198,
+   "headliner": "Doc Walker",
+   "artists": [
+    {
+     "name": "Doc Walker",
+     "spotify_name": "Doc Walker",
+     "spotify_id": "5PGABhW8oXdQS6nINmDJ53",
+     "url": "https://open.spotify.com/artist/5PGABhW8oXdQS6nINmDJ53",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f178c1ae69255c03089a0ef8fbec",
+     "tracks": [
+      {
+       "id": "46q8FmBzaXwovT6yvVfj5o",
+       "uri": "spotify:track:46q8FmBzaXwovT6yvVfj5o",
+       "name": "That's All",
+       "popularity": null,
+       "album": "Beautiful Life",
+       "album_type": "album",
+       "release_date": "2008-04-29",
+       "duration_ms": 229373,
+       "explicit": false
+      },
+      {
+       "id": "34j63sEacOBmm9UPxePwUh",
+       "uri": "spotify:track:34j63sEacOBmm9UPxePwUh",
+       "name": "Beautiful Life",
+       "popularity": null,
+       "album": "Beautiful Life",
+       "album_type": "album",
+       "release_date": "2008-04-29",
+       "duration_ms": 219320,
+       "explicit": false
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": "9eee650d-cba4-4af3-9bfc-6f785d32b53b",
+     "reach": {
+      "listeners": 13673,
+      "playcount": 177984,
+      "tags": [
+       "country",
+       "canadian country",
+       "winnipeg",
+       "good lyrics"
+      ],
+      "tier": 2,
+      "lastfm_url": "https://www.last.fm/music/Doc+Walker",
+      "mbid": "9eee650d-cba4-4af3-9bfc-6f785d32b53b"
+     },
+     "genres_canon": [
+      "country"
+     ]
+    },
+    {
+     "name": "Michelle Wright",
+     "spotify_name": "Michelle Wright",
+     "spotify_id": "1Kp8PxFfeU5CFHkITQF9sY",
+     "url": "https://open.spotify.com/artist/1Kp8PxFfeU5CFHkITQF9sY",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f1780640178eed01f25c1cbf9313",
+     "tracks": [
+      {
+       "id": "5aQJy8E41mVs6fmceYfe2X",
+       "uri": "spotify:track:5aQJy8E41mVs6fmceYfe2X",
+       "name": "Take It Like a Man",
+       "popularity": null,
+       "album": "Now & Then",
+       "album_type": "album",
+       "release_date": "1992-05-26",
+       "duration_ms": 238600,
+       "explicit": false
+      },
+      {
+       "id": "4AMYEeMJVjSfhhXS5KgToB",
+       "uri": "spotify:track:4AMYEeMJVjSfhhXS5KgToB",
+       "name": "Your Love",
+       "popularity": null,
+       "album": "Greatest Hits",
+       "album_type": "compilation",
+       "release_date": "2000-01-25",
+       "duration_ms": 223266,
+       "explicit": false
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": "dc0b6722-5601-418d-bb64-2499e1d2440b",
+     "reach": {
+      "listeners": 11447,
+      "playcount": 128588,
+      "tags": [
+       "country",
+       "female country",
+       "canadian country"
+      ],
+      "tier": 2,
+      "lastfm_url": "https://www.last.fm/music/Michelle+Wright",
+      "mbid": "dc0b6722-5601-418d-bb64-2499e1d2440b"
+     },
+     "genres_canon": [
+      "country"
+     ]
+    },
+    {
+     "name": "Jason Mccoy",
+     "spotify_name": "Jason McCoy",
+     "spotify_id": "7bZ2L2XgLitgclkNQ2mYpD",
+     "url": "https://open.spotify.com/artist/7bZ2L2XgLitgclkNQ2mYpD",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f178d17d679f0835d602a8ea13e8",
+     "tracks": [
+      {
+       "id": "49MXhHJwW4bsKLnPLQQUnW",
+       "uri": "spotify:track:49MXhHJwW4bsKLnPLQQUnW",
+       "name": "Born Again in Dixieland",
+       "popularity": null,
+       "album": "Playin' for Keeps",
+       "album_type": "album",
+       "release_date": "1997-07-08",
+       "duration_ms": 205733,
+       "explicit": false
+      },
+      {
+       "id": "5xcjWWwewa0v6RIU0lh5X6",
+       "uri": "spotify:track:5xcjWWwewa0v6RIU0lh5X6",
+       "name": "I Feel a Sin Comin' on",
+       "popularity": null,
+       "album": "I Feel a Sin Comin' on",
+       "album_type": "single",
+       "release_date": "2012-03-05",
+       "duration_ms": 157653,
+       "explicit": false
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": "41beca5a-30ec-44a6-8387-925d236b79d3",
+     "reach": {
+      "listeners": 4648,
+      "playcount": 69039,
+      "tags": [
+       "country",
+       "contemporary country",
+       "new country"
+      ],
+      "tier": 1,
+      "lastfm_url": "https://www.last.fm/music/Jason+McCoy",
+      "mbid": "41beca5a-30ec-44a6-8387-925d236b79d3"
+     },
+     "genres_canon": [
+      "country"
      ]
     }
    ]
@@ -5158,8 +5332,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 215688,
-      "playcount": 4993238,
+      "listeners": 223093,
+      "playcount": 5263013,
       "tags": [
        "indie pop",
        "indie rock",
@@ -5213,8 +5387,8 @@
      "rank_source": "lastfm",
      "mbid": "d96a5ca8-b6d0-4acc-abab-b3351d59f081",
      "reach": {
-      "listeners": 30330,
-      "playcount": 256846,
+      "listeners": 30777,
+      "playcount": 261244,
       "tags": [
        "rare sads",
        "alt-country",
@@ -5284,8 +5458,8 @@
      "rank_source": "lastfm",
      "mbid": "b8acf43e-1ad5-4657-85a6-a75cc1f5e5fe",
      "reach": {
-      "listeners": 249861,
-      "playcount": 2361866,
+      "listeners": 250883,
+      "playcount": 2382571,
       "tags": [
        "jazz",
        "experimental",
@@ -5337,8 +5511,8 @@
      "rank_source": "lastfm",
      "mbid": "1aa7813a-a585-4f9d-8585-331d5fb6e5d5",
      "reach": {
-      "listeners": 28222,
-      "playcount": 191451,
+      "listeners": 28567,
+      "playcount": 194792,
       "tags": [
        "indie rock",
        "jazz rock",
@@ -5482,12 +5656,9 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 159,
-      "playcount": 355,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Rukky",
-      "mbid": null
+      "listeners": 0,
+      "tier": 0,
+      "tags": []
      },
      "genres_canon": []
     }
@@ -5670,8 +5841,8 @@
      "rank_source": "lastfm",
      "mbid": "a8874f32-9068-476f-ba45-2681e17c53de",
      "reach": {
-      "listeners": 96748,
-      "playcount": 1179102,
+      "listeners": 97027,
+      "playcount": 1183591,
       "tags": [
        "country",
        "americana",
@@ -5740,8 +5911,8 @@
      "rank_source": "lastfm",
      "mbid": "24db1f15-509d-48a4-a410-b33fe131878b",
      "reach": {
-      "listeners": 400436,
-      "playcount": 11681311,
+      "listeners": 403166,
+      "playcount": 11761929,
       "tags": [
        "dream pop",
        "folk",
@@ -5810,8 +5981,8 @@
      "rank_source": "lastfm",
      "mbid": "a5ad964a-dbca-4180-a744-f78a2a48814c",
      "reach": {
-      "listeners": 2835,
-      "playcount": 9049,
+      "listeners": 2877,
+      "playcount": 9132,
       "tags": [
        "country",
        "acoustic",
@@ -5855,7 +6026,7 @@
      ],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178df82071ba3eca5923106f637",
+     "image": "https://i.scdn.co/image/ab6761610000f178b92aedc043d1bcc1908a861a",
      "tracks": [
       {
        "id": "5xRlNALFbZ7gaWGlySwfTM",
@@ -5883,8 +6054,8 @@
      "rank_source": "lastfm",
      "mbid": "909c065e-8b75-45c8-b22c-4ca4ca1a4a38",
      "reach": {
-      "listeners": 102389,
-      "playcount": 2104917,
+      "listeners": 102621,
+      "playcount": 2110195,
       "tags": [
        "pop",
        "pop rock"
@@ -5952,8 +6123,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 490,
-      "playcount": 9456,
+      "listeners": 500,
+      "playcount": 9492,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Blasting+Company",
@@ -6016,7 +6187,7 @@
      "mbid": "d3257f63-85df-4947-ad1d-abd176d6c2b6",
      "reach": {
       "listeners": 469,
-      "playcount": 17232,
+      "playcount": 17233,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Jim+Witter",
@@ -6078,8 +6249,8 @@
      "rank_source": "lastfm",
      "mbid": "20485631-5c2a-4cec-918a-1c7df650c072",
      "reach": {
-      "listeners": 89861,
-      "playcount": 829895,
+      "listeners": 91294,
+      "playcount": 854317,
       "tags": [
        "noise pop",
        "indie rock",
@@ -6133,21 +6304,21 @@
      "rank_source": "lastfm",
      "mbid": "e85d97b9-b6bc-4232-9f41-0bc50771e556",
      "reach": {
-      "listeners": 8843,
-      "playcount": 52191,
+      "listeners": 8913,
+      "playcount": 52603,
       "tags": [
-       "rock",
        "indie rock",
-       "alternative",
-       "alternative rock"
+       "rock",
+       "alternative rock",
+       "alternative"
       ],
       "tier": 2,
       "lastfm_url": "https://www.last.fm/music/Golomb",
       "mbid": "e85d97b9-b6bc-4232-9f41-0bc50771e556"
      },
      "genres_canon": [
-      "rock",
       "indie",
+      "rock",
       "alternative"
      ]
     }
@@ -6208,11 +6379,11 @@
      "rank_source": "lastfm",
      "mbid": "9091050a-f7c0-480a-81d6-f2367e6c6cab",
      "reach": {
-      "listeners": 161079,
-      "playcount": 2592185,
+      "listeners": 161320,
+      "playcount": 2595938,
       "tags": [
-       "soul",
        "rnb",
+       "soul",
        "grunge"
       ],
       "tier": 3,
@@ -6220,8 +6391,8 @@
       "mbid": "9091050a-f7c0-480a-81d6-f2367e6c6cab"
      },
      "genres_canon": [
-      "soul",
       "r&b",
+      "soul",
       "grunge"
      ]
     }
@@ -6282,8 +6453,8 @@
      "rank_source": "lastfm",
      "mbid": "171cbc8f-8ab3-4aec-9916-f0bdbe26bb79",
      "reach": {
-      "listeners": 649179,
-      "playcount": 22572236,
+      "listeners": 650118,
+      "playcount": 22625221,
       "tags": [
        "heavy metal",
        "hard rock",
@@ -6339,8 +6510,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 19467,
-      "playcount": 309467,
+      "listeners": 19559,
+      "playcount": 310953,
       "tags": [
        "heavy metal",
        "metal",
@@ -6410,13 +6581,12 @@
      "rank_source": "lastfm",
      "mbid": "c17f32b5-66fc-4d73-99c9-2085201ff9a6",
      "reach": {
-      "listeners": 93495,
-      "playcount": 619669,
+      "listeners": 96458,
+      "playcount": 652819,
       "tags": [
        "alternative rock",
        "rock",
-       "grunge",
-       "alternative"
+       "grunge"
       ],
       "tier": 3,
       "lastfm_url": "https://www.last.fm/music/Violet+Grohl",
@@ -6465,8 +6635,8 @@
      "rank_source": "lastfm",
      "mbid": "0069732e-0b0c-4241-909e-099a88a0519f",
      "reach": {
-      "listeners": 57587,
-      "playcount": 388330,
+      "listeners": 58449,
+      "playcount": 395358,
       "tags": [
        "shoegaze",
        "grunge",
@@ -6609,11 +6779,11 @@
      "rank_source": "lastfm",
      "mbid": "0943f55d-1c10-4a52-a1ef-06e625f26674",
      "reach": {
-      "listeners": 301878,
-      "playcount": 8234327,
+      "listeners": 304355,
+      "playcount": 8320161,
       "tags": [
-       "digicore",
        "cloud rap",
+       "digicore",
        "hyperpop",
        "trap"
       ],
@@ -6754,8 +6924,8 @@
      "rank_source": "lastfm",
      "mbid": "ff44f779-74ab-48f8-aac3-39ebe8f7c18e",
      "reach": {
-      "listeners": 748316,
-      "playcount": 11708641,
+      "listeners": 750389,
+      "playcount": 11744596,
       "tags": [
        "hip-hop",
        "jazz hop",
@@ -6810,8 +6980,8 @@
      "rank_source": "lastfm",
      "mbid": "a711daa7-6e6f-4491-b1aa-f6e3158b6b9d",
      "reach": {
-      "listeners": 4084,
-      "playcount": 18989,
+      "listeners": 4090,
+      "playcount": 19025,
       "tags": [
        "soul",
        "hip hop",
@@ -6885,11 +7055,11 @@
      "rank_source": "lastfm",
      "mbid": "9091050a-f7c0-480a-81d6-f2367e6c6cab",
      "reach": {
-      "listeners": 161079,
-      "playcount": 2592185,
+      "listeners": 161320,
+      "playcount": 2595938,
       "tags": [
-       "soul",
        "rnb",
+       "soul",
        "grunge"
       ],
       "tier": 3,
@@ -6897,8 +7067,8 @@
       "mbid": "9091050a-f7c0-480a-81d6-f2367e6c6cab"
      },
      "genres_canon": [
-      "soul",
       "r&b",
+      "soul",
       "grunge"
      ]
     }
@@ -7028,12 +7198,12 @@
      "rank_source": "lastfm",
      "mbid": "c95a574b-6c07-40bc-bd31-d86150b7b670",
      "reach": {
-      "listeners": 347467,
-      "playcount": 3195597,
+      "listeners": 350925,
+      "playcount": 3246208,
       "tags": [
        "rare sad girl",
        "indie pop",
-       "lo-fi"
+       "lo-fi indie"
       ],
       "tier": 3,
       "lastfm_url": "https://www.last.fm/music/Freak+Slug",
@@ -7081,8 +7251,8 @@
      "rank_source": "lastfm",
      "mbid": "83ad497d-a191-4f68-b5a4-dd9ac046ac28",
      "reach": {
-      "listeners": 98100,
-      "playcount": 789641,
+      "listeners": 98378,
+      "playcount": 792682,
       "tags": [
        "indie rock",
        "dream pop",
@@ -7156,8 +7326,8 @@
      "rank_source": "lastfm",
      "mbid": "171cbc8f-8ab3-4aec-9916-f0bdbe26bb79",
      "reach": {
-      "listeners": 649179,
-      "playcount": 22572236,
+      "listeners": 650118,
+      "playcount": 22625221,
       "tags": [
        "heavy metal",
        "hard rock",
@@ -7213,8 +7383,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 19467,
-      "playcount": 309467,
+      "listeners": 19559,
+      "playcount": 310953,
       "tags": [
        "heavy metal",
        "metal",
@@ -7288,8 +7458,8 @@
      "rank_source": "lastfm",
      "mbid": "db76f244-049f-440e-be53-cc5f3c0cdfb6",
      "reach": {
-      "listeners": 287077,
-      "playcount": 2127458,
+      "listeners": 287908,
+      "playcount": 2135932,
       "tags": [
        "jazz",
        "instrumental",
@@ -7428,8 +7598,8 @@
      "rank_source": "lastfm",
      "mbid": "9386b36e-87f3-4716-a219-79a07a4e29cc",
      "reach": {
-      "listeners": 1438078,
-      "playcount": 31809671,
+      "listeners": 1438678,
+      "playcount": 31830192,
       "tags": [
        "indie rock",
        "alternative",
@@ -7502,15 +7672,15 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 499827,
-      "playcount": 14332363,
+      "listeners": 500522,
+      "playcount": 14346075,
       "tags": [
        "hip-hop",
        "rap",
        "jazz rap",
        "jazz hop"
       ],
-      "tier": 3,
+      "tier": 4,
       "lastfm_url": "https://www.last.fm/music/KOTA+The+Friend",
       "mbid": null
      },
@@ -7576,13 +7746,12 @@
      "rank_source": "lastfm",
      "mbid": "e027fd1a-990a-452f-b4e2-4356b37b96fc",
      "reach": {
-      "listeners": 138753,
-      "playcount": 1306725,
+      "listeners": 139048,
+      "playcount": 1309231,
       "tags": [
-       "mellow",
        "folk",
-       "acoustic",
-       "reggae"
+       "mellow",
+       "acoustic"
       ],
       "tier": 3,
       "lastfm_url": "https://www.last.fm/music/Jon+and+Roy",
@@ -7590,8 +7759,8 @@
      },
      "genres_canon": [
       "folk",
-      "reggae / dub",
-      "indie"
+      "indie",
+      "reggae / dub"
      ]
     },
     {
@@ -7634,8 +7803,8 @@
      "rank_source": "lastfm",
      "mbid": "069e00c6-d15b-42d6-a758-db1384cd766c",
      "reach": {
-      "listeners": 25052,
-      "playcount": 106482,
+      "listeners": 25107,
+      "playcount": 106680,
       "tags": [],
       "tier": 2,
       "lastfm_url": "https://www.last.fm/music/Skinny+Dyck",
@@ -7700,8 +7869,8 @@
      "rank_source": "lastfm",
      "mbid": "23fc6dff-c119-432e-b9e8-2f712a0bdd6d",
      "reach": {
-      "listeners": 24885,
-      "playcount": 237724,
+      "listeners": 25004,
+      "playcount": 238489,
       "tags": [
        "folk",
        "bluegrass",
@@ -7726,7 +7895,7 @@
      "songkick_genres": [],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1782b64d3d0fa1a8747454c90ed",
+     "image": "https://i.scdn.co/image/ab6761610000f178f54b20920ae2340d58a9a0fc",
      "tracks": [
       {
        "id": "2DHtD6MrR7Zy2XKqGnZYK7",
@@ -7754,18 +7923,21 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 28073,
-      "playcount": 234088,
+      "listeners": 28139,
+      "playcount": 234686,
       "tags": [
        "electronic",
-       "united states"
+       "folktronica",
+       "deep house"
       ],
       "tier": 2,
       "lastfm_url": "https://www.last.fm/music/Kr3Ture",
       "mbid": null
      },
      "genres_canon": [
-      "electronic"
+      "electronic",
+      "folk",
+      "house"
      ]
     }
    ]
@@ -7825,8 +7997,8 @@
      "rank_source": "lastfm",
      "mbid": "098302e3-7240-4fc6-82da-ee5b92bf1037",
      "reach": {
-      "listeners": 169224,
-      "playcount": 3223128,
+      "listeners": 169722,
+      "playcount": 3229654,
       "tags": [
        "pop punk",
        "alternative rock",
@@ -7878,13 +8050,13 @@
      "image": "https://i.scdn.co/image/ab6761610000f1786e2d4ab2b84463aa4c349311",
      "tracks": [
       {
-       "id": "25Syi9wnfn6ZGAmiOBypPq",
-       "uri": "spotify:track:25Syi9wnfn6ZGAmiOBypPq",
+       "id": "5xo8RrjJ9CVNrtRg2S3B1R",
+       "uri": "spotify:track:5xo8RrjJ9CVNrtRg2S3B1R",
        "name": "Motion Sickness",
        "popularity": null,
-       "album": "Stranger in the Alps (Deluxe Edition)",
+       "album": "Stranger in the Alps",
        "album_type": "album",
-       "release_date": "2018-10-02",
+       "release_date": "2017-09-22",
        "duration_ms": 229760,
        "explicit": false
       },
@@ -7903,8 +8075,8 @@
      "rank_source": "lastfm",
      "mbid": "96855c21-b832-4366-ba12-0d2330c36a86",
      "reach": {
-      "listeners": 2279099,
-      "playcount": 311938324,
+      "listeners": 2298302,
+      "playcount": 315759677,
       "tags": [
        "indie folk",
        "folk",
@@ -7963,8 +8135,8 @@
      "rank_source": "lastfm",
      "mbid": "7545a8ca-a3c9-490f-93f9-68886dcddff1",
      "reach": {
-      "listeners": 2184142,
-      "playcount": 272477077,
+      "listeners": 2205363,
+      "playcount": 274792220,
       "tags": [
        "lo-fi",
        "indie rock",
@@ -8034,13 +8206,13 @@
      "rank_source": "lastfm",
      "mbid": "082e1531-e8ff-43ef-8f1c-7c6600b0c00d",
      "reach": {
-      "listeners": 143032,
-      "playcount": 2965298,
+      "listeners": 143900,
+      "playcount": 2979457,
       "tags": [
        "country",
-       "americana",
        "folk",
-       "alternative country"
+       "americana",
+       "west virginia"
       ],
       "tier": 3,
       "lastfm_url": "https://www.last.fm/music/Charles+Wesley+Godwin",
@@ -8048,8 +8220,8 @@
      },
      "genres_canon": [
       "country",
-      "americana",
-      "folk"
+      "folk",
+      "americana"
      ]
     },
     {
@@ -8089,8 +8261,8 @@
      "rank_source": "lastfm",
      "mbid": "2ec5d162-db5c-4b07-a731-e650a34e264c",
      "reach": {
-      "listeners": 39867,
-      "playcount": 488193,
+      "listeners": 40334,
+      "playcount": 492444,
       "tags": [
        "folk"
       ],
@@ -8159,8 +8331,8 @@
      "rank_source": "lastfm",
      "mbid": "171cbc8f-8ab3-4aec-9916-f0bdbe26bb79",
      "reach": {
-      "listeners": 649179,
-      "playcount": 22572236,
+      "listeners": 650118,
+      "playcount": 22625221,
       "tags": [
        "heavy metal",
        "hard rock",
@@ -8216,8 +8388,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 19467,
-      "playcount": 309467,
+      "listeners": 19559,
+      "playcount": 310953,
       "tags": [
        "heavy metal",
        "metal",
@@ -8287,8 +8459,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 270917,
-      "playcount": 3675902,
+      "listeners": 271119,
+      "playcount": 3678739,
       "tags": [
        "indie rock",
        "taiwanese",
@@ -8359,12 +8531,12 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 195920,
-      "playcount": 1652084,
+      "listeners": 197462,
+      "playcount": 1663527,
       "tags": [
        "electronic",
        "united states",
-       "pop"
+       "house"
       ],
       "tier": 3,
       "lastfm_url": "https://www.last.fm/music/DeVault",
@@ -8372,7 +8544,7 @@
      },
      "genres_canon": [
       "electronic",
-      "pop"
+      "house"
      ]
     }
    ]
@@ -22771,27 +22943,6 @@
     "BigXthaPlug",
     "Noeline Hofmann"
    ]
-  },
-  {
-   "artist": "Doc Walker",
-   "event": "Doc Walker @ Clarke Theatre",
-   "date": "2026-10-20",
-   "reason": "no_tracks",
-   "candidates": []
-  },
-  {
-   "artist": "Michelle Wright",
-   "event": "Doc Walker @ Clarke Theatre",
-   "date": "2026-10-20",
-   "reason": "no_tracks",
-   "candidates": []
-  },
-  {
-   "artist": "Jason Mccoy",
-   "event": "Doc Walker @ Clarke Theatre",
-   "date": "2026-10-20",
-   "reason": "no_tracks",
-   "candidates": []
   },
   {
    "artist": "Brit Floyd",
