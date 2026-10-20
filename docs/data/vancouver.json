@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-10-19T20:02:30+00:00",
+ "generated_at": "2026-10-20T18:33:45+00:00",
  "scraped_at": "2026-10-14T18:45:01+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -8601,8 +8601,8 @@
      "rank_source": "lastfm",
      "mbid": "36ba97f0-24ec-4a91-8161-279c2f647b69",
      "reach": {
-      "listeners": 19326,
-      "playcount": 311662,
+      "listeners": 19371,
+      "playcount": 312047,
       "tags": [
        "folk",
        "psychedelic",
@@ -8672,8 +8672,8 @@
      "rank_source": "lastfm",
      "mbid": "a3bc4e59-18bd-4936-b605-2b01e33a6da9",
      "reach": {
-      "listeners": 233322,
-      "playcount": 3414699,
+      "listeners": 233800,
+      "playcount": 3423660,
       "tags": [
        "folk",
        "chamber folk",
@@ -8714,7 +8714,7 @@
      "songkick_genres": [],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f17809f97358ef7f45626431b730",
+     "image": "https://i.scdn.co/image/ab6761610000f1782619727fd516fe4dd244a5a7",
      "tracks": [
       {
        "id": "72Q3BQhu0w6A81ouAUp7UL",
@@ -8742,8 +8742,8 @@
      "rank_source": "lastfm",
      "mbid": "94a1fbe1-39c1-4165-9cd0-661f60ec5212",
      "reach": {
-      "listeners": 103639,
-      "playcount": 986368,
+      "listeners": 103936,
+      "playcount": 988977,
       "tags": [
        "folk",
        "indie folk",
@@ -8797,8 +8797,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 20967,
-      "playcount": 101767,
+      "listeners": 21378,
+      "playcount": 103483,
       "tags": [
        "indie folk",
        "squiggly",
