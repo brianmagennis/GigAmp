@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-10-21T18:47:00+00:00",
+ "generated_at": "2026-10-22T18:40:19+00:00",
  "scraped_at": "2026-10-14T18:45:01+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -1094,14 +1094,14 @@
      "image": "https://i.scdn.co/image/ab6761610000f178a7ec583e5cd2a43aa407f0dd",
      "tracks": [
       {
-       "id": "5nj7A5FrRg64zrDCXQBbX7",
-       "uri": "spotify:track:5nj7A5FrRg64zrDCXQBbX7",
-       "name": "Book I - 4th Incantation (memory)",
+       "id": "6gmZZICuU7HXGN8nxddcxk",
+       "uri": "spotify:track:6gmZZICuU7HXGN8nxddcxk",
+       "name": "Book I - 3rd Incantation (love)",
        "popularity": null,
        "album": "The Observer Effect",
        "album_type": "album",
        "release_date": "2026-03-13",
-       "duration_ms": 1866866,
+       "duration_ms": 747640,
        "explicit": false
       },
       {
@@ -1119,13 +1119,13 @@
      "rank_source": "lastfm",
      "mbid": "2259de0c-e6c2-4050-8f7c-8edf8135141e",
      "reach": {
-      "listeners": 510,
-      "playcount": 1854,
+      "listeners": 518,
+      "playcount": 1897,
       "tags": [
        "contemporary classical",
        "experimental",
        "jazz",
-       "classical"
+       "instrumental"
       ],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Meredith+Bates",
@@ -1875,8 +1875,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 20,
-      "playcount": 153,
+      "listeners": 21,
+      "playcount": 155,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/evie+from+earth",
@@ -6823,7 +6823,7 @@
      "songkick_genres": [],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178dc834ffd9d7f3dcf7bbecbea",
+     "image": "https://i.scdn.co/image/ab6761610000f178d5208b36ec7d93e2cc13a10a",
      "tracks": [
       {
        "id": "6BYXML6IiFI6I0h4AkZV0C",
@@ -6851,13 +6851,12 @@
      "rank_source": "lastfm",
      "mbid": "2bb30366-f779-43c8-8c63-eb0909195cb8",
      "reach": {
-      "listeners": 3711,
-      "playcount": 13884,
+      "listeners": 3796,
+      "playcount": 14496,
       "tags": [
        "cumbia",
        "psychedelic",
-       "latin",
-       "vocal"
+       "latin"
       ],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Empanadas+Ilegales",
@@ -7101,14 +7100,14 @@
      "image": "https://i.scdn.co/image/ab6761610000f178a7ec583e5cd2a43aa407f0dd",
      "tracks": [
       {
-       "id": "5nj7A5FrRg64zrDCXQBbX7",
-       "uri": "spotify:track:5nj7A5FrRg64zrDCXQBbX7",
-       "name": "Book I - 4th Incantation (memory)",
+       "id": "6gmZZICuU7HXGN8nxddcxk",
+       "uri": "spotify:track:6gmZZICuU7HXGN8nxddcxk",
+       "name": "Book I - 3rd Incantation (love)",
        "popularity": null,
        "album": "The Observer Effect",
        "album_type": "album",
        "release_date": "2026-03-13",
-       "duration_ms": 1866866,
+       "duration_ms": 747640,
        "explicit": false
       },
       {
@@ -7126,13 +7125,13 @@
      "rank_source": "lastfm",
      "mbid": "2259de0c-e6c2-4050-8f7c-8edf8135141e",
      "reach": {
-      "listeners": 510,
-      "playcount": 1854,
+      "listeners": 518,
+      "playcount": 1897,
       "tags": [
        "contemporary classical",
        "experimental",
        "jazz",
-       "classical"
+       "instrumental"
       ],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/Meredith+Bates",
@@ -8932,8 +8931,8 @@
      "rank_source": "lastfm",
      "mbid": "1bc41dff-5397-4c53-bb50-469d2c277197",
      "reach": {
-      "listeners": 631339,
-      "playcount": 35666968,
+      "listeners": 632813,
+      "playcount": 35765868,
       "tags": [
        "mathcore",
        "experimental",
@@ -8990,8 +8989,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 18997,
-      "playcount": 83849,
+      "listeners": 19675,
+      "playcount": 87913,
       "tags": [
        "hardcore punk",
        "hardcore",
@@ -9048,12 +9047,12 @@
      "rank_source": "lastfm",
      "mbid": "53a1d56b-8dff-4258-91f3-5694ddc11a43",
      "reach": {
-      "listeners": 7390,
-      "playcount": 92941,
+      "listeners": 7514,
+      "playcount": 94752,
       "tags": [
        "noisecore",
-       "grindcore",
        "mathcore",
+       "grindcore",
        "noise rock"
       ],
       "tier": 2,
@@ -9120,8 +9119,8 @@
      "rank_source": "lastfm",
      "mbid": "1ca441fa-7cea-4f29-939b-06d8741f74c7",
      "reach": {
-      "listeners": 387006,
-      "playcount": 15618139,
+      "listeners": 391149,
+      "playcount": 15797979,
       "tags": [
        "emo",
        "punk",
@@ -9266,8 +9265,8 @@
      "rank_source": "lastfm",
      "mbid": "f95d0f4f-d344-4acd-bec8-cc512b40f629",
      "reach": {
-      "listeners": 626971,
-      "playcount": 18689681,
+      "listeners": 631887,
+      "playcount": 18968198,
       "tags": [
        "folk",
        "indie folk"
@@ -9298,13 +9297,13 @@
      "image": "https://i.scdn.co/image/ab6761610000f1789cc4a9d508ac4ed0d7d8fa84",
      "tracks": [
       {
-       "id": "5z0Qv5gqsfFlSV3nlEbshq",
-       "uri": "spotify:track:5z0Qv5gqsfFlSV3nlEbshq",
+       "id": "5dhnTegrm9fl3KLBU2bocS",
+       "uri": "spotify:track:5dhnTegrm9fl3KLBU2bocS",
        "name": "Racecar",
        "popularity": null,
-       "album": "The Hermit",
-       "album_type": "album",
-       "release_date": "2025-09-19",
+       "album": "Racecar",
+       "album_type": "single",
+       "release_date": "2025-08-29",
        "duration_ms": 337561,
        "explicit": false
       },
@@ -9323,11 +9322,11 @@
      "rank_source": "lastfm",
      "mbid": "efaa06af-e939-4f67-8146-9900ee0a8bcc",
      "reach": {
-      "listeners": 9260,
-      "playcount": 31345,
+      "listeners": 9344,
+      "playcount": 31730,
       "tags": [
-       "blues",
        "harmonica",
+       "blues",
        "harmonica blues"
       ],
       "tier": 2,
@@ -9394,8 +9393,8 @@
      "rank_source": "lastfm",
      "mbid": "ae98b8c4-d8fc-4ff9-9b4e-4bc1fd8575d1",
      "reach": {
-      "listeners": 269603,
-      "playcount": 29686091,
+      "listeners": 272524,
+      "playcount": 30088543,
       "tags": [
        "k-pop",
        "loona",
@@ -9464,11 +9463,12 @@
      "rank_source": "lastfm",
      "mbid": "9db476ca-78db-4951-8baf-6b972ca7fdaa",
      "reach": {
-      "listeners": 74614,
-      "playcount": 1606777,
+      "listeners": 75476,
+      "playcount": 1625482,
       "tags": [
        "ambient",
-       "folk"
+       "folk",
+       "piano"
       ],
       "tier": 3,
       "lastfm_url": "https://www.last.fm/music/Amble",
@@ -9533,11 +9533,11 @@
      "rank_source": "lastfm",
      "mbid": "80a154ea-28d7-42e8-8409-ca7017780e00",
      "reach": {
-      "listeners": 58826,
-      "playcount": 362128,
+      "listeners": 59112,
+      "playcount": 364832,
       "tags": [
-       "avant-garde",
        "avant-pop",
+       "avant-garde",
        "pop",
        "indie pop"
       ],
@@ -22969,10 +22969,10 @@
    "reason": "no_match",
    "candidates": [
     "The Artist Ren",
-    "Artist Page Redirect Cleanup 2023",
+    "Artist Rescue",
     "Rage Against The Machine",
-    "System Of A Down",
-    "Limp Bizkit"
+    "Redh1ll",
+    "Ragheb Alama"
    ]
   },
   {
@@ -23053,8 +23053,8 @@
    "reason": "no_match",
    "candidates": [
     "Hellwitch",
-    "Honey Revenge",
-    "Rêve"
+    "Rise Against",
+    "Marianas Trench"
    ]
   },
   {
@@ -23063,9 +23063,9 @@
    "date": "2026-11-11",
    "reason": "no_match",
    "candidates": [
-    "Ahna",
     "Le Roy Tsala",
-    "Barshasketh"
+    "Barshasketh",
+    "Stavros Tsalagkas"
    ]
   },
   {

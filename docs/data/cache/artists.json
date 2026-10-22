@@ -39609,15 +39609,15 @@
 },
 "meredith bates": {
 "query": "Meredith Bates",
-"fetched_at": "2026-09-21T19:39:22+00:00",
+"fetched_at": "2026-10-22T18:40:06+00:00",
 "reach": {
-"listeners": 510,
-"playcount": 1854,
+"listeners": 518,
+"playcount": 1897,
 "tags": [
 "contemporary classical",
 "experimental",
 "jazz",
-"classical"
+"instrumental"
 ],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Meredith+Bates",
@@ -39633,14 +39633,14 @@
 "image": "https://i.scdn.co/image/ab6761610000f178a7ec583e5cd2a43aa407f0dd",
 "tracks": [
 {
-"id": "5nj7A5FrRg64zrDCXQBbX7",
-"uri": "spotify:track:5nj7A5FrRg64zrDCXQBbX7",
-"name": "Book I - 4th Incantation (memory)",
+"id": "6gmZZICuU7HXGN8nxddcxk",
+"uri": "spotify:track:6gmZZICuU7HXGN8nxddcxk",
+"name": "Book I - 3rd Incantation (love)",
 "popularity": null,
 "album": "The Observer Effect",
 "album_type": "album",
 "release_date": "2026-03-13",
-"duration_ms": 1866866,
+"duration_ms": 747640,
 "explicit": false
 },
 {
@@ -39710,15 +39710,14 @@
 },
 "empanadas ilegales": {
 "query": "Empanadas Ilegales",
-"fetched_at": "2026-09-21T19:39:24+00:00",
+"fetched_at": "2026-10-22T18:40:08+00:00",
 "reach": {
-"listeners": 3711,
-"playcount": 13884,
+"listeners": 3796,
+"playcount": 14496,
 "tags": [
 "cumbia",
 "psychedelic",
-"latin",
-"vocal"
+"latin"
 ],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Empanadas+Ilegales",
@@ -39731,7 +39730,7 @@
 "genres": [],
 "popularity": null,
 "followers": null,
-"image": "https://i.scdn.co/image/ab6761610000f178dc834ffd9d7f3dcf7bbecbea",
+"image": "https://i.scdn.co/image/ab6761610000f178d5208b36ec7d93e2cc13a10a",
 "tracks": [
 {
 "id": "6BYXML6IiFI6I0h4AkZV0C",
@@ -39807,10 +39806,10 @@
 },
 "dillinger escape plan": {
 "query": "The Dillinger Escape Plan",
-"fetched_at": "2026-09-21T19:39:26+00:00",
+"fetched_at": "2026-10-22T18:40:10+00:00",
 "reach": {
-"listeners": 631339,
-"playcount": 35666968,
+"listeners": 632813,
+"playcount": 35765868,
 "tags": [
 "mathcore",
 "experimental",
@@ -39858,10 +39857,10 @@
 },
 "xcomm": {
 "query": "XCOMM",
-"fetched_at": "2026-09-21T19:39:26+00:00",
+"fetched_at": "2026-10-22T18:40:10+00:00",
 "reach": {
-"listeners": 18997,
-"playcount": 83849,
+"listeners": 19675,
+"playcount": 87913,
 "tags": [
 "hardcore punk",
 "hardcore",
@@ -39909,14 +39908,14 @@
 },
 "squid pisser": {
 "query": "Squid Pisser",
-"fetched_at": "2026-09-21T19:39:27+00:00",
+"fetched_at": "2026-10-22T18:40:11+00:00",
 "reach": {
-"listeners": 7390,
-"playcount": 92941,
+"listeners": 7514,
+"playcount": 94752,
 "tags": [
 "noisecore",
-"grindcore",
 "mathcore",
+"grindcore",
 "noise rock"
 ],
 "tier": 2,
@@ -39960,10 +39959,10 @@
 },
 "free throw": {
 "query": "Free Throw",
-"fetched_at": "2026-09-21T19:39:28+00:00",
+"fetched_at": "2026-10-22T18:40:12+00:00",
 "reach": {
-"listeners": 387006,
-"playcount": 15618139,
+"listeners": 391149,
+"playcount": 15797979,
 "tags": [
 "emo",
 "punk",
@@ -40116,10 +40115,10 @@
 },
 "evie from earth": {
 "query": "evie from earth",
-"fetched_at": "2026-09-22T18:12:55+00:00",
+"fetched_at": "2026-10-22T18:40:07+00:00",
 "reach": {
-"listeners": 20,
-"playcount": 153,
+"listeners": 21,
+"playcount": 155,
 "tags": [],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/evie+from+earth",
@@ -40663,10 +40662,10 @@
 },
 "julia jacklin": {
 "query": "Julia Jacklin",
-"fetched_at": "2026-09-22T18:13:04+00:00",
+"fetched_at": "2026-10-22T18:40:13+00:00",
 "reach": {
-"listeners": 626971,
-"playcount": 18689681,
+"listeners": 631887,
+"playcount": 18968198,
 "tags": [
 "folk",
 "indie folk"
@@ -40712,13 +40711,13 @@
 },
 "jordan patterson": {
 "query": "Jordan Patterson",
-"fetched_at": "2026-09-22T18:13:04+00:00",
+"fetched_at": "2026-10-22T18:40:14+00:00",
 "reach": {
-"listeners": 9260,
-"playcount": 31345,
+"listeners": 9344,
+"playcount": 31730,
 "tags": [
-"blues",
 "harmonica",
+"blues",
 "harmonica blues"
 ],
 "tier": 2,
@@ -40735,13 +40734,13 @@
 "image": "https://i.scdn.co/image/ab6761610000f1789cc4a9d508ac4ed0d7d8fa84",
 "tracks": [
 {
-"id": "5z0Qv5gqsfFlSV3nlEbshq",
-"uri": "spotify:track:5z0Qv5gqsfFlSV3nlEbshq",
+"id": "5dhnTegrm9fl3KLBU2bocS",
+"uri": "spotify:track:5dhnTegrm9fl3KLBU2bocS",
 "name": "Racecar",
 "popularity": null,
-"album": "The Hermit",
-"album_type": "album",
-"release_date": "2025-09-19",
+"album": "Racecar",
+"album_type": "single",
+"release_date": "2025-08-29",
 "duration_ms": 337561,
 "explicit": false
 },
@@ -40762,10 +40761,10 @@
 },
 "artms": {
 "query": "ARTMS",
-"fetched_at": "2026-09-22T18:13:05+00:00",
+"fetched_at": "2026-10-22T18:40:15+00:00",
 "reach": {
-"listeners": 269603,
-"playcount": 29686091,
+"listeners": 272524,
+"playcount": 30088543,
 "tags": [
 "k-pop",
 "loona",
@@ -40813,13 +40812,13 @@
 },
 "faux real": {
 "query": "Faux Real",
-"fetched_at": "2026-09-22T18:13:06+00:00",
+"fetched_at": "2026-10-22T18:40:17+00:00",
 "reach": {
-"listeners": 58826,
-"playcount": 362128,
+"listeners": 59112,
+"playcount": 364832,
 "tags": [
-"avant-garde",
 "avant-pop",
+"avant-garde",
 "pop",
 "indie pop"
 ],
@@ -40864,13 +40863,14 @@
 },
 "amble": {
 "query": "Amble",
-"fetched_at": "2026-09-22T18:13:06+00:00",
+"fetched_at": "2026-10-22T18:40:16+00:00",
 "reach": {
-"listeners": 74614,
-"playcount": 1606777,
+"listeners": 75476,
+"playcount": 1625482,
 "tags": [
 "ambient",
-"folk"
+"folk",
+"piano"
 ],
 "tier": 3,
 "lastfm_url": "https://www.last.fm/music/Amble",
@@ -46660,11 +46660,11 @@
 },
 "rage": {
 "query": "Rage",
-"fetched_at": "2026-10-07T20:06:02+00:00",
+"fetched_at": "2026-10-22T18:40:09+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 269513,
-"playcount": 11233320,
+"listeners": 269643,
+"playcount": 11238734,
 "tags": [
 "heavy metal",
 "power metal",
@@ -46678,10 +46678,10 @@
 "matcher": 4,
 "candidates": [
 "The Artist Ren",
-"Artist Page Redirect Cleanup 2023",
+"Artist Rescue",
 "Rage Against The Machine",
-"System Of A Down",
-"Limp Bizkit"
+"Redh1ll",
+"Ragheb Alama"
 ]
 },
 "oween": {
@@ -50788,11 +50788,11 @@
 },
 "ride for revenge": {
 "query": "Ride For Revenge",
-"fetched_at": "2026-10-07T20:07:21+00:00",
+"fetched_at": "2026-10-22T18:40:17+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 7411,
-"playcount": 410705,
+"listeners": 7434,
+"playcount": 412022,
 "tags": [
 "black metal",
 "finnish black metal",
@@ -50806,8 +50806,8 @@
 "matcher": 4,
 "candidates": [
 "Hellwitch",
-"Honey Revenge",
-"Rêve"
+"Rise Against",
+"Marianas Trench"
 ]
 },
 "hellwitch": {
@@ -50863,14 +50863,14 @@
 },
 "tsalal": {
 "query": "Tsalal",
-"fetched_at": "2026-10-07T20:07:23+00:00",
+"fetched_at": "2026-10-22T18:40:18+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 609,
-"playcount": 13619,
+"listeners": 619,
+"playcount": 13770,
 "tags": [
-"black metal",
 "noise",
+"black metal",
 "war metal",
 "war noise"
 ],
@@ -50880,9 +50880,9 @@
 },
 "matcher": 4,
 "candidates": [
-"Ahna",
 "Le Roy Tsala",
-"Barshasketh"
+"Barshasketh",
+"Stavros Tsalagkas"
 ]
 },
 "devouring void": {
