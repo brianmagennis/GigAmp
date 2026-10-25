@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T17:29:50+00:00",
+ "generated_at": "2026-10-25T17:42:31+00:00",
  "cities": [
   {
    "slug": "vancouver",
@@ -8,7 +8,7 @@
    "events": 219,
    "artists": 347,
    "pending": 0,
-   "generated_at": "2026-10-24T17:29:50+00:00"
+   "generated_at": "2026-10-25T17:42:31+00:00"
   }
  ]
 }
