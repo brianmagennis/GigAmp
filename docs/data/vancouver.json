@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-10-26T20:01:29+00:00",
+ "generated_at": "2026-10-27T19:30:17+00:00",
  "scraped_at": "2026-10-14T18:45:01+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -22928,7 +22928,7 @@
     "Super Simple Songs",
     "Simple Plan",
     "Simon & Garfunkel",
-    "Paul Simon"
+    "Simply Red"
    ]
   },
   {
@@ -22938,10 +22938,10 @@
    "reason": "no_match",
    "candidates": [
     "Shaboozey",
-    "Dax",
-    "Bazzi",
+    "Shamoozey",
+    "Benson Boone",
     "BigXthaPlug",
-    "Noeline Hofmann"
+    "Carter Faith"
    ]
   },
   {
