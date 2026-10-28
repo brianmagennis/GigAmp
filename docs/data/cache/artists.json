@@ -51410,7 +51410,7 @@
 },
 "clay acoustic": {
 "query": "Clay Acoustic",
-"fetched_at": "2026-10-14T18:46:45+00:00",
+"fetched_at": "2026-10-28T19:41:14+00:00",
 "spotify_id": null,
 "reach": null,
 "matcher": 4,
@@ -54413,11 +54413,11 @@
 },
 "yuki chiba": {
 "query": "Yuki Chiba",
-"fetched_at": "2026-10-14T18:47:37+00:00",
+"fetched_at": "2026-10-28T19:41:15+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 94370,
-"playcount": 985614,
+"listeners": 95400,
+"playcount": 995196,
 "tags": [
 "rap",
 "hip-hop",
@@ -54431,6 +54431,7 @@
 "candidates": [
 "Yukihiko Chiba",
 "千葉由希彦",
+"桑原和真(CV:千葉繁)、雪菜(CV:白鳥由里)",
 "千葉雄喜",
 "mgk",
 "Yuki Hayashi"
