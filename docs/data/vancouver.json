@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-10-30T05:32:39+00:00",
+ "generated_at": "2026-10-30T19:31:33+00:00",
  "scraped_at": "2026-10-14T18:45:01+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -23020,9 +23020,9 @@
    "date": "2026-10-31",
    "reason": "no_match",
    "candidates": [
-    "Alesso",
-    "Darren Styles",
-    "Timmy Trumpet"
+    "MF DOOM",
+    "Dooms Children",
+    "Doomsday"
    ]
   },
   {

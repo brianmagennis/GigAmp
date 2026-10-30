@@ -43481,7 +43481,7 @@
 },
 "dooms night": {
 "query": "Dooms Night",
-"fetched_at": "2026-10-16T18:12:48+00:00",
+"fetched_at": "2026-10-30T19:31:32+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 167,
@@ -43493,9 +43493,9 @@
 },
 "matcher": 4,
 "candidates": [
-"Alesso",
-"Darren Styles",
-"Timmy Trumpet"
+"MF DOOM",
+"Dooms Children",
+"Doomsday"
 ]
 },
 "alesso": {
