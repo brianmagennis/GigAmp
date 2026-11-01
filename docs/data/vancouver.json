@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-10-31T18:39:38+00:00",
+ "generated_at": "2026-11-01T19:01:07+00:00",
  "scraped_at": "2026-10-14T18:45:01+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -6707,8 +6707,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 41994,
-      "playcount": 285193,
+      "listeners": 42070,
+      "playcount": 286494,
       "tags": [
        "china",
        "experimental",
@@ -9190,12 +9190,12 @@
      "rank_source": "lastfm",
      "mbid": "fbce62fb-53e1-4fb7-8d5d-f77a1b72a4e7",
      "reach": {
-      "listeners": 191464,
-      "playcount": 2984872,
+      "listeners": 194142,
+      "playcount": 3049267,
       "tags": [
        "indie pop",
        "folk",
-       "alternative pop"
+       "americana"
       ],
       "tier": 3,
       "lastfm_url": "https://www.last.fm/music/Medium+Build",
@@ -9204,7 +9204,7 @@
      "genres_canon": [
       "indie pop",
       "folk",
-      "alternative"
+      "americana"
      ]
     }
    ]
@@ -9554,62 +9554,73 @@
    ]
   },
   {
-   "id": "43289523",
-   "name": "Chris Murphy @ Fox Cabaret",
+   "id": "43063497",
+   "name": "Begonia @ Hollywood Theatre",
    "source": "songkick",
    "date": "2026-10-28",
    "start": "2026-10-28T19:00:00",
-   "venue": "Fox Cabaret",
-   "venue_id": "fox-cabaret",
+   "venue": "Hollywood Theatre",
+   "venue_id": "hollywood-theatre",
    "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43289523-chris-murphy-at-fox-cabaret",
+   "url": "https://www.songkick.com/concerts/43063497-begonia-at-hollywood-theatre",
    "also_listed": [],
-   "lat": 49.26426,
-   "lng": -123.10118,
-   "headliner": "Chris Murphy",
+   "lat": 49.26444,
+   "lng": -123.17453,
+   "headliner": "Begonia",
    "artists": [
     {
-     "name": "Chris Murphy",
-     "spotify_name": "Chris Murphy",
-     "spotify_id": "1NzWDuN2TgYVKbN9mw8cTe",
-     "url": "https://open.spotify.com/artist/1NzWDuN2TgYVKbN9mw8cTe",
+     "name": "Begonia",
+     "spotify_name": "Begonia",
+     "spotify_id": "4imuw38jkxPpTDqeMZDZD6",
+     "url": "https://open.spotify.com/artist/4imuw38jkxPpTDqeMZDZD6",
      "genres": [],
      "songkick_genres": [],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab67616d00004851506c33798c06534574cc0873",
+     "image": "https://i.scdn.co/image/ab6761610000f17883e74f6fd4409a931fa985ad",
      "tracks": [
       {
-       "id": "3m0ZAeuLMQYRZH5ap6KFC8",
-       "uri": "spotify:track:3m0ZAeuLMQYRZH5ap6KFC8",
-       "name": "Finally Coming Home",
+       "id": "5ykFvRaWHGvoZOvTcJIuSG",
+       "uri": "spotify:track:5ykFvRaWHGvoZOvTcJIuSG",
+       "name": "Beats",
        "popularity": null,
-       "album": "Finally Coming Home",
+       "album": "Fear",
        "album_type": "album",
-       "release_date": "2010-03-10",
-       "duration_ms": 233920,
+       "release_date": "2019-09-13",
+       "duration_ms": 211316,
+       "explicit": false
+      },
+      {
+       "id": "7hF16oGuXZpTkj4yNAwYo7",
+       "uri": "spotify:track:7hF16oGuXZpTkj4yNAwYo7",
+       "name": "Married by Elvis",
+       "popularity": null,
+       "album": "Powder Blue (One Year Anniversary Edition)",
+       "album_type": "album",
+       "release_date": "2022",
+       "duration_ms": 186453,
        "explicit": false
       }
      ],
-     "rank_source": "search",
-     "mbid": "0ebb0fca-fb31-4416-b630-78bbdf5d535d",
+     "rank_source": "lastfm",
+     "mbid": "78ead170-8e4f-4496-96c6-9814b095e7d9",
      "reach": {
-      "listeners": 5937,
-      "playcount": 29376,
+      "listeners": 29093,
+      "playcount": 218455,
       "tags": [
-       "country",
-       "guitar",
-       "pop",
-       "power pop"
+       "indie pop",
+       "soul",
+       "noise",
+       "rnb"
       ],
       "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Chris+Murphy",
-      "mbid": "0ebb0fca-fb31-4416-b630-78bbdf5d535d"
+      "lastfm_url": "https://www.last.fm/music/Begonia",
+      "mbid": "78ead170-8e4f-4496-96c6-9814b095e7d9"
      },
      "genres_canon": [
-      "country",
-      "pop",
-      "indie pop"
+      "indie pop",
+      "soul",
+      "noise"
      ]
     }
    ]
@@ -9669,8 +9680,8 @@
      "rank_source": "lastfm",
      "mbid": "88d17133-abbc-42db-9526-4e2c1db60336",
      "reach": {
-      "listeners": 2823089,
-      "playcount": 355859715,
+      "listeners": 2852843,
+      "playcount": 360586187,
       "tags": [
        "indie pop",
        "indie rock",
@@ -9727,8 +9738,8 @@
      "rank_source": "lastfm",
      "mbid": "4159ac30-ecce-43a6-b200-b48801968e30",
      "reach": {
-      "listeners": 1149723,
-      "playcount": 41675270,
+      "listeners": 1163124,
+      "playcount": 42259213,
       "tags": [
        "idm",
        "ambient",
@@ -9801,8 +9812,8 @@
      "rank_source": "lastfm",
      "mbid": "9efaf639-6332-44b8-94ae-c25896320ca7",
      "reach": {
-      "listeners": 290521,
-      "playcount": 11856242,
+      "listeners": 295401,
+      "playcount": 12110041,
       "tags": [
        "post-punk",
        "crank wave",
@@ -9858,8 +9869,8 @@
      "rank_source": "search",
      "mbid": "86a80f85-2c4f-4ab0-85fb-4ea6bca2df44",
      "reach": {
-      "listeners": 58948,
-      "playcount": 994593,
+      "listeners": 59136,
+      "playcount": 997172,
       "tags": [
        "ebm",
        "industrial",
@@ -9993,8 +10004,8 @@
      "rank_source": "lastfm",
      "mbid": "a2abdca1-2041-45b9-8d01-e34fdef7922f",
      "reach": {
-      "listeners": 267535,
-      "playcount": 2828604,
+      "listeners": 268544,
+      "playcount": 2846827,
       "tags": [
        "acoustic",
        "pop",
@@ -10064,8 +10075,8 @@
      "rank_source": "lastfm",
      "mbid": "d6ff78c2-0f5e-4561-82ad-0addd7ef2f48",
      "reach": {
-      "listeners": 21688,
-      "playcount": 176803,
+      "listeners": 22039,
+      "playcount": 180043,
       "tags": [
        "hardwave",
        "wave",
@@ -10118,17 +10129,20 @@
      "rank_source": "lastfm",
      "mbid": "6e4b1b38-5a83-454a-bd7d-38cfbb6d6390",
      "reach": {
-      "listeners": 9318,
-      "playcount": 52079,
+      "listeners": 9333,
+      "playcount": 52279,
       "tags": [
-       "electronic"
+       "electronic",
+       "dubstep",
+       "edm"
       ],
       "tier": 2,
       "lastfm_url": "https://www.last.fm/music/Synova",
       "mbid": "6e4b1b38-5a83-454a-bd7d-38cfbb6d6390"
      },
      "genres_canon": [
-      "electronic"
+      "electronic",
+      "bass / dnb"
      ]
     }
    ]
@@ -10488,8 +10502,8 @@
      "rank_source": "lastfm",
      "mbid": "888492a4-51c0-4a83-a8dc-ff0d42813999",
      "reach": {
-      "listeners": 32786,
-      "playcount": 355451,
+      "listeners": 33326,
+      "playcount": 359665,
       "tags": [
        "country",
        "saw live"
@@ -10539,8 +10553,8 @@
      "rank_source": "lastfm",
      "mbid": "4c82242a-4c59-455d-9883-beeaef0e21d1",
      "reach": {
-      "listeners": 107684,
-      "playcount": 886166,
+      "listeners": 108022,
+      "playcount": 890191,
       "tags": [
        "blues",
        "bluegrass",
@@ -10614,8 +10628,8 @@
      "rank_source": "lastfm",
      "mbid": "efa2c11a-1a35-4b60-bc1b-66d37de88511",
      "reach": {
-      "listeners": 2111738,
-      "playcount": 60326926,
+      "listeners": 2118547,
+      "playcount": 60474310,
       "tags": [
        "trip-hop",
        "electronic",
@@ -10688,8 +10702,8 @@
      "rank_source": "lastfm",
      "mbid": "03e39569-c546-4512-8c6d-f8a8283ec3d1",
      "reach": {
-      "listeners": 75204,
-      "playcount": 735603,
+      "listeners": 75411,
+      "playcount": 738679,
       "tags": [
        "hard rock",
        "rock",
@@ -10698,6 +10712,60 @@
       "tier": 3,
       "lastfm_url": "https://www.last.fm/music/Honeymoon+Suite",
       "mbid": "03e39569-c546-4512-8c6d-f8a8283ec3d1"
+     },
+     "genres_canon": [
+      "rock"
+     ]
+    },
+    {
+     "name": "Streetheart",
+     "spotify_name": "Streetheart",
+     "spotify_id": "1lUgVZBGL1Ejxm7r1FBnBG",
+     "url": "https://open.spotify.com/artist/1lUgVZBGL1Ejxm7r1FBnBG",
+     "genres": [],
+     "songkick_genres": [
+      "rock"
+     ],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab67616d000048518065c59e4bd60b40f504be87",
+     "tracks": [
+      {
+       "id": "3F52dQ5vMdpD4rtXm1i7Zl",
+       "uri": "spotify:track:3F52dQ5vMdpD4rtXm1i7Zl",
+       "name": "Under My Thumb",
+       "popularity": null,
+       "album": "Under Heaven Over Hell",
+       "album_type": "album",
+       "release_date": "1979",
+       "duration_ms": 399716,
+       "explicit": false
+      },
+      {
+       "id": "54cxdyB2VXrdN3lk2VBtXm",
+       "uri": "spotify:track:54cxdyB2VXrdN3lk2VBtXm",
+       "name": "Here Comes the Night",
+       "popularity": null,
+       "album": "Under Heaven Over Hell",
+       "album_type": "album",
+       "release_date": "1979",
+       "duration_ms": 230645,
+       "explicit": false
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": "b6eae833-59ce-4932-9b23-04c908559039",
+     "reach": {
+      "listeners": 13934,
+      "playcount": 157179,
+      "tags": [
+       "hard rock",
+       "classic rock",
+       "rock"
+      ],
+      "tier": 2,
+      "lastfm_url": "https://www.last.fm/music/Streetheart",
+      "mbid": "b6eae833-59ce-4932-9b23-04c908559039"
      },
      "genres_canon": [
       "rock"
@@ -10742,8 +10810,8 @@
      "rank_source": "lastfm",
      "mbid": "d662bead-5d16-4cf7-ba9c-254b66d112d5",
      "reach": {
-      "listeners": 22656,
-      "playcount": 215457,
+      "listeners": 22754,
+      "playcount": 216629,
       "tags": [
        "classic rock",
        "rock",
@@ -10816,8 +10884,8 @@
      "rank_source": "lastfm",
      "mbid": "d8fd8d9b-473b-4f06-83c8-869b1bb9de89",
      "reach": {
-      "listeners": 1795920,
-      "playcount": 112723219,
+      "listeners": 1812468,
+      "playcount": 113464741,
       "tags": [
        "rnb",
        "hip-hop",
@@ -10876,8 +10944,8 @@
      "rank_source": "lastfm",
      "mbid": "abaa7001-0d80-4e58-be5d-d2d246fd9d87",
      "reach": {
-      "listeners": 629922,
-      "playcount": 12231722,
+      "listeners": 633045,
+      "playcount": 12295689,
       "tags": [
        "rnb",
        "electronic",
@@ -10936,8 +11004,8 @@
      "rank_source": "lastfm",
      "mbid": "7bd66c18-cb33-49aa-9279-140acedbdb49",
      "reach": {
-      "listeners": 1777225,
-      "playcount": 32740430,
+      "listeners": 1788863,
+      "playcount": 32924696,
       "tags": [
        "hip-hop",
        "rap",
@@ -10996,11 +11064,11 @@
      "rank_source": "lastfm",
      "mbid": "71e0b3da-e806-44e5-9c73-6df1598b8f65",
      "reach": {
-      "listeners": 180438,
-      "playcount": 1379255,
+      "listeners": 180713,
+      "playcount": 1381253,
       "tags": [
-       "electronic",
        "hip-hop",
+       "electronic",
        "instrumental hip-hop",
        "harlem"
       ],
@@ -11009,8 +11077,8 @@
       "mbid": "71e0b3da-e806-44e5-9c73-6df1598b8f65"
      },
      "genres_canon": [
-      "electronic",
       "hip hop",
+      "electronic",
       "pop"
      ]
     }
@@ -11071,8 +11139,8 @@
      "rank_source": "lastfm",
      "mbid": "825a918f-09fa-40ee-9c27-b0921d48bdbb",
      "reach": {
-      "listeners": 259366,
-      "playcount": 1532038,
+      "listeners": 259921,
+      "playcount": 1535559,
       "tags": [
        "rock",
        "classic rock",
@@ -11142,8 +11210,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 13908,
-      "playcount": 147662,
+      "listeners": 14048,
+      "playcount": 149151,
       "tags": [
        "electronic",
        "bass",
@@ -11212,11 +11280,11 @@
      "rank_source": "lastfm",
      "mbid": "58db037a-c2c6-404c-9557-96a88b8c7a20",
      "reach": {
-      "listeners": 7737,
-      "playcount": 39636,
+      "listeners": 7765,
+      "playcount": 39722,
       "tags": [
-       "electro house",
        "house",
+       "electro house",
        "tech house"
       ],
       "tier": 2,
@@ -11226,52 +11294,6 @@
      "genres_canon": [
       "house"
      ]
-    },
-    {
-     "name": "N2N",
-     "spotify_name": "N2N",
-     "spotify_id": "3ZnVC33s8MBcF0KmAC4rj5",
-     "url": "https://open.spotify.com/artist/3ZnVC33s8MBcF0KmAC4rj5",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178675e66631a5d96813959793c",
-     "tracks": [
-      {
-       "id": "6uyPxNh9jZSdwQkfaOF9FF",
-       "uri": "spotify:track:6uyPxNh9jZSdwQkfaOF9FF",
-       "name": "Tease",
-       "popularity": null,
-       "album": "Tease",
-       "album_type": "single",
-       "release_date": "2025-10-10",
-       "duration_ms": 183500,
-       "explicit": false
-      },
-      {
-       "id": "0syF2z8puWwWyVjioMSNE8",
-       "uri": "spotify:track:0syF2z8puWwWyVjioMSNE8",
-       "name": "Provide",
-       "popularity": null,
-       "album": "Provide",
-       "album_type": "single",
-       "release_date": "2025-11-12",
-       "duration_ms": 197952,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "7b016dc1-a181-46ac-9b0b-fe0eab9ad0c8",
-     "reach": {
-      "listeners": 19426,
-      "playcount": 82652,
-      "tags": [],
-      "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/N2N",
-      "mbid": "7b016dc1-a181-46ac-9b0b-fe0eab9ad0c8"
-     },
-     "genres_canon": []
     }
    ]
   },
@@ -11330,8 +11352,8 @@
      "rank_source": "lastfm",
      "mbid": "addb00fd-733c-4223-8fdf-f78be2488acd",
      "reach": {
-      "listeners": 1512830,
-      "playcount": 24587059,
+      "listeners": 1518428,
+      "playcount": 24659114,
       "tags": [
        "house",
        "electronic",
@@ -11388,8 +11410,8 @@
      "rank_source": "lastfm",
      "mbid": "f5aa8374-e16b-4645-bb1d-f88a855fb924",
      "reach": {
-      "listeners": 91339,
-      "playcount": 2364682,
+      "listeners": 91872,
+      "playcount": 2373130,
       "tags": [
        "electronic",
        "dubstep",
@@ -11446,8 +11468,8 @@
      "rank_source": "lastfm",
      "mbid": "5f3b32e5-efb5-4096-9260-587c155e50b7",
      "reach": {
-      "listeners": 476711,
-      "playcount": 6844249,
+      "listeners": 477331,
+      "playcount": 6852598,
       "tags": [
        "trance",
        "progressive trance",
@@ -11504,8 +11526,8 @@
      "rank_source": "lastfm",
      "mbid": "94bd816b-af21-44f8-aed7-99d49f8de3e9",
      "reach": {
-      "listeners": 284323,
-      "playcount": 5323096,
+      "listeners": 285289,
+      "playcount": 5336589,
       "tags": [
        "happy hardcore",
        "uk hardcore",
@@ -11534,7 +11556,7 @@
      ],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f17882ac9eee4c8a5f57412b4821",
+     "image": "https://i.scdn.co/image/ab6761610000f17832434efeba37817a07e4e4a0",
      "tracks": [
       {
        "id": "44DCjBHfvn5s6ZfLHpKmBi",
@@ -11562,12 +11584,13 @@
      "rank_source": "lastfm",
      "mbid": "07aceecf-0fa2-4d51-865f-273313cba931",
      "reach": {
-      "listeners": 611602,
-      "playcount": 9250700,
+      "listeners": 614379,
+      "playcount": 9279525,
       "tags": [
        "house",
        "electronic",
-       "electro house"
+       "electro house",
+       "trumpet"
       ],
       "tier": 4,
       "lastfm_url": "https://www.last.fm/music/Timmy+Trumpet",
@@ -11635,8 +11658,8 @@
      "rank_source": "lastfm",
      "mbid": "312c7cc1-9b5c-4406-963b-9f73f50674c0",
      "reach": {
-      "listeners": 614077,
-      "playcount": 16297550,
+      "listeners": 625430,
+      "playcount": 17409701,
       "tags": [
        "pop",
        "fun fun fun fun",
@@ -11666,8 +11689,8 @@
      "image": "https://i.scdn.co/image/ab6761610000f17894aac66e6cd500668e8fa575",
      "tracks": [
       {
-       "id": "6sNxPUqycedL5qKgzUClVs",
-       "uri": "spotify:track:6sNxPUqycedL5qKgzUClVs",
+       "id": "1tXi8DZG7q0eg9idatC5Zv",
+       "uri": "spotify:track:1tXi8DZG7q0eg9idatC5Zv",
        "name": "sushi for breakfast",
        "popularity": null,
        "album": "sushi for breakfast",
@@ -11691,11 +11714,11 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 236735,
-      "playcount": 2937155,
+      "listeners": 239631,
+      "playcount": 2987861,
       "tags": [
-       "pop",
        "soul",
+       "pop",
        "rnb",
        "indie pop"
       ],
@@ -11704,8 +11727,8 @@
       "mbid": null
      },
      "genres_canon": [
-      "pop",
       "soul",
+      "pop",
       "r&b"
      ]
     }
@@ -11763,11 +11786,11 @@
      "rank_source": "lastfm",
      "mbid": "58db037a-c2c6-404c-9557-96a88b8c7a20",
      "reach": {
-      "listeners": 7737,
-      "playcount": 39636,
+      "listeners": 7765,
+      "playcount": 39722,
       "tags": [
-       "electro house",
        "house",
+       "electro house",
        "tech house"
       ],
       "tier": 2,
@@ -11787,7 +11810,7 @@
      "songkick_genres": [],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178ccb8a008c3e69875d5e77d03",
+     "image": "https://i.scdn.co/image/ab6761610000f178e1f73406afc4dac75c74a1d8",
      "tracks": [
       {
        "id": "7Bbo3xhXC5LYBebfzlMFCI",
@@ -11801,22 +11824,22 @@
        "explicit": false
       },
       {
-       "id": "0ZlR230kTZFq2xj8d54ogO",
-       "uri": "spotify:track:0ZlR230kTZFq2xj8d54ogO",
-       "name": "Feeling Like 50 Again",
+       "id": "5LiSJ1QQvvOzMPPaNCs9oA",
+       "uri": "spotify:track:5LiSJ1QQvvOzMPPaNCs9oA",
+       "name": "Lose My Keys",
        "popularity": null,
-       "album": "Feeling Like 50 Again",
+       "album": "Lose My Keys",
        "album_type": "single",
-       "release_date": "2021-08-27",
-       "duration_ms": 130560,
-       "explicit": true
+       "release_date": "2024-05-10",
+       "duration_ms": 184786,
+       "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "35921a7f-af10-4dd0-b057-5119cae7266a",
      "reach": {
-      "listeners": 4802,
-      "playcount": 19948,
+      "listeners": 4958,
+      "playcount": 20414,
       "tags": [
        "post-punk",
        "mississippi",
@@ -11886,11 +11909,11 @@
      "rank_source": "lastfm",
      "mbid": "9018ba16-a391-4a08-af8c-21cdc52672c2",
      "reach": {
-      "listeners": 96947,
-      "playcount": 2141352,
+      "listeners": 101209,
+      "playcount": 2291996,
       "tags": [
-       "noise rock",
        "post-punk",
+       "noise rock",
        "crank wave",
        "no wave"
       ],
@@ -11899,8 +11922,8 @@
       "mbid": "9018ba16-a391-4a08-af8c-21cdc52672c2"
      },
      "genres_canon": [
-      "noise",
-      "post-punk"
+      "post-punk",
+      "noise"
      ]
     }
    ]
@@ -11959,8 +11982,8 @@
      "rank_source": "lastfm",
      "mbid": "6082bb10-ba2f-4990-9b1f-ab6b868f4683",
      "reach": {
-      "listeners": 69134,
-      "playcount": 2031025,
+      "listeners": 69463,
+      "playcount": 2047399,
       "tags": [
        "thrash metal",
        "black metal",
@@ -12014,8 +12037,8 @@
      "rank_source": "lastfm",
      "mbid": "05c19e3f-0efc-4954-8995-79a9bf63ec92",
      "reach": {
-      "listeners": 10242,
-      "playcount": 311260,
+      "listeners": 10302,
+      "playcount": 313535,
       "tags": [
        "death metal",
        "thrash metal",
@@ -12044,14 +12067,14 @@
      "image": "https://i.scdn.co/image/ab67616d00004851be4e01d62039f256aab216db",
      "tracks": [
       {
-       "id": "0NogbOWbRe8LdIcL7AoPvh",
-       "uri": "spotify:track:0NogbOWbRe8LdIcL7AoPvh",
-       "name": "Deadly Mantis - Unreleased MLP",
+       "id": "7lHZpPEj9Z635gfJGoRlsm",
+       "uri": "spotify:track:7lHZpPEj9Z635gfJGoRlsm",
+       "name": "Deadly Mantis",
        "popularity": null,
-       "album": "Stretching into Infinity",
+       "album": "Damnation Is My Salvation",
        "album_type": "album",
-       "release_date": "2005-10-13",
-       "duration_ms": 228680,
+       "release_date": "2020-04-25",
+       "duration_ms": 246048,
        "explicit": true
       },
       {
@@ -12069,8 +12092,8 @@
      "rank_source": "lastfm",
      "mbid": "e10768a2-ca2b-4da7-97d7-83c3f59482d3",
      "reach": {
-      "listeners": 2370,
-      "playcount": 51611,
+      "listeners": 2400,
+      "playcount": 52182,
       "tags": [
        "thrash metal",
        "speed metal",
@@ -12253,8 +12276,8 @@
      "rank_source": "lastfm",
      "mbid": "fca94d64-9ada-4264-9373-4158e2f7c7e7",
      "reach": {
-      "listeners": 820794,
-      "playcount": 10820196,
+      "listeners": 823602,
+      "playcount": 10856607,
       "tags": [
        "house",
        "electro house",
@@ -12310,8 +12333,8 @@
      "rank_source": "lastfm",
      "mbid": "ed89e14b-dc04-4708-a69c-51a379623d0f",
      "reach": {
-      "listeners": 139027,
-      "playcount": 1789773,
+      "listeners": 140868,
+      "playcount": 1816878,
       "tags": [
        "uk garage",
        "electronic",
@@ -12366,8 +12389,8 @@
      "rank_source": "lastfm",
      "mbid": "674bf89f-8e70-4472-929d-6b4ed6f98c88",
      "reach": {
-      "listeners": 1823475,
-      "playcount": 20237888,
+      "listeners": 1828911,
+      "playcount": 20291497,
       "tags": [
        "electronic",
        "house",
@@ -12398,33 +12421,33 @@
      "image": "https://i.scdn.co/image/ab6761610000f1780bcc51766c7e5d49c71eb5e2",
      "tracks": [
       {
-       "id": "5RQso3n4b37gFcwb1t7I5J",
-       "uri": "spotify:track:5RQso3n4b37gFcwb1t7I5J",
-       "name": "Face In The Crowd - Extended Mix",
+       "id": "26u8BxcbNNRlbreUeIwXnP",
+       "uri": "spotify:track:26u8BxcbNNRlbreUeIwXnP",
+       "name": "Face In The Crowd",
        "popularity": null,
        "album": "Face In The Crowd",
        "album_type": "single",
        "release_date": "2023-04-07",
-       "duration_ms": 337260,
+       "duration_ms": 184790,
        "explicit": false
       },
       {
-       "id": "6g2sYV4bJaTdb37bTkQqfM",
-       "uri": "spotify:track:6g2sYV4bJaTdb37bTkQqfM",
-       "name": "Take My Hand",
+       "id": "1UTIgGpDdxUonuUIw3O0YZ",
+       "uri": "spotify:track:1UTIgGpDdxUonuUIw3O0YZ",
+       "name": "I Want You",
        "popularity": null,
-       "album": "Take My Hand",
+       "album": "I Want You",
        "album_type": "single",
-       "release_date": "2023-07-21",
-       "duration_ms": 171670,
+       "release_date": "2022-08-12",
+       "duration_ms": 190645,
        "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "7cc66999-ad7f-40ce-81d9-2d99bb7386c1",
      "reach": {
-      "listeners": 19018,
-      "playcount": 81783,
+      "listeners": 19148,
+      "playcount": 82282,
       "tags": [
        "electronic",
        "deep house"
@@ -12478,22 +12501,22 @@
        "explicit": false
       },
       {
-       "id": "2zcQTjc2C3u99iHmUWShxv",
-       "uri": "spotify:track:2zcQTjc2C3u99iHmUWShxv",
+       "id": "2GfQuvAYcdHMrjFVCtFgub",
+       "uri": "spotify:track:2GfQuvAYcdHMrjFVCtFgub",
        "name": "Double Disco",
        "popularity": null,
-       "album": "Double Disco",
-       "album_type": "single",
-       "release_date": "2025-10-06",
-       "duration_ms": 176454,
+       "album": "Happiness Frontier",
+       "album_type": "album",
+       "release_date": "2026-10-23",
+       "duration_ms": 176058,
        "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 13710,
-      "playcount": 103354,
+      "listeners": 13878,
+      "playcount": 104564,
       "tags": [],
       "tier": 2,
       "lastfm_url": "https://www.last.fm/music/Bealby+Point",
@@ -12557,8 +12580,8 @@
      "rank_source": "lastfm",
      "mbid": "312c7cc1-9b5c-4406-963b-9f73f50674c0",
      "reach": {
-      "listeners": 614077,
-      "playcount": 16297550,
+      "listeners": 625430,
+      "playcount": 17409701,
       "tags": [
        "pop",
        "fun fun fun fun",
@@ -12630,8 +12653,8 @@
      "rank_source": "lastfm",
      "mbid": "674bf89f-8e70-4472-929d-6b4ed6f98c88",
      "reach": {
-      "listeners": 1823475,
-      "playcount": 20237888,
+      "listeners": 1828911,
+      "playcount": 20291497,
       "tags": [
        "electronic",
        "house",
@@ -12662,33 +12685,33 @@
      "image": "https://i.scdn.co/image/ab6761610000f1780bcc51766c7e5d49c71eb5e2",
      "tracks": [
       {
-       "id": "5RQso3n4b37gFcwb1t7I5J",
-       "uri": "spotify:track:5RQso3n4b37gFcwb1t7I5J",
-       "name": "Face In The Crowd - Extended Mix",
+       "id": "26u8BxcbNNRlbreUeIwXnP",
+       "uri": "spotify:track:26u8BxcbNNRlbreUeIwXnP",
+       "name": "Face In The Crowd",
        "popularity": null,
        "album": "Face In The Crowd",
        "album_type": "single",
        "release_date": "2023-04-07",
-       "duration_ms": 337260,
+       "duration_ms": 184790,
        "explicit": false
       },
       {
-       "id": "6g2sYV4bJaTdb37bTkQqfM",
-       "uri": "spotify:track:6g2sYV4bJaTdb37bTkQqfM",
-       "name": "Take My Hand",
+       "id": "1UTIgGpDdxUonuUIw3O0YZ",
+       "uri": "spotify:track:1UTIgGpDdxUonuUIw3O0YZ",
+       "name": "I Want You",
        "popularity": null,
-       "album": "Take My Hand",
+       "album": "I Want You",
        "album_type": "single",
-       "release_date": "2023-07-21",
-       "duration_ms": 171670,
+       "release_date": "2022-08-12",
+       "duration_ms": 190645,
        "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "7cc66999-ad7f-40ce-81d9-2d99bb7386c1",
      "reach": {
-      "listeners": 19018,
-      "playcount": 81783,
+      "listeners": 19148,
+      "playcount": 82282,
       "tags": [
        "electronic",
        "deep house"
@@ -12758,8 +12781,8 @@
      "rank_source": "lastfm",
      "mbid": "0d10d859-50a4-4cb1-9412-31fb02795f9c",
      "reach": {
-      "listeners": 392408,
-      "playcount": 4791236,
+      "listeners": 393234,
+      "playcount": 4807214,
       "tags": [
        "deep house",
        "electronic",
@@ -12833,8 +12856,8 @@
      "rank_source": "lastfm",
      "mbid": "1d3da898-4fb4-4445-b704-cd7315e01789",
      "reach": {
-      "listeners": 271373,
-      "playcount": 6155606,
+      "listeners": 272316,
+      "playcount": 6178363,
       "tags": [
        "drone",
        "doom metal",
@@ -12912,8 +12935,8 @@
      "rank_source": "lastfm",
      "mbid": "5412d122-ec04-40be-9be7-c64fbfadb26f",
      "reach": {
-      "listeners": 416072,
-      "playcount": 10803180,
+      "listeners": 416958,
+      "playcount": 10829061,
       "tags": [
        "pop",
        "indie pop",
@@ -12968,8 +12991,8 @@
      "rank_source": "lastfm",
      "mbid": "7f2e5f11-c4d1-444e-865e-f14712d74df1",
      "reach": {
-      "listeners": 300830,
-      "playcount": 4000639,
+      "listeners": 301274,
+      "playcount": 4006083,
       "tags": [
        "indie pop",
        "my top songs",
@@ -13043,8 +13066,8 @@
      "rank_source": "lastfm",
      "mbid": "1d3da898-4fb4-4445-b704-cd7315e01789",
      "reach": {
-      "listeners": 271373,
-      "playcount": 6155606,
+      "listeners": 272316,
+      "playcount": 6178363,
       "tags": [
        "drone",
        "doom metal",
@@ -13118,8 +13141,8 @@
      "rank_source": "lastfm",
      "mbid": "3f6c0aa1-a7a9-4ff2-9c50-e84d4b0de178",
      "reach": {
-      "listeners": 215214,
-      "playcount": 6966090,
+      "listeners": 216081,
+      "playcount": 6994033,
       "tags": [
        "progressive metal",
        "instrumental",
@@ -13176,8 +13199,8 @@
      "rank_source": "lastfm",
      "mbid": "a61d862c-2714-47a7-b68b-2870a753f4a8",
      "reach": {
-      "listeners": 96621,
-      "playcount": 2946088,
+      "listeners": 97063,
+      "playcount": 2961556,
       "tags": [
        "post-hardcore",
        "progressive rock",
@@ -13234,8 +13257,8 @@
      "rank_source": "lastfm",
      "mbid": "a0f88441-1f34-4e20-85d3-6bcceeb3071f",
      "reach": {
-      "listeners": 15630,
-      "playcount": 118397,
+      "listeners": 15970,
+      "playcount": 127304,
       "tags": [
        "drone",
        "ambient",
@@ -13309,8 +13332,8 @@
      "rank_source": "lastfm",
      "mbid": "17216b16-e706-4082-b0ba-e409a3097844",
      "reach": {
-      "listeners": 88254,
-      "playcount": 1968544,
+      "listeners": 88910,
+      "playcount": 1985549,
       "tags": [
        "stoner rock",
        "psychedelic rock",
@@ -13367,8 +13390,8 @@
      "rank_source": "lastfm",
      "mbid": "38e89263-3d3c-4ccb-ae29-9c31dcff0777",
      "reach": {
-      "listeners": 79927,
-      "playcount": 886355,
+      "listeners": 80304,
+      "playcount": 891506,
       "tags": [
        "garage rock",
        "lo-fi",
@@ -13438,8 +13461,8 @@
      "rank_source": "lastfm",
      "mbid": "5526ed22-a1ec-4ff8-a477-1282b3fe40fd",
      "reach": {
-      "listeners": 3136,
-      "playcount": 19650,
+      "listeners": 3144,
+      "playcount": 19706,
       "tags": [
        "folk",
        "indie folk"
@@ -13482,13 +13505,13 @@
      "image": "https://i.scdn.co/image/ab6761610000f178fb0ab819bbd4502028cd1feb",
      "tracks": [
       {
-       "id": "2gYTC8DsplN3RNdpdBcCOQ",
-       "uri": "spotify:track:2gYTC8DsplN3RNdpdBcCOQ",
+       "id": "7gkZNvBHfI30qG7hA0eopT",
+       "uri": "spotify:track:7gkZNvBHfI30qG7hA0eopT",
        "name": "Die On This Hill",
        "popularity": null,
-       "album": "Die On This Hill",
-       "album_type": "single",
-       "release_date": "2025-10-10",
+       "album": "Visitor",
+       "album_type": "album",
+       "release_date": "2026-07-02",
        "duration_ms": 217008,
        "explicit": false
       },
@@ -13507,11 +13530,11 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 669894,
-      "playcount": 12251984,
+      "listeners": 689816,
+      "playcount": 12981412,
       "tags": [
-       "jazz",
        "soul",
+       "jazz",
        "pop"
       ],
       "tier": 4,
@@ -13519,8 +13542,8 @@
       "mbid": null
      },
      "genres_canon": [
-      "jazz",
       "soul",
+      "jazz",
       "pop"
      ]
     },
@@ -13561,10 +13584,10 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 4611,
-      "playcount": 13752,
+      "listeners": 5041,
+      "playcount": 15771,
       "tags": [],
-      "tier": 1,
+      "tier": 2,
       "lastfm_url": "https://www.last.fm/music/Summer+Joy",
       "mbid": null
      },
@@ -13610,13 +13633,13 @@
        "explicit": false
       },
       {
-       "id": "1iYlrb59ntgvOlOPyT8FqB",
-       "uri": "spotify:track:1iYlrb59ntgvOlOPyT8FqB",
+       "id": "1brMjRG57uIpurw6xbiqsG",
+       "uri": "spotify:track:1brMjRG57uIpurw6xbiqsG",
        "name": "Waste Your Time",
        "popularity": null,
-       "album": "Waste Your Time",
-       "album_type": "single",
-       "release_date": "2024-01-12",
+       "album": "The Only Place I’ve Ever Known",
+       "album_type": "album",
+       "release_date": "2024-09-27",
        "duration_ms": 178270,
        "explicit": false
       }
@@ -13624,21 +13647,21 @@
      "rank_source": "lastfm",
      "mbid": "77f4b530-5657-4c75-ad4f-92a75f72deb1",
      "reach": {
-      "listeners": 94874,
-      "playcount": 916704,
+      "listeners": 95963,
+      "playcount": 927840,
       "tags": [
-       "alt rock",
        "rock",
+       "alt rock",
        "garage rock",
-       "pop"
+       "alternative"
       ],
       "tier": 3,
       "lastfm_url": "https://www.last.fm/music/Cardinal+Bloom",
       "mbid": "77f4b530-5657-4c75-ad4f-92a75f72deb1"
      },
      "genres_canon": [
-      "alternative",
       "rock",
+      "alternative",
       "garage rock"
      ]
     }
@@ -13696,8 +13719,8 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 1840,
-      "playcount": 13036,
+      "listeners": 1857,
+      "playcount": 13269,
       "tags": [],
       "tier": 1,
       "lastfm_url": "https://www.last.fm/music/+noredirect/Miesha+and+the+Spanks",
@@ -13761,8 +13784,8 @@
      "rank_source": "lastfm",
      "mbid": "913b4704-05bf-4e53-b30a-f3bd244ea2ea",
      "reach": {
-      "listeners": 1324483,
-      "playcount": 25929049,
+      "listeners": 1331314,
+      "playcount": 26026080,
       "tags": [
        "indie pop",
        "dream pop",
@@ -13835,8 +13858,8 @@
      "rank_source": "lastfm",
      "mbid": "3a4024dc-cc62-4d9b-8bed-c22426136a52",
      "reach": {
-      "listeners": 510388,
-      "playcount": 50003403,
+      "listeners": 518672,
+      "playcount": 51735205,
       "tags": [
        "folktronica",
        "art pop",
@@ -13893,26 +13916,26 @@
        "explicit": false
       },
       {
-       "id": "0FaOXf47qPawRGGa2aILRo",
-       "uri": "spotify:track:0FaOXf47qPawRGGa2aILRo",
-       "name": "Redwoods",
+       "id": "4V1AVceFcAIcfmqOOfseLc",
+       "uri": "spotify:track:4V1AVceFcAIcfmqOOfseLc",
+       "name": "Tooth",
        "popularity": null,
-       "album": "Redwoods",
-       "album_type": "single",
-       "release_date": "2022-11-18",
-       "duration_ms": 262097,
+       "album": "Friends & Family",
+       "album_type": "album",
+       "release_date": "2025-08-22",
+       "duration_ms": 166607,
        "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": "aee76941-2c46-43d5-80a9-a2d916073349",
      "reach": {
-      "listeners": 45283,
-      "playcount": 264616,
+      "listeners": 45883,
+      "playcount": 267811,
       "tags": [
        "pop",
-       "funk_add_to_lidarr_batch_11",
-       "rnb"
+       "rnb",
+       "funk_add_to_lidarr_batch_11"
       ],
       "tier": 2,
       "lastfm_url": "https://www.last.fm/music/Hayden+Everett",
@@ -13952,13 +13975,13 @@
      "image": "https://i.scdn.co/image/ab6761610000f178fb0ab819bbd4502028cd1feb",
      "tracks": [
       {
-       "id": "2gYTC8DsplN3RNdpdBcCOQ",
-       "uri": "spotify:track:2gYTC8DsplN3RNdpdBcCOQ",
+       "id": "7gkZNvBHfI30qG7hA0eopT",
+       "uri": "spotify:track:7gkZNvBHfI30qG7hA0eopT",
        "name": "Die On This Hill",
        "popularity": null,
-       "album": "Die On This Hill",
-       "album_type": "single",
-       "release_date": "2025-10-10",
+       "album": "Visitor",
+       "album_type": "album",
+       "release_date": "2026-07-02",
        "duration_ms": 217008,
        "explicit": false
       },
@@ -13977,11 +14000,11 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 669894,
-      "playcount": 12251984,
+      "listeners": 689816,
+      "playcount": 12981412,
       "tags": [
-       "jazz",
        "soul",
+       "jazz",
        "pop"
       ],
       "tier": 4,
@@ -13989,8 +14012,8 @@
       "mbid": null
      },
      "genres_canon": [
-      "jazz",
       "soul",
+      "jazz",
       "pop"
      ]
     },
@@ -14031,10 +14054,10 @@
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 4611,
-      "playcount": 13752,
+      "listeners": 5041,
+      "playcount": 15771,
       "tags": [],
-      "tier": 1,
+      "tier": 2,
       "lastfm_url": "https://www.last.fm/music/Summer+Joy",
       "mbid": null
      },
@@ -14096,8 +14119,8 @@
      "rank_source": "lastfm",
      "mbid": "55daeec5-3f2f-4d61-b51e-0c6a30241b9e",
      "reach": {
-      "listeners": 58528,
-      "playcount": 802034,
+      "listeners": 58664,
+      "playcount": 804219,
       "tags": [
        "country",
        "canadian country",
@@ -14122,7 +14145,7 @@
      ],
      "popularity": null,
      "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178279c618c3ef73ad5c9164189",
+     "image": "https://i.scdn.co/image/ab6761610000f1782fcfc9d9e212b031de70d103",
      "tracks": [
       {
        "id": "2QkHSVK3QhVayKyzTrZF39",
@@ -14150,8 +14173,8 @@
      "rank_source": "lastfm",
      "mbid": "4f7f9d0f-5460-4de7-ae0b-2e9457c4964f",
      "reach": {
-      "listeners": 29829,
-      "playcount": 347237,
+      "listeners": 29961,
+      "playcount": 348889,
       "tags": [
        "country",
        "country pop"
@@ -14223,8 +14246,8 @@
      "rank_source": "lastfm",
      "mbid": "ba0d6274-db14-4ef5-b28d-657ebde1a396",
      "reach": {
-      "listeners": 4697794,
-      "playcount": 271365763,
+      "listeners": 4721211,
+      "playcount": 272803077,
       "tags": [
        "alternative rock",
        "grunge",
@@ -14281,23 +14304,26 @@
        "explicit": false
       },
       {
-       "id": "2EhZvjjhztE4WpMDGpnfhw",
-       "uri": "spotify:track:2EhZvjjhztE4WpMDGpnfhw",
-       "name": "Lungs",
+       "id": "1EV1RxwU82z7JAtzRxiOkK",
+       "uri": "spotify:track:1EV1RxwU82z7JAtzRxiOkK",
+       "name": "There's a rapist in the White House",
        "popularity": null,
        "album": "The Quiet Part, Loudly",
        "album_type": "album",
        "release_date": "2026-04-15",
-       "duration_ms": 283448,
+       "duration_ms": 268906,
        "explicit": false
       }
      ],
      "rank_source": "lastfm",
      "mbid": null,
      "reach": {
-      "listeners": 509,
-      "playcount": 2580,
+      "listeners": 518,
+      "playcount": 2684,
       "tags": [
+       "indie rock",
+       "rock",
+       "prog-metal",
        "prog metal"
       ],
       "tier": 1,
@@ -14305,6 +14331,8 @@
       "mbid": null
      },
      "genres_canon": [
+      "indie",
+      "rock",
       "metal"
      ]
     }
@@ -22982,16 +23010,16 @@
    "reason": "no_match",
    "candidates": [
     "The 78th Fraser Highlanders Pipe Band",
-    "The Fraser Family",
     "The Pipers of the Quebec City 78th Fraser Highlanders",
+    "The Fraser Family",
     "The Rare Occasions",
     "Grateful Dead",
-    "The Fratellis"
+    "The Fray"
    ]
   },
   {
-   "artist": "Begonia",
-   "event": "Begonia @ Hollywood Theatre",
+   "artist": "Chris Murphy",
+   "event": "Chris Murphy @ Fox Cabaret",
    "date": "2026-10-28",
    "reason": "no_tracks",
    "candidates": []
@@ -23008,11 +23036,17 @@
    ]
   },
   {
-   "artist": "Streetheart",
-   "event": "Honeymoon Suite @ Rogers Forum",
+   "artist": "N2N",
+   "event": "SkiiTour @ Hollywood Theatre",
    "date": "2026-10-30",
-   "reason": "no_tracks",
-   "candidates": []
+   "reason": "no_match",
+   "candidates": [
+    "25時、ナイトコードで。",
+    "2NE1",
+    "AND2BLE",
+    "2Frères",
+    "25Hzz"
+   ]
   },
   {
    "artist": "Dooms Night",
