@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-11-03T20:36:24+00:00",
+ "generated_at": "2026-11-04T20:51:57+00:00",
  "scraped_at": "2026-11-03T20:33:05+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -6277,10 +6277,10 @@
       }
      ],
      "rank_source": "search",
-     "mbid": null,
+     "mbid": "65e92bda-5aa1-43f3-adde-96fba13485ce",
      "reach": {
-      "listeners": 6036,
-      "playcount": 24717,
+      "listeners": 6038,
+      "playcount": 24724,
       "tags": [
        "hip-hop",
        "screamo",
@@ -6288,7 +6288,8 @@
        "french rap"
       ],
       "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/La+Haine"
+      "lastfm_url": "https://www.last.fm/music/La+Haine",
+      "mbid": "65e92bda-5aa1-43f3-adde-96fba13485ce"
      },
      "genres_canon": [
       "hip hop",
@@ -12313,10 +12314,10 @@
       }
      ],
      "rank_source": "lastfm",
-     "mbid": null,
+     "mbid": "f08532a4-a647-4184-8efc-d2a2c3a5f53c",
      "reach": {
-      "listeners": 46357,
-      "playcount": 304516,
+      "listeners": 46360,
+      "playcount": 304543,
       "tags": [
        "dubstep",
        "hip-hop",
@@ -12324,7 +12325,8 @@
        "bass"
       ],
       "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Gentlemens+Club"
+      "lastfm_url": "https://www.last.fm/music/Gentlemens+Club",
+      "mbid": "f08532a4-a647-4184-8efc-d2a2c3a5f53c"
      },
      "genres_canon": [
       "bass / dnb",
@@ -14005,13 +14007,14 @@
       }
      ],
      "rank_source": "lastfm",
-     "mbid": null,
+     "mbid": "40017bd7-139b-4998-8688-9b2478ad3325",
      "reach": {
-      "listeners": 463939,
-      "playcount": 71515649,
+      "listeners": 464072,
+      "playcount": 71542883,
       "tags": [],
       "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/+noredirect/tripleS"
+      "lastfm_url": "https://www.last.fm/music/+noredirect/tripleS",
+      "mbid": "40017bd7-139b-4998-8688-9b2478ad3325"
      },
      "genres_canon": []
     }
@@ -14135,13 +14138,14 @@
       }
      ],
      "rank_source": "lastfm",
-     "mbid": null,
+     "mbid": "ba447a49-08f6-4a6a-a7e6-83f05c5cf757",
      "reach": {
       "listeners": 384,
       "playcount": 1453,
       "tags": [],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Storm+Boy"
+      "lastfm_url": "https://www.last.fm/music/Storm+Boy",
+      "mbid": "ba447a49-08f6-4a6a-a7e6-83f05c5cf757"
      },
      "genres_canon": []
     },
@@ -14180,7 +14184,7 @@
       }
      ],
      "rank_source": "lastfm",
-     "mbid": null,
+     "mbid": "58363159-ed64-4dac-8768-95cf3178d94d",
      "reach": {
       "listeners": 2654,
       "playcount": 28370,
@@ -14191,7 +14195,8 @@
        "hardcore"
       ],
       "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Anchoress"
+      "lastfm_url": "https://www.last.fm/music/Anchoress",
+      "mbid": "58363159-ed64-4dac-8768-95cf3178d94d"
      },
      "genres_canon": [
       "rock",
@@ -14485,10 +14490,10 @@
       }
      ],
      "rank_source": "lastfm",
-     "mbid": null,
+     "mbid": "0bb18188-3e8d-4f1c-b29d-91502732a92e",
      "reach": {
-      "listeners": 172993,
-      "playcount": 3416947,
+      "listeners": 173188,
+      "playcount": 3422931,
       "tags": [
        "hard rock",
        "sleaze rock",
@@ -14496,7 +14501,8 @@
        "electropop"
       ],
       "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Baby+Jane"
+      "lastfm_url": "https://www.last.fm/music/Baby+Jane",
+      "mbid": "0bb18188-3e8d-4f1c-b29d-91502732a92e"
      },
      "genres_canon": [
       "rock",
@@ -15864,10 +15870,10 @@
       }
      ],
      "rank_source": "lastfm",
-     "mbid": null,
+     "mbid": "708c8fe9-af4f-4f3f-9c34-986c0b97caa3",
      "reach": {
-      "listeners": 348136,
-      "playcount": 2839870,
+      "listeners": 348312,
+      "playcount": 2841771,
       "tags": [
        "synthpop",
        "indie pop",
@@ -15875,7 +15881,8 @@
        "pop"
       ],
       "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/New+Constellations"
+      "lastfm_url": "https://www.last.fm/music/New+Constellations",
+      "mbid": "708c8fe9-af4f-4f3f-9c34-986c0b97caa3"
      },
      "genres_canon": [
       "synth-pop",
