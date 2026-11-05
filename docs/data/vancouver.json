@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-11-04T20:51:57+00:00",
+ "generated_at": "2026-11-05T21:08:21+00:00",
  "scraped_at": "2026-11-03T20:33:05+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -18196,8 +18196,8 @@
    "reason": "no_match",
    "candidates": [
     "Hellwitch",
-    "Rise Against",
-    "Marianas Trench"
+    "Marianas Trench",
+    "Honey Revenge"
    ]
   },
   {
@@ -18207,8 +18207,8 @@
    "reason": "no_match",
    "candidates": [
     "Le Roy Tsala",
-    "Barshasketh",
-    "Stavros Tsalagkas"
+    "Stavros Tsalagkas",
+    "Salaam Remi"
    ]
   },
   {

@@ -50803,11 +50803,11 @@
 },
 "ride for revenge": {
 "query": "Ride For Revenge",
-"fetched_at": "2026-10-22T18:40:17+00:00",
+"fetched_at": "2026-11-05T21:08:19+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 7434,
-"playcount": 412022,
+"listeners": 7442,
+"playcount": 413041,
 "tags": [
 "black metal",
 "finnish black metal",
@@ -50821,8 +50821,8 @@
 "matcher": 4,
 "candidates": [
 "Hellwitch",
-"Rise Against",
-"Marianas Trench"
+"Marianas Trench",
+"Honey Revenge"
 ]
 },
 "hellwitch": {
@@ -50878,14 +50878,14 @@
 },
 "tsalal": {
 "query": "Tsalal",
-"fetched_at": "2026-10-22T18:40:18+00:00",
+"fetched_at": "2026-11-05T21:08:20+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 619,
-"playcount": 13770,
+"listeners": 625,
+"playcount": 13872,
 "tags": [
-"noise",
 "black metal",
+"noise",
 "war metal",
 "war noise"
 ],
@@ -50896,8 +50896,8 @@
 "matcher": 4,
 "candidates": [
 "Le Roy Tsala",
-"Barshasketh",
-"Stavros Tsalagkas"
+"Stavros Tsalagkas",
+"Salaam Remi"
 ]
 },
 "devouring void": {
