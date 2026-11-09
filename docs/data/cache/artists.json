@@ -62913,5 +62913,157 @@
 ],
 "rank_source": "lastfm",
 "mbid": "e8f55abb-a6d5-4e5f-81b4-14f9cc320519"
+},
+"bombargo": {
+"query": "Bombargo",
+"fetched_at": "2026-11-09T23:30:03+00:00",
+"reach": {
+"listeners": 20947,
+"playcount": 127341,
+"tags": [
+"indie pop",
+"soul",
+"pop"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Bombargo",
+"mbid": "7b790e1e-12b7-4a51-b6cd-7d177f013698"
+},
+"matcher": 4,
+"spotify_id": "5gcuakqbbCNnx9fBZWCFfW",
+"spotify_name": "Bombargo",
+"url": "https://open.spotify.com/artist/5gcuakqbbCNnx9fBZWCFfW",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178fa4b45f4952f4371e2f4e7c6",
+"tracks": [
+{
+"id": "63w2VtSKykI9mffvOKHIUh",
+"uri": "spotify:track:63w2VtSKykI9mffvOKHIUh",
+"name": "Let It Grow",
+"popularity": null,
+"album": "Back on Main",
+"album_type": "single",
+"release_date": "2015-10-23",
+"duration_ms": 247529,
+"explicit": false
+},
+{
+"id": "6LxPTZhxkzPGIXqFzg40JH",
+"uri": "spotify:track:6LxPTZhxkzPGIXqFzg40JH",
+"name": "Oxygen",
+"popularity": null,
+"album": "Oxygen",
+"album_type": "single",
+"release_date": "2018-08-22",
+"duration_ms": 227076,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "7b790e1e-12b7-4a51-b6cd-7d177f013698"
+},
+"sasy": {
+"query": "Sasy",
+"fetched_at": "2026-11-09T23:30:05+00:00",
+"reach": {
+"listeners": 11500,
+"playcount": 226134,
+"tags": [
+"persian",
+"pop",
+"iranian",
+"damboli kosak"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Sasy",
+"mbid": "fa2de97b-50fc-4822-a7cd-b352403479a8"
+},
+"matcher": 4,
+"spotify_id": "0LkkLM2M97UEG7hi5mLn3u",
+"spotify_name": "Sasy",
+"url": "https://open.spotify.com/artist/0LkkLM2M97UEG7hi5mLn3u",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178f3402cb8eefebda260500701",
+"tracks": [
+{
+"id": "5LOVw41B6bJ8Wkq8Xy7kTv",
+"uri": "spotify:track:5LOVw41B6bJ8Wkq8Xy7kTv",
+"name": "Gentleman",
+"popularity": null,
+"album": "Gentleman",
+"album_type": "single",
+"release_date": "2019-03-06",
+"duration_ms": 186044,
+"explicit": false
+},
+{
+"id": "69yP7jY5UtTJpm6LwQVqiX",
+"uri": "spotify:track:69yP7jY5UtTJpm6LwQVqiX",
+"name": "Saaghiya",
+"popularity": null,
+"album": "Saaghiya",
+"album_type": "single",
+"release_date": "2016-03-05",
+"duration_ms": 185129,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "fa2de97b-50fc-4822-a7cd-b352403479a8"
+},
+"james hype": {
+"query": "James Hype",
+"fetched_at": "2026-11-09T23:30:05+00:00",
+"reach": {
+"listeners": 657998,
+"playcount": 8333821,
+"tags": [
+"electronic",
+"house",
+"c",
+"e"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/James+Hype",
+"mbid": "51cbf154-4b7f-4ec5-86a7-d269ae7d101a"
+},
+"matcher": 4,
+"spotify_id": "43BxCL6t4c73BQnIJtry5v",
+"spotify_name": "James Hype",
+"url": "https://open.spotify.com/artist/43BxCL6t4c73BQnIJtry5v",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1789831431abd5c375ef7fbb1ee",
+"tracks": [
+{
+"id": "4zN21mbAuaD0WqtmaTZZeP",
+"uri": "spotify:track:4zN21mbAuaD0WqtmaTZZeP",
+"name": "Ferrari",
+"popularity": null,
+"album": "Ferrari",
+"album_type": "single",
+"release_date": "2022-04-01",
+"duration_ms": 186661,
+"explicit": false
+},
+{
+"id": "3DLWVhaowApIGw1JnJj6GS",
+"uri": "spotify:track:3DLWVhaowApIGw1JnJj6GS",
+"name": "Lose Control",
+"popularity": null,
+"album": "Lose Control",
+"album_type": "single",
+"release_date": "2023-05-12",
+"duration_ms": 173437,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "51cbf154-4b7f-4ec5-86a7-d269ae7d101a"
 }
 }

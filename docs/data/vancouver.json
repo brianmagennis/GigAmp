@@ -3,58 +3,22 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-11-08T18:55:59+00:00",
- "scraped_at": "2026-11-08T18:54:42+00:00",
+ "generated_at": "2026-11-09T23:30:06+00:00",
+ "scraped_at": "2026-11-09T23:29:01+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
  "venues": {
-  "commodore-ballroom": {
-   "name": "Commodore Ballroom",
-   "aliases": [],
-   "lat": 49.28065,
-   "lng": -123.12089
-  },
-  "rickshaw-theatre": {
-   "name": "Rickshaw Theatre",
-   "aliases": [],
-   "lat": 49.28102,
-   "lng": -123.09853
-  },
-  "the-wise-hall": {
-   "name": "The WISE Hall",
-   "aliases": [],
-   "lat": 49.2773,
-   "lng": -123.06607
-  },
-  "hollywood-theatre": {
-   "name": "Hollywood Theatre",
-   "aliases": [],
-   "lat": 49.26444,
-   "lng": -123.17453
-  },
-  "zameen-art-house": {
-   "name": "Zameen Art House",
-   "aliases": [],
-   "lat": 49.27065,
-   "lng": -123.13653
-  },
-  "the-pearl": {
-   "name": "The Pearl",
-   "aliases": [],
-   "lat": 49.28071,
-   "lng": -123.12143
-  },
-  "burnaby-hall": {
-   "name": "Burnaby Hall",
-   "aliases": [],
-   "lat": 49.2178,
-   "lng": -122.93302
-  },
   "queen-elizabeth-theatre": {
    "name": "Queen Elizabeth Theatre",
    "aliases": [],
    "lat": 49.28039,
    "lng": -123.11266
+  },
+  "commodore-ballroom": {
+   "name": "Commodore Ballroom",
+   "aliases": [],
+   "lat": 49.28065,
+   "lng": -123.12089
   },
   "chan-centre-for-the-performing-arts": {
    "name": "Chan Centre for the Performing Arts",
@@ -88,6 +52,12 @@
    "lat": 49.27981,
    "lng": -123.12164
   },
+  "the-pearl": {
+   "name": "The Pearl",
+   "aliases": [],
+   "lat": 49.28071,
+   "lng": -123.12143
+  },
   "the-cobalt": {
    "name": "The Cobalt",
    "aliases": [
@@ -114,11 +84,23 @@
    "lat": 49.28053,
    "lng": -123.10075
   },
+  "rickshaw-theatre": {
+   "name": "Rickshaw Theatre",
+   "aliases": [],
+   "lat": 49.28102,
+   "lng": -123.09853
+  },
   "trees-organic-coffee-granville-street": {
    "name": "Trees Organic Coffee - Granville Street",
    "aliases": [],
    "lat": 49.28484,
    "lng": -123.11418
+  },
+  "hollywood-theatre": {
+   "name": "Hollywood Theatre",
+   "aliases": [],
+   "lat": 49.26444,
+   "lng": -123.17453
   },
   "green-auto": {
    "name": "Green Auto",
@@ -164,17 +146,23 @@
    "lat": 49.20477,
    "lng": -122.90957
   },
+  "the-wise-hall": {
+   "name": "The WISE Hall",
+   "aliases": [],
+   "lat": 49.2773,
+   "lng": -123.06607
+  },
   "celebrities": {
    "name": "Celebrities",
    "aliases": [],
    "lat": 49.27942,
    "lng": -123.12994
   },
-  "harbour-event-convention-centre": {
-   "name": "Harbour Event & Convention Centre",
+  "harbour-event-centre": {
+   "name": "Harbour Event Centre",
    "aliases": [
     "Harbour Convention Centre",
-    "Harbour Event Centre",
+    "Harbour Event & Convention Centre",
     "Harbour Events Centre"
    ],
    "lat": 49.27464,
@@ -385,702 +373,15 @@
    "aliases": [],
    "lat": 49.28549,
    "lng": -123.04361
+  },
+  "inlet-theatre": {
+   "name": "Inlet Theatre",
+   "aliases": [],
+   "lat": 49.28255,
+   "lng": -122.82986
   }
  },
  "events": [
-  {
-   "id": "43336752",
-   "name": "Christie Lenée @ Burnaby Hall",
-   "source": "songkick",
-   "date": "2026-11-08",
-   "start": "2026-11-08",
-   "venue": "Burnaby Hall",
-   "venue_id": "burnaby-hall",
-   "locality": "Burnaby",
-   "url": "https://www.songkick.com/concerts/43336752-christie-lenee-at-burnaby-hall",
-   "also_listed": [],
-   "lat": 49.2178,
-   "lng": -122.93302,
-   "headliner": "Christie Lenée",
-   "artists": [
-    {
-     "name": "Christie Lenée",
-     "spotify_name": "Christie Lenée",
-     "spotify_id": "2r1JtoRnsD6awy7pOQEw00",
-     "url": "https://open.spotify.com/artist/2r1JtoRnsD6awy7pOQEw00",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178f1a719686e606aaf1e286c7f",
-     "tracks": [
-      {
-       "id": "75gKuleVniBRxmcwdyOciZ",
-       "uri": "spotify:track:75gKuleVniBRxmcwdyOciZ",
-       "name": "Soaring over Glacier Bay",
-       "popularity": null,
-       "album": "Stay",
-       "album_type": "album",
-       "release_date": "2016-10-01",
-       "duration_ms": 365480,
-       "explicit": false
-      },
-      {
-       "id": "2zJuaH5yr6I6IA9P5Wvb9z",
-       "uri": "spotify:track:2zJuaH5yr6I6IA9P5Wvb9z",
-       "name": "Cleopatra's Eyes (Live)",
-       "popularity": null,
-       "album": "Cleopatra's Eyes (Live)",
-       "album_type": "single",
-       "release_date": "2020-08-07",
-       "duration_ms": 408512,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "45f0d3a8-65e7-4ed8-af89-a6b89f6d7deb",
-     "reach": {
-      "listeners": 971,
-      "playcount": 4339,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Christie+Len%C3%A9e",
-      "mbid": "45f0d3a8-65e7-4ed8-af89-a6b89f6d7deb"
-     },
-     "genres_canon": []
-    },
-    {
-     "name": "Sarah Smith",
-     "spotify_name": "Sarah Smith",
-     "spotify_id": "64zCRQLg3snTzlEwBsabzJ",
-     "url": "https://open.spotify.com/artist/64zCRQLg3snTzlEwBsabzJ",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": null,
-     "tracks": [
-      {
-       "id": "3QdNyQ1FgDVctwaiV1X9Mi",
-       "uri": "spotify:track:3QdNyQ1FgDVctwaiV1X9Mi",
-       "name": "Sore",
-       "popularity": null,
-       "album": "Sore",
-       "album_type": "single",
-       "release_date": "2026-05-16",
-       "duration_ms": 228000,
-       "explicit": false
-      }
-     ],
-     "rank_source": "search",
-     "mbid": "4c81eaa1-6482-40c0-a77b-7899c9b6a32d",
-     "reach": {
-      "listeners": 538,
-      "playcount": 5070,
-      "tags": [
-       "country"
-      ],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Sarah+Smith",
-      "mbid": "4c81eaa1-6482-40c0-a77b-7899c9b6a32d"
-     },
-     "genres_canon": [
-      "country"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "43448749",
-   "name": "Maple @ Zameen Art House",
-   "source": "songkick",
-   "date": "2026-11-08",
-   "start": "2026-11-08T17:30:00",
-   "venue": "Zameen Art House",
-   "venue_id": "zameen-art-house",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43448749-maple-at-zameen-art-house",
-   "also_listed": [],
-   "lat": 49.27065,
-   "lng": -123.13653,
-   "headliner": "Maple",
-   "artists": [
-    {
-     "name": "Maple",
-     "spotify_name": "Maple",
-     "spotify_id": "7FqhC9JMS6bbcfMVKKPHBc",
-     "url": "https://open.spotify.com/artist/7FqhC9JMS6bbcfMVKKPHBc",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1784532b526883bb7c4ce01fa84",
-     "tracks": [
-      {
-       "id": "40jSWENDiZzjmfbrLOl4nD",
-       "uri": "spotify:track:40jSWENDiZzjmfbrLOl4nD",
-       "name": "fr<3nd",
-       "popularity": null,
-       "album": "chubby",
-       "album_type": "single",
-       "release_date": "2022-01-01",
-       "duration_ms": 127642,
-       "explicit": false
-      },
-      {
-       "id": "4nLeOsqSVIVyF96ir7oD1u",
-       "uri": "spotify:track:4nLeOsqSVIVyF96ir7oD1u",
-       "name": "Lovemall",
-       "popularity": null,
-       "album": "Divinity",
-       "album_type": "single",
-       "release_date": "2019-07-06",
-       "duration_ms": 132802,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "b1899d5f-3932-4ec8-ba55-6591cef49746",
-     "reach": {
-      "listeners": 100330,
-      "playcount": 1533257,
-      "tags": [
-       "hardcore",
-       "hyperpop",
-       "nightcore",
-       "hard dance"
-      ],
-      "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Maple",
-      "mbid": "b1899d5f-3932-4ec8-ba55-6591cef49746"
-     },
-     "genres_canon": [
-      "hardcore",
-      "synth-pop",
-      "trance"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "43209736",
-   "name": "Squirrel Flower @ The WISE Hall",
-   "source": "songkick",
-   "date": "2026-11-08",
-   "start": "2026-11-08T18:00:00",
-   "venue": "The WISE Hall",
-   "venue_id": "the-wise-hall",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43209736-squirrel-flower-at-wise-hall",
-   "also_listed": [],
-   "lat": 49.2773,
-   "lng": -123.06607,
-   "headliner": "Squirrel Flower",
-   "artists": [
-    {
-     "name": "Squirrel Flower",
-     "spotify_name": "Squirrel Flower",
-     "spotify_id": "7bI1v9NGBBhq8iGfytctni",
-     "url": "https://open.spotify.com/artist/7bI1v9NGBBhq8iGfytctni",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1786b0c923c9d14b95618528053",
-     "tracks": [
-      {
-       "id": "6LHioVAsFPLjupnl8ikW7H",
-       "uri": "spotify:track:6LHioVAsFPLjupnl8ikW7H",
-       "name": "So Hot You're Hurting My Feelings",
-       "popularity": null,
-       "album": "Take It or Leave It / So Hot You're Hurting My Feelings",
-       "album_type": "single",
-       "release_date": "2020-05-05",
-       "duration_ms": 209091,
-       "explicit": false
-      },
-      {
-       "id": "78k8oXdffvkyf9azkykR7S",
-       "uri": "spotify:track:78k8oXdffvkyf9azkykR7S",
-       "name": "Headlights",
-       "popularity": null,
-       "album": "I Was Born Swimming",
-       "album_type": "album",
-       "release_date": "2020-01-31",
-       "duration_ms": 154466,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "cf1021a4-ba16-4563-b4c2-e40aaf1802f6",
-     "reach": {
-      "listeners": 254823,
-      "playcount": 3120682,
-      "tags": [
-       "lo-fi",
-       "folk",
-       "indie folk",
-       "dream pop"
-      ],
-      "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Squirrel+Flower",
-      "mbid": "cf1021a4-ba16-4563-b4c2-e40aaf1802f6"
-     },
-     "genres_canon": [
-      "indie",
-      "folk",
-      "dream pop"
-     ]
-    },
-    {
-     "name": "Sour Widows",
-     "spotify_name": "Sour Widows",
-     "spotify_id": "5NvbTsi0Mi1mdeDchU2YkG",
-     "url": "https://open.spotify.com/artist/5NvbTsi0Mi1mdeDchU2YkG",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178f16e7a786e17a2f5572965ce",
-     "tracks": [
-      {
-       "id": "0Q4EB9bh0BGDqnGvipC0WO",
-       "uri": "spotify:track:0Q4EB9bh0BGDqnGvipC0WO",
-       "name": "Big Dogs",
-       "popularity": null,
-       "album": "Revival Of A Friend",
-       "album_type": "album",
-       "release_date": "2024-06-28",
-       "duration_ms": 331689,
-       "explicit": false
-      },
-      {
-       "id": "20cHYvYW6Xvd2ouPPquHYX",
-       "uri": "spotify:track:20cHYvYW6Xvd2ouPPquHYX",
-       "name": "Witness",
-       "popularity": null,
-       "album": "Revival Of A Friend",
-       "album_type": "album",
-       "release_date": "2024-06-28",
-       "duration_ms": 356586,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "be625168-c49a-4cf8-8c90-6c1d49e6c432",
-     "reach": {
-      "listeners": 29854,
-      "playcount": 295456,
-      "tags": [
-       "indie rock",
-       "americana",
-       "yeah",
-       "folk rock"
-      ],
-      "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Sour+Widows",
-      "mbid": "be625168-c49a-4cf8-8c90-6c1d49e6c432"
-     },
-     "genres_canon": [
-      "indie",
-      "americana",
-      "rock"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "43407216",
-   "name": "Isaiah Rashad @ Commodore Ballroom",
-   "source": "songkick",
-   "date": "2026-11-08",
-   "start": "2026-11-08T19:00:00",
-   "venue": "Commodore Ballroom",
-   "venue_id": "commodore-ballroom",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43407216-isaiah-rashad-at-commodore-ballroom",
-   "also_listed": [],
-   "lat": 49.28065,
-   "lng": -123.12089,
-   "headliner": "Isaiah Rashad",
-   "artists": [
-    {
-     "name": "Isaiah Rashad",
-     "spotify_name": "Isaiah Rashad",
-     "spotify_id": "6aaMZ3fcfLv4tEbmY7bjRM",
-     "url": "https://open.spotify.com/artist/6aaMZ3fcfLv4tEbmY7bjRM",
-     "genres": [],
-     "songkick_genres": [
-      "hip_hop"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178a43828f266967887561166c3",
-     "tracks": [
-      {
-       "id": "2RPbEp0DyBVlkRvvYKopO7",
-       "uri": "spotify:track:2RPbEp0DyBVlkRvvYKopO7",
-       "name": "Wat's Wrong (feat. Zacari & Kendrick Lamar)",
-       "popularity": null,
-       "album": "The Sun's Tirade",
-       "album_type": "album",
-       "release_date": "2016-09-02",
-       "duration_ms": 330783,
-       "explicit": true
-      },
-      {
-       "id": "0Gt4nGWoATcQFL38a1NRao",
-       "uri": "spotify:track:0Gt4nGWoATcQFL38a1NRao",
-       "name": "West Savannah (feat. SZA)",
-       "popularity": null,
-       "album": "Cilvia Demo",
-       "album_type": "album",
-       "release_date": "2014-01-28",
-       "duration_ms": 167276,
-       "explicit": true
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "37547347-ea75-45fa-9766-ff36b44d8147",
-     "reach": {
-      "listeners": 1391490,
-      "playcount": 88692172,
-      "tags": [
-       "hip-hop",
-       "rap",
-       "underground hip-hop",
-       "hip hop"
-      ],
-      "tier": 4,
-      "lastfm_url": "https://www.last.fm/music/Isaiah+Rashad",
-      "mbid": "37547347-ea75-45fa-9766-ff36b44d8147"
-     },
-     "genres_canon": [
-      "hip hop"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "43211563",
-   "name": "JON SPENCER @ Rickshaw Theatre",
-   "source": "songkick",
-   "date": "2026-11-08",
-   "start": "2026-11-08T19:00:00",
-   "venue": "Rickshaw Theatre",
-   "venue_id": "rickshaw-theatre",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43211563-jon-spencer-at-rickshaw-theatre",
-   "also_listed": [],
-   "lat": 49.28102,
-   "lng": -123.09853,
-   "headliner": "JON SPENCER",
-   "artists": [
-    {
-     "name": "JON SPENCER",
-     "spotify_name": "Jon Spencer",
-     "spotify_id": "5q6Nhg9lGUeSjODDdctHvN",
-     "url": "https://open.spotify.com/artist/5q6Nhg9lGUeSjODDdctHvN",
-     "genres": [],
-     "songkick_genres": [
-      "folk_blues",
-      "rock"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/8ad55011983593ba8666eb7ce385b8411f12bf30",
-     "tracks": [
-      {
-       "id": "17pe3ne041Mo50daX85Cjk",
-       "uri": "spotify:track:17pe3ne041Mo50daX85Cjk",
-       "name": "Trash Can",
-       "popularity": null,
-       "album": "Spencer Sings the Hits!",
-       "album_type": "album",
-       "release_date": "2018-11-09",
-       "duration_ms": 147960,
-       "explicit": false
-      },
-      {
-       "id": "50XWp52XSRkM5QOxQf7noo",
-       "uri": "spotify:track:50XWp52XSRkM5QOxQf7noo",
-       "name": "Fake",
-       "popularity": null,
-       "album": "Spencer Sings the Hits!",
-       "album_type": "album",
-       "release_date": "2018-11-09",
-       "duration_ms": 168466,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "33fc0741-8594-48a1-8846-584d8502ac80",
-     "reach": {
-      "listeners": 9226,
-      "playcount": 94335,
-      "tags": [
-       "garage rock",
-       "punk",
-       "rock",
-       "alternative"
-      ],
-      "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Jon+Spencer",
-      "mbid": "33fc0741-8594-48a1-8846-584d8502ac80"
-     },
-     "genres_canon": [
-      "garage rock",
-      "punk",
-      "rock"
-     ]
-    },
-    {
-     "name": "Genre is death",
-     "spotify_name": "Genre is death",
-     "spotify_id": "4bmylyV5D4dQjm4LAIitAU",
-     "url": "https://open.spotify.com/artist/4bmylyV5D4dQjm4LAIitAU",
-     "genres": [],
-     "songkick_genres": [
-      "folk_blues",
-      "rock"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f17821dfbc0275e9100ed38f9efa",
-     "tracks": [
-      {
-       "id": "4J3jdZ0r37fw5kYaPgeHsI",
-       "uri": "spotify:track:4J3jdZ0r37fw5kYaPgeHsI",
-       "name": "Attractive People",
-       "popularity": null,
-       "album": "Attractive People b/w Cold Man",
-       "album_type": "single",
-       "release_date": "2026-03-11",
-       "duration_ms": 175919,
-       "explicit": false
-      },
-      {
-       "id": "6i2HoMXSkoSVhskVuyjPFH",
-       "uri": "spotify:track:6i2HoMXSkoSVhskVuyjPFH",
-       "name": "You",
-       "popularity": null,
-       "album": "Talk",
-       "album_type": "album",
-       "release_date": "2024-11-01",
-       "duration_ms": 160104,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "313bea7f-ebf5-4e8c-a317-45a4621597d7",
-     "reach": {
-      "listeners": 1129,
-      "playcount": 9286,
-      "tags": [
-       "death rock",
-       "noise",
-       "no wave",
-       "deathrock"
-      ],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Genre+is+death",
-      "mbid": "313bea7f-ebf5-4e8c-a317-45a4621597d7"
-     },
-     "genres_canon": [
-      "metal",
-      "noise",
-      "post-punk"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "43404786",
-   "name": "Boy Golden @ Hollywood Theatre",
-   "source": "songkick",
-   "date": "2026-11-08",
-   "start": "2026-11-08T19:00:00",
-   "venue": "Hollywood Theatre",
-   "venue_id": "hollywood-theatre",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43404786-boy-golden-at-hollywood-theatre",
-   "also_listed": [],
-   "lat": 49.26444,
-   "lng": -123.17453,
-   "headliner": "Boy Golden",
-   "artists": [
-    {
-     "name": "Boy Golden",
-     "spotify_name": "Boy Golden",
-     "spotify_id": "4oNZapwLKDfR92AX7LbRk1",
-     "url": "https://open.spotify.com/artist/4oNZapwLKDfR92AX7LbRk1",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1782aad14e6522cdaea2efb79ec",
-     "tracks": [
-      {
-       "id": "6e9MVekzR3Gku26kBwGezo",
-       "uri": "spotify:track:6e9MVekzR3Gku26kBwGezo",
-       "name": "KD and Lunch Meat",
-       "popularity": null,
-       "album": "Church of Better Daze",
-       "album_type": "album",
-       "release_date": "2021-07-16",
-       "duration_ms": 260407,
-       "explicit": false
-      },
-      {
-       "id": "1KVdGIfXjx0AfFqyVIMXAX",
-       "uri": "spotify:track:1KVdGIfXjx0AfFqyVIMXAX",
-       "name": "Best of Our Possible Lives",
-       "popularity": null,
-       "album": "Best of Our Possible Lives",
-       "album_type": "album",
-       "release_date": "2026-02-13",
-       "duration_ms": 188988,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "89169d2b-f18f-4961-b284-98a6481fcd30",
-     "reach": {
-      "listeners": 23045,
-      "playcount": 172995,
-      "tags": [
-       "indie rock",
-       "indie pop"
-      ],
-      "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Boy+Golden",
-      "mbid": "89169d2b-f18f-4961-b284-98a6481fcd30"
-     },
-     "genres_canon": [
-      "indie",
-      "indie pop"
-     ]
-    },
-    {
-     "name": "Field Guide",
-     "spotify_name": "Field Guide",
-     "spotify_id": "3m8lmJWxlk9SPTFFCdxJVz",
-     "url": "https://open.spotify.com/artist/3m8lmJWxlk9SPTFFCdxJVz",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178d5676f2d6e0c31c792d512c5",
-     "tracks": [
-      {
-       "id": "02kvxkFsAAXKehHDvyizAp",
-       "uri": "spotify:track:02kvxkFsAAXKehHDvyizAp",
-       "name": "You Were",
-       "popularity": null,
-       "album": "You Were",
-       "album_type": "single",
-       "release_date": "2020-07-24",
-       "duration_ms": 193746,
-       "explicit": false
-      },
-      {
-       "id": "1GOdsUtb1c0R2s8hOjggUM",
-       "uri": "spotify:track:1GOdsUtb1c0R2s8hOjggUM",
-       "name": "Looking Back",
-       "popularity": null,
-       "album": "Field Guide",
-       "album_type": "album",
-       "release_date": "2022-10-28",
-       "duration_ms": 64901,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "0713b8bd-6592-4f74-a546-ba15ca3596e4",
-     "reach": {
-      "listeners": 97472,
-      "playcount": 742620,
-      "tags": [
-       "folk",
-       "indie rock",
-       "folk rock",
-       "indie folk"
-      ],
-      "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Field+Guide",
-      "mbid": "0713b8bd-6592-4f74-a546-ba15ca3596e4"
-     },
-     "genres_canon": [
-      "folk",
-      "indie",
-      "rock"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "43458376",
-   "name": "Ahmed Moneka @ The Pearl",
-   "source": "songkick",
-   "date": "2026-11-08",
-   "start": "2026-11-08T19:00:00",
-   "venue": "The Pearl",
-   "venue_id": "the-pearl",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43458376-ahmed-moneka-at-pearl",
-   "also_listed": [],
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "headliner": "Ahmed Moneka",
-   "artists": [
-    {
-     "name": "Ahmed Moneka",
-     "spotify_name": "Ahmed Moneka",
-     "spotify_id": "6HKZK6rAF3dcMZ1awAK7eP",
-     "url": "https://open.spotify.com/artist/6HKZK6rAF3dcMZ1awAK7eP",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178ae80baf1dde50e172a75e8df",
-     "tracks": [
-      {
-       "id": "7apwlTEIrsCDIJfs78oNcT",
-       "uri": "spotify:track:7apwlTEIrsCDIJfs78oNcT",
-       "name": "Aman",
-       "popularity": null,
-       "album": "Kanzafula",
-       "album_type": "album",
-       "release_date": "2024-05-03",
-       "duration_ms": 285035,
-       "explicit": false
-      },
-      {
-       "id": "6LaAlRBY1LJwjxDmmvLWxh",
-       "uri": "spotify:track:6LaAlRBY1LJwjxDmmvLWxh",
-       "name": "Sea",
-       "popularity": null,
-       "album": "Kanzafula",
-       "album_type": "album",
-       "release_date": "2024-05-03",
-       "duration_ms": 213276,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": null,
-     "reach": {
-      "listeners": 148,
-      "playcount": 1391,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Ahmed+Moneka",
-      "mbid": null
-     },
-     "genres_canon": []
-    }
-   ]
-  },
   {
    "id": "43479186",
    "name": "Tadhg Nolan @ Fox Cabaret",
@@ -1878,78 +1179,6 @@
    ]
   },
   {
-   "id": "43444361",
-   "name": "Bad Waitress @ The Cobalt",
-   "source": "songkick",
-   "date": "2026-11-10",
-   "start": "2026-11-10T19:00:00",
-   "venue": "The Cobalt",
-   "venue_id": "the-cobalt",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43444361-bad-waitress-at-cobalt",
-   "also_listed": [],
-   "lat": 49.2765,
-   "lng": -123.10008,
-   "headliner": "Bad Waitress",
-   "artists": [
-    {
-     "name": "Bad Waitress",
-     "spotify_name": "Bad Waitress",
-     "spotify_id": "5h5YgUkm7vI0bdbQTyBGmb",
-     "url": "https://open.spotify.com/artist/5h5YgUkm7vI0bdbQTyBGmb",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1783da754c06f574e3a48b1c04b",
-     "tracks": [
-      {
-       "id": "2rF2Uyf0HLyJjGED5Qdpfr",
-       "uri": "spotify:track:2rF2Uyf0HLyJjGED5Qdpfr",
-       "name": "That Sedative",
-       "popularity": null,
-       "album": "That Sedative",
-       "album_type": "single",
-       "release_date": "2020-01-17",
-       "duration_ms": 141413,
-       "explicit": false
-      },
-      {
-       "id": "21I2up8F1ugWqjy4GV1w7n",
-       "uri": "spotify:track:21I2up8F1ugWqjy4GV1w7n",
-       "name": "What Do I Want?",
-       "popularity": null,
-       "album": "Party Bangers: Volume 1",
-       "album_type": "single",
-       "release_date": "2018-04-20",
-       "duration_ms": 88160,
-       "explicit": true
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "2a38f039-c371-4b75-a4b1-91d18d2a8457",
-     "reach": {
-      "listeners": 62994,
-      "playcount": 515700,
-      "tags": [
-       "punk rock",
-       "punk",
-       "garage rock",
-       "indie rock"
-      ],
-      "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Bad+Waitress",
-      "mbid": "2a38f039-c371-4b75-a4b1-91d18d2a8457"
-     },
-     "genres_canon": [
-      "punk",
-      "garage rock",
-      "indie"
-     ]
-    }
-   ]
-  },
-  {
    "id": "43225512",
    "name": "Dax @ Vogue Theatre",
    "source": "songkick",
@@ -2019,6 +1248,78 @@
       "rock",
       "hip hop",
       "metal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "43444361",
+   "name": "Bad Waitress @ The Cobalt",
+   "source": "songkick",
+   "date": "2026-11-10",
+   "start": "2026-11-10T20:00:00",
+   "venue": "The Cobalt",
+   "venue_id": "the-cobalt",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43444361-bad-waitress-at-cobalt",
+   "also_listed": [],
+   "lat": 49.2765,
+   "lng": -123.10008,
+   "headliner": "Bad Waitress",
+   "artists": [
+    {
+     "name": "Bad Waitress",
+     "spotify_name": "Bad Waitress",
+     "spotify_id": "5h5YgUkm7vI0bdbQTyBGmb",
+     "url": "https://open.spotify.com/artist/5h5YgUkm7vI0bdbQTyBGmb",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f1783da754c06f574e3a48b1c04b",
+     "tracks": [
+      {
+       "id": "2rF2Uyf0HLyJjGED5Qdpfr",
+       "uri": "spotify:track:2rF2Uyf0HLyJjGED5Qdpfr",
+       "name": "That Sedative",
+       "popularity": null,
+       "album": "That Sedative",
+       "album_type": "single",
+       "release_date": "2020-01-17",
+       "duration_ms": 141413,
+       "explicit": false
+      },
+      {
+       "id": "21I2up8F1ugWqjy4GV1w7n",
+       "uri": "spotify:track:21I2up8F1ugWqjy4GV1w7n",
+       "name": "What Do I Want?",
+       "popularity": null,
+       "album": "Party Bangers: Volume 1",
+       "album_type": "single",
+       "release_date": "2018-04-20",
+       "duration_ms": 88160,
+       "explicit": true
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": "2a38f039-c371-4b75-a4b1-91d18d2a8457",
+     "reach": {
+      "listeners": 62994,
+      "playcount": 515700,
+      "tags": [
+       "punk rock",
+       "punk",
+       "garage rock",
+       "indie rock"
+      ],
+      "tier": 3,
+      "lastfm_url": "https://www.last.fm/music/Bad+Waitress",
+      "mbid": "2a38f039-c371-4b75-a4b1-91d18d2a8457"
+     },
+     "genres_canon": [
+      "punk",
+      "garage rock",
+      "indie"
      ]
     }
    ]
@@ -5672,8 +4973,8 @@
    "source": "songkick",
    "date": "2026-11-14",
    "start": "2026-11-14T22:00:00",
-   "venue": "Harbour Event & Convention Centre",
-   "venue_id": "harbour-event-convention-centre",
+   "venue": "Harbour Event Centre",
+   "venue_id": "harbour-event-centre",
    "locality": "Vancouver",
    "url": "https://www.songkick.com/concerts/43391102-blasterjaxx-at-harbour-convention-centre",
    "also_listed": [],
@@ -8657,184 +7958,6 @@
    ]
   },
   {
-   "id": "43322854",
-   "name": "Clarion @ The Pearl",
-   "source": "songkick",
-   "date": "2026-11-20",
-   "start": "2026-11-20T19:00:00",
-   "venue": "The Pearl",
-   "venue_id": "the-pearl",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43322854-clarion-at-pearl",
-   "also_listed": [],
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "headliner": "Clarion",
-   "artists": [
-    {
-     "name": "Clarion",
-     "spotify_name": "Clarion",
-     "spotify_id": "7KJSk2ytUFik1LGqFGHOLW",
-     "url": "https://open.spotify.com/artist/7KJSk2ytUFik1LGqFGHOLW",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1784c9c81ea4a021a1776e71de4",
-     "tracks": [
-      {
-       "id": "5v3Dv4UlDOGaXlvphFpkIX",
-       "uri": "spotify:track:5v3Dv4UlDOGaXlvphFpkIX",
-       "name": "Hello Juliet",
-       "popularity": null,
-       "album": "Clarion",
-       "album_type": "single",
-       "release_date": "2024-07-02",
-       "duration_ms": 208000,
-       "explicit": false
-      },
-      {
-       "id": "3PgcvLwiKyWeyCuUDpqbkk",
-       "uri": "spotify:track:3PgcvLwiKyWeyCuUDpqbkk",
-       "name": "Human Attire",
-       "popularity": null,
-       "album": "Clarion",
-       "album_type": "single",
-       "release_date": "2024-07-02",
-       "duration_ms": 192750,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "a502b211-d923-4adc-8bfb-23473cc84523",
-     "reach": {
-      "listeners": 455412,
-      "playcount": 7580372,
-      "tags": [
-       "post-ambient emotional hardcore",
-       "shoegaze",
-       "alternative rock",
-       "progressive rock"
-      ],
-      "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Clarion",
-      "mbid": "a502b211-d923-4adc-8bfb-23473cc84523"
-     },
-     "genres_canon": [
-      "hardcore",
-      "shoegaze",
-      "alternative"
-     ]
-    },
-    {
-     "name": "Novulent",
-     "spotify_name": "Novulent",
-     "spotify_id": "2Q0rAyTIfdTUwDt8jpEpv0",
-     "url": "https://open.spotify.com/artist/2Q0rAyTIfdTUwDt8jpEpv0",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1780d1d89685e0c29b3278e4b7a",
-     "tracks": [
-      {
-       "id": "3uBPe3rkzroaGmxO2gohmz",
-       "uri": "spotify:track:3uBPe3rkzroaGmxO2gohmz",
-       "name": "scars",
-       "popularity": null,
-       "album": "scars",
-       "album_type": "single",
-       "release_date": "2023-06-19",
-       "duration_ms": 95002,
-       "explicit": false
-      },
-      {
-       "id": "4zyHmSSneytuFEdU2TbU7w",
-       "uri": "spotify:track:4zyHmSSneytuFEdU2TbU7w",
-       "name": "unknown feelings",
-       "popularity": null,
-       "album": "unknown feelings",
-       "album_type": "single",
-       "release_date": "2023-05-17",
-       "duration_ms": 134627,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "4843e5c1-c609-4450-bea3-c65783700032",
-     "reach": {
-      "listeners": 701664,
-      "playcount": 18739937,
-      "tags": [
-       "shoegaze",
-       "grungegaze",
-       "grunge",
-       "post rock"
-      ],
-      "tier": 4,
-      "lastfm_url": "https://www.last.fm/music/Novulent",
-      "mbid": "4843e5c1-c609-4450-bea3-c65783700032"
-     },
-     "genres_canon": [
-      "shoegaze",
-      "grunge",
-      "post-rock"
-     ]
-    },
-    {
-     "name": "cherry pick",
-     "spotify_name": "cherry pick",
-     "spotify_id": "5yCDU2cbUX69GwblH65Et5",
-     "url": "https://open.spotify.com/artist/5yCDU2cbUX69GwblH65Et5",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178b725a910f93a6f09a6718b64",
-     "tracks": [
-      {
-       "id": "66TIegJdKMYXuYSxaPIR4A",
-       "uri": "spotify:track:66TIegJdKMYXuYSxaPIR4A",
-       "name": "daze",
-       "popularity": null,
-       "album": "daze",
-       "album_type": "single",
-       "release_date": "2023-06-01",
-       "duration_ms": 181333,
-       "explicit": false
-      },
-      {
-       "id": "7t91UB7Swk7LxciSLEQiQU",
-       "uri": "spotify:track:7t91UB7Swk7LxciSLEQiQU",
-       "name": "pretty thing",
-       "popularity": null,
-       "album": "sorry place",
-       "album_type": "single",
-       "release_date": "2024-05-23",
-       "duration_ms": 244558,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": null,
-     "reach": {
-      "listeners": 47487,
-      "playcount": 334807,
-      "tags": [
-       "dreamgaze",
-       "shoegaze"
-      ],
-      "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Cherry+Pick",
-      "mbid": null
-     },
-     "genres_canon": [
-      "shoegaze"
-     ]
-    }
-   ]
-  },
-  {
    "id": "43481274",
    "name": "The Sylvia Platters @ Bully's",
    "source": "songkick",
@@ -9041,6 +8164,184 @@
       "mbid": null
      },
      "genres_canon": []
+    }
+   ]
+  },
+  {
+   "id": "43322854",
+   "name": "Clarion @ The Pearl",
+   "source": "songkick",
+   "date": "2026-11-20",
+   "start": "2026-11-20T20:00:00",
+   "venue": "The Pearl",
+   "venue_id": "the-pearl",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43322854-clarion-at-pearl",
+   "also_listed": [],
+   "lat": 49.28071,
+   "lng": -123.12143,
+   "headliner": "Clarion",
+   "artists": [
+    {
+     "name": "Clarion",
+     "spotify_name": "Clarion",
+     "spotify_id": "7KJSk2ytUFik1LGqFGHOLW",
+     "url": "https://open.spotify.com/artist/7KJSk2ytUFik1LGqFGHOLW",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f1784c9c81ea4a021a1776e71de4",
+     "tracks": [
+      {
+       "id": "5v3Dv4UlDOGaXlvphFpkIX",
+       "uri": "spotify:track:5v3Dv4UlDOGaXlvphFpkIX",
+       "name": "Hello Juliet",
+       "popularity": null,
+       "album": "Clarion",
+       "album_type": "single",
+       "release_date": "2024-07-02",
+       "duration_ms": 208000,
+       "explicit": false
+      },
+      {
+       "id": "3PgcvLwiKyWeyCuUDpqbkk",
+       "uri": "spotify:track:3PgcvLwiKyWeyCuUDpqbkk",
+       "name": "Human Attire",
+       "popularity": null,
+       "album": "Clarion",
+       "album_type": "single",
+       "release_date": "2024-07-02",
+       "duration_ms": 192750,
+       "explicit": false
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": "a502b211-d923-4adc-8bfb-23473cc84523",
+     "reach": {
+      "listeners": 455412,
+      "playcount": 7580372,
+      "tags": [
+       "post-ambient emotional hardcore",
+       "shoegaze",
+       "alternative rock",
+       "progressive rock"
+      ],
+      "tier": 3,
+      "lastfm_url": "https://www.last.fm/music/Clarion",
+      "mbid": "a502b211-d923-4adc-8bfb-23473cc84523"
+     },
+     "genres_canon": [
+      "hardcore",
+      "shoegaze",
+      "alternative"
+     ]
+    },
+    {
+     "name": "Novulent",
+     "spotify_name": "Novulent",
+     "spotify_id": "2Q0rAyTIfdTUwDt8jpEpv0",
+     "url": "https://open.spotify.com/artist/2Q0rAyTIfdTUwDt8jpEpv0",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f1780d1d89685e0c29b3278e4b7a",
+     "tracks": [
+      {
+       "id": "3uBPe3rkzroaGmxO2gohmz",
+       "uri": "spotify:track:3uBPe3rkzroaGmxO2gohmz",
+       "name": "scars",
+       "popularity": null,
+       "album": "scars",
+       "album_type": "single",
+       "release_date": "2023-06-19",
+       "duration_ms": 95002,
+       "explicit": false
+      },
+      {
+       "id": "4zyHmSSneytuFEdU2TbU7w",
+       "uri": "spotify:track:4zyHmSSneytuFEdU2TbU7w",
+       "name": "unknown feelings",
+       "popularity": null,
+       "album": "unknown feelings",
+       "album_type": "single",
+       "release_date": "2023-05-17",
+       "duration_ms": 134627,
+       "explicit": false
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": "4843e5c1-c609-4450-bea3-c65783700032",
+     "reach": {
+      "listeners": 701664,
+      "playcount": 18739937,
+      "tags": [
+       "shoegaze",
+       "grungegaze",
+       "grunge",
+       "post rock"
+      ],
+      "tier": 4,
+      "lastfm_url": "https://www.last.fm/music/Novulent",
+      "mbid": "4843e5c1-c609-4450-bea3-c65783700032"
+     },
+     "genres_canon": [
+      "shoegaze",
+      "grunge",
+      "post-rock"
+     ]
+    },
+    {
+     "name": "cherry pick",
+     "spotify_name": "cherry pick",
+     "spotify_id": "5yCDU2cbUX69GwblH65Et5",
+     "url": "https://open.spotify.com/artist/5yCDU2cbUX69GwblH65Et5",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f178b725a910f93a6f09a6718b64",
+     "tracks": [
+      {
+       "id": "66TIegJdKMYXuYSxaPIR4A",
+       "uri": "spotify:track:66TIegJdKMYXuYSxaPIR4A",
+       "name": "daze",
+       "popularity": null,
+       "album": "daze",
+       "album_type": "single",
+       "release_date": "2023-06-01",
+       "duration_ms": 181333,
+       "explicit": false
+      },
+      {
+       "id": "7t91UB7Swk7LxciSLEQiQU",
+       "uri": "spotify:track:7t91UB7Swk7LxciSLEQiQU",
+       "name": "pretty thing",
+       "popularity": null,
+       "album": "sorry place",
+       "album_type": "single",
+       "release_date": "2024-05-23",
+       "duration_ms": 244558,
+       "explicit": false
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": null,
+     "reach": {
+      "listeners": 47487,
+      "playcount": 334807,
+      "tags": [
+       "dreamgaze",
+       "shoegaze"
+      ],
+      "tier": 2,
+      "lastfm_url": "https://www.last.fm/music/Cherry+Pick",
+      "mbid": null
+     },
+     "genres_canon": [
+      "shoegaze"
+     ]
     }
    ]
   },
@@ -9663,8 +8964,8 @@
    "source": "songkick",
    "date": "2026-11-21",
    "start": "2026-11-21T23:00:00",
-   "venue": "Harbour Event & Convention Centre",
-   "venue_id": "harbour-event-convention-centre",
+   "venue": "Harbour Event Centre",
+   "venue_id": "harbour-event-centre",
    "locality": "Vancouver",
    "url": "https://www.songkick.com/concerts/43451244-will-sparks-at-harbour-event-and-convention-centre",
    "also_listed": [],
@@ -9927,77 +9228,6 @@
    ]
   },
   {
-   "id": "43417319",
-   "name": "Garaj Mahal @ The Pearl",
-   "source": "songkick",
-   "date": "2026-11-22",
-   "start": "2026-11-22T19:00:00",
-   "venue": "The Pearl",
-   "venue_id": "the-pearl",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43417319-garaj-mahal-at-pearl",
-   "also_listed": [],
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "headliner": "Garaj Mahal",
-   "artists": [
-    {
-     "name": "Garaj Mahal",
-     "spotify_name": "Garaj Mahal",
-     "spotify_id": "1m99aAxdBoGdZ3FVWkOBcM",
-     "url": "https://open.spotify.com/artist/1m99aAxdBoGdZ3FVWkOBcM",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab67616d0000485175442924afc3e62f7636427e",
-     "tracks": [
-      {
-       "id": "3OtqffoS8ktgeZsKp7Bt5h",
-       "uri": "spotify:track:3OtqffoS8ktgeZsKp7Bt5h",
-       "name": "Mondo Garaj",
-       "popularity": null,
-       "album": "Mondo Garaj",
-       "album_type": "album",
-       "release_date": "2003-01-01",
-       "duration_ms": 333413,
-       "explicit": false
-      },
-      {
-       "id": "2OA8ZHzOD2VW2eEM6oQvJo",
-       "uri": "spotify:track:2OA8ZHzOD2VW2eEM6oQvJo",
-       "name": "Semos",
-       "popularity": null,
-       "album": "w00t",
-       "album_type": "album",
-       "release_date": "2008-06-01",
-       "duration_ms": 599520,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "731f3ac1-3af9-473b-9aa5-72fa6b193f6d",
-     "reach": {
-      "listeners": 19421,
-      "playcount": 151363,
-      "tags": [
-       "funk",
-       "fusion",
-       "jazz",
-       "jazz fusion"
-      ],
-      "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Garaj+Mahal",
-      "mbid": "731f3ac1-3af9-473b-9aa5-72fa6b193f6d"
-     },
-     "genres_canon": [
-      "funk",
-      "jazz"
-     ]
-    }
-   ]
-  },
-  {
    "id": "43451246",
    "name": "Dzidzio @ Vogue Theatre",
    "source": "songkick",
@@ -10064,6 +9294,148 @@
      "genres_canon": [
       "pop",
       "folk"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "43417319",
+   "name": "Garaj Mahal @ The Pearl",
+   "source": "songkick",
+   "date": "2026-11-22",
+   "start": "2026-11-22T20:00:00",
+   "venue": "The Pearl",
+   "venue_id": "the-pearl",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43417319-garaj-mahal-at-pearl",
+   "also_listed": [],
+   "lat": 49.28071,
+   "lng": -123.12143,
+   "headliner": "Garaj Mahal",
+   "artists": [
+    {
+     "name": "Garaj Mahal",
+     "spotify_name": "Garaj Mahal",
+     "spotify_id": "1m99aAxdBoGdZ3FVWkOBcM",
+     "url": "https://open.spotify.com/artist/1m99aAxdBoGdZ3FVWkOBcM",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab67616d0000485175442924afc3e62f7636427e",
+     "tracks": [
+      {
+       "id": "3OtqffoS8ktgeZsKp7Bt5h",
+       "uri": "spotify:track:3OtqffoS8ktgeZsKp7Bt5h",
+       "name": "Mondo Garaj",
+       "popularity": null,
+       "album": "Mondo Garaj",
+       "album_type": "album",
+       "release_date": "2003-01-01",
+       "duration_ms": 333413,
+       "explicit": false
+      },
+      {
+       "id": "2OA8ZHzOD2VW2eEM6oQvJo",
+       "uri": "spotify:track:2OA8ZHzOD2VW2eEM6oQvJo",
+       "name": "Semos",
+       "popularity": null,
+       "album": "w00t",
+       "album_type": "album",
+       "release_date": "2008-06-01",
+       "duration_ms": 599520,
+       "explicit": false
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": "731f3ac1-3af9-473b-9aa5-72fa6b193f6d",
+     "reach": {
+      "listeners": 19421,
+      "playcount": 151363,
+      "tags": [
+       "funk",
+       "fusion",
+       "jazz",
+       "jazz fusion"
+      ],
+      "tier": 2,
+      "lastfm_url": "https://www.last.fm/music/Garaj+Mahal",
+      "mbid": "731f3ac1-3af9-473b-9aa5-72fa6b193f6d"
+     },
+     "genres_canon": [
+      "funk",
+      "jazz"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "43506428",
+   "name": "Bombargo @ Hollywood Theatre",
+   "source": "songkick",
+   "date": "2026-11-22",
+   "start": "2026-11-22T20:00:00",
+   "venue": "Hollywood Theatre",
+   "venue_id": "hollywood-theatre",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43506428-bombargo-at-hollywood-theatre",
+   "also_listed": [],
+   "lat": 49.26444,
+   "lng": -123.17453,
+   "headliner": "Bombargo",
+   "artists": [
+    {
+     "name": "Bombargo",
+     "spotify_name": "Bombargo",
+     "spotify_id": "5gcuakqbbCNnx9fBZWCFfW",
+     "url": "https://open.spotify.com/artist/5gcuakqbbCNnx9fBZWCFfW",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f178fa4b45f4952f4371e2f4e7c6",
+     "tracks": [
+      {
+       "id": "63w2VtSKykI9mffvOKHIUh",
+       "uri": "spotify:track:63w2VtSKykI9mffvOKHIUh",
+       "name": "Let It Grow",
+       "popularity": null,
+       "album": "Back on Main",
+       "album_type": "single",
+       "release_date": "2015-10-23",
+       "duration_ms": 247529,
+       "explicit": false
+      },
+      {
+       "id": "6LxPTZhxkzPGIXqFzg40JH",
+       "uri": "spotify:track:6LxPTZhxkzPGIXqFzg40JH",
+       "name": "Oxygen",
+       "popularity": null,
+       "album": "Oxygen",
+       "album_type": "single",
+       "release_date": "2018-08-22",
+       "duration_ms": 227076,
+       "explicit": false
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": "7b790e1e-12b7-4a51-b6cd-7d177f013698",
+     "reach": {
+      "listeners": 20947,
+      "playcount": 127341,
+      "tags": [
+       "indie pop",
+       "soul",
+       "pop"
+      ],
+      "tier": 2,
+      "lastfm_url": "https://www.last.fm/music/Bombargo",
+      "mbid": "7b790e1e-12b7-4a51-b6cd-7d177f013698"
+     },
+     "genres_canon": [
+      "indie pop",
+      "soul",
+      "pop"
      ]
     }
    ]
@@ -13523,153 +12895,6 @@
    ]
   },
   {
-   "id": "43447598",
-   "name": "The Meteors @ Rickshaw Theatre",
-   "source": "songkick",
-   "date": "2026-12-03",
-   "start": "2026-12-03T18:00:00",
-   "venue": "Rickshaw Theatre",
-   "venue_id": "rickshaw-theatre",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43447598-meteors-at-rickshaw-theatre",
-   "also_listed": [],
-   "lat": 49.28102,
-   "lng": -123.09853,
-   "headliner": "The Meteors",
-   "artists": [
-    {
-     "name": "The Meteors",
-     "spotify_name": "The Meteors",
-     "spotify_id": "7a2sloQlmdKSmj3fwMMpg9",
-     "url": "https://open.spotify.com/artist/7a2sloQlmdKSmj3fwMMpg9",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab67616d00004851cd9187880b78534016312040",
-     "tracks": [
-      {
-       "id": "45XtqGyKhOkkYIeOND0KF7",
-       "uri": "spotify:track:45XtqGyKhOkkYIeOND0KF7",
-       "name": "Psycho for Your Love",
-       "popularity": null,
-       "album": "The Lost Album",
-       "album_type": "album",
-       "release_date": "2007",
-       "duration_ms": 173106,
-       "explicit": false
-      },
-      {
-       "id": "3SyAr7p4vnQLgCvLP6k6V4",
-       "uri": "spotify:track:3SyAr7p4vnQLgCvLP6k6V4",
-       "name": "Wreckin' Crew",
-       "popularity": null,
-       "album": "Monster Psychobilly Hits",
-       "album_type": "album",
-       "release_date": "2011",
-       "duration_ms": 151293,
-       "explicit": true
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "8df95482-901f-469f-a268-73b34e05dad9",
-     "reach": {
-      "listeners": 184546,
-      "playcount": 4020972,
-      "tags": [
-       "psychobilly",
-       "rockabilly",
-       "horror punk",
-       "punk"
-      ],
-      "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/The+Meteors",
-      "mbid": "8df95482-901f-469f-a268-73b34e05dad9"
-     },
-     "genres_canon": [
-      "psychedelic",
-      "garage rock",
-      "punk"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "43363726",
-   "name": "Protest the Hero @ The Pearl",
-   "source": "songkick",
-   "date": "2026-12-03",
-   "start": "2026-12-03T19:00:00",
-   "venue": "The Pearl",
-   "venue_id": "the-pearl",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43363726-protest-the-hero-at-pearl",
-   "also_listed": [],
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "headliner": "Protest the Hero",
-   "artists": [
-    {
-     "name": "Protest the Hero",
-     "spotify_name": "Protest The Hero",
-     "spotify_id": "6z3BjfmgvDUIHaJ0UPTtrQ",
-     "url": "https://open.spotify.com/artist/6z3BjfmgvDUIHaJ0UPTtrQ",
-     "genres": [],
-     "songkick_genres": [
-      "metal",
-      "rock"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178a0dc4ccccbab94a09ce8b60e",
-     "tracks": [
-      {
-       "id": "72e95GPfDERtcZZFsrrrkH",
-       "uri": "spotify:track:72e95GPfDERtcZZFsrrrkH",
-       "name": "Bloodmeat",
-       "popularity": null,
-       "album": "Fortress (Deluxe Edition)",
-       "album_type": "album",
-       "release_date": "2008-01-01",
-       "duration_ms": 235120,
-       "explicit": false
-      },
-      {
-       "id": "7rrz6VETF39TP54h4zlZtl",
-       "uri": "spotify:track:7rrz6VETF39TP54h4zlZtl",
-       "name": "Sequoia Throne",
-       "popularity": null,
-       "album": "Fortress",
-       "album_type": "album",
-       "release_date": "2008-01-29",
-       "duration_ms": 191013,
-       "explicit": true
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "6318e724-7e6b-4e41-a35b-080065077c80",
-     "reach": {
-      "listeners": 371121,
-      "playcount": 26990267,
-      "tags": [
-       "metalcore",
-       "mathcore",
-       "progressive metal",
-       "post-hardcore"
-      ],
-      "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Protest+the+Hero",
-      "mbid": "6318e724-7e6b-4e41-a35b-080065077c80"
-     },
-     "genres_canon": [
-      "hardcore",
-      "metal",
-      "rock"
-     ]
-    }
-   ]
-  },
-  {
    "id": "43065750",
    "name": "Buck Meek @ Hollywood Theatre",
    "source": "songkick",
@@ -13741,6 +12966,78 @@
    ]
   },
   {
+   "id": "43447598",
+   "name": "The Meteors @ Rickshaw Theatre",
+   "source": "songkick",
+   "date": "2026-12-03",
+   "start": "2026-12-03T19:00:00",
+   "venue": "Rickshaw Theatre",
+   "venue_id": "rickshaw-theatre",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43447598-meteors-at-rickshaw-theatre",
+   "also_listed": [],
+   "lat": 49.28102,
+   "lng": -123.09853,
+   "headliner": "The Meteors",
+   "artists": [
+    {
+     "name": "The Meteors",
+     "spotify_name": "The Meteors",
+     "spotify_id": "7a2sloQlmdKSmj3fwMMpg9",
+     "url": "https://open.spotify.com/artist/7a2sloQlmdKSmj3fwMMpg9",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab67616d00004851cd9187880b78534016312040",
+     "tracks": [
+      {
+       "id": "45XtqGyKhOkkYIeOND0KF7",
+       "uri": "spotify:track:45XtqGyKhOkkYIeOND0KF7",
+       "name": "Psycho for Your Love",
+       "popularity": null,
+       "album": "The Lost Album",
+       "album_type": "album",
+       "release_date": "2007",
+       "duration_ms": 173106,
+       "explicit": false
+      },
+      {
+       "id": "3SyAr7p4vnQLgCvLP6k6V4",
+       "uri": "spotify:track:3SyAr7p4vnQLgCvLP6k6V4",
+       "name": "Wreckin' Crew",
+       "popularity": null,
+       "album": "Monster Psychobilly Hits",
+       "album_type": "album",
+       "release_date": "2011",
+       "duration_ms": 151293,
+       "explicit": true
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": "8df95482-901f-469f-a268-73b34e05dad9",
+     "reach": {
+      "listeners": 184546,
+      "playcount": 4020972,
+      "tags": [
+       "psychobilly",
+       "rockabilly",
+       "horror punk",
+       "punk"
+      ],
+      "tier": 3,
+      "lastfm_url": "https://www.last.fm/music/The+Meteors",
+      "mbid": "8df95482-901f-469f-a268-73b34e05dad9"
+     },
+     "genres_canon": [
+      "psychedelic",
+      "garage rock",
+      "punk"
+     ]
+    }
+   ]
+  },
+  {
    "id": "43371709",
    "name": "STVW @ Fortune Sound Club",
    "source": "songkick",
@@ -13804,6 +13101,81 @@
      },
      "genres_canon": [
       "electronic"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "43363726",
+   "name": "Protest the Hero @ The Pearl",
+   "source": "songkick",
+   "date": "2026-12-03",
+   "start": "2026-12-03T20:00:00",
+   "venue": "The Pearl",
+   "venue_id": "the-pearl",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43363726-protest-the-hero-at-pearl",
+   "also_listed": [],
+   "lat": 49.28071,
+   "lng": -123.12143,
+   "headliner": "Protest the Hero",
+   "artists": [
+    {
+     "name": "Protest the Hero",
+     "spotify_name": "Protest The Hero",
+     "spotify_id": "6z3BjfmgvDUIHaJ0UPTtrQ",
+     "url": "https://open.spotify.com/artist/6z3BjfmgvDUIHaJ0UPTtrQ",
+     "genres": [],
+     "songkick_genres": [
+      "metal",
+      "rock"
+     ],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f178a0dc4ccccbab94a09ce8b60e",
+     "tracks": [
+      {
+       "id": "72e95GPfDERtcZZFsrrrkH",
+       "uri": "spotify:track:72e95GPfDERtcZZFsrrrkH",
+       "name": "Bloodmeat",
+       "popularity": null,
+       "album": "Fortress (Deluxe Edition)",
+       "album_type": "album",
+       "release_date": "2008-01-01",
+       "duration_ms": 235120,
+       "explicit": false
+      },
+      {
+       "id": "7rrz6VETF39TP54h4zlZtl",
+       "uri": "spotify:track:7rrz6VETF39TP54h4zlZtl",
+       "name": "Sequoia Throne",
+       "popularity": null,
+       "album": "Fortress",
+       "album_type": "album",
+       "release_date": "2008-01-29",
+       "duration_ms": 191013,
+       "explicit": true
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": "6318e724-7e6b-4e41-a35b-080065077c80",
+     "reach": {
+      "listeners": 371121,
+      "playcount": 26990267,
+      "tags": [
+       "metalcore",
+       "mathcore",
+       "progressive metal",
+       "post-hardcore"
+      ],
+      "tier": 3,
+      "lastfm_url": "https://www.last.fm/music/Protest+the+Hero",
+      "mbid": "6318e724-7e6b-4e41-a35b-080065077c80"
+     },
+     "genres_canon": [
+      "hardcore",
+      "metal",
+      "rock"
      ]
     }
    ]
@@ -14234,6 +13606,76 @@
      },
      "genres_canon": [
       "folk"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "43506441",
+   "name": "Sasy @ Harbour Event Centre",
+   "source": "songkick",
+   "date": "2026-12-04",
+   "start": "2026-12-04T22:00:00",
+   "venue": "Harbour Event Centre",
+   "venue_id": "harbour-event-centre",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43506441-sasy-at-harbour-event-centre",
+   "also_listed": [],
+   "lat": 49.27524,
+   "lng": -123.10983,
+   "headliner": "Sasy",
+   "artists": [
+    {
+     "name": "Sasy",
+     "spotify_name": "Sasy",
+     "spotify_id": "0LkkLM2M97UEG7hi5mLn3u",
+     "url": "https://open.spotify.com/artist/0LkkLM2M97UEG7hi5mLn3u",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f178f3402cb8eefebda260500701",
+     "tracks": [
+      {
+       "id": "5LOVw41B6bJ8Wkq8Xy7kTv",
+       "uri": "spotify:track:5LOVw41B6bJ8Wkq8Xy7kTv",
+       "name": "Gentleman",
+       "popularity": null,
+       "album": "Gentleman",
+       "album_type": "single",
+       "release_date": "2019-03-06",
+       "duration_ms": 186044,
+       "explicit": false
+      },
+      {
+       "id": "69yP7jY5UtTJpm6LwQVqiX",
+       "uri": "spotify:track:69yP7jY5UtTJpm6LwQVqiX",
+       "name": "Saaghiya",
+       "popularity": null,
+       "album": "Saaghiya",
+       "album_type": "single",
+       "release_date": "2016-03-05",
+       "duration_ms": 185129,
+       "explicit": false
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": "fa2de97b-50fc-4822-a7cd-b352403479a8",
+     "reach": {
+      "listeners": 11500,
+      "playcount": 226134,
+      "tags": [
+       "persian",
+       "pop",
+       "iranian",
+       "damboli kosak"
+      ],
+      "tier": 2,
+      "lastfm_url": "https://www.last.fm/music/Sasy",
+      "mbid": "fa2de97b-50fc-4822-a7cd-b352403479a8"
+     },
+     "genres_canon": [
+      "pop"
      ]
     }
    ]
@@ -15052,8 +14494,8 @@
    "source": "songkick",
    "date": "2026-12-05",
    "start": "2026-12-05T23:00:00",
-   "venue": "Harbour Event & Convention Centre",
-   "venue_id": "harbour-event-convention-centre",
+   "venue": "Harbour Event Centre",
+   "venue_id": "harbour-event-centre",
    "locality": "Vancouver",
    "url": "https://www.songkick.com/concerts/43451283-virtual-riot-at-harbour-event-and-convention-centre",
    "also_listed": [],
@@ -16433,8 +15875,8 @@
    "source": "songkick",
    "date": "2026-12-11",
    "start": "2026-12-11T22:00:00",
-   "venue": "Harbour Event & Convention Centre",
-   "venue_id": "harbour-event-convention-centre",
+   "venue": "Harbour Event Centre",
+   "venue_id": "harbour-event-centre",
    "locality": "Vancouver",
    "url": "https://www.songkick.com/concerts/43383083-alex-wann-at-harbour-events-centre",
    "also_listed": [],
@@ -16494,6 +15936,79 @@
      "genres_canon": [
       "house",
       "electronic"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "43506450",
+   "name": "James Hype @ Harbour Event Centre",
+   "source": "songkick",
+   "date": "2026-12-11",
+   "start": "2026-12-11T22:00:00",
+   "venue": "Harbour Event Centre",
+   "venue_id": "harbour-event-centre",
+   "locality": "Vancouver",
+   "url": "https://www.songkick.com/concerts/43506450-james-hype-at-harbour-event-centre",
+   "also_listed": [],
+   "lat": 49.27524,
+   "lng": -123.10983,
+   "headliner": "James Hype",
+   "artists": [
+    {
+     "name": "James Hype",
+     "spotify_name": "James Hype",
+     "spotify_id": "43BxCL6t4c73BQnIJtry5v",
+     "url": "https://open.spotify.com/artist/43BxCL6t4c73BQnIJtry5v",
+     "genres": [],
+     "songkick_genres": [
+      "electronic"
+     ],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f1789831431abd5c375ef7fbb1ee",
+     "tracks": [
+      {
+       "id": "4zN21mbAuaD0WqtmaTZZeP",
+       "uri": "spotify:track:4zN21mbAuaD0WqtmaTZZeP",
+       "name": "Ferrari",
+       "popularity": null,
+       "album": "Ferrari",
+       "album_type": "single",
+       "release_date": "2022-04-01",
+       "duration_ms": 186661,
+       "explicit": false
+      },
+      {
+       "id": "3DLWVhaowApIGw1JnJj6GS",
+       "uri": "spotify:track:3DLWVhaowApIGw1JnJj6GS",
+       "name": "Lose Control",
+       "popularity": null,
+       "album": "Lose Control",
+       "album_type": "single",
+       "release_date": "2023-05-12",
+       "duration_ms": 173437,
+       "explicit": false
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": "51cbf154-4b7f-4ec5-86a7-d269ae7d101a",
+     "reach": {
+      "listeners": 657998,
+      "playcount": 8333821,
+      "tags": [
+       "electronic",
+       "house",
+       "c",
+       "e"
+      ],
+      "tier": 4,
+      "lastfm_url": "https://www.last.fm/music/James+Hype",
+      "mbid": "51cbf154-4b7f-4ec5-86a7-d269ae7d101a"
+     },
+     "genres_canon": [
+      "electronic",
+      "house"
      ]
     }
    ]
@@ -17294,8 +16809,8 @@
    "source": "songkick",
    "date": "2026-12-12",
    "start": "2026-12-12T22:00:00",
-   "venue": "Harbour Event & Convention Centre",
-   "venue_id": "harbour-event-convention-centre",
+   "venue": "Harbour Event Centre",
+   "venue_id": "harbour-event-centre",
    "locality": "Vancouver",
    "url": "https://www.songkick.com/concerts/43448068-audien-at-harbour-event-and-convention-centre",
    "also_listed": [],
@@ -17983,6 +17498,12 @@
    "name": "The Emo Nightmare Before Christmas Vancouver at Hollywood Theatre - Dec 12 2026 @ Hollywood Theatre",
    "date": "2026-12-12",
    "venue": "Hollywood Theatre",
+   "reason": "no_performers"
+  },
+  {
+   "name": "BP Holiday Mixer 2026 @ Good Co. Granville",
+   "date": "2026-12-14",
+   "venue": "Good Co. Granville",
    "reason": "no_performers"
   }
  ]
