@@ -2797,17 +2797,19 @@
 },
 "jann arden": {
 "query": "Jann Arden",
-"fetched_at": "2026-09-07T06:59:06+00:00",
+"fetched_at": "2026-11-10T20:56:45+00:00",
 "reach": {
-"listeners": 165725,
-"playcount": 1468200,
+"listeners": 166214,
+"playcount": 1473091,
 "tags": [
 "pop",
 "alternative"
 ],
 "tier": 3,
-"lastfm_url": "https://www.last.fm/music/Jann+Arden"
+"lastfm_url": "https://www.last.fm/music/Jann+Arden",
+"mbid": "31930c85-3e0e-488e-8407-46a0d73fa816"
 },
+"matcher": 4,
 "spotify_id": "1aftUCES5zD5xXI7O9ZF9F",
 "spotify_name": "Jann Arden",
 "url": "https://open.spotify.com/artist/1aftUCES5zD5xXI7O9ZF9F",
@@ -2816,17 +2818,6 @@
 "followers": null,
 "image": "https://i.scdn.co/image/ab6761610000f178ec58c1401297ffe6d03af61e",
 "tracks": [
-{
-"id": "2VWy6qdJR61oHT2ypvb0MS",
-"uri": "spotify:track:2VWy6qdJR61oHT2ypvb0MS",
-"name": "Good Mother",
-"popularity": null,
-"album": "Living Under June",
-"album_type": "album",
-"release_date": "1994-01-01",
-"duration_ms": 298693,
-"explicit": false
-},
 {
 "id": "0yx00RNuvZY5Vn8nlpUnMk",
 "uri": "spotify:track:0yx00RNuvZY5Vn8nlpUnMk",
@@ -2837,9 +2828,21 @@
 "release_date": "1994-01-01",
 "duration_ms": 255893,
 "explicit": false
+},
+{
+"id": "4maCvSjk5NqqSu7FzMyvdA",
+"uri": "spotify:track:4maCvSjk5NqqSu7FzMyvdA",
+"name": "You Don't Know Me",
+"popularity": null,
+"album": "MY BEST FRIEND'S WEDDING MUSIC FROM THE MOTION PICTURE",
+"album_type": "album",
+"release_date": "1997-06-10",
+"duration_ms": 205493,
+"explicit": false
 }
 ],
-"rank_source": "search"
+"rank_source": "lastfm",
+"mbid": "31930c85-3e0e-488e-8407-46a0d73fa816"
 },
 "out for kicks": {
 "query": "Out For Kicks",
@@ -30927,13 +30930,13 @@
 },
 "space queen": {
 "query": "Space Queen",
-"fetched_at": "2026-10-11T19:03:05+00:00",
+"fetched_at": "2026-11-10T20:56:42+00:00",
 "reach": {
-"listeners": 28115,
-"playcount": 188668,
+"listeners": 28143,
+"playcount": 188872,
 "tags": [
-"garage rock",
 "stoner rock",
+"garage rock",
 "hard rock"
 ],
 "tier": 2,
@@ -30950,6 +30953,17 @@
 "image": "https://i.scdn.co/image/ab6761610000f17812e8898ca31c732958d95c48",
 "tracks": [
 {
+"id": "03j1fEZbQGSBUNBRW3pVg0",
+"uri": "spotify:track:03j1fEZbQGSBUNBRW3pVg0",
+"name": "Deluge",
+"popularity": null,
+"album": "Nebula",
+"album_type": "album",
+"release_date": "2023-05-19",
+"duration_ms": 39012,
+"explicit": false
+},
+{
 "id": "6ohDjqis2dheEkwxzSzo4M",
 "uri": "spotify:track:6ohDjqis2dheEkwxzSzo4M",
 "name": "Battle Cry",
@@ -30958,17 +30972,6 @@
 "album_type": "album",
 "release_date": "2023-05-19",
 "duration_ms": 225358,
-"explicit": false
-},
-{
-"id": "0mwBF3mUGXkUsE3MCfAHwL",
-"uri": "spotify:track:0mwBF3mUGXkUsE3MCfAHwL",
-"name": "Demon Queen",
-"popularity": null,
-"album": "Nebula",
-"album_type": "album",
-"release_date": "2023-05-19",
-"duration_ms": 195054,
 "explicit": false
 }
 ],
@@ -63065,5 +63068,107 @@
 ],
 "rank_source": "lastfm",
 "mbid": "51cbf154-4b7f-4ec5-86a7-d269ae7d101a"
+},
+"vostok": {
+"query": "Vostok",
+"fetched_at": "2026-11-10T20:56:41+00:00",
+"reach": {
+"listeners": 18778,
+"playcount": 167156,
+"tags": [
+"black metal",
+"atmospheric black metal",
+"acoustic",
+"pop"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Vostok",
+"mbid": "d5e8f107-2a9a-448a-bf61-9fa949eb102d"
+},
+"matcher": 4,
+"spotify_id": "18NGnJWiWsTXOSE6ACeiND",
+"spotify_name": "VOSTOK",
+"url": "https://open.spotify.com/artist/18NGnJWiWsTXOSE6ACeiND",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178d9ca3831d514b9f459991a96",
+"tracks": [
+{
+"id": "5fJcUxW4DMQaRmJZKRFitg",
+"uri": "spotify:track:5fJcUxW4DMQaRmJZKRFitg",
+"name": "Welcome to the Show",
+"popularity": null,
+"album": "Welcome to the Show",
+"album_type": "single",
+"release_date": "2020-10-26",
+"duration_ms": 186666,
+"explicit": false
+},
+{
+"id": "1wnz85U5zSIC5sSYJ3GD2J",
+"uri": "spotify:track:1wnz85U5zSIC5sSYJ3GD2J",
+"name": "Alice",
+"popularity": null,
+"album": "Alice",
+"album_type": "single",
+"release_date": "2021-10-26",
+"duration_ms": 164443,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "d5e8f107-2a9a-448a-bf61-9fa949eb102d"
+},
+"rush": {
+"query": "Rush",
+"fetched_at": "2026-11-10T20:56:44+00:00",
+"reach": {
+"listeners": 1883854,
+"playcount": 95594643,
+"tags": [
+"progressive rock",
+"classic rock",
+"hard rock",
+"rock"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/Rush",
+"mbid": "534ee493-bfac-4575-a44a-0ae41e2c3fe4"
+},
+"matcher": 4,
+"spotify_id": "2Hkut4rAAyrQxRdof7FVJq",
+"spotify_name": "Rush",
+"url": "https://open.spotify.com/artist/2Hkut4rAAyrQxRdof7FVJq",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178896c4b043fb3063178afd716",
+"tracks": [
+{
+"id": "1MkoCFGbhPQIDI5lRdAheQ",
+"uri": "spotify:track:1MkoCFGbhPQIDI5lRdAheQ",
+"name": "Tom Sawyer",
+"popularity": null,
+"album": "Moving Pictures (2011 Remaster)",
+"album_type": "album",
+"release_date": "1981-02-12",
+"duration_ms": 276973,
+"explicit": false
+},
+{
+"id": "0rt4JtP7UgKdiUor9Ppir4",
+"uri": "spotify:track:0rt4JtP7UgKdiUor9Ppir4",
+"name": "Limelight",
+"popularity": null,
+"album": "Moving Pictures (2011 Remaster)",
+"album_type": "album",
+"release_date": "1981-02-12",
+"duration_ms": 259826,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "534ee493-bfac-4575-a44a-0ae41e2c3fe4"
 }
 }

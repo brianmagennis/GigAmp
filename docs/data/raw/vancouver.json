@@ -2,50 +2,12 @@
  "city": "vancouver",
  "city_name": "Vancouver, BC",
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
- "scraped_at": "2026-11-09T23:29:01+00:00",
+ "scraped_at": "2026-11-10T20:55:44+00:00",
  "horizon_days": 35,
  "pages_fetched": 4,
  "do604_events": 0,
  "merged_duplicates": 0,
  "venues": {
-  "queen-elizabeth-theatre": {
-   "name": "Queen Elizabeth Theatre",
-   "aliases": [],
-   "lat": 49.28039,
-   "lng": -123.11266
-  },
-  "commodore-ballroom": {
-   "name": "Commodore Ballroom",
-   "aliases": [],
-   "lat": 49.28065,
-   "lng": -123.12089
-  },
-  "chan-centre-for-the-performing-arts": {
-   "name": "Chan Centre for the Performing Arts",
-   "aliases": [],
-   "lat": 49.26831,
-   "lng": -123.25789
-  },
-  "hub-international-theatre-chilliwack-cultural-centre": {
-   "name": "Hub International Theatre, Chilliwack Cultural Centre",
-   "aliases": [],
-   "lat": 49.17006,
-   "lng": -121.96393
-  },
-  "orpheum-theatre": {
-   "name": "Orpheum Theatre",
-   "aliases": [
-    "Orpheum"
-   ],
-   "lat": 49.2798,
-   "lng": -123.12042
-  },
-  "fox-cabaret": {
-   "name": "Fox Cabaret",
-   "aliases": [],
-   "lat": 49.26426,
-   "lng": -123.10118
-  },
   "vogue-theatre": {
    "name": "Vogue Theatre",
    "aliases": [],
@@ -96,6 +58,12 @@
    "lat": 49.28484,
    "lng": -123.11418
   },
+  "commodore-ballroom": {
+   "name": "Commodore Ballroom",
+   "aliases": [],
+   "lat": 49.28065,
+   "lng": -123.12089
+  },
   "hollywood-theatre": {
    "name": "Hollywood Theatre",
    "aliases": [],
@@ -122,6 +90,12 @@
    "lat": 49.27965,
    "lng": -123.11665
   },
+  "queen-elizabeth-theatre": {
+   "name": "Queen Elizabeth Theatre",
+   "aliases": [],
+   "lat": 49.28039,
+   "lng": -123.11266
+  },
   "biltmore-cabaret": {
    "name": "Biltmore Cabaret",
    "aliases": [],
@@ -139,6 +113,12 @@
    "aliases": [],
    "lat": 49.27939,
    "lng": -123.13002
+  },
+  "fox-cabaret": {
+   "name": "Fox Cabaret",
+   "aliases": [],
+   "lat": 49.26426,
+   "lng": -123.10118
   },
   "bully-s": {
    "name": "Bully's",
@@ -191,6 +171,12 @@
    "aliases": [],
    "lat": null,
    "lng": null
+  },
+  "the-american": {
+   "name": "The American",
+   "aliases": [],
+   "lat": 49.27621,
+   "lng": -123.09948
   },
   "guilt-company": {
    "name": "Guilt & Company",
@@ -247,6 +233,14 @@
    "aliases": [],
    "lat": 49.11652,
    "lng": -122.82176
+  },
+  "orpheum": {
+   "name": "Orpheum",
+   "aliases": [
+    "Orpheum Theatre"
+   ],
+   "lat": 49.2798,
+   "lng": -123.12042
   },
   "vancouver-playhouse": {
    "name": "Vancouver Playhouse",
@@ -379,180 +373,15 @@
    "aliases": [],
    "lat": 49.28255,
    "lng": -122.82986
+  },
+  "river-rock-casino-resort": {
+   "name": "River Rock Casino Resort",
+   "aliases": [],
+   "lat": 49.19625,
+   "lng": -123.12768
   }
  },
  "events": [
-  {
-   "source": "songkick",
-   "id": "43479186",
-   "name": "Tadhg Nolan @ Fox Cabaret",
-   "start": "2026-11-09T18:30:00",
-   "status": "EventScheduled",
-   "venue": "Fox Cabaret",
-   "venue_url": "http://www.foxcabaret.com/",
-   "locality": "Vancouver",
-   "lat": 49.26426,
-   "lng": -123.10118,
-   "url": "https://www.songkick.com/concerts/43479186-tadhg-nolan-at-fox-cabaret",
-   "performers": [
-    {
-     "name": "Tadhg Nolan",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10417973-tadhg-nolan?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Fox Cabaret",
-   "venue_id": "fox-cabaret"
-  },
-  {
-   "source": "songkick",
-   "id": "43477806",
-   "name": "Rahat Fateh Ali Khan @ Orpheum Theatre",
-   "start": "2026-11-09T19:00:00",
-   "status": "EventScheduled",
-   "venue": "Orpheum Theatre",
-   "venue_url": "https://vancouvercivictheatres.com/venues/orpheum/",
-   "locality": "Vancouver",
-   "lat": 49.2798,
-   "lng": -123.12042,
-   "url": "https://www.songkick.com/concerts/43477806-rahat-fateh-ali-khan-at-orpheum-theatre",
-   "performers": [
-    {
-     "name": "Rahat Fateh Ali Khan",
-     "songkick_genres": [
-      "pop"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/390626-rahat-fateh-ali-khan?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Orpheum Theatre",
-   "venue_id": "orpheum-theatre"
-  },
-  {
-   "source": "songkick",
-   "id": "43169939",
-   "name": "Beck @ Queen Elizabeth Theatre",
-   "start": "2026-11-09T19:30:00",
-   "status": "EventScheduled",
-   "venue": "Queen Elizabeth Theatre",
-   "venue_url": "http://vancouver.ca/parks-recreation-culture/queen-elizabeth-theatre.aspx",
-   "locality": "Vancouver",
-   "lat": 49.28039,
-   "lng": -123.11266,
-   "url": "https://www.songkick.com/concerts/43169939-beck-at-queen-elizabeth-theatre",
-   "performers": [
-    {
-     "name": "Beck",
-     "songkick_genres": [
-      "rock",
-      "indie_alternative"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/430505-beck?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Ioanna Gika",
-     "songkick_genres": [
-      "rock",
-      "indie_alternative"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/9688414-ioanna-gika?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Queen Elizabeth Theatre",
-   "venue_id": "queen-elizabeth-theatre"
-  },
-  {
-   "source": "songkick",
-   "id": "43439977",
-   "name": "William Prince @ Hub International Theatre, Chilliwack Cultural Centre",
-   "start": "2026-11-09T19:30:00",
-   "status": "EventScheduled",
-   "venue": "Hub International Theatre, Chilliwack Cultural Centre",
-   "venue_url": null,
-   "locality": "Chilliwack",
-   "lat": 49.17006,
-   "lng": -121.96393,
-   "url": "https://www.songkick.com/concerts/43439977-william-prince-at-hub-international-theatre-chilliwack-cultural-centre",
-   "performers": [
-    {
-     "name": "William Prince",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/8817439-william-prince?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Hub International Theatre, Chilliwack Cultural Centre",
-   "venue_id": "hub-international-theatre-chilliwack-cultural-centre"
-  },
-  {
-   "source": "songkick",
-   "id": "43158925",
-   "name": "The Black Angels @ Commodore Ballroom",
-   "start": "2026-11-09T20:00:00",
-   "status": "EventScheduled",
-   "venue": "Commodore Ballroom",
-   "venue_url": "http://www.commodoreballroom.ca/",
-   "locality": "Vancouver",
-   "lat": 49.28065,
-   "lng": -123.12089,
-   "url": "https://www.songkick.com/concerts/43158925-black-angels-at-commodore-ballroom",
-   "performers": [
-    {
-     "name": "The Black Angels",
-     "songkick_genres": [
-      "rock",
-      "folk_blues",
-      "indie_alternative",
-      "metal"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/443460-black-angels?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Ghostwoman",
-     "songkick_genres": [
-      "rock",
-      "folk_blues",
-      "indie_alternative",
-      "metal"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/10093086-ghostwoman?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Commodore Ballroom",
-   "venue_id": "commodore-ballroom"
-  },
-  {
-   "source": "songkick",
-   "id": "43205936",
-   "name": "Allison Russell @ Chan Centre for the Performing Arts",
-   "start": "2026-11-09T20:30:00",
-   "status": "EventScheduled",
-   "venue": "Chan Centre for the Performing Arts",
-   "venue_url": "http://www.chancentre.com/",
-   "locality": "Vancouver",
-   "lat": 49.26831,
-   "lng": -123.25789,
-   "url": "https://www.songkick.com/concerts/43205936-allison-russell-at-chan-centre-for-the-performing-arts",
-   "performers": [
-    {
-     "name": "Allison Russell",
-     "songkick_genres": [
-      "r_and_b",
-      "funk_soul"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/3782681-allison-russell?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "AHI",
-     "songkick_genres": [
-      "r_and_b",
-      "funk_soul"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/5364803-ahi?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Chan Centre for the Performing Arts",
-   "venue_id": "chan-centre-for-the-performing-arts"
-  },
   {
    "source": "songkick",
    "id": "43297854",
@@ -872,6 +701,28 @@
    ],
    "venue_raw": "Green Auto",
    "venue_id": "green-auto"
+  },
+  {
+   "source": "songkick",
+   "id": "434817062026",
+   "name": "Table Songs Festival Kick Off Party - with Vostok & Ori Shalva 2026 @ La Fabrique St George Winery",
+   "start": "2026-11-12T17:00:00",
+   "status": "EventScheduled",
+   "venue": "La Fabrique St George Winery",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "lat": null,
+   "lng": null,
+   "url": "https://www.songkick.com/festivals/3813321-table-songs-kick-off-party-with-vostok-ori-shalva/id/43481706-table-songs-festival-kick-off-party--with-vostok--ori-shalva-2026",
+   "performers": [
+    {
+     "name": "Vostok",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/552820-vostok?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "La Fabrique St George Winery",
+   "venue_id": "la-fabrique-st-george-winery"
   },
   {
    "source": "songkick",
@@ -2822,7 +2673,7 @@
    "name": "Amanda Marshall @ Orpheum Theatre",
    "start": "2026-11-23T19:30:00",
    "status": "EventScheduled",
-   "venue": "Orpheum Theatre",
+   "venue": "Orpheum",
    "venue_url": "https://vancouvercivictheatres.com/venues/orpheum/",
    "locality": "Vancouver",
    "lat": 49.2798,
@@ -2841,7 +2692,7 @@
     }
    ],
    "venue_raw": "Orpheum Theatre",
-   "venue_id": "orpheum-theatre"
+   "venue_id": "orpheum"
   },
   {
    "source": "songkick",
@@ -4634,28 +4485,6 @@
   },
   {
    "source": "songkick",
-   "id": "43383083",
-   "name": "Alex Wann @ Harbour Events Centre",
-   "start": "2026-12-11T22:00:00",
-   "status": "EventScheduled",
-   "venue": "Harbour Event Centre",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": 49.26123,
-   "lng": -123.11393,
-   "url": "https://www.songkick.com/concerts/43383083-alex-wann-at-harbour-events-centre",
-   "performers": [
-    {
-     "name": "Alex Wann",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10310378-alex-wann?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Harbour Events Centre",
-   "venue_id": "harbour-event-centre"
-  },
-  {
-   "source": "songkick",
    "id": "43506450",
    "name": "James Hype @ Harbour Event Centre",
    "start": "2026-12-11T22:00:00",
@@ -4676,6 +4505,28 @@
     }
    ],
    "venue_raw": "Harbour Event Centre",
+   "venue_id": "harbour-event-centre"
+  },
+  {
+   "source": "songkick",
+   "id": "43383083",
+   "name": "Alex Wann @ Harbour Events Centre",
+   "start": "2026-12-11T22:00:00",
+   "status": "EventScheduled",
+   "venue": "Harbour Event Centre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "lat": 49.26123,
+   "lng": -123.11393,
+   "url": "https://www.songkick.com/concerts/43383083-alex-wann-at-harbour-events-centre",
+   "performers": [
+    {
+     "name": "Alex Wann",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10310378-alex-wann?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Harbour Events Centre",
    "venue_id": "harbour-event-centre"
   },
   {
@@ -4806,7 +4657,7 @@
    "source": "songkick",
    "id": "43409639",
    "name": "Victoria Monét @ Doug Mitchell Thunderbird Sports Centre",
-   "start": "2026-12-12T20:00:00",
+   "start": "2026-12-12T21:00:00",
    "status": "EventScheduled",
    "venue": "Doug Mitchell Thunderbird Sports Centre",
    "venue_url": "https://thunderbirdarena.ubc.ca/",
@@ -4992,6 +4843,57 @@
    ],
    "venue_raw": "Hollywood Theatre",
    "venue_id": "hollywood-theatre"
+  },
+  {
+   "source": "songkick",
+   "id": "42990197",
+   "name": "Rush @ Rogers Arena",
+   "start": "2026-12-15",
+   "status": "EventScheduled",
+   "venue": "Rogers Arena",
+   "venue_url": "http://www.rogersarena.com",
+   "locality": "Vancouver",
+   "lat": 49.27766,
+   "lng": -123.10811,
+   "url": "https://www.songkick.com/concerts/42990197-rush-at-rogers-arena",
+   "performers": [
+    {
+     "name": "Rush",
+     "songkick_genres": [
+      "metal",
+      "rock",
+      "folk_blues",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/18841-rush?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Rogers Arena",
+   "venue_id": "rogers-arena"
+  },
+  {
+   "source": "songkick",
+   "id": "43398159",
+   "name": "Jann Arden @ Orpheum Theatre",
+   "start": "2026-12-15T19:30:00",
+   "status": "EventScheduled",
+   "venue": "Orpheum",
+   "venue_url": "https://vancouvercivictheatres.com/venues/orpheum/",
+   "locality": "Vancouver",
+   "lat": 49.2798,
+   "lng": -123.12042,
+   "url": "https://www.songkick.com/concerts/43398159-jann-arden-at-orpheum-theatre",
+   "performers": [
+    {
+     "name": "Jann Arden",
+     "songkick_genres": [
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/304002-jann-arden?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Orpheum Theatre",
+   "venue_id": "orpheum"
   }
  ],
  "skipped": [
@@ -5019,23 +4921,6 @@
    "venue_raw": "Halo",
    "venue_id": "halo",
    "skip_reason": "non_music"
-  },
-  {
-   "source": "songkick",
-   "id": "434817062026",
-   "name": "Ori Shalva Georgian Trio - Table Songs Festival Kick Off Party 2026 @ La Fabrique St George Winery",
-   "start": "2026-11-12T18:00:00",
-   "status": "EventScheduled",
-   "venue": "La Fabrique St George Winery",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": null,
-   "lng": null,
-   "url": "https://www.songkick.com/festivals/3812120-ori-shalva-georgian-trio-table-songs-kick-off-party/id/43481706-ori-shalva-georgian-trio--table-songs-festival-kick-off-party-2026",
-   "performers": [],
-   "venue_raw": "La Fabrique St George Winery",
-   "venue_id": "la-fabrique-st-george-winery",
-   "skip_reason": "no_performers"
   },
   {
    "source": "songkick",
@@ -5074,15 +4959,15 @@
   {
    "source": "songkick",
    "id": "43371700",
-   "name": "whitmer thomas @ Rickshaw Theatre",
+   "name": "whitmer thomas @ The American",
    "start": "2026-11-17T19:00:00",
    "status": "EventScheduled",
-   "venue": "Rickshaw Theatre",
-   "venue_url": "http://www.liveatrickshaw.com",
+   "venue": "The American",
+   "venue_url": "https://www.theamerican.bar",
    "locality": "Vancouver",
-   "lat": 49.28102,
-   "lng": -123.09853,
-   "url": "https://www.songkick.com/concerts/43371700-whitmer-thomas-at-rickshaw-theatre",
+   "lat": 49.27621,
+   "lng": -123.09948,
+   "url": "https://www.songkick.com/concerts/43371700-whitmer-thomas-at-american",
    "performers": [
     {
      "name": "whitmer thomas",
@@ -5092,8 +4977,8 @@
      "songkick_url": "https://www.songkick.com/artists/10125053-whitmer-thomas?utm_medium=organic&utm_source=microformat"
     }
    ],
-   "venue_raw": "Rickshaw Theatre",
-   "venue_id": "rickshaw-theatre",
+   "venue_raw": "The American",
+   "venue_id": "the-american",
    "skip_reason": "non_music"
   },
   {
