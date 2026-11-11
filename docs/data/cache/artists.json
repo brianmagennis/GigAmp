@@ -12506,20 +12506,21 @@
 },
 "chronic fatigue": {
 "query": "Chronic Fatigue",
-"fetched_at": "2026-09-07T07:00:29+00:00",
+"fetched_at": "2026-11-11T21:29:25+00:00",
 "reach": {
-"listeners": 493,
-"playcount": 3603,
+"listeners": 539,
+"playcount": 4152,
 "tags": [
 "hardcore",
-"hardcore punk",
 "punk rock",
+"hardcore punk",
 "swedish punk"
 ],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Chronic+Fatigue",
 "mbid": "d3ad186b-feb8-4e13-82ae-fae18aefe009"
 },
+"matcher": 4,
 "spotify_id": "6L5nh6JnemjTKRxLDbYNTg",
 "spotify_name": "Chronic Fatigue",
 "url": "https://open.spotify.com/artist/6L5nh6JnemjTKRxLDbYNTg",
@@ -12529,30 +12530,29 @@
 "image": "https://i.scdn.co/image/ab6761610000f178982cb660bbae737b72767da1",
 "tracks": [
 {
-"id": "4RrfBS6S8XxyOPzoLYyWnu",
-"uri": "spotify:track:4RrfBS6S8XxyOPzoLYyWnu",
-"name": "Chronic Fatigue",
+"id": "6h0AWLMOeFl24rmwWZEVmv",
+"uri": "spotify:track:6h0AWLMOeFl24rmwWZEVmv",
+"name": "Who's Next",
 "popularity": null,
-"album": "Chronic Fatigue",
+"album": "Who's Next",
 "album_type": "single",
-"release_date": "2024-04-26",
-"duration_ms": 156509,
-"explicit": true
+"release_date": "2026-02-21",
+"duration_ms": 233898,
+"explicit": false
 },
 {
-"id": "64haHcifJ8qrWy1ARqCQ8f",
-"uri": "spotify:track:64haHcifJ8qrWy1ARqCQ8f",
-"name": "Arc Flash",
+"id": "0eTvQj1z0zeQokSbSGPefe",
+"uri": "spotify:track:0eTvQj1z0zeQokSbSGPefe",
+"name": "Bus Beers - Demo",
 "popularity": null,
-"album": "Surrender To Serenity (2025)",
+"album": "Surrender To Serenity (Demos)",
 "album_type": "single",
 "release_date": "2025-03-21",
-"duration_ms": 259760,
+"duration_ms": 279234,
 "explicit": false
 }
 ],
 "rank_source": "lastfm",
-"matcher": 4,
 "mbid": "d3ad186b-feb8-4e13-82ae-fae18aefe009"
 },
 "cascade": {
@@ -16513,16 +16513,17 @@
 "mbid": "bcd5f174-bf86-40d6-ab24-065157a3ecd1"
 },
 "dead end drive in": {
-"query": "Dead End Drive-in",
-"fetched_at": "2026-09-07T07:01:02+00:00",
+"query": "Dead End Drive-In",
+"fetched_at": "2026-11-11T21:29:26+00:00",
 "reach": {
 "listeners": 386,
-"playcount": 2880,
+"playcount": 2910,
 "tags": [],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Dead+End+Drive-In",
 "mbid": "ec2f774a-11a3-42cc-9d19-867d4f8ecf5c"
 },
+"matcher": 4,
 "spotify_id": "5ywrInSkiDhOqKX8cXeWiM",
 "spotify_name": "Dead End Drive-In",
 "url": "https://open.spotify.com/artist/5ywrInSkiDhOqKX8cXeWiM",
@@ -16544,7 +16545,6 @@
 }
 ],
 "rank_source": "search",
-"matcher": 4,
 "mbid": "ec2f774a-11a3-42cc-9d19-867d4f8ecf5c"
 },
 "chen baker": {
@@ -54438,11 +54438,11 @@
 },
 "yuki chiba": {
 "query": "Yuki Chiba",
-"fetched_at": "2026-10-28T19:41:15+00:00",
+"fetched_at": "2026-11-11T21:29:24+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 95400,
-"playcount": 995196,
+"listeners": 96404,
+"playcount": 1004210,
 "tags": [
 "rap",
 "hip-hop",
@@ -54454,11 +54454,11 @@
 },
 "matcher": 4,
 "candidates": [
-"Yukihiko Chiba",
 "千葉由希彦",
+"Yukihiko Chiba",
 "桑原和真(CV:千葉繁)、雪菜(CV:白鳥由里)",
 "千葉雄喜",
-"mgk",
+"諭吉佳作/men",
 "Yuki Hayashi"
 ]
 },
@@ -63170,5 +63170,298 @@
 ],
 "rank_source": "lastfm",
 "mbid": "534ee493-bfac-4575-a44a-0ae41e2c3fe4"
+},
+"anthony schulz": {
+"query": "Anthony Schulz",
+"fetched_at": "2026-11-11T21:29:27+00:00",
+"reach": null,
+"matcher": 4,
+"spotify_id": "2fjDH8kITYXRKMeIF2rrO3",
+"spotify_name": "Anthony Schulz",
+"url": "https://open.spotify.com/artist/2fjDH8kITYXRKMeIF2rrO3",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": null,
+"tracks": [
+{
+"id": "6EVKOmnxOja9faNk65XOYq",
+"uri": "spotify:track:6EVKOmnxOja9faNk65XOYq",
+"name": "A White Lie",
+"popularity": null,
+"album": "Land of If",
+"album_type": "album",
+"release_date": "2021-06-11",
+"duration_ms": 332500,
+"explicit": false
+},
+{
+"id": "0Ae7bXk1PPiYaIdgXIhKux",
+"uri": "spotify:track:0Ae7bXk1PPiYaIdgXIhKux",
+"name": "Land of If",
+"popularity": null,
+"album": "Land of If",
+"album_type": "album",
+"release_date": "2021-06-11",
+"duration_ms": 363500,
+"explicit": false
+}
+],
+"rank_source": "search",
+"mbid": null
+},
+"cory henry": {
+"query": "Cory Henry",
+"fetched_at": "2026-11-11T21:29:27+00:00",
+"reach": {
+"listeners": 76309,
+"playcount": 733570,
+"tags": [
+"jazz",
+"funk",
+"nu jazz",
+"piano"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Cory+Henry",
+"mbid": "3d475031-f309-4d57-b88d-22cfa40f4e78"
+},
+"matcher": 4,
+"spotify_id": "21SOnTj5ECwVXeBUTRcP3s",
+"spotify_name": "Cory Henry",
+"url": "https://open.spotify.com/artist/21SOnTj5ECwVXeBUTRcP3s",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1784574de41b740cb3f96c3588e",
+"tracks": [
+{
+"id": "0XXgkLA2n6wpTlMG3V3VDm",
+"uri": "spotify:track:0XXgkLA2n6wpTlMG3V3VDm",
+"name": "Happy Days",
+"popularity": null,
+"album": "Something to Say",
+"album_type": "album",
+"release_date": "2020-10-30",
+"duration_ms": 232040,
+"explicit": false
+},
+{
+"id": "3xrjxWfJ0oZ7GPcPIYmmkP",
+"uri": "spotify:track:3xrjxWfJ0oZ7GPcPIYmmkP",
+"name": "Switch",
+"popularity": null,
+"album": "Something to Say",
+"album_type": "album",
+"release_date": "2020-10-30",
+"duration_ms": 196722,
+"explicit": true
+}
+],
+"rank_source": "lastfm",
+"mbid": "3d475031-f309-4d57-b88d-22cfa40f4e78"
+},
+"crush3d": {
+"query": "CRUSH3D",
+"fetched_at": "2026-11-11T21:29:28+00:00",
+"reach": {
+"listeners": 23744,
+"playcount": 168689,
+"tags": [
+"house",
+"electronic",
+"live-2",
+"live-3"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Crush3d",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "5Qvgao5nFsaKRPeL42Dnpf",
+"spotify_name": "CRUSH3d",
+"url": "https://open.spotify.com/artist/5Qvgao5nFsaKRPeL42Dnpf",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178e6e4bdb731acebdf28642782",
+"tracks": [
+{
+"id": "0pI7zATeng92EknYPfi2B2",
+"uri": "spotify:track:0pI7zATeng92EknYPfi2B2",
+"name": "Slug",
+"popularity": null,
+"album": "LOVESTAR",
+"album_type": "single",
+"release_date": "2023-03-10",
+"duration_ms": 215431,
+"explicit": false
+},
+{
+"id": "3hqwdKWk9JMxG0cnLZcyMi",
+"uri": "spotify:track:3hqwdKWk9JMxG0cnLZcyMi",
+"name": "Fantasy",
+"popularity": null,
+"album": "Fantasy",
+"album_type": "single",
+"release_date": "2022-04-29",
+"duration_ms": 270686,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"wilfred lau": {
+"query": "Wilfred Lau",
+"fetched_at": "2026-11-11T21:29:29+00:00",
+"reach": {
+"listeners": 5630,
+"playcount": 78485,
+"tags": [
+"pop",
+"c-pop",
+"cpop"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Wilfred+Lau",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "6Vfc2kpU520XHaSRDRdNCG",
+"spotify_name": "Wilfred Lau",
+"url": "https://open.spotify.com/artist/6Vfc2kpU520XHaSRDRdNCG",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1782e991e2b7b473b7f04ec5ae0",
+"tracks": [
+{
+"id": "1eQjHoCASKZE28nq9FNFaI",
+"uri": "spotify:track:1eQjHoCASKZE28nq9FNFaI",
+"name": "94340634",
+"popularity": null,
+"album": "Past & Present",
+"album_type": "album",
+"release_date": "2005-09-23",
+"duration_ms": 217226,
+"explicit": false
+},
+{
+"id": "3H9gYJcdtqeUiM8WX8YrZz",
+"uri": "spotify:track:3H9gYJcdtqeUiM8WX8YrZz",
+"name": "思覺失調",
+"popularity": null,
+"album": "Stat UP",
+"album_type": "album",
+"release_date": "2004-01-01",
+"duration_ms": 205933,
+"explicit": false
+}
+],
+"rank_source": "lastfm+search",
+"mbid": null
+},
+"terence siufay": {
+"query": "Terence Siufay",
+"fetched_at": "2026-11-11T21:29:29+00:00",
+"reach": {
+"listeners": 4147,
+"playcount": 49617,
+"tags": [
+"c-pop",
+"pop",
+"cantopop",
+"hong kong"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Terence+Siufay",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "3AemIC066y8n3TetXWkVoE",
+"spotify_name": "Terence Siufay",
+"url": "https://open.spotify.com/artist/3AemIC066y8n3TetXWkVoE",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab67616d00004851a1f815351b0e966c2e9a70a6",
+"tracks": [
+{
+"id": "622sAfh6YuVKvaSVk6Skdy",
+"uri": "spotify:track:622sAfh6YuVKvaSVk6Skdy",
+"name": "當你走了以後II - 觸景傷城",
+"popularity": null,
+"album": "睡前服",
+"album_type": "album",
+"release_date": "2018-02-12",
+"duration_ms": 218181,
+"explicit": false
+},
+{
+"id": "3SFgidWdBgZNLcjy8ymzH0",
+"uri": "spotify:track:3SFgidWdBgZNLcjy8ymzH0",
+"name": "青春頌 (小肥 Modern Classic 2010-2020)",
+"popularity": null,
+"album": "青春頌 (小肥 Modern Classic 2010-2020)",
+"album_type": "single",
+"release_date": "2021-05-03",
+"duration_ms": 247805,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"mobb deep": {
+"query": "Mobb Deep",
+"fetched_at": "2026-11-11T21:29:30+00:00",
+"reach": {
+"listeners": 1779940,
+"playcount": 41043336,
+"tags": [
+"hip-hop",
+"rap",
+"gangsta rap",
+"hip hop"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/Mobb+Deep",
+"mbid": "d75d1f08-bbb8-4eae-9877-399ca9121197"
+},
+"matcher": 4,
+"spotify_id": "6O2zJ0tId7g07yzHtX0yap",
+"spotify_name": "Mobb Deep",
+"url": "https://open.spotify.com/artist/6O2zJ0tId7g07yzHtX0yap",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178f85a8db4c66d84f796d2afe5",
+"tracks": [
+{
+"id": "33ZXjLCpiINn8eQIDYEPTD",
+"uri": "spotify:track:33ZXjLCpiINn8eQIDYEPTD",
+"name": "Shook Ones, Pt. II",
+"popularity": null,
+"album": "The Infamous",
+"album_type": "album",
+"release_date": "1995-04-25",
+"duration_ms": 325506,
+"explicit": true
+},
+{
+"id": "7N1Vjtzr1lmmCW9iasQ8YO",
+"uri": "spotify:track:7N1Vjtzr1lmmCW9iasQ8YO",
+"name": "Survival of the Fittest",
+"popularity": null,
+"album": "The Infamous",
+"album_type": "album",
+"release_date": "1995-04-25",
+"duration_ms": 224533,
+"explicit": true
+}
+],
+"rank_source": "lastfm",
+"mbid": "d75d1f08-bbb8-4eae-9877-399ca9121197"
 }
 }

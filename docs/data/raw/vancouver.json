@@ -2,7 +2,7 @@
  "city": "vancouver",
  "city_name": "Vancouver, BC",
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
- "scraped_at": "2026-11-10T20:55:44+00:00",
+ "scraped_at": "2026-11-11T21:28:27+00:00",
  "horizon_days": 35,
  "pages_fetched": 4,
  "do604_events": 0,
@@ -14,12 +14,6 @@
    "lat": 49.27981,
    "lng": -123.12164
   },
-  "the-pearl": {
-   "name": "The Pearl",
-   "aliases": [],
-   "lat": 49.28071,
-   "lng": -123.12143
-  },
   "the-cobalt": {
    "name": "The Cobalt",
    "aliases": [
@@ -27,18 +21,6 @@
    ],
    "lat": 49.2765,
    "lng": -123.10008
-  },
-  "roundhouse-community-arts-recreation-centre": {
-   "name": "Roundhouse Community Arts & Recreation Centre",
-   "aliases": [],
-   "lat": 49.27275,
-   "lng": -123.12258
-  },
-  "halo": {
-   "name": "Halo",
-   "aliases": [],
-   "lat": 49.2749,
-   "lng": -123.10887
   },
   "fortune-sound-club": {
    "name": "Fortune Sound Club",
@@ -69,6 +51,12 @@
    "aliases": [],
    "lat": 49.26444,
    "lng": -123.17453
+  },
+  "the-pearl": {
+   "name": "The Pearl",
+   "aliases": [],
+   "lat": 49.28071,
+   "lng": -123.12143
   },
   "green-auto": {
    "name": "Green Auto",
@@ -216,6 +204,12 @@
    "lat": 49.28425,
    "lng": -123.11137
   },
+  "halo": {
+   "name": "Halo",
+   "aliases": [],
+   "lat": 49.2749,
+   "lng": -123.10887
+  },
   "beaumont-studios": {
    "name": "Beaumont Studios",
    "aliases": [],
@@ -308,17 +302,23 @@
    "lat": null,
    "lng": null
   },
+  "revue-stage": {
+   "name": "Revue Stage",
+   "aliases": [],
+   "lat": null,
+   "lng": null
+  },
   "trickster-s-hideout": {
    "name": "Trickster's Hideout",
    "aliases": [],
    "lat": 49.69873,
    "lng": -123.15372
   },
-  "revue-stage": {
-   "name": "Revue Stage",
+  "8-east": {
+   "name": "8 East",
    "aliases": [],
-   "lat": null,
-   "lng": null
+   "lat": 49.28028,
+   "lng": -123.10419
   },
   "painted-lady-records": {
    "name": "Painted Lady Records",
@@ -379,104 +379,15 @@
    "aliases": [],
    "lat": 49.19625,
    "lng": -123.12768
+  },
+  "brackendale-art-gallery": {
+   "name": "Brackendale Art Gallery",
+   "aliases": [],
+   "lat": 49.76787,
+   "lng": -123.15028
   }
  },
  "events": [
-  {
-   "source": "songkick",
-   "id": "43297854",
-   "name": "Simon Paradis @ Roundhouse Community Arts & Recreation Centre",
-   "start": "2026-11-10T17:00:00",
-   "status": "EventScheduled",
-   "venue": "Roundhouse Community Arts & Recreation Centre",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": 49.27275,
-   "lng": -123.12258,
-   "url": "https://www.songkick.com/concerts/43297854-simon-paradis-at-roundhouse-community-arts-and-recreation-centre",
-   "performers": [
-    {
-     "name": "Simon Paradis",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/2513286-simon-paradis?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Roundhouse Community Arts & Recreation Centre",
-   "venue_id": "roundhouse-community-arts-recreation-centre"
-  },
-  {
-   "source": "songkick",
-   "id": "43370900",
-   "name": "Lucy Bedroque @ The Pearl",
-   "start": "2026-11-10T18:30:00",
-   "status": "EventScheduled",
-   "venue": "The Pearl",
-   "venue_url": "https://thepearlvancouver.com/",
-   "locality": "Vancouver",
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "url": "https://www.songkick.com/concerts/43370900-lucy-bedroque-at-pearl",
-   "performers": [
-    {
-     "name": "Lucy Bedroque",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10393677-lucy-bedroque?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "pinponpanpon",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10381316-pinponpanpon?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The Pearl",
-   "venue_id": "the-pearl"
-  },
-  {
-   "source": "songkick",
-   "id": "43225512",
-   "name": "Dax @ Vogue Theatre",
-   "start": "2026-11-10T20:00:00",
-   "status": "EventScheduled",
-   "venue": "Vogue Theatre",
-   "venue_url": "http://www.voguetheatre.com/",
-   "locality": "Vancouver",
-   "lat": 49.27981,
-   "lng": -123.12164,
-   "url": "https://www.songkick.com/concerts/43225512-dax-at-vogue-theatre",
-   "performers": [
-    {
-     "name": "Dax",
-     "songkick_genres": [
-      "hip_hop"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/30420-dax?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Vogue Theatre",
-   "venue_id": "vogue-theatre"
-  },
-  {
-   "source": "songkick",
-   "id": "43444361",
-   "name": "Bad Waitress @ The Cobalt",
-   "start": "2026-11-10T20:00:00",
-   "status": "EventScheduled",
-   "venue": "The Cobalt",
-   "venue_url": "http://thecobalt.ca",
-   "locality": "Vancouver",
-   "lat": 49.2765,
-   "lng": -123.10008,
-   "url": "https://www.songkick.com/concerts/43444361-bad-waitress-at-cobalt",
-   "performers": [
-    {
-     "name": "Bad Waitress",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/9419359-bad-waitress?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The Cobalt",
-   "venue_id": "the-cobalt"
-  },
   {
    "source": "songkick",
    "id": "43206710",
@@ -2144,6 +2055,16 @@
      "name": "The OBGMs",
      "songkick_genres": [],
      "songkick_url": "https://www.songkick.com/artists/8270898-obgms?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Chronic Fatigue",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10393616-chronic-fatigue?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Dead End Drive-In",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8477063-dead-end-drivein?utm_medium=organic&utm_source=microformat"
     }
    ],
    "venue_raw": "The Cobalt Cabaret",
@@ -2625,28 +2546,6 @@
   },
   {
    "source": "songkick",
-   "id": "43417319",
-   "name": "Garaj Mahal @ The Pearl",
-   "start": "2026-11-22T20:00:00",
-   "status": "EventScheduled",
-   "venue": "The Pearl",
-   "venue_url": "https://thepearlvancouver.com/",
-   "locality": "Vancouver",
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "url": "https://www.songkick.com/concerts/43417319-garaj-mahal-at-pearl",
-   "performers": [
-    {
-     "name": "Garaj Mahal",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/526556-garaj-mahal?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The Pearl",
-   "venue_id": "the-pearl"
-  },
-  {
-   "source": "songkick",
    "id": "43506428",
    "name": "Bombargo @ Hollywood Theatre",
    "start": "2026-11-22T20:00:00",
@@ -2666,6 +2565,28 @@
    ],
    "venue_raw": "Hollywood Theatre",
    "venue_id": "hollywood-theatre"
+  },
+  {
+   "source": "songkick",
+   "id": "43417319",
+   "name": "Garaj Mahal @ The Pearl",
+   "start": "2026-11-22T20:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "lat": 49.28071,
+   "lng": -123.12143,
+   "url": "https://www.songkick.com/concerts/43417319-garaj-mahal-at-pearl",
+   "performers": [
+    {
+     "name": "Garaj Mahal",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/526556-garaj-mahal?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "The Pearl",
+   "venue_id": "the-pearl"
   },
   {
    "source": "songkick",
@@ -3789,28 +3710,6 @@
   },
   {
    "source": "songkick",
-   "id": "43404880",
-   "name": "Daniel James McFadyen @ The Pearl",
-   "start": "2026-12-04T18:00:00",
-   "status": "EventScheduled",
-   "venue": "The Pearl",
-   "venue_url": "https://thepearlvancouver.com/",
-   "locality": "Vancouver",
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "url": "https://www.songkick.com/concerts/43404880-daniel-james-mcfadyen-at-pearl",
-   "performers": [
-    {
-     "name": "Daniel James McFadyen",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10155684-daniel-james-mcfadyen?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The Pearl",
-   "venue_id": "the-pearl"
-  },
-  {
-   "source": "songkick",
    "id": "43505615",
    "name": "Shirley Gnome @ Revue Stage",
    "start": "2026-12-04T18:00:00",
@@ -3830,6 +3729,28 @@
    ],
    "venue_raw": "Revue Stage",
    "venue_id": "revue-stage"
+  },
+  {
+   "source": "songkick",
+   "id": "43404880",
+   "name": "Daniel James McFadyen @ The Pearl",
+   "start": "2026-12-04T18:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "lat": 49.28071,
+   "lng": -123.12143,
+   "url": "https://www.songkick.com/concerts/43404880-daniel-james-mcfadyen-at-pearl",
+   "performers": [
+    {
+     "name": "Daniel James McFadyen",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10155684-daniel-james-mcfadyen?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "The Pearl",
+   "venue_id": "the-pearl"
   },
   {
    "source": "songkick",
@@ -3923,28 +3844,6 @@
    ],
    "venue_raw": "Fortune Sound Club",
    "venue_id": "fortune-sound-club"
-  },
-  {
-   "source": "songkick",
-   "id": "43436166",
-   "name": "Dawn Pemberton @ The WISE Hall",
-   "start": "2026-12-05",
-   "status": "EventScheduled",
-   "venue": "The WISE Hall",
-   "venue_url": "https://www.facebook.com/thewiseclub/",
-   "locality": "Vancouver",
-   "lat": 49.2773,
-   "lng": -123.06607,
-   "url": "https://www.songkick.com/concerts/43436166-dawn-pemberton-at-wise-hall",
-   "performers": [
-    {
-     "name": "Dawn Pemberton",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/8471533-dawn-pemberton?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The WISE Hall",
-   "venue_id": "the-wise-hall"
   },
   {
    "source": "songkick",
@@ -4072,6 +3971,28 @@
    ],
    "venue_raw": "Vogue Theatre",
    "venue_id": "vogue-theatre"
+  },
+  {
+   "source": "songkick",
+   "id": "435102298",
+   "name": "Anthony Schulz @ 8 East",
+   "start": "2026-12-05T20:00:00",
+   "status": "EventScheduled",
+   "venue": "8 East",
+   "venue_url": "http://8east.ca/about/",
+   "locality": "Vancouver",
+   "lat": 49.28028,
+   "lng": -123.10419,
+   "url": "https://www.songkick.com/concerts/43510229-anthony-schulz-at-8-east",
+   "performers": [
+    {
+     "name": "Anthony Schulz",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10323737-anthony-schulz?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "8 East",
+   "venue_id": "8-east"
   },
   {
    "source": "songkick",
@@ -4458,6 +4379,28 @@
   },
   {
    "source": "songkick",
+   "id": "43510271",
+   "name": "Cory Henry @ The Pearl",
+   "start": "2026-12-11T19:30:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "lat": 49.28071,
+   "lng": -123.12143,
+   "url": "https://www.songkick.com/concerts/43510271-cory-henry-at-pearl",
+   "performers": [
+    {
+     "name": "Cory Henry",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/3084391-cory-henry?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "The Pearl",
+   "venue_id": "the-pearl"
+  },
+  {
+   "source": "songkick",
    "id": "43281748",
    "name": "Yaelokre @ Vogue Theatre",
    "start": "2026-12-11T20:00:00",
@@ -4705,25 +4648,25 @@
   },
   {
    "source": "songkick",
-   "id": "43449898",
-   "name": "SideQuest @ Celebrities",
+   "id": "435102873",
+   "name": "CRUSH3D @ Fortune Sound Club",
    "start": "2026-12-12T21:00:00",
    "status": "EventScheduled",
-   "venue": "Celebrities",
-   "venue_url": "http://celebritiesnightclub.com",
+   "venue": "Fortune Sound Club",
+   "venue_url": "http://www.fortunesoundclub.com/",
    "locality": "Vancouver",
-   "lat": 49.27942,
-   "lng": -123.12994,
-   "url": "https://www.songkick.com/concerts/43449898-sidequest-at-celebrities",
+   "lat": 49.28053,
+   "lng": -123.10075,
+   "url": "https://www.songkick.com/concerts/43510287-crush3d-at-fortune-sound-club",
    "performers": [
     {
-     "name": "SideQuest",
+     "name": "CRUSH3D",
      "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/9915044-sidequest?utm_medium=organic&utm_source=microformat"
+     "songkick_url": "https://www.songkick.com/artists/10211477-crush3d?utm_medium=organic&utm_source=microformat"
     }
    ],
-   "venue_raw": "Celebrities",
-   "venue_id": "celebrities"
+   "venue_raw": "Fortune Sound Club",
+   "venue_id": "fortune-sound-club"
   },
   {
    "source": "songkick",
@@ -4894,34 +4837,60 @@
    ],
    "venue_raw": "Orpheum Theatre",
    "venue_id": "orpheum"
+  },
+  {
+   "source": "songkick",
+   "id": "43493653",
+   "name": "Wilfred Lau @ Michael J. Fox Theatre",
+   "start": "2026-12-16T18:30:00",
+   "status": "EventScheduled",
+   "venue": "Michael J. Fox Theatre",
+   "venue_url": null,
+   "locality": "Burnaby",
+   "lat": 49.21625,
+   "lng": -122.98464,
+   "url": "https://www.songkick.com/concerts/43493653-wilfred-lau-at-michael-j-fox-theatre",
+   "performers": [
+    {
+     "name": "Wilfred Lau",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10296680-wilfred-lau?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Terence Siufay",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10296683-terence-siufay?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Michael J. Fox Theatre",
+   "venue_id": "michael-j-fox-theatre"
+  },
+  {
+   "source": "songkick",
+   "id": "43464045",
+   "name": "Mobb Deep @ The Pearl",
+   "start": "2026-12-16T19:00:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "lat": 49.28071,
+   "lng": -123.12143,
+   "url": "https://www.songkick.com/concerts/43464045-mobb-deep-at-pearl",
+   "performers": [
+    {
+     "name": "Mobb Deep",
+     "songkick_genres": [
+      "hip_hop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/251138-mobb-deep?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "The Pearl",
+   "venue_id": "the-pearl"
   }
  ],
  "skipped": [
-  {
-   "source": "songkick",
-   "id": "43469707",
-   "name": "Major League Djz @ Halo",
-   "start": "2026-11-10T22:00:00",
-   "status": "EventScheduled",
-   "venue": "Halo",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": 49.2749,
-   "lng": -123.10887,
-   "url": "https://www.songkick.com/concerts/43469707-major-league-djz-at-halo",
-   "performers": [
-    {
-     "name": "Major League Djz",
-     "songkick_genres": [
-      "comedy"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/10165213-major-league-djz?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Halo",
-   "venue_id": "halo",
-   "skip_reason": "non_music"
-  },
   {
    "source": "songkick",
    "id": "434087362026",
