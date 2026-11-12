@@ -21414,15 +21414,15 @@
 },
 "le ren": {
 "query": "Le Ren",
-"fetched_at": "2026-10-07T20:04:54+00:00",
+"fetched_at": "2026-11-12T21:31:35+00:00",
 "reach": {
-"listeners": 26998,
-"playcount": 151712,
+"listeners": 27392,
+"playcount": 153839,
 "tags": [
-"indie pop",
 "indie rock",
+"indie pop",
 "alternative country",
-"indie folk"
+"cowboy pop"
 ],
 "tier": 2,
 "lastfm_url": "https://www.last.fm/music/Le+Ren",
@@ -63463,5 +63463,224 @@
 ],
 "rank_source": "lastfm",
 "mbid": "d75d1f08-bbb8-4eae-9877-399ca9121197"
+},
+"evan espinoza": {
+"query": "Evan Espinoza",
+"fetched_at": "2026-11-12T21:31:30+00:00",
+"reach": {
+"listeners": 493,
+"playcount": 1452,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Evan+Espinoza",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "7d5oQYmeCazp6gweAo1Ouj",
+"spotify_name": "Evan Espinoza",
+"url": "https://open.spotify.com/artist/7d5oQYmeCazp6gweAo1Ouj",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178a269cde575ba28c69321407f",
+"tracks": [
+{
+"id": "0KfEMj2Sjguo9aUBOwMCfL",
+"uri": "spotify:track:0KfEMj2Sjguo9aUBOwMCfL",
+"name": "Growler",
+"popularity": null,
+"album": "Ashes",
+"album_type": "single",
+"release_date": "2016-04-25",
+"duration_ms": 414590,
+"explicit": false
+},
+{
+"id": "6Riv6PeXPuIUIcVZPUAzqR",
+"uri": "spotify:track:6Riv6PeXPuIUIcVZPUAzqR",
+"name": "Memories Never Die - Original Mix",
+"popularity": null,
+"album": "Memories Never Die",
+"album_type": "single",
+"release_date": "2013-05-29",
+"duration_ms": 438688,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"graf": {
+"query": "Graf",
+"fetched_at": "2026-11-12T21:31:32+00:00",
+"spotify_id": null,
+"reach": {
+"listeners": 2173,
+"playcount": 16463,
+"tags": [
+"dutch black metal",
+"black metal",
+"serbian alternative"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Graf",
+"mbid": "9e96f8aa-12e9-4775-9228-d5dfdc270afb"
+},
+"matcher": 4,
+"candidates": [
+"Grafh",
+"Grafix",
+"Hans Graf",
+"Gracie Abrams"
+]
+},
+"tiesto": {
+"query": "Tiësto",
+"fetched_at": "2026-11-12T21:31:33+00:00",
+"reach": {
+"listeners": 2836393,
+"playcount": 71498233,
+"tags": [
+"trance",
+"electronic",
+"dance",
+"techno"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/+noredirect/Ti%C3%ABsto",
+"mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd"
+},
+"matcher": 4,
+"spotify_id": "2o5jDhtHVPhrJdv3cEQ99Z",
+"spotify_name": "Tiësto",
+"url": "https://open.spotify.com/artist/2o5jDhtHVPhrJdv3cEQ99Z",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178f4973f7346a2f35e56b63d57",
+"tracks": [
+{
+"id": "36gcliMRX1vCpgnrZE3dFZ",
+"uri": "spotify:track:36gcliMRX1vCpgnrZE3dFZ",
+"name": "10:35",
+"popularity": null,
+"album": "DRIVE",
+"album_type": "album",
+"release_date": "2023-04-21",
+"duration_ms": 172252,
+"explicit": false
+},
+{
+"id": "3j11iDncb7ZeDMw7lFucqM",
+"uri": "spotify:track:3j11iDncb7ZeDMw7lFucqM",
+"name": "The Motto",
+"popularity": null,
+"album": "DRIVE",
+"album_type": "album",
+"release_date": "2023-04-21",
+"duration_ms": 164818,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd"
+},
+"cory henry and funk apostles": {
+"query": "Cory Henry & The Funk Apostles",
+"fetched_at": "2026-11-12T21:31:33+00:00",
+"reach": {
+"listeners": 6068,
+"playcount": 39462,
+"tags": [
+"funk",
+"soul"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Cory+Henry+&+the+Funk+Apostles",
+"mbid": "95d6f82d-ddd1-4eee-854c-ef2d8f120255"
+},
+"matcher": 4,
+"spotify_id": "4ICnj5CaliESpsWrhYjBrD",
+"spotify_name": "The Funk Apostles",
+"url": "https://open.spotify.com/artist/4ICnj5CaliESpsWrhYjBrD",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab67616d00004851880e17149a15cecef554138f",
+"tracks": [
+{
+"id": "46NeDJOTbPuvgwqygShcuv",
+"uri": "spotify:track:46NeDJOTbPuvgwqygShcuv",
+"name": "Trade It All - Live in LA",
+"popularity": null,
+"album": "Art of Love (Live in LA)",
+"album_type": "album",
+"release_date": "2020-08-28",
+"duration_ms": 554254,
+"explicit": false
+},
+{
+"id": "2Sx7B8CxY3Z2Euxo2UAztB",
+"uri": "spotify:track:2Sx7B8CxY3Z2Euxo2UAztB",
+"name": "In The Water - Live in LA",
+"popularity": null,
+"album": "Art of Love (Live in LA)",
+"album_type": "album",
+"release_date": "2020-08-28",
+"duration_ms": 741463,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "95d6f82d-ddd1-4eee-854c-ef2d8f120255"
+},
+"zulan": {
+"query": "ZULAN",
+"fetched_at": "2026-11-12T21:31:37+00:00",
+"reach": {
+"listeners": 111584,
+"playcount": 677460,
+"tags": [
+"electronic",
+"united states"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/ZULAN",
+"mbid": "83c68501-c362-40e2-9e9c-9b3416822da8"
+},
+"matcher": 4,
+"spotify_id": "2Yz9F5lQVc0p6SDxkw2BvF",
+"spotify_name": "ZULAN",
+"url": "https://open.spotify.com/artist/2Yz9F5lQVc0p6SDxkw2BvF",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1781990aad605000ba36b1ad725",
+"tracks": [
+{
+"id": "32GOfiLnbER2VOOxJkg29P",
+"uri": "spotify:track:32GOfiLnbER2VOOxJkg29P",
+"name": "Forever",
+"popularity": null,
+"album": "Forever",
+"album_type": "single",
+"release_date": "2025-04-11",
+"duration_ms": 159120,
+"explicit": false
+},
+{
+"id": "5TpWybXTsLTUAj4WcUYkP0",
+"uri": "spotify:track:5TpWybXTsLTUAj4WcUYkP0",
+"name": "Campeón",
+"popularity": null,
+"album": "Campeón",
+"album_type": "single",
+"release_date": "2025-06-27",
+"duration_ms": 173777,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "83c68501-c362-40e2-9e9c-9b3416822da8"
 }
 }

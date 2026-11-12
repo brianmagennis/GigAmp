@@ -2,44 +2,12 @@
  "city": "vancouver",
  "city_name": "Vancouver, BC",
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
- "scraped_at": "2026-11-11T21:28:27+00:00",
+ "scraped_at": "2026-11-12T21:30:27+00:00",
  "horizon_days": 35,
  "pages_fetched": 4,
  "do604_events": 0,
- "merged_duplicates": 0,
+ "merged_duplicates": 1,
  "venues": {
-  "vogue-theatre": {
-   "name": "Vogue Theatre",
-   "aliases": [],
-   "lat": 49.27981,
-   "lng": -123.12164
-  },
-  "the-cobalt": {
-   "name": "The Cobalt",
-   "aliases": [
-    "The Cobalt Cabaret"
-   ],
-   "lat": 49.2765,
-   "lng": -123.10008
-  },
-  "fortune-sound-club": {
-   "name": "Fortune Sound Club",
-   "aliases": [],
-   "lat": 49.28053,
-   "lng": -123.10075
-  },
-  "rickshaw-theatre": {
-   "name": "Rickshaw Theatre",
-   "aliases": [],
-   "lat": 49.28102,
-   "lng": -123.09853
-  },
-  "trees-organic-coffee-granville-street": {
-   "name": "Trees Organic Coffee - Granville Street",
-   "aliases": [],
-   "lat": 49.28484,
-   "lng": -123.11418
-  },
   "commodore-ballroom": {
    "name": "Commodore Ballroom",
    "aliases": [],
@@ -51,6 +19,12 @@
    "aliases": [],
    "lat": 49.26444,
    "lng": -123.17453
+  },
+  "rickshaw-theatre": {
+   "name": "Rickshaw Theatre",
+   "aliases": [],
+   "lat": 49.28102,
+   "lng": -123.09853
   },
   "the-pearl": {
    "name": "The Pearl",
@@ -90,6 +64,12 @@
    "lat": 49.26041,
    "lng": -123.09668
   },
+  "fortune-sound-club": {
+   "name": "Fortune Sound Club",
+   "aliases": [],
+   "lat": 49.28053,
+   "lng": -123.10075
+  },
   "pne-forum": {
    "name": "PNE Forum",
    "aliases": [],
@@ -108,11 +88,25 @@
    "lat": 49.26426,
    "lng": -123.10118
   },
+  "the-cobalt": {
+   "name": "The Cobalt",
+   "aliases": [
+    "The Cobalt Cabaret"
+   ],
+   "lat": 49.2765,
+   "lng": -123.10008
+  },
   "bully-s": {
    "name": "Bully's",
    "aliases": [],
    "lat": 49.20477,
    "lng": -122.90957
+  },
+  "new-amsterdam-cafe": {
+   "name": "New Amsterdam Cafe",
+   "aliases": [],
+   "lat": 49.28295,
+   "lng": -123.10992
   },
   "the-wise-hall": {
    "name": "The WISE Hall",
@@ -159,6 +153,12 @@
    "aliases": [],
    "lat": null,
    "lng": null
+  },
+  "vogue-theatre": {
+   "name": "Vogue Theatre",
+   "aliases": [],
+   "lat": 49.27981,
+   "lng": -123.12164
   },
   "the-american": {
    "name": "The American",
@@ -228,10 +228,10 @@
    "lat": 49.11652,
    "lng": -122.82176
   },
-  "orpheum": {
-   "name": "Orpheum",
+  "orpheum-theatre": {
+   "name": "Orpheum Theatre",
    "aliases": [
-    "Orpheum Theatre"
+    "Orpheum"
    ],
    "lat": 49.2798,
    "lng": -123.12042
@@ -332,12 +332,6 @@
    "lat": 49.21396,
    "lng": -122.92777
   },
-  "elgin-hall": {
-   "name": "Elgin Hall",
-   "aliases": [],
-   "lat": 49.06687,
-   "lng": -122.82744
-  },
   "bimini-s-since-1975": {
    "name": "Bimini's since 1975",
    "aliases": [],
@@ -355,6 +349,12 @@
    "aliases": [],
    "lat": 49.21625,
    "lng": -122.98464
+  },
+  "the-tir-na-nog-theatre-school": {
+   "name": "The Tir-na-nog Theatre School",
+   "aliases": [],
+   "lat": 49.37818,
+   "lng": -123.34444
   },
   "lanalou-s": {
    "name": "Lanalou's",
@@ -388,157 +388,6 @@
   }
  },
  "events": [
-  {
-   "source": "songkick",
-   "id": "43206710",
-   "name": "Ride For Revenge @ Rickshaw Theatre",
-   "start": "2026-11-11",
-   "status": "EventScheduled",
-   "venue": "Rickshaw Theatre",
-   "venue_url": "http://www.liveatrickshaw.com",
-   "locality": "Vancouver",
-   "lat": 49.28102,
-   "lng": -123.09853,
-   "url": "https://www.songkick.com/concerts/43206710-ride-for-revenge-at-rickshaw-theatre",
-   "performers": [
-    {
-     "name": "Ride For Revenge",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/46161-ride-for-revenge?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Hellwitch",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/466142-hellwitch?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Tsalal",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/8937769-tsalal?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Devouring Void",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10216435-devouring-void?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Rickshaw Theatre",
-   "venue_id": "rickshaw-theatre"
-  },
-  {
-   "source": "songkick",
-   "id": "43373305",
-   "name": "Emily Scott Robinson @ Trees Organic Coffee - Granville Street",
-   "start": "2026-11-11",
-   "status": "EventScheduled",
-   "venue": "Trees Organic Coffee - Granville Street",
-   "venue_url": "http://www.treescoffee.com",
-   "locality": "Vancouver",
-   "lat": 49.28484,
-   "lng": -123.11418,
-   "url": "https://www.songkick.com/concerts/43373305-emily-scott-robinson-at-trees-organic-coffee-granville-street",
-   "performers": [
-    {
-     "name": "Emily Scott Robinson",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/8840469-emily-scott-robinson?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Trees Organic Coffee - Granville Street",
-   "venue_id": "trees-organic-coffee-granville-street"
-  },
-  {
-   "source": "songkick",
-   "id": "43337464",
-   "name": "Triptides @ The Cobalt Cabaret",
-   "start": "2026-11-11T18:00:00",
-   "status": "EventScheduled",
-   "venue": "The Cobalt",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": 49.2765,
-   "lng": -123.10008,
-   "url": "https://www.songkick.com/concerts/43337464-triptides-at-cobalt-cabaret",
-   "performers": [
-    {
-     "name": "Triptides",
-     "songkick_genres": [
-      "indie_alternative",
-      "rock",
-      "hip_hop"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/4206546-triptides?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "The Sylvia Platters",
-     "songkick_genres": [
-      "indie_alternative",
-      "rock",
-      "hip_hop"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/8509208-sylvia-platters?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The Cobalt Cabaret",
-   "venue_id": "the-cobalt"
-  },
-  {
-   "source": "songkick",
-   "id": "43373564",
-   "name": "Suzy Sheer @ Fortune Sound Club",
-   "start": "2026-11-11T19:00:00",
-   "status": "EventScheduled",
-   "venue": "Fortune Sound Club",
-   "venue_url": "http://www.fortunesoundclub.com/",
-   "locality": "Vancouver",
-   "lat": 49.28053,
-   "lng": -123.10075,
-   "url": "https://www.songkick.com/concerts/43373564-suzy-sheer-at-fortune-sound-club",
-   "performers": [
-    {
-     "name": "Suzy Sheer",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10357095-suzy-sheer?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Patch",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/217251-patch?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Puzzlehead",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/8976414-puzzlehead?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Fortune Sound Club",
-   "venue_id": "fortune-sound-club"
-  },
-  {
-   "source": "songkick",
-   "id": "432036297",
-   "name": "L7 @ Vogue Theatre",
-   "start": "2026-11-11T20:00:00",
-   "status": "EventScheduled",
-   "venue": "Vogue Theatre",
-   "venue_url": "http://www.voguetheatre.com/",
-   "locality": "Vancouver",
-   "lat": 49.27981,
-   "lng": -123.12164,
-   "url": "https://www.songkick.com/concerts/43203629-l7-at-vogue-theatre",
-   "performers": [
-    {
-     "name": "L7",
-     "songkick_genres": [
-      "rock",
-      "indie_alternative"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/364332-l7?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Vogue Theatre",
-   "venue_id": "vogue-theatre"
-  },
   {
    "source": "songkick",
    "id": "43206708",
@@ -1005,6 +854,33 @@
    ],
    "venue_raw": "Village Studios",
    "venue_id": "village-studios"
+  },
+  {
+   "source": "songkick",
+   "id": "43511418",
+   "name": "Evan Espinoza @ New Amsterdam Cafe",
+   "start": "2026-11-13T22:00:00",
+   "status": "EventScheduled",
+   "venue": "New Amsterdam Cafe",
+   "venue_url": "https://newamsterdamcafe.com/",
+   "locality": "Vancouver",
+   "lat": 49.28295,
+   "lng": -123.10992,
+   "url": "https://www.songkick.com/concerts/43511418-evan-espinoza-at-new-amsterdam-cafe",
+   "performers": [
+    {
+     "name": "Evan Espinoza",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9731844-evan-espinoza?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Graf",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/68320-graf?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "New Amsterdam Cafe",
+   "venue_id": "new-amsterdam-cafe"
   },
   {
    "source": "songkick",
@@ -2594,7 +2470,7 @@
    "name": "Amanda Marshall @ Orpheum Theatre",
    "start": "2026-11-23T19:30:00",
    "status": "EventScheduled",
-   "venue": "Orpheum",
+   "venue": "Orpheum Theatre",
    "venue_url": "https://vancouvercivictheatres.com/venues/orpheum/",
    "locality": "Vancouver",
    "lat": 49.2798,
@@ -2613,7 +2489,7 @@
     }
    ],
    "venue_raw": "Orpheum Theatre",
-   "venue_id": "orpheum"
+   "venue_id": "orpheum-theatre"
   },
   {
    "source": "songkick",
@@ -3070,30 +2946,28 @@
   },
   {
    "source": "songkick",
-   "id": "43501995",
-   "name": "Unfaithful Servants @ Clarke Theatre",
+   "id": "435126702026",
+   "name": "Dreamstate Vancouver 2026 @ Tradex",
    "start": "2026-11-28",
    "status": "EventScheduled",
-   "venue": "Clarke Theatre",
-   "venue_url": "http://www.clarketheatre.ca/",
-   "locality": "Mission",
-   "lat": 49.14434,
-   "lng": -122.29198,
-   "url": "https://www.songkick.com/concerts/43501995-unfaithful-servants-at-clarke-theatre",
+   "venue": "Tradex",
+   "venue_url": "http://www.bccustomcarshow.com",
+   "locality": "Abbotsford",
+   "lat": 49.02407,
+   "lng": -122.38133,
+   "url": "https://www.songkick.com/festivals/2943989-dreamstate-vancouver/id/43512670-dreamstate-vancouver-2026",
    "performers": [
     {
-     "name": "Unfaithful Servants",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/3859631-unfaithful-servants?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Shari Ulrich",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/552755-shari-ulrich?utm_medium=organic&utm_source=microformat"
+     "name": "Tiësto",
+     "songkick_genres": [
+      "electronic",
+      "pop"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/152971-tiesto?utm_medium=organic&utm_source=microformat"
     }
    ],
-   "venue_raw": "Clarke Theatre",
-   "venue_id": "clarke-theatre"
+   "venue_raw": "Tradex",
+   "venue_id": "tradex"
   },
   {
    "source": "songkick",
@@ -4328,6 +4202,40 @@
   },
   {
    "source": "songkick",
+   "id": "43513976",
+   "name": "Cory Henry & The Funk Apostles @ The Pearl",
+   "start": "2026-12-11T18:30:00",
+   "status": "EventScheduled",
+   "venue": "The Pearl",
+   "venue_url": "https://thepearlvancouver.com/",
+   "locality": "Vancouver",
+   "lat": 49.28071,
+   "lng": -123.12143,
+   "url": "https://www.songkick.com/concerts/43513976-cory-henry-and-the-funk-apostles-at-pearl",
+   "performers": [
+    {
+     "name": "Cory Henry & The Funk Apostles",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10049929-cory-henry-and-the-funk-apostles?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Cory Henry",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/3084391-cory-henry?utm_medium=organic&utm_source=microformat",
+     "strict": true
+    }
+   ],
+   "venue_raw": "The Pearl",
+   "venue_id": "the-pearl",
+   "also_listed": [
+    {
+     "source": "songkick",
+     "url": "https://www.songkick.com/concerts/43510271-cory-henry-at-pearl"
+    }
+   ]
+  },
+  {
+   "source": "songkick",
    "id": "43325010",
    "name": "Ruby Haunt @ Fox Cabaret",
    "start": "2026-12-11T19:00:00",
@@ -4376,28 +4284,6 @@
    ],
    "venue_raw": "Massey Theatre",
    "venue_id": "massey-theatre"
-  },
-  {
-   "source": "songkick",
-   "id": "43510271",
-   "name": "Cory Henry @ The Pearl",
-   "start": "2026-12-11T19:30:00",
-   "status": "EventScheduled",
-   "venue": "The Pearl",
-   "venue_url": "https://thepearlvancouver.com/",
-   "locality": "Vancouver",
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "url": "https://www.songkick.com/concerts/43510271-cory-henry-at-pearl",
-   "performers": [
-    {
-     "name": "Cory Henry",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/3084391-cory-henry?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The Pearl",
-   "venue_id": "the-pearl"
   },
   {
    "source": "songkick",
@@ -4576,28 +4462,6 @@
   },
   {
    "source": "songkick",
-   "id": "43458361",
-   "name": "SID SHYNE @ Elgin Hall",
-   "start": "2026-12-12T18:30:00",
-   "status": "EventScheduled",
-   "venue": "Elgin Hall",
-   "venue_url": null,
-   "locality": "Surrey",
-   "lat": 49.06687,
-   "lng": -122.82744,
-   "url": "https://www.songkick.com/concerts/43458361-sid-shyne-at-elgin-hall",
-   "performers": [
-    {
-     "name": "SID SHYNE",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10159641-sid-shyne?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Elgin Hall",
-   "venue_id": "elgin-hall"
-  },
-  {
-   "source": "songkick",
    "id": "43409639",
    "name": "Victoria Monét @ Doug Mitchell Thunderbird Sports Centre",
    "start": "2026-12-12T21:00:00",
@@ -4645,6 +4509,28 @@
    ],
    "venue_raw": "Village Studios",
    "venue_id": "village-studios"
+  },
+  {
+   "source": "songkick",
+   "id": "43449898",
+   "name": "SideQuest @ Celebrities",
+   "start": "2026-12-12T21:00:00",
+   "status": "EventScheduled",
+   "venue": "Celebrities",
+   "venue_url": "http://celebritiesnightclub.com",
+   "locality": "Vancouver",
+   "lat": 49.27942,
+   "lng": -123.12994,
+   "url": "https://www.songkick.com/concerts/43449898-sidequest-at-celebrities",
+   "performers": [
+    {
+     "name": "SideQuest",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9915044-sidequest?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Celebrities",
+   "venue_id": "celebrities"
   },
   {
    "source": "songkick",
@@ -4820,7 +4706,7 @@
    "name": "Jann Arden @ Orpheum Theatre",
    "start": "2026-12-15T19:30:00",
    "status": "EventScheduled",
-   "venue": "Orpheum",
+   "venue": "Orpheum Theatre",
    "venue_url": "https://vancouvercivictheatres.com/venues/orpheum/",
    "locality": "Vancouver",
    "lat": 49.2798,
@@ -4836,7 +4722,7 @@
     }
    ],
    "venue_raw": "Orpheum Theatre",
-   "venue_id": "orpheum"
+   "venue_id": "orpheum-theatre"
   },
   {
    "source": "songkick",
@@ -4888,6 +4774,77 @@
    ],
    "venue_raw": "The Pearl",
    "venue_id": "the-pearl"
+  },
+  {
+   "source": "songkick",
+   "id": "42990201",
+   "name": "Rush @ Rogers Arena",
+   "start": "2026-12-17",
+   "status": "EventScheduled",
+   "venue": "Rogers Arena",
+   "venue_url": "http://www.rogersarena.com",
+   "locality": "Vancouver",
+   "lat": 49.27766,
+   "lng": -123.10811,
+   "url": "https://www.songkick.com/concerts/42990201-rush-at-rogers-arena",
+   "performers": [
+    {
+     "name": "Rush",
+     "songkick_genres": [
+      "metal",
+      "rock",
+      "folk_blues",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/18841-rush?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Rogers Arena",
+   "venue_id": "rogers-arena"
+  },
+  {
+   "source": "songkick",
+   "id": "43512623",
+   "name": "Le Ren @ The Tir-na-nog Theatre School",
+   "start": "2026-12-17",
+   "status": "EventScheduled",
+   "venue": "The Tir-na-nog Theatre School",
+   "venue_url": null,
+   "locality": "Bowen Island",
+   "lat": 49.37818,
+   "lng": -123.34444,
+   "url": "https://www.songkick.com/concerts/43512623-le-ren-at-tirnanog-theatre-school",
+   "performers": [
+    {
+     "name": "Le Ren",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/597895-le-ren?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "The Tir-na-nog Theatre School",
+   "venue_id": "the-tir-na-nog-theatre-school"
+  },
+  {
+   "source": "songkick",
+   "id": "43461109",
+   "name": "ZULAN @ Commodore Ballroom",
+   "start": "2026-12-17T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "lat": 49.28065,
+   "lng": -123.12089,
+   "url": "https://www.songkick.com/concerts/43461109-zulan-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "ZULAN",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10382998-zulan?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Commodore Ballroom",
+   "venue_id": "commodore-ballroom"
   }
  ],
  "skipped": [
@@ -4907,23 +4864,6 @@
    "venue_raw": "Centre in Vancouver for the Performing Arts",
    "venue_id": "centre-in-vancouver-for-the-performing-arts",
    "skip_reason": "no_performers"
-  },
-  {
-   "source": "songkick",
-   "id": "433413921320",
-   "name": "Indie Sleaze Dance Party at Hollywood Theatre - Nov 13 2026 @ Hollywood Theatre",
-   "start": "2026-11-13T21:00:00",
-   "status": "EventScheduled",
-   "venue": "Hollywood Theatre",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": 49.26444,
-   "lng": -123.17453,
-   "url": "https://www.songkick.com/festivals/3805386-indie-sleaze-dance-party-at-hollywood-nov-13/id/43341392-indie-sleaze-dance-party-at-hollywood-theatre--nov-13-2026",
-   "performers": [],
-   "venue_raw": "Hollywood Theatre",
-   "venue_id": "hollywood-theatre",
-   "skip_reason": "club_night"
   },
   {
    "source": "songkick",
