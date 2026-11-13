@@ -11823,10 +11823,10 @@
 },
 "tall mary": {
 "query": "Tall Mary",
-"fetched_at": "2026-10-14T18:47:12+00:00",
+"fetched_at": "2026-11-13T20:57:02+00:00",
 "reach": {
 "listeners": 242,
-"playcount": 1093,
+"playcount": 1096,
 "tags": [],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/TALL+MARY",
@@ -11853,15 +11853,15 @@
 "explicit": false
 },
 {
-"id": "2cCWGfTEkhjSsW3KUNe3Ot",
-"uri": "spotify:track:2cCWGfTEkhjSsW3KUNe3Ot",
+"id": "6dm1z8HMxOAewhWh7m4Qgz",
+"uri": "spotify:track:6dm1z8HMxOAewhWh7m4Qgz",
 "name": "See Through",
 "popularity": null,
-"album": "See Through",
-"album_type": "single",
-"release_date": "2024-03-15",
+"album": "When Will I Find Something New",
+"album_type": "album",
+"release_date": "2024-05-03",
 "duration_ms": 348478,
-"explicit": true
+"explicit": false
 }
 ],
 "rank_source": "lastfm",
@@ -29535,10 +29535,10 @@
 },
 "bloom effect": {
 "query": "Bloom Effect",
-"fetched_at": "2026-10-14T18:46:53+00:00",
+"fetched_at": "2026-11-13T20:57:15+00:00",
 "reach": {
-"listeners": 1786,
-"playcount": 7448,
+"listeners": 1800,
+"playcount": 7531,
 "tags": [
 "shoegaze",
 "rock",
@@ -48072,23 +48072,23 @@
 },
 "bellz": {
 "query": "BELLZ",
-"fetched_at": "2026-10-07T20:06:30+00:00",
+"fetched_at": "2026-11-13T20:57:45+00:00",
 "reach": {
 "listeners": 123,
-"playcount": 28091,
+"playcount": 28093,
 "tags": [],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Bellz",
 "mbid": "73d02abd-0878-42c0-b006-9bc056d5428c"
 },
 "matcher": 4,
-"spotify_id": "36tGtAWNmh0m7BsA2YrflP",
+"spotify_id": "6o5QPXH1Fo6oVG2t1Ps7YB",
 "spotify_name": "Bellz",
-"url": "https://open.spotify.com/artist/36tGtAWNmh0m7BsA2YrflP",
+"url": "https://open.spotify.com/artist/6o5QPXH1Fo6oVG2t1Ps7YB",
 "genres": [],
 "popularity": null,
 "followers": null,
-"image": "https://i.scdn.co/image/ab6761610000f1783ff6511d88cb3280efc8cff1",
+"image": "https://i.scdn.co/image/ab67616d00004851877f55d950f311dc6f328f00",
 "tracks": [],
 "rank_source": "search",
 "mbid": "73d02abd-0878-42c0-b006-9bc056d5428c"
@@ -51297,7 +51297,7 @@
 },
 "nina mendoza": {
 "query": "Niña Mendoza",
-"fetched_at": "2026-10-14T18:46:41+00:00",
+"fetched_at": "2026-11-13T20:57:24+00:00",
 "reach": {
 "listeners": 18,
 "playcount": 65,
@@ -52275,15 +52275,14 @@
 },
 "sassy 009": {
 "query": "Sassy 009",
-"fetched_at": "2026-10-14T18:47:02+00:00",
+"fetched_at": "2026-11-13T20:56:54+00:00",
 "reach": {
-"listeners": 269368,
-"playcount": 2839671,
+"listeners": 272331,
+"playcount": 2871618,
 "tags": [
 "electronic",
 "house",
-"electropop",
-"techno"
+"electropop"
 ],
 "tier": 3,
 "lastfm_url": "https://www.last.fm/music/SASSY+009",
@@ -52326,10 +52325,10 @@
 },
 "alleycvt": {
 "query": "ALLEYCVT",
-"fetched_at": "2026-10-14T18:47:03+00:00",
+"fetched_at": "2026-11-13T20:56:51+00:00",
 "reach": {
-"listeners": 64945,
-"playcount": 1296768,
+"listeners": 65650,
+"playcount": 1310861,
 "tags": [
 "dubstep",
 "edm",
@@ -52376,10 +52375,10 @@
 },
 "cyclops": {
 "query": "Cyclops",
-"fetched_at": "2026-10-14T18:47:03+00:00",
+"fetched_at": "2026-11-13T20:56:52+00:00",
 "reach": {
-"listeners": 23842,
-"playcount": 273965,
+"listeners": 24050,
+"playcount": 275723,
 "tags": [
 "dubstep",
 "punk",
@@ -52427,10 +52426,10 @@
 },
 "tazu": {
 "query": "Tazu",
-"fetched_at": "2026-10-14T18:47:04+00:00",
+"fetched_at": "2026-11-13T20:56:53+00:00",
 "reach": {
-"listeners": 889,
-"playcount": 3468,
+"listeners": 907,
+"playcount": 3532,
 "tags": [
 "dubstep",
 "bass"
@@ -52446,19 +52445,8 @@
 "genres": [],
 "popularity": null,
 "followers": null,
-"image": "https://i.scdn.co/image/ab6761610000f178ae44c987544e62c361ac4e1a",
+"image": "https://i.scdn.co/image/ab6761610000f178b6e1a0c2f967fcf68a8149dc",
 "tracks": [
-{
-"id": "0tHX9t3k8jueKGMGusezEQ",
-"uri": "spotify:track:0tHX9t3k8jueKGMGusezEQ",
-"name": "FLEX",
-"popularity": null,
-"album": "FLEX",
-"album_type": "single",
-"release_date": "2023-11-24",
-"duration_ms": 152275,
-"explicit": false
-},
 {
 "id": "1z95vMVXsPdpVQAyeNfa0j",
 "uri": "spotify:track:1z95vMVXsPdpVQAyeNfa0j",
@@ -52469,6 +52457,17 @@
 "release_date": "2026-01-14",
 "duration_ms": 168000,
 "explicit": false
+},
+{
+"id": "0tHX9t3k8jueKGMGusezEQ",
+"uri": "spotify:track:0tHX9t3k8jueKGMGusezEQ",
+"name": "FLEX",
+"popularity": null,
+"album": "FLEX",
+"album_type": "single",
+"release_date": "2023-11-24",
+"duration_ms": 152275,
+"explicit": false
 }
 ],
 "rank_source": "lastfm",
@@ -52476,10 +52475,10 @@
 },
 "wolf parade": {
 "query": "Wolf Parade",
-"fetched_at": "2026-10-14T18:47:05+00:00",
+"fetched_at": "2026-11-13T20:56:55+00:00",
 "reach": {
-"listeners": 1260537,
-"playcount": 30233322,
+"listeners": 1275002,
+"playcount": 30449375,
 "tags": [
 "indie rock",
 "alternative",
@@ -52526,17 +52525,16 @@
 },
 "destroyer ca": {
 "query": "Destroyer (CA)",
-"fetched_at": "2026-10-14T18:47:06+00:00",
+"fetched_at": "2026-11-13T20:56:55+00:00",
 "reach": {
-"listeners": 757813,
-"playcount": 24527006,
+"listeners": 759145,
+"playcount": 24570593,
 "tags": [
 "indie rock",
 "indie pop"
 ],
 "tier": 4,
-"lastfm_url": "https://www.last.fm/music/Destroyer",
-"mbid": "61604b45-8a91-4e33-a1b6-45d7b1fec4e5"
+"lastfm_url": "https://www.last.fm/music/Destroyer"
 },
 "matcher": 4,
 "spotify_id": "22ojy4H4ZVpowC4lRRC8In",
@@ -52571,14 +52569,14 @@
 }
 ],
 "rank_source": "lastfm",
-"mbid": "61604b45-8a91-4e33-a1b6-45d7b1fec4e5"
+"mbid": null
 },
 "margaret glaspy": {
 "query": "Margaret Glaspy",
-"fetched_at": "2026-10-14T18:47:08+00:00",
+"fetched_at": "2026-11-13T20:56:57+00:00",
 "reach": {
-"listeners": 131328,
-"playcount": 1347285,
+"listeners": 131587,
+"playcount": 1352681,
 "tags": [
 "indie rock",
 "rock"
@@ -52624,10 +52622,10 @@
 },
 "anna tivel": {
 "query": "Anna Tivel",
-"fetched_at": "2026-10-14T18:47:08+00:00",
+"fetched_at": "2026-11-13T20:56:58+00:00",
 "reach": {
-"listeners": 33054,
-"playcount": 335105,
+"listeners": 33151,
+"playcount": 337049,
 "tags": [
 "folk"
 ],
@@ -52672,10 +52670,10 @@
 },
 "boynextdoor": {
 "query": "BoyNextDoor",
-"fetched_at": "2026-10-14T18:47:10+00:00",
+"fetched_at": "2026-11-13T20:57:06+00:00",
 "reach": {
-"listeners": 407259,
-"playcount": 57328297,
+"listeners": 411734,
+"playcount": 58285904,
 "tags": [
 "k-pop",
 "kpop",
@@ -52723,10 +52721,10 @@
 },
 "michael bernard fitzgerald": {
 "query": "Michael Bernard Fitzgerald",
-"fetched_at": "2026-10-14T18:47:10+00:00",
+"fetched_at": "2026-11-13T20:56:54+00:00",
 "reach": {
-"listeners": 35112,
-"playcount": 248644,
+"listeners": 35220,
+"playcount": 249150,
 "tags": [
 "soul",
 "acoustic",
@@ -52773,10 +52771,10 @@
 },
 "chilio": {
 "query": "CHILIØ",
-"fetched_at": "2026-10-14T18:47:11+00:00",
+"fetched_at": "2026-11-13T20:57:07+00:00",
 "reach": {
-"listeners": 13918,
-"playcount": 130479,
+"listeners": 14105,
+"playcount": 133091,
 "tags": [
 "post-hardcore",
 "pop punk"
@@ -52792,7 +52790,7 @@
 "genres": [],
 "popularity": null,
 "followers": null,
-"image": "https://i.scdn.co/image/ab6761610000f1780db253c71044d7ad6d67a13b",
+"image": "https://i.scdn.co/image/ab6761610000f17840cf03556bc96ab2d43d775d",
 "tracks": [
 {
 "id": "2I6X2n4ENisHIvoYNxgqan",
@@ -52822,15 +52820,15 @@
 },
 "truck violence": {
 "query": "truck violence",
-"fetched_at": "2026-10-14T18:47:11+00:00",
+"fetched_at": "2026-11-13T20:57:01+00:00",
 "reach": {
-"listeners": 19222,
-"playcount": 300116,
+"listeners": 19931,
+"playcount": 314648,
 "tags": [
 "post-hardcore",
 "noise rock",
 "sludge",
-"punk"
+"noise"
 ],
 "tier": 2,
 "lastfm_url": "https://www.last.fm/music/truck+violence",
@@ -52873,15 +52871,15 @@
 },
 "emma goldman": {
 "query": "Emma Goldman",
-"fetched_at": "2026-10-14T18:47:12+00:00",
+"fetched_at": "2026-11-13T20:57:03+00:00",
 "reach": {
-"listeners": 7534,
-"playcount": 132608,
+"listeners": 7605,
+"playcount": 134467,
 "tags": [
 "screamo",
 "emoviolence",
-"noise rock",
-"skramz"
+"skramz",
+"noise rock"
 ],
 "tier": 2,
 "lastfm_url": "https://www.last.fm/music/Emma+Goldman",
@@ -52897,26 +52895,26 @@
 "image": "https://i.scdn.co/image/ab6761610000f178e6968e2e3caaab2c15ac12b1",
 "tracks": [
 {
-"id": "47PfE0nhAsjJf2lHrBmcR4",
-"uri": "spotify:track:47PfE0nhAsjJf2lHrBmcR4",
-"name": "I seem to be an adjective",
+"id": "1TRsQuLcYuADzyakMhxynx",
+"uri": "spotify:track:1TRsQuLcYuADzyakMhxynx",
+"name": "at rock bottom I was a piss girl",
 "popularity": null,
-"album": "I seem to be an adjective",
-"album_type": "single",
-"release_date": "2025-03-28",
-"duration_ms": 143893,
+"album": "all you are is we",
+"album_type": "album",
+"release_date": "2025-04-28",
+"duration_ms": 151475,
 "explicit": false
 },
 {
-"id": "6Hkc4wQ4wpCcReMtmd1j5j",
-"uri": "spotify:track:6Hkc4wQ4wpCcReMtmd1j5j",
-"name": "I don't think much at all",
+"id": "7kCbN3t5b3UEiJQcsNnrFt",
+"uri": "spotify:track:7kCbN3t5b3UEiJQcsNnrFt",
+"name": "I seem to be an adjective",
 "popularity": null,
-"album": "I don't think much at all",
-"album_type": "single",
-"release_date": "2025-02-24",
-"duration_ms": 184860,
-"explicit": true
+"album": "all you are is we",
+"album_type": "album",
+"release_date": "2025-04-28",
+"duration_ms": 143893,
+"explicit": false
 }
 ],
 "rank_source": "lastfm",
@@ -52924,10 +52922,10 @@
 },
 "panteros666": {
 "query": "Panteros666",
-"fetched_at": "2026-10-14T18:47:13+00:00",
+"fetched_at": "2026-11-13T20:57:07+00:00",
 "reach": {
-"listeners": 76141,
-"playcount": 651871,
+"listeners": 76621,
+"playcount": 655753,
 "tags": [
 "techno",
 "trance",
@@ -52975,10 +52973,10 @@
 },
 "raffi": {
 "query": "Raffi",
-"fetched_at": "2026-10-14T18:47:14+00:00",
+"fetched_at": "2026-11-13T20:57:08+00:00",
 "reach": {
-"listeners": 251884,
-"playcount": 7975237,
+"listeners": 252519,
+"playcount": 7995984,
 "tags": [
 "childrens",
 "comedy",
@@ -53026,10 +53024,10 @@
 },
 "arch enemy": {
 "query": "Arch Enemy",
-"fetched_at": "2026-10-14T18:47:15+00:00",
+"fetched_at": "2026-11-13T20:57:09+00:00",
 "reach": {
-"listeners": 924023,
-"playcount": 62445507,
+"listeners": 925395,
+"playcount": 62524896,
 "tags": [
 "melodic death metal",
 "death metal",
@@ -53077,10 +53075,10 @@
 },
 "black dahlia murder": {
 "query": "The Black Dahlia Murder",
-"fetched_at": "2026-10-14T18:47:15+00:00",
+"fetched_at": "2026-11-13T20:57:10+00:00",
 "reach": {
-"listeners": 490353,
-"playcount": 33313056,
+"listeners": 491210,
+"playcount": 33388804,
 "tags": [
 "melodic death metal",
 "death metal",
@@ -53128,10 +53126,10 @@
 },
 "septicflesh": {
 "query": "Septicflesh",
-"fetched_at": "2026-10-14T18:47:16+00:00",
+"fetched_at": "2026-11-13T20:57:10+00:00",
 "reach": {
-"listeners": 150502,
-"playcount": 8355963,
+"listeners": 151059,
+"playcount": 8386539,
 "tags": [
 "death metal",
 "symphonic death metal",
@@ -53179,10 +53177,10 @@
 },
 "crypta": {
 "query": "Crypta",
-"fetched_at": "2026-10-14T18:47:16+00:00",
+"fetched_at": "2026-11-13T20:57:10+00:00",
 "reach": {
-"listeners": 51973,
-"playcount": 1634509,
+"listeners": 52355,
+"playcount": 1652035,
 "tags": [
 "death metal",
 "metal",
@@ -53229,10 +53227,10 @@
 },
 "thrown into exile": {
 "query": "Thrown Into Exile",
-"fetched_at": "2026-10-14T18:47:17+00:00",
+"fetched_at": "2026-11-13T20:57:11+00:00",
 "reach": {
-"listeners": 5145,
-"playcount": 28015,
+"listeners": 5222,
+"playcount": 28819,
 "tags": [
 "metalcore",
 "metal",
@@ -53280,10 +53278,10 @@
 },
 "alex cameron": {
 "query": "Alex Cameron",
-"fetched_at": "2026-10-14T18:47:17+00:00",
+"fetched_at": "2026-11-13T20:57:11+00:00",
 "reach": {
-"listeners": 198315,
-"playcount": 5263718,
+"listeners": 199004,
+"playcount": 5288739,
 "tags": [
 "synthpop",
 "soft rock",
@@ -53331,10 +53329,10 @@
 },
 "josh da costa": {
 "query": "Josh Da Costa",
-"fetched_at": "2026-10-14T18:47:18+00:00",
+"fetched_at": "2026-11-13T20:57:12+00:00",
 "reach": {
-"listeners": 2482,
-"playcount": 10676,
+"listeners": 2695,
+"playcount": 11900,
 "tags": [
 "psychedelic",
 "lo-fi",
@@ -53381,15 +53379,15 @@
 },
 "holy wave": {
 "query": "Holy Wave",
-"fetched_at": "2026-10-14T18:47:19+00:00",
+"fetched_at": "2026-11-13T20:57:13+00:00",
 "reach": {
-"listeners": 118678,
-"playcount": 1435535,
+"listeners": 119083,
+"playcount": 1441683,
 "tags": [
 "psychedelic rock",
 "psychedelic",
-"garage rock",
-"surf rock"
+"surf rock",
+"garage rock"
 ],
 "tier": 3,
 "lastfm_url": "https://www.last.fm/music/Holy+Wave",
@@ -53432,14 +53430,15 @@
 },
 "queen serene": {
 "query": "Queen Serene",
-"fetched_at": "2026-10-14T18:47:21+00:00",
+"fetched_at": "2026-11-13T20:57:14+00:00",
 "reach": {
-"listeners": 685,
-"playcount": 3992,
+"listeners": 695,
+"playcount": 4071,
 "tags": [
 "psychedelic rock",
 "rock",
-"psychedelic"
+"psychedelic",
+"indie pop"
 ],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Queen+Serene",
@@ -53482,10 +53481,10 @@
 },
 "gryffin": {
 "query": "Gryffin",
-"fetched_at": "2026-10-14T18:47:23+00:00",
+"fetched_at": "2026-11-13T20:57:17+00:00",
 "reach": {
-"listeners": 732063,
-"playcount": 17455013,
+"listeners": 734567,
+"playcount": 17505722,
 "tags": [
 "house",
 "electronic",
@@ -53533,10 +53532,10 @@
 },
 "polyrhythmics": {
 "query": "Polyrhythmics",
-"fetched_at": "2026-10-14T18:47:23+00:00",
+"fetched_at": "2026-11-13T20:57:15+00:00",
 "reach": {
-"listeners": 50346,
-"playcount": 410145,
+"listeners": 50641,
+"playcount": 411906,
 "tags": [
 "afrobeat",
 "funk",
@@ -53584,15 +53583,15 @@
 },
 "sonreal": {
 "query": "SonReal",
-"fetched_at": "2026-10-14T18:47:24+00:00",
+"fetched_at": "2026-11-13T20:57:15+00:00",
 "reach": {
-"listeners": 127931,
-"playcount": 1557928,
+"listeners": 128923,
+"playcount": 1567119,
 "tags": [
 "hip-hop",
 "underground hip-hop",
 "underground",
-"rap"
+"hip hop"
 ],
 "tier": 3,
 "lastfm_url": "https://www.last.fm/music/SonReal",
@@ -53635,10 +53634,10 @@
 },
 "michael minelli": {
 "query": "Michael Minelli",
-"fetched_at": "2026-10-14T18:47:24+00:00",
+"fetched_at": "2026-11-13T20:57:16+00:00",
 "reach": {
-"listeners": 21302,
-"playcount": 160525,
+"listeners": 21587,
+"playcount": 161692,
 "tags": [
 "pop",
 "united states",
@@ -53685,10 +53684,10 @@
 },
 "kyle watson": {
 "query": "Kyle Watson",
-"fetched_at": "2026-10-14T18:47:25+00:00",
+"fetched_at": "2026-11-13T20:57:17+00:00",
 "reach": {
-"listeners": 134184,
-"playcount": 953256,
+"listeners": 134544,
+"playcount": 955642,
 "tags": [
 "tech house",
 "house",
@@ -53736,10 +53735,10 @@
 },
 "blasterjaxx": {
 "query": "Blasterjaxx",
-"fetched_at": "2026-10-14T18:47:26+00:00",
+"fetched_at": "2026-11-13T20:57:18+00:00",
 "reach": {
-"listeners": 343562,
-"playcount": 4187449,
+"listeners": 344572,
+"playcount": 4198854,
 "tags": [
 "house",
 "electronic",
@@ -53787,10 +53786,10 @@
 },
 "marlo": {
 "query": "Marlo",
-"fetched_at": "2026-10-14T18:47:26+00:00",
+"fetched_at": "2026-11-13T20:57:20+00:00",
 "reach": {
-"listeners": 178781,
-"playcount": 2690181,
+"listeners": 179275,
+"playcount": 2697747,
 "tags": [
 "trance",
 "electronic",
@@ -53838,15 +53837,15 @@
 },
 "foghorn": {
 "query": "Foghorn",
-"fetched_at": "2026-10-14T18:47:28+00:00",
+"fetched_at": "2026-11-13T20:57:23+00:00",
 "reach": {
-"listeners": 38530,
-"playcount": 577950,
+"listeners": 39050,
+"playcount": 583573,
 "tags": [
 "hardcore",
 "shoegaze",
-"post-rock",
-"ambient"
+"ambient",
+"post-rock"
 ],
 "tier": 2,
 "lastfm_url": "https://www.last.fm/music/Foghorn",
@@ -53889,10 +53888,10 @@
 },
 "armored saint": {
 "query": "Armored Saint",
-"fetched_at": "2026-10-14T18:47:29+00:00",
+"fetched_at": "2026-11-13T20:57:25+00:00",
 "reach": {
-"listeners": 114032,
-"playcount": 2261636,
+"listeners": 114265,
+"playcount": 2268955,
 "tags": [
 "heavy metal",
 "power metal",
@@ -53940,10 +53939,10 @@
 },
 "metal church": {
 "query": "Metal Church",
-"fetched_at": "2026-10-14T18:47:29+00:00",
+"fetched_at": "2026-11-13T20:57:26+00:00",
 "reach": {
-"listeners": 236776,
-"playcount": 5299374,
+"listeners": 237425,
+"playcount": 5319319,
 "tags": [
 "heavy metal",
 "thrash metal",
@@ -53991,10 +53990,10 @@
 },
 "livekill": {
 "query": "LiveKill",
-"fetched_at": "2026-10-14T18:47:30+00:00",
+"fetched_at": "2026-11-13T20:57:26+00:00",
 "reach": {
-"listeners": 849,
-"playcount": 2159,
+"listeners": 903,
+"playcount": 2253,
 "tags": [],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Livekill",
@@ -54037,14 +54036,14 @@
 },
 "skye wallace": {
 "query": "Skye Wallace",
-"fetched_at": "2026-10-14T18:47:30+00:00",
+"fetched_at": "2026-11-13T20:57:27+00:00",
 "reach": {
-"listeners": 4458,
-"playcount": 36976,
+"listeners": 4481,
+"playcount": 37174,
 "tags": [
 "folk",
-"alternative",
-"indie rock"
+"indie rock",
+"alternative"
 ],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Skye+Wallace",
@@ -54057,7 +54056,7 @@
 "genres": [],
 "popularity": null,
 "followers": null,
-"image": "https://i.scdn.co/image/ab6761610000f178ebcd6e985ab6b5bc62aac04f",
+"image": "https://i.scdn.co/image/ab6761610000f1787b72a00a588a7262c35a236a",
 "tracks": [
 {
 "id": "3fgqLzsWuAES1d0bVd55f3",
@@ -54087,14 +54086,14 @@
 },
 "david vertesi": {
 "query": "David Vertesi",
-"fetched_at": "2026-10-14T18:47:31+00:00",
+"fetched_at": "2026-11-13T20:57:28+00:00",
 "reach": {
-"listeners": 23987,
-"playcount": 213262,
+"listeners": 24043,
+"playcount": 213822,
 "tags": [
 "folk",
-"pop",
 "acoustic",
+"pop",
 "indie folk"
 ],
 "tier": 2,
@@ -54122,14 +54121,14 @@
 "explicit": false
 },
 {
-"id": "63Iu51s7evztgP8c2TR3oc",
-"uri": "spotify:track:63Iu51s7evztgP8c2TR3oc",
-"name": "All Night, All Night, All Night - Acoustic",
+"id": "2W8KiqPfDBmxSTKUWQL33U",
+"uri": "spotify:track:2W8KiqPfDBmxSTKUWQL33U",
+"name": "All Night, All Night, All Night",
 "popularity": null,
-"album": "Cardiography (Acoustic 15th Anniversary Edition)",
+"album": "Cardiography",
 "album_type": "album",
-"release_date": "2025-11-27",
-"duration_ms": 223902,
+"release_date": "2010-10-23",
+"duration_ms": 233946,
 "explicit": false
 }
 ],
@@ -54138,14 +54137,14 @@
 },
 "jasper sloan yip": {
 "query": "Jasper Sloan Yip",
-"fetched_at": "2026-10-14T18:47:31+00:00",
+"fetched_at": "2026-11-13T20:57:28+00:00",
 "reach": {
-"listeners": 4685,
-"playcount": 39094,
+"listeners": 4691,
+"playcount": 39142,
 "tags": [
 "folk",
 "pop",
-"indie pop"
+"piano rock"
 ],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Jasper+Sloan+Yip",
@@ -54188,10 +54187,10 @@
 },
 "teagan johnston": {
 "query": "teagan johnston",
-"fetched_at": "2026-10-14T18:47:32+00:00",
+"fetched_at": "2026-11-13T20:57:29+00:00",
 "reach": {
-"listeners": 559,
-"playcount": 2179,
+"listeners": 564,
+"playcount": 2204,
 "tags": [],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Teagan+Johnston",
@@ -54234,10 +54233,10 @@
 },
 "tyla sa": {
 "query": "Tyla (SA)",
-"fetched_at": "2026-10-14T18:47:34+00:00",
+"fetched_at": "2026-11-13T20:57:31+00:00",
 "reach": {
-"listeners": 1602487,
-"playcount": 59019590,
+"listeners": 1611306,
+"playcount": 59596396,
 "tags": [
 "rnb",
 "pop",
@@ -54245,8 +54244,7 @@
 "amapiano"
 ],
 "tier": 4,
-"lastfm_url": "https://www.last.fm/music/Tyla",
-"mbid": "2bf761c6-4bcf-4cfc-a388-8fcb2eea8cc8"
+"lastfm_url": "https://www.last.fm/music/Tyla"
 },
 "matcher": 4,
 "spotify_id": "3SozjO3Lat463tQICI9LcE",
@@ -54281,14 +54279,14 @@
 }
 ],
 "rank_source": "lastfm",
-"mbid": "2bf761c6-4bcf-4cfc-a388-8fcb2eea8cc8"
+"mbid": null
 },
 "bonobo": {
 "query": "Bonobo",
-"fetched_at": "2026-10-14T18:47:35+00:00",
+"fetched_at": "2026-11-13T20:57:32+00:00",
 "reach": {
-"listeners": 2119957,
-"playcount": 113446817,
+"listeners": 2124042,
+"playcount": 113614065,
 "tags": [
 "downtempo",
 "electronic",
@@ -54336,10 +54334,10 @@
 },
 "1 800 girls": {
 "query": "1-800 GIRLS",
-"fetched_at": "2026-10-14T18:47:36+00:00",
+"fetched_at": "2026-11-13T20:57:33+00:00",
 "reach": {
-"listeners": 68924,
-"playcount": 475763,
+"listeners": 69185,
+"playcount": 478904,
 "tags": [
 "house",
 "electronic",
@@ -54387,10 +54385,10 @@
 },
 "rhye": {
 "query": "Rhye",
-"fetched_at": "2026-10-14T18:47:36+00:00",
+"fetched_at": "2026-11-13T20:57:33+00:00",
 "reach": {
-"listeners": 809825,
-"playcount": 18748114,
+"listeners": 811285,
+"playcount": 18797411,
 "tags": [
 "soul",
 "chillout",
@@ -54464,10 +54462,10 @@
 },
 "underoath": {
 "query": "Underoath",
-"fetched_at": "2026-10-14T18:47:37+00:00",
+"fetched_at": "2026-11-13T20:57:34+00:00",
 "reach": {
-"listeners": 1118355,
-"playcount": 60412715,
+"listeners": 1122070,
+"playcount": 60604924,
 "tags": [
 "post-hardcore",
 "metalcore",
@@ -54515,10 +54513,10 @@
 },
 "as cities burn": {
 "query": "As Cities Burn",
-"fetched_at": "2026-10-14T18:47:38+00:00",
+"fetched_at": "2026-11-13T20:57:34+00:00",
 "reach": {
-"listeners": 206762,
-"playcount": 6432754,
+"listeners": 207027,
+"playcount": 6442609,
 "tags": [
 "post-hardcore",
 "christian",
@@ -54566,10 +54564,10 @@
 },
 "august burns red": {
 "query": "August Burns Red",
-"fetched_at": "2026-10-14T18:47:39+00:00",
+"fetched_at": "2026-11-13T20:57:35+00:00",
 "reach": {
-"listeners": 820812,
-"playcount": 42602268,
+"listeners": 822044,
+"playcount": 42658255,
 "tags": [
 "metalcore",
 "hardcore",
@@ -54617,10 +54615,10 @@
 },
 "atreyu": {
 "query": "Atreyu",
-"fetched_at": "2026-10-14T18:47:40+00:00",
+"fetched_at": "2026-11-13T20:57:35+00:00",
 "reach": {
-"listeners": 1355748,
-"playcount": 55965179,
+"listeners": 1357454,
+"playcount": 56032373,
 "tags": [
 "metalcore",
 "hardcore",
@@ -54668,10 +54666,10 @@
 },
 "barra macneils": {
 "query": "The Barra Macneils",
-"fetched_at": "2026-10-14T18:47:41+00:00",
+"fetched_at": "2026-11-13T20:57:37+00:00",
 "reach": {
-"listeners": 7685,
-"playcount": 86141,
+"listeners": 7699,
+"playcount": 86322,
 "tags": [
 "celtic",
 "nova scotia"
@@ -54717,10 +54715,10 @@
 },
 "eivor": {
 "query": "Eivør",
-"fetched_at": "2026-10-14T18:47:42+00:00",
+"fetched_at": "2026-11-13T20:57:36+00:00",
 "reach": {
-"listeners": 137058,
-"playcount": 3595783,
+"listeners": 138314,
+"playcount": 3641765,
 "tags": [],
 "tier": 3,
 "lastfm_url": "https://www.last.fm/music/+noredirect/Eiv%C3%B8r",
@@ -54763,10 +54761,10 @@
 },
 "midori jaeger": {
 "query": "midori jaeger",
-"fetched_at": "2026-10-14T18:47:42+00:00",
+"fetched_at": "2026-11-13T20:57:37+00:00",
 "reach": {
-"listeners": 3053,
-"playcount": 8906,
+"listeners": 3116,
+"playcount": 9169,
 "tags": [
 "chamber pop"
 ],
@@ -54811,13 +54809,13 @@
 },
 "denise julia": {
 "query": "Denise Julia",
-"fetched_at": "2026-10-14T18:47:42+00:00",
+"fetched_at": "2026-11-13T20:57:38+00:00",
 "reach": {
-"listeners": 229730,
-"playcount": 7195060,
+"listeners": 232226,
+"playcount": 7273428,
 "tags": [
-"booba",
 "milkers",
+"booba",
 "rnb",
 "cute"
 ],
@@ -54862,10 +54860,10 @@
 },
 "turnover": {
 "query": "Turnover",
-"fetched_at": "2026-10-14T18:47:43+00:00",
+"fetched_at": "2026-11-13T20:57:39+00:00",
 "reach": {
-"listeners": 536049,
-"playcount": 31759454,
+"listeners": 538402,
+"playcount": 31890301,
 "tags": [
 "pop punk",
 "emo",
@@ -54913,10 +54911,10 @@
 },
 "trauma ray": {
 "query": "Trauma Ray",
-"fetched_at": "2026-10-14T18:47:43+00:00",
+"fetched_at": "2026-11-13T20:57:40+00:00",
 "reach": {
-"listeners": 348978,
-"playcount": 5180113,
+"listeners": 352189,
+"playcount": 5242585,
 "tags": [
 "shoegaze",
 "alternative rock",
@@ -54964,14 +54962,14 @@
 },
 "lilyisthatyou": {
 "query": "Lilyisthatyou",
-"fetched_at": "2026-10-14T18:47:44+00:00",
+"fetched_at": "2026-11-13T20:57:41+00:00",
 "reach": {
-"listeners": 154705,
-"playcount": 4320758,
+"listeners": 155736,
+"playcount": 4359234,
 "tags": [
 "pop",
-"dance",
-"electronic"
+"electronic",
+"dance"
 ],
 "tier": 3,
 "lastfm_url": "https://www.last.fm/music/Lilyisthatyou",
@@ -55014,10 +55012,10 @@
 },
 "graham barham": {
 "query": "Graham Barham",
-"fetched_at": "2026-10-14T18:47:44+00:00",
+"fetched_at": "2026-11-13T20:57:41+00:00",
 "reach": {
-"listeners": 39267,
-"playcount": 643149,
+"listeners": 39649,
+"playcount": 649553,
 "tags": [
 "country"
 ],
@@ -55062,10 +55060,10 @@
 },
 "devil master": {
 "query": "Devil Master",
-"fetched_at": "2026-10-14T18:47:45+00:00",
+"fetched_at": "2026-11-13T20:57:42+00:00",
 "reach": {
-"listeners": 34419,
-"playcount": 728412,
+"listeners": 34646,
+"playcount": 736036,
 "tags": [
 "black metal",
 "blackened punk",
@@ -55113,10 +55111,10 @@
 },
 "olivia o brien": {
 "query": "Olivia O'Brien",
-"fetched_at": "2026-10-14T18:47:46+00:00",
+"fetched_at": "2026-11-13T20:57:43+00:00",
 "reach": {
-"listeners": 717211,
-"playcount": 12923091,
+"listeners": 719645,
+"playcount": 12957668,
 "tags": [
 "pop",
 "electronic",
@@ -63682,5 +63680,451 @@
 ],
 "rank_source": "lastfm",
 "mbid": "83c68501-c362-40e2-9e9c-9b3416822da8"
+},
+"deathtape": {
+"query": "deathtape",
+"fetched_at": "2026-11-13T20:57:03+00:00",
+"reach": {
+"listeners": 9874,
+"playcount": 71930,
+"tags": [
+"nu metal",
+"alternative metal",
+"metalcore"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Deathtape",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "2pg2mTL0jz3HVQD01zf6aY",
+"spotify_name": "Deathtape",
+"url": "https://open.spotify.com/artist/2pg2mTL0jz3HVQD01zf6aY",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1783d6550240eefe6aca554cb3c",
+"tracks": [
+{
+"id": "2kJa2SWsx68fRn2Eajnz6G",
+"uri": "spotify:track:2kJa2SWsx68fRn2Eajnz6G",
+"name": "Indifferent",
+"popularity": null,
+"album": "Indifferent",
+"album_type": "single",
+"release_date": "2025-01-31",
+"duration_ms": 229117,
+"explicit": true
+},
+{
+"id": "7ezvoTc4E8gAXWP5wbmX8n",
+"uri": "spotify:track:7ezvoTc4E8gAXWP5wbmX8n",
+"name": "Back It Up",
+"popularity": null,
+"album": "Back It Up",
+"album_type": "single",
+"release_date": "2024-07-04",
+"duration_ms": 147259,
+"explicit": true
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"haunting party": {
+"query": "The Haunting Party",
+"fetched_at": "2026-11-13T20:57:04+00:00",
+"reach": {
+"listeners": 83498,
+"playcount": 872823,
+"tags": [
+"alternative rock",
+"noise",
+"post-hardcore",
+"rock"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/The+Haunting"
+},
+"matcher": 4,
+"spotify_id": "09uUKWMhRoP7QbPWdgiFoC",
+"spotify_name": "The Haunting",
+"url": "https://open.spotify.com/artist/09uUKWMhRoP7QbPWdgiFoC",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178756e5957c655a9001bebf30c",
+"tracks": [
+{
+"id": "44Y0uTXcrn42ZyDptUOrpW",
+"uri": "spotify:track:44Y0uTXcrn42ZyDptUOrpW",
+"name": "skins",
+"popularity": null,
+"album": "GHOSTAPE2",
+"album_type": "album",
+"release_date": "2021-12-02",
+"duration_ms": 192026,
+"explicit": false
+},
+{
+"id": "7CQB6dRIRbrxwPvlGNavJp",
+"uri": "spotify:track:7CQB6dRIRbrxwPvlGNavJp",
+"name": "killjoy",
+"popularity": null,
+"album": "GHOSTAPE2",
+"album_type": "album",
+"release_date": "2021-12-02",
+"duration_ms": 225026,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"rashad rawkus": {
+"query": "Rashad Rawkus",
+"fetched_at": "2026-11-13T20:57:44+00:00",
+"spotify_id": null,
+"reach": {
+"listeners": 46,
+"playcount": 130,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Rashad+Rawkus",
+"mbid": null
+},
+"matcher": 4,
+"candidates": [
+"Rashaad Lee",
+"Prof",
+"SonReal"
+]
+},
+"nead": {
+"query": "Nead",
+"fetched_at": "2026-11-13T20:57:48+00:00",
+"reach": {
+"listeners": 2198,
+"playcount": 8168,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Nead",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "7G530JswiWEdrow3dmNvzW",
+"spotify_name": "nead",
+"url": "https://open.spotify.com/artist/7G530JswiWEdrow3dmNvzW",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17842e0203d5f23fa283c0ea6d2",
+"tracks": [
+{
+"id": "5d4Vyk8PQm0fjaUq6lIyNa",
+"uri": "spotify:track:5d4Vyk8PQm0fjaUq6lIyNa",
+"name": "Destination",
+"popularity": null,
+"album": "Destination",
+"album_type": "single",
+"release_date": "2024-08-02",
+"duration_ms": 132923,
+"explicit": false
+},
+{
+"id": "6xu6ubSZLY1sjeqaNPGOkR",
+"uri": "spotify:track:6xu6ubSZLY1sjeqaNPGOkR",
+"name": "Green Lofi",
+"popularity": null,
+"album": "Lofi Greenery",
+"album_type": "single",
+"release_date": "2023-11-17",
+"duration_ms": 114346,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"fish56octagon": {
+"query": "Fish56Octagon",
+"fetched_at": "2026-11-13T20:57:48+00:00",
+"reach": {
+"listeners": 5175,
+"playcount": 15679,
+"tags": [],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Fish56Octagon",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "46Ro78dkP2X0XUKmiovwL3",
+"spotify_name": "Fish56Octagon",
+"url": "https://open.spotify.com/artist/46Ro78dkP2X0XUKmiovwL3",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17890301d9f27be8509cc1cdecd",
+"tracks": [
+{
+"id": "03fBbF1Y6uNdC4v7RhBCrH",
+"uri": "spotify:track:03fBbF1Y6uNdC4v7RhBCrH",
+"name": "Dreaming (Feelings)",
+"popularity": null,
+"album": "Dreaming (Feelings)",
+"album_type": "single",
+"release_date": "2025-10-17",
+"duration_ms": 151904,
+"explicit": false
+},
+{
+"id": "2BuV5iXq2xn04ze6c4T533",
+"uri": "spotify:track:2BuV5iXq2xn04ze6c4T533",
+"name": "Like That",
+"popularity": null,
+"album": "Like That",
+"album_type": "single",
+"release_date": "2025-05-02",
+"duration_ms": 181874,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"matthew good": {
+"query": "Matthew Good",
+"fetched_at": "2026-11-13T20:57:49+00:00",
+"reach": {
+"listeners": 124091,
+"playcount": 5347033,
+"tags": [
+"alternative rock",
+"rock",
+"alternative"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Matthew+Good",
+"mbid": "8010da10-5c5b-4041-b119-984a6e2ccf82"
+},
+"matcher": 4,
+"spotify_id": "4EhvF0sd1sdEJ49h6AuWvB",
+"spotify_name": "Matthew Good",
+"url": "https://open.spotify.com/artist/4EhvF0sd1sdEJ49h6AuWvB",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1786f9cc92f77d2ac157322dfb6",
+"tracks": [
+{
+"id": "5aVefbHql7E4c0wvUTCQE3",
+"uri": "spotify:track:5aVefbHql7E4c0wvUTCQE3",
+"name": "Weapon",
+"popularity": null,
+"album": "Avalanche",
+"album_type": "album",
+"release_date": "2003",
+"duration_ms": 358493,
+"explicit": false
+},
+{
+"id": "0Y2yTC68S6Dy6CRO1vzVba",
+"uri": "spotify:track:0Y2yTC68S6Dy6CRO1vzVba",
+"name": "Born Losers",
+"popularity": null,
+"album": "Hospital Music",
+"album_type": "album",
+"release_date": "2007-01-01",
+"duration_ms": 319146,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "8010da10-5c5b-4041-b119-984a6e2ccf82"
+},
+"funk hunters": {
+"query": "The Funk Hunters",
+"fetched_at": "2026-11-13T20:57:50+00:00",
+"reach": {
+"listeners": 39347,
+"playcount": 273170,
+"tags": [
+"breaks",
+"funk",
+"funky breaks",
+"electro"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/The+Funk+Hunters",
+"mbid": "42e9fa0f-5eea-4f30-aa74-32a5257ee410"
+},
+"matcher": 4,
+"spotify_id": "5xwd7lKJeb2opUvYZnXFut",
+"spotify_name": "The Funk Hunters",
+"url": "https://open.spotify.com/artist/5xwd7lKJeb2opUvYZnXFut",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1783ac96a352f1a855472cab3e6",
+"tracks": [
+{
+"id": "3Hlwy5nSbZ9JylXNeBXfUT",
+"uri": "spotify:track:3Hlwy5nSbZ9JylXNeBXfUT",
+"name": "Warn Ya",
+"popularity": null,
+"album": "Music w/ Friends",
+"album_type": "album",
+"release_date": "2022-07-22",
+"duration_ms": 276741,
+"explicit": false
+},
+{
+"id": "2NMl9kG3ovNYgF9v6kGwvB",
+"uri": "spotify:track:2NMl9kG3ovNYgF9v6kGwvB",
+"name": "Empire",
+"popularity": null,
+"album": "Music w/ Friends",
+"album_type": "album",
+"release_date": "2022-07-22",
+"duration_ms": 213193,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "42e9fa0f-5eea-4f30-aa74-32a5257ee410"
+},
+"angry snowmans": {
+"query": "Angry Snowmans",
+"fetched_at": "2026-11-13T20:57:50+00:00",
+"reach": {
+"listeners": 818,
+"playcount": 13748,
+"tags": [
+"punk",
+"holiday",
+"cover",
+"covers"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Angry+Snowmans",
+"mbid": "18fcaee6-e0f3-4a7f-aeb4-405900d4f197"
+},
+"matcher": 4,
+"spotify_id": "42h6M0QaHFjJ9x57SGPKPi",
+"spotify_name": "Angry Snowmans",
+"url": "https://open.spotify.com/artist/42h6M0QaHFjJ9x57SGPKPi",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": null,
+"tracks": [
+{
+"id": "0EmGz1oaxCzfyL5TAQNGru",
+"uri": "spotify:track:0EmGz1oaxCzfyL5TAQNGru",
+"name": "Drinkin' Rum & Egg Nog",
+"popularity": null,
+"album": "Cashing In On Christmas, Vol. 3",
+"album_type": "compilation",
+"release_date": "2011-12-09",
+"duration_ms": 247146,
+"explicit": true
+}
+],
+"rank_source": "lastfm+search",
+"mbid": "18fcaee6-e0f3-4a7f-aeb4-405900d4f197"
+},
+"rubes": {
+"query": "The Rubes",
+"fetched_at": "2026-11-13T20:57:52+00:00",
+"reach": {
+"listeners": 388,
+"playcount": 2970,
+"tags": [
+"hard rock"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/The+Rubes",
+"mbid": "1a08dd78-657c-40d9-8cd7-2a7054ef3486"
+},
+"matcher": 4,
+"spotify_id": "14NS3IL04DwTyGXkFTQ2Ry",
+"spotify_name": "The Rubes",
+"url": "https://open.spotify.com/artist/14NS3IL04DwTyGXkFTQ2Ry",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab67616d0000485100d95b41d31db4bba9150a55",
+"tracks": [
+{
+"id": "4aHlMfj17hkWtRDVz1yBai",
+"uri": "spotify:track:4aHlMfj17hkWtRDVz1yBai",
+"name": "I Hope That I Don't Fall In Love With You",
+"popularity": null,
+"album": "Carnival Girls",
+"album_type": "album",
+"release_date": "2005-01-01",
+"duration_ms": 200626,
+"explicit": false
+},
+{
+"id": "097Nyiy9z1p1SYIl8nHFEG",
+"uri": "spotify:track:097Nyiy9z1p1SYIl8nHFEG",
+"name": "Hush",
+"popularity": null,
+"album": "Almost Frantic",
+"album_type": "album",
+"release_date": "1980",
+"duration_ms": 181506,
+"explicit": false
+}
+],
+"rank_source": "lastfm+search",
+"mbid": "1a08dd78-657c-40d9-8cd7-2a7054ef3486"
+},
+"daijo": {
+"query": "Daijo",
+"fetched_at": "2026-11-13T20:57:54+00:00",
+"reach": {
+"listeners": 7373,
+"playcount": 26801,
+"tags": [],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/DAIJO",
+"mbid": "4166d984-3486-4515-87e9-9b890525d125"
+},
+"matcher": 4,
+"spotify_id": "4esLZ8cHaY0jchCxXDVVSQ",
+"spotify_name": "Daijo",
+"url": "https://open.spotify.com/artist/4esLZ8cHaY0jchCxXDVVSQ",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178d1bb1e6cdd0833e2d3a3eacc",
+"tracks": [
+{
+"id": "1To962vz9kUr2k3IawAMMa",
+"uri": "spotify:track:1To962vz9kUr2k3IawAMMa",
+"name": "Freak Of The Night",
+"popularity": null,
+"album": "Freak Of The Night",
+"album_type": "single",
+"release_date": "2021-12-08",
+"duration_ms": 149280,
+"explicit": false
+},
+{
+"id": "2mWYnbpTzzUB6zTDAt2wyy",
+"uri": "spotify:track:2mWYnbpTzzUB6zTDAt2wyy",
+"name": "Red Dress (feat. Aloma Steele)",
+"popularity": null,
+"album": "Red Dress (feat. Aloma Steele)",
+"album_type": "single",
+"release_date": "2017-02-28",
+"duration_ms": 192052,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "4166d984-3486-4515-87e9-9b890525d125"
 }
 }
