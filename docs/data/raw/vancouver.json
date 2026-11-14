@@ -2,19 +2,17 @@
  "city": "vancouver",
  "city_name": "Vancouver, BC",
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
- "scraped_at": "2026-11-13T20:55:53+00:00",
+ "scraped_at": "2026-11-14T19:18:00+00:00",
  "horizon_days": 35,
  "pages_fetched": 4,
  "do604_events": 0,
- "merged_duplicates": 2,
+ "merged_duplicates": 3,
  "venues": {
-  "centre-in-vancouver-for-the-performing-arts": {
-   "name": "Centre in Vancouver for the Performing Arts",
-   "aliases": [
-    "The Centre in Vancouver"
-   ],
-   "lat": 49.27965,
-   "lng": -123.11665
+  "pne-forum": {
+   "name": "PNE Forum",
+   "aliases": [],
+   "lat": 49.28317,
+   "lng": -123.0368
   },
   "the-pearl": {
    "name": "The Pearl",
@@ -22,41 +20,17 @@
    "lat": 49.28071,
    "lng": -123.12143
   },
+  "commodore-ballroom": {
+   "name": "Commodore Ballroom",
+   "aliases": [],
+   "lat": 49.28065,
+   "lng": -123.12089
+  },
   "queen-elizabeth-theatre": {
    "name": "Queen Elizabeth Theatre",
    "aliases": [],
    "lat": 49.28039,
    "lng": -123.11266
-  },
-  "biltmore-cabaret": {
-   "name": "Biltmore Cabaret",
-   "aliases": [],
-   "lat": 49.26041,
-   "lng": -123.09668
-  },
-  "fortune-sound-club": {
-   "name": "Fortune Sound Club",
-   "aliases": [],
-   "lat": 49.28053,
-   "lng": -123.10075
-  },
-  "pne-forum": {
-   "name": "PNE Forum",
-   "aliases": [],
-   "lat": 49.28317,
-   "lng": -123.0368
-  },
-  "village-studios": {
-   "name": "Village Studios",
-   "aliases": [],
-   "lat": 49.27939,
-   "lng": -123.13002
-  },
-  "fox-cabaret": {
-   "name": "Fox Cabaret",
-   "aliases": [],
-   "lat": 49.26426,
-   "lng": -123.10118
   },
   "the-cobalt": {
    "name": "The Cobalt",
@@ -65,26 +39,6 @@
    ],
    "lat": 49.2765,
    "lng": -123.10008
-  },
-  "bully-s": {
-   "name": "Bully's",
-   "aliases": [],
-   "lat": 49.20477,
-   "lng": -122.90957
-  },
-  "the-astoria": {
-   "name": "The Astoria",
-   "aliases": [
-    "Astoria Pub"
-   ],
-   "lat": 49.28128,
-   "lng": -123.08796
-  },
-  "commodore-ballroom": {
-   "name": "Commodore Ballroom",
-   "aliases": [],
-   "lat": 49.28065,
-   "lng": -123.12089
   },
   "the-wise-hall": {
    "name": "The WISE Hall",
@@ -98,12 +52,6 @@
    "lat": 49.27942,
    "lng": -123.12994
   },
-  "hollywood-theatre": {
-   "name": "Hollywood Theatre",
-   "aliases": [],
-   "lat": 49.26444,
-   "lng": -123.17453
-  },
   "harbour-event-centre": {
    "name": "Harbour Event Centre",
    "aliases": [
@@ -114,9 +62,17 @@
    "lat": 49.27464,
    "lng": -123.10901
   },
+  "hollywood-theatre": {
+   "name": "Hollywood Theatre",
+   "aliases": [],
+   "lat": 49.26444,
+   "lng": -123.17453
+  },
   "rickshaw-theatre": {
    "name": "Rickshaw Theatre",
-   "aliases": [],
+   "aliases": [
+    "The Rickshaw"
+   ],
    "lat": 49.28102,
    "lng": -123.09853
   },
@@ -150,6 +106,12 @@
    "lat": 49.27981,
    "lng": -123.12164
   },
+  "fox-cabaret": {
+   "name": "Fox Cabaret",
+   "aliases": [],
+   "lat": 49.26426,
+   "lng": -123.10118
+  },
   "the-american": {
    "name": "The American",
    "aliases": [],
@@ -170,11 +132,43 @@
    "lat": 49.14434,
    "lng": -122.29198
   },
+  "biltmore-cabaret": {
+   "name": "Biltmore Cabaret",
+   "aliases": [],
+   "lat": 49.26041,
+   "lng": -123.09668
+  },
+  "the-astoria": {
+   "name": "The Astoria",
+   "aliases": [],
+   "lat": 49.28147,
+   "lng": -123.08793
+  },
+  "fortune-sound-club": {
+   "name": "Fortune Sound Club",
+   "aliases": [
+    "Fortune Night Club"
+   ],
+   "lat": 49.28053,
+   "lng": -123.10075
+  },
   "platform-9": {
    "name": "Platform 9",
    "aliases": [],
    "lat": null,
    "lng": null
+  },
+  "village-studios": {
+   "name": "Village Studios",
+   "aliases": [],
+   "lat": 49.27939,
+   "lng": -123.13002
+  },
+  "bully-s": {
+   "name": "Bully's",
+   "aliases": [],
+   "lat": 49.20477,
+   "lng": -122.90957
   },
   "heaven-bar-grill": {
    "name": "Heaven Bar & Grill",
@@ -226,6 +220,14 @@
    "lat": 49.2798,
    "lng": -123.12042
   },
+  "the-centre-in-vancouver": {
+   "name": "The Centre in Vancouver",
+   "aliases": [
+    "Centre in Vancouver for the Performing Arts"
+   ],
+   "lat": 49.27965,
+   "lng": -123.11665
+  },
   "vancouver-playhouse": {
    "name": "Vancouver Playhouse",
    "aliases": [],
@@ -267,6 +269,12 @@
    "aliases": [],
    "lat": null,
    "lng": null
+  },
+  "remedy-tattoo": {
+   "name": "Remedy Tattoo",
+   "aliases": [],
+   "lat": 49.04839,
+   "lng": -122.29015
   },
   "tradex": {
    "name": "Tradex",
@@ -328,6 +336,12 @@
    "lat": 49.21396,
    "lng": -122.92777
   },
+  "green-auto": {
+   "name": "Green Auto",
+   "aliases": [],
+   "lat": null,
+   "lng": null
+  },
   "bimini-s-since-1975": {
    "name": "Bimini's since 1975",
    "aliases": [],
@@ -384,277 +398,6 @@
   }
  },
  "events": [
-  {
-   "source": "songkick",
-   "id": "43373561",
-   "name": "ALLEYCVT @ PNE Forum",
-   "start": "2026-11-13T17:30:00",
-   "status": "EventScheduled",
-   "venue": "PNE Forum",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": 49.28317,
-   "lng": -123.0368,
-   "url": "https://www.songkick.com/concerts/43373561-alleycvt-at-pne-forum",
-   "performers": [
-    {
-     "name": "ALLEYCVT",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10300948-alleycvt?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Cyclops",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/163455-cyclops?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Tazu",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10332045-tazu?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "PNE Forum",
-   "venue_id": "pne-forum"
-  },
-  {
-   "source": "songkick",
-   "id": "43254178009",
-   "name": "Sassy 009 @ Fortune Sound Club",
-   "start": "2026-11-13T18:00:00",
-   "status": "EventScheduled",
-   "venue": "Fortune Sound Club",
-   "venue_url": "http://www.fortunesoundclub.com/",
-   "locality": "Vancouver",
-   "lat": 49.28053,
-   "lng": -123.10075,
-   "url": "https://www.songkick.com/concerts/43254178-sassy-009-at-fortune-sound-club",
-   "performers": [
-    {
-     "name": "Sassy 009",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/9382234-sassy-009?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Fortune Sound Club",
-   "venue_id": "fortune-sound-club"
-  },
-  {
-   "source": "songkick",
-   "id": "43417351",
-   "name": "Michael Bernard Fitzgerald @ Fox Cabaret",
-   "start": "2026-11-13T18:30:00",
-   "status": "EventScheduled",
-   "venue": "Fox Cabaret",
-   "venue_url": "http://www.foxcabaret.com/",
-   "locality": "Vancouver",
-   "lat": 49.26426,
-   "lng": -123.10118,
-   "url": "https://www.songkick.com/concerts/43417351-michael-bernard-fitzgerald-at-fox-cabaret",
-   "performers": [
-    {
-     "name": "Michael Bernard Fitzgerald",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/637917-michael-bernard-fitzgerald?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Fox Cabaret",
-   "venue_id": "fox-cabaret"
-  },
-  {
-   "source": "songkick",
-   "id": "43066697",
-   "name": "Wolf Parade @ The Pearl",
-   "start": "2026-11-13T19:00:00",
-   "status": "EventScheduled",
-   "venue": "The Pearl",
-   "venue_url": "https://thepearlvancouver.com/",
-   "locality": "Vancouver",
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "url": "https://www.songkick.com/concerts/43066697-wolf-parade-at-pearl",
-   "performers": [
-    {
-     "name": "Wolf Parade",
-     "songkick_genres": [
-      "indie_alternative",
-      "rock",
-      "hip_hop",
-      "folk_blues"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/269984-wolf-parade?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Destroyer (CA)",
-     "songkick_genres": [
-      "indie_alternative",
-      "rock",
-      "hip_hop",
-      "folk_blues"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/10135790-destroyer-ca?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The Pearl",
-   "venue_id": "the-pearl"
-  },
-  {
-   "source": "songkick",
-   "id": "43255786",
-   "name": "Margaret Glaspy @ Biltmore Cabaret",
-   "start": "2026-11-13T19:00:00",
-   "status": "EventScheduled",
-   "venue": "Biltmore Cabaret",
-   "venue_url": "http://www.biltmorecabaret.com",
-   "locality": "Vancouver",
-   "lat": 49.26041,
-   "lng": -123.09668,
-   "url": "https://www.songkick.com/concerts/43255786-margaret-glaspy-at-biltmore-cabaret",
-   "performers": [
-    {
-     "name": "Margaret Glaspy",
-     "songkick_genres": [
-      "folk_blues",
-      "indie_alternative"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/1025898-margaret-glaspy?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Anna Tivel",
-     "songkick_genres": [
-      "folk_blues",
-      "indie_alternative"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/5201748-anna-tivel?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Biltmore Cabaret",
-   "venue_id": "biltmore-cabaret"
-  },
-  {
-   "source": "songkick",
-   "id": "43280061",
-   "name": "truck violence @ The Cobalt",
-   "start": "2026-11-13T19:00:00",
-   "status": "EventScheduled",
-   "venue": "The Cobalt",
-   "venue_url": "http://thecobalt.ca",
-   "locality": "Vancouver",
-   "lat": 49.2765,
-   "lng": -123.10008,
-   "url": "https://www.songkick.com/concerts/43280061-truck-violence-at-cobalt",
-   "performers": [
-    {
-     "name": "truck violence",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10308323-truck-violence?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Tall Mary",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10332191-tall-mary?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Emma Goldman",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/9199269-emma-goldman?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The Cobalt",
-   "venue_id": "the-cobalt"
-  },
-  {
-   "source": "songkick",
-   "id": "43513579",
-   "name": "deathtape @ Astoria Pub",
-   "start": "2026-11-13T19:00:00",
-   "status": "EventScheduled",
-   "venue": "The Astoria",
-   "venue_url": "https://www.facebook.com/astoria.hastings",
-   "locality": "Vancouver",
-   "lat": 49.28128,
-   "lng": -123.08796,
-   "url": "https://www.songkick.com/concerts/43513579-deathtape-at-astoria-pub",
-   "performers": [
-    {
-     "name": "deathtape",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10384079-deathtape?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "The Haunting Party",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10419490-haunting-party?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Astoria Pub",
-   "venue_id": "the-astoria"
-  },
-  {
-   "source": "songkick",
-   "id": "43280059",
-   "name": "BoyNextDoor @ Queen Elizabeth Theatre",
-   "start": "2026-11-13T19:30:00",
-   "status": "EventScheduled",
-   "venue": "Queen Elizabeth Theatre",
-   "venue_url": "http://vancouver.ca/parks-recreation-culture/queen-elizabeth-theatre.aspx",
-   "locality": "Vancouver",
-   "lat": 49.28039,
-   "lng": -123.11266,
-   "url": "https://www.songkick.com/concerts/43280059-boynextdoor-at-queen-elizabeth-theatre",
-   "performers": [
-    {
-     "name": "BoyNextDoor",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/8973554-boynextdoor?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Queen Elizabeth Theatre",
-   "venue_id": "queen-elizabeth-theatre"
-  },
-  {
-   "source": "songkick",
-   "id": "43399733",
-   "name": "CHILIØ @ Bully's",
-   "start": "2026-11-13T19:30:00",
-   "status": "EventScheduled",
-   "venue": "Bully's",
-   "venue_url": null,
-   "locality": "New Westminster",
-   "lat": 49.20477,
-   "lng": -122.90957,
-   "url": "https://www.songkick.com/concerts/43399733-chilio-at-bullys",
-   "performers": [
-    {
-     "name": "CHILIØ",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10287474-chilio?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Bully's",
-   "venue_id": "bully-s"
-  },
-  {
-   "source": "songkick",
-   "id": "43452477666",
-   "name": "Panteros666 @ Village Studios",
-   "start": "2026-11-13T21:00:00",
-   "status": "EventScheduled",
-   "venue": "Village Studios",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": 49.27939,
-   "lng": -123.13002,
-   "url": "https://www.songkick.com/concerts/43452477-panteros666-at-village-studios",
-   "performers": [
-    {
-     "name": "Panteros666",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/4090816-panteros666?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Village Studios",
-   "venue_id": "village-studios"
-  },
   {
    "source": "songkick",
    "id": "43055534",
@@ -1741,6 +1484,11 @@
      "name": "Scarlet Fever",
      "songkick_genres": [],
      "songkick_url": "https://www.songkick.com/artists/1071393-scarlet-fever?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Sleep Country",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10419692-sleep-country?utm_medium=organic&utm_source=microformat"
     }
    ],
    "venue_raw": "Rickshaw Theatre",
@@ -2407,7 +2155,7 @@
    "name": "Pooh @ Centre in Vancouver for the Performing Arts",
    "start": "2026-11-25T21:00:00",
    "status": "EventScheduled",
-   "venue": "Centre in Vancouver for the Performing Arts",
+   "venue": "The Centre in Vancouver",
    "venue_url": "http://www.centreinvancouver.com/",
    "locality": "Vancouver",
    "lat": 49.27965,
@@ -2421,7 +2169,7 @@
     }
    ],
    "venue_raw": "Centre in Vancouver for the Performing Arts",
-   "venue_id": "centre-in-vancouver-for-the-performing-arts"
+   "venue_id": "the-centre-in-vancouver"
   },
   {
    "source": "songkick",
@@ -2522,7 +2270,7 @@
    "name": "TripleS (KR) @ The Centre in Vancouver",
    "start": "2026-11-26T19:30:00",
    "status": "EventScheduled",
-   "venue": "Centre in Vancouver for the Performing Arts",
+   "venue": "The Centre in Vancouver",
    "venue_url": null,
    "locality": "Vancouver",
    "lat": 49.28006,
@@ -2536,7 +2284,7 @@
     }
    ],
    "venue_raw": "The Centre in Vancouver",
-   "venue_id": "centre-in-vancouver-for-the-performing-arts"
+   "venue_id": "the-centre-in-vancouver"
   },
   {
    "source": "songkick",
@@ -2836,6 +2584,43 @@
    ],
    "venue_raw": "Rickshaw Theatre",
    "venue_id": "rickshaw-theatre"
+  },
+  {
+   "source": "songkick",
+   "id": "43516848",
+   "name": "The Sylvia Platters @ Remedy Tattoo",
+   "start": "2026-11-28T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Remedy Tattoo",
+   "venue_url": null,
+   "locality": "Abbotsford",
+   "lat": 49.04839,
+   "lng": -122.29015,
+   "url": "https://www.songkick.com/concerts/43516848-sylvia-platters-at-remedy-tattoo",
+   "performers": [
+    {
+     "name": "The Sylvia Platters",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8509208-sylvia-platters?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Big Deal (Canada)",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10389038-big-deal-canada?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Goblin Vessel",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10419693-goblin-vessel?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Daniel Sparrow with the Visions",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10318547-daniel-sparrow-with-the-visions?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Remedy Tattoo",
+   "venue_id": "remedy-tattoo"
   },
   {
    "source": "songkick",
@@ -3997,6 +3782,43 @@
   },
   {
    "source": "songkick",
+   "id": "43516845",
+   "name": "The Sylvia Platters @ Green Auto",
+   "start": "2026-12-11",
+   "status": "EventScheduled",
+   "venue": "Green Auto",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "lat": null,
+   "lng": null,
+   "url": "https://www.songkick.com/concerts/43516845-sylvia-platters-at-green-auto",
+   "performers": [
+    {
+     "name": "The Sylvia Platters",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8509208-sylvia-platters?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Alex Little",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10419691-alex-little?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Sleep Country",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10419692-sleep-country?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Rainbows End",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10397971-rainbows-end?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Green Auto",
+   "venue_id": "green-auto"
+  },
+  {
+   "source": "songkick",
    "id": "43502684",
    "name": "doom loops @ Rickshaw Theatre",
    "start": "2026-12-11T18:00:00",
@@ -4354,6 +4176,11 @@
      "name": "SideQuest",
      "songkick_genres": [],
      "songkick_url": "https://www.songkick.com/artists/9915044-sidequest?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "The Side Quest",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/3697576-side-quest?utm_medium=organic&utm_source=microformat"
     }
    ],
    "venue_raw": "Celebrities",
@@ -4655,7 +4482,7 @@
    "source": "songkick",
    "id": "43461109",
    "name": "ZULAN @ Commodore Ballroom",
-   "start": "2026-12-17T19:00:00",
+   "start": "2026-12-17T20:00:00",
    "status": "EventScheduled",
    "venue": "Commodore Ballroom",
    "venue_url": "http://www.commodoreballroom.ca/",
@@ -4789,6 +4616,249 @@
     }
    ],
    "venue_raw": "Harbour Event Centre",
+   "venue_id": "harbour-event-centre"
+  },
+  {
+   "source": "songkick",
+   "id": "43471547",
+   "name": "Basic @ Fox Cabaret",
+   "start": "2026-12-19",
+   "status": "EventScheduled",
+   "venue": "Fox Cabaret",
+   "venue_url": "http://www.foxcabaret.com/",
+   "locality": "Vancouver",
+   "lat": 49.26426,
+   "lng": -123.10118,
+   "url": "https://www.songkick.com/concerts/43471547-basic-at-fox-cabaret",
+   "performers": [
+    {
+     "name": "Basic",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/259065-basic?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Fox Cabaret",
+   "venue_id": "fox-cabaret"
+  },
+  {
+   "source": "songkick",
+   "id": "43436155",
+   "name": "Dawn Pemberton @ Inlet Theatre",
+   "start": "2026-12-19",
+   "status": "EventScheduled",
+   "venue": "Inlet Theatre",
+   "venue_url": null,
+   "locality": "Port Moody",
+   "lat": 49.28255,
+   "lng": -122.82986,
+   "url": "https://www.songkick.com/concerts/43436155-dawn-pemberton-at-inlet-theatre",
+   "performers": [
+    {
+     "name": "Dawn Pemberton",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8471533-dawn-pemberton?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Jodi Proznick",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/518354-jodi-proznick?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Inlet Theatre",
+   "venue_id": "inlet-theatre"
+  },
+  {
+   "source": "songkick",
+   "id": "43495998",
+   "name": "Disney @ Orpheum",
+   "start": "2026-12-19T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Orpheum Theatre",
+   "venue_url": "https://vancouvercivictheatres.com/venues/orpheum/",
+   "locality": "Vancouver",
+   "lat": 49.28038,
+   "lng": -123.1126,
+   "url": "https://www.songkick.com/concerts/43495998-disney-at-orpheum",
+   "performers": [
+    {
+     "name": "Disney",
+     "songkick_genres": [
+      "pop",
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/520066-disney?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Orpheum",
+   "venue_id": "orpheum-theatre"
+  },
+  {
+   "source": "songkick",
+   "id": "43477828",
+   "name": "Lynnic @ Fortune Sound Club",
+   "start": "2026-12-19T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Fortune Sound Club",
+   "venue_url": "http://www.fortunesoundclub.com/",
+   "locality": "Vancouver",
+   "lat": 49.28053,
+   "lng": -123.10075,
+   "url": "https://www.songkick.com/concerts/43477828-lynnic-at-fortune-sound-club",
+   "performers": [
+    {
+     "name": "Lynnic",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10365305-lynnic?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "ItsArius",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10393986-itsarius?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Fortune Sound Club",
+   "venue_id": "fortune-sound-club"
+  },
+  {
+   "source": "songkick",
+   "id": "43412769",
+   "name": "Crankdat @ Pacific Coliseum",
+   "start": "2026-12-19T19:00:00",
+   "status": "EventScheduled",
+   "venue": "Pacific Coliseum",
+   "venue_url": "http://www.pne.ca/",
+   "locality": "Vancouver",
+   "lat": 49.28549,
+   "lng": -123.04361,
+   "url": "https://www.songkick.com/concerts/43412769-crankdat-at-pacific-coliseum",
+   "performers": [
+    {
+     "name": "Crankdat",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8728764-crankdat?utm_medium=organic&utm_source=microformat"
+    },
+    {
+     "name": "Juelz",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/8997324-juelz?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Pacific Coliseum",
+   "venue_id": "pacific-coliseum"
+  },
+  {
+   "source": "songkick",
+   "id": "43409204",
+   "name": "Neumonic @ Pacific Coliseum",
+   "start": "2026-12-19T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Pacific Coliseum",
+   "venue_url": "http://www.pne.ca/",
+   "locality": "Vancouver",
+   "lat": 49.28549,
+   "lng": -123.04361,
+   "url": "https://www.songkick.com/concerts/43409204-neumonic-at-pacific-coliseum",
+   "performers": [
+    {
+     "name": "Neumonic",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10196176-neumonic?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Pacific Coliseum",
+   "venue_id": "pacific-coliseum"
+  },
+  {
+   "source": "songkick",
+   "id": "43407212",
+   "name": "Matthew Good @ Casino Vancouver",
+   "start": "2026-12-19T19:50:00",
+   "status": "EventScheduled",
+   "venue": "Casino Vancouver",
+   "venue_url": null,
+   "locality": "Coquitlam",
+   "lat": 49.22768,
+   "lng": -122.83765,
+   "url": "https://www.songkick.com/concerts/43407212-matthew-good-at-casino-vancouver",
+   "performers": [
+    {
+     "name": "Matthew Good",
+     "songkick_genres": [
+      "rock",
+      "indie_alternative"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/19578-matthew-good?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Casino Vancouver",
+   "venue_id": "casino-vancouver"
+  },
+  {
+   "source": "songkick",
+   "id": "43375536",
+   "name": "The Funk Hunters @ Commodore Ballroom",
+   "start": "2026-12-19T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Commodore Ballroom",
+   "venue_url": "http://www.commodoreballroom.ca/",
+   "locality": "Vancouver",
+   "lat": 49.28065,
+   "lng": -123.12089,
+   "url": "https://www.songkick.com/concerts/43375536-funk-hunters-at-commodore-ballroom",
+   "performers": [
+    {
+     "name": "The Funk Hunters",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/3909381-funk-hunters?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Commodore Ballroom",
+   "venue_id": "commodore-ballroom"
+  },
+  {
+   "source": "songkick",
+   "id": "43440979",
+   "name": "Łaszewo @ Celebrities",
+   "start": "2026-12-19T21:00:00",
+   "status": "EventScheduled",
+   "venue": "Celebrities",
+   "venue_url": "http://celebritiesnightclub.com",
+   "locality": "Vancouver",
+   "lat": 49.27942,
+   "lng": -123.12994,
+   "url": "https://www.songkick.com/concerts/43440979-laszewo-at-celebrities",
+   "performers": [
+    {
+     "name": "Łaszewo",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/10167354-laszewo?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Celebrities",
+   "venue_id": "celebrities"
+  },
+  {
+   "source": "songkick",
+   "id": "43515466",
+   "name": "Sick Individuals @ Harbour Event & Convention Centre",
+   "start": "2026-12-19T22:00:00",
+   "status": "EventScheduled",
+   "venue": "Harbour Event Centre",
+   "venue_url": null,
+   "locality": "Vancouver",
+   "lat": 49.2749,
+   "lng": -123.10887,
+   "url": "https://www.songkick.com/concerts/43515466-sick-individuals-at-harbour-event-and-convention-centre",
+   "performers": [
+    {
+     "name": "Sick Individuals",
+     "songkick_genres": [
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/5042003-sick-individuals?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Harbour Event & Convention Centre",
    "venue_id": "harbour-event-centre"
   }
  ],

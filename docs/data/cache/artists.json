@@ -16557,10 +16557,10 @@
 },
 "rainbows end": {
 "query": "Rainbows End",
-"fetched_at": "2026-10-07T20:06:20+00:00",
+"fetched_at": "2026-11-14T19:19:05+00:00",
 "reach": {
-"listeners": 33,
-"playcount": 265,
+"listeners": 35,
+"playcount": 268,
 "tags": [],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Rainbows+End",
@@ -25120,15 +25120,16 @@
 },
 "goblin vessel": {
 "query": "Goblin Vessel",
-"fetched_at": "2026-09-08T18:00:05+00:00",
+"fetched_at": "2026-11-14T19:19:02+00:00",
 "reach": {
-"listeners": 3,
-"playcount": 18,
+"listeners": 4,
+"playcount": 19,
 "tags": [],
 "tier": 1,
-"lastfm_url": "https://www.last.fm/music/Goblin+Vessel"
+"lastfm_url": "https://www.last.fm/music/Goblin+Vessel",
+"mbid": null
 },
-"matcher": 2,
+"matcher": 4,
 "spotify_id": "0MFwPV5a4XqEPyP1YHWsPQ",
 "spotify_name": "Goblin Vessel",
 "url": "https://open.spotify.com/artist/0MFwPV5a4XqEPyP1YHWsPQ",
@@ -25138,29 +25139,30 @@
 "image": "https://i.scdn.co/image/ab67616d0000485106fc23a789f026e1c0b5269f",
 "tracks": [
 {
-"id": "0vsD85Qlu3W86XKTE12lUG",
-"uri": "spotify:track:0vsD85Qlu3W86XKTE12lUG",
-"name": "Banshee // Corrupted Entity",
+"id": "6IhRbqlfca0xbOA0K2QB5U",
+"uri": "spotify:track:6IhRbqlfca0xbOA0K2QB5U",
+"name": "Cosmic Yawn",
 "popularity": null,
 "album": "COSMIC YAWN",
 "album_type": "single",
 "release_date": "2026-07-03",
-"duration_ms": 272896,
+"duration_ms": 391790,
 "explicit": false
 },
 {
-"id": "4QnvmzRN8ubAg5TGUwxPrS",
-"uri": "spotify:track:4QnvmzRN8ubAg5TGUwxPrS",
-"name": "Astral Witch",
+"id": "3hn9fkUH7aUgLNHZp9KBrP",
+"uri": "spotify:track:3hn9fkUH7aUgLNHZp9KBrP",
+"name": "Saturns Ritual",
 "popularity": null,
 "album": "COSMIC YAWN",
 "album_type": "single",
 "release_date": "2026-07-03",
-"duration_ms": 203139,
+"duration_ms": 330647,
 "explicit": false
 }
 ],
-"rank_source": "search"
+"rank_source": "lastfm",
+"mbid": null
 },
 "asphyxiated": {
 "query": "Asphyxiated",
@@ -30805,13 +30807,14 @@
 },
 "sleep country": {
 "query": "Sleep Country",
-"fetched_at": "2026-09-11T05:28:54+00:00",
+"fetched_at": "2026-11-14T19:18:55+00:00",
 "reach": {
 "listeners": 32,
-"playcount": 107,
+"playcount": 112,
 "tags": [],
 "tier": 1,
-"lastfm_url": "https://www.last.fm/music/Sleep+country"
+"lastfm_url": "https://www.last.fm/music/Sleep+country",
+"mbid": null
 },
 "matcher": 4,
 "spotify_id": "3I73RrTpWR1nEXIe3pU2T7",
@@ -30823,29 +30826,30 @@
 "image": "https://i.scdn.co/image/ab67616d000048513c9bb950e5ca290e527538c9",
 "tracks": [
 {
-"id": "2q7yvS2fUIkQniO5WwRprH",
-"uri": "spotify:track:2q7yvS2fUIkQniO5WwRprH",
+"id": "5U5r8ZcM4jUjp2ed4C1m4G",
+"uri": "spotify:track:5U5r8ZcM4jUjp2ed4C1m4G",
 "name": "VICE GRIPS",
 "popularity": null,
-"album": "Sleep Country",
+"album": "VICE GRIPS",
 "album_type": "single",
-"release_date": "2026-07-31",
+"release_date": "2025-08-31",
 "duration_ms": 194650,
 "explicit": false
 },
 {
-"id": "26upT5IMoIMnqQri6DSgYj",
-"uri": "spotify:track:26upT5IMoIMnqQri6DSgYj",
+"id": "6uJsALoBMqRnDv0ZHE7x0u",
+"uri": "spotify:track:6uJsALoBMqRnDv0ZHE7x0u",
 "name": "Devoured",
 "popularity": null,
-"album": "Sleep Country",
+"album": "Devoured",
 "album_type": "single",
-"release_date": "2026-07-31",
+"release_date": "2026-07-26",
 "duration_ms": 168796,
 "explicit": false
 }
 ],
-"rank_source": "lastfm"
+"rank_source": "lastfm",
+"mbid": null
 },
 "martin boys": {
 "query": "The Martin Boys",
@@ -33601,15 +33605,15 @@
 },
 "dawn pemberton": {
 "query": "Dawn Pemberton",
-"fetched_at": "2026-10-13T20:17:17+00:00",
+"fetched_at": "2026-11-14T19:19:10+00:00",
 "reach": {
-"listeners": 295,
-"playcount": 1935,
+"listeners": 296,
+"playcount": 1940,
 "tags": [
 "soul",
 "rnb",
 "indie soul",
-"underground soul"
+"soulful voices that ought to be cherished"
 ],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Dawn+Pemberton",
@@ -39209,10 +39213,10 @@
 },
 "jodi proznick": {
 "query": "Jodi Proznick",
-"fetched_at": "2026-09-20T17:34:51+00:00",
+"fetched_at": "2026-11-14T19:19:10+00:00",
 "reach": {
-"listeners": 1547,
-"playcount": 8194,
+"listeners": 1551,
+"playcount": 8214,
 "tags": [
 "bass",
 "jazz",
@@ -52527,14 +52531,15 @@
 "query": "Destroyer (CA)",
 "fetched_at": "2026-11-13T20:56:55+00:00",
 "reach": {
-"listeners": 759145,
-"playcount": 24570593,
+"listeners": 759196,
+"playcount": 24572808,
 "tags": [
 "indie rock",
 "indie pop"
 ],
 "tier": 4,
-"lastfm_url": "https://www.last.fm/music/Destroyer"
+"lastfm_url": "https://www.last.fm/music/Destroyer",
+"mbid": "61604b45-8a91-4e33-a1b6-45d7b1fec4e5"
 },
 "matcher": 4,
 "spotify_id": "22ojy4H4ZVpowC4lRRC8In",
@@ -52569,7 +52574,7 @@
 }
 ],
 "rank_source": "lastfm",
-"mbid": null
+"mbid": "61604b45-8a91-4e33-a1b6-45d7b1fec4e5"
 },
 "margaret glaspy": {
 "query": "Margaret Glaspy",
@@ -54244,7 +54249,8 @@
 "amapiano"
 ],
 "tier": 4,
-"lastfm_url": "https://www.last.fm/music/Tyla"
+"lastfm_url": "https://www.last.fm/music/Tyla",
+"mbid": "2bf761c6-4bcf-4cfc-a388-8fcb2eea8cc8"
 },
 "matcher": 4,
 "spotify_id": "3SozjO3Lat463tQICI9LcE",
@@ -54279,7 +54285,7 @@
 }
 ],
 "rank_source": "lastfm",
-"mbid": null
+"mbid": "2bf761c6-4bcf-4cfc-a388-8fcb2eea8cc8"
 },
 "bonobo": {
 "query": "Bonobo",
@@ -64126,5 +64132,602 @@
 ],
 "rank_source": "lastfm",
 "mbid": "4166d984-3486-4515-87e9-9b890525d125"
+},
+"big deal canada": {
+"query": "Big Deal (Canada)",
+"fetched_at": "2026-11-14T19:18:58+00:00",
+"reach": {
+"listeners": 97574,
+"playcount": 1060860,
+"tags": [
+"folk",
+"hardcore",
+"dream pop"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Big+Deal"
+},
+"matcher": 4,
+"spotify_id": "4Ospdb83qozqZ8RXrWGHVN",
+"spotify_name": "Big Deal",
+"url": "https://open.spotify.com/artist/4Ospdb83qozqZ8RXrWGHVN",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab67616d00004851f462fe5f27604f81de94216a",
+"tracks": [
+{
+"id": "54knJto23iy9l6ZG57PuD7",
+"uri": "spotify:track:54knJto23iy9l6ZG57PuD7",
+"name": "Diamond Girl",
+"popularity": null,
+"album": "Non Sufficient Funds",
+"album_type": "album",
+"release_date": "2007-01-01",
+"duration_ms": 210400,
+"explicit": false
+},
+{
+"id": "5AGUXDv6MiO0QBMQjm3z0s",
+"uri": "spotify:track:5AGUXDv6MiO0QBMQjm3z0s",
+"name": "No Big Deal",
+"popularity": null,
+"album": "Non Sufficient Funds",
+"album_type": "album",
+"release_date": "2007-01-01",
+"duration_ms": 218466,
+"explicit": false
+}
+],
+"rank_source": "search",
+"mbid": null
+},
+"daniel sparrow with visions": {
+"query": "Daniel Sparrow with the Visions",
+"fetched_at": "2026-11-14T19:19:03+00:00",
+"reach": {
+"listeners": 211,
+"playcount": 804,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Daniel+Sparrow+with+The+Visions",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "7ISAqP5reWUZfqlSXh4pDg",
+"spotify_name": "Daniel Sparrow with The Visions",
+"url": "https://open.spotify.com/artist/7ISAqP5reWUZfqlSXh4pDg",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178f59d95cbbd7877864802d788",
+"tracks": [
+{
+"id": "5faatxguaShZBGVPXWscsC",
+"uri": "spotify:track:5faatxguaShZBGVPXWscsC",
+"name": "Holy Ghost",
+"popularity": null,
+"album": "Untitled",
+"album_type": "single",
+"release_date": "2024-09-20",
+"duration_ms": 205023,
+"explicit": false
+},
+{
+"id": "30f8msngrTfAcAbnWzzmSJ",
+"uri": "spotify:track:30f8msngrTfAcAbnWzzmSJ",
+"name": "Let's Drive",
+"popularity": null,
+"album": "Untitled",
+"album_type": "single",
+"release_date": "2024-09-20",
+"duration_ms": 197645,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"alex little": {
+"query": "Alex Little",
+"fetched_at": "2026-11-14T19:19:05+00:00",
+"reach": {
+"listeners": 179,
+"playcount": 817,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Alex+Little",
+"mbid": "0f37a0a8-996e-4398-aca0-9cadb72f70bb"
+},
+"matcher": 4,
+"spotify_id": "6nzDLKjMpgeSR7GneK3zSG",
+"spotify_name": "Alex Little",
+"url": "https://open.spotify.com/artist/6nzDLKjMpgeSR7GneK3zSG",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1782000840008617203c9a9eb58",
+"tracks": [
+{
+"id": "74sYnirOIviVQrnYAZouq3",
+"uri": "spotify:track:74sYnirOIviVQrnYAZouq3",
+"name": "Forever",
+"popularity": null,
+"album": "Spider in the Sink",
+"album_type": "single",
+"release_date": "2025-11-19",
+"duration_ms": 205952,
+"explicit": false
+},
+{
+"id": "3PCgzFNolonJ2P16PDiApE",
+"uri": "spotify:track:3PCgzFNolonJ2P16PDiApE",
+"name": "Kid",
+"popularity": null,
+"album": "Spider in the Sink",
+"album_type": "single",
+"release_date": "2025-11-19",
+"duration_ms": 154709,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "0f37a0a8-996e-4398-aca0-9cadb72f70bb"
+},
+"side quest": {
+"query": "The Side Quest",
+"fetched_at": "2026-11-14T19:19:06+00:00",
+"reach": {
+"listeners": 20,
+"playcount": 621,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/The+Side+Quest",
+"mbid": "d9c40931-21bd-46f9-857c-90686a9d4186"
+},
+"matcher": 4,
+"spotify_id": "0o0wDL44EtT7nnT1wk4brR",
+"spotify_name": "The Side Quest",
+"url": "https://open.spotify.com/artist/0o0wDL44EtT7nnT1wk4brR",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab67616d000048513e5e12db6228c60bf75d2ea8",
+"tracks": [],
+"rank_source": "search",
+"mbid": "d9c40931-21bd-46f9-857c-90686a9d4186"
+},
+"basic": {
+"query": "Basic",
+"fetched_at": "2026-11-14T19:19:09+00:00",
+"spotify_id": null,
+"reach": {
+"listeners": 20156,
+"playcount": 120514,
+"tags": [
+"psytrance",
+"psychedelic",
+"full-on",
+"psychedelic trance"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/Basic",
+"mbid": "d4585689-f507-4423-b196-281205ac53c7"
+},
+"matcher": 4,
+"candidates": [
+"ARDI Artist Music",
+"Artist Music Video",
+"Basick",
+"B.A.S.I.C.",
+"Basic Channel",
+"Basic Tape"
+]
+},
+"disney": {
+"query": "Disney",
+"fetched_at": "2026-11-14T19:19:14+00:00",
+"reach": {
+"listeners": 518201,
+"playcount": 13271239,
+"tags": [
+"soundtrack",
+"disney",
+"musical",
+"soundtracks"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/Disney",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "3xvaSlT4xsyk6lY1ESOspO",
+"spotify_name": "Disney",
+"url": "https://open.spotify.com/artist/3xvaSlT4xsyk6lY1ESOspO",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178a7b08a7a2b16e9475b018c5e",
+"tracks": [
+{
+"id": "3vJIaiTIHxHhYafTSPNiH4",
+"uri": "spotify:track:3vJIaiTIHxHhYafTSPNiH4",
+"name": "Zoo",
+"popularity": null,
+"album": "Zootopia 2 (Original Motion Picture Soundtrack)",
+"album_type": "album",
+"release_date": "2025-11-21",
+"duration_ms": 190822,
+"explicit": false
+},
+{
+"id": "5l5rUCU2QAA1sXTuNPlMHZ",
+"uri": "spotify:track:5l5rUCU2QAA1sXTuNPlMHZ",
+"name": "Hakuna Matata",
+"popularity": null,
+"album": "Lofi Minnie: Focus",
+"album_type": "compilation",
+"release_date": "2022-03-18",
+"duration_ms": 168746,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"lynnic": {
+"query": "Lynnic",
+"fetched_at": "2026-11-14T19:19:15+00:00",
+"reach": {
+"listeners": 148299,
+"playcount": 1515556,
+"tags": [
+"house",
+"electronic",
+"rave",
+"deep house"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Lynnic",
+"mbid": "d7bb5565-08e9-41f1-b138-c54724b29648"
+},
+"matcher": 4,
+"spotify_id": "1jpObIFmNOGfBc93WowfkT",
+"spotify_name": "Lynnic",
+"url": "https://open.spotify.com/artist/1jpObIFmNOGfBc93WowfkT",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178f0a6c56cd3bb8946a407c3d7",
+"tracks": [
+{
+"id": "5Pg4sYnFfcELdxjIxDXDPE",
+"uri": "spotify:track:5Pg4sYnFfcELdxjIxDXDPE",
+"name": "Your Heart",
+"popularity": null,
+"album": "Melancholia",
+"album_type": "album",
+"release_date": "2024-10-11",
+"duration_ms": 164875,
+"explicit": false
+},
+{
+"id": "3uBy64hFwBlmt48c2xnUlg",
+"uri": "spotify:track:3uBy64hFwBlmt48c2xnUlg",
+"name": "Rise",
+"popularity": null,
+"album": "Rise",
+"album_type": "single",
+"release_date": "2021-08-20",
+"duration_ms": 181598,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "d7bb5565-08e9-41f1-b138-c54724b29648"
+},
+"itsarius": {
+"query": "ItsArius",
+"fetched_at": "2026-11-14T19:19:15+00:00",
+"reach": {
+"listeners": 90295,
+"playcount": 573598,
+"tags": [
+"deep house",
+"house",
+"chill house"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/ItsArius",
+"mbid": "b2fd5807-b108-41e0-b45a-6734c40cd8ab"
+},
+"matcher": 4,
+"spotify_id": "6ObJnVTLETeHSeKhYreB27",
+"spotify_name": "ItsArius",
+"url": "https://open.spotify.com/artist/6ObJnVTLETeHSeKhYreB27",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17861a2329ef12d1ec5643d05af",
+"tracks": [
+{
+"id": "2Bz1aTnk3QLWkv89jHsMcb",
+"uri": "spotify:track:2Bz1aTnk3QLWkv89jHsMcb",
+"name": "Cornfield Chase",
+"popularity": null,
+"album": "Cornfield Chase",
+"album_type": "single",
+"release_date": "2023-04-21",
+"duration_ms": 141910,
+"explicit": false
+},
+{
+"id": "62p8rnPhvW8n1ZjCzqEh49",
+"uri": "spotify:track:62p8rnPhvW8n1ZjCzqEh49",
+"name": "Late Nights",
+"popularity": null,
+"album": "Late Nights",
+"album_type": "single",
+"release_date": "2023-03-10",
+"duration_ms": 151463,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "b2fd5807-b108-41e0-b45a-6734c40cd8ab"
+},
+"crankdat": {
+"query": "Crankdat",
+"fetched_at": "2026-11-14T19:19:17+00:00",
+"reach": {
+"listeners": 149616,
+"playcount": 2813015,
+"tags": [
+"melodic dubstep",
+"future bass",
+"dubstep",
+"electronic"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Crankdat",
+"mbid": "00b21266-918d-434c-b31e-3f1a3e96cad5"
+},
+"matcher": 4,
+"spotify_id": "5lCekoJW9jNq01B1wiqdAb",
+"spotify_name": "Crankdat",
+"url": "https://open.spotify.com/artist/5lCekoJW9jNq01B1wiqdAb",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17861da128d993e8ad92cf31e50",
+"tracks": [
+{
+"id": "6NZunfz5wbY8pYeDDlJUas",
+"uri": "spotify:track:6NZunfz5wbY8pYeDDlJUas",
+"name": "Redo",
+"popularity": null,
+"album": "Redo",
+"album_type": "single",
+"release_date": "2020-02-13",
+"duration_ms": 197260,
+"explicit": false
+},
+{
+"id": "3EeX2y7vdyDYv4995qSRGy",
+"uri": "spotify:track:3EeX2y7vdyDYv4995qSRGy",
+"name": "STFU",
+"popularity": null,
+"album": "STFU",
+"album_type": "single",
+"release_date": "2023-09-22",
+"duration_ms": 156521,
+"explicit": true
+}
+],
+"rank_source": "lastfm",
+"mbid": "00b21266-918d-434c-b31e-3f1a3e96cad5"
+},
+"juelz": {
+"query": "Juelz",
+"fetched_at": "2026-11-14T19:19:19+00:00",
+"reach": {
+"listeners": 91746,
+"playcount": 1679768,
+"tags": [
+"trap",
+"progressive psytrance",
+"psytrance",
+"drum and bass"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Juelz",
+"mbid": "578ed90a-5993-42c3-953a-aba335910e6d"
+},
+"matcher": 4,
+"spotify_id": "04p1jV00pBnrmh2rKl0jnT",
+"spotify_name": "Juelz",
+"url": "https://open.spotify.com/artist/04p1jV00pBnrmh2rKl0jnT",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178539f9783fb9981bf660a9a72",
+"tracks": [
+{
+"id": "7xAiilBIwJ7Bz6UJQLksM8",
+"uri": "spotify:track:7xAiilBIwJ7Bz6UJQLksM8",
+"name": "Distancing",
+"popularity": null,
+"album": "Distancing",
+"album_type": "single",
+"release_date": "2021-03-19",
+"duration_ms": 163764,
+"explicit": false
+},
+{
+"id": "7j4NRlFnPjXaxNmiXbtI0P",
+"uri": "spotify:track:7j4NRlFnPjXaxNmiXbtI0P",
+"name": "Inferno",
+"popularity": null,
+"album": "Inferno",
+"album_type": "single",
+"release_date": "2021-06-18",
+"duration_ms": 184462,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "578ed90a-5993-42c3-953a-aba335910e6d"
+},
+"neumonic": {
+"query": "Neumonic",
+"fetched_at": "2026-11-14T19:19:22+00:00",
+"reach": {
+"listeners": 20397,
+"playcount": 96013,
+"tags": [
+"breaks",
+"dubstep",
+"electronic",
+"drum and bass"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/neumonic",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "2vmS0sFSxIZccEf510Xb52",
+"spotify_name": "Neumonic",
+"url": "https://open.spotify.com/artist/2vmS0sFSxIZccEf510Xb52",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17856a6045889b271101746de05",
+"tracks": [
+{
+"id": "7F2sK6UUTmZqcSP5Jnh3RQ",
+"uri": "spotify:track:7F2sK6UUTmZqcSP5Jnh3RQ",
+"name": "Movin'",
+"popularity": null,
+"album": "Movin'",
+"album_type": "single",
+"release_date": "2024-03-22",
+"duration_ms": 201912,
+"explicit": false
+},
+{
+"id": "2gmj4Fh11bPCUfFt0IlKIz",
+"uri": "spotify:track:2gmj4Fh11bPCUfFt0IlKIz",
+"name": "Movin' VIP",
+"popularity": null,
+"album": "Movin'",
+"album_type": "single",
+"release_date": "2024-03-22",
+"duration_ms": 194571,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
+},
+"laszewo": {
+"query": "Łaszewo",
+"fetched_at": "2026-11-14T19:19:23+00:00",
+"reach": {
+"listeners": 222625,
+"playcount": 2808592,
+"tags": [
+"electronic",
+"pop",
+"electropop"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/%C5%81aszewo",
+"mbid": "8eea42ed-bece-4802-b6f2-1873d16795e6"
+},
+"matcher": 4,
+"spotify_id": "6jxGLrn1I14RIeRYodOpLN",
+"spotify_name": "Łaszewo",
+"url": "https://open.spotify.com/artist/6jxGLrn1I14RIeRYodOpLN",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178a55ac111cd03a0ce8f08107d",
+"tracks": [
+{
+"id": "3CPhCNH8rV1czzGSmXm9TH",
+"uri": "spotify:track:3CPhCNH8rV1czzGSmXm9TH",
+"name": "messy",
+"popularity": null,
+"album": "messy",
+"album_type": "single",
+"release_date": "2025-02-21",
+"duration_ms": 207873,
+"explicit": true
+},
+{
+"id": "7qAuCJDxFwt6Zp8WWVK15h",
+"uri": "spotify:track:7qAuCJDxFwt6Zp8WWVK15h",
+"name": "3am",
+"popularity": null,
+"album": "3am",
+"album_type": "single",
+"release_date": "2025-06-27",
+"duration_ms": 172928,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "8eea42ed-bece-4802-b6f2-1873d16795e6"
+},
+"sick individuals": {
+"query": "Sick Individuals",
+"fetched_at": "2026-11-14T19:19:23+00:00",
+"reach": {
+"listeners": 204121,
+"playcount": 2048450,
+"tags": [
+"electronic",
+"house",
+"progressive house",
+"dance"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Sick+Individuals",
+"mbid": "d2194c5e-c9a2-40ca-92f1-b3d6efe12ba0"
+},
+"matcher": 4,
+"spotify_id": "0XqFDQJjqW5PfhfBCb53LR",
+"spotify_name": "Sick Individuals",
+"url": "https://open.spotify.com/artist/0XqFDQJjqW5PfhfBCb53LR",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1786421b456acccbbdc50c3bce1",
+"tracks": [
+{
+"id": "51fVTCGq3cgLQVjHdkOU6L",
+"uri": "spotify:track:51fVTCGq3cgLQVjHdkOU6L",
+"name": "I AM - Radio Edit",
+"popularity": null,
+"album": "I AM",
+"album_type": "single",
+"release_date": "2013-09-16",
+"duration_ms": 202500,
+"explicit": false
+},
+{
+"id": "5xsOvbyD4XvvNQqQC6U4Wa",
+"uri": "spotify:track:5xsOvbyD4XvvNQqQC6U4Wa",
+"name": "Symphony",
+"popularity": null,
+"album": "Symphony",
+"album_type": "single",
+"release_date": "2018-10-26",
+"duration_ms": 202148,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "d2194c5e-c9a2-40ca-92f1-b3d6efe12ba0"
 }
 }
