@@ -2,71 +2,23 @@
  "city": "vancouver",
  "city_name": "Vancouver, BC",
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
- "scraped_at": "2026-11-14T19:18:00+00:00",
+ "scraped_at": "2026-11-15T19:52:31+00:00",
  "horizon_days": 35,
  "pages_fetched": 4,
  "do604_events": 0,
  "merged_duplicates": 3,
  "venues": {
-  "pne-forum": {
-   "name": "PNE Forum",
-   "aliases": [],
-   "lat": 49.28317,
-   "lng": -123.0368
-  },
   "the-pearl": {
    "name": "The Pearl",
    "aliases": [],
    "lat": 49.28071,
    "lng": -123.12143
   },
-  "commodore-ballroom": {
-   "name": "Commodore Ballroom",
-   "aliases": [],
-   "lat": 49.28065,
-   "lng": -123.12089
-  },
   "queen-elizabeth-theatre": {
    "name": "Queen Elizabeth Theatre",
    "aliases": [],
    "lat": 49.28039,
    "lng": -123.11266
-  },
-  "the-cobalt": {
-   "name": "The Cobalt",
-   "aliases": [
-    "The Cobalt Cabaret"
-   ],
-   "lat": 49.2765,
-   "lng": -123.10008
-  },
-  "the-wise-hall": {
-   "name": "The WISE Hall",
-   "aliases": [],
-   "lat": 49.2773,
-   "lng": -123.06607
-  },
-  "celebrities": {
-   "name": "Celebrities",
-   "aliases": [],
-   "lat": 49.27942,
-   "lng": -123.12994
-  },
-  "harbour-event-centre": {
-   "name": "Harbour Event Centre",
-   "aliases": [
-    "Harbour Convention Centre",
-    "Harbour Event & Convention Centre",
-    "Harbour Events Centre"
-   ],
-   "lat": 49.27464,
-   "lng": -123.10901
-  },
-  "hollywood-theatre": {
-   "name": "Hollywood Theatre",
-   "aliases": [],
-   "lat": 49.26444,
-   "lng": -123.17453
   },
   "rickshaw-theatre": {
    "name": "Rickshaw Theatre",
@@ -88,6 +40,14 @@
    "lat": 49.28027,
    "lng": -123.09295
   },
+  "the-cobalt": {
+   "name": "The Cobalt",
+   "aliases": [
+    "The Cobalt Cabaret"
+   ],
+   "lat": 49.2765,
+   "lng": -123.10008
+  },
   "epiphany-chapel-ubc": {
    "name": "Epiphany Chapel, Ubc",
    "aliases": [],
@@ -100,11 +60,23 @@
    "lat": null,
    "lng": null
   },
+  "pne-forum": {
+   "name": "PNE Forum",
+   "aliases": [],
+   "lat": 49.28317,
+   "lng": -123.0368
+  },
   "vogue-theatre": {
    "name": "Vogue Theatre",
    "aliases": [],
    "lat": 49.27981,
    "lng": -123.12164
+  },
+  "hollywood-theatre": {
+   "name": "Hollywood Theatre",
+   "aliases": [],
+   "lat": 49.26444,
+   "lng": -123.17453
   },
   "fox-cabaret": {
    "name": "Fox Cabaret",
@@ -131,6 +103,12 @@
    "aliases": [],
    "lat": 49.14434,
    "lng": -122.29198
+  },
+  "commodore-ballroom": {
+   "name": "Commodore Ballroom",
+   "aliases": [],
+   "lat": 49.28065,
+   "lng": -123.12089
   },
   "biltmore-cabaret": {
    "name": "Biltmore Cabaret",
@@ -175,6 +153,21 @@
    "aliases": [],
    "lat": null,
    "lng": null
+  },
+  "harbour-event-centre": {
+   "name": "Harbour Event Centre",
+   "aliases": [
+    "Harbour Event & Convention Centre",
+    "Harbour Events Centre"
+   ],
+   "lat": 49.2749,
+   "lng": -123.10887
+  },
+  "celebrities": {
+   "name": "Celebrities",
+   "aliases": [],
+   "lat": 49.27942,
+   "lng": -123.12994
   },
   "red-room": {
    "name": "Red Room",
@@ -342,6 +335,12 @@
    "lat": null,
    "lng": null
   },
+  "the-wise-hall": {
+   "name": "The WISE Hall",
+   "aliases": [],
+   "lat": 49.2773,
+   "lng": -123.06607
+  },
   "bimini-s-since-1975": {
    "name": "Bimini's since 1975",
    "aliases": [],
@@ -395,316 +394,23 @@
    "aliases": [],
    "lat": 49.76787,
    "lng": -123.15028
+  },
+  "harbour-theatre": {
+   "name": "Harbour Theatre",
+   "aliases": [],
+   "lat": null,
+   "lng": null
+  },
+  "chan-centre-for-the-performing-arts": {
+   "name": "Chan Centre for the Performing Arts",
+   "aliases": [
+    "The Chan Centre"
+   ],
+   "lat": null,
+   "lng": null
   }
  },
  "events": [
-  {
-   "source": "songkick",
-   "id": "43055534",
-   "name": "Raffi @ Queen Elizabeth Theatre",
-   "start": "2026-11-14T14:00:00",
-   "status": "EventScheduled",
-   "venue": "Queen Elizabeth Theatre",
-   "venue_url": "http://vancouver.ca/parks-recreation-culture/queen-elizabeth-theatre.aspx",
-   "locality": "Vancouver",
-   "lat": 49.28039,
-   "lng": -123.11266,
-   "url": "https://www.songkick.com/concerts/43055534-raffi-at-queen-elizabeth-theatre",
-   "performers": [
-    {
-     "name": "Raffi",
-     "songkick_genres": [
-      "electronic"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/262390-raffi?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Queen Elizabeth Theatre",
-   "venue_id": "queen-elizabeth-theatre"
-  },
-  {
-   "source": "songkick",
-   "id": "43227768",
-   "name": "Arch Enemy @ Commodore Ballroom",
-   "start": "2026-11-14T17:00:00",
-   "status": "EventScheduled",
-   "venue": "Commodore Ballroom",
-   "venue_url": "http://www.commodoreballroom.ca/",
-   "locality": "Vancouver",
-   "lat": 49.28065,
-   "lng": -123.12089,
-   "url": "https://www.songkick.com/concerts/43227768-arch-enemy-at-commodore-ballroom",
-   "performers": [
-    {
-     "name": "Arch Enemy",
-     "songkick_genres": [
-      "metal"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/247958-arch-enemy?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "The Black Dahlia Murder",
-     "songkick_genres": [
-      "metal"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/117567-black-dahlia-murder?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Septicflesh",
-     "songkick_genres": [
-      "metal"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/8340713-septicflesh?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Crypta",
-     "songkick_genres": [
-      "metal"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/10199460-crypta?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Thrown Into Exile",
-     "songkick_genres": [
-      "metal"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/4240236-thrown-into-exile?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Commodore Ballroom",
-   "venue_id": "commodore-ballroom"
-  },
-  {
-   "source": "songkick",
-   "id": "43226013",
-   "name": "Alex Cameron @ The Cobalt",
-   "start": "2026-11-14T18:00:00",
-   "status": "EventScheduled",
-   "venue": "The Cobalt",
-   "venue_url": "http://thecobalt.ca",
-   "locality": "Vancouver",
-   "lat": 49.2765,
-   "lng": -123.10008,
-   "url": "https://www.songkick.com/concerts/43226013-alex-cameron-at-cobalt",
-   "performers": [
-    {
-     "name": "Alex Cameron",
-     "songkick_genres": [
-      "indie_alternative"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/5680224-alex-cameron?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Josh Da Costa",
-     "songkick_genres": [
-      "indie_alternative"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/10215849-josh-da-costa?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The Cobalt",
-   "venue_id": "the-cobalt"
-  },
-  {
-   "source": "songkick",
-   "id": "43242942",
-   "name": "Holy Wave @ The WISE Hall",
-   "start": "2026-11-14T18:00:00",
-   "status": "EventScheduled",
-   "venue": "The WISE Hall",
-   "venue_url": "https://www.facebook.com/thewiseclub/",
-   "locality": "Vancouver",
-   "lat": 49.2773,
-   "lng": -123.06607,
-   "url": "https://www.songkick.com/concerts/43242942-holy-wave-at-wise-hall",
-   "performers": [
-    {
-     "name": "Holy Wave",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/2842856-holy-wave?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Queen Serene",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10190884-queen-serene?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Bloom Effect",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10303421-bloom-effect?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The WISE Hall",
-   "venue_id": "the-wise-hall"
-  },
-  {
-   "source": "songkick",
-   "id": "43320295",
-   "name": "Polyrhythmics @ Rickshaw Theatre",
-   "start": "2026-11-14T18:30:00",
-   "status": "EventScheduled",
-   "venue": "Rickshaw Theatre",
-   "venue_url": "http://www.liveatrickshaw.com",
-   "locality": "Vancouver",
-   "lat": 49.28102,
-   "lng": -123.09853,
-   "url": "https://www.songkick.com/concerts/43320295-polyrhythmics-at-rickshaw-theatre",
-   "performers": [
-    {
-     "name": "Polyrhythmics",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/3355721-polyrhythmics?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Rickshaw Theatre",
-   "venue_id": "rickshaw-theatre"
-  },
-  {
-   "source": "songkick",
-   "id": "43066622",
-   "name": "Wolf Parade @ The Pearl",
-   "start": "2026-11-14T19:00:00",
-   "status": "EventScheduled",
-   "venue": "The Pearl",
-   "venue_url": "https://thepearlvancouver.com/",
-   "locality": "Vancouver",
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "url": "https://www.songkick.com/concerts/43066622-wolf-parade-at-pearl",
-   "performers": [
-    {
-     "name": "Wolf Parade",
-     "songkick_genres": [
-      "indie_alternative",
-      "rock",
-      "hip_hop",
-      "folk_blues"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/269984-wolf-parade?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Destroyer (CA)",
-     "songkick_genres": [
-      "indie_alternative",
-      "rock",
-      "hip_hop",
-      "folk_blues"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/10135790-destroyer-ca?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The Pearl",
-   "venue_id": "the-pearl"
-  },
-  {
-   "source": "songkick",
-   "id": "43333123",
-   "name": "SonReal @ Hollywood Theatre",
-   "start": "2026-11-14T19:00:00",
-   "status": "EventScheduled",
-   "venue": "Hollywood Theatre",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": 49.26444,
-   "lng": -123.17453,
-   "url": "https://www.songkick.com/concerts/43333123-sonreal-at-hollywood-theatre",
-   "performers": [
-    {
-     "name": "SonReal",
-     "songkick_genres": [
-      "hip_hop"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/950442-sonreal?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Michael Minelli",
-     "songkick_genres": [
-      "hip_hop"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/9705154-michael-minelli?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Hollywood Theatre",
-   "venue_id": "hollywood-theatre"
-  },
-  {
-   "source": "songkick",
-   "id": "43242542",
-   "name": "Gryffin @ PNE Forum",
-   "start": "2026-11-14T19:30:00",
-   "status": "EventScheduled",
-   "venue": "PNE Forum",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": 49.28317,
-   "lng": -123.0368,
-   "url": "https://www.songkick.com/concerts/43242542-gryffin-at-pne-forum",
-   "performers": [
-    {
-     "name": "Gryffin",
-     "songkick_genres": [
-      "electronic",
-      "pop"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/8501183-gryffin?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "PNE Forum",
-   "venue_id": "pne-forum"
-  },
-  {
-   "source": "songkick",
-   "id": "43338685",
-   "name": "Kyle Watson @ Celebrities",
-   "start": "2026-11-14T21:00:00",
-   "status": "EventScheduled",
-   "venue": "Celebrities",
-   "venue_url": "http://celebritiesnightclub.com",
-   "locality": "Vancouver",
-   "lat": 49.27942,
-   "lng": -123.12994,
-   "url": "https://www.songkick.com/concerts/43338685-kyle-watson-at-celebrities",
-   "performers": [
-    {
-     "name": "Kyle Watson",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/8667274-kyle-watson?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Celebrities",
-   "venue_id": "celebrities"
-  },
-  {
-   "source": "songkick",
-   "id": "43391102",
-   "name": "Blasterjaxx @ Harbour Convention Centre",
-   "start": "2026-11-14T22:00:00",
-   "status": "EventScheduled",
-   "venue": "Harbour Event Centre",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": 49.27464,
-   "lng": -123.10901,
-   "url": "https://www.songkick.com/concerts/43391102-blasterjaxx-at-harbour-convention-centre",
-   "performers": [
-    {
-     "name": "Blasterjaxx",
-     "songkick_genres": [
-      "electronic"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/5107583-blasterjaxx?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Marlo",
-     "songkick_genres": [
-      "electronic"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/129223-marlo?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Harbour Convention Centre",
-   "venue_id": "harbour-event-centre"
-  },
   {
    "source": "songkick",
    "id": "43388943",
@@ -1379,32 +1085,6 @@
    ],
    "venue_raw": "Platform 9",
    "venue_id": "platform-9"
-  },
-  {
-   "source": "songkick",
-   "id": "43272773",
-   "name": "Rodrigo y Gabriela @ Vogue Theatre",
-   "start": "2026-11-20T18:00:00",
-   "status": "EventScheduled",
-   "venue": "Vogue Theatre",
-   "venue_url": "http://www.voguetheatre.com/",
-   "locality": "Vancouver",
-   "lat": 49.27981,
-   "lng": -123.12164,
-   "url": "https://www.songkick.com/concerts/43272773-rodrigo-y-gabriela-at-vogue-theatre",
-   "performers": [
-    {
-     "name": "Rodrigo y Gabriela",
-     "songkick_genres": [
-      "latin",
-      "rock",
-      "indie_alternative"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/195992-rodrigo-y-gabriela?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Vogue Theatre",
-   "venue_id": "vogue-theatre"
   },
   {
    "source": "songkick",
@@ -4860,6 +4540,55 @@
    ],
    "venue_raw": "Harbour Event & Convention Centre",
    "venue_id": "harbour-event-centre"
+  },
+  {
+   "source": "songkick",
+   "id": "43495999",
+   "name": "Disney @ Orpheum",
+   "start": "2026-12-20T14:00:00",
+   "status": "EventScheduled",
+   "venue": "Orpheum Theatre",
+   "venue_url": "https://vancouvercivictheatres.com/venues/orpheum/",
+   "locality": "Vancouver",
+   "lat": 49.28038,
+   "lng": -123.1126,
+   "url": "https://www.songkick.com/concerts/43495999-disney-at-orpheum",
+   "performers": [
+    {
+     "name": "Disney",
+     "songkick_genres": [
+      "pop",
+      "electronic"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/520066-disney?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Orpheum",
+   "venue_id": "orpheum-theatre"
+  },
+  {
+   "source": "songkick",
+   "id": "43403040",
+   "name": "George Canyon @ Casino Vancouver",
+   "start": "2026-12-20T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Casino Vancouver",
+   "venue_url": null,
+   "locality": "Coquitlam",
+   "lat": 49.22768,
+   "lng": -122.83765,
+   "url": "https://www.songkick.com/concerts/43403040-george-canyon-at-casino-vancouver",
+   "performers": [
+    {
+     "name": "George Canyon",
+     "songkick_genres": [
+      "country"
+     ],
+     "songkick_url": "https://www.songkick.com/artists/474555-george-canyon?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Casino Vancouver",
+   "venue_id": "casino-vancouver"
   }
  ],
  "skipped": [
@@ -4971,6 +4700,23 @@
    "performers": [],
    "venue_raw": "Good Co. Granville",
    "venue_id": "good-co-granville",
+   "skip_reason": "no_performers"
+  },
+  {
+   "source": "songkick",
+   "id": "435042102026",
+   "name": "TVB Power Of Live 2026 @ River Rock Casino Resort",
+   "start": "2026-12-20T19:30:00",
+   "status": "EventScheduled",
+   "venue": "River Rock Casino Resort",
+   "venue_url": null,
+   "locality": "Richmond",
+   "lat": 49.19625,
+   "lng": -123.12768,
+   "url": "https://www.songkick.com/festivals/3812965-tvb-power-of-live/id/43504210-tvb-power-of-live-2026",
+   "performers": [],
+   "venue_raw": "River Rock Casino Resort",
+   "venue_id": "river-rock-casino-resort",
    "skip_reason": "no_performers"
   }
  ]

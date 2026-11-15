@@ -64137,15 +64137,16 @@
 "query": "Big Deal (Canada)",
 "fetched_at": "2026-11-14T19:18:58+00:00",
 "reach": {
-"listeners": 97574,
-"playcount": 1060860,
+"listeners": 97576,
+"playcount": 1060884,
 "tags": [
 "folk",
 "hardcore",
 "dream pop"
 ],
 "tier": 3,
-"lastfm_url": "https://www.last.fm/music/Big+Deal"
+"lastfm_url": "https://www.last.fm/music/Big+Deal",
+"mbid": "83e368f0-6e75-4050-a779-ecbf60a917ec"
 },
 "matcher": 4,
 "spotify_id": "4Ospdb83qozqZ8RXrWGHVN",
@@ -64180,7 +64181,7 @@
 }
 ],
 "rank_source": "search",
-"mbid": null
+"mbid": "83e368f0-6e75-4050-a779-ecbf60a917ec"
 },
 "daniel sparrow with visions": {
 "query": "Daniel Sparrow with the Visions",
@@ -64729,5 +64730,56 @@
 ],
 "rank_source": "lastfm",
 "mbid": "d2194c5e-c9a2-40ca-92f1-b3d6efe12ba0"
+},
+"george canyon": {
+"query": "George Canyon",
+"fetched_at": "2026-11-15T19:53:26+00:00",
+"reach": {
+"listeners": 14322,
+"playcount": 269853,
+"tags": [
+"country",
+"new traditionalist",
+"contemporary country",
+"canadian country"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/George+Canyon",
+"mbid": "2a396962-06e5-4ee8-89a7-203e90d07539"
+},
+"matcher": 4,
+"spotify_id": "5wGox9x2iVERIeTJIQnFeL",
+"spotify_name": "George Canyon",
+"url": "https://open.spotify.com/artist/5wGox9x2iVERIeTJIQnFeL",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178966bbb1d11c47ebba643b153",
+"tracks": [
+{
+"id": "1d5RgXUSuRYLltbZuE6S6k",
+"uri": "spotify:track:1d5RgXUSuRYLltbZuE6S6k",
+"name": "Who Would You Be",
+"popularity": null,
+"album": "One Good Friend",
+"album_type": "album",
+"release_date": "2004-01-01",
+"duration_ms": 185626,
+"explicit": false
+},
+{
+"id": "3pHCS1gWCa8DvIXrrTke9S",
+"uri": "spotify:track:3pHCS1gWCa8DvIXrrTke9S",
+"name": "I Want You To Live",
+"popularity": null,
+"album": "Somebody Wrote Love",
+"album_type": "album",
+"release_date": "2006-01-01",
+"duration_ms": 277466,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "2a396962-06e5-4ee8-89a7-203e90d07539"
 }
 }
