@@ -3,63 +3,11 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-11-15T19:53:27+00:00",
- "scraped_at": "2026-11-15T19:52:31+00:00",
+ "generated_at": "2026-11-16T23:27:36+00:00",
+ "scraped_at": "2026-11-16T23:26:39+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
  "venues": {
-  "the-pearl": {
-   "name": "The Pearl",
-   "aliases": [],
-   "lat": 49.28071,
-   "lng": -123.12143
-  },
-  "queen-elizabeth-theatre": {
-   "name": "Queen Elizabeth Theatre",
-   "aliases": [],
-   "lat": 49.28039,
-   "lng": -123.11266
-  },
-  "rickshaw-theatre": {
-   "name": "Rickshaw Theatre",
-   "aliases": [
-    "The Rickshaw"
-   ],
-   "lat": 49.28102,
-   "lng": -123.09853
-  },
-  "doug-mitchell-thunderbird-sports-centre": {
-   "name": "Doug Mitchell Thunderbird Sports Centre",
-   "aliases": [],
-   "lat": 49.26036,
-   "lng": -123.24196
-  },
-  "china-cloud": {
-   "name": "China Cloud",
-   "aliases": [],
-   "lat": 49.28027,
-   "lng": -123.09295
-  },
-  "the-cobalt": {
-   "name": "The Cobalt",
-   "aliases": [
-    "The Cobalt Cabaret"
-   ],
-   "lat": 49.2765,
-   "lng": -123.10008
-  },
-  "epiphany-chapel-ubc": {
-   "name": "Epiphany Chapel, Ubc",
-   "aliases": [],
-   "lat": null,
-   "lng": null
-  },
-  "mount-pleasant-vintage-provisions": {
-   "name": "Mount Pleasant Vintage & Provisions",
-   "aliases": [],
-   "lat": null,
-   "lng": null
-  },
   "pne-forum": {
    "name": "PNE Forum",
    "aliases": [],
@@ -77,6 +25,12 @@
    "aliases": [],
    "lat": 49.26444,
    "lng": -123.17453
+  },
+  "the-pearl": {
+   "name": "The Pearl",
+   "aliases": [],
+   "lat": 49.28071,
+   "lng": -123.12143
   },
   "fox-cabaret": {
    "name": "Fox Cabaret",
@@ -135,6 +89,22 @@
    "aliases": [],
    "lat": null,
    "lng": null
+  },
+  "the-cobalt": {
+   "name": "The Cobalt",
+   "aliases": [
+    "The Cobalt Cabaret"
+   ],
+   "lat": 49.2765,
+   "lng": -123.10008
+  },
+  "rickshaw-theatre": {
+   "name": "Rickshaw Theatre",
+   "aliases": [
+    "The Rickshaw"
+   ],
+   "lat": 49.28102,
+   "lng": -123.09853
   },
   "village-studios": {
    "name": "Village Studios",
@@ -275,6 +245,12 @@
    "lat": 49.02407,
    "lng": -122.38133
   },
+  "doug-mitchell-thunderbird-sports-centre": {
+   "name": "Doug Mitchell Thunderbird Sports Centre",
+   "aliases": [],
+   "lat": 49.26036,
+   "lng": -123.24196
+  },
   "rogers-arena": {
    "name": "Rogers Arena",
    "aliases": [],
@@ -322,6 +298,12 @@
    "aliases": [],
    "lat": null,
    "lng": null
+  },
+  "abbey-arts-centre": {
+   "name": "Abbey Arts Centre",
+   "aliases": [],
+   "lat": 49.04428,
+   "lng": -122.29974
   },
   "massey-theatre": {
    "name": "Massey Theatre",
@@ -411,948 +393,6 @@
   }
  },
  "events": [
-  {
-   "id": "43388943",
-   "name": "Foghorn @ The Cobalt",
-   "source": "songkick",
-   "date": "2026-11-15",
-   "start": "2026-11-15",
-   "venue": "The Cobalt",
-   "venue_id": "the-cobalt",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43388943-foghorn-at-cobalt",
-   "also_listed": [],
-   "lat": 49.2765,
-   "lng": -123.10008,
-   "headliner": "Foghorn",
-   "artists": [
-    {
-     "name": "Foghorn",
-     "spotify_name": "Foghorn",
-     "spotify_id": "4vr3bAVN2n2KQDb2tWXj5U",
-     "url": "https://open.spotify.com/artist/4vr3bAVN2n2KQDb2tWXj5U",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f17854f6d96014ac739c8b87a922",
-     "tracks": [
-      {
-       "id": "04neu39uVRRfEBgryhMWtF",
-       "uri": "spotify:track:04neu39uVRRfEBgryhMWtF",
-       "name": "Foggy Thoughts",
-       "popularity": null,
-       "album": "Foghorn",
-       "album_type": "single",
-       "release_date": "2019-10-07",
-       "duration_ms": 101906,
-       "explicit": true
-      },
-      {
-       "id": "4Nr64gc6BHImCcF2VxANqC",
-       "uri": "spotify:track:4Nr64gc6BHImCcF2VxANqC",
-       "name": "Fogged In",
-       "popularity": null,
-       "album": "Foghorn",
-       "album_type": "single",
-       "release_date": "2019-10-07",
-       "duration_ms": 139906,
-       "explicit": true
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "629baca2-c512-403e-9c98-038ba1e1c359",
-     "reach": {
-      "listeners": 39050,
-      "playcount": 583573,
-      "tags": [
-       "hardcore",
-       "shoegaze",
-       "ambient",
-       "post-rock"
-      ],
-      "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Foghorn",
-      "mbid": "629baca2-c512-403e-9c98-038ba1e1c359"
-     },
-     "genres_canon": [
-      "hardcore",
-      "shoegaze",
-      "ambient"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "43498764",
-   "name": "Flipout @ Mount Pleasant Vintage & Provisions",
-   "source": "songkick",
-   "date": "2026-11-15",
-   "start": "2026-11-15T10:00:00",
-   "venue": "Mount Pleasant Vintage & Provisions",
-   "venue_id": "mount-pleasant-vintage-provisions",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43498764-flipout-at-mount-pleasant-vintage-and-provisions",
-   "also_listed": [],
-   "lat": null,
-   "lng": null,
-   "headliner": "Flipout",
-   "artists": [
-    {
-     "name": "Flipout",
-     "spotify_name": "Flipout",
-     "spotify_id": "1STszGloAIvrzAZAQ1RhNJ",
-     "url": "https://open.spotify.com/artist/1STszGloAIvrzAZAQ1RhNJ",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178f1916056074897b2bea12d5d",
-     "tracks": [
-      {
-       "id": "4Vii5Vk6WKNkIEbXb3lZHK",
-       "uri": "spotify:track:4Vii5Vk6WKNkIEbXb3lZHK",
-       "name": "Flippin' Bob, Pt. 1",
-       "popularity": null,
-       "album": "Flippin' Bob",
-       "album_type": "single",
-       "release_date": "2016-10-28",
-       "duration_ms": 195295,
-       "explicit": true
-      },
-      {
-       "id": "5LKskxvynT22oSuHiyTpa5",
-       "uri": "spotify:track:5LKskxvynT22oSuHiyTpa5",
-       "name": "Flippin' Bob, Pt. 2",
-       "popularity": null,
-       "album": "Flippin' Bob",
-       "album_type": "single",
-       "release_date": "2016-10-28",
-       "duration_ms": 162683,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": null,
-     "reach": {
-      "listeners": 186,
-      "playcount": 1243,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/flipout",
-      "mbid": null
-     },
-     "genres_canon": []
-    },
-    {
-     "name": "Niña Mendoza",
-     "spotify_name": "Nina Mendoza",
-     "spotify_id": "4R3HLvxEEOwAIixUjs3KKJ",
-     "url": "https://open.spotify.com/artist/4R3HLvxEEOwAIixUjs3KKJ",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab67616d00004851820007c3b0ba3630eb236ab4",
-     "tracks": [
-      {
-       "id": "1t1Rj6KByyY4ryW9dUyOEt",
-       "uri": "spotify:track:1t1Rj6KByyY4ryW9dUyOEt",
-       "name": "November",
-       "popularity": null,
-       "album": "Nina",
-       "album_type": "album",
-       "release_date": "2026-02-21",
-       "duration_ms": 213159,
-       "explicit": false
-      },
-      {
-       "id": "72fHEF7Ye7bhIVactALf6H",
-       "uri": "spotify:track:72fHEF7Ye7bhIVactALf6H",
-       "name": "Talk in circles",
-       "popularity": null,
-       "album": "Nina",
-       "album_type": "album",
-       "release_date": "2026-02-21",
-       "duration_ms": 195159,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": null,
-     "reach": {
-      "listeners": 18,
-      "playcount": 65,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Ni%C3%B1a+Mendoza",
-      "mbid": null
-     },
-     "genres_canon": []
-    }
-   ]
-  },
-  {
-   "id": "43487844",
-   "name": "Jonny Tobin @ Epiphany Chapel, Ubc",
-   "source": "songkick",
-   "date": "2026-11-15",
-   "start": "2026-11-15T13:00:00",
-   "venue": "Epiphany Chapel, Ubc",
-   "venue_id": "epiphany-chapel-ubc",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43487844-jonny-tobin-at-epiphany-chapel-ubc",
-   "also_listed": [],
-   "lat": null,
-   "lng": null,
-   "headliner": "Jonny Tobin",
-   "artists": [
-    {
-     "name": "Jonny Tobin",
-     "spotify_name": "Jonny Tobin",
-     "spotify_id": "5obWvG0ikceXOD0a45DSHO",
-     "url": "https://open.spotify.com/artist/5obWvG0ikceXOD0a45DSHO",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178cdceb8883a27efe1cdfe02d4",
-     "tracks": [
-      {
-       "id": "4WsLYVWERMCNObFkvGX1Xw",
-       "uri": "spotify:track:4WsLYVWERMCNObFkvGX1Xw",
-       "name": "Lilacs and Lavender",
-       "popularity": null,
-       "album": "Lilacs and Lavender",
-       "album_type": "single",
-       "release_date": "2021-11-18",
-       "duration_ms": 243000,
-       "explicit": false
-      },
-      {
-       "id": "2JAbe0LUlS3SwRm7rmZmaM",
-       "uri": "spotify:track:2JAbe0LUlS3SwRm7rmZmaM",
-       "name": "Obi",
-       "popularity": null,
-       "album": "Earth Signs",
-       "album_type": "album",
-       "release_date": "2019-09-20",
-       "duration_ms": 165137,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "ab5e8ad6-92e5-4b9e-a536-06449a345f49",
-     "reach": {
-      "listeners": 20357,
-      "playcount": 56491,
-      "tags": [
-       "jazz",
-       "electronic"
-      ],
-      "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/Jonny+Tobin",
-      "mbid": "ab5e8ad6-92e5-4b9e-a536-06449a345f49"
-     },
-     "genres_canon": [
-      "jazz",
-      "electronic"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "43055537",
-   "name": "Raffi @ Queen Elizabeth Theatre",
-   "source": "songkick",
-   "date": "2026-11-15",
-   "start": "2026-11-15T14:00:00",
-   "venue": "Queen Elizabeth Theatre",
-   "venue_id": "queen-elizabeth-theatre",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43055537-raffi-at-queen-elizabeth-theatre",
-   "also_listed": [],
-   "lat": 49.28039,
-   "lng": -123.11266,
-   "headliner": "Raffi",
-   "artists": [
-    {
-     "name": "Raffi",
-     "spotify_name": "Raffi",
-     "spotify_id": "7oWSqrgMuIEyH9qp5nu2e5",
-     "url": "https://open.spotify.com/artist/7oWSqrgMuIEyH9qp5nu2e5",
-     "genres": [],
-     "songkick_genres": [
-      "electronic"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f17892b6c1e5b3e590037d025852",
-     "tracks": [
-      {
-       "id": "50buJJWHRXY3PwneHtOguH",
-       "uri": "spotify:track:50buJJWHRXY3PwneHtOguH",
-       "name": "Bananaphone",
-       "popularity": null,
-       "album": "Bananaphone",
-       "album_type": "album",
-       "release_date": "1994-01-01",
-       "duration_ms": 198986,
-       "explicit": false
-      },
-      {
-       "id": "0VLuHeITYTXxPJ72moNoxU",
-       "uri": "spotify:track:0VLuHeITYTXxPJ72moNoxU",
-       "name": "Down By The Bay",
-       "popularity": null,
-       "album": "Singable Songs for the Very Young",
-       "album_type": "album",
-       "release_date": "1976-01-01",
-       "duration_ms": 131413,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "d5d5ba92-4bd4-4975-9806-99339eed3046",
-     "reach": {
-      "listeners": 252519,
-      "playcount": 7995984,
-      "tags": [
-       "childrens",
-       "comedy",
-       "metal",
-       "humor"
-      ],
-      "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Raffi",
-      "mbid": "d5d5ba92-4bd4-4975-9806-99339eed3046"
-     },
-     "genres_canon": [
-      "comedy / spoken",
-      "metal",
-      "electronic"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "43242974",
-   "name": "Armored Saint @ Rickshaw Theatre",
-   "source": "songkick",
-   "date": "2026-11-15",
-   "start": "2026-11-15T17:00:00",
-   "venue": "Rickshaw Theatre",
-   "venue_id": "rickshaw-theatre",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43242974-armored-saint-at-rickshaw-theatre",
-   "also_listed": [],
-   "lat": 49.28102,
-   "lng": -123.09853,
-   "headliner": "Armored Saint",
-   "artists": [
-    {
-     "name": "Armored Saint",
-     "spotify_name": "Armored Saint",
-     "spotify_id": "4ug41UGuMZzlV2hJOrOqHN",
-     "url": "https://open.spotify.com/artist/4ug41UGuMZzlV2hJOrOqHN",
-     "genres": [],
-     "songkick_genres": [
-      "metal"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f17802a90c9583986ca5ea2fd071",
-     "tracks": [
-      {
-       "id": "25kORdST1xzG4WXOnzJCKV",
-       "uri": "spotify:track:25kORdST1xzG4WXOnzJCKV",
-       "name": "Can U Deliver",
-       "popularity": null,
-       "album": "March Of The Saint",
-       "album_type": "album",
-       "release_date": "1984-01-01",
-       "duration_ms": 215306,
-       "explicit": false
-      },
-      {
-       "id": "3oGVcpZbtQj9Vi7vuTamig",
-       "uri": "spotify:track:3oGVcpZbtQj9Vi7vuTamig",
-       "name": "March Of The Saint",
-       "popularity": null,
-       "album": "March Of The Saint",
-       "album_type": "album",
-       "release_date": "1984-01-01",
-       "duration_ms": 253160,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "8ac580bd-5b33-4ee3-83df-8d406908e300",
-     "reach": {
-      "listeners": 114265,
-      "playcount": 2268955,
-      "tags": [
-       "heavy metal",
-       "power metal",
-       "metal",
-       "traditional metal"
-      ],
-      "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Armored+Saint",
-      "mbid": "8ac580bd-5b33-4ee3-83df-8d406908e300"
-     },
-     "genres_canon": [
-      "metal"
-     ]
-    },
-    {
-     "name": "Metal Church",
-     "spotify_name": "Metal Church",
-     "spotify_id": "0exvkfkATkqWOJgugTjJhP",
-     "url": "https://open.spotify.com/artist/0exvkfkATkqWOJgugTjJhP",
-     "genres": [],
-     "songkick_genres": [
-      "metal"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab67726900008f743ca4ece56e5fd4324ff7bd36",
-     "tracks": [
-      {
-       "id": "34LXW73avo8xz0NLiVuiow",
-       "uri": "spotify:track:34LXW73avo8xz0NLiVuiow",
-       "name": "Metal Church",
-       "popularity": null,
-       "album": "Metal Church",
-       "album_type": "album",
-       "release_date": "1984",
-       "duration_ms": 302360,
-       "explicit": false
-      },
-      {
-       "id": "12pXtNMxmZnxgHFbE3e1lV",
-       "uri": "spotify:track:12pXtNMxmZnxgHFbE3e1lV",
-       "name": "Beyond the Black",
-       "popularity": null,
-       "album": "Metal Church",
-       "album_type": "album",
-       "release_date": "1984",
-       "duration_ms": 381480,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "09830e79-cc8d-422f-ae25-6efde4320b73",
-     "reach": {
-      "listeners": 237425,
-      "playcount": 5319319,
-      "tags": [
-       "heavy metal",
-       "thrash metal",
-       "power metal",
-       "speed metal"
-      ],
-      "tier": 3,
-      "lastfm_url": "https://www.last.fm/music/Metal+Church",
-      "mbid": "09830e79-cc8d-422f-ae25-6efde4320b73"
-     },
-     "genres_canon": [
-      "metal"
-     ]
-    },
-    {
-     "name": "LiveKill",
-     "spotify_name": "Livekill",
-     "spotify_id": "330IRFx1qCHR8seFfdsH4h",
-     "url": "https://open.spotify.com/artist/330IRFx1qCHR8seFfdsH4h",
-     "genres": [],
-     "songkick_genres": [
-      "metal"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f17844c32115a07857fc48aa9753",
-     "tracks": [
-      {
-       "id": "53J6levgonqslDlkqBHZvA",
-       "uri": "spotify:track:53J6levgonqslDlkqBHZvA",
-       "name": "Evil & Ecstasy",
-       "popularity": null,
-       "album": "Evil & Ecstasy",
-       "album_type": "single",
-       "release_date": "2025-09-26",
-       "duration_ms": 212243,
-       "explicit": false
-      },
-      {
-       "id": "5kMA2Hn3ItHJgyuvqZV7FJ",
-       "uri": "spotify:track:5kMA2Hn3ItHJgyuvqZV7FJ",
-       "name": "The Crown",
-       "popularity": null,
-       "album": "The Crown",
-       "album_type": "single",
-       "release_date": "2023-08-25",
-       "duration_ms": 219470,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "d8e50924-c29b-4028-8657-3e4df0a78f70",
-     "reach": {
-      "listeners": 903,
-      "playcount": 2253,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Livekill",
-      "mbid": "d8e50924-c29b-4028-8657-3e4df0a78f70"
-     },
-     "genres_canon": [
-      "metal"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "43449857",
-   "name": "Skye Wallace @ China Cloud",
-   "source": "songkick",
-   "date": "2026-11-15",
-   "start": "2026-11-15T18:00:00",
-   "venue": "China Cloud",
-   "venue_id": "china-cloud",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43449857-skye-wallace-at-china-cloud",
-   "also_listed": [],
-   "lat": 49.28027,
-   "lng": -123.09295,
-   "headliner": "Skye Wallace",
-   "artists": [
-    {
-     "name": "Skye Wallace",
-     "spotify_name": "Skye Wallace",
-     "spotify_id": "6BBaTzjSoI3KGH2c5yyCae",
-     "url": "https://open.spotify.com/artist/6BBaTzjSoI3KGH2c5yyCae",
-     "genres": [],
-     "songkick_genres": [
-      "country"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1787b72a00a588a7262c35a236a",
-     "tracks": [
-      {
-       "id": "3fgqLzsWuAES1d0bVd55f3",
-       "uri": "spotify:track:3fgqLzsWuAES1d0bVd55f3",
-       "name": "There Is a Wall",
-       "popularity": null,
-       "album": "Skye Wallace",
-       "album_type": "album",
-       "release_date": "2019-06-07",
-       "duration_ms": 157560,
-       "explicit": false
-      },
-      {
-       "id": "06Z19V10A3XNOGENQdgRcp",
-       "uri": "spotify:track:06Z19V10A3XNOGENQdgRcp",
-       "name": "Coal in Your Window",
-       "popularity": null,
-       "album": "Skye Wallace",
-       "album_type": "album",
-       "release_date": "2019-06-07",
-       "duration_ms": 175773,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "78f8285d-2a36-493f-8f1c-be0ca203e765",
-     "reach": {
-      "listeners": 4481,
-      "playcount": 37174,
-      "tags": [
-       "folk",
-       "indie rock",
-       "alternative"
-      ],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Skye+Wallace",
-      "mbid": "78f8285d-2a36-493f-8f1c-be0ca203e765"
-     },
-     "genres_canon": [
-      "folk",
-      "indie",
-      "alternative"
-     ]
-    },
-    {
-     "name": "David Vertesi",
-     "spotify_name": "David Vertesi",
-     "spotify_id": "75OAateHuZqLOOKCjw8VQj",
-     "url": "https://open.spotify.com/artist/75OAateHuZqLOOKCjw8VQj",
-     "genres": [],
-     "songkick_genres": [
-      "country"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178f699f7b7d707a3af5b3ac3a2",
-     "tracks": [
-      {
-       "id": "08P9yPJx4JHCVoJ2jnD8GB",
-       "uri": "spotify:track:08P9yPJx4JHCVoJ2jnD8GB",
-       "name": "Waste",
-       "popularity": null,
-       "album": "Life Ghouls",
-       "album_type": "album",
-       "release_date": "2020-09-18",
-       "duration_ms": 229465,
-       "explicit": false
-      },
-      {
-       "id": "2W8KiqPfDBmxSTKUWQL33U",
-       "uri": "spotify:track:2W8KiqPfDBmxSTKUWQL33U",
-       "name": "All Night, All Night, All Night",
-       "popularity": null,
-       "album": "Cardiography",
-       "album_type": "album",
-       "release_date": "2010-10-23",
-       "duration_ms": 233946,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "b1221b14-2cb0-4576-ba08-42650d124870",
-     "reach": {
-      "listeners": 24043,
-      "playcount": 213822,
-      "tags": [
-       "folk",
-       "acoustic",
-       "pop",
-       "indie folk"
-      ],
-      "tier": 2,
-      "lastfm_url": "https://www.last.fm/music/David+Vertesi",
-      "mbid": "b1221b14-2cb0-4576-ba08-42650d124870"
-     },
-     "genres_canon": [
-      "folk",
-      "pop",
-      "indie"
-     ]
-    },
-    {
-     "name": "Jasper Sloan Yip",
-     "spotify_name": "Jasper Sloan Yip",
-     "spotify_id": "2vTnwpyBNmdk5gHQINQEnZ",
-     "url": "https://open.spotify.com/artist/2vTnwpyBNmdk5gHQINQEnZ",
-     "genres": [],
-     "songkick_genres": [
-      "country"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178f83fdf95e0f367cd143b1b8e",
-     "tracks": [
-      {
-       "id": "0Uf5KF727xTEbB8RoZPPwB",
-       "uri": "spotify:track:0Uf5KF727xTEbB8RoZPPwB",
-       "name": "The Day Passed and the Sun Went Down",
-       "popularity": null,
-       "album": "Post Meridiem",
-       "album_type": "album",
-       "release_date": "2017-10-27",
-       "duration_ms": 300933,
-       "explicit": false
-      },
-      {
-       "id": "0rJoXCm63CvkOvTaSSjZbn",
-       "uri": "spotify:track:0rJoXCm63CvkOvTaSSjZbn",
-       "name": "Transit",
-       "popularity": null,
-       "album": "Every Day and All at Once",
-       "album_type": "album",
-       "release_date": "2010-03-06",
-       "duration_ms": 280693,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "944c1f34-86b2-46f7-8937-538d9361ab6a",
-     "reach": {
-      "listeners": 4691,
-      "playcount": 39142,
-      "tags": [
-       "folk",
-       "pop",
-       "piano rock"
-      ],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Jasper+Sloan+Yip",
-      "mbid": "944c1f34-86b2-46f7-8937-538d9361ab6a"
-     },
-     "genres_canon": [
-      "folk",
-      "pop",
-      "rock"
-     ]
-    },
-    {
-     "name": "teagan johnston",
-     "spotify_name": "Teagan Johnston",
-     "spotify_id": "0RHysVgRczmEPciDxfOG3H",
-     "url": "https://open.spotify.com/artist/0RHysVgRczmEPciDxfOG3H",
-     "genres": [],
-     "songkick_genres": [
-      "country"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178fe23546a9643ff035e92da1e",
-     "tracks": [
-      {
-       "id": "053ExA4k5sgtk8ZFRCibeV",
-       "uri": "spotify:track:053ExA4k5sgtk8ZFRCibeV",
-       "name": "Get Out of Town",
-       "popularity": null,
-       "album": "Get Out of Town",
-       "album_type": "single",
-       "release_date": "2022-04-22",
-       "duration_ms": 235744,
-       "explicit": true
-      },
-      {
-       "id": "6PjnqQO3ng51LPJiFAoWUH",
-       "uri": "spotify:track:6PjnqQO3ng51LPJiFAoWUH",
-       "name": "Dirty God",
-       "popularity": null,
-       "album": "Sentimental Ballad",
-       "album_type": "album",
-       "release_date": "2022-04-29",
-       "duration_ms": 67541,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "8e8f0a22-d3a9-424a-ab89-1bf934ce22f7",
-     "reach": {
-      "listeners": 564,
-      "playcount": 2204,
-      "tags": [],
-      "tier": 1,
-      "lastfm_url": "https://www.last.fm/music/Teagan+Johnston",
-      "mbid": "8e8f0a22-d3a9-424a-ab89-1bf934ce22f7"
-     },
-     "genres_canon": [
-      "country"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "43073401",
-   "name": "Wolf Parade @ The Pearl",
-   "source": "songkick",
-   "date": "2026-11-15",
-   "start": "2026-11-15T19:00:00",
-   "venue": "The Pearl",
-   "venue_id": "the-pearl",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43073401-wolf-parade-at-pearl",
-   "also_listed": [],
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "headliner": "Wolf Parade",
-   "artists": [
-    {
-     "name": "Wolf Parade",
-     "spotify_name": "Wolf Parade",
-     "spotify_id": "0XSqX2PB3C5dTMv7SZaxSm",
-     "url": "https://open.spotify.com/artist/0XSqX2PB3C5dTMv7SZaxSm",
-     "genres": [],
-     "songkick_genres": [
-      "indie_alternative",
-      "rock",
-      "hip_hop",
-      "folk_blues"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1783e3923a0670e3b43fd6e17d2",
-     "tracks": [
-      {
-       "id": "7zxikeAavSLQVGocbK2nau",
-       "uri": "spotify:track:7zxikeAavSLQVGocbK2nau",
-       "name": "I'll Believe in Anything",
-       "popularity": null,
-       "album": "Apologies to the Queen Mary",
-       "album_type": "album",
-       "release_date": "2005-09-27",
-       "duration_ms": 276613,
-       "explicit": false
-      },
-      {
-       "id": "3LDd0iCbcOrNT2iTQjtHx4",
-       "uri": "spotify:track:3LDd0iCbcOrNT2iTQjtHx4",
-       "name": "Shine a Light",
-       "popularity": null,
-       "album": "Apologies to the Queen Mary",
-       "album_type": "album",
-       "release_date": "2005-09-27",
-       "duration_ms": 227359,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "b7ddce8b-9e5c-46bd-9d33-41b134ce1a7f",
-     "reach": {
-      "listeners": 1275002,
-      "playcount": 30449375,
-      "tags": [
-       "indie rock",
-       "alternative",
-       "rock"
-      ],
-      "tier": 4,
-      "lastfm_url": "https://www.last.fm/music/Wolf+Parade",
-      "mbid": "b7ddce8b-9e5c-46bd-9d33-41b134ce1a7f"
-     },
-     "genres_canon": [
-      "indie",
-      "alternative",
-      "rock"
-     ]
-    },
-    {
-     "name": "Destroyer",
-     "spotify_name": "Destroyer",
-     "spotify_id": "22ojy4H4ZVpowC4lRRC8In",
-     "url": "https://open.spotify.com/artist/22ojy4H4ZVpowC4lRRC8In",
-     "genres": [],
-     "songkick_genres": [
-      "indie_alternative",
-      "rock",
-      "hip_hop",
-      "folk_blues"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f1787d44c1e587342cd8487ccd60",
-     "tracks": [
-      {
-       "id": "4rs8c7RMGmy91nUWxqoMwT",
-       "uri": "spotify:track:4rs8c7RMGmy91nUWxqoMwT",
-       "name": "Kaputt",
-       "popularity": null,
-       "album": "Kaputt",
-       "album_type": "album",
-       "release_date": "2011-01-25",
-       "duration_ms": 377973,
-       "explicit": false
-      },
-      {
-       "id": "1xVJh5Aqq4YqPzdtUdO5K7",
-       "uri": "spotify:track:1xVJh5Aqq4YqPzdtUdO5K7",
-       "name": "Chinatown",
-       "popularity": null,
-       "album": "Kaputt",
-       "album_type": "album",
-       "release_date": "2011-01-25",
-       "duration_ms": 229026,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "61604b45-8a91-4e33-a1b6-45d7b1fec4e5",
-     "reach": {
-      "listeners": 758850,
-      "playcount": 24559250,
-      "tags": [
-       "indie rock",
-       "indie pop"
-      ],
-      "tier": 4,
-      "lastfm_url": "https://www.last.fm/music/Destroyer",
-      "mbid": "61604b45-8a91-4e33-a1b6-45d7b1fec4e5"
-     },
-     "genres_canon": [
-      "indie",
-      "indie pop",
-      "rock"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "43341415",
-   "name": "Tyla (SA) @ Doug Mitchell Thunderbird Sports Centre",
-   "source": "songkick",
-   "date": "2026-11-15",
-   "start": "2026-11-15T20:00:00",
-   "venue": "Doug Mitchell Thunderbird Sports Centre",
-   "venue_id": "doug-mitchell-thunderbird-sports-centre",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43341415-tyla-sa-at-doug-mitchell-thunderbird-sports-centre",
-   "also_listed": [],
-   "lat": 49.26036,
-   "lng": -123.24196,
-   "headliner": "Tyla (SA)",
-   "artists": [
-    {
-     "name": "Tyla (SA)",
-     "spotify_name": "Tyla",
-     "spotify_id": "3SozjO3Lat463tQICI9LcE",
-     "url": "https://open.spotify.com/artist/3SozjO3Lat463tQICI9LcE",
-     "genres": [],
-     "songkick_genres": [],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f17869719e4164b893213a525d25",
-     "tracks": [
-      {
-       "id": "5aIVCx5tnk0ntmdiinnYvw",
-       "uri": "spotify:track:5aIVCx5tnk0ntmdiinnYvw",
-       "name": "Water",
-       "popularity": null,
-       "album": "Water",
-       "album_type": "single",
-       "release_date": "2023-07-28",
-       "duration_ms": 200255,
-       "explicit": false
-      },
-      {
-       "id": "1Cbl3Yq8rHo7hhDQmLQagU",
-       "uri": "spotify:track:1Cbl3Yq8rHo7hhDQmLQagU",
-       "name": "PUSH 2 START",
-       "popularity": null,
-       "album": "TYLA +",
-       "album_type": "album",
-       "release_date": "2024-10-11",
-       "duration_ms": 156825,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": "2bf761c6-4bcf-4cfc-a388-8fcb2eea8cc8",
-     "reach": {
-      "listeners": 1611306,
-      "playcount": 59596396,
-      "tags": [
-       "rnb",
-       "pop",
-       "south africa",
-       "amapiano"
-      ],
-      "tier": 4,
-      "lastfm_url": "https://www.last.fm/music/Tyla",
-      "mbid": "2bf761c6-4bcf-4cfc-a388-8fcb2eea8cc8"
-     },
-     "genres_canon": [
-      "r&b",
-      "pop"
-     ]
-    }
-   ]
-  },
   {
    "id": "43261860",
    "name": "Bonobo @ PNE Forum",
@@ -9616,7 +8656,12 @@
    "venue_id": "rickshaw-theatre",
    "locality": "Vancouver",
    "url": "https://www.songkick.com/concerts/43459818-space-queen-at-rickshaw-theatre",
-   "also_listed": [],
+   "also_listed": [
+    {
+     "source": "songkick",
+     "url": "https://www.songkick.com/concerts/43459818-space-queen-at-rickshaw-theatre"
+    }
+   ],
    "lat": 49.28102,
    "lng": -123.09853,
    "headliner": "Space Queen",
@@ -10471,6 +9516,75 @@
       "ambient",
       "electronic",
       "alternative"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "43518816",
+   "name": "Oliver Hazard @ Abbey Arts Centre",
+   "source": "songkick",
+   "date": "2026-12-07",
+   "start": "2026-12-07T20:00:00",
+   "venue": "Abbey Arts Centre",
+   "venue_id": "abbey-arts-centre",
+   "locality": "Abbotsford",
+   "url": "https://www.songkick.com/concerts/43518816-oliver-hazard-at-abbey-arts-centre",
+   "also_listed": [],
+   "lat": 49.04428,
+   "lng": -122.29974,
+   "headliner": "Oliver Hazard",
+   "artists": [
+    {
+     "name": "Oliver Hazard",
+     "spotify_name": "Oliver Hazard",
+     "spotify_id": "3F4iXxXxe7iazo3Jnwucng",
+     "url": "https://open.spotify.com/artist/3F4iXxXxe7iazo3Jnwucng",
+     "genres": [],
+     "songkick_genres": [],
+     "popularity": null,
+     "followers": null,
+     "image": "https://i.scdn.co/image/ab6761610000f17857e0745cc63bff64d97a8785",
+     "tracks": [
+      {
+       "id": "4IumDL4TCJZDo3wtQfA8VG",
+       "uri": "spotify:track:4IumDL4TCJZDo3wtQfA8VG",
+       "name": "Dandelion",
+       "popularity": null,
+       "album": "The Flood",
+       "album_type": "album",
+       "release_date": "2019-12-13",
+       "duration_ms": 190654,
+       "explicit": false
+      },
+      {
+       "id": "5IIRnP6MSko4GJV7EUvqaD",
+       "uri": "spotify:track:5IIRnP6MSko4GJV7EUvqaD",
+       "name": "Grenadine",
+       "popularity": null,
+       "album": "The Flood",
+       "album_type": "album",
+       "release_date": "2019-12-13",
+       "duration_ms": 207706,
+       "explicit": false
+      }
+     ],
+     "rank_source": "lastfm",
+     "mbid": "53d83abf-8dca-47dd-9b0a-6ae268aabf8d",
+     "reach": {
+      "listeners": 116303,
+      "playcount": 1213928,
+      "tags": [
+       "folk",
+       "indie folk"
+      ],
+      "tier": 3,
+      "lastfm_url": "https://www.last.fm/music/Oliver+Hazard",
+      "mbid": "53d83abf-8dca-47dd-9b0a-6ae268aabf8d"
+     },
+     "genres_canon": [
+      "folk",
+      "indie"
      ]
     }
    ]
@@ -14316,81 +13430,6 @@
    ]
   },
   {
-   "id": "43495998",
-   "name": "Disney @ Orpheum",
-   "source": "songkick",
-   "date": "2026-12-19",
-   "start": "2026-12-19T19:00:00",
-   "venue": "Orpheum Theatre",
-   "venue_id": "orpheum-theatre",
-   "locality": "Vancouver",
-   "url": "https://www.songkick.com/concerts/43495998-disney-at-orpheum",
-   "also_listed": [],
-   "lat": 49.28038,
-   "lng": -123.1126,
-   "headliner": "Disney",
-   "artists": [
-    {
-     "name": "Disney",
-     "spotify_name": "Disney",
-     "spotify_id": "3xvaSlT4xsyk6lY1ESOspO",
-     "url": "https://open.spotify.com/artist/3xvaSlT4xsyk6lY1ESOspO",
-     "genres": [],
-     "songkick_genres": [
-      "pop",
-      "electronic"
-     ],
-     "popularity": null,
-     "followers": null,
-     "image": "https://i.scdn.co/image/ab6761610000f178a7b08a7a2b16e9475b018c5e",
-     "tracks": [
-      {
-       "id": "3vJIaiTIHxHhYafTSPNiH4",
-       "uri": "spotify:track:3vJIaiTIHxHhYafTSPNiH4",
-       "name": "Zoo",
-       "popularity": null,
-       "album": "Zootopia 2 (Original Motion Picture Soundtrack)",
-       "album_type": "album",
-       "release_date": "2025-11-21",
-       "duration_ms": 190822,
-       "explicit": false
-      },
-      {
-       "id": "5l5rUCU2QAA1sXTuNPlMHZ",
-       "uri": "spotify:track:5l5rUCU2QAA1sXTuNPlMHZ",
-       "name": "Hakuna Matata",
-       "popularity": null,
-       "album": "Lofi Minnie: Focus",
-       "album_type": "compilation",
-       "release_date": "2022-03-18",
-       "duration_ms": 168746,
-       "explicit": false
-      }
-     ],
-     "rank_source": "lastfm",
-     "mbid": null,
-     "reach": {
-      "listeners": 518201,
-      "playcount": 13271239,
-      "tags": [
-       "soundtrack",
-       "disney",
-       "musical",
-       "soundtracks"
-      ],
-      "tier": 4,
-      "lastfm_url": "https://www.last.fm/music/Disney",
-      "mbid": null
-     },
-     "genres_canon": [
-      "classical",
-      "pop",
-      "electronic"
-     ]
-    }
-   ]
-  },
-  {
    "id": "43477828",
    "name": "Lynnic @ Fortune Sound Club",
    "source": "songkick",
@@ -14932,7 +13971,7 @@
    "name": "Sick Individuals @ Harbour Event & Convention Centre",
    "source": "songkick",
    "date": "2026-12-19",
-   "start": "2026-12-19T22:00:00",
+   "start": "2026-12-19T23:00:00",
    "venue": "Harbour Event Centre",
    "venue_id": "harbour-event-centre",
    "locality": "Vancouver",
@@ -15151,13 +14190,6 @@
   }
  ],
  "unmatched": [
-  {
-   "artist": "Tboy",
-   "event": "Flipout @ Mount Pleasant Vintage & Provisions",
-   "date": "2026-11-15",
-   "reason": "no_tracks",
-   "candidates": []
-  },
   {
    "artist": "Yuki Chiba",
    "event": "Yuki Chiba @ Hollywood Theatre",

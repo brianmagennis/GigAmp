@@ -64781,5 +64781,54 @@
 ],
 "rank_source": "lastfm",
 "mbid": "2a396962-06e5-4ee8-89a7-203e90d07539"
+},
+"oliver hazard": {
+"query": "Oliver Hazard",
+"fetched_at": "2026-11-16T23:27:35+00:00",
+"reach": {
+"listeners": 116303,
+"playcount": 1213928,
+"tags": [
+"folk",
+"indie folk"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Oliver+Hazard",
+"mbid": "53d83abf-8dca-47dd-9b0a-6ae268aabf8d"
+},
+"matcher": 4,
+"spotify_id": "3F4iXxXxe7iazo3Jnwucng",
+"spotify_name": "Oliver Hazard",
+"url": "https://open.spotify.com/artist/3F4iXxXxe7iazo3Jnwucng",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17857e0745cc63bff64d97a8785",
+"tracks": [
+{
+"id": "4IumDL4TCJZDo3wtQfA8VG",
+"uri": "spotify:track:4IumDL4TCJZDo3wtQfA8VG",
+"name": "Dandelion",
+"popularity": null,
+"album": "The Flood",
+"album_type": "album",
+"release_date": "2019-12-13",
+"duration_ms": 190654,
+"explicit": false
+},
+{
+"id": "5IIRnP6MSko4GJV7EUvqaD",
+"uri": "spotify:track:5IIRnP6MSko4GJV7EUvqaD",
+"name": "Grenadine",
+"popularity": null,
+"album": "The Flood",
+"album_type": "album",
+"release_date": "2019-12-13",
+"duration_ms": 207706,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "53d83abf-8dca-47dd-9b0a-6ae268aabf8d"
 }
 }

@@ -2,64 +2,12 @@
  "city": "vancouver",
  "city_name": "Vancouver, BC",
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
- "scraped_at": "2026-11-15T19:52:31+00:00",
+ "scraped_at": "2026-11-16T23:26:39+00:00",
  "horizon_days": 35,
  "pages_fetched": 4,
  "do604_events": 0,
- "merged_duplicates": 3,
+ "merged_duplicates": 4,
  "venues": {
-  "the-pearl": {
-   "name": "The Pearl",
-   "aliases": [],
-   "lat": 49.28071,
-   "lng": -123.12143
-  },
-  "queen-elizabeth-theatre": {
-   "name": "Queen Elizabeth Theatre",
-   "aliases": [],
-   "lat": 49.28039,
-   "lng": -123.11266
-  },
-  "rickshaw-theatre": {
-   "name": "Rickshaw Theatre",
-   "aliases": [
-    "The Rickshaw"
-   ],
-   "lat": 49.28102,
-   "lng": -123.09853
-  },
-  "doug-mitchell-thunderbird-sports-centre": {
-   "name": "Doug Mitchell Thunderbird Sports Centre",
-   "aliases": [],
-   "lat": 49.26036,
-   "lng": -123.24196
-  },
-  "china-cloud": {
-   "name": "China Cloud",
-   "aliases": [],
-   "lat": 49.28027,
-   "lng": -123.09295
-  },
-  "the-cobalt": {
-   "name": "The Cobalt",
-   "aliases": [
-    "The Cobalt Cabaret"
-   ],
-   "lat": 49.2765,
-   "lng": -123.10008
-  },
-  "epiphany-chapel-ubc": {
-   "name": "Epiphany Chapel, Ubc",
-   "aliases": [],
-   "lat": null,
-   "lng": null
-  },
-  "mount-pleasant-vintage-provisions": {
-   "name": "Mount Pleasant Vintage & Provisions",
-   "aliases": [],
-   "lat": null,
-   "lng": null
-  },
   "pne-forum": {
    "name": "PNE Forum",
    "aliases": [],
@@ -77,6 +25,12 @@
    "aliases": [],
    "lat": 49.26444,
    "lng": -123.17453
+  },
+  "the-pearl": {
+   "name": "The Pearl",
+   "aliases": [],
+   "lat": 49.28071,
+   "lng": -123.12143
   },
   "fox-cabaret": {
    "name": "Fox Cabaret",
@@ -135,6 +89,22 @@
    "aliases": [],
    "lat": null,
    "lng": null
+  },
+  "the-cobalt": {
+   "name": "The Cobalt",
+   "aliases": [
+    "The Cobalt Cabaret"
+   ],
+   "lat": 49.2765,
+   "lng": -123.10008
+  },
+  "rickshaw-theatre": {
+   "name": "Rickshaw Theatre",
+   "aliases": [
+    "The Rickshaw"
+   ],
+   "lat": 49.28102,
+   "lng": -123.09853
   },
   "village-studios": {
    "name": "Village Studios",
@@ -275,6 +245,12 @@
    "lat": 49.02407,
    "lng": -122.38133
   },
+  "doug-mitchell-thunderbird-sports-centre": {
+   "name": "Doug Mitchell Thunderbird Sports Centre",
+   "aliases": [],
+   "lat": 49.26036,
+   "lng": -123.24196
+  },
   "rogers-arena": {
    "name": "Rogers Arena",
    "aliases": [],
@@ -322,6 +298,12 @@
    "aliases": [],
    "lat": null,
    "lng": null
+  },
+  "abbey-arts-centre": {
+   "name": "Abbey Arts Centre",
+   "aliases": [],
+   "lat": 49.04428,
+   "lng": -122.29974
   },
   "massey-theatre": {
    "name": "Massey Theatre",
@@ -411,248 +393,6 @@
   }
  },
  "events": [
-  {
-   "source": "songkick",
-   "id": "43388943",
-   "name": "Foghorn @ The Cobalt",
-   "start": "2026-11-15",
-   "status": "EventScheduled",
-   "venue": "The Cobalt",
-   "venue_url": "http://thecobalt.ca",
-   "locality": "Vancouver",
-   "lat": 49.2765,
-   "lng": -123.10008,
-   "url": "https://www.songkick.com/concerts/43388943-foghorn-at-cobalt",
-   "performers": [
-    {
-     "name": "Foghorn",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/7715084-foghorn?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The Cobalt",
-   "venue_id": "the-cobalt"
-  },
-  {
-   "source": "songkick",
-   "id": "43498764",
-   "name": "Flipout @ Mount Pleasant Vintage & Provisions",
-   "start": "2026-11-15T10:00:00",
-   "status": "EventScheduled",
-   "venue": "Mount Pleasant Vintage & Provisions",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": null,
-   "lng": null,
-   "url": "https://www.songkick.com/concerts/43498764-flipout-at-mount-pleasant-vintage-and-provisions",
-   "performers": [
-    {
-     "name": "Flipout",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/1327871-flipout?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Niña Mendoza",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/2372457-nina-mendoza?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Tboy",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/211911-tboy?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Mount Pleasant Vintage & Provisions",
-   "venue_id": "mount-pleasant-vintage-provisions"
-  },
-  {
-   "source": "songkick",
-   "id": "43487844",
-   "name": "Jonny Tobin @ Epiphany Chapel, Ubc",
-   "start": "2026-11-15T13:00:00",
-   "status": "EventScheduled",
-   "venue": "Epiphany Chapel, Ubc",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": null,
-   "lng": null,
-   "url": "https://www.songkick.com/concerts/43487844-jonny-tobin-at-epiphany-chapel-ubc",
-   "performers": [
-    {
-     "name": "Jonny Tobin",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/9682774-jonny-tobin?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Epiphany Chapel, Ubc",
-   "venue_id": "epiphany-chapel-ubc"
-  },
-  {
-   "source": "songkick",
-   "id": "43055537",
-   "name": "Raffi @ Queen Elizabeth Theatre",
-   "start": "2026-11-15T14:00:00",
-   "status": "EventScheduled",
-   "venue": "Queen Elizabeth Theatre",
-   "venue_url": "http://vancouver.ca/parks-recreation-culture/queen-elizabeth-theatre.aspx",
-   "locality": "Vancouver",
-   "lat": 49.28039,
-   "lng": -123.11266,
-   "url": "https://www.songkick.com/concerts/43055537-raffi-at-queen-elizabeth-theatre",
-   "performers": [
-    {
-     "name": "Raffi",
-     "songkick_genres": [
-      "electronic"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/262390-raffi?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Queen Elizabeth Theatre",
-   "venue_id": "queen-elizabeth-theatre"
-  },
-  {
-   "source": "songkick",
-   "id": "43242974",
-   "name": "Armored Saint @ Rickshaw Theatre",
-   "start": "2026-11-15T17:00:00",
-   "status": "EventScheduled",
-   "venue": "Rickshaw Theatre",
-   "venue_url": "http://www.liveatrickshaw.com",
-   "locality": "Vancouver",
-   "lat": 49.28102,
-   "lng": -123.09853,
-   "url": "https://www.songkick.com/concerts/43242974-armored-saint-at-rickshaw-theatre",
-   "performers": [
-    {
-     "name": "Armored Saint",
-     "songkick_genres": [
-      "metal"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/56770-armored-saint?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Metal Church",
-     "songkick_genres": [
-      "metal"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/489388-metal-church?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "LiveKill",
-     "songkick_genres": [
-      "metal"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/8975434-livekill?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Rickshaw Theatre",
-   "venue_id": "rickshaw-theatre"
-  },
-  {
-   "source": "songkick",
-   "id": "43449857",
-   "name": "Skye Wallace @ China Cloud",
-   "start": "2026-11-15T18:00:00",
-   "status": "EventScheduled",
-   "venue": "China Cloud",
-   "venue_url": null,
-   "locality": "Vancouver",
-   "lat": 49.28027,
-   "lng": -123.09295,
-   "url": "https://www.songkick.com/concerts/43449857-skye-wallace-at-china-cloud",
-   "performers": [
-    {
-     "name": "Skye Wallace",
-     "songkick_genres": [
-      "country"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/4886383-skye-wallace?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "David Vertesi",
-     "songkick_genres": [
-      "country"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/3975116-david-vertesi?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Jasper Sloan Yip",
-     "songkick_genres": [
-      "country"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/3472276-jasper-sloan-yip?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "teagan johnston",
-     "songkick_genres": [
-      "country"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/7447974-teagan-johnston?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "China Cloud",
-   "venue_id": "china-cloud"
-  },
-  {
-   "source": "songkick",
-   "id": "43073401",
-   "name": "Wolf Parade @ The Pearl",
-   "start": "2026-11-15T19:00:00",
-   "status": "EventScheduled",
-   "venue": "The Pearl",
-   "venue_url": "https://thepearlvancouver.com/",
-   "locality": "Vancouver",
-   "lat": 49.28071,
-   "lng": -123.12143,
-   "url": "https://www.songkick.com/concerts/43073401-wolf-parade-at-pearl",
-   "performers": [
-    {
-     "name": "Wolf Parade",
-     "songkick_genres": [
-      "indie_alternative",
-      "rock",
-      "hip_hop",
-      "folk_blues"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/269984-wolf-parade?utm_medium=organic&utm_source=microformat"
-    },
-    {
-     "name": "Destroyer",
-     "songkick_genres": [
-      "indie_alternative",
-      "rock",
-      "hip_hop",
-      "folk_blues"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/57168-destroyer?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "The Pearl",
-   "venue_id": "the-pearl"
-  },
-  {
-   "source": "songkick",
-   "id": "43341415",
-   "name": "Tyla (SA) @ Doug Mitchell Thunderbird Sports Centre",
-   "start": "2026-11-15T20:00:00",
-   "status": "EventScheduled",
-   "venue": "Doug Mitchell Thunderbird Sports Centre",
-   "venue_url": "https://thunderbirdarena.ubc.ca/",
-   "locality": "Vancouver",
-   "lat": 49.26036,
-   "lng": -123.24196,
-   "url": "https://www.songkick.com/concerts/43341415-tyla-sa-at-doug-mitchell-thunderbird-sports-centre",
-   "performers": [
-    {
-     "name": "Tyla (SA)",
-     "songkick_genres": [],
-     "songkick_url": "https://www.songkick.com/artists/10315004-tyla-sa?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Doug Mitchell Thunderbird Sports Centre",
-   "venue_id": "doug-mitchell-thunderbird-sports-centre"
-  },
   {
    "source": "songkick",
    "id": "43261860",
@@ -3068,7 +2808,13 @@
     }
    ],
    "venue_raw": "Rickshaw Theatre",
-   "venue_id": "rickshaw-theatre"
+   "venue_id": "rickshaw-theatre",
+   "also_listed": [
+    {
+     "source": "songkick",
+     "url": "https://www.songkick.com/concerts/43459818-space-queen-at-rickshaw-theatre"
+    }
+   ]
   },
   {
    "source": "songkick",
@@ -3284,6 +3030,28 @@
    ],
    "venue_raw": "Hollywood Theatre",
    "venue_id": "hollywood-theatre"
+  },
+  {
+   "source": "songkick",
+   "id": "43518816",
+   "name": "Oliver Hazard @ Abbey Arts Centre",
+   "start": "2026-12-07T20:00:00",
+   "status": "EventScheduled",
+   "venue": "Abbey Arts Centre",
+   "venue_url": null,
+   "locality": "Abbotsford",
+   "lat": 49.04428,
+   "lng": -122.29974,
+   "url": "https://www.songkick.com/concerts/43518816-oliver-hazard-at-abbey-arts-centre",
+   "performers": [
+    {
+     "name": "Oliver Hazard",
+     "songkick_genres": [],
+     "songkick_url": "https://www.songkick.com/artists/9354044-oliver-hazard?utm_medium=organic&utm_source=microformat"
+    }
+   ],
+   "venue_raw": "Abbey Arts Centre",
+   "venue_id": "abbey-arts-centre"
   },
   {
    "source": "songkick",
@@ -4349,31 +4117,6 @@
   },
   {
    "source": "songkick",
-   "id": "43495998",
-   "name": "Disney @ Orpheum",
-   "start": "2026-12-19T19:00:00",
-   "status": "EventScheduled",
-   "venue": "Orpheum Theatre",
-   "venue_url": "https://vancouvercivictheatres.com/venues/orpheum/",
-   "locality": "Vancouver",
-   "lat": 49.28038,
-   "lng": -123.1126,
-   "url": "https://www.songkick.com/concerts/43495998-disney-at-orpheum",
-   "performers": [
-    {
-     "name": "Disney",
-     "songkick_genres": [
-      "pop",
-      "electronic"
-     ],
-     "songkick_url": "https://www.songkick.com/artists/520066-disney?utm_medium=organic&utm_source=microformat"
-    }
-   ],
-   "venue_raw": "Orpheum",
-   "venue_id": "orpheum-theatre"
-  },
-  {
-   "source": "songkick",
    "id": "43477828",
    "name": "Lynnic @ Fortune Sound Club",
    "start": "2026-12-19T19:00:00",
@@ -4521,7 +4264,7 @@
    "source": "songkick",
    "id": "43515466",
    "name": "Sick Individuals @ Harbour Event & Convention Centre",
-   "start": "2026-12-19T22:00:00",
+   "start": "2026-12-19T23:00:00",
    "status": "EventScheduled",
    "venue": "Harbour Event Centre",
    "venue_url": null,
