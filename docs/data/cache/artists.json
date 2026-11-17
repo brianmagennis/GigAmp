@@ -56723,16 +56723,16 @@
 },
 "fara": {
 "query": "Fara",
-"fetched_at": "2026-11-03T20:34:52+00:00",
+"fetched_at": "2026-11-17T22:30:17+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 7197,
-"playcount": 55949,
+"listeners": 7233,
+"playcount": 56192,
 "tags": [
 "pop",
 "folk",
-"dance",
-"r&b"
+"r&b",
+"dance"
 ],
 "tier": 2,
 "lastfm_url": "https://www.last.fm/music/Fara",
@@ -56740,10 +56740,9 @@
 },
 "matcher": 4,
 "candidates": [
-"Farak",
 "Faramarz Aslani",
-"Farya Faraji",
-"Faraj Suleiman"
+"Farak",
+"Fara Fara Duo"
 ]
 },
 "surf hat": {
@@ -57375,11 +57374,11 @@
 },
 "king": {
 "query": "King",
-"fetched_at": "2026-11-03T20:35:08+00:00",
+"fetched_at": "2026-11-17T22:30:18+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 300483,
-"playcount": 3831295,
+"listeners": 301426,
+"playcount": 3841223,
 "tags": [
 "new wave",
 "pop",
@@ -57393,7 +57392,7 @@
 "candidates": [
 "King Von",
 "Kingfishr",
-"Sean Kingston",
+"Nat King Cole",
 "Kings of Leon"
 ]
 },
@@ -58207,7 +58206,7 @@
 },
 "skung": {
 "query": "Skung",
-"fetched_at": "2026-11-03T20:35:29+00:00",
+"fetched_at": "2026-11-17T22:30:19+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 24,
@@ -58219,9 +58218,9 @@
 },
 "matcher": 4,
 "candidates": [
+"Prince The Artist Singh",
 "Skungy Gungus and the Refractors",
 "Skung Yung",
-"Skung Fu",
 "Horror Skunx",
 "Skulgard",
 "GrimSkunk"
@@ -58377,7 +58376,7 @@
 },
 "in zo": {
 "query": "IN-ZO",
-"fetched_at": "2026-11-03T20:35:32+00:00",
+"fetched_at": "2026-11-17T22:30:20+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 24,
@@ -58390,10 +58389,10 @@
 "matcher": 4,
 "candidates": [
 "Get into Zone",
-"Zoned In",
 "Instrumental Zone",
-"邹沛沛",
+"Zoned In",
 "Zoha Waseem",
+"邹沛沛",
 "Rob Zombie"
 ]
 },
@@ -59505,11 +59504,11 @@
 },
 "dj shub": {
 "query": "DJ Shub",
-"fetched_at": "2026-11-03T20:35:56+00:00",
+"fetched_at": "2026-11-17T22:30:20+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 4995,
-"playcount": 32540,
+"listeners": 4997,
+"playcount": 32567,
 "tags": [
 "first nations",
 "electronic",
@@ -59522,12 +59521,12 @@
 },
 "matcher": 4,
 "candidates": [
+"Dj Shubham K",
 "Dj shubzy",
 "DJ Shubham",
-"DJ Shubin",
 "Shub",
-"The Halluci Nation",
-"DJ Scuba 水猫"
+"Handsome Tiger",
+"The Halluci Nation"
 ]
 },
 "handsome tiger": {
@@ -59634,15 +59633,16 @@
 },
 "billy": {
 "query": "Billy",
-"fetched_at": "2026-11-03T20:36:00+00:00",
+"fetched_at": "2026-11-17T22:30:21+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 42773,
-"playcount": 432418,
+"listeners": 42850,
+"playcount": 433080,
 "tags": [
 "rock",
 "j-rock",
-"visual kei"
+"visual kei",
+"emo"
 ],
 "tier": 2,
 "lastfm_url": "https://www.last.fm/music/Billy",
@@ -59650,10 +59650,9 @@
 },
 "matcher": 4,
 "candidates": [
-"Billy Idol",
-"Billy Ray Cyrus",
-"Billy Talent",
 "Billy Joel",
+"Billy Idol",
+"Billy Talent",
 "Billie Eilish"
 ]
 },

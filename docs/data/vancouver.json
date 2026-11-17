@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-11-16T23:27:36+00:00",
+ "generated_at": "2026-11-17T22:30:22+00:00",
  "scraped_at": "2026-11-16T23:26:39+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -14230,10 +14230,9 @@
    "date": "2026-11-21",
    "reason": "no_match",
    "candidates": [
-    "Farak",
     "Faramarz Aslani",
-    "Farya Faraji",
-    "Faraj Suleiman"
+    "Farak",
+    "Fara Fara Duo"
    ]
   },
   {
@@ -14262,7 +14261,7 @@
    "candidates": [
     "King Von",
     "Kingfishr",
-    "Sean Kingston",
+    "Nat King Cole",
     "Kings of Leon"
    ]
   },
@@ -14279,9 +14278,9 @@
    "date": "2026-11-27",
    "reason": "no_match",
    "candidates": [
+    "Prince The Artist Singh",
     "Skungy Gungus and the Refractors",
     "Skung Yung",
-    "Skung Fu",
     "Horror Skunx",
     "Skulgard",
     "GrimSkunk"
@@ -14294,10 +14293,10 @@
    "reason": "no_match",
    "candidates": [
     "Get into Zone",
-    "Zoned In",
     "Instrumental Zone",
-    "邹沛沛",
+    "Zoned In",
     "Zoha Waseem",
+    "邹沛沛",
     "Rob Zombie"
    ]
   },
@@ -14314,12 +14313,12 @@
    "date": "2026-12-03",
    "reason": "no_match",
    "candidates": [
+    "Dj Shubham K",
     "Dj shubzy",
     "DJ Shubham",
-    "DJ Shubin",
     "Shub",
-    "The Halluci Nation",
-    "DJ Scuba 水猫"
+    "Handsome Tiger",
+    "The Halluci Nation"
    ]
   },
   {
@@ -14328,10 +14327,9 @@
    "date": "2026-12-03",
    "reason": "no_match",
    "candidates": [
-    "Billy Idol",
-    "Billy Ray Cyrus",
-    "Billy Talent",
     "Billy Joel",
+    "Billy Idol",
+    "Billy Talent",
     "Billie Eilish"
    ]
   },
