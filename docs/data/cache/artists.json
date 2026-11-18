@@ -12604,15 +12604,16 @@
 },
 "chase bear": {
 "query": "Chase The Bear",
-"fetched_at": "2026-09-07T07:00:30+00:00",
+"fetched_at": "2026-11-18T22:11:12+00:00",
 "reach": {
-"listeners": 1106,
-"playcount": 4764,
+"listeners": 1133,
+"playcount": 4972,
 "tags": [],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Chase+The+Bear",
 "mbid": null
 },
+"matcher": 4,
 "spotify_id": "5k6dTYmSXGXcadgFbxBzBD",
 "spotify_name": "Chase the Bear",
 "url": "https://open.spotify.com/artist/5k6dTYmSXGXcadgFbxBzBD",
@@ -12621,17 +12622,6 @@
 "followers": null,
 "image": "https://i.scdn.co/image/ab6761610000f178be8cd2d2913885947042a2ac",
 "tracks": [
-{
-"id": "5lvpcVYNjRoaarM7WlDAPf",
-"uri": "spotify:track:5lvpcVYNjRoaarM7WlDAPf",
-"name": "Off Balance",
-"popularity": null,
-"album": "Off Balance",
-"album_type": "single",
-"release_date": "2024-08-23",
-"duration_ms": 166460,
-"explicit": false
-},
 {
 "id": "3Epn4KaInL5sS6W3hMsgM0",
 "uri": "spotify:track:3Epn4KaInL5sS6W3hMsgM0",
@@ -12642,10 +12632,21 @@
 "release_date": "2019-02-15",
 "duration_ms": 206226,
 "explicit": false
+},
+{
+"id": "5lvpcVYNjRoaarM7WlDAPf",
+"uri": "spotify:track:5lvpcVYNjRoaarM7WlDAPf",
+"name": "Off Balance",
+"popularity": null,
+"album": "Off Balance",
+"album_type": "single",
+"release_date": "2024-08-23",
+"duration_ms": 166460,
+"explicit": false
 }
 ],
 "rank_source": "lastfm",
-"matcher": 4
+"mbid": null
 },
 "tess anderson": {
 "query": "Tess Anderson",
@@ -35659,15 +35660,15 @@
 },
 "petunia and vipers": {
 "query": "Petunia & the Vipers",
-"fetched_at": "2026-10-19T20:01:54+00:00",
+"fetched_at": "2026-11-18T22:11:15+00:00",
 "reach": {
-"listeners": 2147,
-"playcount": 22323,
+"listeners": 2161,
+"playcount": 22366,
 "tags": [
-"country",
 "rockabilly",
+"country",
 "blues",
-"look into"
+"canadien"
 ],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Petunia+&+The+Vipers",
@@ -36739,41 +36740,41 @@
 },
 "rukky": {
 "query": "rukky.",
-"fetched_at": "2026-10-19T20:02:03+00:00",
+"fetched_at": "2026-11-18T22:11:13+00:00",
 "reach": null,
 "matcher": 4,
-"spotify_id": "2d5v1Q66cb3V1ufeAHVYwm",
-"spotify_name": "Rukky",
-"url": "https://open.spotify.com/artist/2d5v1Q66cb3V1ufeAHVYwm",
+"spotify_id": "7Cg1WCrTcpMUtDnj1OCGpI",
+"spotify_name": "rukky",
+"url": "https://open.spotify.com/artist/7Cg1WCrTcpMUtDnj1OCGpI",
 "genres": [],
 "popularity": null,
 "followers": null,
-"image": "https://i.scdn.co/image/ab6761610000f178fdbb3bd69e6a977fe17060b3",
+"image": "https://i.scdn.co/image/ab6761610000f178edb2a338dd61f0278e6e5841",
 "tracks": [
 {
-"id": "2erG3nG7Ywj7UJqID6ekqy",
-"uri": "spotify:track:2erG3nG7Ywj7UJqID6ekqy",
-"name": "Felony",
+"id": "05jLUyZ5cfMnZeZl70fWg9",
+"uri": "spotify:track:05jLUyZ5cfMnZeZl70fWg9",
+"name": "honeycomb",
 "popularity": null,
-"album": "Felony",
+"album": "honeycomb",
 "album_type": "single",
-"release_date": "2020-05-13",
-"duration_ms": 190537,
+"release_date": "2026-10-22",
+"duration_ms": 256463,
 "explicit": false
 },
 {
-"id": "486dDuTF1HCAIRnRsgwE4C",
-"uri": "spotify:track:486dDuTF1HCAIRnRsgwE4C",
-"name": "Type Shiii",
+"id": "4HcYXDOpm4pE01ircDHFSM",
+"uri": "spotify:track:4HcYXDOpm4pE01ircDHFSM",
+"name": "Shiny",
 "popularity": null,
-"album": "Type Shiii",
+"album": "Shiny",
 "album_type": "single",
-"release_date": "2025-08-29",
-"duration_ms": 115488,
-"explicit": true
+"release_date": "2026-03-27",
+"duration_ms": 158658,
+"explicit": false
 }
 ],
-"rank_source": "lastfm",
+"rank_source": "search",
 "mbid": null
 },
 "blasting company": {
@@ -64829,5 +64830,91 @@
 ],
 "rank_source": "lastfm",
 "mbid": "53d83abf-8dca-47dd-9b0a-6ae268aabf8d"
+},
+"kasey riot": {
+"query": "Kasey Riot",
+"fetched_at": "2026-11-18T22:11:15+00:00",
+"reach": {
+"listeners": 141,
+"playcount": 505,
+"tags": [],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Kasey+Riot",
+"mbid": "f3cbf1e1-43b9-4357-a865-3327d9482404"
+},
+"matcher": 4,
+"spotify_id": "67YIgdXADeVWC3nsc6vBm2",
+"spotify_name": "Kasey Riot",
+"url": "https://open.spotify.com/artist/67YIgdXADeVWC3nsc6vBm2",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178f3b4a53295281e70aaf61098",
+"tracks": [
+{
+"id": "5fuxAaukAK2l0TutWWIehr",
+"uri": "spotify:track:5fuxAaukAK2l0TutWWIehr",
+"name": "Tocsin",
+"popularity": null,
+"album": "Do You Even Acid?",
+"album_type": "compilation",
+"release_date": "2020-06-22",
+"duration_ms": 332000,
+"explicit": false
+},
+{
+"id": "1UF0oe3XIxi4iIEqkrEchk",
+"uri": "spotify:track:1UF0oe3XIxi4iIEqkrEchk",
+"name": "Shadows",
+"popularity": null,
+"album": "Shadows",
+"album_type": "single",
+"release_date": "2026-08-21",
+"duration_ms": 295057,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "f3cbf1e1-43b9-4357-a865-3327d9482404"
+},
+"kevin shiu": {
+"query": "Kevin Shiu",
+"fetched_at": "2026-11-18T22:11:16+00:00",
+"reach": {
+"listeners": 92,
+"playcount": 610,
+"tags": [
+"house",
+"electronic",
+"minimal techno",
+"progressive house"
+],
+"tier": 1,
+"lastfm_url": "https://www.last.fm/music/Kevin+Shiu",
+"mbid": "613a5bd4-9166-44dc-a00b-045529d80084"
+},
+"matcher": 4,
+"spotify_id": "7JRg0sZ3ua5PFBnG6eSroh",
+"spotify_name": "Kevin Shiu",
+"url": "https://open.spotify.com/artist/7JRg0sZ3ua5PFBnG6eSroh",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": null,
+"tracks": [
+{
+"id": "5ljbwQYolOkjLxJ13A9F14",
+"uri": "spotify:track:5ljbwQYolOkjLxJ13A9F14",
+"name": "Lilly & Poppy - Kevin Shiu Remix",
+"popularity": null,
+"album": "Lilly & Poppy EP",
+"album_type": "single",
+"release_date": "2013-03-18",
+"duration_ms": 483840,
+"explicit": false
+}
+],
+"rank_source": "search",
+"mbid": "613a5bd4-9166-44dc-a00b-045529d80084"
 }
 }
