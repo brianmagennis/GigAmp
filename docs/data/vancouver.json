@@ -3,7 +3,7 @@
  "city_name": "Vancouver, BC",
  "market": "CA",
  "timezone": "America/Vancouver",
- "generated_at": "2026-11-19T22:19:39+00:00",
+ "generated_at": "2026-11-20T21:53:28+00:00",
  "scraped_at": "2026-11-18T22:10:18+00:00",
  "horizon_days": 35,
  "source": "https://www.songkick.com/metro-areas/27398-canada-vancouver",
@@ -13662,9 +13662,10 @@
    "date": "2026-11-20",
    "reason": "no_match",
    "candidates": [
-    "Claude Debussy",
     "Claudio Capéo",
-    "Claudio Abbado",
+    "Claude Debussy",
+    "Claude Barzotti",
+    "Claudio Sánchez",
     "Claudia Bouvette",
     "Claude Dubois"
    ]
@@ -13792,8 +13793,8 @@
    "reason": "no_match",
    "candidates": [
     "Doom Loop",
-    "PRESIDENT",
-    "MF DOOM"
+    "The Arbuckles",
+    "Toby Fox"
    ]
   },
   {

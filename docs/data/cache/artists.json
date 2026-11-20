@@ -61083,11 +61083,11 @@
 },
 "claud": {
 "query": "Claud",
-"fetched_at": "2026-11-06T20:31:23+00:00",
+"fetched_at": "2026-11-20T21:53:23+00:00",
 "spotify_id": null,
 "reach": {
-"listeners": 365327,
-"playcount": 3697987,
+"listeners": 365903,
+"playcount": 3707238,
 "tags": [
 "indie pop",
 "bedroom pop",
@@ -61100,9 +61100,10 @@
 },
 "matcher": 4,
 "candidates": [
-"Claude Debussy",
 "Claudio Capéo",
-"Claudio Abbado",
+"Claude Debussy",
+"Claude Barzotti",
+"Claudio Sánchez",
 "Claudia Bouvette",
 "Claude Dubois"
 ]
@@ -61497,7 +61498,7 @@
 },
 "doom loops": {
 "query": "doom loops",
-"fetched_at": "2026-11-06T20:31:38+00:00",
+"fetched_at": "2026-11-20T21:53:24+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 8,
@@ -61510,13 +61511,13 @@
 "matcher": 4,
 "candidates": [
 "Doom Loop",
-"PRESIDENT",
-"MF DOOM"
+"The Arbuckles",
+"Toby Fox"
 ]
 },
 "dreamhorse": {
 "query": "dreamhorse",
-"fetched_at": "2026-11-06T20:31:41+00:00",
+"fetched_at": "2026-11-20T21:53:26+00:00",
 "spotify_id": null,
 "reach": {
 "listeners": 6,
