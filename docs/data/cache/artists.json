@@ -22205,15 +22205,15 @@
 },
 "concrete vehicles": {
 "query": "Concrete Vehicles",
-"fetched_at": "2026-10-07T20:04:59+00:00",
+"fetched_at": "2026-11-22T20:47:06+00:00",
 "reach": {
-"listeners": 3124,
-"playcount": 18426,
+"listeners": 3886,
+"playcount": 22774,
 "tags": [
-"post-punk",
-"experimental rock",
 "art rock",
-"noise rock"
+"noise rock",
+"post-punk",
+"photographed"
 ],
 "tier": 1,
 "lastfm_url": "https://www.last.fm/music/Concrete+Vehicles",
@@ -64917,5 +64917,157 @@
 ],
 "rank_source": "search",
 "mbid": "613a5bd4-9166-44dc-a00b-045529d80084"
+},
+"peach pit": {
+"query": "Peach Pit",
+"fetched_at": "2026-11-22T20:47:05+00:00",
+"reach": {
+"listeners": 1082744,
+"playcount": 47589515,
+"tags": [
+"math rock",
+"indie pop",
+"indie rock"
+],
+"tier": 4,
+"lastfm_url": "https://www.last.fm/music/Peach+Pit",
+"mbid": "660ad6f4-9a86-4d3c-9305-f269186b195c"
+},
+"matcher": 4,
+"spotify_id": "6fC2AcsQtd9h4BWELbbire",
+"spotify_name": "Peach Pit",
+"url": "https://open.spotify.com/artist/6fC2AcsQtd9h4BWELbbire",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f178603fa41663fce63d8d8f7798",
+"tracks": [
+{
+"id": "6OiRh4kttAs1YWglvTcYkB",
+"uri": "spotify:track:6OiRh4kttAs1YWglvTcYkB",
+"name": "Alrighty Aphrodite",
+"popularity": null,
+"album": "Being So Normal",
+"album_type": "album",
+"release_date": "2018-06-28",
+"duration_ms": 207813,
+"explicit": false
+},
+{
+"id": "5OuJTtNve7FxUX82eEBupN",
+"uri": "spotify:track:5OuJTtNve7FxUX82eEBupN",
+"name": "Tommy's Party",
+"popularity": null,
+"album": "Being So Normal",
+"album_type": "album",
+"release_date": "2018-06-28",
+"duration_ms": 361760,
+"explicit": true
+}
+],
+"rank_source": "lastfm",
+"mbid": "660ad6f4-9a86-4d3c-9305-f269186b195c"
+},
+"felix cartal": {
+"query": "Felix Cartal",
+"fetched_at": "2026-11-22T20:47:07+00:00",
+"reach": {
+"listeners": 337845,
+"playcount": 3212861,
+"tags": [
+"electro",
+"electronic",
+"dirty electro",
+"house"
+],
+"tier": 3,
+"lastfm_url": "https://www.last.fm/music/Felix+Cartal",
+"mbid": "7208d210-66d4-413a-90c3-167b2e6bd4fb"
+},
+"matcher": 4,
+"spotify_id": "6roDXEmZ6AARdOUv6x5U2v",
+"spotify_name": "Felix Cartal",
+"url": "https://open.spotify.com/artist/6roDXEmZ6AARdOUv6x5U2v",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f17845f2e8aaf2a8e9c2ad7fa43a",
+"tracks": [
+{
+"id": "53hNIcq8OLj9OUNvQ4ulFM",
+"uri": "spotify:track:53hNIcq8OLj9OUNvQ4ulFM",
+"name": "Love Me",
+"popularity": null,
+"album": "Love Me",
+"album_type": "single",
+"release_date": "2019-02-14",
+"duration_ms": 194871,
+"explicit": false
+},
+{
+"id": "0DTtMH8wB4UiRCjk6NgWl5",
+"uri": "spotify:track:0DTtMH8wB4UiRCjk6NgWl5",
+"name": "Get What You Give",
+"popularity": null,
+"album": "Get What You Give",
+"album_type": "single",
+"release_date": "2017-03-24",
+"duration_ms": 219173,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": "7208d210-66d4-413a-90c3-167b2e6bd4fb"
+},
+"no thanks": {
+"query": "NO THANKS",
+"fetched_at": "2026-11-22T20:47:07+00:00",
+"reach": {
+"listeners": 15488,
+"playcount": 88185,
+"tags": [
+"hardcore punk",
+"hardcore",
+"punk",
+"punk rock"
+],
+"tier": 2,
+"lastfm_url": "https://www.last.fm/music/no+thanks",
+"mbid": null
+},
+"matcher": 4,
+"spotify_id": "1RyEwwco6XV0jQnxLgCU34",
+"spotify_name": "No Thanks",
+"url": "https://open.spotify.com/artist/1RyEwwco6XV0jQnxLgCU34",
+"genres": [],
+"popularity": null,
+"followers": null,
+"image": "https://i.scdn.co/image/ab6761610000f1789a44eaafba45eddc3e902b26",
+"tracks": [
+{
+"id": "59FXd5Osipx4kSAK2jhJlR",
+"uri": "spotify:track:59FXd5Osipx4kSAK2jhJlR",
+"name": "Bongo",
+"popularity": null,
+"album": "Bongo",
+"album_type": "single",
+"release_date": "2021-11-19",
+"duration_ms": 142857,
+"explicit": false
+},
+{
+"id": "4jdCgcpJRwRZ59OJDJ2VnF",
+"uri": "spotify:track:4jdCgcpJRwRZ59OJDJ2VnF",
+"name": "Oldskool",
+"popularity": null,
+"album": "Oldskool",
+"album_type": "single",
+"release_date": "2024-03-08",
+"duration_ms": 181874,
+"explicit": false
+}
+],
+"rank_source": "lastfm",
+"mbid": null
 }
 }
